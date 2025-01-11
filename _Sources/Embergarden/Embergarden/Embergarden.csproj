@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -33,14 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony">
-      <HintPath>..\..\Reference\0Harmony.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\Reference\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -70,11 +62,37 @@
       <Private>False</Private>
     </Reference>
   </ItemGroup>
+  <PropertyGroup>
+    <LangVersion>preview</LangVersion>
+    <PublicizerClearCacheOnClean>true</PublicizerClearCacheOnClean>
+    <!-- <PublicizeAll>true</PublicizeAll> -->
+  </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Krafs.Publicizer">
+      <Version>2.3.0</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Krafs.Rimworld.Ref">
+      <Version>1.5.4297</Version>
+    </PackageReference>
+    <PackageReference Include="Lib.Harmony">
+      <Version>2.3.3</Version>
+    </PackageReference>
+    <!-- <Publicize Include="Assembly-CSharp:RimWorld.ListerHaulables.Check" /> -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ability_Transform.cs" />
+    <Compile Include="CompProperties_Transformable.cs" />
+    <Compile Include="Comp_TurretTransformable.cs" />
+    <Compile Include="D.cs" />
     <Compile Include="Gizmo_AttachmentShieldStatus.cs" />
     <Compile Include="HarmonyPatch\HarmonyEntry.cs" />
     <Compile Include="HarmonyPatch\Patch_DrawVehicleTurret.cs" />
+    <Compile Include="HediffComp_CustomRegeneration.cs" />
     <Compile Include="HediffComp_ProtectiveShield.cs" />
+    <Compile Include="Hediff_DynamicCap.cs" />
+    <Compile Include="ThinkNode_ConditionalEnemyInRange.cs" />
     <Compile Include="MultiTurrets\CompMultipleTurretGun.cs" />
     <Compile Include="MultiTurrets\CompPropertiesMultipleTurretGun.cs" />
     <Compile Include="MultiTurrets\CompVehicleWeapon.cs" />
@@ -82,6 +100,9 @@
     <Compile Include="MultiTurrets\PawnRenderNode_SubTurretGun.cs" />
     <Compile Include="MultiTurrets\TurretGizmos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Hediffs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

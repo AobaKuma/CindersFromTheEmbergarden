@@ -1,1 +1,28 @@
+*.suo
+*.cache
+*/Thumbs.db
+/_Sources/.vs/*
+_Sources/*/obj/*
+_Sources/*/bin/*
+/_Sources/*/*.csproj.user
+.vscode
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+*.pdb
+ 
+# Ignore RimWorld assemblies 
+Assembly-CSharp.dll 
+UnityEngine.dll 
+
+# Exclude optimized .dds textures from RimPy / png2dds
+*.dds
 /cinder (1).zip
+
+
+.idea/
+__pycache__
+ModPatches/*/Assemblies/
+/_Sources/Embergarden/.vs/Embergarden/FileContentIndex
+/_Sources/Embergarden/Embergarden/obj
