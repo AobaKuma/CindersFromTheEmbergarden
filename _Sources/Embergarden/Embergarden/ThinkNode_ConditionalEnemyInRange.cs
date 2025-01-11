@@ -15,11 +15,11 @@ namespace Embergarden
         {
             Verb verb = pawn.CurrentEffectiveVerb;
             var t = pawn.mindState.enemyTarget;
-            if (verb ==null || t == null)
+            if (verb == null || t == null)
             {
                 return false;
             }
-            return t.Position.DistanceToSquared(pawn.Position) < verb.verbProps.range*verb.verbProps.range;
+            return t.Position.DistanceToSquared(pawn.Position) < verb.verbProps.range * verb.verbProps.range;
         }
     }
 }

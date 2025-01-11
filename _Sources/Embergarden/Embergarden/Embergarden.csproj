@@ -100,6 +100,7 @@
     <Compile Include="MultiTurrets\PawnRenderNode_SubTurretGun.cs" />
     <Compile Include="MultiTurrets\TurretGizmos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThoughtWorker_OtherHasTrait.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Hediffs\" />

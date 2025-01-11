@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TraitDef>
+		<defName>Cinder_Coke</defName>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>coke</label>
+				<description>{PAWN_nameDef}It is a part of an unknown consciousness.</description>
+				<statOffsets>
+				</statOffsets>
+				<statFactors>
+					<IncomingDamageFactor>0.8</IncomingDamageFactor>
+					<PsychicSensitivity>0</PsychicSensitivity>
+				</statFactors>
+				<disablesNeeds>
+					<li>Outdoors</li>
+					<li>Joy</li>
+				</disablesNeeds>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<ThoughtDef>
+		<defName>Cinder_CokeRelationOffset</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>Embergarden.ThoughtWorker_Amorphous</workerClass>
+		<stages>
+			<li>
+				<label>Amorphouscoke</label>
+				<labelSocial>Getting close to her makes me feel like my body is being roasted!</labelSocial>
+				<baseOpinionOffset>-10</baseOpinionOffset>
+				<visible>false</visible>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="Embergarden.ThoughtWorkerExt">
+				<traitdef>Cinder_Coke</traitdef>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+</Defs>
