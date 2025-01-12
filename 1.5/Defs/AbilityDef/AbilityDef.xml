@@ -4,7 +4,7 @@
 		<defName>Ability_Transformation</defName>
 		<label>Transformation</label>
 		<description>Transform to a turret.</description>
-		<iconPath>UI/Abilities/Transformation</iconPath>
+		<iconPath>Things/Building/Security/TurretMini_MenuIcon</iconPath>
 		<cooldownTicksRange>600</cooldownTicksRange>
 		<warmupStartSound></warmupStartSound>
 		<warmupEffecter></warmupEffecter>

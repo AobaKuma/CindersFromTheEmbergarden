@@ -124,7 +124,7 @@ namespace Embergarden
                 {
                     defaultLabel = Prop.defaultLabel.Translate(),
                     defaultDesc = Prop.defaultDesc.Translate(),
-                    icon = Prop.icon2D,
+                    icon = Prop.Icon2D,
                     action = TryTransform,
                 };
                 yield return command;

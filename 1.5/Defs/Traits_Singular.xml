@@ -24,7 +24,7 @@
 	<ThoughtDef>
 		<defName>Cinder_CokeRelationOffset</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>Embergarden.ThoughtWorker_Amorphous</workerClass>
+		<workerClass>Embergarden.ThoughtWorker_OtherHasTrait</workerClass>
 		<stages>
 			<li>
 				<label>Amorphouscoke</label>
