@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<modExtensions>
+			<li Class="Embergarden.RandomCapacityModifier">
+				<capacity>Manipulation</capacity>
+				<range>0.5~1.5</range>
+				<offset>false</offset>
+				<secondsPerRandomize>2400</secondsPerRandomize>
+			</li>
+		</modExtensions>
+		<defName>UncontrollableTentacles</defName>
+		<label>UncontrollableTentacles</label>
+		<description>TODO</description>
+		<hediffClass>Embergarden.Hediff_DynamicCap</hediffClass>
+		<isBad>false</isBad>
+		<initialSeverity>0.5</initialSeverity>
+		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+		<stages>
+			<li>
+				<label>active</label>
+				<minSeverity>0</minSeverity>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Cinder_PanicFlee</defName>
+		<label>panic flee</label>
+		<description>A disease which causes affected creatures to enter berserk rages. A creature with scaria can be cured through a special medical operation, but it must be downed first. If not treated, scaria kills its host about five days after infection. The disease poisons the flesh and rots the skin, so creatures killed with scaria have a chance of rotting upon death so they cannot be butchered for meat or leather.</description>
+		<descriptionShort>A disease which causes affected creatures to enter berserk rages. If not treated, scaria kills its host about five days after infection.</descriptionShort>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_KillAfterDays">
+				<days>5</days>
+			</li>
+			<li Class="HediffCompProperties_CauseMentalState">
+				<animalMentalState>ManhunterPermanent</animalMentalState>
+				<animalMentalStateAlias>Manhunter</animalMentalStateAlias>
+				<humanMentalState>Berserk</humanMentalState>
+				<letterDef>ThreatSmall</letterDef>
+				<mtbDaysToCauseMentalState>1</mtbDaysToCauseMentalState>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

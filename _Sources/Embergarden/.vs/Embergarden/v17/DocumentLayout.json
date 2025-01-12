@@ -1,34 +1,58 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\",
+  "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\embergarden\\multiturrets\\pawnrendernode_subturretgun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\multiturrets\\pawnrendernode_subturretgun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\compproperties_transformable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\compproperties_transformable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\embergarden\\harmonypatch\\patch_drawvehicleturret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\harmonypatch\\patch_drawvehicleturret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\comp_turrettransformable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\comp_turrettransformable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\embergarden\\multiturrets\\compvehicleweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\multiturrets\\compvehicleweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\1.5\\Defs\\AbilityDef\\AbilityDef.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\embergarden\\multiturrets\\comppropertiesmultipleturretgun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\multiturrets\\comppropertiesmultipleturretgun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\1.5\\Defs\\testMovTurret.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\embergarden\\multiturrets\\pawnrendernodeworker_subturretgun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\multiturrets\\pawnrendernodeworker_subturretgun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\ThingDefs_Buildings\\Buildings_Security_Turrets.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\embergarden\\hediffcomp_protectiveshield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\1.5\\Defs\\Traits_Singular.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\thoughtworker_otherhastrait.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\thoughtworker_otherhastrait.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Crow\\Defs\\ThingDefs_Apparel\\Apparel_Armor.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\thinknode_conditionalenemyinrange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\thinknode_conditionalenemyinrange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\embergarden\\hediffcomp_protectiveshield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\hediffcomp_protectiveshield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\embergarden\\gizmo_attachmentshieldstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\gizmo_attachmentshieldstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\hediffcomp_customregeneration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\hediffcomp_customregeneration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Bodies\\BodyParts_Humanoid.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\hediff_dynamiccap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\hediff_dynamiccap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bill Doors\u0027 Framework\\1.5\\Defs\\Test.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\ThingDefs_Misc\\Apparel_Headgear.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,97 +61,217 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 136,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PawnRenderNode_SubTurretGun.cs",
-              "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\MultiTurrets\\PawnRenderNode_SubTurretGun.cs",
-              "RelativeDocumentMoniker": "Embergarden\\MultiTurrets\\PawnRenderNode_SubTurretGun.cs",
-              "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\MultiTurrets\\PawnRenderNode_SubTurretGun.cs",
-              "RelativeToolTip": "Embergarden\\MultiTurrets\\PawnRenderNode_SubTurretGun.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Title": "CompProperties_Transformable.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\CompProperties_Transformable.cs",
+              "RelativeDocumentMoniker": "Embergarden\\CompProperties_Transformable.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\CompProperties_Transformable.cs",
+              "RelativeToolTip": "Embergarden\\CompProperties_Transformable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T09:29:21.534Z",
+              "WhenOpened": "2025-01-12T04:17:46.75Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "PawnRenderNodeWorker_SubTurretGun.cs",
-              "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\MultiTurrets\\PawnRenderNodeWorker_SubTurretGun.cs",
-              "RelativeDocumentMoniker": "Embergarden\\MultiTurrets\\PawnRenderNodeWorker_SubTurretGun.cs",
-              "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\MultiTurrets\\PawnRenderNodeWorker_SubTurretGun.cs",
-              "RelativeToolTip": "Embergarden\\MultiTurrets\\PawnRenderNodeWorker_SubTurretGun.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T09:29:14.548Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CompVehicleWeapon.cs",
-              "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\MultiTurrets\\CompVehicleWeapon.cs",
-              "RelativeDocumentMoniker": "Embergarden\\MultiTurrets\\CompVehicleWeapon.cs",
-              "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\MultiTurrets\\CompVehicleWeapon.cs",
-              "RelativeToolTip": "Embergarden\\MultiTurrets\\CompVehicleWeapon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T09:29:11.049Z"
+              "Title": "Buildings_Security_Turrets.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\ThingDefs_Buildings\\Buildings_Security_Turrets.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Data\\Core\\Defs\\ThingDefs_Buildings\\Buildings_Security_Turrets.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\ThingDefs_Buildings\\Buildings_Security_Turrets.xml",
+              "RelativeToolTip": "..\\..\\..\\..\\Data\\Core\\Defs\\ThingDefs_Buildings\\Buildings_Security_Turrets.xml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAHAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-01-12T04:13:17.929Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Gizmo_AttachmentShieldStatus.cs",
-              "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Gizmo_AttachmentShieldStatus.cs",
-              "RelativeDocumentMoniker": "Embergarden\\Gizmo_AttachmentShieldStatus.cs",
-              "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Gizmo_AttachmentShieldStatus.cs",
-              "RelativeToolTip": "Embergarden\\Gizmo_AttachmentShieldStatus.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAiwCcAAABSAAAAAAAAAA==",
+              "Title": "ThoughtWorker_OtherHasTrait.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\ThoughtWorker_OtherHasTrait.cs",
+              "RelativeDocumentMoniker": "Embergarden\\ThoughtWorker_OtherHasTrait.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\ThoughtWorker_OtherHasTrait.cs",
+              "RelativeToolTip": "Embergarden\\ThoughtWorker_OtherHasTrait.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T16:47:09.204Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CompPropertiesMultipleTurretGun.cs",
-              "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\MultiTurrets\\CompPropertiesMultipleTurretGun.cs",
-              "RelativeDocumentMoniker": "Embergarden\\MultiTurrets\\CompPropertiesMultipleTurretGun.cs",
-              "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\MultiTurrets\\CompPropertiesMultipleTurretGun.cs",
-              "RelativeToolTip": "Embergarden\\MultiTurrets\\CompPropertiesMultipleTurretGun.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T13:12:28.235Z"
+              "WhenOpened": "2025-01-11T15:09:02.84Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "HediffComp_ProtectiveShield.cs",
-              "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\HediffComp_ProtectiveShield.cs",
-              "RelativeDocumentMoniker": "Embergarden\\HediffComp_ProtectiveShield.cs",
-              "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\HediffComp_ProtectiveShield.cs",
-              "RelativeToolTip": "Embergarden\\HediffComp_ProtectiveShield.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T16:46:57.083Z"
+              "Title": "Traits_Singular.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\1.5\\Defs\\Traits_Singular.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.5\\Defs\\Traits_Singular.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\1.5\\Defs\\Traits_Singular.xml",
+              "RelativeToolTip": "..\\..\\1.5\\Defs\\Traits_Singular.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-01-11T15:04:19.209Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Patch_DrawVehicleTurret.cs",
-              "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\HarmonyPatch\\Patch_DrawVehicleTurret.cs",
-              "RelativeDocumentMoniker": "Embergarden\\HarmonyPatch\\Patch_DrawVehicleTurret.cs",
-              "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\HarmonyPatch\\Patch_DrawVehicleTurret.cs",
-              "RelativeToolTip": "Embergarden\\HarmonyPatch\\Patch_DrawVehicleTurret.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAnAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "ThinkNode_ConditionalEnemyInRange.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\ThinkNode_ConditionalEnemyInRange.cs",
+              "RelativeDocumentMoniker": "Embergarden\\ThinkNode_ConditionalEnemyInRange.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\ThinkNode_ConditionalEnemyInRange.cs",
+              "RelativeToolTip": "Embergarden\\ThinkNode_ConditionalEnemyInRange.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T13:02:59.917Z"
+              "WhenOpened": "2025-01-11T14:51:28.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BodyParts_Humanoid.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Bodies\\BodyParts_Humanoid.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Data\\Core\\Defs\\Bodies\\BodyParts_Humanoid.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Bodies\\BodyParts_Humanoid.xml",
+              "RelativeToolTip": "..\\..\\..\\..\\Data\\Core\\Defs\\Bodies\\BodyParts_Humanoid.xml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-01-11T14:29:08.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HediffComp_CustomRegeneration.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\HediffComp_CustomRegeneration.cs",
+              "RelativeDocumentMoniker": "Embergarden\\HediffComp_CustomRegeneration.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\HediffComp_CustomRegeneration.cs",
+              "RelativeToolTip": "Embergarden\\HediffComp_CustomRegeneration.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T14:26:39.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Hediff_DynamicCap.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Hediff_DynamicCap.cs",
+              "RelativeDocumentMoniker": "Embergarden\\Hediff_DynamicCap.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Hediff_DynamicCap.cs",
+              "RelativeToolTip": "Embergarden\\Hediff_DynamicCap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T14:26:07.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HediffComp_ProtectiveShield.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\HediffComp_ProtectiveShield.cs",
+              "RelativeDocumentMoniker": "Embergarden\\HediffComp_ProtectiveShield.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\HediffComp_ProtectiveShield.cs",
+              "RelativeToolTip": "Embergarden\\HediffComp_ProtectiveShield.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T16:46:57.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Test.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bill Doors\u0027 Framework\\1.5\\Defs\\Test.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\Bill Doors\u0027 Framework\\1.5\\Defs\\Test.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Bill Doors\u0027 Framework\\1.5\\Defs\\Test.xml",
+              "RelativeToolTip": "..\\..\\..\\Bill Doors\u0027 Framework\\1.5\\Defs\\Test.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-01-11T11:01:54.97Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 264,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Comp_TurretTransformable.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Comp_TurretTransformable.cs",
+              "RelativeDocumentMoniker": "Embergarden\\Comp_TurretTransformable.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Comp_TurretTransformable.cs",
+              "RelativeToolTip": "Embergarden\\Comp_TurretTransformable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T04:17:45.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AbilityDef.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\1.5\\Defs\\AbilityDef\\AbilityDef.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.5\\Defs\\AbilityDef\\AbilityDef.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\1.5\\Defs\\AbilityDef\\AbilityDef.xml",
+              "RelativeToolTip": "..\\..\\1.5\\Defs\\AbilityDef\\AbilityDef.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-01-12T04:13:54.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "testMovTurret.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\1.5\\Defs\\testMovTurret.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.5\\Defs\\testMovTurret.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\1.5\\Defs\\testMovTurret.xml",
+              "RelativeToolTip": "..\\..\\1.5\\Defs\\testMovTurret.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-01-12T04:13:24.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Apparel_Armor.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Crow\\Defs\\ThingDefs_Apparel\\Apparel_Armor.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\Crow\\Defs\\ThingDefs_Apparel\\Apparel_Armor.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Crow\\Defs\\ThingDefs_Apparel\\Apparel_Armor.xml",
+              "RelativeToolTip": "..\\..\\..\\Crow\\Defs\\ThingDefs_Apparel\\Apparel_Armor.xml",
+              "ViewState": "AgIAAGIBAAAAAAAAAAAWwIIBAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-01-11T04:26:58.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Apparel_Headgear.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\ThingDefs_Misc\\Apparel_Headgear.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Data\\Core\\Defs\\ThingDefs_Misc\\Apparel_Headgear.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\ThingDefs_Misc\\Apparel_Headgear.xml",
+              "RelativeToolTip": "..\\..\\..\\..\\Data\\Core\\Defs\\ThingDefs_Misc\\Apparel_Headgear.xml",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAAMYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-01-10T15:53:31.097Z",
+              "EditorCaption": ""
             }
           ]
         }

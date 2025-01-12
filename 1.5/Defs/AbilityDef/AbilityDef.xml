@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AbilityDef>
+		<defName>Ability_Transformation</defName>
+		<label>Transformation</label>
+		<description>Transform to a turret.</description>
+		<iconPath>Things/Building/Security/TurretMini_MenuIcon</iconPath>
+		<cooldownTicksRange>600</cooldownTicksRange>
+		<warmupStartSound></warmupStartSound>
+		<warmupEffecter></warmupEffecter>
+		<hostile>false</hostile>
+		<aiCanUse>true</aiCanUse>
+		<targetRequired>false</targetRequired>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>2</warmupTime>
+			<soundCast></soundCast>
+			<targetable>false</targetable>
+			<violent>false</violent>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="Embergarden.CompProperties_Transform">
+				<buildingDef>Turret_AutoMiniTurret_M</buildingDef>
+			</li>
+		</comps>
+	</AbilityDef>
+</Defs>
