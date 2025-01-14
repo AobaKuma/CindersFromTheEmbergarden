@@ -83,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ability_Transform.cs" />
+    <Compile Include="CompAbilityEffect_BodySizeCap.cs" />
     <Compile Include="CompProperties_Transformable.cs" />
     <Compile Include="Comp_TurretTransformable.cs" />
     <Compile Include="D.cs" />

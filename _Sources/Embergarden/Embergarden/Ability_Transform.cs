@@ -27,7 +27,7 @@ namespace Embergarden
             }
         }
     }
-    public class CompProperties_Transform: CompProperties_AbilityEffect
+    public class CompProperties_Transform : CompProperties_AbilityEffect
     {
         public CompProperties_Transform()
         {
