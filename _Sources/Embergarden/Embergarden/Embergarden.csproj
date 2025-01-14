@@ -89,6 +89,7 @@
     <Compile Include="CompAbilityEffect_ScorchWound.cs" />
     <Compile Include="CompAbilityEffect_SpawnWithFaction.cs" />
     <Compile Include="CompProperties_Transformable.cs" />
+    <Compile Include="CompUseEffect_RandomAbilityGain.cs" />
     <Compile Include="Comp_TurretTransformable.cs" />
     <Compile Include="D.cs" />
     <Compile Include="Gizmo_AttachmentShieldStatus.cs" />
