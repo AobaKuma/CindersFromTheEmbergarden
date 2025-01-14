@@ -83,7 +83,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ability_Transform.cs" />
+    <Compile Include="Building_TrapExplosive_Rechargeable.cs" />
+    <Compile Include="Cider_DefOf.cs" />
     <Compile Include="CompAbilityEffect_BodySizeCap.cs" />
+    <Compile Include="CompAbilityEffect_ScorchWound.cs" />
     <Compile Include="CompAbilityEffect_SpawnWithFaction.cs" />
     <Compile Include="CompProperties_Transformable.cs" />
     <Compile Include="Comp_TurretTransformable.cs" />
