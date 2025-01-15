@@ -221,12 +221,12 @@
       <defaultOutfitTags>
         <li>Worker</li>
       </defaultOutfitTags>
-    </apparel>
-	<drawData>
+	  <drawData>
 				<dataNorth>
 					<layer>51</layer>
 				</dataNorth>
 	  </drawData>
+    </apparel>
   </ThingDef>
 
   <!-- Cinder_Apparel_SnowyNight -->
