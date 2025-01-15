@@ -83,7 +83,7 @@
 							</li>
 						</options>
 					</oldHairColorGen>
-					<headOffset>(0.00, 0.05)</headOffset>
+					<headOffset>(0.00, 0.015)</headOffset>
 					<headOffsetDirectional>
 						<north>
 							<offset>(0.0,0)</offset>
