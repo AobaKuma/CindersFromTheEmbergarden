@@ -96,7 +96,7 @@
         <race>
             <renderTree>Cinder_WarAttacker</renderTree>
             <body>Cinder_ErodedEXO</body>
-            <baseHealthScale>3.5</baseHealthScale>
+            <baseHealthScale>16</baseHealthScale>
             <detritusLeavings>
                 <li>
                     <def>Cinder_ChunkSlag</def>

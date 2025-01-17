@@ -66,7 +66,7 @@
             </lifeStageAges>
         </race>
         <butcherProducts>
-            <Steel>15</Steel>
+            <Cinder_AmorphousPolymer>75</Cinder_AmorphousPolymer>
         </butcherProducts>
     </ThingDef>
 
@@ -112,7 +112,7 @@
         <race>
             <renderTree>Cinder_ErodedExo</renderTree>
             <body>Cinder_ErodedEXO</body>
-            <baseHealthScale>1.5</baseHealthScale>
+            <baseHealthScale>6</baseHealthScale>
             <detritusLeavings>
                 <li>
                     <def>Cinder_ChunkSlag</def>
@@ -120,7 +120,7 @@
                 </li>
                 <li>
                     <def>Cinder_ChunkSlag</def>
-                    <spawnChance>0.25</spawnChance>
+                    <spawnChance>0.5</spawnChance>
                 </li>
             </detritusLeavings>
         </race>

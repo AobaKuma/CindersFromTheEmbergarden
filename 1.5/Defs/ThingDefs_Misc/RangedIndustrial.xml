@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="Cinder_Gun" ParentName="BaseHumanMakeableGun" Abstract="True">
+    <weaponTags Inherit="False">
+	  <li>Cinder_Gun</li>
+    </weaponTags>
+    <tradeTags Inherit="False">  
+	  <li>Cinder_Gun</li>
+    </tradeTags>
+  </ThingDef>
+ 
+	
+	<ThingDef ParentName="BaseBullet">
+    <defName>Cinder_Bullet_308APE</defName>
+    <label>Multiple bullet</label>
+    <graphicData>
+      <texPath>Things/Weapons/Bullet_clustered</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <armorPenetrationBase>0.28</armorPenetrationBase>
+	  <extraDamages>
+				<li>
+					<def>Cinder_ExtraBullet</def>
+					<amount>6</amount>
+				</li>
+	 </extraDamages>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Cinder_Bullet_50APE</defName>
+    <label>.50 Multiple bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <stoppingPower>5</stoppingPower>
+      <armorPenetrationBase>0.32</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Cinder_Bullet_PDW</defName>
+    <label>needle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <stoppingPower>0.5</stoppingPower>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+  
+  
+	<DamageDef ParentName="Bullet">
+		<defName>Cinder_ExtraBullet</defName>
+		<label>ExtraBullet</label>
+		<minDamageToFragment>5</minDamageToFragment>
+	</DamageDef>
+	
+	  <ThingDef ParentName="BaseBullet">
+    <defName>Cinder_Bullet_Flechette</defName>
+    <label>Flechette blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+      <armorPenetrationBase>0.14</armorPenetrationBase>
+	  <extraDamages>
+				<li>
+					<def>Cinder_ExtraBullet</def>
+					<amount>6</amount>
+				</li>
+	 </extraDamages>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+	
+	<ThingDef ParentName="Cinder_Gun">
+    <defName>Cinder_Magistrate</defName>
+    <label>Magistrate shotgun</label>
+    <description>An ancient design of shotgun that use special dart bullets. Deadly, but short range.Sometimes tentacles grow on the muzzle of a gun.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Weapons/Magistrate/MagistrateA</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>CinderSimpleGuns</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3.4</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.87</AccuracyShort>
+      <AccuracyMedium>0.77</AccuracyMedium>
+      <AccuracyLong>0.64</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+	<randomStyleChance>1</randomStyleChance>
+       <randomStyle>
+      <li>
+        <styleDef>CinderStyle_MagistrateA</styleDef>
+      </li>
+      <li>
+        <styleDef>CinderStyle_MagistrateB</styleDef>
+      </li>
+      <li>
+        <styleDef>CinderStyle_MagistrateC</styleDef>
+      </li>
+      <li>
+        <styleDef>CinderStyle_MagistrateD</styleDef>
+      </li>
+    </randomStyle>
+	
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>430</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Cinder_Bullet_Flechette</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>17.9</range>
+        <soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+
+	<ThingDef ParentName="Cinder_Gun">
+		<defName>Cinder_MP12A</defName>
+		<label>Needle PDW</label>
+		<description>An ancient rapid fire armor piercing submachine gun/short rifle that uses armor piercing ammunition and was used as a weapon for vehicle crew members or operators to confront armed soldiers, occasionally this gun grows some strange tentacles.</description>
+		<graphicData>
+			<texPath>Things/Weapons/MP12/MP12J</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			 <li>RangedLight</li>
+			 <li>ShortShots</li>
+		</weaponClasses>
+		<statBases>
+      <WorkToMake>30000</WorkToMake>
+      <Mass>3.0</Mass>
+       <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.45</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		
+		<randomStyleChance>1</randomStyleChance>
+       <randomStyle>
+      <li>
+        <styleDef>CinderStyle_MP12A</styleDef>
+      </li>
+      <li>
+        <styleDef>CinderStyle_MP12B</styleDef>
+      </li>
+      <li>
+        <styleDef>CinderStyle_MP12C</styleDef>
+      </li>
+      <li>
+        <styleDef>CinderStyle_MP12D</styleDef>
+      </li>
+	  <li>
+        <styleDef>CinderStyle_MP12E</styleDef>
+      </li>
+	  <li>
+        <styleDef>CinderStyle_MP12F</styleDef>
+      </li>
+	  <li>
+        <styleDef>CinderStyle_MP12G</styleDef>
+      </li>
+	  <li>
+        <styleDef>CinderStyle_MP12H</styleDef>
+      </li>
+	  <li>
+        <styleDef>CinderStyle_MP12I</styleDef>
+      </li>
+	   <li>
+        <styleDef>CinderStyle_MP12J</styleDef>
+      </li>
+	   <li>
+        <styleDef>CinderStyle_MP12K</styleDef>
+      </li>
+	  <li>
+        <styleDef>CinderStyle_MP12L</styleDef>
+      </li>
+    </randomStyle>
+		
+	     <costList>
+		  <Steel>50</Steel>
+           <ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<researchPrerequisites>
+	  <li>GasOperation</li>
+    </researchPrerequisites>
+		</recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Cinder_Bullet_PDW</defaultProjectile>
+        <warmupTime>0.55</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <soundCast>Cinder_Shot_12J</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<weaponTags>
+      <li>CinderRifles</li>
+    </weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+    </ThingDef>
+	
+	<ThingDef ParentName="Cinder_Gun">
+		<defName>Cinder_PCX33A</defName>
+		<label>Ouroboros rifle</label>
+		<description>An ancient Hi-Power rifle,The actual damage it causes is not as simple as it seems.Its special warhead will shatter upon hitting the target, causing serious damage,Not clearing what twisted it, occasionally this gun grows some strange tentacles.</description>
+		<graphicData>
+			<texPath>Things/Weapons/PCX33/PCX33A</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			 <li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>3.0</Mass>
+       <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
+		</statBases>
+		
+		<randomStyleChance>1</randomStyleChance>
+       <randomStyle>
+      <li>
+        <styleDef>CinderStyle_PCX33A</styleDef>
+      </li>
+      <li>
+        <styleDef>CinderStyle_PCX33B</styleDef>
+      </li>
+      <li>
+        <styleDef>CinderStyle_PCX33C</styleDef>
+      </li>
+      <li>
+        <styleDef>CinderStyle_PCX33D</styleDef>
+      </li>
+    </randomStyle>
+		
+	     <costList>
+		  <Steel>120</Steel>
+           <ComponentIndustrial>9</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<researchPrerequisites>
+	  <li>PrecisionRifling</li>
+    </researchPrerequisites>
+		</recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Cinder_Bullet_308APE</defaultProjectile>
+        <warmupTime>0.45</warmupTime>
+        <range>29.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Cinder_Shot_33A</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<weaponTags>
+      <li>CinderRifles</li>
+    </weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+    </ThingDef>
+
+	<ThingDef ParentName="Cinder_Gun">
+		<defName>Cinder_Flint50A</defName>
+		<label>Flint anti material rifle</label>
+		<description>An ancient anti material assault rifle that uses large caliber bullets and can effectively destroy lightly armored targets or military equipment, with a recoil that is difficult to withstand., occasionally this gun grows some strange tentacles.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Flint50/Flint50D</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.24</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			 <li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>3.0</Mass>
+       <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		
+		<randomStyleChance>1</randomStyleChance>
+       <randomStyle>
+      <li>
+        <styleDef>CinderStyle_Flint50A</styleDef>
+      </li>
+      <li>
+        <styleDef>CinderStyle_Flint50B</styleDef>
+      </li>
+      <li>
+        <styleDef>CinderStyle_Flint50C</styleDef>
+      </li>
+      <li>
+        <styleDef>CinderStyle_Flint50D</styleDef>
+      </li>
+    </randomStyle>
+		
+	     <costList>
+		  <Steel>120</Steel>
+           <ComponentIndustrial>9</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<researchPrerequisites>
+	  <li>PrecisionRifling</li>
+    </researchPrerequisites>
+		</recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Cinder_Bullet_50APE</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>32.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+        <soundCast>Shot_Autocannon</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<weaponTags>
+      <li>CinderRifles</li>
+    </weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+    </ThingDef>
+</Defs>

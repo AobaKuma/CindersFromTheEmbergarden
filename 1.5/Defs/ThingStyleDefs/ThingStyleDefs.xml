@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<ThingStyleDef Name="CinderStyle_RotateWeapons"  Abstract="True">		
+		<graphicData>
+			 <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingStyleDef>
+
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_PCX33A</defName>
+    <graphicData>
+      <texPath>Things/Weapons/PCX33/PCX33A</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.2</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_PCX33B</defName>
+    <graphicData>
+      <texPath>Things/Weapons/PCX33/PCX33B</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.13</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_PCX33C</defName>
+    <graphicData>
+      <texPath>Things/Weapons/PCX33/PCX33C</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.2</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_PCX33D</defName>
+    <graphicData>
+      <texPath>Things/Weapons/PCX33/PCX33D</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.2</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  
+  
+    <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_MagistrateA</defName>
+    <graphicData>
+      <texPath>Things/Weapons/Magistrate/MagistrateA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.2</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_MagistrateB</defName>
+    <graphicData>
+      <texPath>Things/Weapons/Magistrate/MagistrateB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.2</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_MagistrateC</defName>
+    <graphicData>
+      <texPath>Things/Weapons/Magistrate/MagistrateC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.2</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_MagistrateD</defName>
+    <graphicData>
+      <texPath>Things/Weapons/Magistrate/MagistrateD</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.2</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_MP12A</defName>
+    <graphicData>
+      <texPath>Things/Weapons/MP12/MP12A</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.3</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_MP12B</defName>
+    <graphicData>
+      <texPath>Things/Weapons/MP12/MP12B</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.4</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_MP12C</defName>
+    <graphicData>
+      <texPath>Things/Weapons/MP12/MP12C</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.3</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_MP12D</defName>
+    <graphicData>
+      <texPath>Things/Weapons/MP12/MP12D</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.3</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_MP12E</defName>
+    <graphicData>
+      <texPath>Things/Weapons/MP12/MP12E</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.3</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_MP12F</defName>
+    <graphicData>
+      <texPath>Things/Weapons/MP12/MP12F</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.3</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_MP12G</defName>
+    <graphicData>
+      <texPath>Things/Weapons/MP12/MP12G</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.4</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_MP12H</defName>
+    <graphicData>
+      <texPath>Things/Weapons/MP12/MP12H</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.3</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_MP12I</defName>
+    <graphicData>
+      <texPath>Things/Weapons/MP12/MP12I</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.4</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_MP12J</defName>
+    <graphicData>
+      <texPath>Things/Weapons/MP12/MP12J</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.3</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_MP12K</defName>
+    <graphicData>
+      <texPath>Things/Weapons/MP12/MP12K</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.3</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_MP12L</defName>
+    <graphicData>
+      <texPath>Things/Weapons/MP12/MP12L</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.3</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_Flint50A</defName>
+    <graphicData>
+      <texPath>Things/Weapons/Flint50/Flint50A</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.24</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_Flint50B</defName>
+    <graphicData>
+      <texPath>Things/Weapons/Flint50/Flint50B</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.24</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_Flint50C</defName>
+    <graphicData>
+      <texPath>Things/Weapons/Flint50/Flint50C</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.24</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_Flint50D</defName>
+    <graphicData>
+      <texPath>Things/Weapons/Flint50/Flint50D</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.24</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+</Defs>
