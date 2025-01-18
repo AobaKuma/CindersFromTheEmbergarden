@@ -132,11 +132,15 @@ namespace Embergarden
 
             if (EquipmentSource.PrimaryVerb.Bursting)
             {
-                foreach (PropertyInfo x in typeof(Verb_LaunchProjectile).GetProperties(BindingFlags.Instance | BindingFlags.NonPublic))
+                foreach (PropertyInfo x in typeof(Verb).GetProperties(BindingFlags.Instance | BindingFlags.NonPublic))
                 {
                     if (x.Name == "burstShotsLeft")
                     {
+                        Log.Message("burstshot");
                         x.SetValue(EquipmentSource.PrimaryVerb, 0);
+
+
+                        Log.Message(x.GetValue(EquipmentSource.PrimaryVerb));
                         break;
                     }
                 }
