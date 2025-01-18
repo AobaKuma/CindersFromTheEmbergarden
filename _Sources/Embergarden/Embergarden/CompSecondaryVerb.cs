@@ -136,7 +136,7 @@ namespace Embergarden
                 {
                     if (x.Name == "burstShotsLeft")
                     {
-                        x.SetValue(x, 0);
+                        x.SetValue(EquipmentSource.PrimaryVerb, 0);
                         break;
                     }
                 }
