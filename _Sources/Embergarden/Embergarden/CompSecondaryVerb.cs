@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 using Verse;
+using Verse.Sound;
 
 namespace Embergarden
 {
@@ -130,6 +131,8 @@ namespace Embergarden
                 EquipmentSource.PrimaryVerb.verbProps = parent.def.Verbs[0];
                 isSecondaryVerbSelected = false;
             }
+
+            Props.sound?.PlayOneShot(new TargetInfo(CasterPawn.Position, CasterPawn.Map));
         }
 
         private void PostAmmoDataLoaded()
@@ -159,6 +162,8 @@ namespace Embergarden
 
         [MustTranslate]
         public string description;
+
+        public SoundDef sound;
 
         public List<StatModifier> statOffsets = new List<StatModifier>();
 
