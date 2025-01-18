@@ -55,7 +55,7 @@ namespace Embergarden
         {
             if (!req.HasThing) return null;
             var altFireMode = (req.Thing as ThingWithComps).GetComps<IAltFireMode>().FirstOrFallback(null);
-            if (altFireMode != null)
+            if (altFireMode != null && altFireMode.IsSecondaryVerbSelected)
             {
                 foreach (var stofs in altFireMode.statOffsets)
                 {
@@ -72,7 +72,7 @@ namespace Embergarden
         {
             if (!req.HasThing) return;
             var altFireMode = (req.Thing as ThingWithComps).GetComps<IAltFireMode>().FirstOrFallback(null);
-            if (altFireMode != null)
+            if (altFireMode != null && altFireMode.IsSecondaryVerbSelected)
             {
                 foreach (var stofs in altFireMode.statOffsets)
                 {
