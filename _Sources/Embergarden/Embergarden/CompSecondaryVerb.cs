@@ -107,6 +107,7 @@ namespace Embergarden
 
         private void SwitchVerb()
         {
+            if (EquipmentSource.PrimaryVerb.Bursting) return;
             /*
             Verb verb = (Verb)Activator.CreateInstance(Props.verbProps.verbClass);
             string text = Verb.CalculateUniqueLoadID(EquipmentSource, 114514);
@@ -128,23 +129,6 @@ namespace Embergarden
             {
                 EquipmentSource.PrimaryVerb.verbProps = parent.def.Verbs[0];
                 isSecondaryVerbSelected = false;
-            }
-
-            if (EquipmentSource.PrimaryVerb.Bursting)
-            {
-                Log.Message("bursting");
-                foreach (PropertyInfo x in typeof(Verb).GetProperties(BindingFlags.Instance | BindingFlags.NonPublic))
-                {
-                    if (x.Name == "burstShotsLeft")
-                    {
-                        Log.Message("burstshot");
-                        x.SetValue(EquipmentSource.PrimaryVerb, 0);
-
-
-                        Log.Message(x.GetValue(EquipmentSource.PrimaryVerb));
-                        break;
-                    }
-                }
             }
         }
 
