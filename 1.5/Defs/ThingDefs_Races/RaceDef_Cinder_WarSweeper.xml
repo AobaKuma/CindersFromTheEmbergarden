@@ -143,7 +143,7 @@
                         <ID>exo minigun</ID>
                         <turret>Cinder_Mounted_EXOminigun</turret>
                         <autoAttack>true</autoAttack>
-                        <warmingTime>5</warmingTime>
+                        <warmingTime>1.1</warmingTime>
                         <angleOffset>-90</angleOffset>
                         <renderNodeProperties>
                             <li>
@@ -176,7 +176,7 @@
                         <ID>anti air turret</ID>
                         <turret>Cinder_Mounted_AA</turret>
                         <autoAttack>true</autoAttack>
-                        <warmingTime>5</warmingTime>
+                        <warmingTime>0.5</warmingTime>
                         <angleOffset>-90</angleOffset>
                         <renderNodeProperties>
                             <li>
@@ -209,7 +209,7 @@
                         <ID>rocket pod right</ID>
                         <turret>Cinder_Mounted_Rocket</turret>
                         <autoAttack>true</autoAttack>
-                        <warmingTime>5</warmingTime>
+                        <warmingTime>10</warmingTime>
                         <angleOffset>-90</angleOffset>
                         <renderNodeProperties>
                             <li>
@@ -242,7 +242,7 @@
                         <ID>rocket pod left</ID>
                         <turret>Cinder_Mounted_Rocket</turret>
                         <autoAttack>true</autoAttack>
-                        <warmingTime>5</warmingTime>
+                        <warmingTime>10</warmingTime>
                         <angleOffset>-90</angleOffset>
                         <renderNodeProperties>
                             <li>
@@ -312,7 +312,7 @@
         </lifeStages>
         <weaponMoney>9999~9999</weaponMoney>
         <weaponTags>
-            <li>MechanoidGunMedium</li>
+             <li>Cinder_GiantMiniGun</li>
         </weaponTags>
         <techHediffsChance>1</techHediffsChance>
         <techHediffsMoney>9999~9999</techHediffsMoney>

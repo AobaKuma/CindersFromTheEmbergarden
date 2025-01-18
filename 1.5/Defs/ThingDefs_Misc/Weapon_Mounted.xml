@@ -37,13 +37,13 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_Autopistol</defaultProjectile>
+				<defaultProjectile>Bullet_Shotgun</defaultProjectile>
 				<warmupTime>0</warmupTime>
 				<range>15.9</range>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-				<burstShotCount>4</burstShotCount>
-				<soundCast>Shot_MachinePistol</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>Shot_Shotgun</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
@@ -78,13 +78,13 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_Autopistol</defaultProjectile>
+				<defaultProjectile>Proj_Rocket</defaultProjectile>
 				<warmupTime>0</warmupTime>
-				<range>15.9</range>
-				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<range>28.9</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<burstShotCount>4</burstShotCount>
-				<soundCast>Shot_MachinePistol</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
+				<soundCast>RocketswarmLauncher_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
@@ -109,11 +109,11 @@
 			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>
-			<AccuracyTouch>0.80</AccuracyTouch>
-			<AccuracyShort>0.6</AccuracyShort>
-			<AccuracyMedium>0.3</AccuracyMedium>
-			<AccuracyLong>0.2</AccuracyLong>
-			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.15</AccuracyTouch>
+      <AccuracyShort>0.25</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.18</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
 			<li>
@@ -121,10 +121,10 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_Autopistol</defaultProjectile>
 				<warmupTime>0</warmupTime>
-				<range>15.9</range>
-				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-				<burstShotCount>4</burstShotCount>
-				<soundCast>Shot_MachinePistol</soundCast>
+				<range>29.9</range>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<burstShotCount>15</burstShotCount>
+				<soundCast>Shot_Minigun</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -150,23 +150,23 @@
 			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>
-			<AccuracyTouch>0.80</AccuracyTouch>
-			<AccuracyShort>0.6</AccuracyShort>
-			<AccuracyMedium>0.3</AccuracyMedium>
-			<AccuracyLong>0.2</AccuracyLong>
-			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+			 <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.87</AccuracyShort>
+      <AccuracyMedium>0.77</AccuracyMedium>
+      <AccuracyLong>0.64</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_Autopistol</defaultProjectile>
+				<defaultProjectile>Bullet_Shotgun</defaultProjectile>
 				<warmupTime>0</warmupTime>
 				<range>15.9</range>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-				<burstShotCount>4</burstShotCount>
-				<soundCast>Shot_MachinePistol</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>Shot_Shotgun</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>

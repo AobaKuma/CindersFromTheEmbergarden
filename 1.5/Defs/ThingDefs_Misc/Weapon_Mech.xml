@@ -10,6 +10,7 @@
             <li>NoSwitch</li>
         </weaponTags>
         <statBases>
+		 <MarketValue>800</MarketValue>
             <Mass>0</Mass>
         </statBases>
         <relicChance>0</relicChance>
@@ -22,30 +23,43 @@
 		<label>exoskeleton gun</label>
 		<description>TODO</description>
 		<graphicData>
-			<texPath>Things/Pawn/Mech/EXOGun</texPath>
+			<texPath>Things/Pawn/Mech/EXOgun</texPath>
 			<drawSize>2</drawSize>
 		</graphicData>
+		<weaponTags>
+            <li>Cinder_EXOGun</li>
+        </weaponTags>
 		<statBases>
 			<AccuracyTouch>0.80</AccuracyTouch>
 			<AccuracyShort>0.6</AccuracyShort>
 			<AccuracyMedium>0.3</AccuracyMedium>
 			<AccuracyLong>0.2</AccuracyLong>
-			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_Autopistol</defaultProjectile>
+				<defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
 				<warmupTime>0</warmupTime>
-				<range>15.9</range>
-				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-				<burstShotCount>4</burstShotCount>
-				<soundCast>Shot_MachinePistol</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
+				<range>29.9</range>
+				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>Shot_Autocannon</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(1.2,1.2)</drawSize>
+				<offsets>
+					<li>(0.5,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
   	</ThingDef>
 
 	<ThingDef ParentName="Cinder_MechGun">
@@ -56,13 +70,16 @@
 			<texPath>Things/Pawn/Mech/GiantHEATRifle</texPath>
 			<drawSize>2.5</drawSize>
 		</graphicData>
+		<weaponTags>
+            <li>Cinder_HEATRifle</li>
+        </weaponTags>
 		<equippedAngleOffset>45</equippedAngleOffset>
 		<uiIconPath>Things/Pawn/Mech/GiantHEATRifle_UIicon</uiIconPath>
 		<statBases>
 			<AccuracyTouch>0.80</AccuracyTouch>
-			<AccuracyShort>0.6</AccuracyShort>
-			<AccuracyMedium>0.3</AccuracyMedium>
-			<AccuracyLong>0.2</AccuracyLong>
+			<AccuracyShort>0.7</AccuracyShort>
+			<AccuracyMedium>0.8</AccuracyMedium>
+			<AccuracyLong>0.8</AccuracyLong>
 			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
@@ -71,7 +88,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_Autopistol</defaultProjectile>
 				<warmupTime>0</warmupTime>
-				<range>15.9</range>
+				<range>35.9</range>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 				<burstShotCount>4</burstShotCount>
 				<soundCast>Shot_MachinePistol</soundCast>
@@ -89,28 +106,41 @@
 			<texPath>Things/Pawn/Mech/GiantMiniGun</texPath>
 			<drawSize>2.5</drawSize>
 		</graphicData>
+		<weaponTags>
+            <li>Cinder_GiantMiniGun</li>
+        </weaponTags>
 		<equippedAngleOffset>45</equippedAngleOffset>
 		<uiIconPath>Things/Pawn/Mech/GiantMiniGun_UIicon</uiIconPath>
 		<statBases>
-			<AccuracyTouch>0.80</AccuracyTouch>
-			<AccuracyShort>0.6</AccuracyShort>
-			<AccuracyMedium>0.3</AccuracyMedium>
-			<AccuracyLong>0.2</AccuracyLong>
-			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.15</AccuracyTouch>
+      <AccuracyShort>0.25</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.18</AccuracyLong>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_Autopistol</defaultProjectile>
-				<warmupTime>0</warmupTime>
-				<range>15.9</range>
-				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-				<burstShotCount>4</burstShotCount>
-				<soundCast>Shot_MachinePistol</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
+				<defaultProjectile>Cinder_Bullet_50APE</defaultProjectile>
+				<warmupTime>0.25</warmupTime>
+				<range>33.9</range>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<burstShotCount>25</burstShotCount>
+				<soundCast>Shot_Autocannon</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(1.2,1.2)</drawSize>
+				<offsets>
+					<li>(0.5,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
   	</ThingDef>
 </Defs>

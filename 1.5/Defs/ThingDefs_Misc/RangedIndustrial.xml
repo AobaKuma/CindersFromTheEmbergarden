@@ -35,7 +35,7 @@
   
   <ThingDef ParentName="BaseBullet">
     <defName>Cinder_Bullet_50APE</defName>
-    <label>.50 Multiple bullet</label>
+    <label>.50 bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -244,7 +244,7 @@
     </randomStyle>
 		
 	     <costList>
-		  <Steel>50</Steel>
+		  <Steel>75</Steel>
            <ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<recipeMaker>
@@ -423,7 +423,8 @@
 		
 	     <costList>
 		  <Steel>120</Steel>
-           <ComponentIndustrial>9</ComponentIndustrial>
+		  <Cinder_AmorphousPolymer>50</Cinder_AmorphousPolymer>
+           <ComponentIndustrial>10</ComponentIndustrial>
 		</costList>
 		<recipeMaker>
 			<skillRequirements>
@@ -441,7 +442,7 @@
         <warmupTime>1</warmupTime>
         <range>32.9</range>
         <burstShotCount>3</burstShotCount>
-        <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
         <soundCast>Shot_Autocannon</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -470,4 +471,6 @@
 			</li>
 		</tools>
     </ThingDef>
+	
+	
 </Defs>

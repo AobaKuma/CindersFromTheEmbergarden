@@ -153,7 +153,7 @@
                         <ID>exo turret</ID>
                         <turret>Cinder_Mounted_EXOturret</turret>
                         <autoAttack>true</autoAttack>
-                        <warmingTime>5</warmingTime>
+                        <warmingTime>0.9</warmingTime>
                         <angleOffset>-90</angleOffset>
                         <renderNodeProperties>
                             <li>
@@ -185,7 +185,7 @@
                         <ID>exo minigun</ID>
                         <turret>Cinder_Mounted_EXOminigun</turret>
                         <autoAttack>true</autoAttack>
-                        <warmingTime>5</warmingTime>
+                        <warmingTime>1.1</warmingTime>
                         <angleOffset>-90</angleOffset>
                         <renderNodeProperties>
                             <li>
@@ -255,7 +255,7 @@
         </lifeStages>
         <weaponMoney>9999~9999</weaponMoney>
         <weaponTags>
-            <li>MechanoidGunMedium</li>
+            <li>Cinder_EXOGun</li>
         </weaponTags>
         <techHediffsChance>1</techHediffsChance>
         <techHediffsMoney>9999~9999</techHediffsMoney>
