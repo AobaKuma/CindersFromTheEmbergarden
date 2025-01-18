@@ -32,7 +32,7 @@ namespace Embergarden
         {
             get
             {
-                if (AltFireMode != null && Ext != null)
+                if (AltFireMode != null && Ext != null && AltFireMode.IsSecondaryVerbSelected)
                 {
                     return Ext.graphicData.Graphic;
                 }
