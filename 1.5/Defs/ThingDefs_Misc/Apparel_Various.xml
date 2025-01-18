@@ -681,9 +681,6 @@
 			</stuffCategories>
 			<defaultStuff>Cinder_AmorphousPolymer</defaultStuff>
 		<costStuffCount>50</costStuffCount>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>400</MaxHitPoints>
 			<WorkToMake>34000</WorkToMake>

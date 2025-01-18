@@ -77,6 +77,7 @@
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
+				<forcedMissRadius>2.9</forcedMissRadius>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Proj_Rocket</defaultProjectile>
 				<warmupTime>0</warmupTime>

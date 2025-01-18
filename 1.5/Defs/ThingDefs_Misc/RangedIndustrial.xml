@@ -34,6 +34,24 @@
   </ThingDef>
   
   <ThingDef ParentName="BaseBullet">
+    <defName>Cinder_Bullet_RPG</defName>
+    <label>Energy gathering bomb</label>
+    <graphicData>
+      <texPath>Things/Weapons/Bullet_RPG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <explosionRadius>2.9</explosionRadius>
+      <damageAmountBase>50</damageAmountBase>
+      <stoppingPower>5</stoppingPower>
+      <armorPenetrationBase>1</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
     <defName>Cinder_Bullet_50APE</defName>
     <label>.50 bullet</label>
     <graphicData>
@@ -472,5 +490,114 @@
 		</tools>
     </ThingDef>
 	
-	
+	<ThingDef ParentName="Cinder_Gun">
+		<defName>Cinder_Dragonslayer</defName>
+		<thingClass>Embergarden.ThingClass_AltGraphic</thingClass>
+		<label>Dragon slayer Bow</label>
+		<description>An ancient extended range anti armor rocket launcher that destroys heavy armor by launching tentacle shaped charge bombs inside. It can also transform into a minigun to deal with cluster targets.</description>
+		<graphicData>
+			<texPath>Things/Weapons/DragonslayerBow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.265</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			 <li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>10.0</Mass>
+        <AccuracyTouch>0.84</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.92</AccuracyMedium>
+			<AccuracyLong>0.90</AccuracyLong>
+		</statBases>
+	     <costList>
+		  <Steel>130</Steel>
+		  <Cinder_AmorphousPolymer>150</Cinder_AmorphousPolymer>
+           <ComponentIndustrial>20</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<researchPrerequisites>
+	  <li>PrecisionRifling</li>
+    </researchPrerequisites>
+		</recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+		 <forcedMissRadius>0.5</forcedMissRadius>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Cinder_Bullet_RPG</defaultProjectile>
+        <warmupTime>4.5</warmupTime>
+        <range>40.9</range>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	<weaponTags>
+      <li>CinderHeavy</li>
+    </weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<comps>
+      <li Class="Embergarden.CompProperties_SecondaryVerb">
+        <verbProps>
+          <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Minigun</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>25</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_Minigun</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        </verbProps>
+		<statOffsets>
+		 <AccuracyTouch>-0.69</AccuracyTouch>
+         <AccuracyShort>-0.7</AccuracyShort>
+        <AccuracyMedium>-0.67</AccuracyMedium>
+         <AccuracyLong>-0.72</AccuracyLong>
+		</statOffsets>
+        <mainWeaponLabel>Rocket</mainWeaponLabel>
+        <mainCommandIcon>UI/Icon/RPG</mainCommandIcon>
+        <secondaryWeaponLabel>Minigun</secondaryWeaponLabel>
+        <secondaryCommandIcon>UI/Icon/Minigun</secondaryCommandIcon>
+        <description>Switch weapon form</description>
+		<sound>Cinder_Transform</sound>
+      </li>
+    </comps>
+	<modExtensions>
+			<li Class="Embergarden.DefModExtension_WeaponAltGraphic">
+				<graphicData>
+			<texPath>Things/Weapons/DragonslayerRapidFire</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+			</li>
+		</modExtensions>
+    </ThingDef>
 </Defs>
