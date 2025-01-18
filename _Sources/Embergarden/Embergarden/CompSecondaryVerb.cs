@@ -1,5 +1,6 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 using Verse;
 
@@ -127,6 +128,18 @@ namespace Embergarden
             {
                 EquipmentSource.PrimaryVerb.verbProps = parent.def.Verbs[0];
                 isSecondaryVerbSelected = false;
+            }
+
+            if (EquipmentSource.PrimaryVerb.Bursting)
+            {
+                foreach (PropertyInfo x in typeof(Verb_LaunchProjectile).GetProperties(BindingFlags.Instance | BindingFlags.NonPublic))
+                {
+                    if (x.Name == "burstShotsLeft")
+                    {
+                        x.SetValue(x, 0);
+                        break;
+                    }
+                }
             }
         }
 
