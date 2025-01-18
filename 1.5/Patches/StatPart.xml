@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/StatDef[defName="AccuracyTouch"]/parts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/StatDef[defName="AccuracyTouch"]</xpath>
+			<value>
+				<parts />
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/StatDef[defName="AccuracyShort"]/parts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/StatDef[defName="AccuracyShort"]</xpath>
+			<value>
+				<parts />
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/StatDef[defName="AccuracyMedium"]/parts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/StatDef[defName="AccuracyMedium"]</xpath>
+			<value>
+				<parts />
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/StatDef[defName="AccuracyLong"]/parts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/StatDef[defName="AccuracyLong"]</xpath>
+			<value>
+				<parts />
+			</value>
+		</nomatch>
+	</Operation>
+
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/StatDef[defName = "AccuracyTouch" or defName = "AccuracyShort" or defName = "AccuracyMedium" or defName = "AccuracyLong"]/parts</xpath>
 		<value>
