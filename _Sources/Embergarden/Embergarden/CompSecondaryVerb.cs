@@ -5,7 +5,7 @@ using Verse;
 
 namespace Embergarden
 {
-    public class CompSecondaryVerb : ThingComp, IEquippedGizmo
+    public class CompSecondaryVerb : ThingComp, IEquippedGizmo, IAltFireMode
     {
         private Verb verbInt;
         private CompEquippable compEquippableInt;
@@ -165,5 +165,10 @@ namespace Embergarden
     public interface IEquippedGizmo
     {
         IEnumerable<Gizmo> CompGetGizmosEquipped();
+    }
+
+    public interface IAltFireMode
+    {
+        bool IsSecondaryVerbSelected { get; }
     }
 }

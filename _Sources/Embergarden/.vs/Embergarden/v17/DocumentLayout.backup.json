@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\harmonypatch\\pawngizmopatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\harmonypatch\\pawngizmopatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\compsecondaryverb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\compsecondaryverb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\harmonypatch\\pawngizmopatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\harmonypatch\\pawngizmopatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\harmonypatch\\patch_drawvehicleturret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 204,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +38,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CompSecondaryVerb.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\CompSecondaryVerb.cs",
               "RelativeDocumentMoniker": "Embergarden\\CompSecondaryVerb.cs",
@@ -51,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "PawnGizmoPatch.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\HarmonyPatch\\PawnGizmoPatch.cs",
               "RelativeDocumentMoniker": "Embergarden\\HarmonyPatch\\PawnGizmoPatch.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\HarmonyPatch\\PawnGizmoPatch.cs",
               "RelativeToolTip": "Embergarden\\HarmonyPatch\\PawnGizmoPatch.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-18T10:25:06.021Z",
               "EditorCaption": ""
@@ -77,7 +77,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "D.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\D.cs",
               "RelativeDocumentMoniker": "Embergarden\\D.cs",

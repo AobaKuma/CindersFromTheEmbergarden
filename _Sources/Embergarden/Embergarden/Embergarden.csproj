@@ -89,15 +89,19 @@
     <Compile Include="CompAbilityEffect_ScorchWound.cs" />
     <Compile Include="CompAbilityEffect_SpawnWithFaction.cs" />
     <Compile Include="CompProperties_Transformable.cs" />
+    <Compile Include="CompSecondaryVerb.cs" />
     <Compile Include="CompUseEffect_RandomAbilityGain.cs" />
     <Compile Include="Comp_TurretTransformable.cs" />
     <Compile Include="D.cs" />
     <Compile Include="Gizmo_AttachmentShieldStatus.cs" />
     <Compile Include="HarmonyPatch\HarmonyEntry.cs" />
     <Compile Include="HarmonyPatch\Patch_DrawVehicleTurret.cs" />
+    <Compile Include="HarmonyPatch\PawnGizmoPatch.cs" />
     <Compile Include="HediffComp_CustomRegeneration.cs" />
+    <Compile Include="HediffComp_LimitedResurrect.cs" />
     <Compile Include="HediffComp_ProtectiveShield.cs" />
     <Compile Include="Hediff_DynamicCap.cs" />
+    <Compile Include="ThingClass_AltGraphic.cs" />
     <Compile Include="ThinkNode_ConditionalEnemyInRange.cs" />
     <Compile Include="MultiTurrets\CompMultipleTurretGun.cs" />
     <Compile Include="MultiTurrets\CompPropertiesMultipleTurretGun.cs" />
@@ -107,6 +111,7 @@
     <Compile Include="MultiTurrets\TurretGizmos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThoughtWorker_OtherHasTrait.cs" />
+    <Compile Include="Verb_ArcSprayProjectile.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Hediffs\" />
