@@ -47,7 +47,7 @@
 									</li>
 									<li>
 										<weight>5</weight>
-										<only>(0.15,0.15,0.15)</only>
+										<only>(0.2,0.2,0.2)</only>
 									</li>
 									<li>
 										<weight>5</weight>
@@ -83,7 +83,7 @@
 							</li>
 						</options>
 					</oldHairColorGen>
-					<headOffset>(0.00, 0.05)</headOffset>
+					<headOffset>(0.00, 0.015)</headOffset>
 					<headOffsetDirectional>
 						<north>
 							<offset>(0.0,0)</offset>

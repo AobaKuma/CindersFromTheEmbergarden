@@ -47,7 +47,8 @@
   <FacialAnimation.LidTypeDef>
 	  <defName>Cinder_LidNormal7</defName>
 	  <texPath>Things/Pawn/Cinder/Lids/Normal7</texPath>
-	  <shader>Map/Transparent</shader>
+	 <shader>Map/CutoutSkin</shader>
+    <shaderColorOverride>Map/CutoutSkinOverride</shaderColorOverride>
 	  <raceName>Alien_Cinder</raceName>
   </FacialAnimation.LidTypeDef>  
 </Defs>

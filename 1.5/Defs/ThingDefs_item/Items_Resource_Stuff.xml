@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Cinder_AmorphousPolymer</defName>
+    <label>Amorphous polymer</label>
+    <description>A hard material with a strange burnt smell and rough biological tentacle tissue attached, resembling coke but completely non flammable.This material almost completely blocks psychic flows unless processed in a special way.</description>
+    <graphicData>
+      <texPath>Things/Item/AmorphousPolymer</texPath> <!-- placeholder - art queued -->
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <genericMarketSellable>false</genericMarketSellable>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MarketValue>0.75</MarketValue>
+      <Mass>0.25</Mass>
+      <StuffPower_Armor_Sharp>1.1</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.7</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.7</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>2.5</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.1</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <commonality>0</commonality>
+      <allowedInStuffGeneration>false</allowedInStuffGeneration>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(83, 84, 83)</color>
+      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+      <statOffsets>
+        <Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>2.5</MaxHitPoints>
+        <Beauty>0.25</Beauty>
+        <Flammability>0</Flammability>
+        <WorkToMake>2.5</WorkToMake>
+        <WorkToBuild>2.5</WorkToBuild>
+        <DoorOpenSpeed>1</DoorOpenSpeed>
+        <BedRestEffectiveness>0.85</BedRestEffectiveness>
+        <MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+      <statFactorsQuality>
+        <li>
+          <stat>PsychicSensitivityFactor</stat>
+          <awful>0.6</awful>
+          <poor>0.5</poor>
+          <normal>0.4</normal>
+          <good>0.3</good>
+          <excellent>0.1</excellent>
+          <masterwork>0</masterwork>
+          <legendary>0</legendary>
+        </li>
+      </statFactorsQuality>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+  
+
+  <ThingDef>
+    <defName>Cinder_BurntStrangeMeat</defName>
+    <label>Burnt strange meat</label>
+    <description>A burnt tentacle meat separated from amorphous polymer, edible and without strange taste, but usually used as a material for some serum.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <selectable>true</selectable>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <tickerType>Rare</tickerType>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Item</altitudeLayer>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>75</stackLimit>
+    <alwaysHaulable>true</alwaysHaulable>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <tradeability>Sellable</tradeability>
+    <pathCost>14</pathCost>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Beauty>-6</Beauty>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>0.03</Mass>
+      <Flammability>0</Flammability>
+      <Nutrition>0.05</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+      <MarketValue>0.25</MarketValue>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/BurntStrangeMeat</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>MeatRaw</li>
+    </thingCategories>
+    <ingredient>
+      <mergeCompatibilityTags>
+        <li>BurntStrangeMeat</li>
+      </mergeCompatibilityTags>
+    </ingredient>
+    <ingestible>
+      <foodType>Meat</foodType>
+      <preferability>RawBad</preferability>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>RawMeat_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li>
+        <compClass>CompHarbingerTreeConsumable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>
