@@ -132,6 +132,7 @@ namespace Embergarden
 
             if (EquipmentSource.PrimaryVerb.Bursting)
             {
+                Log.Message("bursting");
                 foreach (PropertyInfo x in typeof(Verb).GetProperties(BindingFlags.Instance | BindingFlags.NonPublic))
                 {
                     if (x.Name == "burstShotsLeft")
