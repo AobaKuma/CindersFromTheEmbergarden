@@ -45,4 +45,43 @@ namespace Embergarden
     {
         public GraphicData graphicData;
     }
+
+    public class StatPart_SecondaryMode : StatPart
+    {
+        [MustTranslate]
+        public string desc;
+
+        public override string ExplanationPart(StatRequest req)
+        {
+            if (!req.HasThing) return null;
+            var altFireMode = (req.Thing as ThingWithComps).GetComps<IAltFireMode>().FirstOrFallback(null);
+            if (altFireMode != null)
+            {
+                foreach (var stofs in altFireMode.statOffsets)
+                {
+                    if (stofs.stat == this.parentStat)
+                    {
+                        return desc.Formatted(stofs.value.ToString().Named("OFFSET"));
+                    }
+                }
+            }
+            return null;
+        }
+
+        public override void TransformValue(StatRequest req, ref float val)
+        {
+            if (!req.HasThing) return;
+            var altFireMode = (req.Thing as ThingWithComps).GetComps<IAltFireMode>().FirstOrFallback(null);
+            if (altFireMode != null)
+            {
+                foreach (var stofs in altFireMode.statOffsets)
+                {
+                    if (stofs.stat == this.parentStat)
+                    {
+                        val += stofs.value;
+                    }
+                }
+            }
+        }
+    }
 }

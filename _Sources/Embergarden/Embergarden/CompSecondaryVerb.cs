@@ -48,6 +48,8 @@ namespace Embergarden
             }
         }
 
+        public List<StatModifier> statOffsets => Props.statOffsets;
+
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
             if (CasterPawn == null || CasterPawn.Faction.Equals(Faction.OfPlayer))
@@ -156,6 +158,8 @@ namespace Embergarden
         [MustTranslate]
         public string description;
 
+        public List<StatModifier> statOffsets = new List<StatModifier>();
+
         public CompProperties_SecondaryVerb()
         {
             compClass = typeof(CompSecondaryVerb);
@@ -170,5 +174,7 @@ namespace Embergarden
     public interface IAltFireMode
     {
         bool IsSecondaryVerbSelected { get; }
+
+        List<StatModifier> statOffsets { get; }
     }
 }
