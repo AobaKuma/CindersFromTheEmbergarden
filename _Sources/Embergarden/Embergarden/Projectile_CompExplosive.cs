@@ -16,7 +16,7 @@ namespace Embergarden
             var comps = this.GetComps<CompExplosive>();
             foreach (var comp in comps)
             {
-                detonate.Invoke(comp, [Map]);
+                detonate.Invoke(comp, [Map, false]);
             }
             base.Impact(hitThing, blockedByShield);
         }
