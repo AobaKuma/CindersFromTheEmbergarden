@@ -1,321 +1,321 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <PawnRenderTreeDef>
-        <defName>Cinder_WarSweeper</defName>
-        <root Class="PawnRenderNodeProperties_Parent">
-            <debugLabel>Root</debugLabel>
-            <tagDef>Root</tagDef>
-            <children>
-                <li>
-                    <debugLabel>Body</debugLabel>
-                    <nodeClass>PawnRenderNode_AnimalPart</nodeClass>
-                    <workerClass>PawnRenderNodeWorker_Body</workerClass>
-                    <tagDef>Body</tagDef>
-                    <skipFlag>Body</skipFlag>
-                    <colorType>Skin</colorType>
-                    <useRottenColor>true</useRottenColor>
-                    <useSkinShader>true</useSkinShader>
-                    <children>
-                        <li Class="PawnRenderNodeProperties_Parent">
-                            <debugLabel>Apparel root</debugLabel>
-                            <tagDef>ApparelBody</tagDef>
-                            <baseLayer>20</baseLayer>
-                            <drawSize>1.1</drawSize>
-                        </li>
-                        <li Class="PawnRenderNodeProperties_Overlay">
-                            <debugLabel>Firefoam</debugLabel>
-                            <workerClass>PawnRenderNodeWorker_OverlayFirefoam</workerClass>
-                            <overlayLayer>Body</overlayLayer>
-                            <baseLayer>40</baseLayer>
-                        </li>
-                    </children>
-                </li>
-                <li>
-                    <debugLabel>war mech top</debugLabel>
-                    <nodeClass>PawnRenderNode</nodeClass>
-                    <workerClass>PawnRenderNodeWorker</workerClass>
-                    <parentTagDef>Body</parentTagDef>
-                    <baseLayer>5</baseLayer>
-                    <drawSize>2.4</drawSize>
-                    <pawnType>Any</pawnType>
-                    <useGraphic>true</useGraphic>
-                    <texPath>Things/Pawn/Mech/WarSweeper_top</texPath>
-                    <drawData>
-                        <defaultData>
-                            <offset>(0,0,0)</offset>
-                        </defaultData>
-                    </drawData>
-                </li>
-                <li Class="PawnRenderNodeProperties_Carried">
-                    <debugLabel>Weapon/carried thing</debugLabel>
-                    <workerClass>PawnRenderNodeWorker_Carried</workerClass>
-                </li>
-            </children>
-        </root>
-    </PawnRenderTreeDef>
+	<PawnRenderTreeDef>
+		<defName>Cinder_WarSweeper</defName>
+		<root Class="PawnRenderNodeProperties_Parent">
+			<debugLabel>Root</debugLabel>
+			<tagDef>Root</tagDef>
+			<children>
+				<li>
+					<debugLabel>Body</debugLabel>
+					<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+					<workerClass>PawnRenderNodeWorker_Body</workerClass>
+					<tagDef>Body</tagDef>
+					<skipFlag>Body</skipFlag>
+					<colorType>Skin</colorType>
+					<useRottenColor>true</useRottenColor>
+					<useSkinShader>true</useSkinShader>
+					<children>
+						<li Class="PawnRenderNodeProperties_Parent">
+							<debugLabel>Apparel root</debugLabel>
+							<tagDef>ApparelBody</tagDef>
+							<baseLayer>20</baseLayer>
+							<drawSize>1.1</drawSize>
+						</li>
+						<li Class="PawnRenderNodeProperties_Overlay">
+							<debugLabel>Firefoam</debugLabel>
+							<workerClass>PawnRenderNodeWorker_OverlayFirefoam</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<baseLayer>40</baseLayer>
+						</li>
+					</children>
+				</li>
+				<li>
+					<debugLabel>war mech top</debugLabel>
+					<nodeClass>PawnRenderNode</nodeClass>
+					<workerClass>PawnRenderNodeWorker</workerClass>
+					<parentTagDef>Body</parentTagDef>
+					<baseLayer>5</baseLayer>
+					<drawSize>2.4</drawSize>
+					<pawnType>Any</pawnType>
+					<useGraphic>true</useGraphic>
+					<texPath>Things/Pawn/Mech/WarSweeper_top</texPath>
+					<drawData>
+						<defaultData>
+							<offset>(0,0,0)</offset>
+						</defaultData>
+					</drawData>
+				</li>
+				<li Class="PawnRenderNodeProperties_Carried">
+					<debugLabel>Weapon/carried thing</debugLabel>
+					<workerClass>PawnRenderNodeWorker_Carried</workerClass>
+				</li>
+			</children>
+		</root>
+	</PawnRenderTreeDef>
 
-    <ThingDef ParentName="Cinder_BaseMechaWalker">
-        <defName>Cinder_Mech_WarSweeper</defName>
-        <label>war sweeper</label>
-        <description>TODO</description>
-        <tools>
-            <li>
-                <label>left fist</label>
-                <labelNoLocation>fist</labelNoLocation>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>18.0</power>
-                <cooldownTime>2.5</cooldownTime>
-                <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
-                <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-            </li>
-            <li>
-                <label>right fist</label>
-                <labelNoLocation>fist</labelNoLocation>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>18.0</power>
-                <cooldownTime>2.5</cooldownTime>
-                <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
-                <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-            </li>
-            <li>
-                <label>head</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>15.5</power>
-                <cooldownTime>2</cooldownTime>
-                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-                <chanceFactor>0.2</chanceFactor>
-            </li>
-        </tools>
-        <race>
-            <renderTree>Cinder_WarSweeper</renderTree>
-            <body>Cinder_ErodedEXO</body>
-            <baseHealthScale>16</baseHealthScale>
-            <detritusLeavings>
-                <li>
-                    <def>Cinder_ChunkSlag</def>
-                    <spawnChance>0.75</spawnChance>
-                </li>
-                <li>
-                    <def>Cinder_ChunkSlag</def>
-                    <spawnChance>0.5</spawnChance>
-                </li>
-                <li>
-                    <def>Cinder_ChunkSlag</def>
-                    <spawnChance>0.25</spawnChance>
-                </li>
-            </detritusLeavings>
-        </race>
-        <statBases>
-            <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">5</BandwidthCost>
-        </statBases>
-        <comps>
-            <li Class="Embergarden.CompProperties_VehicleWeapon">
-                <drawData>
-                    <dataEast>
-                        <offset>(1.2,0,-0.25)</offset>
-                    </dataEast>
-                    <dataWest>
-                        <offset>(-1.,0,0.75)</offset>
-                        <layer>0</layer>
-                    </dataWest>
-                    <dataSouth>
-                        <offset>(-0.4,0,-0.8)</offset>
-                        <layer>1</layer>
-                    </dataSouth>
-                    <dataNorth>
-                        <offset>(0.5,0,1.25)</offset>
-                        <layer>0</layer>
-                    </dataNorth>
-                </drawData>
-                <turretRotationFollowPawn>true</turretRotationFollowPawn>
-                <rotationSmoothTime>0.12</rotationSmoothTime>
-            </li>
-            <li Class="Embergarden.CompProperties_MultipleTurretGun">
-                <subTurrets>
-                    <li>
-                        <ID>exo minigun</ID>
-                        <turret>Cinder_Mounted_EXOminigun</turret>
-                        <autoAttack>true</autoAttack>
-                        <warmingTime>1.1</warmingTime>
-                        <angleOffset>-90</angleOffset>
-                        <renderNodeProperties>
-                            <li>
-                                <debugLabel>exo minigun</debugLabel>
-                                <nodeClass>Embergarden.PawnRenderNode_SubTurretGun</nodeClass>
-                                <workerClass>Embergarden.PawnRenderNodeWorker_SubTurretGun</workerClass>
-                                <parentTagDef>Body</parentTagDef>
-                                <drawSize>0.75</drawSize>
-                                <baseLayer>9</baseLayer>
-                                <pawnType>Any</pawnType>
-                                <drawData>
-                                    <dataEast>
-                                        <offset>(.55,0,1.25)</offset>
-                                    </dataEast>
-                                    <dataWest>
-                                        <offset>(-.35,0,-.4)</offset>
-                                        <rotationOffset>180</rotationOffset>
-                                    </dataWest>
-                                    <dataSouth>
-                                        <offset>(1.05,0,.15)</offset>
-                                    </dataSouth>
-                                    <dataNorth>
-                                        <offset>(-1.0,0,1.0)</offset>
-                                    </dataNorth>
-                                </drawData>
-                            </li>
-                        </renderNodeProperties>
-                    </li>
-                    <li>
-                        <ID>anti air turret</ID>
-                        <turret>Cinder_Mounted_AA</turret>
-                        <autoAttack>true</autoAttack>
-                        <warmingTime>0.5</warmingTime>
-                        <angleOffset>-90</angleOffset>
-                        <renderNodeProperties>
-                            <li>
-                                <debugLabel>anti air turret</debugLabel>
-                                <nodeClass>Embergarden.PawnRenderNode_SubTurretGun</nodeClass>
-                                <workerClass>Embergarden.PawnRenderNodeWorker_SubTurretGun</workerClass>
-                                <parentTagDef>Body</parentTagDef>
-                                <drawSize>0.75</drawSize>
-                                <baseLayer>9</baseLayer>
-                                <pawnType>Any</pawnType>
-                                <drawData>
-                                    <dataEast>
-                                        <offset>(-0.4,0,-0.4)</offset>
-                                    </dataEast>
-                                    <dataWest>
-                                        <offset>(0.4,0,1.3)</offset>
-                                        <rotationOffset>180</rotationOffset>
-                                    </dataWest>
-                                    <dataSouth>
-                                        <offset>(-0.95,0,0.95)</offset>
-                                    </dataSouth>
-                                    <dataNorth>
-                                        <offset>(1.10,0,0.10)</offset>
-                                    </dataNorth>
-                                </drawData>
-                            </li>
-                        </renderNodeProperties>
-                    </li>
-                    <li>
-                        <ID>rocket pod right</ID>
-                        <turret>Cinder_Mounted_Rocket</turret>
-                        <autoAttack>true</autoAttack>
-                        <warmingTime>10</warmingTime>
-                        <angleOffset>-90</angleOffset>
-                        <renderNodeProperties>
-                            <li>
-                                <debugLabel>rocket pod right</debugLabel>
-                                <nodeClass>Embergarden.PawnRenderNode_SubTurretGun</nodeClass>
-                                <workerClass>Embergarden.PawnRenderNodeWorker_SubTurretGun</workerClass>
-                                <parentTagDef>Body</parentTagDef>
-                                <drawSize>0.75</drawSize>
-                                <baseLayer>9</baseLayer>
-                                <pawnType>Any</pawnType>
-                                <drawData>
-                                    <dataEast>
-                                        <offset>(-0.75,0,-1.25)</offset>
-                                    </dataEast>
-                                    <dataWest>
-                                        <offset>(0.75,0,1.55)</offset>
-                                        <rotationOffset>180</rotationOffset>
-                                    </dataWest>
-                                    <dataSouth>
-                                        <offset>(-1.55,0,1.05)</offset>
-                                    </dataSouth>
-                                    <dataNorth>
-                                        <offset>(1.55,0,-0.5)</offset>
-                                    </dataNorth>
-                                </drawData>
-                            </li>
-                        </renderNodeProperties>
-                    </li>
-                    <li>
-                        <ID>rocket pod left</ID>
-                        <turret>Cinder_Mounted_Rocket</turret>
-                        <autoAttack>true</autoAttack>
-                        <warmingTime>10</warmingTime>
-                        <angleOffset>-90</angleOffset>
-                        <renderNodeProperties>
-                            <li>
-                                <debugLabel>rocket pod left</debugLabel>
-                                <nodeClass>Embergarden.PawnRenderNode_SubTurretGun</nodeClass>
-                                <workerClass>Embergarden.PawnRenderNodeWorker_SubTurretGun</workerClass>
-                                <parentTagDef>Body</parentTagDef>
-                                <drawSize>0.75</drawSize>
-                                <baseLayer>9</baseLayer>
-                                <pawnType>Any</pawnType>
-                                <drawData>
-                                    <dataEast>
-                                        <offset>(-0.75,0,1.55)</offset>
-                                    </dataEast>
-                                    <dataWest>
-                                        <offset>(0.75,0,-1.25)</offset>
-                                        <rotationOffset>180</rotationOffset>
-                                    </dataWest>
-                                    <dataSouth>
-                                        <offset>(1.55,0,1.05)</offset>
-                                    </dataSouth>
-                                    <dataNorth>
-                                        <offset>(-1.55,0,-0.5)</offset>
-                                    </dataNorth>
-                                </drawData>
-                            </li>
-                        </renderNodeProperties>
-                    </li>
-                </subTurrets>
-            </li>
-            <li Class="AnimalBehaviours.CompProperties_Draftable">
-                <makeNonFleeingToo>true</makeNonFleeingToo>
-            </li>
-        </comps>
-    </ThingDef>
+	<ThingDef ParentName="Cinder_BaseMechaWalker">
+		<defName>Cinder_Mech_WarSweeper</defName>
+		<label>war sweeper</label>
+		<description>TODO</description>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<labelNoLocation>fist</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18.0</power>
+				<cooldownTime>2.5</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>right fist</label>
+				<labelNoLocation>fist</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18.0</power>
+				<cooldownTime>2.5</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15.5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<renderTree>Cinder_WarSweeper</renderTree>
+			<body>Cinder_ErodedEXO</body>
+			<baseHealthScale>16</baseHealthScale>
+			<detritusLeavings>
+				<li>
+					<def>Cinder_ChunkSlag</def>
+					<spawnChance>0.75</spawnChance>
+				</li>
+				<li>
+					<def>Cinder_ChunkSlag</def>
+					<spawnChance>0.5</spawnChance>
+				</li>
+				<li>
+					<def>Cinder_ChunkSlag</def>
+					<spawnChance>0.25</spawnChance>
+				</li>
+			</detritusLeavings>
+		</race>
+		<statBases>
+			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">5</BandwidthCost>
+		</statBases>
+		<comps>
+			<li Class="Embergarden.CompProperties_VehicleWeapon">
+				<drawData>
+					<dataEast>
+						<offset>(1.2,0,-0.25)</offset>
+					</dataEast>
+					<dataWest>
+						<offset>(-1.,0,0.75)</offset>
+						<layer>0</layer>
+					</dataWest>
+					<dataSouth>
+						<offset>(-0.4,0,-0.8)</offset>
+						<layer>1</layer>
+					</dataSouth>
+					<dataNorth>
+						<offset>(0.5,0,1.25)</offset>
+						<layer>0</layer>
+					</dataNorth>
+				</drawData>
+				<turretRotationFollowPawn>true</turretRotationFollowPawn>
+				<rotationSmoothTime>0.12</rotationSmoothTime>
+			</li>
+			<li Class="Embergarden.CompProperties_MultipleTurretGun">
+				<subTurrets>
+					<li>
+						<ID>exo minigun</ID>
+						<turret>Cinder_Mounted_EXOminigun</turret>
+						<autoAttack>true</autoAttack>
+						<warmingTime>1.1</warmingTime>
+						<angleOffset>-90</angleOffset>
+						<renderNodeProperties>
+							<li>
+								<debugLabel>exo minigun</debugLabel>
+								<nodeClass>Embergarden.PawnRenderNode_SubTurretGun</nodeClass>
+								<workerClass>Embergarden.PawnRenderNodeWorker_SubTurretGun</workerClass>
+								<parentTagDef>Body</parentTagDef>
+								<drawSize>0.75</drawSize>
+								<baseLayer>9</baseLayer>
+								<pawnType>Any</pawnType>
+								<drawData>
+									<dataEast>
+										<offset>(.55,0,1.25)</offset>
+									</dataEast>
+									<dataWest>
+										<offset>(-.35,0,-.4)</offset>
+										<rotationOffset>180</rotationOffset>
+									</dataWest>
+									<dataSouth>
+										<offset>(1.05,0,.15)</offset>
+									</dataSouth>
+									<dataNorth>
+										<offset>(-1.0,0,1.0)</offset>
+									</dataNorth>
+								</drawData>
+							</li>
+						</renderNodeProperties>
+					</li>
+					<li>
+						<ID>anti air turret</ID>
+						<turret>Cinder_Mounted_AA</turret>
+						<autoAttack>true</autoAttack>
+						<warmingTime>0.5</warmingTime>
+						<angleOffset>-90</angleOffset>
+						<renderNodeProperties>
+							<li>
+								<debugLabel>anti air turret</debugLabel>
+								<nodeClass>Embergarden.PawnRenderNode_SubTurretGun</nodeClass>
+								<workerClass>Embergarden.PawnRenderNodeWorker_SubTurretGun</workerClass>
+								<parentTagDef>Body</parentTagDef>
+								<drawSize>0.75</drawSize>
+								<baseLayer>9</baseLayer>
+								<pawnType>Any</pawnType>
+								<drawData>
+									<dataEast>
+										<offset>(-0.4,0,-0.4)</offset>
+									</dataEast>
+									<dataWest>
+										<offset>(0.4,0,1.3)</offset>
+										<rotationOffset>180</rotationOffset>
+									</dataWest>
+									<dataSouth>
+										<offset>(-0.95,0,0.95)</offset>
+									</dataSouth>
+									<dataNorth>
+										<offset>(1.10,0,0.10)</offset>
+									</dataNorth>
+								</drawData>
+							</li>
+						</renderNodeProperties>
+					</li>
+					<li>
+						<ID>rocket pod right</ID>
+						<turret>Cinder_Mounted_Rocket</turret>
+						<autoAttack>true</autoAttack>
+						<warmingTime>10</warmingTime>
+						<angleOffset>-90</angleOffset>
+						<renderNodeProperties>
+							<li>
+								<debugLabel>rocket pod right</debugLabel>
+								<nodeClass>Embergarden.PawnRenderNode_SubTurretGun</nodeClass>
+								<workerClass>Embergarden.PawnRenderNodeWorker_SubTurretGun</workerClass>
+								<parentTagDef>Body</parentTagDef>
+								<drawSize>0.75</drawSize>
+								<baseLayer>9</baseLayer>
+								<pawnType>Any</pawnType>
+								<drawData>
+									<dataEast>
+										<offset>(-0.75,0,-1.25)</offset>
+									</dataEast>
+									<dataWest>
+										<offset>(0.75,0,1.55)</offset>
+										<rotationOffset>180</rotationOffset>
+									</dataWest>
+									<dataSouth>
+										<offset>(-1.55,0,1.05)</offset>
+									</dataSouth>
+									<dataNorth>
+										<offset>(1.55,0,-0.5)</offset>
+									</dataNorth>
+								</drawData>
+							</li>
+						</renderNodeProperties>
+					</li>
+					<li>
+						<ID>rocket pod left</ID>
+						<turret>Cinder_Mounted_Rocket</turret>
+						<autoAttack>true</autoAttack>
+						<warmingTime>10</warmingTime>
+						<angleOffset>-90</angleOffset>
+						<renderNodeProperties>
+							<li>
+								<debugLabel>rocket pod left</debugLabel>
+								<nodeClass>Embergarden.PawnRenderNode_SubTurretGun</nodeClass>
+								<workerClass>Embergarden.PawnRenderNodeWorker_SubTurretGun</workerClass>
+								<parentTagDef>Body</parentTagDef>
+								<drawSize>0.75</drawSize>
+								<baseLayer>9</baseLayer>
+								<pawnType>Any</pawnType>
+								<drawData>
+									<dataEast>
+										<offset>(-0.75,0,1.55)</offset>
+									</dataEast>
+									<dataWest>
+										<offset>(0.75,0,-1.25)</offset>
+										<rotationOffset>180</rotationOffset>
+									</dataWest>
+									<dataSouth>
+										<offset>(1.55,0,1.05)</offset>
+									</dataSouth>
+									<dataNorth>
+										<offset>(-1.55,0,-0.5)</offset>
+									</dataNorth>
+								</drawData>
+							</li>
+						</renderNodeProperties>
+					</li>
+				</subTurrets>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="Embergarden.ModExtension_Draftable"/>
+		</modExtensions>
+	</ThingDef>
 
-    <PawnKindDef ParentName="BaseMechanoidKind">
-        <defName>Cinder_Mech_WarSweeper</defName>
-        <label>war sweeper</label>
-        <race>Cinder_Mech_WarSweeper</race>
-        <combatPower>180</combatPower>
-        <lifeStages>
-            <li MayRequire="Ludeon.RimWorld.Biotech">
-                <bodyGraphicData>
-                    <texPath>Things/Pawn/Mech/WarSweeper_bottom</texPath>
-                    <shaderType>CutoutComplex</shaderType>
-                    <graphicClass>Graphic_Multi</graphicClass>
-                    <drawSize>3.6</drawSize>
-                    <shadowData>
-                        <volume>(1.2, 1.0, 1.2)</volume>
-                    </shadowData>
-                    <drawOffset>(0,0,0.35)</drawOffset>
-                </bodyGraphicData>
-            </li>
-            <li>
-                <bodyGraphicData>
-                    <texPath>Things/Pawn/Mech/WarSweeper_bottom</texPath>
-                    <shaderType>CutoutComplex</shaderType>
-                    <graphicClass>Graphic_Multi</graphicClass>
-                    <drawSize>3.6</drawSize>
-                    <shadowData>
-                        <volume>(1.2, 1.0, 1.2)</volume>
-                    </shadowData>
-                    <drawOffset>(0,0,0.35)</drawOffset>
-                </bodyGraphicData>
-            </li>
-        </lifeStages>
-        <weaponMoney>9999~9999</weaponMoney>
-        <weaponTags>
-             <li>Cinder_GiantMiniGun</li>
-        </weaponTags>
-        <techHediffsChance>1</techHediffsChance>
-        <techHediffsMoney>9999~9999</techHediffsMoney>
-    </PawnKindDef>
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>Cinder_Mech_WarSweeper</defName>
+		<label>war sweeper</label>
+		<race>Cinder_Mech_WarSweeper</race>
+		<combatPower>180</combatPower>
+		<lifeStages>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mech/WarSweeper_bottom</texPath>
+					<shaderType>CutoutComplex</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3.6</drawSize>
+					<shadowData>
+						<volume>(1.2, 1.0, 1.2)</volume>
+					</shadowData>
+					<drawOffset>(0,0,0.35)</drawOffset>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mech/WarSweeper_bottom</texPath>
+					<shaderType>CutoutComplex</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3.6</drawSize>
+					<shadowData>
+						<volume>(1.2, 1.0, 1.2)</volume>
+					</shadowData>
+					<drawOffset>(0,0,0.35)</drawOffset>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>9999~9999</weaponMoney>
+		<weaponTags>
+			<li>Cinder_GiantMiniGun</li>
+		</weaponTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+	</PawnKindDef>
 
 </Defs>
