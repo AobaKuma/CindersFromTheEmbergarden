@@ -30,7 +30,7 @@ namespace Embergarden
     {
         static MethodBase TargetMethod()
         {
-            return typeof(Pawn).PropertyGetter("IsColonyMech");
+            return typeof(Pawn).PropertyGetter("IsColonyMutantPlayerControlled");
         }
 
         [HarmonyPostfix]
