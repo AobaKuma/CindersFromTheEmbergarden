@@ -31,7 +31,6 @@ namespace Embergarden
                     }
                 }
             }
-            /**
             if (__instance.def.HasModExtension<ModExtension_Draftable>() && __instance.drafter != null)
             {
                 AcceptanceReport allowsDrafting = __instance.GetLord()?.AllowsDrafting(__instance) ?? ((AcceptanceReport)true);
@@ -45,7 +44,7 @@ namespace Embergarden
                     yield return gizmo2;
                 }
             }
-            **/
+
         }
     }
 }

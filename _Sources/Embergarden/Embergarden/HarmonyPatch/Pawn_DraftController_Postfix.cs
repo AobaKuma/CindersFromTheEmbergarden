@@ -24,25 +24,6 @@ namespace Embergarden
         }
     }
 
-    [StaticConstructorOnStartup]
-    [HarmonyPatch]
-    static class Pawn_IsColonyMech_Postfix
-    {
-        static MethodBase TargetMethod()
-        {
-            return typeof(Pawn).PropertyGetter("IsColonyMutantPlayerControlled");
-        }
-
-        [HarmonyPostfix]
-        static void Postfix(ref bool __result, Pawn __instance)
-        {
-            if (!__result && __instance.def.HasModExtension<ModExtension_Draftable>())
-            {
-                __result = true;
-            }
-        }
-    }
-
     public class ModExtension_Draftable : DefModExtension
     {
 
