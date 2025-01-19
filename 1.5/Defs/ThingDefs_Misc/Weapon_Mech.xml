@@ -61,6 +61,7 @@
 			</li>
 		</modExtensions>
   	</ThingDef>
+	
 
 	<ThingDef ParentName="Cinder_MechGun">
 		<defName>Cinder_MechGun_GiantHEATRifle</defName>
@@ -84,17 +85,18 @@
 		</statBases>
 		<verbs>
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_Autopistol</defaultProjectile>
-				<warmupTime>0</warmupTime>
-				<range>35.9</range>
-				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-				<burstShotCount>4</burstShotCount>
-				<soundCast>Shot_MachinePistol</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
-			</li>
+        <verbClass>Verb_Shoot</verbClass>
+		 <forcedMissRadius>0.5</forcedMissRadius>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Cinder_Bullet_RPG</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <range>34.9</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+          </li>
 		</verbs>
   	</ThingDef>
 
@@ -120,16 +122,26 @@
 		</statBases>
 		<verbs>
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<verbClass>Embergarden.Verb_ArcSprayProjectile</verbClass>
+				<sprayWidth>6</sprayWidth>
+				<sprayArching>5</sprayArching>
+				<sprayThicknessCells>3</sprayThicknessCells>
+				<sprayNumExtraCells>24</sprayNumExtraCells> <!-- 要大於或等於發射次數 -->
+				<consumeFuelPerBurst>1</consumeFuelPerBurst>
+
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Cinder_Bullet_50APE</defaultProjectile>
-				<warmupTime>0.25</warmupTime>
-				<range>33.9</range>
-				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
+				<warmupTime>2.5</warmupTime>
+				<minRange>8</minRange>
+				<range>39.9</range>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
 				<burstShotCount>25</burstShotCount>
 				<soundCast>Shot_Autocannon</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
 			</li>
 		</verbs>
 		<modExtensions>

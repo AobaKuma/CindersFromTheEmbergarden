@@ -237,10 +237,10 @@
 			</generalSettings>
 			<graphicPaths>
 				<head>
-					<path>Things/Pawn/Humanlike/Heads/CinderHeadA</path>
+					<path>Things/Pawn/Humanlike/Heads/CinderHead/CinderHead</path>
 					<extendedGraphics>
 						<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
-							Things/Pawn/Humanlike/Heads/GhoulHeadA</Hediff>
+							Things/Pawn/Humanlike/Heads/GhoulHead/GhoulHead</Hediff>
 					</extendedGraphics>
 				</head>
 				<body>
@@ -258,9 +258,13 @@
 						 <Age For="HumanlikeAdult">
                             <path>Things/Pawn/Humanlike/Body/CinderNaked_Female</path>
                             <extendedGraphics>
-                                <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
-                                    Things/Pawn/Humanlike/Body/GhoulNaked_Female</Hediff>
-                                <Gender For="Male">Things/Pawn/Humanlike/Body/CinderNaked_Male</Gender>
+                                <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Things/Pawn/Humanlike/Body/GhoulNaked_Female</Hediff>
+                                <Gender For="Male">
+                                    <path>Things/Pawn/Humanlike/Body/CinderNaked_Male</path>
+                                    <extendedGraphics>
+                                        <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Things/Pawn/Humanlike/Body/GhoulNaked_Male</Hediff>
+                                    </extendedGraphics>
+                                </Gender>
                             </extendedGraphics>
                         </Age>
 					</extendedGraphics>
@@ -296,24 +300,42 @@
 					</value>
 				</li>
 			</styleSettings>
-			<raceRestriction>
+	<raceRestriction>
 				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
-				<blackEndoCategories>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Melanin</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Nose</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Head</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">BodyType</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">HairColor</li>
-				</blackEndoCategories>
-				<blackGeneList>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Furskin</li>
-				</blackGeneList>
-				<blackGeneTags>
-					<li MayRequire="Ludeon.RimWorld.Biotech">EyeColor</li>
-				</blackGeneTags>
-			</raceRestriction>
+				  <blackEndoCategories>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Melanin</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">BodyType</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Nose</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Voice</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Headbone</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Head</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Jaw</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">HairColor</li>
+        </blackEndoCategories>
+        <blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
+          <li MayRequire="Ludeon.RimWorld.Biotech">HairStyle</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">EyeColor</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">BeardStyle</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Fur</li>
+        </blackGeneTags>
+        <blackGeneList>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Furskin</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+        </blackGeneList>
+        <blackXenotypeList>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Dirtmole</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Genie</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Neanderthal</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Pigskin</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Impid</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Waster</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Highmate</li>
+        </blackXenotypeList>
+	</raceRestriction>
 		</alienRace>
 		<!--=============================================================================================================================-->
 		<race>

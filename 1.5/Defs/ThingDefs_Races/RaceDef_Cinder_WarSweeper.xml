@@ -60,34 +60,34 @@
 		<description>TODO</description>
 		<tools>
 			<li>
-				<label>left fist</label>
-				<labelNoLocation>fist</labelNoLocation>
+				<label>Left tentacle</label>
+				<labelNoLocation>tentacle</labelNoLocation>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>18.0</power>
-				<cooldownTime>2.5</cooldownTime>
+				<power>40.0</power>
+				<cooldownTime>1</cooldownTime>
 				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
 			</li>
 			<li>
-				<label>right fist</label>
-				<labelNoLocation>fist</labelNoLocation>
+				<label>right tentacle</label>
+				<labelNoLocation>tentacle</labelNoLocation>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>18.0</power>
-				<cooldownTime>2.5</cooldownTime>
+				<power>40.0</power>
+				<cooldownTime>1</cooldownTime>
 				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
 			</li>
 			<li>
-				<label>head</label>
+				<label>Front tentacle</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>15.5</power>
-				<cooldownTime>2</cooldownTime>
+				<power>25.5</power>
+				<cooldownTime>1</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>
@@ -143,7 +143,7 @@
 						<ID>exo minigun</ID>
 						<turret>Cinder_Mounted_EXOminigun</turret>
 						<autoAttack>true</autoAttack>
-						<warmingTime>1.1</warmingTime>
+						<warmingTime>1.4</warmingTime>
 						<angleOffset>-90</angleOffset>
 						<renderNodeProperties>
 							<li>
@@ -209,7 +209,7 @@
 						<ID>rocket pod right</ID>
 						<turret>Cinder_Mounted_Rocket</turret>
 						<autoAttack>true</autoAttack>
-						<warmingTime>10</warmingTime>
+						<warmingTime>13</warmingTime>
 						<angleOffset>-90</angleOffset>
 						<renderNodeProperties>
 							<li>
@@ -242,7 +242,7 @@
 						<ID>rocket pod left</ID>
 						<turret>Cinder_Mounted_Rocket</turret>
 						<autoAttack>true</autoAttack>
-						<warmingTime>10</warmingTime>
+						<warmingTime>13</warmingTime>
 						<angleOffset>-90</angleOffset>
 						<renderNodeProperties>
 							<li>

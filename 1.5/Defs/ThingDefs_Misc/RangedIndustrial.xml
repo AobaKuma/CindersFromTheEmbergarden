@@ -40,15 +40,31 @@
       <texPath>Things/Weapons/Bullet_RPG</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-	<thingClass>Projectile_Explosive</thingClass>
+	<thingClass>Embergarden.Projectile_CompExplosive</thingClass>
     <projectile>
       <damageDef>Bomb</damageDef>
-      <explosionRadius>2.9</explosionRadius>
+      <explosionRadius>1.1</explosionRadius>
       <damageAmountBase>50</damageAmountBase>
       <stoppingPower>5</stoppingPower>
       <armorPenetrationBase>1</armorPenetrationBase>
       <speed>65</speed>
     </projectile>
+	<comps>
+        <li Class="CompProperties_Explosive">
+       <explosiveRadius>2.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+		<damageAmountBase>25</damageAmountBase>
+        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        <wickTicks>15</wickTicks>
+        <startWickOnDamageTaken>
+          <li>Bullet</li>
+          <li>Arrow</li>
+          <li>ArrowHighVelocity</li>
+        </startWickOnDamageTaken>
+		<destroyThingOnExplosionSize>9999</destroyThingOnExplosionSize>
+		<propagationSpeed>0.5</propagationSpeed>
+      </li>
+    </comps>
   </ThingDef>
   
   <ThingDef ParentName="BaseBullet">

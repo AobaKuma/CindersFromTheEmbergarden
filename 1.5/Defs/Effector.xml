@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <EffecterDef>
+    <defName>Cinder_ConeExplosion</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <positionRadius>-0.15</positionRadius>
+        <fleckDef>Cinder_SplashedPieces</fleckDef>
+        <burstCount>10~15</burstCount>
+        <speed>10~20</speed>
+        <scale>0.25~0.5</scale>
+        <angle>-20~20</angle>
+        <positionLerpFactor>0.8</positionLerpFactor>
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+        <attachToSpawnThing>true</attachToSpawnThing>
+        <color>(100,100,100)</color>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <positionRadius>-0.15</positionRadius>
+        <fleckDef>Cinder_SplashedPieces_Center</fleckDef>
+        <burstCount>4~8</burstCount>
+        <speed>20~40</speed>
+        <scale>0.25~0.5</scale>
+        <angle>-5~5</angle>
+        <positionLerpFactor>0.8</positionLerpFactor>
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+        <attachToSpawnThing>true</attachToSpawnThing>
+      </li>
+    </children>
+  </EffecterDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>Cinder_SplashedPieces</defName>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.05</fadeInTime>
+    <solidTime>0.5</solidTime>
+    <fadeOutTime>0.25</fadeOutTime>
+    <growthRate>0.5</growthRate>
+    <collide>false</collide>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>Cinder_SplashedPieces_Center</defName>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.04</fadeInTime>
+    <solidTime>0.15</solidTime>
+    <fadeOutTime>0.1</fadeOutTime>
+    <growthRate>0.5</growthRate>
+    <collide>true</collide>
+  </FleckDef>
+
+
+</Defs>

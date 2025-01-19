@@ -76,34 +76,34 @@
 		<description>TODO</description>
 		<tools>
 			<li>
-				<label>left fist</label>
-				<labelNoLocation>fist</labelNoLocation>
+				<label>Left tentacle</label>
+				<labelNoLocation>tentacle</labelNoLocation>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>18.0</power>
-				<cooldownTime>2.5</cooldownTime>
+				<power>20.0</power>
+				<cooldownTime>1</cooldownTime>
 				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
 			</li>
 			<li>
-				<label>right fist</label>
-				<labelNoLocation>fist</labelNoLocation>
+				<label>right tentacle</label>
+				<labelNoLocation>tentacle</labelNoLocation>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>18.0</power>
-				<cooldownTime>2.5</cooldownTime>
+				<power>20.0</power>
+				<cooldownTime>1</cooldownTime>
 				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
 			</li>
 			<li>
-				<label>head</label>
+				<label>Front tentacle</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
 				<power>15.5</power>
-				<cooldownTime>2</cooldownTime>
+				<cooldownTime>1</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>
