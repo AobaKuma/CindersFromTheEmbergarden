@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\harmonypatch\\pawn_draftcontroller_postfix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\harmonypatch\\pawn_draftcontroller_postfix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\harmonypatch\\pawngizmopatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\harmonypatch\\pawngizmopatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\harmonypatch\\pawn_draftcontroller_postfix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\harmonypatch\\pawn_draftcontroller_postfix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\harmonypatch\\patch_drawvehicleturret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 327,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Pawn_DraftController_Postfix.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\HarmonyPatch\\Pawn_DraftController_Postfix.cs",
               "RelativeDocumentMoniker": "Embergarden\\HarmonyPatch\\Pawn_DraftController_Postfix.cs",
@@ -71,13 +71,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PawnGizmoPatch.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\HarmonyPatch\\PawnGizmoPatch.cs",
               "RelativeDocumentMoniker": "Embergarden\\HarmonyPatch\\PawnGizmoPatch.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\HarmonyPatch\\PawnGizmoPatch.cs*",
-              "RelativeToolTip": "Embergarden\\HarmonyPatch\\PawnGizmoPatch.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwCAAAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\HarmonyPatch\\PawnGizmoPatch.cs",
+              "RelativeToolTip": "Embergarden\\HarmonyPatch\\PawnGizmoPatch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwC8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-19T05:10:54.19Z",
               "EditorCaption": ""
