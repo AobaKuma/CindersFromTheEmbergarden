@@ -89,10 +89,13 @@
     <Compile Include="CompAbilityEffect_BodySizeCap.cs" />
     <Compile Include="CompAbilityEffect_ScorchWound.cs" />
     <Compile Include="CompAbilityEffect_SpawnWithFaction.cs" />
+    <Compile Include="CompExplosiveExposed.cs" />
     <Compile Include="CompProperties_Transformable.cs" />
     <Compile Include="CompSecondaryVerb.cs" />
+    <Compile Include="CompUseEffect_CallBossgroupNoMechanitor.cs" />
     <Compile Include="CompUseEffect_RandomAbilityGain.cs" />
     <Compile Include="Comp_TurretTransformable.cs" />
+    <Compile Include="ConeExplosionUtility.cs" />
     <Compile Include="D.cs" />
     <Compile Include="Gizmo_AttachmentShieldStatus.cs" />
     <Compile Include="HarmonyPatch\HarmonyEntry.cs" />
@@ -103,6 +106,8 @@
     <Compile Include="HediffComp_LimitedResurrect.cs" />
     <Compile Include="HediffComp_ProtectiveShield.cs" />
     <Compile Include="Hediff_DynamicCap.cs" />
+    <Compile Include="Projectile_CompExplosive.cs" />
+    <Compile Include="Projectile_ConeExplosion.cs" />
     <Compile Include="ThingClass_AltGraphic.cs" />
     <Compile Include="ThinkNode_ConditionalEnemyInRange.cs" />
     <Compile Include="MultiTurrets\CompMultipleTurretGun.cs" />
