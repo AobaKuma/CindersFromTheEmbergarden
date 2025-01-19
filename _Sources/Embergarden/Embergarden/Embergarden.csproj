@@ -84,6 +84,7 @@
   <ItemGroup>
     <Compile Include="Ability_Transform.cs" />
     <Compile Include="Building_TrapExplosive_Rechargeable.cs" />
+    <Compile Include="Building_TrapTentacle.cs" />
     <Compile Include="Cider_DefOf.cs" />
     <Compile Include="CompAbilityEffect_BodySizeCap.cs" />
     <Compile Include="CompAbilityEffect_ScorchWound.cs" />
