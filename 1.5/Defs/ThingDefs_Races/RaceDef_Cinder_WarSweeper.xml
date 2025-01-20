@@ -274,9 +274,6 @@
 				</subTurrets>
 			</li>
 		</comps>
-		<modExtensions>
-			<li Class="Embergarden.ModExtension_Draftable"/>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BaseMechanoidKind">
