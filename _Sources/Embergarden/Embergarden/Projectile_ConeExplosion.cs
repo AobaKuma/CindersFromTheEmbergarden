@@ -1,13 +1,21 @@
-﻿using Verse;
+﻿using RimWorld;
+using System.Reflection;
+using Verse;
 using Verse.Noise;
 
 namespace Embergarden
 {
     public class Projectile_ConeExplosion : Projectile_Explosive
     {
+        MethodInfo detonate => typeof(CompExplosive).GetMethod("Detonate", BindingFlags.Instance | BindingFlags.NonPublic);
         protected override void Explode()
         {
             DefModExtension_ConeExplosion extension = def.GetModExtension<DefModExtension_ConeExplosion>();
+            var comps = this.GetComps<CompExplosive>();
+            foreach (var comp in comps)
+            {
+                detonate.Invoke(comp, [Map, false]);
+            }
             if (extension == null) base.Explode();
             else
             {
