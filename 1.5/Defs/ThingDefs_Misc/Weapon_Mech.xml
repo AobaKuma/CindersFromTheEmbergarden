@@ -123,8 +123,8 @@
 		<verbs>
 			<li>
 				<verbClass>Embergarden.Verb_ArcSprayProjectile</verbClass>
-				<sprayWidth>6</sprayWidth>
-				<sprayArching>5</sprayArching>
+				<sprayWidth>4</sprayWidth>
+				<sprayArching>3</sprayArching>
 				<sprayThicknessCells>3</sprayThicknessCells>
 				<sprayNumExtraCells>24</sprayNumExtraCells> <!-- 要大於或等於發射次數 -->
 				<consumeFuelPerBurst>1</consumeFuelPerBurst>

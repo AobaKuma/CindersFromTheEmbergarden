@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseMechanoid" Name="Cinder_BaseTurretWalker" Abstract="True">
+		<statBases>
+			<MoveSpeed>4.3</MoveSpeed>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+		</statBases>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<baseBodySize>2</baseBodySize>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+                    <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+                    <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+                    <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+                    <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<butcherProducts>
+			<Cinder_AmorphousPolymer>55</Cinder_AmorphousPolymer>
+		</butcherProducts>
+	</ThingDef>
+
+	<ThingDef ParentName="Cinder_BaseTurretWalker">
+		<defName>Cinder_Mech_WalkerAutoCannon</defName>
+		<label>Autocannon walker</label>
+		<description>TODO</description>
+		<tools>
+			<li>
+				<label>Left tentacle</label>
+				<labelNoLocation>tentacle</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10.0</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>right tentacle</label>
+				<labelNoLocation>tentacle</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10.0</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>Front tentacle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15.5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<body>Cinder_TurretWalker</body>
+			<baseHealthScale>3</baseHealthScale>
+		</race>
+		<statBases>
+			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">2</BandwidthCost>
+		</statBases>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>Cinder_Mech_WalkerAutoCannon</defName>
+		<label>Autocannon walker</label>
+		<race>Cinder_Mech_WalkerAutoCannon</race>
+		<combatPower>180</combatPower>
+		<lifeStages>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<bodyGraphicData>
+					<texPath>Things/Building/WalkerAutoCannon/WalkerAutocannon</texPath>
+					<shaderType>CutoutComplex</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.86, 1.86)</drawSize>
+					<shadowData>
+						<volume>(1.5,0.35,1.4)</volume>
+					</shadowData>
+					<drawOffset>(0,0,-0.05)</drawOffset>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Building/WalkerAutoCannon/WalkerAutocannon</texPath>
+					<shaderType>CutoutComplex</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.86, 1.86)</drawSize>
+					<shadowData>
+						<volume>(1.5,0.35,1.4)</volume>
+					</shadowData>
+					<drawOffset>(0,0,-0.05)</drawOffset>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+	</PawnKindDef>
+
+
+	<ThingDef ParentName="Cinder_BaseTurretWalker">
+		<defName>Cinder_Mech_WalkerRocket</defName>
+		<label>rocketswarm walker</label>
+		<description>TODO</description>
+		<tools>
+			<li>
+				<label>Left tentacle</label>
+				<labelNoLocation>tentacle</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10.0</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>right tentacle</label>
+				<labelNoLocation>tentacle</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10.0</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>Front tentacle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15.5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<body>Cinder_TurretWalker</body>
+			<baseHealthScale>3</baseHealthScale>
+		</race>
+		<statBases>
+			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">2</BandwidthCost>
+		</statBases>
+	</ThingDef>
+
+    <PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>Cinder_Mech_WalkerRocket</defName>
+		<label>rocketswarm walker</label>
+		<race>Cinder_Mech_WalkerRocket</race>
+		<combatPower>180</combatPower>
+		<lifeStages>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<bodyGraphicData>
+					<texPath>Things/Building/WalkerRocket/WalkerRocket</texPath>
+					<shaderType>CutoutComplex</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.86, 1.86)</drawSize>
+					<shadowData>
+						<volume>(1.5,0.35,1.4)</volume>
+					</shadowData>
+					<drawOffset>(0,0,-0.05)</drawOffset>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Building/WalkerRocket/WalkerRocket</texPath>
+					<shaderType>CutoutComplex</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.86, 1.86)</drawSize>
+					<shadowData>
+						<volume>(1.5,0.35,1.4)</volume>
+					</shadowData>
+					<drawOffset>(0,0,-0.05)</drawOffset>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+	</PawnKindDef>
+	
+	<ThingDef ParentName="Cinder_BaseTurretWalker">
+		<defName>Cinder_Mech_WalkerSniper</defName>
+		<label>Uranium slug walker</label>
+		<description>TODO</description>
+		<tools>
+			<li>
+				<label>Left tentacle</label>
+				<labelNoLocation>tentacle</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10.0</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>right tentacle</label>
+				<labelNoLocation>tentacle</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10.0</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>Front tentacle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15.5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<body>Cinder_TurretWalker</body>
+			<baseHealthScale>3</baseHealthScale>
+		</race>
+		<statBases>
+			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">2</BandwidthCost>
+		</statBases>
+	</ThingDef>
+
+    <PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>Cinder_Mech_WalkerSniper</defName>
+		<label>Uranium slug walker</label>
+		<race>Cinder_Mech_WalkerSniper</race>
+		<combatPower>180</combatPower>
+		<lifeStages>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<bodyGraphicData>
+					<texPath>Things/Building/WalkerSniper/WalkerSniper</texPath>
+					<shaderType>CutoutComplex</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.86, 1.86)</drawSize>
+					<shadowData>
+						<volume>(1.5,0.35,1.4)</volume>
+					</shadowData>
+					<drawOffset>(0,0,-0.05)</drawOffset>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Building/WalkerSniper/WalkerSniper</texPath>
+					<shaderType>CutoutComplex</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.86, 1.86)</drawSize>
+					<shadowData>
+						<volume>(1.5,0.35,1.4)</volume>
+					</shadowData>
+					<drawOffset>(0,0,-0.05)</drawOffset>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+	</PawnKindDef>
+</Defs>

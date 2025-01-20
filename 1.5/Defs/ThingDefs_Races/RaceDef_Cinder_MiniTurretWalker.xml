@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseMechanoid" Name="Cinder_MiniTurretWalker" Abstract="True">
+		<statBases>
+			<MoveSpeed>4.3</MoveSpeed>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+		</statBases>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<baseBodySize>1</baseBodySize>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+                    <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+                    <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+                    <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+                    <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<butcherProducts>
+			<Cinder_AmorphousPolymer>25</Cinder_AmorphousPolymer>
+		</butcherProducts>
+	</ThingDef>
+
+	<ThingDef ParentName="Cinder_MiniTurretWalker">
+		<defName>Cinder_Mech_MiniTurretWalker</defName>
+		<label>Tactical turret walker</label>
+		<description>TODO</description>
+		<tools>
+			<li>
+				<label>Left tentacle</label>
+				<labelNoLocation>tentacle</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10.0</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>right tentacle</label>
+				<labelNoLocation>tentacle</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10.0</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>Front tentacle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15.5</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<body>Cinder_MiniTurretWalker</body>
+			<baseHealthScale>1</baseHealthScale>
+		</race>
+		<statBases>
+			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">1</BandwidthCost>
+		</statBases>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>Cinder_Mech_MiniTurretWalker</defName>
+		<label>Tactical turret walker</label>
+		<race>Cinder_Mech_MiniTurretWalker</race>
+		<combatPower>180</combatPower>
+		<lifeStages>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<bodyGraphicData>
+					<texPath>Things/Building/WalkerTacticalTurret/WalkerTacticalTurret</texPath>
+					<shaderType>CutoutComplex</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.2, 1.2)</drawSize>
+					<shadowData>
+						<volume>(1,0.35,1)</volume>
+					</shadowData>
+					<drawOffset>(0,0,-0.05)</drawOffset>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Building/WalkerTacticalTurret/WalkerTacticalTurret</texPath>
+					<shaderType>CutoutComplex</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(1.2, 1.2)</drawSize>
+					<shadowData>
+						<volume>(1,0.35,1)</volume>
+					</shadowData>
+					<drawOffset>(0,0,-0.05)</drawOffset>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+	</PawnKindDef>
+</Defs>

@@ -111,4 +111,18 @@
       <li>MovingLimbSegment</li>
     </tags>
   </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>Cinder_TentacleLeg</defName>
+    <label>Tentacle leg</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
 </Defs>

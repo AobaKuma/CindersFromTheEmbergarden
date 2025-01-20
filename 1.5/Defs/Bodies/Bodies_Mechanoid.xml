@@ -232,4 +232,210 @@
       </parts>
     </corePart>
   </BodyDef>
+  
+   <BodyDef>
+    <defName>Cinder_TurretWalker</defName>
+    <label>Turret walker</label>
+    <corePart>
+      <def>Cinder_MechanicalThorax</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>Torso</li>
+      </groups>
+      <parts>
+        <li>
+          <def>MechanicalNeck</def>
+		  <customLabel>Top arm connecting shaft</customLabel>
+          <coverage>0.10</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>MechanicalHead</def>
+			   <customLabel>Turret components</customLabel>
+              <coverage>0.20</coverage>
+              <groups>
+                <li>HeadAttackTool</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>left sight sensor</customLabel>
+                  <coverage>0.13</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>right hearing sensor</customLabel>
+                  <coverage>0.10</coverage>
+                </li>
+                <li>
+                  <def>SmellSensor</def>
+                  <coverage>0.10</coverage>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Cinder_TentacleLeg</def>
+          <customLabel>left tentacle</customLabel>
+          <coverage>0.05</coverage>
+          <height>Bottom</height>
+		  <groups>
+              <li>LeftHand</li>
+          </groups>
+        </li>
+		<li>
+          <def>Cinder_TentacleLeg</def>
+          <customLabel>left rear tentacle</customLabel>
+          <coverage>0.05</coverage>
+          <height>Bottom</height>
+        </li>
+		<li>
+          <def>Cinder_TentacleLeg</def>
+          <customLabel>right tentacle</customLabel>
+          <coverage>0.05</coverage>
+          <height>Bottom</height>
+		  <groups>
+               <li>RightHand</li>
+           </groups>
+        </li>
+        <li>
+          <def>Cinder_TentacleLeg</def>
+          <customLabel>right rear tentacle</customLabel>
+          <coverage>0.05</coverage>
+          <height>Bottom</height>
+        </li>
+         <li>
+          <def>Cinder_ArmourPlate</def>
+          <customLabel>left armour plate</customLabel>
+          <coverage>0.2</coverage>
+          <height>Bottom</height>
+        </li>
+        <li>
+          <def>Cinder_ArmourPlate</def>
+          <customLabel>right armour plate</customLabel>
+          <coverage>0.2</coverage>
+          <height>Bottom</height>
+        </li>
+        <li>
+          <def>Cinder_ArmourPlate</def>
+          <customLabel>forward armour plate</customLabel>
+          <coverage>0.2</coverage>
+          <height>Top</height>
+        </li>
+        <li>
+          <def>Cinder_ArtificialBrain</def>
+          <coverage>0.01</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>Cinder_NeuralSpine</def>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>Cinder_Ganglion</def>
+          <coverage>0.02</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>Cinder_Ganglion</def>
+          <coverage>0.02</coverage>
+          <depth>Inside</depth>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+  
+  <BodyDef>
+    <defName>Cinder_MiniTurretWalker</defName>
+    <label>Turret walker</label>
+    <corePart>
+      <def>Cinder_MechanicalThorax</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>Torso</li>
+      </groups>
+      <parts>
+        <li>
+          <def>MechanicalNeck</def>
+		  <customLabel>Top arm connecting shaft</customLabel>
+          <coverage>0.10</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>MechanicalHead</def>
+			   <customLabel>Turret components</customLabel>
+              <coverage>0.20</coverage>
+              <groups>
+                <li>HeadAttackTool</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>left sight sensor</customLabel>
+                  <coverage>0.13</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>right hearing sensor</customLabel>
+                  <coverage>0.10</coverage>
+                </li>
+                <li>
+                  <def>SmellSensor</def>
+                  <coverage>0.10</coverage>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Cinder_TentacleLeg</def>
+          <customLabel>frount tentacle</customLabel>
+          <coverage>0.2</coverage>
+          <height>Bottom</height>
+        </li>
+		<li>
+          <def>Cinder_TentacleLeg</def>
+          <customLabel>left rear tentacle</customLabel>
+          <coverage>0.2</coverage>
+          <height>Bottom</height>
+		  <groups>
+              <li>LeftHand</li>
+          </groups>
+        </li>
+        <li>
+          <def>Cinder_TentacleLeg</def>
+          <customLabel>right rear tentacle</customLabel>
+          <coverage>0.2</coverage>
+          <height>Bottom</height>
+		  <groups>
+               <li>RightHand</li>
+           </groups>
+        </li>
+        <li>
+          <def>Cinder_ArtificialBrain</def>
+          <coverage>0.01</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>Cinder_NeuralSpine</def>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>Cinder_Ganglion</def>
+          <coverage>0.02</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>Cinder_Ganglion</def>
+          <coverage>0.02</coverage>
+          <depth>Inside</depth>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
 </Defs>
