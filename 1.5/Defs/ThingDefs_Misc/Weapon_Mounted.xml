@@ -41,7 +41,7 @@
 				<warmupTime>0</warmupTime>
 				<range>15.9</range>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-				<burstShotCount>3</burstShotCount>
+				<burstShotCount>2</burstShotCount>
 				<soundCast>Shot_Shotgun</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -83,7 +83,7 @@
 				<warmupTime>0</warmupTime>
 				<range>28.9</range>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-				<burstShotCount>4</burstShotCount>
+				<burstShotCount>3</burstShotCount>
 				<soundCast>RocketswarmLauncher_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -124,7 +124,7 @@
 				<warmupTime>0</warmupTime>
 				<range>29.9</range>
 				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-				<burstShotCount>15</burstShotCount>
+				<burstShotCount>6</burstShotCount>
 				<soundCast>Shot_Minigun</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>

@@ -1,5 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+    <AbilityDef>
+    <defName>Cinder_LaunchHellfireMissile</defName>
+    <label>Hellfire Missile</label>
+    <description>Launch Missile</description>
+    <iconPath>UI/Abilities/Hellfire</iconPath>
+    <cooldownTicksRange>300000</cooldownTicksRange>
+	<charges>4</charges>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>34.9</range>
+      <warmupTime>7.5</warmupTime>
+      <soundCast>InfernoCannon_Fire</soundCast>
+	  <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
+        <ai_RangedAlawaysShootGroundBelowTarget>true</ai_RangedAlawaysShootGroundBelowTarget>
+        <ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <ai_TargetHasRangedAttackScoreOffset>50</ai_TargetHasRangedAttackScoreOffset>
+        <minRange>5.9</minRange>
+	  <targetParams>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetBuildings>true</canTargetBuildings>
+      </targetParams>
+	   <aimingLineMote>CinderMote_HellfireMissile_Aim</aimingLineMote>
+        <aimingChargeMote>CinderMote_HellfireMissile_Charge</aimingChargeMote>
+        <aimingChargeMoteOffset>1.07</aimingChargeMoteOffset>
+        <aimingLineMoteFixedLength>15.9</aimingLineMoteFixedLength>
+        <aimingTargetMote>CinderMote_HellfireMissile_Target</aimingTargetMote>
+        <beamTargetsGround>true</beamTargetsGround>
+        <soundAiming>Cinder_Hellfire_Aiming</soundAiming>
+        <canGoWild>false</canGoWild>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>CinderBullet_Hellfire</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+     <AbilityDef>
+    <defName>Cinder_LaunchHellfireMissileB</defName>
+    <label>Hellfire Missile</label>
+    <description>Launch Missile</description>
+    <iconPath>UI/Abilities/Hellfire</iconPath>
+    <cooldownTicksRange>300000</cooldownTicksRange>
+	<charges>8</charges>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>36.9</range>
+      <warmupTime>7.5</warmupTime>
+      <soundCast>InfernoCannon_Fire</soundCast>
+	  <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
+        <ai_RangedAlawaysShootGroundBelowTarget>true</ai_RangedAlawaysShootGroundBelowTarget>
+        <ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <ai_TargetHasRangedAttackScoreOffset>50</ai_TargetHasRangedAttackScoreOffset>
+        <minRange>5.9</minRange>
+	  <targetParams>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetBuildings>true</canTargetBuildings>
+      </targetParams>
+	   <aimingLineMote>CinderMote_HellfireMissile_Aim</aimingLineMote>
+        <aimingChargeMote>CinderMote_HellfireMissile_Charge</aimingChargeMote>
+        <aimingChargeMoteOffset>1.07</aimingChargeMoteOffset>
+        <aimingLineMoteFixedLength>15.9</aimingLineMoteFixedLength>
+        <aimingTargetMote>CinderMote_HellfireMissile_Target</aimingTargetMote>
+        <beamTargetsGround>true</beamTargetsGround>
+        <soundAiming>Cinder_Hellfire_Aiming</soundAiming>
+        <canGoWild>false</canGoWild>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>CinderBullet_Hellfire</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  
 	<AbilityDef>
 		<defName>Ability_Transformation</defName>
 		<label>Transformation</label>

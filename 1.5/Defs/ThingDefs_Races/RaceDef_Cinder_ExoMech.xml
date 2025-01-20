@@ -250,6 +250,9 @@
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
+		<abilities>
+      <li>Cinder_LaunchHellfireMissile</li>
+    </abilities>
 		<weaponMoney>9999~9999</weaponMoney>
 		<weaponTags>
 			<li>Cinder_EXOGun</li>

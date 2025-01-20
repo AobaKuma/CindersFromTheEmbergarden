@@ -44,7 +44,7 @@
 				<warmupTime>0</warmupTime>
 				<range>29.9</range>
 				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
-				<burstShotCount>3</burstShotCount>
+				<burstShotCount>2</burstShotCount>
 				<soundCast>Shot_Autocannon</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -80,7 +80,7 @@
     </projectile>
 		<comps>
         <li Class="CompProperties_Explosive">
-       <explosiveRadius>0.5</explosiveRadius>
+       <explosiveRadius>1</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
 		<damageAmountBase>20</damageAmountBase>
 		<armorPenetrationBase>1</armorPenetrationBase>
@@ -103,6 +103,7 @@
 		</modExtensions>
   </ThingDef>
 	
+	
 
 	<ThingDef ParentName="Cinder_MechGun">
 		<defName>Cinder_MechGun_GiantHEATRifle</defName>
@@ -122,7 +123,7 @@
 			<AccuracyShort>0.7</AccuracyShort>
 			<AccuracyMedium>0.8</AccuracyMedium>
 			<AccuracyLong>0.8</AccuracyLong>
-			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
 			<li>
@@ -130,10 +131,10 @@
 		 <forcedMissRadius>0.5</forcedMissRadius>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Cinder_Bullet_HEAT</defaultProjectile>
-        <warmupTime>2.5</warmupTime>
+        <warmupTime>3.5</warmupTime>
         <range>34.9</range>
         <burstShotCount>2</burstShotCount>
-        <ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>50</ticksBetweenBurstShots>
         <soundCast>InfernoCannon_Fire</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -159,7 +160,7 @@
       <AccuracyShort>0.25</AccuracyShort>
       <AccuracyMedium>0.25</AccuracyMedium>
       <AccuracyLong>0.18</AccuracyLong>
-      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
 			<li>
@@ -167,7 +168,7 @@
 				<sprayWidth>4</sprayWidth>
 				<sprayArching>3</sprayArching>
 				<sprayThicknessCells>3</sprayThicknessCells>
-				<sprayNumExtraCells>24</sprayNumExtraCells> <!-- 要大於或等於發射次數 -->
+				<sprayNumExtraCells>25</sprayNumExtraCells> <!-- 要大於或等於發射次數 -->
 				<consumeFuelPerBurst>1</consumeFuelPerBurst>
 
 				<hasStandardCommand>true</hasStandardCommand>
@@ -196,4 +197,88 @@
 			</li>
 		</modExtensions>
   	</ThingDef>
+	
+	 <ThingDef ParentName="BaseBullet">
+    <defName>CinderBullet_Hellfire</defName>
+    <label>Hellfire Missile</label>
+    <thingClass>Embergarden.Projectile_ConeExplosion</thingClass>
+    <graphicData>
+      <texPath>Things/Weapons/Hellfire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5, 1.5)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Cinder_Bomb</damageDef>
+	   <damageAmountBase>800</damageAmountBase>
+	  <armorPenetrationBase>1</armorPenetrationBase>
+      <speed>75</speed>
+      <explosionRadius>10</explosionRadius>
+      <screenShakeFactor>1.5</screenShakeFactor>
+    </projectile>
+	<comps>
+        <li Class="CompProperties_Explosive">
+       <explosiveRadius>4.9</explosiveRadius>
+        <explosiveDamageType>Cinder_BombB</explosiveDamageType>
+		<damageAmountBase>150</damageAmountBase>
+		<armorPenetrationBase>1</armorPenetrationBase>
+        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        <wickTicks>15</wickTicks>
+        <startWickOnDamageTaken>
+          <li>Bullet</li>
+          <li>Arrow</li>
+          <li>ArrowHighVelocity</li>
+        </startWickOnDamageTaken>
+		<destroyThingOnExplosionSize>9999</destroyThingOnExplosionSize>
+		<propagationSpeed>0.5</propagationSpeed>
+      </li>
+    </comps>
+	<modExtensions>
+			<li Class="Embergarden.DefModExtension_ConeExplosion">
+			<angle>5</angle>	
+			<invert>false</invert>
+			</li>
+		</modExtensions>
+  </ThingDef>
+  
+  
+   <DamageDef Name="Cinder_Bomb">
+    <defName>Cinder_Bomb</defName>
+    <label>bomb</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in an explosion.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>50</defaultDamage>
+    <defaultStoppingPower>0.5</defaultStoppingPower>
+    <defaultArmorPenetration>0.10</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+    <plantDamageFactor>4</plantDamageFactor>
+    <corpseDamageFactor>0.5</corpseDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+	 <explosionCellFleck>Fleck_Vaporize</explosionCellFleck>
+    <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+    <explosionColorCenter>(1, 1, 1)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+	<expolosionPropagationSpeed>0.7</expolosionPropagationSpeed>
+    <soundExplosion>Explosion_Bomb</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+ 
+  <DamageDef ParentName="Cinder_Bomb">
+    <defName>Cinder_BombB</defName>
+    <label>bomb</label>
+	<isExplosive>False</isExplosive>
+	<workerClass>DamageWorker_Vaporize</workerClass>
+	<explosionCellFleck>BlastDry</explosionCellFleck>
+	<hasForcefulImpact>true</hasForcefulImpact>
+    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+	<expolosionPropagationSpeed>0.4</expolosionPropagationSpeed>
+  </DamageDef>
 </Defs>
