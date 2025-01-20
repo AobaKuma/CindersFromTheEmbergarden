@@ -95,13 +95,13 @@
     <Compile Include="CompUseEffect_RandomAbilityGain.cs" />
     <Compile Include="Comp_TurretTransformable.cs" />
     <Compile Include="ConeExplosionUtility.cs" />
+    <Compile Include="ConeExplosion\Projectile_ConeExplosive.cs" />
     <Compile Include="D.cs" />
     <Compile Include="Gizmo_AttachmentShieldStatus.cs" />
     <Compile Include="HarmonyPatch\HarmonyEntry.cs" />
     <Compile Include="HarmonyPatch\Patch_DrawVehicleTurret.cs" />
     <Compile Include="HarmonyPatch\PawnGizmoPatch.cs" />
     <Compile Include="HarmonyPatch\Pawn_DraftController_Postfix.cs" />
-    <Compile Include="HarmonyPatch\PostLoad_PreFix.cs" />
     <Compile Include="HediffComp_CustomRegeneration.cs" />
     <Compile Include="HediffComp_LimitedResurrect.cs" />
     <Compile Include="HediffComp_ProtectiveShield.cs" />
