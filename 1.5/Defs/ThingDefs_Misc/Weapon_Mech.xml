@@ -72,7 +72,7 @@
 	<thingClass>Embergarden.Projectile_ConeExplosion</thingClass>
     <projectile>
       <damageDef>Bomb</damageDef>
-      <explosionRadius>5</explosionRadius>
+      <explosionRadius>4</explosionRadius>
       <damageAmountBase>50</damageAmountBase>
       <stoppingPower>5</stoppingPower>
       <armorPenetrationBase>1</armorPenetrationBase>
@@ -80,9 +80,9 @@
     </projectile>
 		<comps>
         <li Class="CompProperties_Explosive">
-       <explosiveRadius>1.1</explosiveRadius>
+       <explosiveRadius>0.5</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
-		<damageAmountBase>50</damageAmountBase>
+		<damageAmountBase>20</damageAmountBase>
 		<armorPenetrationBase>1</armorPenetrationBase>
         <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
         <wickTicks>15</wickTicks>
@@ -97,7 +97,7 @@
     </comps>
 	<modExtensions>
 			<li Class="Embergarden.DefModExtension_ConeExplosion">
-			<angle>30</angle>	
+			<angle>40</angle>	
 			<invert>false</invert>
 			</li>
 		</modExtensions>

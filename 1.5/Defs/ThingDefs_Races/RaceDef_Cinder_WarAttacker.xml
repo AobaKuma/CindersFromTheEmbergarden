@@ -176,7 +176,7 @@
 						<ID>anti air turret</ID>
 						<turret>Cinder_Mounted_AA</turret>
 						<autoAttack>true</autoAttack>
-						<warmingTime>5</warmingTime>
+						<warmingTime>1</warmingTime>
 						<angleOffset>-90</angleOffset>
 						<renderNodeProperties>
 							<li>
