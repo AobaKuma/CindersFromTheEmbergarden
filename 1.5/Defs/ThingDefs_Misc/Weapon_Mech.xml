@@ -61,49 +61,6 @@
 			</li>
 		</modExtensions>
   	</ThingDef>
-	
-	<ThingDef ParentName="BaseBullet">
-    <defName>Cinder_Bullet_HEAT</defName>
-    <label>Energy gathering bomb</label>
-    <graphicData>
-      <texPath>Things/Weapons/Bullet_RPG</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-	<thingClass>Embergarden.Projectile_ConeExplosion</thingClass>
-    <projectile>
-      <damageDef>Bomb</damageDef>
-      <explosionRadius>4</explosionRadius>
-      <damageAmountBase>50</damageAmountBase>
-      <stoppingPower>5</stoppingPower>
-      <armorPenetrationBase>1</armorPenetrationBase>
-      <speed>65</speed>
-    </projectile>
-		<comps>
-        <li Class="CompProperties_Explosive">
-       <explosiveRadius>1</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-		<damageAmountBase>20</damageAmountBase>
-		<armorPenetrationBase>1</armorPenetrationBase>
-        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
-        <wickTicks>15</wickTicks>
-        <startWickOnDamageTaken>
-          <li>Bullet</li>
-          <li>Arrow</li>
-          <li>ArrowHighVelocity</li>
-        </startWickOnDamageTaken>
-		<destroyThingOnExplosionSize>9999</destroyThingOnExplosionSize>
-		<propagationSpeed>0.5</propagationSpeed>
-      </li>
-    </comps>
-	<modExtensions>
-			<li Class="Embergarden.DefModExtension_ConeExplosion">
-			<angle>40</angle>	
-			<invert>false</invert>
-			</li>
-		</modExtensions>
-  </ThingDef>
-	
-	
 
 	<ThingDef ParentName="Cinder_MechGun">
 		<defName>Cinder_MechGun_GiantHEATRifle</defName>
@@ -130,7 +87,7 @@
         <verbClass>Verb_Shoot</verbClass>
 		 <forcedMissRadius>0.5</forcedMissRadius>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Cinder_Bullet_HEAT</defaultProjectile>
+        <defaultProjectile>Cinder_Bullet_RPG</defaultProjectile>
         <warmupTime>3.5</warmupTime>
         <range>34.9</range>
         <burstShotCount>2</burstShotCount>

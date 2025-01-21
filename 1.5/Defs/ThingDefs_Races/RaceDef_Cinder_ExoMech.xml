@@ -138,10 +138,10 @@
 						<layer>-3</layer>
 					</dataWest>
 					<dataSouth>
-						<offset>(-1.2,0,0.25)</offset>
+						<offset>(-1.1,0,-0.25)</offset>
 					</dataSouth>
 					<dataNorth>
-						<offset>(1.2,0,0.25)</offset>
+						<offset>(1.1,0,0.25)</offset>
 					</dataNorth>
 				</drawData>
 				<turretRotationFollowPawn>true</turretRotationFollowPawn>
@@ -185,7 +185,7 @@
 						<ID>exo minigun</ID>
 						<turret>Cinder_Mounted_EXOminigun</turret>
 						<autoAttack>true</autoAttack>
-						<warmingTime>1.1</warmingTime>
+						<warmingTime>1.2</warmingTime>
 						<angleOffset>-90</angleOffset>
 						<renderNodeProperties>
 							<li>
