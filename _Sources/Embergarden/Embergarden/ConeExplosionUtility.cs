@@ -33,6 +33,8 @@ namespace Embergarden
                 affectedAngles.max = 180;
                 GenExplosion.DoExplosion(center, map, radius, damType, instigator, damAmount, armorPenetration, explosionSound, weapon, projectile, intendedTarget, postExplosionSpawnThingDef, postExplosionSpawnChance, postExplosionSpawnThingCount, postExplosionGasType, applyDamageToExplosionCellsNeighbors, preExplosionSpawnThingDef, preExplosionSpawnChance, preExplosionSpawnThingCount, chanceToStartFire, damageFalloff, direction, ignoredThings, affectedAngles, doVisualEffects, propagationSpeed, excludeRadius, doSoundEffects, postExplosionSpawnThingDefWater, screenShakeFactor);
             }
+            GenExplosion.DoExplosion(center, map, 1, damType, instigator, damAmount, armorPenetration, explosionSound, weapon, projectile, intendedTarget, postExplosionSpawnThingDef, postExplosionSpawnChance, postExplosionSpawnThingCount, postExplosionGasType, applyDamageToExplosionCellsNeighbors, preExplosionSpawnThingDef, preExplosionSpawnChance, preExplosionSpawnThingCount, chanceToStartFire, damageFalloff, direction, ignoredThings, null, doVisualEffects, propagationSpeed, excludeRadius, doSoundEffects, postExplosionSpawnThingDefWater, screenShakeFactor);
+
         }
         public static void RenderPredictedAreaOfEffect(IntVec3 loc, float radius, float angle, Vector3 direction)
         {
