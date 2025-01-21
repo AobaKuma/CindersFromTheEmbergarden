@@ -96,7 +96,7 @@
 		<race>
 			<renderTree>Cinder_WarSweeper</renderTree>
 			<body>Cinder_ErodedEXO</body>
-			<baseHealthScale>16</baseHealthScale>
+			<baseHealthScale>9</baseHealthScale>
 			<detritusLeavings>
 				<li>
 					<def>Cinder_ChunkSlag</def>
@@ -151,7 +151,7 @@
 								<nodeClass>Embergarden.PawnRenderNode_SubTurretGun</nodeClass>
 								<workerClass>Embergarden.PawnRenderNodeWorker_SubTurretGun</workerClass>
 								<parentTagDef>Body</parentTagDef>
-								<drawSize>0.75</drawSize>
+								<drawSize>0.45</drawSize>
 								<baseLayer>9</baseLayer>
 								<pawnType>Any</pawnType>
 								<drawData>
@@ -274,9 +274,6 @@
 				</subTurrets>
 			</li>
 		</comps>
-		<modExtensions>
-			<li Class="Embergarden.ModExtension_Draftable"/>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BaseMechanoidKind">

@@ -96,7 +96,7 @@
 		<race>
 			<renderTree>Cinder_WarAttacker</renderTree>
 			<body>Cinder_ErodedEXO</body>
-			<baseHealthScale>16</baseHealthScale>
+			<baseHealthScale>9</baseHealthScale>
 			<detritusLeavings>
 				<li>
 					<def>Cinder_ChunkSlag</def>
@@ -176,7 +176,7 @@
 						<ID>anti air turret</ID>
 						<turret>Cinder_Mounted_AA</turret>
 						<autoAttack>true</autoAttack>
-						<warmingTime>5</warmingTime>
+						<warmingTime>0.5</warmingTime>
 						<angleOffset>-90</angleOffset>
 						<renderNodeProperties>
 							<li>
@@ -208,9 +208,6 @@
 				</subTurrets>
 			</li>
 		</comps>
-		<modExtensions>
-			<li Class="Embergarden.ModExtension_Draftable"/>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BaseMechanoidKind">
@@ -244,6 +241,9 @@
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
+		<abilities>
+      <li>Cinder_LaunchHellfireMissileB</li>
+    </abilities>
 		<weaponMoney>9999~9999</weaponMoney>
 		<weaponTags>
 			<li>Cinder_HEATRifle</li>

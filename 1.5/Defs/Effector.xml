@@ -1,63 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <EffecterDef>
-    <defName>Cinder_ConeExplosion</defName>
-    <children>
-      <li>
-        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-        <positionRadius>-0.15</positionRadius>
-        <fleckDef>Cinder_SplashedPieces</fleckDef>
-        <burstCount>10~15</burstCount>
-        <speed>10~20</speed>
-        <scale>0.25~0.5</scale>
-        <angle>-20~20</angle>
-        <positionLerpFactor>0.8</positionLerpFactor>
-        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
-        <attachToSpawnThing>true</attachToSpawnThing>
-        <color>(100,100,100)</color>
-      </li>
-      <li>
-        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-        <positionRadius>-0.15</positionRadius>
-        <fleckDef>Cinder_SplashedPieces_Center</fleckDef>
-        <burstCount>4~8</burstCount>
-        <speed>20~40</speed>
-        <scale>0.25~0.5</scale>
-        <angle>-5~5</angle>
-        <positionLerpFactor>0.8</positionLerpFactor>
-        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
-        <attachToSpawnThing>true</attachToSpawnThing>
-      </li>
-    </children>
-  </EffecterDef>
-
-  <FleckDef ParentName="FleckBase_Thrown">
-    <defName>Cinder_SplashedPieces</defName>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
-      <renderInstanced>true</renderInstanced>
-    </graphicData>
+  <ThingDef ParentName="MoteBase">
+    <defName>CinderMote_HellfireMissile_Aim</defName>
+    <thingClass>MoteDualAttached</thingClass>
     <altitudeLayer>MoteOverhead</altitudeLayer>
-    <fadeInTime>0.05</fadeInTime>
-    <solidTime>0.5</solidTime>
-    <fadeOutTime>0.25</fadeOutTime>
-    <growthRate>0.5</growthRate>
-    <collide>false</collide>
-  </FleckDef>
-
-  <FleckDef ParentName="FleckBase_Thrown">
-    <defName>Cinder_SplashedPieces_Center</defName>
+    <mote>
+      <fadeInTime>0.15</fadeInTime>
+      <fadeOutTime>0.3</fadeOutTime>
+      <solidTime>999999</solidTime>
+      <needsMaintenance>True</needsMaintenance>
+      <rotateTowardsTarget>True</rotateTowardsTarget>
+      <scaleToConnectTargets>True</scaleToConnectTargets>
+      <fadeOutUnmaintained>True</fadeOutUnmaintained>
+    </mote>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
-      <renderInstanced>true</renderInstanced>
+      <texPath>Things/Mote/HellfireMissile_Aim</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteHellfireCannon_Aim</shaderType>
+      <shaderParameters>
+        <_DistortionTex>/Things/Mote/Cloudy_C</_DistortionTex>
+        <_NumFrames>10</_NumFrames>
+        <_FramesPerSec>1.35</_FramesPerSec>
+        <_DistortionScrollSpeed>1.35</_DistortionScrollSpeed>
+        <_Intensity>3</_Intensity>
+        <_DistortionScale>0.082</_DistortionScale>
+      </shaderParameters>
+      <drawSize>(3, 0.9)</drawSize>
     </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>CinderMote_HellfireMissile_Charge</defName>
+    <thingClass>MoteAttached</thingClass>
     <altitudeLayer>MoteOverhead</altitudeLayer>
-    <fadeInTime>0.04</fadeInTime>
-    <solidTime>0.15</solidTime>
-    <fadeOutTime>0.1</fadeOutTime>
-    <growthRate>0.5</growthRate>
-    <collide>true</collide>
-  </FleckDef>
+    <mote>
+      <fadeInTime>0.15</fadeInTime>
+      <fadeOutTime>0.3</fadeOutTime>
+      <solidTime>999999</solidTime>
+      <needsMaintenance>True</needsMaintenance>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/HellfireMissile_ChargeGlow</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteHellfireCannon_Charge</shaderType>
+      <shaderParameters>
+        <_RandomTex>/Things/Mote/RandomFlicker</_RandomTex>
+        <_FlickerFrequency>0.25</_FlickerFrequency>
+        <_FlickerAmount>0.6</_FlickerAmount>
+        <_InnerCircleIntensity>0.1</_InnerCircleIntensity>
+        <_InnerCircleSize>0.4</_InnerCircleSize>
+        <_InnerCircleShimmerAmount>0.14</_InnerCircleShimmerAmount>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>CinderMote_HellfireMissile_Target</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.5</fadeInTime>
+      <fadeOutTime>0.3</fadeOutTime>
+      <solidTime>999999</solidTime>
+      <needsMaintenance>True</needsMaintenance>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/MoteHellfireMissile_Target</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteHellfireCannon_Target</shaderType>
+      <shaderParameters>
+        <_ScanTex>/Things/Mote/MoteHellfireMissile_Target_Scan</_ScanTex>
+        <_ScanMask>/Things/Mote/MoteHellfireMissile_Target_Scan_Mask</_ScanMask>
+      </shaderParameters>
+      <drawSize>(8, 8)</drawSize>
+    </graphicData>
+  </ThingDef>
 
 
 </Defs>
