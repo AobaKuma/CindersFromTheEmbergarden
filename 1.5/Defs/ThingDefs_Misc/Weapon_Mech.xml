@@ -260,7 +260,6 @@
     <buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
     <buildingDamageFactorPassable>2</buildingDamageFactorPassable>
     <plantDamageFactor>4</plantDamageFactor>
-    <corpseDamageFactor>0.5</corpseDamageFactor>
     <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
 	 <explosionCellFleck>Fleck_Vaporize</explosionCellFleck>
     <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
@@ -269,6 +268,7 @@
 	<expolosionPropagationSpeed>0.7</expolosionPropagationSpeed>
     <soundExplosion>Explosion_Bomb</soundExplosion>
     <combatLogRules>Damage_Bomb</combatLogRules>
+	 <corpseDamageFactor>0.1</corpseDamageFactor>
   </DamageDef>
  
   <DamageDef ParentName="Cinder_Bomb">
