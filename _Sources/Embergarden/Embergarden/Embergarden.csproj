@@ -89,6 +89,7 @@
     <Compile Include="CompAbilityEffect_BodySizeCap.cs" />
     <Compile Include="CompAbilityEffect_ScorchWound.cs" />
     <Compile Include="CompAbilityEffect_SpawnWithFaction.cs" />
+    <Compile Include="CompAddHediff.cs" />
     <Compile Include="CompProperties_Transformable.cs" />
     <Compile Include="CompSecondaryVerb.cs" />
     <Compile Include="CompUseEffect_CallBossgroupNoMechanitor.cs" />
