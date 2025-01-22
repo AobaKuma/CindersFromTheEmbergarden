@@ -96,6 +96,7 @@
 		<race>
 			<renderTree>Cinder_WarSweeper</renderTree>
 			<body>Cinder_ErodedEXO</body>
+			<baseBodySize>3.4</baseBodySize>
 			<baseHealthScale>9</baseHealthScale>
 			<detritusLeavings>
 				<li>

@@ -122,10 +122,10 @@
 		<verbs>
 			<li>
 				<verbClass>Embergarden.Verb_ArcSprayProjectile</verbClass>
-				<sprayWidth>4</sprayWidth>
-				<sprayArching>3</sprayArching>
+				<sprayWidth>6</sprayWidth>
+				<sprayArching>4</sprayArching>
 				<sprayThicknessCells>3</sprayThicknessCells>
-				<sprayNumExtraCells>25</sprayNumExtraCells> <!-- 要大於或等於發射次數 -->
+				<sprayNumExtraCells>30</sprayNumExtraCells> <!-- 要大於或等於發射次數 -->
 				<consumeFuelPerBurst>1</consumeFuelPerBurst>
 
 				<hasStandardCommand>true</hasStandardCommand>
@@ -134,7 +134,7 @@
 				<minRange>8</minRange>
 				<range>39.9</range>
 				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
-				<burstShotCount>25</burstShotCount>
+				<burstShotCount>30</burstShotCount>
 				<soundCast>Shot_Autocannon</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>

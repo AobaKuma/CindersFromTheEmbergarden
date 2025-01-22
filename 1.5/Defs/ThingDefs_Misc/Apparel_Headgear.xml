@@ -132,7 +132,6 @@
 		<stuffCategories>
 				<li>Metallic</li>
 			</stuffCategories>
-			<defaultStuff>Cinder_AmorphousPolymer</defaultStuff>
 		<costStuffCount>30</costStuffCount>
         <statBases>
             <WorkToMake>12000</WorkToMake>
@@ -281,8 +280,8 @@
 		</costList>
 		<stuffCategories>
 				<li>Metallic</li>
-			</stuffCategories>
-		<defaultStuff>Steel</defaultStuff>
+		</stuffCategories>
+		<defaultStuff>Cinder_AmorphousPolymer</defaultStuff>
 		<costStuffCount>30</costStuffCount>
         <statBases>
             <WorkToMake>9200</WorkToMake>

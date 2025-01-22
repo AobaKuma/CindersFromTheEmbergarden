@@ -527,8 +527,7 @@
 	</costList>
 		<stuffCategories>
 				<li>Metallic</li>
-			</stuffCategories>
-			<defaultStuff>Cinder_AmorphousPolymer</defaultStuff>
+				</stuffCategories>
 		<costStuffCount>40</costStuffCount>
     <statBases>
       <MaxHitPoints>400</MaxHitPoints>
@@ -601,7 +600,6 @@
 		<stuffCategories>
 				<li>Metallic</li>
 			</stuffCategories>
-			<defaultStuff>Cinder_AmorphousPolymer</defaultStuff>
 		<costStuffCount>10</costStuffCount>
     <statBases>
 	   <MarketValue>25</MarketValue>
@@ -679,7 +677,6 @@
 			<stuffCategories>
 				<li>Metallic</li>
 			</stuffCategories>
-			<defaultStuff>Cinder_AmorphousPolymer</defaultStuff>
 		<costStuffCount>50</costStuffCount>
 		<statBases>
 			<MaxHitPoints>400</MaxHitPoints>

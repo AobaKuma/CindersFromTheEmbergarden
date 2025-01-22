@@ -43,7 +43,7 @@
     </graphicData>
     <projectile>
       <damageDef>Cinder_Bomb</damageDef>
-	   <damageAmountBase>150</damageAmountBase>
+	   <damageAmountBase>100</damageAmountBase>
 	  <armorPenetrationBase>1</armorPenetrationBase>
       <speed>75</speed>
       <explosionRadius>4</explosionRadius>
@@ -121,7 +121,7 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>15</damageAmountBase>
+      <damageAmountBase>18</damageAmountBase>
       <stoppingPower>3</stoppingPower>
       <armorPenetrationBase>0.14</armorPenetrationBase>
 	  <extraDamages>
