@@ -10,11 +10,13 @@ namespace Embergarden
         public override void PostPostMake()
         {
             base.PostPostMake();
+            TryRegenHediff();
         }
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
+            TryRegenHediff();
         }
 
         protected void TryRegenHediff()
