@@ -24,10 +24,8 @@ namespace Embergarden
                 progressBarEffecter ??= EffecterDefOf.ProgressBar.Spawn();
                 progressBarEffecter.EffectTick(this, TargetInfo.Invalid);
                 MoteProgressBar mote = ((SubEffecter_ProgressBar)progressBarEffecter.children[0]).mote;
-                mote.progress = countdown / def.building.turretBurstCooldownTime;
+                mote.progress = (float)countdown / def.building.turretBurstCooldownTime.SecondsToTicks();
                 mote.offsetZ = -0.8f;
-
-                Log.Message(mote.progress);
             }
             else if (progressBarEffecter != null)
             {
@@ -52,6 +50,8 @@ namespace Embergarden
                 countdown = def.building.turretBurstCooldownTime.SecondsToTicks();
 
                 base.SpringSub(p);
+
+                comp.wickStarted = false;
             }
         }
 
