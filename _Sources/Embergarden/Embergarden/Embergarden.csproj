@@ -83,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ability_Transform.cs" />
+    <Compile Include="CompTentacleSpreader.cs" />
     <Compile Include="Building_TrapExplosive_Rechargeable.cs" />
     <Compile Include="Building_TrapTentacle.cs" />
     <Compile Include="Cider_DefOf.cs" />
