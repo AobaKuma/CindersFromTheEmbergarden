@@ -75,6 +75,7 @@
         </weaponTags>
 		<equippedAngleOffset>45</equippedAngleOffset>
 		<uiIconPath>Things/Pawn/Mech/GiantHEATRifle_UIicon</uiIconPath>
+		<uiIconScale>2</uiIconScale>
 		<statBases>
 			<AccuracyTouch>0.80</AccuracyTouch>
 			<AccuracyShort>0.7</AccuracyShort>
@@ -112,6 +113,7 @@
         </weaponTags>
 		<equippedAngleOffset>45</equippedAngleOffset>
 		<uiIconPath>Things/Pawn/Mech/GiantMiniGun_UIicon</uiIconPath>
+		<uiIconScale>2</uiIconScale>
 		<statBases>
 			<AccuracyTouch>0.15</AccuracyTouch>
       <AccuracyShort>0.25</AccuracyShort>
@@ -166,8 +168,8 @@
     </graphicData>
     <projectile>
       <damageDef>Cinder_Bomb</damageDef>
-	   <damageAmountBase>800</damageAmountBase>
-	  <armorPenetrationBase>1</armorPenetrationBase>
+	   <damageAmountBase>400</damageAmountBase>
+	  <armorPenetrationBase>1.5</armorPenetrationBase>
       <speed>75</speed>
       <explosionRadius>10</explosionRadius>
       <screenShakeFactor>1.5</screenShakeFactor>
@@ -209,9 +211,9 @@
     <hediffSolid>Crack</hediffSolid>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
     <impactSoundType>Blunt</impactSoundType>
-    <armorCategory>Sharp</armorCategory>
-    <minDamageToFragment>15</minDamageToFragment>
-    <defaultDamage>50</defaultDamage>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>150</minDamageToFragment>
+    <defaultDamage>500</defaultDamage>
     <defaultStoppingPower>0.5</defaultStoppingPower>
     <defaultArmorPenetration>0.10</defaultArmorPenetration>
     <buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>

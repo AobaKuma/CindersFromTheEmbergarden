@@ -93,6 +93,25 @@
         </grains>
         <pitchRange>0.99~1.01</pitchRange>
         <volumeRange>40</volumeRange>
+		 <repeatMode>NeverTwice</repeatMode>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Cinder_TentacleGround</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/TentacleGround</clipPath>
+          </li>
+        </grains>
+        <volumeRange>20~25</volumeRange>
+        <pitchRange>0.9~1.1</pitchRange>
+        <repeatMode>NeverTwice</repeatMode>
       </li>
     </subSounds>
   </SoundDef>

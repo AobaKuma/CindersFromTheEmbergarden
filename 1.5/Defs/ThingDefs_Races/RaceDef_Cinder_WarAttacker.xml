@@ -215,7 +215,9 @@
 		<defName>Cinder_Mech_WarAttacker</defName>
 		<label>war attacker</label>
 		<race>Cinder_Mech_WarAttacker</race>
-		<combatPower>180</combatPower>
+		<combatPower>2800</combatPower>
+         <maxPerGroup>2</maxPerGroup>
+         <isBoss>true</isBoss>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<bodyGraphicData>
