@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using System.Reflection;
 using Verse;
 
 namespace Embergarden
@@ -8,6 +9,7 @@ namespace Embergarden
         int countdown = 0;
 
         protected Effecter progressBarEffecter;
+        MethodInfo detonate => typeof(CompExplosive).GetMethod("Detonate", BindingFlags.Instance | BindingFlags.NonPublic);
 
         public override void ExposeData()
         {
@@ -42,6 +44,7 @@ namespace Embergarden
             {
                 var comp = GetComp<CompExplosive>();
                 comp.AddThingsIgnoredByExplosion([this]);
+                detonate.Invoke(comp, [Map, false]);
                 if (progressBarEffecter != null)
                 {
                     progressBarEffecter.Cleanup();
