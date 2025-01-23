@@ -21,15 +21,18 @@ namespace Embergarden
             {
                 countdown--;
 
-                if (progressBarEffecter == null)
-                {
-                    progressBarEffecter = EffecterDefOf.ProgressBar.Spawn();
-                }
+                progressBarEffecter ??= EffecterDefOf.ProgressBar.Spawn();
                 progressBarEffecter.EffectTick(this, TargetInfo.Invalid);
                 MoteProgressBar mote = ((SubEffecter_ProgressBar)progressBarEffecter.children[0]).mote;
                 mote.progress = countdown / def.building.turretBurstCooldownTime;
                 mote.offsetZ = -0.8f;
             }
+            else if (progressBarEffecter != null)
+            {
+                progressBarEffecter.Cleanup();
+                progressBarEffecter = null;
+            }
+
             base.Tick();
         }
 
