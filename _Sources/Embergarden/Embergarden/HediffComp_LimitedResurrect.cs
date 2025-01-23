@@ -21,15 +21,13 @@ namespace Embergarden
             {
                 if (CanResurrect) return null;
 
-                return "Props.disabledString";
+                return Props.disabledString;
             }
         }
 
         public override void Notify_PawnDied(DamageInfo? dinfo, Hediff culprit = null)
         {
-            Log.Message(CanResurrect);
             if (!CanResurrect) return;
-            Log.Message(CanResurrect);
             CanResurrect = false;
 
             if (ModLister.AnomalyInstalled)
