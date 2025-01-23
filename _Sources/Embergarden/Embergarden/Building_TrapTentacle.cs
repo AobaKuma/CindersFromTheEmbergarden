@@ -36,13 +36,15 @@ namespace Embergarden
             {
                 return;
             }
-            Log.Message(p);
+            if (p.health.hediffSet.HasHediff(ext.hediffDef)) return;
+            ext.soundDef?.PlayOneShot(p);
             Hediff hediff = HediffMaker.MakeHediff(ext.hediffDef, p, null);
             HediffComp_Disappears hediffComp_Disappears = hediff.TryGetComp<HediffComp_Disappears>();
             if (hediffComp_Disappears != null)
             {
                 hediffComp_Disappears.ticksToDisappear = ext.durationSec.SecondsToTicks();
             }
+            p.health.AddHediff(hediff);
         }
     }
 
@@ -51,6 +53,8 @@ namespace Embergarden
         public TerrainDef terrainDef;
 
         public HediffDef hediffDef;
+
+        public SoundDef soundDef;
 
         public float durationSec;
     }
