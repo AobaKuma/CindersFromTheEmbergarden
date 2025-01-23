@@ -38,7 +38,7 @@ namespace Embergarden
         public void IncrementTime(int delta)
         {
             int oldRad = GenRadial.NumCellsInRadius(Props.maxRadius * pct);
-            pct += delta / Props.durationTicks;
+            pct += (float)delta / Props.durationTicks;
             if (pct > 1) pct = 1;
             int newRad = GenRadial.NumCellsInRadius(Props.maxRadius * pct);
 
@@ -52,9 +52,6 @@ namespace Embergarden
                 effecter?.Cleanup();
                 effecter = null;
             }
-            Log.Message(delta);
-            Log.Message(oldRad);
-            Log.Message(newRad);
             for (int i = oldRad; i < newRad; i++)
             {
                 IntVec3 intVec = parent.Position + GenRadial.RadialPattern[i];
@@ -64,7 +61,6 @@ namespace Embergarden
                 spawnedThing ??= ThingMaker.MakeThing(Props.spreadedThingDef);
                 if (GenPlace.TryPlaceThing(spawnedThing, intVec, parent.Map, ThingPlaceMode.Direct))
                 {
-                    Log.Message(i);
                     spawnedThing.SetFactionDirect(parent.Faction);
                     spawnedThing = null;
                 }
