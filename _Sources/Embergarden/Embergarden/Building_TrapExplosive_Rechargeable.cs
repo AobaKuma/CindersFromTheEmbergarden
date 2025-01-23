@@ -5,7 +5,7 @@ namespace Embergarden
 {
     public class Building_TrapExplosive_Rechargeable : Building_TrapExplosive
     {
-        int countdown;
+        int countdown = 0;
 
         protected Effecter progressBarEffecter;
 
@@ -51,6 +51,16 @@ namespace Embergarden
 
                 base.SpringSub(p);
             }
+        }
+
+        public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
+        {
+            if (progressBarEffecter != null)
+            {
+                progressBarEffecter.Cleanup();
+                progressBarEffecter = null;
+            }
+            base.Destroy(mode);
         }
     }
 }
