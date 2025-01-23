@@ -258,7 +258,11 @@
 						 <Age For="HumanlikeAdult">
                             <path>Things/Pawn/Humanlike/Body/CinderNaked_Female</path>
                             <extendedGraphics>
-                                <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Things/Pawn/Humanlike/Body/GhoulNaked_Female</Hediff>
+							   <Gender For="Female">
+                                    <extendedGraphics>
+                                       <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Things/Pawn/Humanlike/Body/GhoulNaked_Female</Hediff>
+                                    </extendedGraphics>
+                                </Gender>
                                 <Gender For="Male">
                                     <path>Things/Pawn/Humanlike/Body/CinderNaked_Male</path>
                                     <extendedGraphics>
@@ -541,5 +545,12 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
+	<comps>
+      <li Class="Embergarden.CompProperties_AddHediff">
+	  <hediffDefs>
+	     <li>UncontrollableTentacles</li>
+	  </hediffDefs>
+      </li>
+    </comps>
 	</AlienRace.ThingDef_AlienRace>
 </Defs>

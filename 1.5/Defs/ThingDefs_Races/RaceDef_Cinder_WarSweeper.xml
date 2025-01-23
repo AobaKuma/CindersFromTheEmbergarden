@@ -281,7 +281,9 @@
 		<defName>Cinder_Mech_WarSweeper</defName>
 		<label>war sweeper</label>
 		<race>Cinder_Mech_WarSweeper</race>
-		<combatPower>180</combatPower>
+		 <combatPower>1000</combatPower>
+         <maxPerGroup>3</maxPerGroup>
+         <isBoss>true</isBoss>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<bodyGraphicData>

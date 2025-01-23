@@ -43,10 +43,10 @@
     </graphicData>
     <projectile>
       <damageDef>Cinder_Bomb</damageDef>
-	   <damageAmountBase>100</damageAmountBase>
-	  <armorPenetrationBase>1</armorPenetrationBase>
+	   <damageAmountBase>150</damageAmountBase>
+	  <armorPenetrationBase>1.5</armorPenetrationBase>
       <speed>75</speed>
-      <explosionRadius>4</explosionRadius>
+      <explosionRadius>3</explosionRadius>
     </projectile>
 	<comps>
         <li Class="CompProperties_Explosive">
@@ -67,7 +67,7 @@
     </comps>
 	<modExtensions>
 			<li Class="Embergarden.DefModExtension_ConeExplosion">
-			<angle>10</angle>	
+			<angle>15</angle>	
 			<invert>false</invert>
 			</li>
 		</modExtensions>
@@ -553,8 +553,8 @@
 		 <forcedMissRadius>0.5</forcedMissRadius>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Cinder_Bullet_RPG</defaultProjectile>
-        <warmupTime>4.5</warmupTime>
-        <range>40.9</range>
+        <warmupTime>6.5</warmupTime>
+        <range>30.9</range>
         <burstShotCount>1</burstShotCount>
         <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
         <soundCast>InfernoCannon_Fire</soundCast>

@@ -4,7 +4,7 @@
 		<modExtensions>
 			<li Class="Embergarden.RandomCapacityModifier">
 				<capacity>Manipulation</capacity>
-				<range>0.8~1.2</range>
+				<range>0.9~1.2</range>
 				<offset>false</offset>
 				<secondsPerRandomize>2400</secondsPerRandomize>
 			</li>
@@ -25,7 +25,7 @@
 			<MeleeCooldownFactor>1.2</MeleeCooldownFactor>
             </statFactors>
 				<statOffsets>
-					<MeleeDamageFactor>1.5</MeleeDamageFactor>
+					<MeleeDamageFactor>0.5</MeleeDamageFactor>
 				</statOffsets>
 			</li>
 		</stages>
