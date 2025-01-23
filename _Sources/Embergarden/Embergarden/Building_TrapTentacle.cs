@@ -28,10 +28,6 @@ namespace Embergarden
 
         protected override void SpringSub(Pawn p)
         {
-            if (Spawned)
-            {
-                SoundDefOf.TrapSpring.PlayOneShot(new TargetInfo(base.Position, base.Map));
-            }
             if (p == null)
             {
                 return;

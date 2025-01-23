@@ -23,6 +23,17 @@ namespace Embergarden
             IncrementTime(1);
         }
 
+        public override void PostSpawnSetup(bool respawningAfterLoad)
+        {
+            base.PostSpawnSetup(respawningAfterLoad);
+            spawnedThing ??= ThingMaker.MakeThing(Props.spreadedThingDef);
+            if (GenPlace.TryPlaceThing(spawnedThing, parent.Position, parent.Map, ThingPlaceMode.Direct))
+            {
+                spawnedThing.SetFactionDirect(parent.Faction);
+                spawnedThing = null;
+            }
+        }
+
         public override void CompTickRare()
         {
             base.CompTickRare();
