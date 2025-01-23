@@ -215,7 +215,7 @@
     </statBases>
     <verbProperties>
 	<verbClass>Verb_CastAbility</verbClass>
-      <warmupTime>1</warmupTime>
+      <warmupTime>1.5</warmupTime>
       <range>34.9</range>
 	  <soundCast>Cinder_TentacleWhisper</soundCast>
       <targetParams>
@@ -242,7 +242,7 @@
    <AbilityDef>
     <defName>Cinder_AmorphousWall</defName>
     <label>amorphous wall</label>
-    <description>Form a temporary wall by skipping rubble and soil up from deep under the ground.</description>
+    <description>Summon a sturdy tentacle wall from underground.</description>
     <iconPath>UI/Abilities/AmorphousWall</iconPath>
     <writeCombatLog>True</writeCombatLog>
     <hotKey>Misc10</hotKey>
@@ -263,6 +263,34 @@
     <comps>
       <li Class = "Embergarden.CompProperties_AbilitySpawnWithFaction">
         <thingDef>Cinder_AmorphousWall</thingDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+  <AbilityDef>
+    <defName>Cinder_AmorphousIED</defName>
+    <label>amorphous IED</label>
+    <description>Summon a bomb trap from underground, which will automatically reload.</description>
+    <iconPath>UI/Abilities/ErodedMines</iconPath>
+    <writeCombatLog>True</writeCombatLog>
+    <hotKey>Misc10</hotKey>
+	<cooldownTicksRange>7500</cooldownTicksRange>
+	<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+	<verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>1.7</warmupTime>
+      <range>14.9</range>
+      <targetParams>
+        <canTargetPawns>False</canTargetPawns>
+        <canTargetLocations>True</canTargetLocations>
+      </targetParams>
+	  <soundCast>Cinder_TentacleGround</soundCast>
+	    <soundAiming>Cinder_TentacleAiming</soundAiming>
+    </verbProperties>
+    <comps>
+      <li Class = "Embergarden.CompProperties_AbilitySpawnWithFaction">
+        <thingDef>Cinder_TrapIED_HighExplosive</thingDef>
       </li>
     </comps>
   </AbilityDef>
