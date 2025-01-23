@@ -21,13 +21,15 @@ namespace Embergarden
             {
                 if (CanResurrect) return null;
 
-                return Props.disabledString.Translate();
+                return Props.disabledString;
             }
         }
 
         public override void Notify_PawnDied(DamageInfo? dinfo, Hediff culprit = null)
         {
+            Log.Message(CanResurrect);
             if (!CanResurrect) return;
+            Log.Message(CanResurrect);
             CanResurrect = false;
 
             if (ModLister.AnomalyInstalled)
@@ -107,6 +109,12 @@ namespace Embergarden
                     pawn.health.RemoveHediff(pawn.health.hediffSet.hediffs[i - 1]);
                 }
             }
+        }
+
+        public override void CompExposeData()
+        {
+            base.CompExposeData();
+            Scribe_Values.Look(ref CanResurrect, "canResurrect");
         }
     }
 
