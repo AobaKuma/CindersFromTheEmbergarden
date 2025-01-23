@@ -26,6 +26,8 @@ namespace Embergarden
                 MoteProgressBar mote = ((SubEffecter_ProgressBar)progressBarEffecter.children[0]).mote;
                 mote.progress = countdown / def.building.turretBurstCooldownTime;
                 mote.offsetZ = -0.8f;
+
+                Log.Message(mote.progress);
             }
             else if (progressBarEffecter != null)
             {
