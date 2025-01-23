@@ -20,6 +20,19 @@ namespace Embergarden
         public override void CompTick()
         {
             base.CompTick();
+            IncrementTime(1);
+        }
+
+        public override void CompTickRare()
+        {
+            base.CompTickRare();
+            IncrementTime(GenTicks.TickRareInterval);
+        }
+
+        public override void CompTickLong()
+        {
+            base.CompTickLong();
+            IncrementTime(GenTicks.TickLongInterval);
         }
 
         public void IncrementTime(int delta)
