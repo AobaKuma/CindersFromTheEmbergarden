@@ -548,7 +548,10 @@
 	<comps>
       <li Class="Embergarden.CompProperties_AddHediff">
 	  <hediffDefs>
-	     <li>UncontrollableTentacles</li>
+	     <li>Cinder_UncontrollableTentacles</li>
+		 <li>Cinder_Regen</li>
+		 <li>Cinder_EyeHediff</li>
+		 <li>Cinder_Resurrect</li>
 	  </hediffDefs>
       </li>
     </comps>

@@ -113,6 +113,44 @@
 		</comps>
 	</AbilityDef>
 	
+	<AbilityDef ParentName="AbilityTouchBase">
+    <defName>Cinder_BurnHemostasis</defName>
+    <label>burn hemostasis</label>
+    <description>Use burnt tentacles to stop bleeding from wounds on the target's body.</description>
+    <iconPath>UI/Abilities/BurnHemostasis</iconPath>
+    <cooldownTicksRange>7500</cooldownTicksRange> <!-- 3 hours -->
+     <stunTargetWhileCasting>true</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+   <warmupEffecter>CinderMote_Amorphous</warmupEffecter>
+    <jobDef>CastAbilityOnThingMelee</jobDef>
+    <category>Sanguophage</category>
+    <displayOrder>400</displayOrder>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	 <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>1</warmupTime>
+	   <soundCast>Cinder_Transform</soundCast>
+      <targetParams>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+      </targetParams>
+	  <soundAiming>Cinder_TentacleAiming</soundAiming>
+    </verbProperties>
+    <comps>
+      <li Class="Embergarden.CompProperties_ScorchWound">
+        <replacingHediff>Burn</replacingHediff>
+        <tendQuality>0.6</tendQuality>
+      </li>
+    </comps>
+  </AbilityDef>
+	
 	<AbilityDef>
     <defName>Cinder_EternalFearAbility</defName>
     <label>eternal fear</label>
@@ -132,7 +170,7 @@
       <range>31.9</range>
       <drawAimPie>true</drawAimPie>
       <requireLineOfSight>true</requireLineOfSight>
-        <soundCast>PsychicInsanityLanceCast</soundCast>
+        <soundCast>Cinder_TentacleWhisper</soundCast>
       <targetParams>
         <canTargetLocations>false</canTargetLocations>
         <canTargetPawns>true</canTargetPawns>
@@ -144,7 +182,7 @@
         <canTargetMutants>false</canTargetMutants>
         <neverTargetIncapacitated>true</neverTargetIncapacitated>
       </targetParams>
-	  <soundAiming>PsychicArtifactWarmupSustained</soundAiming>
+	  <soundAiming>Cinder_TentacleAiming</soundAiming>
     </verbProperties>
     <comps>
       <li Class="CompProperties_AbilityGiveMentalState">
@@ -160,7 +198,7 @@
   </AbilityDef>
   
   
-   <AbilityDef ParentName="PsycastBase">
+   <AbilityDef>
     <defName>Cinder_FearPulse</defName>
 	<label>fear pulse</label>
     <description>Erosion the spirits of nearby animals, causing them to fall into a state of fear.</description>
@@ -176,16 +214,17 @@
 	  <Ability_Duration>120</Ability_Duration>
     </statBases>
     <verbProperties>
+	<verbClass>Verb_CastAbility</verbClass>
       <warmupTime>1</warmupTime>
       <range>34.9</range>
-	  <soundCast>PsychicInsanityLanceCast</soundCast>
+	  <soundCast>Cinder_TentacleWhisper</soundCast>
       <targetParams>
         <canTargetHumans>False</canTargetHumans>
         <canTargetMechs>False</canTargetMechs>
         <canTargetAnimals>True</canTargetAnimals>
         <canTargetLocations>True</canTargetLocations>
       </targetParams>
-	  <soundAiming>PsychicArtifactWarmupSustained</soundAiming>
+	  <soundAiming>Cinder_TentacleAiming</soundAiming>
     </verbProperties>
     <comps>
       <li Class = "CompProperties_AbilityGiveMentalState">
@@ -196,6 +235,34 @@
       </li>
       <li Class="CompProperties_AbilityFleckOnTarget">
         <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+   <AbilityDef>
+    <defName>Cinder_AmorphousWall</defName>
+    <label>amorphous wall</label>
+    <description>Form a temporary wall by skipping rubble and soil up from deep under the ground.</description>
+    <iconPath>UI/Abilities/AmorphousWall</iconPath>
+    <writeCombatLog>True</writeCombatLog>
+    <hotKey>Misc10</hotKey>
+	<cooldownTicksRange>7500</cooldownTicksRange>
+	<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+	<verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>1.7</warmupTime>
+      <range>24.9</range>
+      <targetParams>
+        <canTargetPawns>False</canTargetPawns>
+        <canTargetLocations>True</canTargetLocations>
+      </targetParams>
+	  <soundCast>Cinder_TentacleGround</soundCast>
+	    <soundAiming>Cinder_TentacleAiming</soundAiming>
+    </verbProperties>
+    <comps>
+      <li Class = "Embergarden.CompProperties_AbilitySpawnWithFaction">
+        <thingDef>Cinder_AmorphousWall</thingDef>
       </li>
     </comps>
   </AbilityDef>

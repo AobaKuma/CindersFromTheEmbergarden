@@ -105,14 +105,54 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Clip">
-            <clipPath>Weapons/TentacleGround</clipPath>
+		  <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapons/TentacleGround</clipFolderPath>
           </li>
         </grains>
-        <volumeRange>20~25</volumeRange>
+        <volumeRange>30~45</volumeRange>
         <pitchRange>0.9~1.1</pitchRange>
         <repeatMode>NeverTwice</repeatMode>
       </li>
     </subSounds>
   </SoundDef>
+  
+  <SoundDef>
+    <defName>Cinder_TentacleWhisper</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+		  <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/TentacleWhisper</clipPath>
+          </li>
+        </grains>
+        <volumeRange>30~45</volumeRange>
+        <pitchRange>0.9~1.1</pitchRange>
+        <repeatMode>NeverTwice</repeatMode>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+ <SoundDef>
+    <defName>Cinder_TentacleAiming</defName>
+    <sustain>true</sustain>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/TentacleAiming</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>40</volumeRange>
+		 <repeatMode>NeverTwice</repeatMode>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
 </Defs>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BuildingBase" Name ="Cinder_NonfunctionalBuilding" Abstract="True">
+		<altitudeLayer>Building</altitudeLayer>
+		<thingClass>Building</thingClass>
+		<selectable>true</selectable>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<passability>PassThroughOnly</passability>
+		<category>Building</category>
+		<rotatable>true</rotatable>
+		<blockLight>true</blockLight>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<building>
+			<claimable>true</claimable>
+			<deconstructible>true</deconstructible>
+			<alwaysDeconstructible>false</alwaysDeconstructible>
+		</building>
+		<fillPercent>1</fillPercent>
+		<pathCost>150</pathCost>
+	</ThingDef>
+
+	<ThingDef ParentName="Cinder_NonfunctionalBuilding" Name ="Cinder_NonfunctionalBuilding_Impassable" Abstract="True">
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<building>
+			<alwaysDeconstructible>false</alwaysDeconstructible>
+		</building>
+	</ThingDef>
+
+	
+
+	<ThingDef ParentName="Cinder_NonfunctionalBuilding_Impassable">
+		<defName>Cinder_AmorphousWall</defName>
+		<label>Amorphous wall</label>
+		<description>An indescribable amorphous tentacle mixed with a lump of metal, emitting a burnt odor.</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/AmorphousWall</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			 <shadowData>
+                <volume>(3,0.1, 3)</volume>
+            </shadowData>
+		</graphicData>
+		<size>(3,3)</size>
+		<statBases>
+			<MaxHitPoints>1500</MaxHitPoints>
+			<Mass>100</Mass>
+		</statBases>
+		<killedLeavingsRanges>
+			<ChunkSlagSteel>2~4</ChunkSlagSteel>
+		</killedLeavingsRanges>
+	</ThingDef>
+	
+
+</Defs>

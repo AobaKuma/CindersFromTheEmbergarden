@@ -4,13 +4,12 @@
 		<modExtensions>
 			<li Class="Embergarden.RandomCapacityModifier">
 				<capacity>Manipulation</capacity>
-				<range>0.9~1.2</range>
+				<range>0.97~1.10</range>
 				<offset>false</offset>
-				<secondsPerRandomize>2400</secondsPerRandomize>
 			</li>
 		</modExtensions>
 		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
-		<defName>UncontrollableTentacles</defName>
+		<defName>Cinder_UncontrollableTentacles</defName>
 		<label>UncontrollableTentacles</label>
 		<description>TODO</description>
 		<hediffClass>Embergarden.Hediff_DynamicCap</hediffClass>
@@ -23,6 +22,7 @@
 				<minSeverity>0</minSeverity>
 				<statFactors>
 			<MeleeCooldownFactor>1.2</MeleeCooldownFactor>
+			<IncomingDamageFactor>0.8</IncomingDamageFactor>
             </statFactors>
 				<statOffsets>
 					<MeleeDamageFactor>0.5</MeleeDamageFactor>
@@ -31,5 +31,101 @@
 		</stages>
 	</HediffDef>
 
-
+    <HediffDef>
+		<defName>Cinder_Regen</defName>
+		<label>regeneration</label>
+		<description>Amorphous polymer is used to repair this person's body</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		 <isBad>false</isBad>
+		<stages>
+		<li>
+	  	<painFactor>0.75</painFactor>
+		<totalBleedFactor>0.9</totalBleedFactor>
+		</li>
+        </stages>
+		<comps>
+			<li Class="Embergarden.HediffCompProperties_Regen">
+            <healPerDay>3</healPerDay>
+			<checkInterval>600</checkInterval>
+			<healPerDayUnlocked>25</healPerDayUnlocked>
+			<maxPartHpForLocked>10</maxPartHpForLocked>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Cinder_Resurrect</defName>
+		<label>resurrect</label>
+		<description>When dealing fatal injuries, the amorphous polymer in the body quickly generates missing organs, reviving the carrier</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		 <isBad>false</isBad>
+		<comps>
+			<li Class="Embergarden.HediffCompProperties_Resurrect">
+				<afterEffectHediff>Cinder_ResurrectComa</afterEffectHediff>
+				<disabledString>lose efficacy</disabledString>
+				<regenHediffs>
+					<li>
+						<hediff>Cinder_EyeHediff</hediff>
+						<bodyPart>Head</bodyPart>
+					</li>
+				</regenHediffs>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Cinder_EyeHediff</defName>
+		<label>eroded eyes</label>
+		<description>Eyes blessed by unknown</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		 <isBad>false</isBad>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Cinder_ResurrectComa</defName>
+		<label>resurrect coma</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		<description>Resurrection coma caused by resurrection.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>7500~7500</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.01</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-999</offset>
+					</li>
+				</capMods>
+				<statFactors>
+					<IncomingDamageFactor>0.1</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
 </Defs>
