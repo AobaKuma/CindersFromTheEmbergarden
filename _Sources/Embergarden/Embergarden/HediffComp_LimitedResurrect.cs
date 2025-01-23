@@ -21,7 +21,7 @@ namespace Embergarden
             {
                 if (CanResurrect) return null;
 
-                return Props.disabledString;
+                return "Props.disabledString";
             }
         }
 
