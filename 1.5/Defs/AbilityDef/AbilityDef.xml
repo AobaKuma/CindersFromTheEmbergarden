@@ -161,13 +161,13 @@
 	<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
     <writeCombatLog>true</writeCombatLog>
 	<aiCanUse>true</aiCanUse>
-    <charges>3</charges>
+    <charges>2</charges>
     <cooldownPerCharge>true</cooldownPerCharge>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <warmupTime>1.5</warmupTime>
-      <range>31.9</range>
+      <range>19.9</range>
       <drawAimPie>true</drawAimPie>
       <requireLineOfSight>true</requireLineOfSight>
         <soundCast>Cinder_TentacleWhisper</soundCast>
@@ -273,6 +273,7 @@
     <description>Summon a bomb trap from underground, which will automatically reload.</description>
     <iconPath>UI/Abilities/ErodedMines</iconPath>
     <writeCombatLog>True</writeCombatLog>
+	<aiCanUse>true</aiCanUse>
     <hotKey>Misc10</hotKey>
 	<cooldownTicksRange>7500</cooldownTicksRange>
 	<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
@@ -291,6 +292,35 @@
     <comps>
       <li Class = "Embergarden.CompProperties_AbilitySpawnWithFaction">
         <thingDef>Cinder_TrapIED_HighExplosive</thingDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+  <AbilityDef>
+    <defName>Cinder_AmorphousWinding</defName>
+    <label>amorphous winding</label>
+    <description>Summon a vast tentacle terrain and entangle anyone walking on it.</description>
+    <iconPath>UI/Abilities/AmorphousWinding</iconPath>
+    <writeCombatLog>True</writeCombatLog>
+	<aiCanUse>true</aiCanUse>
+    <hotKey>Misc10</hotKey>
+	<cooldownTicksRange>20000</cooldownTicksRange>
+	<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+	<verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>1.7</warmupTime>
+      <range>24.9</range>
+      <targetParams>
+        <canTargetPawns>False</canTargetPawns>
+        <canTargetLocations>True</canTargetLocations>
+      </targetParams>
+	  <soundCast>Cinder_TentacleGround</soundCast>
+	    <soundAiming>Cinder_TentacleAiming</soundAiming>
+    </verbProperties>
+    <comps>
+      <li Class = "Embergarden.CompProperties_AbilitySpawnWithFaction">
+        <thingDef>Cinder_BlackTentacle</thingDef>
       </li>
     </comps>
   </AbilityDef>

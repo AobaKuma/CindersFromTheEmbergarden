@@ -69,7 +69,7 @@
     <uiOrder>40</uiOrder>
     <statBases>
       <Mass>2</Mass>
-      <MaxHitPoints>40</MaxHitPoints>
+      <MaxHitPoints>120</MaxHitPoints>
       <WorkToBuild>1400</WorkToBuild>
       <Flammability>1</Flammability>
       <Beauty>-4</Beauty>
@@ -111,4 +111,101 @@
     </comps>
     <specialDisplayRadius>3.9</specialDisplayRadius>
   </ThingDef>
+  
+    <ThingDef ParentName="EtherealThingBase">
+    <defName>Cinder_BlackTentacle</defName>
+    <label>tentacle</label>
+    <drawerType>MapMeshOnly</drawerType>
+    <tickerType>Normal</tickerType>
+	<thingClass>building</thingClass>
+	<category>Building</category>
+	<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<blocksAltitudes>
+			<li>BuildingOnTop</li>
+		</blocksAltitudes>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+    <graphicData>
+      <texPath>Things/Building/AmorphousStructureA</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPlant</shaderType>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+	<comps>
+      <li Class="Embergarden.CompProperties_TentacleSpreader">
+        <maxRadius>7.9</maxRadius>
+		<effecterDef>CinderMote_Tentacle</effecterDef>
+		<spreadedThingDef>Cinder_TentacleTrap</spreadedThingDef>
+		<durationTicks>120</durationTicks>
+      </li>
+    </comps>
+  </ThingDef>
+  
+   <ThingDef ParentName="Cinder_TrapIEDBase">
+    <defName>Cinder_TentacleTrap</defName>
+    <label>Tentacle trap</label>
+	 <thingClass>Embergarden.Building_TrapTentacle</thingClass>
+    <description>/</description>
+    <graphicData>
+      <texPath>Things/Building/Black</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <designationHotKey>Misc7</designationHotKey>
+	 <modExtensions>
+			<li Class="Embergarden.ModExtension_TentacleTrap">
+			<terrainDef>Cinder_TentacleTerrain</terrainDef>	
+			<hediffDef>Cinder_Blindness</hediffDef>
+			<durationSec>30</durationSec>
+			<soundDef>Cinder_Transform</soundDef>
+			</li>
+	</modExtensions>
+	<comps>
+      <li Class="CompProperties_DestroyAfterDelay">
+        <delayTicks>7500</delayTicks>
+		<destroyMode>Vanish</destroyMode>
+      </li>
+    </comps>
+  </ThingDef>
+  
+
+  
+  <TerrainDef Name="Cinder_FloorBase" Abstract="True">
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </affordances>
+    <tags>
+      <li>Floor</li>
+    </tags>
+    <fertility>0</fertility>
+    <constructEffect>ConstructDirt</constructEffect>
+    <terrainAffordanceNeeded>
+      <li>Light</li>
+    </terrainAffordanceNeeded>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>70</renderPrecedence>
+    <isPaintable>false</isPaintable>
+	<pathCost>14</pathCost>
+    <statBases>
+      <Beauty>-2</Beauty>
+      <WorkToBuild>100</WorkToBuild>
+      <CleaningTimeFactor>3.6</CleaningTimeFactor>
+	  <ContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">7</ContainmentStrength>
+    </statBases>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearBurn</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <pollutionColor>(1, 1, 1, 0.8)</pollutionColor>
+    <pollutionOverlayScale>(0.75, 0.75)</pollutionOverlayScale>
+  </TerrainDef>
+
+  <TerrainDef ParentName="Cinder_FloorBase">
+    <defName>Cinder_TentacleTerrain</defName>
+    <label>black tentacle</label>
+    <description>black tentacle ground.</description>
+    <texturePath>Things/Building/AmorphousTentacle</texturePath>
+    <uiIconPath>Things/Building/AmorphousTentacle</uiIconPath>
+  </TerrainDef>
 </Defs>
