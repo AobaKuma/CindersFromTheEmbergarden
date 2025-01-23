@@ -36,6 +36,7 @@ namespace Embergarden
             {
                 return;
             }
+            Log.Message(p);
             Hediff hediff = HediffMaker.MakeHediff(ext.hediffDef, p, null);
             HediffComp_Disappears hediffComp_Disappears = hediff.TryGetComp<HediffComp_Disappears>();
             if (hediffComp_Disappears != null)

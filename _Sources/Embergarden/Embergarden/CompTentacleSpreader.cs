@@ -52,7 +52,9 @@ namespace Embergarden
                 effecter?.Cleanup();
                 effecter = null;
             }
-
+            Log.Message(delta);
+            Log.Message(oldRad);
+            Log.Message(newRad);
             for (int i = oldRad; i < newRad; i++)
             {
                 IntVec3 intVec = parent.Position + GenRadial.RadialPattern[i];
@@ -62,6 +64,7 @@ namespace Embergarden
                 spawnedThing ??= ThingMaker.MakeThing(Props.spreadedThingDef);
                 if (GenPlace.TryPlaceThing(spawnedThing, intVec, parent.Map, ThingPlaceMode.Direct))
                 {
+                    Log.Message(i);
                     spawnedThing.SetFactionDirect(parent.Faction);
                     spawnedThing = null;
                 }
