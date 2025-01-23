@@ -54,7 +54,7 @@ namespace Embergarden
 
                 base.SpringSub(p);
 
-                comp.wickStarted = false;
+                comp.StopWick();
             }
         }
 
