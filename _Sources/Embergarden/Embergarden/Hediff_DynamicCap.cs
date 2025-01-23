@@ -1,16 +1,24 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using Verse;
 
 namespace Embergarden
 {
     public class Hediff_DynamicCap : HediffWithComps
     {
-        public override HediffStage CurStage=>stage??= GenerateStage();
-        public RandomCapacityModifier Ext => ext??=def.GetModExtension<RandomCapacityModifier>();
+        public override HediffStage CurStage => stage ??= GenerateStage();
+        public RandomCapacityModifier Ext => ext ??= def.GetModExtension<RandomCapacityModifier>();
         private RandomCapacityModifier ext;
         private HediffStage stage;
         private PawnCapacityModifier capMod;
         private Random random;
+
+        public override void PostAdd(DamageInfo? dinfo)
+        {
+            base.PostAdd(dinfo);
+            RandomizeCap();
+        }
+
         private HediffStage GenerateStage(bool loading = false)
         {
             if (Ext != null)
@@ -53,7 +61,6 @@ namespace Embergarden
                     severityGainFactor = st.severityGainFactor,
                     allowedMentalBreakIntensities = st.allowedMentalBreakIntensities,
                     makeImmuneTo = st.makeImmuneTo,
-                    capMods = st.capMods,
                     hediffGivers = st.hediffGivers,
                     mentalStateGivers = st.mentalStateGivers,
                     statOffsets = st.statOffsets,
@@ -73,67 +80,41 @@ namespace Embergarden
                     partIgnoreMissingHP = st.partIgnoreMissingHP,
                     destroyPart = st.destroyPart
                 };
-                capMod = newstage.capMods?.Find(m => m.capacity == Ext.capacity);
-                if (capMod == null)
+                capMod = new PawnCapacityModifier() { capacity = Ext.capacity };
+                newstage.capMods ??= [];
+                newstage.capMods.Add(capMod);
+                foreach (var mod in st.capMods)
                 {
-                    capMod = new PawnCapacityModifier() { capacity = Ext.capacity };
-                    newstage.capMods ??= [];
-                    newstage.capMods.Add(capMod);
+                    if (mod.capacity != Ext.capacity)
+                    {
+                        newstage.capMods.Add(mod);
+                    }
                 }
-                RandomizeCap(loading);
+                if (Ext.offset)
+                {
+                    capMod.offset *= severityInt;
+                }
+                else
+                {
+                    capMod.postFactor *= severityInt;
+                }
                 return newstage;
             }
             pawn.health.RemoveHediff(this);
-            return new HediffStage { label = "Error"};
+            return new HediffStage { label = "Error" };
         }
-        
-        public void RandomizeCap(bool loading = false)
+
+        public void RandomizeCap()
         {
-            if (capMod == null || Ext.secondsPerRandomize == default && !loading) return;
             random ??= new Random(pawn.thingIDNumber);
-            if (!loading)
-            {
-                value = (float)random.NextDouble() * (Ext.range.max - Ext.range.min) + Ext.range.min;
-            }
-            if (Ext.offset)
-            {
-                capMod.offset = value;
-            }
-            else
-            {
-                capMod.postFactor = value;
-            }
-            nextRandomizeTick = Ext.secondsPerRandomize.SecondsToTicks() + GenTicks.TicksGame;
+            severityInt = (float)random.NextDouble() * (Ext.range.max - Ext.range.min) + Ext.range.min;
+            stage = null;
         }
-        public override void Tick()
-        {
-            base.Tick();
-            if (GenTicks.TicksGame >= nextRandomizeTick)
-            {
-                RandomizeCap();
-            }
-        }
-
-
-        public override void ExposeData()
-        {
-            base.ExposeData();
-            Scribe_Values.Look(ref value, "value");
-            Scribe_Values.Look(ref nextRandomizeTick,"nextTick");
-            if (Scribe.mode == LoadSaveMode.LoadingVars)
-            {
-                GenerateStage(true);
-            }
-        }
-
-        private int nextRandomizeTick;
-        private float value;
     }
-    public class RandomCapacityModifier:DefModExtension
+    public class RandomCapacityModifier : DefModExtension
     {
         public PawnCapacityDef capacity;
         public FloatRange range;
         public bool offset = true;
-        public float secondsPerRandomize;
     }
 }
