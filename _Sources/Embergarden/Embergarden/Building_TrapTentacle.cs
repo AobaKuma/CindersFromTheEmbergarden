@@ -22,8 +22,8 @@ namespace Embergarden
 
         public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
         {
+            if (Map.terrainGrid.TerrainAt(Position) == ext.terrainDef) Map.terrainGrid.Notify_TerrainDestroyed(Position);
             base.DeSpawn(mode);
-            Map.terrainGrid.Notify_TerrainDestroyed(Position);
         }
 
         protected override void SpringSub(Pawn p)
