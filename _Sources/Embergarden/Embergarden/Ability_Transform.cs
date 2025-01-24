@@ -23,7 +23,9 @@ namespace Embergarden
             {
                 if (!turretOwner.Any)
                 {
-                    turretOwner.TryAdd((Building)ThingMaker.MakeThing(Prop.buildingDef));
+                    Building t = (Building)ThingMaker.MakeThing(Prop.buildingDef);
+                    t.SetFaction(parent.pawn.Faction);
+                    turretOwner.TryAdd(t);
                 }
                 return turretOwner.InnerListForReading[0];
             }
@@ -55,12 +57,11 @@ namespace Embergarden
             base.Apply(target, dest);
             if (Prop.buildingDef != null)
             {
-                Turret.SetFaction(parent.pawn.Faction);
+                var pawn = parent.pawn;
                 var turretCache = Turret;
-                GenSpawn.Spawn(Turret, parent.pawn.Position, parent.pawn.Map);
-                parent.pawn.DeSpawn(DestroyMode.WillReplace);
-                turretCache.TryGetComp<Comp_TurretTransformable>().innerPawn.TryAdd(parent.pawn);
-                Log.Message(Turret.TryGetComp<Comp_TurretTransformable>().innerPawn.Any);
+                GenSpawn.Spawn(Turret, pawn.Position, pawn.Map);
+                pawn.DeSpawn(DestroyMode.WillReplace);
+                turretCache.TryGetComp<Comp_TurretTransformable>().innerPawn.TryAdd(pawn);
             }
         }
     }

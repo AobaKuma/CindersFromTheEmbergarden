@@ -1,95 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <AbilityDef>
-    <defName>Cinder_LaunchHellfireMissile</defName>
-    <label>Hellfire Missile</label>
-    <description>Launch Missile</description>
-    <iconPath>UI/Abilities/Hellfire</iconPath>
-    <cooldownTicksRange>300000</cooldownTicksRange>
-	<charges>4</charges>
-    <aiCanUse>true</aiCanUse>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-      <range>32.9</range>
-      <warmupTime>11</warmupTime>
-      <soundCast>InfernoCannon_Fire</soundCast>
-	  <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-        <ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
-        <ai_RangedAlawaysShootGroundBelowTarget>true</ai_RangedAlawaysShootGroundBelowTarget>
-        <ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
-        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-        <ai_TargetHasRangedAttackScoreOffset>50</ai_TargetHasRangedAttackScoreOffset>
-        <minRange>5.9</minRange>
-	  <targetParams>
-        <canTargetPawns>true</canTargetPawns>
-        <canTargetLocations>true</canTargetLocations>
-        <canTargetBuildings>true</canTargetBuildings>
-      </targetParams>
-	   <aimingLineMote>CinderMote_HellfireMissile_Aim</aimingLineMote>
-        <aimingChargeMote>CinderMote_HellfireMissile_Charge</aimingChargeMote>
-        <aimingChargeMoteOffset>1.07</aimingChargeMoteOffset>
-        <aimingLineMoteFixedLength>15.9</aimingLineMoteFixedLength>
-        <aimingTargetMote>CinderMote_HellfireMissile_Target</aimingTargetMote>
-        <beamTargetsGround>true</beamTargetsGround>
-        <soundAiming>Cinder_Hellfire_Aiming</soundAiming>
-        <canGoWild>false</canGoWild>
-    </verbProperties>
-    <comps>
-      <li Class="CompProperties_AbilityLaunchProjectile">
-        <projectileDef>CinderBullet_Hellfire</projectileDef>
-      </li>
-    </comps>
-  </AbilityDef>
-  
-     <AbilityDef>
-    <defName>Cinder_LaunchHellfireMissileB</defName>
-    <label>Hellfire Missile</label>
-    <description>Launch Missile</description>
-    <iconPath>UI/Abilities/Hellfire</iconPath>
-    <cooldownTicksRange>300000</cooldownTicksRange>
-	<charges>8</charges>
-    <aiCanUse>true</aiCanUse>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-      <range>33.9</range>
-      <warmupTime>11</warmupTime>
-      <soundCast>InfernoCannon_Fire</soundCast>
-	  <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-        <ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
-        <ai_RangedAlawaysShootGroundBelowTarget>true</ai_RangedAlawaysShootGroundBelowTarget>
-        <ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
-        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-        <ai_TargetHasRangedAttackScoreOffset>50</ai_TargetHasRangedAttackScoreOffset>
-        <minRange>5.9</minRange>
-	  <targetParams>
-        <canTargetPawns>true</canTargetPawns>
-        <canTargetLocations>true</canTargetLocations>
-        <canTargetBuildings>true</canTargetBuildings>
-      </targetParams>
-	   <aimingLineMote>CinderMote_HellfireMissile_Aim</aimingLineMote>
-        <aimingChargeMote>CinderMote_HellfireMissile_Charge</aimingChargeMote>
-        <aimingChargeMoteOffset>1.07</aimingChargeMoteOffset>
-        <aimingLineMoteFixedLength>15.9</aimingLineMoteFixedLength>
-        <aimingTargetMote>CinderMote_HellfireMissile_Target</aimingTargetMote>
-        <beamTargetsGround>true</beamTargetsGround>
-        <soundAiming>Cinder_Hellfire_Aiming</soundAiming>
-        <canGoWild>false</canGoWild>
-    </verbProperties>
-    <comps>
-      <li Class="CompProperties_AbilityLaunchProjectile">
-        <projectileDef>CinderBullet_Hellfire</projectileDef>
-      </li>
-    </comps>
-  </AbilityDef>
-  
 	<AbilityDef>
-		<defName>Ability_Transformation</defName>
+		<defName>Cinder_LaunchHellfireMissile</defName>
+		<label>Hellfire Missile</label>
+		<description>Launch Missile</description>
+		<iconPath>UI/Abilities/Hellfire</iconPath>
+		<cooldownTicksRange>300000</cooldownTicksRange>
+		<charges>4</charges>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>32.9</range>
+			<warmupTime>11</warmupTime>
+			<soundCast>InfernoCannon_Fire</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+			<ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
+			<ai_RangedAlawaysShootGroundBelowTarget>true</ai_RangedAlawaysShootGroundBelowTarget>
+			<ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
+			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+			<ai_TargetHasRangedAttackScoreOffset>50</ai_TargetHasRangedAttackScoreOffset>
+			<minRange>5.9</minRange>
+			<targetParams>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetBuildings>true</canTargetBuildings>
+			</targetParams>
+			<aimingLineMote>CinderMote_HellfireMissile_Aim</aimingLineMote>
+			<aimingChargeMote>CinderMote_HellfireMissile_Charge</aimingChargeMote>
+			<aimingChargeMoteOffset>1.07</aimingChargeMoteOffset>
+			<aimingLineMoteFixedLength>15.9</aimingLineMoteFixedLength>
+			<aimingTargetMote>CinderMote_HellfireMissile_Target</aimingTargetMote>
+			<beamTargetsGround>true</beamTargetsGround>
+			<soundAiming>Cinder_Hellfire_Aiming</soundAiming>
+			<canGoWild>false</canGoWild>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>CinderBullet_Hellfire</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef>
+		<defName>Cinder_LaunchHellfireMissileB</defName>
+		<label>Hellfire Missile</label>
+		<description>Launch Missile</description>
+		<iconPath>UI/Abilities/Hellfire</iconPath>
+		<cooldownTicksRange>300000</cooldownTicksRange>
+		<charges>8</charges>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>33.9</range>
+			<warmupTime>11</warmupTime>
+			<soundCast>InfernoCannon_Fire</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+			<ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
+			<ai_RangedAlawaysShootGroundBelowTarget>true</ai_RangedAlawaysShootGroundBelowTarget>
+			<ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
+			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+			<ai_TargetHasRangedAttackScoreOffset>50</ai_TargetHasRangedAttackScoreOffset>
+			<minRange>5.9</minRange>
+			<targetParams>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetBuildings>true</canTargetBuildings>
+			</targetParams>
+			<aimingLineMote>CinderMote_HellfireMissile_Aim</aimingLineMote>
+			<aimingChargeMote>CinderMote_HellfireMissile_Charge</aimingChargeMote>
+			<aimingChargeMoteOffset>1.07</aimingChargeMoteOffset>
+			<aimingLineMoteFixedLength>15.9</aimingLineMoteFixedLength>
+			<aimingTargetMote>CinderMote_HellfireMissile_Target</aimingTargetMote>
+			<beamTargetsGround>true</beamTargetsGround>
+			<soundAiming>Cinder_Hellfire_Aiming</soundAiming>
+			<canGoWild>false</canGoWild>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>CinderBullet_Hellfire</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef>
+		<defName>Ability_Transformation_TacticalTurret</defName>
 		<label>Transformation</label>
 		<description>Transform to a turret.</description>
-		<iconPath>Things/Building/Security/TurretMini_MenuIcon</iconPath>
+		<iconPath>Things/Building/WalkerTacticalTurret/WalkerTacticalTurret_MenuIcon</iconPath>
 		<cooldownTicksRange>600</cooldownTicksRange>
 		<warmupStartSound></warmupStartSound>
 		<warmupEffecter></warmupEffecter>
@@ -100,6 +100,7 @@
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>2</warmupTime>
 			<soundCast></soundCast>
+			<range>19.9</range>
 			<targetable>false</targetable>
 			<violent>false</violent>
 			<targetParams>
@@ -108,220 +109,223 @@
 		</verbProperties>
 		<comps>
 			<li Class="Embergarden.CompProperties_Transform">
-				<buildingDef>Turret_AutoMiniTurret_M</buildingDef>
+				<buildingDef>Cinder_TacticalTurret</buildingDef>
 			</li>
 		</comps>
 	</AbilityDef>
-	
+
 	<AbilityDef ParentName="AbilityTouchBase">
-    <defName>Cinder_BurnHemostasis</defName>
-    <label>burn hemostasis</label>
-    <description>Use burnt tentacles to stop bleeding from wounds on the target's body.</description>
-    <iconPath>UI/Abilities/BurnHemostasis</iconPath>
-    <cooldownTicksRange>7500</cooldownTicksRange> <!-- 3 hours -->
-     <stunTargetWhileCasting>true</stunTargetWhileCasting>
-    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
-    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
-   <warmupEffecter>CinderMote_Amorphous</warmupEffecter>
-    <jobDef>CastAbilityOnThingMelee</jobDef>
-    <category>Sanguophage</category>
-    <displayOrder>400</displayOrder>
-    <hostile>false</hostile>
-    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-	 <verbProperties>
-      <verbClass>Verb_CastAbilityTouch</verbClass>
-      <drawAimPie>false</drawAimPie>
-      <range>-1</range>
-      <warmupTime>1</warmupTime>
-	   <soundCast>Cinder_Transform</soundCast>
-      <targetParams>
-        <canTargetAnimals>true</canTargetAnimals>
-        <canTargetSelf>true</canTargetSelf>
-        <canTargetBuildings>false</canTargetBuildings>
-        <canTargetMechs>false</canTargetMechs>
-        <canTargetBloodfeeders>true</canTargetBloodfeeders>
-      </targetParams>
-	  <soundAiming>Cinder_TentacleAiming</soundAiming>
-    </verbProperties>
-    <comps>
-      <li Class="Embergarden.CompProperties_ScorchWound">
-        <replacingHediff>Burn</replacingHediff>
-        <tendQuality>0.6</tendQuality>
-      </li>
-    </comps>
-  </AbilityDef>
-	
+		<defName>Cinder_BurnHemostasis</defName>
+		<label>burn hemostasis</label>
+		<description>Use burnt tentacles to stop bleeding from wounds on the target's body.</description>
+		<iconPath>UI/Abilities/BurnHemostasis</iconPath>
+		<cooldownTicksRange>7500</cooldownTicksRange>
+		<!-- 3 hours -->
+		<stunTargetWhileCasting>true</stunTargetWhileCasting>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<category>Sanguophage</category>
+		<displayOrder>400</displayOrder>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<range>-1</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>Cinder_Transform</soundCast>
+			<targetParams>
+				<canTargetAnimals>true</canTargetAnimals>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetMechs>false</canTargetMechs>
+				<canTargetBloodfeeders>true</canTargetBloodfeeders>
+			</targetParams>
+			<soundAiming>Cinder_TentacleAiming</soundAiming>
+		</verbProperties>
+		<comps>
+			<li Class="Embergarden.CompProperties_ScorchWound">
+				<replacingHediff>Burn</replacingHediff>
+				<tendQuality>0.6</tendQuality>
+			</li>
+		</comps>
+	</AbilityDef>
+
 	<AbilityDef>
-    <defName>Cinder_EternalFearAbility</defName>
-    <label>eternal fear</label>
-    <description>Erosion the spirit of the target, detach it from the protection of reason, and make them fall into a state of fear.</description>
-    <iconPath>UI/Abilities/EternalFear</iconPath>
-    <cooldownTicksRange>7500</cooldownTicksRange> <!-- 3 hours -->
-    <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
-	<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
-    <writeCombatLog>true</writeCombatLog>
-	<aiCanUse>true</aiCanUse>
-    <charges>2</charges>
-    <cooldownPerCharge>true</cooldownPerCharge>
-    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-      <warmupTime>1.5</warmupTime>
-      <range>19.9</range>
-      <drawAimPie>true</drawAimPie>
-      <requireLineOfSight>true</requireLineOfSight>
-        <soundCast>Cinder_TentacleWhisper</soundCast>
-      <targetParams>
-        <canTargetLocations>false</canTargetLocations>
-        <canTargetPawns>true</canTargetPawns>
-        <canTargetAnimals>false</canTargetAnimals>
-        <canTargetBuildings>false</canTargetBuildings>
-        <canTargetHumans>true</canTargetHumans>
-        <canTargetMechs>false</canTargetMechs>
-        <canTargetSelf>false</canTargetSelf>
-        <canTargetMutants>false</canTargetMutants>
-        <neverTargetIncapacitated>true</neverTargetIncapacitated>
-      </targetParams>
-	  <soundAiming>Cinder_TentacleAiming</soundAiming>
-    </verbProperties>
-    <comps>
-      <li Class="CompProperties_AbilityGiveMentalState">
-        <compClass>CompAbilityEffect_GiveMentalState</compClass>
-        <stateDef>Cinder_EternalFear</stateDef>
-        <goodwillImpact>-25</goodwillImpact>
-        <forced>true</forced>
-      </li>
-      <li Class="CompProperties_AbilityConnectingFleckLine">
-        <fleckDef>PsycastPsychicLine</fleckDef>
-      </li>
-    </comps>
-  </AbilityDef>
-  
-  
-   <AbilityDef>
-    <defName>Cinder_FearPulse</defName>
-	<label>fear pulse</label>
-    <description>Erosion the spirits of nearby animals, causing them to fall into a state of fear.</description>
-    <iconPath>UI/Abilities/FearPulse</iconPath>
-    <cooldownTicksRange>20000</cooldownTicksRange> <!-- 3 hours -->
-    <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
-    <writeCombatLog>true</writeCombatLog>
-	<aiCanUse>true</aiCanUse>
-    <hotKey>Misc12</hotKey>
-    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-    <statBases>
-      <Ability_EffectRadius>27.9</Ability_EffectRadius>
-	  <Ability_Duration>120</Ability_Duration>
-    </statBases>
-    <verbProperties>
-	<verbClass>Verb_CastAbility</verbClass>
-      <warmupTime>1.5</warmupTime>
-      <range>34.9</range>
-	  <soundCast>Cinder_TentacleWhisper</soundCast>
-      <targetParams>
-        <canTargetHumans>False</canTargetHumans>
-        <canTargetMechs>False</canTargetMechs>
-        <canTargetAnimals>True</canTargetAnimals>
-        <canTargetLocations>True</canTargetLocations>
-      </targetParams>
-	  <soundAiming>Cinder_TentacleAiming</soundAiming>
-    </verbProperties>
-    <comps>
-      <li Class = "CompProperties_AbilityGiveMentalState">
-        <compClass>CompAbilityEffect_GiveMentalState</compClass>
-        <stateDef>Cinder_EternalFear</stateDef>
-        <goodwillImpact>-75</goodwillImpact>
-		 <forced>true</forced>
-      </li>
-      <li Class="CompProperties_AbilityFleckOnTarget">
-        <fleckDef>PsycastPsychicEffect</fleckDef>
-      </li>
-    </comps>
-  </AbilityDef>
-  
-   <AbilityDef>
-    <defName>Cinder_AmorphousWall</defName>
-    <label>amorphous wall</label>
-    <description>Summon a sturdy tentacle wall from underground.</description>
-    <iconPath>UI/Abilities/AmorphousWall</iconPath>
-    <writeCombatLog>True</writeCombatLog>
-    <hotKey>Misc10</hotKey>
-	<cooldownTicksRange>7500</cooldownTicksRange>
-	<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
-    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-    <verbProperties>
-	<verbClass>Verb_CastAbility</verbClass>
-      <warmupTime>1.7</warmupTime>
-      <range>24.9</range>
-      <targetParams>
-        <canTargetPawns>False</canTargetPawns>
-        <canTargetLocations>True</canTargetLocations>
-      </targetParams>
-	  <soundCast>Cinder_TentacleGround</soundCast>
-	    <soundAiming>Cinder_TentacleAiming</soundAiming>
-    </verbProperties>
-    <comps>
-      <li Class = "Embergarden.CompProperties_AbilitySpawnWithFaction">
-        <thingDef>Cinder_AmorphousWall</thingDef>
-      </li>
-    </comps>
-  </AbilityDef>
-  
-  <AbilityDef>
-    <defName>Cinder_AmorphousIED</defName>
-    <label>amorphous IED</label>
-    <description>Summon a bomb trap from underground, which will automatically reload.</description>
-    <iconPath>UI/Abilities/ErodedMines</iconPath>
-    <writeCombatLog>True</writeCombatLog>
-	<aiCanUse>true</aiCanUse>
-    <hotKey>Misc10</hotKey>
-	<cooldownTicksRange>7500</cooldownTicksRange>
-	<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
-    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-    <verbProperties>
-	<verbClass>Verb_CastAbility</verbClass>
-      <warmupTime>1.7</warmupTime>
-      <range>14.9</range>
-      <targetParams>
-        <canTargetPawns>False</canTargetPawns>
-        <canTargetLocations>True</canTargetLocations>
-      </targetParams>
-	  <soundCast>Cinder_TentacleGround</soundCast>
-	    <soundAiming>Cinder_TentacleAiming</soundAiming>
-    </verbProperties>
-    <comps>
-      <li Class = "Embergarden.CompProperties_AbilitySpawnWithFaction">
-        <thingDef>Cinder_TrapIED_HighExplosive</thingDef>
-      </li>
-    </comps>
-  </AbilityDef>
-  
-  <AbilityDef>
-    <defName>Cinder_AmorphousWinding</defName>
-    <label>amorphous winding</label>
-    <description>Summon a vast tentacle terrain and entangle anyone walking on it.</description>
-    <iconPath>UI/Abilities/AmorphousWinding</iconPath>
-    <writeCombatLog>True</writeCombatLog>
-	<aiCanUse>true</aiCanUse>
-    <hotKey>Misc10</hotKey>
-	<cooldownTicksRange>20000</cooldownTicksRange>
-	<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
-    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-    <verbProperties>
-	<verbClass>Verb_CastAbility</verbClass>
-      <warmupTime>1.7</warmupTime>
-      <range>24.9</range>
-      <targetParams>
-        <canTargetPawns>False</canTargetPawns>
-        <canTargetLocations>True</canTargetLocations>
-      </targetParams>
-	  <soundCast>Cinder_TentacleGround</soundCast>
-	    <soundAiming>Cinder_TentacleAiming</soundAiming>
-    </verbProperties>
-    <comps>
-      <li Class = "Embergarden.CompProperties_AbilitySpawnWithFaction">
-        <thingDef>Cinder_BlackTentacle</thingDef>
-      </li>
-    </comps>
-  </AbilityDef>
+		<defName>Cinder_EternalFearAbility</defName>
+		<label>eternal fear</label>
+		<description>Erosion the spirit of the target, detach it from the protection of reason, and make them fall into a state of fear.</description>
+		<iconPath>UI/Abilities/EternalFear</iconPath>
+		<cooldownTicksRange>7500</cooldownTicksRange>
+		<!-- 3 hours -->
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
+		<writeCombatLog>true</writeCombatLog>
+		<aiCanUse>true</aiCanUse>
+		<charges>2</charges>
+		<cooldownPerCharge>true</cooldownPerCharge>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>1.5</warmupTime>
+			<range>19.9</range>
+			<drawAimPie>true</drawAimPie>
+			<requireLineOfSight>true</requireLineOfSight>
+			<soundCast>Cinder_TentacleWhisper</soundCast>
+			<targetParams>
+				<canTargetLocations>false</canTargetLocations>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetHumans>true</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetMutants>false</canTargetMutants>
+				<neverTargetIncapacitated>true</neverTargetIncapacitated>
+			</targetParams>
+			<soundAiming>Cinder_TentacleAiming</soundAiming>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveMentalState">
+				<compClass>CompAbilityEffect_GiveMentalState</compClass>
+				<stateDef>Cinder_EternalFear</stateDef>
+				<goodwillImpact>-25</goodwillImpact>
+				<forced>true</forced>
+			</li>
+			<li Class="CompProperties_AbilityConnectingFleckLine">
+				<fleckDef>PsycastPsychicLine</fleckDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+
+	<AbilityDef>
+		<defName>Cinder_FearPulse</defName>
+		<label>fear pulse</label>
+		<description>Erosion the spirits of nearby animals, causing them to fall into a state of fear.</description>
+		<iconPath>UI/Abilities/FearPulse</iconPath>
+		<cooldownTicksRange>20000</cooldownTicksRange>
+		<!-- 3 hours -->
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<writeCombatLog>true</writeCombatLog>
+		<aiCanUse>true</aiCanUse>
+		<hotKey>Misc12</hotKey>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_EffectRadius>27.9</Ability_EffectRadius>
+			<Ability_Duration>120</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>1.5</warmupTime>
+			<range>34.9</range>
+			<soundCast>Cinder_TentacleWhisper</soundCast>
+			<targetParams>
+				<canTargetHumans>False</canTargetHumans>
+				<canTargetMechs>False</canTargetMechs>
+				<canTargetAnimals>True</canTargetAnimals>
+				<canTargetLocations>True</canTargetLocations>
+			</targetParams>
+			<soundAiming>Cinder_TentacleAiming</soundAiming>
+		</verbProperties>
+		<comps>
+			<li Class = "CompProperties_AbilityGiveMentalState">
+				<compClass>CompAbilityEffect_GiveMentalState</compClass>
+				<stateDef>Cinder_EternalFear</stateDef>
+				<goodwillImpact>-75</goodwillImpact>
+				<forced>true</forced>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef>
+		<defName>Cinder_AmorphousWall</defName>
+		<label>amorphous wall</label>
+		<description>Summon a sturdy tentacle wall from underground.</description>
+		<iconPath>UI/Abilities/AmorphousWall</iconPath>
+		<writeCombatLog>True</writeCombatLog>
+		<hotKey>Misc10</hotKey>
+		<cooldownTicksRange>7500</cooldownTicksRange>
+		<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>1.7</warmupTime>
+			<range>24.9</range>
+			<targetParams>
+				<canTargetPawns>False</canTargetPawns>
+				<canTargetLocations>True</canTargetLocations>
+			</targetParams>
+			<soundCast>Cinder_TentacleGround</soundCast>
+			<soundAiming>Cinder_TentacleAiming</soundAiming>
+		</verbProperties>
+		<comps>
+			<li Class = "Embergarden.CompProperties_AbilitySpawnWithFaction">
+				<thingDef>Cinder_AmorphousWall</thingDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef>
+		<defName>Cinder_AmorphousIED</defName>
+		<label>amorphous IED</label>
+		<description>Summon a bomb trap from underground, which will automatically reload.</description>
+		<iconPath>UI/Abilities/ErodedMines</iconPath>
+		<writeCombatLog>True</writeCombatLog>
+		<aiCanUse>true</aiCanUse>
+		<hotKey>Misc10</hotKey>
+		<cooldownTicksRange>7500</cooldownTicksRange>
+		<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>1.7</warmupTime>
+			<range>14.9</range>
+			<targetParams>
+				<canTargetPawns>False</canTargetPawns>
+				<canTargetLocations>True</canTargetLocations>
+			</targetParams>
+			<soundCast>Cinder_TentacleGround</soundCast>
+			<soundAiming>Cinder_TentacleAiming</soundAiming>
+		</verbProperties>
+		<comps>
+			<li Class = "Embergarden.CompProperties_AbilitySpawnWithFaction">
+				<thingDef>Cinder_TrapIED_HighExplosive</thingDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef>
+		<defName>Cinder_AmorphousWinding</defName>
+		<label>amorphous winding</label>
+		<description>Summon a vast tentacle terrain and entangle anyone walking on it.</description>
+		<iconPath>UI/Abilities/AmorphousWinding</iconPath>
+		<writeCombatLog>True</writeCombatLog>
+		<aiCanUse>true</aiCanUse>
+		<hotKey>Misc10</hotKey>
+		<cooldownTicksRange>20000</cooldownTicksRange>
+		<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>1.7</warmupTime>
+			<range>24.9</range>
+			<targetParams>
+				<canTargetPawns>False</canTargetPawns>
+				<canTargetLocations>True</canTargetLocations>
+			</targetParams>
+			<soundCast>Cinder_TentacleGround</soundCast>
+			<soundAiming>Cinder_TentacleAiming</soundAiming>
+		</verbProperties>
+		<comps>
+			<li Class = "Embergarden.CompProperties_AbilitySpawnWithFaction">
+				<thingDef>Cinder_BlackTentacle</thingDef>
+			</li>
+		</comps>
+	</AbilityDef>
 </Defs>
