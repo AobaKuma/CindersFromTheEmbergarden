@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Verse;
+using Verse.AI.Group;
 
 namespace Embergarden
 {
@@ -13,19 +14,12 @@ namespace Embergarden
         public CompProperties_Transformable Props => (CompProperties_Transformable)props;
         public Building_TurretGun Turret => parent as Building_TurretGun;
 
-        public override void PostPostMake()
-        {
-            base.PostPostMake();
-            NewPawn();
-        }
-
         public override void CompTick()
         {
             base.CompTick();
             if (InnerPawn == null)
             {
-                parent.Destroy();
-                return;
+                NewPawn();
             }
             if (needUpdateHP)
             {
@@ -158,6 +152,7 @@ namespace Embergarden
 
         public Pawn NewPawn()
         {
+            Log.Message("remake pawn");
             if (pawnOwner.Any)
             {
                 while (pawnOwner.Count > 1)

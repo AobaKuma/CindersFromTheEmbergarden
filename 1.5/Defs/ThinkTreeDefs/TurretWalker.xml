@@ -72,80 +72,22 @@
 						<li Class="ThinkNode_ConditionalNotFormingCaravan">
 							<subNodes>
 
-								<!-- Keep charging if we're already charging -->
-								<li Class="ThinkNode_ConditionalRecharging">
-									<subNodes>
-										<li Class="JobGiver_GetEnergy_Charger" />
-									</subNodes>
-								</li>
+								<li Class="JobGiver_SeekAllowedArea" />
 
-								<!-- Work modes -->
-								<li Class="ThinkNode_ConditionalWorkMode" MayRequire="Ludeon.RimWorld.Biotech">
-									<workMode>Work</workMode>
-									<subNodes>
-										<li Class="JobGiver_SeekAllowedArea" />
-										<li Class="JobGiver_GetEnergy_Charger" />
-										<li Class="JobGiver_Work">
-											<emergency>true</emergency>
-										</li>
-										<li Class="JobGiver_Work" />
-										<li Class="ThinkNode_ConditionalWorkMech">
-											<!-- Combat mechs do patrolling -->
-											<invert>true</invert>
-											<subNodes>
-												<li Class="JobGiver_AIFightEnemies">
-													<targetAcquireRadius>65</targetAcquireRadius>
-													<targetKeepRadius>72</targetKeepRadius>
-												</li>
-												<li Class="ThinkNode_Tagger">
-													<tagToGive>MiscWork</tagToGive>
-													<subNodes>
-														<li Class="JobGiver_WanderColony">
-															<maxDanger>Deadly</maxDanger>
-															<reportStringOverride TKey="ReportStringPatrolling">Patrolling.</reportStringOverride>
-														</li>
-													</subNodes>
-												</li>
-											</subNodes>
-										</li>
-									</subNodes>
-								</li>
-								<li Class="ThinkNode_ConditionalWorkMode" MayRequire="Ludeon.RimWorld.Biotech">
-									<workMode>SelfShutdown</workMode>
-									<subNodes>
-										<li Class="JobGiver_SeekAllowedArea" />
-										<li Class="JobGiver_SelfShutdown" />
-									</subNodes>
-								</li>
-								<li Class="ThinkNode_ConditionalWorkMode" MayRequire="Ludeon.RimWorld.Biotech">
-									<workMode>Recharge</workMode>
-									<subNodes>
-										<li Class="JobGiver_SeekAllowedArea" />
-										<li Class="JobGiver_GetEnergy_Charger" />
-										<li Class="JobGiver_GetEnergy_SelfShutdown">
-											<forced>true</forced>
-										</li>
-									</subNodes>
-								</li>
-								<li Class="ThinkNode_ConditionalWorkMode" MayRequire="Ludeon.RimWorld.Biotech">
-									<workMode>Escort</workMode>
-									<subNodes>
-										<li Class="JobGiver_ExitMapFollowOverseer" />
-										<li Class="JobGiver_AIDefendOverseer" />
-										<li Class="JobGiver_AIFollowOverseer"/>
-										<li Class="JobGiver_AIWaitWithOverseer" />
-										<li Class="JobGiver_WanderOverseer" />
-									</subNodes>
-								</li>
 
+								<li Class="ThinkNode_Tagger">
+									<tagToGive>MiscWork</tagToGive>
+									<subNodes>
+										<li Class="JobGiver_WanderColony">
+											<maxDanger>Deadly</maxDanger>
+											<reportStringOverride TKey="ReportStringPatrolling">Patrolling.</reportStringOverride>
+										</li>
+									</subNodes>
+								</li>
 							</subNodes>
 						</li>
-					</subNodes>
-				</li>
 
-				<!-- Idle player mech -->
-				<li Class="ThinkNode_ConditionalPlayerControlledMech">
-					<subNodes>
+
 						<li Class="ThinkNode_Tagger">
 							<tagToGive>Idle</tagToGive>
 							<subNodes>

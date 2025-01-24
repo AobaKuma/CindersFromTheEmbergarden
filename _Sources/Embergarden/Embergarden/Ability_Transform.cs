@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
+using Verse.AI.Group;
 
 namespace Embergarden
 {
@@ -23,6 +24,7 @@ namespace Embergarden
             {
                 if (!turretOwner.Any)
                 {
+                    Log.Message("remake turret");
                     Building t = (Building)ThingMaker.MakeThing(Prop.buildingDef);
                     t.SetFaction(parent.pawn.Faction);
                     turretOwner.TryAdd(t);
@@ -61,6 +63,7 @@ namespace Embergarden
                 var turretCache = Turret;
                 GenSpawn.Spawn(Turret, pawn.Position, pawn.Map);
                 pawn.DeSpawn(DestroyMode.WillReplace);
+
                 turretCache.TryGetComp<Comp_TurretTransformable>().pawnOwner.TryAdd(pawn);
             }
         }

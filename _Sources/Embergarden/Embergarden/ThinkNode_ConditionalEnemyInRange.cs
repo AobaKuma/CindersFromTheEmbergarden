@@ -37,7 +37,7 @@ namespace Embergarden
             {
                 return false;
             }
-            return verb.CanHitTarget(t) && t.Position.DistanceToSquared(pawn.Position) < verb.verbProps.range * verb.verbProps.range;
+            return (verb.Targetable ? verb.CanHitTarget(t) : true) && t.Position.DistanceToSquared(pawn.Position) < verb.verbProps.range * verb.verbProps.range;
         }
         public override ThinkNode DeepCopy(bool resolve = true)
         {
@@ -50,8 +50,13 @@ namespace Embergarden
     {
         protected override Job TryGiveJob(Pawn pawn)
         {
+            Log.Message("1");
             ability = ThinkNode_HasCompAndConditionalEnemyInRange.GetAbility(pawn).def;
-            if (ability != null) return base.TryGiveJob(pawn);
+            if (ability != null)
+            {
+                Log.Message("2");
+                return base.TryGiveJob(pawn);
+            }
             return null;
         }
 
