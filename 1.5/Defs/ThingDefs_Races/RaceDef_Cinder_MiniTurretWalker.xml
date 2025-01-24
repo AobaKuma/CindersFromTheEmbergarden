@@ -15,15 +15,15 @@
 					<def>MechanoidFullyFormed</def>
 					<minAge>0</minAge>
 					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
-                    <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
-                    <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
 				</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">
 					<def>MechanoidFullyFormed</def>
 					<minAge>100</minAge>
 					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
-                    <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
-                    <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
 				</li>
 			</lifeStageAges>
 		</race>

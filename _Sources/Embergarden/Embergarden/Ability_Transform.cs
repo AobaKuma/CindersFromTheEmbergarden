@@ -8,22 +8,59 @@ using Verse;
 
 namespace Embergarden
 {
-    public class AbilityCompEffect_Transform : CompAbilityEffect
+    public class AbilityCompEffect_Transform : CompAbilityEffect, IThingHolder
     {
         public CompProperties_Transform Prop => (CompProperties_Transform)props;
+        public AbilityCompEffect_Transform()
+        {
+            turretOwner = new ThingOwner<Building>(this, true);
+        }
+        ThingOwner<Building> turretOwner;
+
+        public Building Turret
+        {
+            get
+            {
+                if (!turretOwner.Any)
+                {
+                    turretOwner.TryAdd((Building)ThingMaker.MakeThing(Prop.buildingDef));
+                }
+                return turretOwner.InnerListForReading[0];
+            }
+            set
+            {
+                if (value.Spawned) value.DeSpawn();
+                turretOwner.TryAdd(value);
+            }
+        }
+
+        public IThingHolder ParentHolder => parent.pawn;
+
+        public void GetChildHolders(List<IThingHolder> outChildren)
+        {
+            return;
+        }
+
+        public ThingOwner GetDirectlyHeldThings()
+        {
+            return turretOwner;
+        }
+        public override void PostExposeData()
+        {
+            base.PostExposeData();
+            Scribe_Deep.Look(ref turretOwner, "turret", [this]);
+        }
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             base.Apply(target, dest);
             if (Prop.buildingDef != null)
             {
-                Pawn pawn = parent.pawn;
-                var map = pawn.Map;
-                var p = pawn.Position;
-                Building building = (Building)ThingMaker.MakeThing(Prop.buildingDef);
-                pawn.DeSpawn(DestroyMode.WillReplace);
-                building.TryGetComp<Comp_TurretTransformable>()?.GetDirectlyHeldThings()?.TryAdd(pawn);
-                building.SetFaction(pawn.Faction);
-                GenSpawn.Spawn(building, p, map);
+                Turret.SetFaction(parent.pawn.Faction);
+                var turretCache = Turret;
+                GenSpawn.Spawn(Turret, parent.pawn.Position, parent.pawn.Map);
+                parent.pawn.DeSpawn(DestroyMode.WillReplace);
+                turretCache.TryGetComp<Comp_TurretTransformable>().innerPawn.TryAdd(parent.pawn);
+                Log.Message(Turret.TryGetComp<Comp_TurretTransformable>().innerPawn.Any);
             }
         }
     }

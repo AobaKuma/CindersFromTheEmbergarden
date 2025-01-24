@@ -10,8 +10,9 @@ using static UnityEngine.GraphicsBuffer;
 
 namespace Embergarden
 {
-    public abstract class Building_TrapTentacle : Building
+    public class Building_TrapTentacle : Building
     {
+
         ModExtension_TentacleTrap ext => def.GetModExtension<ModExtension_TentacleTrap>();
 
         private List<Pawn> touchingPawns = new List<Pawn>();
