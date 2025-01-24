@@ -177,54 +177,6 @@
 			<li>CinderStory_DefenseCouncil</li>
 		</spawnCategories>
 	</BackstoryDef>
-
-	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 邪教圣子 -->
-		<defName>Cinder_HolySon</defName>
-		<title>holy son of the cult</title>
-		<titleShort>holy son</titleShort>
-		<description>[PAWN_nameDef] was born in a shelter controlled by a cult within the Defense Council. [PAWN_possessive] father was a high-ranking official in the shelter, while [PAWN_possessive] mother, driven mad by the brutal war, had joined the cult.\n
-		[PAWN_pronoun] was revered by the cult as the “Holy Son,” participating in wicked blood rituals in an attempt to pray for the end of the war. The cult's cruel actions drove [PAWN_nameDef] to madness, yet after everyone was sacrificed in the blood ritual, nothing happened.</description>
-		<slot>Childhood</slot>
-		<spawnCategories>
-			<li>CinderStory_DefenseCouncil</li>
-		</spawnCategories>
-	</BackstoryDef>
-	
-	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 邪教孩子 -->
-		<defName>Cinder_CultChild</defName>
-		<title>escaping cult child</title>
-		<titleShort>cult child</titleShort>
-		<description>[PAWN_nameDef] was born in a shelter controlled by a cult within the Defense Council. [PAWN_pronoun] did not know who [PAWN_possessive] parents were and grew up under the influence of the cult.\n
-		However, when the cult began incessant blood rituals, [PAWN_possessive] survival instinct drove [PAWN_nameDef] to fearfully escape the shelter.</description>
-		<slot>Childhood</slot>
-		<spawnCategories>
-			<li>CinderStory_DefenseCouncil</li>
-		</spawnCategories>
-	</BackstoryDef>
-	
-	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 狂热信徒 -->
-		<defName>Cinder_Fanatic</defName>
-		<title>cult fanatic</title>
-		<titleShort>fanatic</titleShort>
-		<description>[PAWN_nameDef] was born in a shelter controlled by a cult within the Defense Council. [PAWN_pronoun] was extremely loyal and fervent towards the cult, believing that the sacrifices made to the cult had restored [PAWN_possessive] leg,\n
-		which had been damaged by a grenade. However, [PAWN_pronoun] did not realize that this was due to [PAWN_possessive] own regenerative abilities.</description>
-		<slot>Childhood</slot>
-		<spawnCategories>
-			<li>CinderStory_DefenseCouncil</li>
-		</spawnCategories>
-	</BackstoryDef>
-	
-	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 受选着 -->
-		<defName>Cinder_ChosenOne</defName>
-		<title>cult chosen one</title>
-		<titleShort>chosen one</titleShort>
-		<description>[PAWN_nameDef] was born in a shelter controlled by a cult that operated under the Defense Council. [PAWN_pronoun] was chosen by the cult to drink strange serum potions to attain enlightenment.\n
-		[PAWN_pronoun] gained some bizarre abilities and took pride in them, until [PAWN_pronoun] witnessed the process of how these potions were made.</description>
-		<slot>Childhood</slot>
-		<spawnCategories>
-			<li>CinderStory_DefenseCouncil</li>
-		</spawnCategories>
-	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 童工 -->
 		<defName>Cinder_ChildLabourer</defName>
@@ -272,6 +224,18 @@
 			<li>CinderStory_DefenseCouncil</li>
 		</spawnCategories>
 	</BackstoryDef>
+	
+	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 清洁工 -->
+		<defName>Cinder_CleaningWorker</defName>
+		<title>The child climbing the pipeline</title>
+		<titleShort>cleaning worker</titleShort>
+		<description>[PAWN_nameDef] was born in an old bunker belonging to the Defense Council. There, children like [PAWN_nameDef] were sent into narrow pipelines for simple clearing tasks. Frequently, [PAWN_pronoun] would drag out friends who had been lively just days before, or traitors who had been baked by the heated pipes.\n
+		These days continued until [PAWN_nameDef] crawled along the pipeline to reach a place [PAWN_pronoun] had never seen before—“the outside.”</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CinderStory_DefenseCouncil</li>
+		</spawnCategories>
+	</BackstoryDef>
 
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 尸鬼猎手 -->
 		<defName>Cinder_GhoulHunter</defName>
@@ -289,20 +253,8 @@
 		<defName>Cinder_FleeingEngineer</defName>
 		<title>fleeing engineer</title>
 		<titleShort>engineer</titleShort>
-		<description>In [PAWN_nameDef] was a military mechanical engineer before the disaster struck.\n
+		<description>In [PAWN_nameDef] was a military mechanical engineer before the bunker was captured.\n
 		After that, [PAWN_nameDef] fell into an endless hiding until [PAWN_pronoun] and [PAWN_possessive] companion robot were captured by the ghoul unit.</description>
-		<slot>Adulthood</slot>
-		<spawnCategories>
-			<li>CinderStory_DefenseCouncil</li>
-		</spawnCategories>
-	</BackstoryDef>
-	
-	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 疯掉的信徒 -->
-		<defName>Cinder_CrazyBeliever</defName>
-		<title>Crazy believer</title>
-		<titleShort>Crazy believer</titleShort>
-		<description>[PAWN_nameDef] was born in a shelter controlled by a cult within the Defense Council. [PAWN_pronoun] was once used as a gestation pod, but during a raid on the shelter by the Economic Security Department for Special Periods, [PAWN_pronoun] and [PAWN_possessive] infant were trapped in the wreckage.\n
-		By the time others found them, [PAWN_possessive] infant had already died from illness. In [PAWN_possessive] madness, [PAWN_pronoun] sacrificed [PAWN_possessive] own arm to the cult in exchange for [PAWN_possessive] child's life. In the end, all [PAWN_pronoun] received was a rag doll.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil</li>
@@ -321,7 +273,94 @@
 		</spawnCategories>
 	</BackstoryDef>
 	
+	<!-- 邪教徒 -->
 	
+	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 邪教圣子 -->
+		<defName>Cinder_HolySon</defName>
+		<title>holy son of the cult</title>
+		<titleShort>holy son</titleShort>
+		<description>[PAWN_nameDef] was born in a shelter controlled by a cult within the Defense Council. [PAWN_possessive] father was a high-ranking official in the shelter, while [PAWN_possessive] mother, driven mad by the brutal war, had joined the cult.\n
+		[PAWN_pronoun] was revered by the cult as the “Holy Son,” participating in wicked blood rituals in an attempt to pray for the end of the war. The cult's cruel actions drove [PAWN_nameDef] to madness, yet after everyone was sacrificed in the blood ritual, nothing happened.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CinderStory_DefenseCouncil_Cult</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 邪教孩子 -->
+		<defName>Cinder_CultChild</defName>
+		<title>escaping cult child</title>
+		<titleShort>cult child</titleShort>
+		<description>[PAWN_nameDef] was born in a shelter controlled by a cult within the Defense Council. [PAWN_pronoun] did not know who [PAWN_possessive] parents were and grew up under the influence of the cult.\n
+		However, when the cult began incessant blood rituals, [PAWN_possessive] survival instinct drove [PAWN_nameDef] to fearfully escape the shelter.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CinderStory_DefenseCouncil_Cult</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 狂热信徒 -->
+		<defName>Cinder_Fanatic</defName>
+		<title>cult fanatic</title>
+		<titleShort>fanatic</titleShort>
+		<description>[PAWN_nameDef] was born in a shelter controlled by a cult within the Defense Council. [PAWN_pronoun] was extremely loyal and fervent towards the cult, believing that the sacrifices made to the cult had restored [PAWN_possessive] leg,\n
+		which had been damaged by a grenade. However, [PAWN_pronoun] did not realize that this was due to [PAWN_possessive] own regenerative abilities.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CinderStory_DefenseCouncil_Cult</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 受选着 -->
+		<defName>Cinder_ChosenOne</defName>
+		<title>cult chosen one</title>
+		<titleShort>chosen one</titleShort>
+		<description>[PAWN_nameDef] was born in a shelter controlled by a cult that operated under the Defense Council. [PAWN_pronoun] was chosen by the cult to drink strange serum potions to attain enlightenment.\n
+		[PAWN_pronoun] gained some bizarre abilities and took pride in them, until [PAWN_pronoun] witnessed the process of how these potions were made.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CinderStory_DefenseCouncil_Cult</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 疯掉的信徒 -->
+		<defName>Cinder_CrazyBeliever</defName>
+		<title>Crazy believer</title>
+		<titleShort>Crazy believer</titleShort>
+		<description>[PAWN_nameDef] was born in a shelter controlled by a cult within the Defense Council. [PAWN_pronoun] was once used as a gestation pod, but during a raid on the shelter by the Economic Security Department for Special Periods, [PAWN_pronoun] and [PAWN_possessive] infant were trapped in the wreckage.\n
+		By the time others found them, [PAWN_possessive] infant had already died from illness. In [PAWN_possessive] madness, [PAWN_pronoun] sacrificed [PAWN_possessive] own arm to the cult in exchange for [PAWN_possessive] child's life. In the end, all [PAWN_pronoun] received was a rag doll.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CinderStory_DefenseCouncil_Cult</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	
+	
+	<!-- 煽动者 -->
+		<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 资料馆看守 -->
+		<defName>Cinder_ArchiveGuard</defName>
+		<title>archive guard</title>
+		<titleShort>guard</titleShort>
+		<description>[PAWN_nameDef] is responsible for guarding documents in a library within a bunker of the Defense Council. This job should be performed by adults, but all the adults in the shelter have been sent to war as soldiers. In principle, [PAWN_pronoun] shouldn't look at the contents, but [PAWN_possessive] curiosity led [PAWN_objective] to make a mistake.\n
+		[PAWN_pronoun] came across criticisms of totalitarian states from before the disaster, and even the most terrifying regimes in history seemed to [PAWN_objective] like an ideal state. This prompted [PAWN_objective] to start contemplating the definition of what is right.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CinderStory_DefenseCouncil_Agitator</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 激进分子	-->
+		<defName>Cinder_UndergroundAgitator</defName>
+		<title>Underground agitator</title>
+		<titleShort>activist</titleShort>
+		<description>Having undergone true reflection and survived the brutal war, [PAWN_nameDef] no longer believes in the Defense Council's grotesque rule that spares no effort for meaningless war. [PAWN_pronoun] begins secretly copying articles underground and spreading these illegal writings within the shelter.\n
+		[PAWN_pronoun] is convinced that [PAWN_pronoun] can do better than the faceless bureaucrats, and more and more people are beginning to help [PAWN_objective].</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CinderStory_DefenseCouncil_Agitator</li>
+		</spawnCategories>
+	</BackstoryDef>
 	
 	<!-- 特别时期经济保障部 -->
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 量产儿童 -->
