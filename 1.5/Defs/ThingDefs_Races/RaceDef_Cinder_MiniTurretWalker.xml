@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="BaseMechanoid" Name="Cinder_MiniTurretWalker" Abstract="True">
+	<ThingDef ParentName="Cinder_BaseTurretWalker" Name="Cinder_MiniTurretWalker" Abstract="True">
 		<statBases>
 			<MoveSpeed>4.3</MoveSpeed>
 			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
@@ -10,7 +10,7 @@
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Cinder_WalkerTurret</thinkTreeMain>
 			<baseBodySize>1</baseBodySize>
-			<lifeStageAges>
+			<lifeStageAges Inherit="false">
 				<li>
 					<def>MechanoidFullyFormed</def>
 					<minAge>0</minAge>
@@ -30,6 +30,11 @@
 		<butcherProducts>
 			<Cinder_AmorphousPolymer>25</Cinder_AmorphousPolymer>
 		</butcherProducts>
+		<modExtensions>
+
+			<li Class="Embergarden.ModExtension_Draftable">
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="Cinder_MiniTurretWalker">
