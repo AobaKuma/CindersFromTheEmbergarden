@@ -129,6 +129,37 @@
 		</stages>
 	</HediffDef>
 	
+		<HediffDef>
+		<defName>Cinder_Suffocation</defName>
+		<label>suffocation coma</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<description>coma caused by suffocation.</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.0</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+         </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.01</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-999</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
 	<HediffDef>
 		<defName>Cinder_Blindness</defName>
 		<label>entanglement of tentacles</label>
@@ -138,7 +169,7 @@
 		<description>Entangled by tentacles on the ground, affecting vision and mobility.</description>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
-				<disappearsAfterTicks>600</disappearsAfterTicks>
+				<disappearsAfterTicks>1200</disappearsAfterTicks>
 				<showRemainingTime>true</showRemainingTime>
 			</li>
 		</comps>
@@ -154,6 +185,31 @@
 						<setMax>0.3</setMax>
 					</li>
 				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Cinder_Erosion</defName>
+		<label>erosion</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		<description>The armor on this person's body has been eroded.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>3000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ToxicEnvironmentResistance>-0.5</ToxicEnvironmentResistance>
+					<ArmorRating_Sharp>-0.5</ArmorRating_Sharp>
+					<ArmorRating_Blunt>-0.4</ArmorRating_Blunt>
+					<ArmorRating_Heat>-1</ArmorRating_Heat>
+				</statOffsets>
 			</li>
 		</stages>
 	</HediffDef>

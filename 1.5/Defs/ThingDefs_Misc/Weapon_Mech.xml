@@ -240,4 +240,21 @@
     <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
 	<expolosionPropagationSpeed>0.4</expolosionPropagationSpeed>
   </DamageDef>
+  
+  <DamageDef ParentName="Cinder_Bomb">
+    <defName>Cinder_BombC</defName>
+    <label>bomb</label>
+	<explosionCellFleck>BlastDry</explosionCellFleck>
+	<hasForcefulImpact>true</hasForcefulImpact>
+    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+	<expolosionPropagationSpeed>0.4</expolosionPropagationSpeed>
+	<additionalHediffs>
+      <li>
+        <hediff>Cinder_Erosion</hediff>
+        <severityPerDamageDealt>1</severityPerDamageDealt>
+        <inverseStatScaling>true</inverseStatScaling>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+    </li>
+    </additionalHediffs>
+  </DamageDef>
 </Defs>
