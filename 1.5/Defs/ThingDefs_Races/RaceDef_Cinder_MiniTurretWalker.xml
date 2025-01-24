@@ -97,9 +97,6 @@
 					<shaderType>CutoutComplex</shaderType>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(1.2, 1.2)</drawSize>
-					<shadowData>
-						<volume>(1,0.35,1)</volume>
-					</shadowData>
 					<drawOffset>(0,0,-0.05)</drawOffset>
 				</bodyGraphicData>
 			</li>
