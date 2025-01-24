@@ -13,7 +13,6 @@ namespace Embergarden
     {
         public CompProperties_Transformable Props => (CompProperties_Transformable)props;
         public Building_TurretGun Turret => parent as Building_TurretGun;
-
         public override void CompTick()
         {
             base.CompTick();
@@ -21,6 +20,7 @@ namespace Embergarden
             {
                 NewPawn();
             }
+            pawnOwner.ThingOwnerTick();
             if (needUpdateHP)
             {
                 UpdateHP();
