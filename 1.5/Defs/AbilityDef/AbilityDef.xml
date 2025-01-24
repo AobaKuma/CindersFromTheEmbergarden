@@ -114,7 +114,7 @@
 		</comps>
 	</AbilityDef>
 
-
+<AbilityDef>
     <defName>Cinder_BurnHemostasis</defName>
     <label>burn hemostasis</label>
     <description>Use burnt tentacles to stop bleeding from wounds on the target's body.</description>
