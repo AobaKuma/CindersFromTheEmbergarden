@@ -1,37 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="BaseMechanoid" Name="Cinder_BaseTurretWalker" Abstract="True">
-		<statBases>
-			<MoveSpeed>4.3</MoveSpeed>
-			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
-		</statBases>
-		<race>
-			<intelligence>ToolUser</intelligence>
-			<thinkTreeMain>Mechanoid</thinkTreeMain>
-			<baseBodySize>2</baseBodySize>
-			<lifeStageAges>
-				<li>
-					<def>MechanoidFullyFormed</def>
-					<minAge>0</minAge>
-					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
-                    <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
-                    <soundCall>Pawn_Mech_Centipede_Call</soundCall>
-				</li>
-				<li MayRequire="Ludeon.RimWorld.Biotech">
-					<def>MechanoidFullyFormed</def>
-					<minAge>100</minAge>
-					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
-                    <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
-                    <soundCall>Pawn_Mech_Centipede_Call</soundCall>
-				</li>
-			</lifeStageAges>
-		</race>
-		<butcherProducts>
-			<Cinder_AmorphousPolymer>55</Cinder_AmorphousPolymer>
-		</butcherProducts>
-	</ThingDef>
-
 	<ThingDef ParentName="Cinder_BaseTurretWalker">
 		<defName>Cinder_Mech_WalkerAutoCannon</defName>
 		<label>Autocannon walker</label>
@@ -164,7 +132,7 @@
 		</statBases>
 	</ThingDef>
 
-    <PawnKindDef ParentName="BaseMechanoidKind">
+	<PawnKindDef ParentName="BaseMechanoidKind">
 		<defName>Cinder_Mech_WalkerRocket</defName>
 		<label>rocketswarm walker</label>
 		<race>Cinder_Mech_WalkerRocket</race>
@@ -198,7 +166,7 @@
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>9999~9999</techHediffsMoney>
 	</PawnKindDef>
-	
+
 	<ThingDef ParentName="Cinder_BaseTurretWalker">
 		<defName>Cinder_Mech_WalkerSniper</defName>
 		<label>Uranium slug walker</label>
@@ -247,7 +215,7 @@
 		</statBases>
 	</ThingDef>
 
-    <PawnKindDef ParentName="BaseMechanoidKind">
+	<PawnKindDef ParentName="BaseMechanoidKind">
 		<defName>Cinder_Mech_WalkerSniper</defName>
 		<label>Uranium slug walker</label>
 		<race>Cinder_Mech_WalkerSniper</race>

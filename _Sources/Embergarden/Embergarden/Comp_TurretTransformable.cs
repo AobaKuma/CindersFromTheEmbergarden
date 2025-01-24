@@ -10,8 +10,14 @@ namespace Embergarden
     /// </summary>
     public partial class Comp_TurretTransformable : ThingComp
     {
-        public CompProperties_Transformable Prop => (CompProperties_Transformable)props;
+        public CompProperties_Transformable Props => (CompProperties_Transformable)props;
         public Building_TurretGun Turret => parent as Building_TurretGun;
+
+        public override void PostPostMake()
+        {
+            base.PostPostMake();
+            NewPawn();
+        }
 
         public override void CompTick()
         {
@@ -32,7 +38,7 @@ namespace Embergarden
         }
         public void TransformTick()
         {
-            if (!Prop.autoAI && parent.Faction == Faction.OfPlayer)
+            if (!Props.autoAI && parent.Faction == Faction.OfPlayer)
             {
                 return;
             }
@@ -41,7 +47,7 @@ namespace Embergarden
             {
                 return;
             }
-            D.Message($"Ticked, Target is {Turret.CurrentTarget}, next Transformation Tick is {lastHaveTargetTick + Prop.idleSeconds.SecondsToTicks()}");
+            D.Message($"Ticked, Target is {Turret.CurrentTarget}, next Transformation Tick is {lastHaveTargetTick + Props.idleSeconds.SecondsToTicks()}");
             if (Turret.CurrentTarget.IsValid)
             {
                 if (lastHaveTargetTick > 0)
@@ -53,7 +59,7 @@ namespace Embergarden
                 {
                     lastHaveTargetTick = GenTicks.TicksGame;
                 }
-                else if (GenTicks.TicksGame >= lastHaveTargetTick + Prop.idleSeconds.SecondsToTicks())
+                else if (GenTicks.TicksGame >= lastHaveTargetTick + Props.idleSeconds.SecondsToTicks())
                 {
                     TryTransform();
                 }
@@ -63,7 +69,7 @@ namespace Embergarden
         {
             base.PostExposeData();
             Scribe_Values.Look(ref lastHaveTargetTick, "lastHaveTargetTick");
-            Scribe_Deep.Look(ref innerPawn, "innerPawn", [this]);
+            Scribe_Deep.Look(ref pawnOwner, "innerPawn", [this]);
         }
         int lastHaveTargetTick = -1;
         bool needUpdateHP = true;
@@ -76,7 +82,7 @@ namespace Embergarden
         }
         public ThingOwner GetDirectlyHeldThings()
         {
-            return innerPawn;
+            return pawnOwner;
         }
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
@@ -92,17 +98,13 @@ namespace Embergarden
             base.PostPreApplyDamage(ref dinfo, out absorbed);
             if (absorbed || InnerPawn == null)
             {
-                Log.Error("InnerPawn is null");
                 return;
             }
-            Log.Message(InnerPawn.def);
             InnerPawn.TakeDamage(dinfo);
             if (InnerPawn.Dead)
             {
-                Log.Message(InnerPawn.def);
-                Log.Warning("GetDamaged");
                 var p = InnerPawn;
-                innerPawn.Remove(p);
+                pawnOwner.Remove(p);
                 Corpse corpse = (Corpse)ThingMaker.MakeThing(p.RaceProps.corpseDef);
                 corpse.InnerPawn = p;
                 GenSpawn.Spawn(corpse, parent.Position, parent.Map, WipeMode.Vanish);
@@ -122,9 +124,9 @@ namespace Embergarden
             {
                 Command_Action command = new()
                 {
-                    defaultLabel = Prop.defaultLabel.Translate(),
-                    defaultDesc = Prop.defaultDesc.Translate(),
-                    icon = Prop.Icon2D,
+                    defaultLabel = Props.defaultLabel.Translate(),
+                    defaultDesc = Props.defaultDesc.Translate(),
+                    icon = Props.Icon2D,
                     action = TryTransform,
                 };
                 yield return command;
@@ -148,17 +150,23 @@ namespace Embergarden
         }
         public void TryTransform()
         {
-            innerPawn.TryDropAll(parent.Position, parent.Map, ThingPlaceMode.Direct);
+            pawnOwner.TryDropAll(parent.Position, parent.Map, ThingPlaceMode.Direct);
             parent.Destroy(DestroyMode.WillReplace);
         }
 
+        public Pawn NewPawn()
+        {
+            Pawn p = PawnGenerator.GeneratePawn(Props.pawnKind, parent.Faction);
+            pawnOwner.TryAdd(p);
+            return p;
+        }
 
-        public Pawn InnerPawn => innerPawn.Any ? innerPawn[0] : null;
+        public Pawn InnerPawn => pawnOwner.Any ? pawnOwner[0] : (parent.Spawned ? NewPawn() : null);
 
-        public ThingOwner<Pawn> innerPawn;
+        public ThingOwner<Pawn> pawnOwner;
         public Comp_TurretTransformable()
         {
-            innerPawn = new(this);
+            pawnOwner = new(this);
         }
     }
 }

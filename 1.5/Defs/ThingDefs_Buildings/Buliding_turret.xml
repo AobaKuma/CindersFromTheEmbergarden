@@ -496,6 +496,7 @@
 			</li>
 			<li Class="Embergarden.CompProperties_Transformable">
 				<compClass>Embergarden.Comp_TurretTransformable</compClass>
+				<pawnKind>Cinder_Mech_MiniTurretWalker</pawnKind>
 				<idleSeconds>2</idleSeconds>
 				<defaultLabel>Transfer to pawn</defaultLabel>
 				<defaultDesc>Order the turret to "stand up" and relocate.</defaultDesc>

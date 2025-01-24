@@ -61,7 +61,7 @@ namespace Embergarden
                 var turretCache = Turret;
                 GenSpawn.Spawn(Turret, pawn.Position, pawn.Map);
                 pawn.DeSpawn(DestroyMode.WillReplace);
-                turretCache.TryGetComp<Comp_TurretTransformable>().innerPawn.TryAdd(pawn);
+                turretCache.TryGetComp<Comp_TurretTransformable>().pawnOwner.TryAdd(pawn);
             }
         }
     }
