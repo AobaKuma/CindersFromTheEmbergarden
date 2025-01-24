@@ -136,8 +136,8 @@ namespace Embergarden
         {
             if (InnerPawn == null) return;
             parent.HitPoints =
-                (int)InnerPawn.health.summaryHealth.SummaryHealthPercent
-                * parent.MaxHitPoints + 1;
+                (int)(InnerPawn.health.summaryHealth.SummaryHealthPercent
+                * parent.MaxHitPoints) + 1;
             if (needUpdateHP) needUpdateHP = false;
         }
         public void TryTransform()
