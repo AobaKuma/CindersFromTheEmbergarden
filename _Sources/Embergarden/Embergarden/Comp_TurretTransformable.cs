@@ -33,6 +33,11 @@ namespace Embergarden
                 NewPawn();
             }
             pawnOwner.ThingOwnerTick();
+
+            if (needCheckRepair && parent.HitPoints >= parent.MaxHitPoints)
+            {
+                WoundPurge(InnerPawn);
+            }
             if (needUpdateHP)
             {
                 UpdateHP();
@@ -79,6 +84,7 @@ namespace Embergarden
         }
         int lastHaveTargetTick = -1;
         bool needUpdateHP = true;
+        bool needCheckRepair = true;
     }
     public partial class Comp_TurretTransformable : IThingHolder
     {
@@ -149,16 +155,13 @@ namespace Embergarden
             }
             parent.HitPoints = (int)Mathf.Clamp(InnerPawn.health.summaryHealth.SummaryHealthPercent * parent.MaxHitPoints, 1, parent.MaxHitPoints);
             needUpdateHP = false;
+            needCheckRepair = true;
             UpdateRepairCache();
         }
         public void TryTransform()
         {
             if (InnerPawn == null) NewPawn();
             Pawn p = InnerPawn;
-            if (parent.HitPoints >= parent.MaxHitPoints)
-            {
-                WoundPurge(p);
-            }
             p.SetFactionDirect(parent.Faction);
             pawnOwner.TryDropAll(parent.Position, parent.Map, ThingPlaceMode.Direct);
             parent.Destroy(DestroyMode.WillReplace);
@@ -180,7 +183,7 @@ namespace Embergarden
             pawnOwner.TryAdd(p);
             return p;
         }
-        public static void WoundPurge(Pawn pawn)
+        public void WoundPurge(Pawn pawn)
         {
             for (int i = pawn.health.hediffSet.hediffs.Count; i > 0; i--)
             {
@@ -190,6 +193,7 @@ namespace Embergarden
                     pawn.health.RemoveHediff(h);
                 }
             }
+            needCheckRepair = false;
         }
 
         public Pawn InnerPawn => pawnOwner.Any ? pawnOwner[0] : null;
