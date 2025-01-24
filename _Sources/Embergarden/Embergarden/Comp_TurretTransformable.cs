@@ -110,9 +110,20 @@ namespace Embergarden
                 GenSpawn.Spawn(corpse, parent.Position, parent.Map, WipeMode.Vanish);
                 parent.Destroy(DestroyMode.KillFinalize);
             }
-            parent.HitPoints = (int)InnerPawn.health.summaryHealth.SummaryHealthPercent * parent.MaxHitPoints;
+            UpdateHP();
             absorbed = true;
         }
+        public override void PostDestroy(DestroyMode mode, Map previousMap)
+        {
+            base.PostDestroy(mode, previousMap);
+            if (mode == DestroyMode.KillFinalize && !InnerPawn.Dead)
+            {
+                Pawn p = InnerPawn;
+                pawnOwner.TryDropAll(parent.Position, previousMap, ThingPlaceMode.Near);
+                p.Kill(null);
+            }
+        }
+
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
             foreach (var gizmo in base.CompGetGizmosExtra())
@@ -135,9 +146,7 @@ namespace Embergarden
         private void UpdateHP()
         {
             if (InnerPawn == null) return;
-            parent.HitPoints =
-                (int)(InnerPawn.health.summaryHealth.SummaryHealthPercent
-                * parent.MaxHitPoints) + 1;
+            parent.HitPoints = (int)Mathf.Clamp(InnerPawn.health.summaryHealth.SummaryHealthPercent * parent.MaxHitPoints, 1, parent.MaxHitPoints);
             if (needUpdateHP) needUpdateHP = false;
         }
         public void TryTransform()
