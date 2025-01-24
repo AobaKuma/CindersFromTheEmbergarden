@@ -2,9 +2,9 @@
 <Defs>
 	<ThingDef ParentName="Cinder_BaseTurretWalker" Name="Cinder_MiniTurretWalker" Abstract="True">
 		<statBases>
-			<MoveSpeed>4.3</MoveSpeed>
-			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+			<MoveSpeed>3.5</MoveSpeed>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
 		</statBases>
 		<race>
 			<intelligence>ToolUser</intelligence>
@@ -80,9 +80,6 @@
 			<body>Cinder_MiniTurretWalker</body>
 			<baseHealthScale>1</baseHealthScale>
 		</race>
-		<statBases>
-			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">1</BandwidthCost>
-		</statBases>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BaseMechanoidKind">

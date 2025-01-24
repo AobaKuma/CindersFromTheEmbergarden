@@ -40,12 +40,16 @@
 			</li>
 		</tools>
 		<race>
+		<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Cinder_WalkerTurret</thinkTreeMain>
 			<body>Cinder_TurretWalker</body>
 			<baseHealthScale>3</baseHealthScale>
 		</race>
-		<statBases>
-			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">2</BandwidthCost>
-		</statBases>
+		<modExtensions>
+
+			<li Class="Embergarden.ModExtension_Draftable">
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BaseMechanoidKind">
@@ -81,6 +85,9 @@
 		</lifeStages>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<abilities>
+			<li>Ability_Transformation_Cannon</li>
+		</abilities>
 	</PawnKindDef>
 
 
@@ -124,12 +131,16 @@
 			</li>
 		</tools>
 		<race>
+		<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Cinder_WalkerTurret</thinkTreeMain>
 			<body>Cinder_TurretWalker</body>
 			<baseHealthScale>3</baseHealthScale>
 		</race>
-		<statBases>
-			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">2</BandwidthCost>
-		</statBases>
+		<modExtensions>
+
+			<li Class="Embergarden.ModExtension_Draftable">
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BaseMechanoidKind">
@@ -165,6 +176,9 @@
 		</lifeStages>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<abilities>
+			<li>Ability_Transformation_Rocket</li>
+		</abilities>
 	</PawnKindDef>
 
 	<ThingDef ParentName="Cinder_BaseTurretWalker">
@@ -207,12 +221,16 @@
 			</li>
 		</tools>
 		<race>
+		<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Cinder_WalkerTurret</thinkTreeMain>
 			<body>Cinder_TurretWalker</body>
 			<baseHealthScale>3</baseHealthScale>
 		</race>
-		<statBases>
-			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">2</BandwidthCost>
-		</statBases>
+		<modExtensions>
+
+			<li Class="Embergarden.ModExtension_Draftable">
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BaseMechanoidKind">
@@ -248,5 +266,8 @@
 		</lifeStages>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<abilities>
+			<li>Ability_Transformation_Sniper</li>
+		</abilities>
 	</PawnKindDef>
 </Defs>

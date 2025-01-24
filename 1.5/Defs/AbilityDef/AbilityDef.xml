@@ -89,7 +89,7 @@
 		<defName>Ability_Transformation_TacticalTurret</defName>
 		<label>Transformation</label>
 		<description>Transform to a turret.</description>
-		<iconPath>Things/Building/WalkerTacticalTurret/WalkerTacticalTurret_MenuIcon</iconPath>
+		<iconPath>UI/Abilities/Transformation</iconPath>
 		<cooldownTicksRange>600</cooldownTicksRange>
 		<warmupStartSound></warmupStartSound>
 		<warmupEffecter></warmupEffecter>
@@ -110,6 +110,93 @@
 		<comps>
 			<li Class="Embergarden.CompProperties_Transform">
 				<buildingDef>Cinder_TacticalTurret</buildingDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+		<AbilityDef>
+		<defName>Ability_Transformation_Cannon</defName>
+		<label>Transformation</label>
+		<description>Transform to a turret.</description>
+		<iconPath>UI/Abilities/Transformation</iconPath>
+		<cooldownTicksRange>600</cooldownTicksRange>
+		<warmupStartSound></warmupStartSound>
+		<warmupEffecter></warmupEffecter>
+		<hostile>false</hostile>
+		<aiCanUse>true</aiCanUse>
+		<targetRequired>false</targetRequired>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>2</warmupTime>
+			<soundCast></soundCast>
+			<range>31.9</range>
+			<targetable>false</targetable>
+			<violent>false</violent>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="Embergarden.CompProperties_Transform">
+				<buildingDef>Cinder_ErodedAutocannon</buildingDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+		<AbilityDef>
+		<defName>Ability_Transformation_Sniper</defName>
+		<label>Transformation</label>
+		<description>Transform to a turret.</description>
+		<iconPath>UI/Abilities/Transformation</iconPath>
+		<cooldownTicksRange>600</cooldownTicksRange>
+		<warmupStartSound></warmupStartSound>
+		<warmupEffecter></warmupEffecter>
+		<hostile>false</hostile>
+		<aiCanUse>true</aiCanUse>
+		<targetRequired>false</targetRequired>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>2</warmupTime>
+			<soundCast></soundCast>
+			<range>40.9</range>
+			<targetable>false</targetable>
+			<violent>false</violent>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="Embergarden.CompProperties_Transform">
+				<buildingDef>Cinder_ErodedSniperBase</buildingDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+	<AbilityDef>
+		<defName>Ability_Transformation_Rocket</defName>
+		<label>Transformation</label>
+		<description>Transform to a turret.</description>
+		<iconPath>UI/Abilities/Transformation</iconPath>
+		<cooldownTicksRange>600</cooldownTicksRange>
+		<warmupStartSound></warmupStartSound>
+		<warmupEffecter></warmupEffecter>
+		<hostile>false</hostile>
+		<aiCanUse>true</aiCanUse>
+		<targetRequired>false</targetRequired>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>2</warmupTime>
+			<soundCast></soundCast>
+			<range>25.9</range>
+			<targetable>false</targetable>
+			<violent>false</violent>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="Embergarden.CompProperties_Transform">
+				<buildingDef>Cinder_RocketswarmLauncher</buildingDef>
 			</li>
 		</comps>
 	</AbilityDef>

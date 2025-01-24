@@ -121,6 +121,14 @@
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
 			</li>
+			<li Class="Embergarden.CompProperties_Transformable">
+				<compClass>Embergarden.Comp_TurretTransformable</compClass>
+				<pawnKind>Cinder_Mech_WalkerAutoCannon</pawnKind>
+				<idleSeconds>2</idleSeconds>
+				<defaultLabel>Change to walking mode</defaultLabel>
+				<defaultDesc>Order the turret to "stand up" and relocate.</defaultDesc>
+				<icon>Things/Building/WalkerAutoCannon/WalkerAutoCannon_MenuIcon</icon>
+			</li>
 		</comps>
 		<building>
 			<turretGunDef>Cinder_GunErodedAutocannon</turretGunDef>
@@ -227,6 +235,14 @@
 				<factorByDifficulty>true</factorByDifficulty>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+			<li Class="Embergarden.CompProperties_Transformable">
+				<compClass>Embergarden.Comp_TurretTransformable</compClass>
+				<pawnKind>Cinder_Mech_WalkerSniper</pawnKind>
+				<idleSeconds>2</idleSeconds>
+				<defaultLabel>Change to walking mode</defaultLabel>
+				<defaultDesc>Order the turret to "stand up" and relocate.</defaultDesc>
+				<icon>Things/Building/WalkerSniper/WalkerSniper_MenuIcon</icon>
 			</li>
 		</comps>
 		<building>
@@ -362,6 +378,14 @@
 					<li>EMP</li>
 				</affectedDamageDefs>
 			</li>
+			<li Class="Embergarden.CompProperties_Transformable">
+				<compClass>Embergarden.Comp_TurretTransformable</compClass>
+				<pawnKind>Cinder_Mech_WalkerRocket</pawnKind>
+				<idleSeconds>2</idleSeconds>
+				<defaultLabel>Change to walking mode</defaultLabel>
+				<defaultDesc>Order the turret to "stand up" and relocate.</defaultDesc>
+				<icon>Things/Building/WalkerRocket/WalkerRocket_MenuIcon</icon>
+			</li>
 		</comps>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
@@ -471,7 +495,7 @@
 		<stealable>false</stealable>
 		<rotatable>false</rotatable>
 		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
+			<MaxHitPoints>190</MaxHitPoints>
 			<Flammability>0</Flammability>
 			<WorkToBuild>1800</WorkToBuild>
 			<Mass>8</Mass>
@@ -517,7 +541,7 @@
 				<compClass>Embergarden.Comp_TurretTransformable</compClass>
 				<pawnKind>Cinder_Mech_MiniTurretWalker</pawnKind>
 				<idleSeconds>2</idleSeconds>
-				<defaultLabel>Transfer to pawn</defaultLabel>
+				<defaultLabel>Change to walking mode</defaultLabel>
 				<defaultDesc>Order the turret to "stand up" and relocate.</defaultDesc>
 				<icon>Things/Building/WalkerTacticalTurret/WalkerTacticalTurret_MenuIcon</icon>
 			</li>
