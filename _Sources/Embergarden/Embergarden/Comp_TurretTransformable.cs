@@ -78,12 +78,6 @@ namespace Embergarden
         {
             return pawnOwner;
         }
-
-        public override void PostSpawnSetup(bool respawningAfterLoad)
-        {
-            base.PostSpawnSetup(respawningAfterLoad);
-            UpdateHP();
-        }
         public override void PostPreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
         {
             base.PostPreApplyDamage(ref dinfo, out absorbed);
@@ -136,14 +130,21 @@ namespace Embergarden
         }
         private void UpdateHP()
         {
+            Log.Message("Update HP");
+            parent.Map.listerBuildingsRepairable.Notify_BuildingTookDamage(parent as Building);
+            Log.Message(parent.Map.listerBuildingsRepairable.RepairableBuildings(parent.Faction).ToStringSafeEnumerable());
             if (InnerPawn == null) return;
             parent.HitPoints = (int)Mathf.Clamp(InnerPawn.health.summaryHealth.SummaryHealthPercent * parent.MaxHitPoints, 1, parent.MaxHitPoints);
-            if (needUpdateHP) needUpdateHP = false;
+            needUpdateHP = false;
         }
         public void TryTransform()
         {
             if (InnerPawn == null) NewPawn();
             Pawn p = InnerPawn;
+            if (parent.HitPoints >= parent.MaxHitPoints)
+            {
+                WoundPurge(p);
+            }
             p.SetFactionDirect(parent.Faction);
             pawnOwner.TryDropAll(parent.Position, parent.Map, ThingPlaceMode.Direct);
             parent.Destroy(DestroyMode.WillReplace);
@@ -164,6 +165,17 @@ namespace Embergarden
             Pawn p = PawnGenerator.GeneratePawn(Props.pawnKind, parent.Faction);
             pawnOwner.TryAdd(p);
             return p;
+        }
+        public static void WoundPurge(Pawn pawn)
+        {
+            for (int i = pawn.health.hediffSet.hediffs.Count; i > 0; i--)
+            {
+                var h = pawn.health.hediffSet.hediffs[i - 1];
+                if (h is Hediff_Injury || h is Hediff_MissingPart)
+                {
+                    pawn.health.RemoveHediff(h);
+                }
+            }
         }
 
         public Pawn InnerPawn => pawnOwner.Any ? pawnOwner[0] : null;
