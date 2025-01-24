@@ -9,6 +9,7 @@ namespace Embergarden
         //For Comp_TurretTransformable
         public float idleSeconds;
         public bool autoAI;
+        public PawnKindDef pawnKind;
 
         public string defaultLabel;
         public string defaultDesc;
