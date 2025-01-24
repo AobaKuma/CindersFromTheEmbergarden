@@ -273,6 +273,18 @@
 		</spawnCategories>
 	</BackstoryDef>
 	
+	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 追随者 -->
+		<defName>Cinder_Follower</defName>
+		<title>underground follower</title>
+		<titleShort>follower</titleShort>
+		<description>[PAWN_nameDef] lost all [PAWN_possessive] comrades while serving as a soldier in the Defense Council during the war. [PAWN_pronoun] suffered severe psychological trauma that left [PAWN_objective] unable to lift a gun.\n
+		Judged as worthless, [PAWN_pronoun] was sent to a labor prison, where [PAWN_pronoun] discovered illegal literature promoting underground propaganda. Following this, [PAWN_pronoun] devised a large-scale prison break uprising.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CinderStory_DefenseCouncil</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
 	<!-- 邪教徒 -->
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 邪教圣子 -->
@@ -323,10 +335,47 @@
 		</spawnCategories>
 	</BackstoryDef>
 	
+	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 悲伤信徒 -->
+		<defName>Cinder_SadBeliever</defName>
+		<title>sad believer</title>
+		<titleShort>sad believer</titleShort>
+		<description>[PAWN_nameDef] struggles to raise [PAWN_possessive] children alone. Although searching for supplies in abandoned buildings leaves [PAWN_possessive] limbs battered, [PAWN_pronoun] manages to maintain a simple life. This simple existence is shattered by an unfamiliar "flu."\n\n
+		[PAWN_possessive] children develop high fevers, and despite spending [PAWN_possessive] meager savings to seek medical help, [PAWN_pronoun] is unable to prevent them from dying one by one.\n
+		When [PAWN_pronoun] watches the last of [PAWN_possessive] children die in [PAWN_possessive] arms, [PAWN_pronoun] goes mad. Soon, [PAWN_pronoun] is approached by cultists in the bunker, who convince [PAWN_objective] that only blood sacrifice can change this sorrowful world.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CinderStory_DefenseCouncil_Cult</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 逃避信徒 -->
+		<defName>Cinder_EscapeBeliever</defName>
+		<title>escape believer</title>
+		<titleShort>escape believer</titleShort>
+		<description>[PAWN_nameDef] was supposed to be conscripted as a soldier to fight, but when [PAWN_pronoun] got lost and stumbled into the kitchen of the shelter, [PAWN_pronoun] saw the dismembered bodies of dead soldiers.\n
+		This sight filled [PAWN_objective] with tremendous fear of going to war. Consequently, [PAWN_pronoun] forged [PAWN_possessive] age and hid within the cult, ensuring that no one who knew [PAWN_objective] could find [PAWN_objective].</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CinderStory_DefenseCouncil_Cult</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 祭司 -->
+		<defName>Cinder_Priest</defName>
+		<title>cult priest</title>
+		<titleShort>priest</titleShort>
+		<description>[PAWN_nameDef] was once a junior commander in the Defense Council, engaged in a prolonged battle against the inhuman legions controlled by DI. After serving as a scapegoat for a failed operation, [PAWN_pronoun] lost faith in everything and secretly joined a newly formed branch of the local cult.\n
+		Following the blood sacrifice of the previous priest, [PAWN_pronoun] was elevated to the position of the new priest.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CinderStory_DefenseCouncil_Cult</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 疯掉的信徒 -->
 		<defName>Cinder_CrazyBeliever</defName>
-		<title>Crazy believer</title>
-		<titleShort>Crazy believer</titleShort>
+		<title>crazy believer</title>
+		<titleShort>crazy believer</titleShort>
 		<description>[PAWN_nameDef] was born in a shelter controlled by a cult within the Defense Council. [PAWN_pronoun] was once used as a gestation pod, but during a raid on the shelter by the Economic Security Department for Special Periods, [PAWN_pronoun] and [PAWN_possessive] infant were trapped in the wreckage.\n
 		By the time others found them, [PAWN_possessive] infant had already died from illness. In [PAWN_possessive] madness, [PAWN_pronoun] sacrificed [PAWN_possessive] own arm to the cult in exchange for [PAWN_possessive] child's life. In the end, all [PAWN_pronoun] received was a rag doll.</description>
 		<slot>Adulthood</slot>
