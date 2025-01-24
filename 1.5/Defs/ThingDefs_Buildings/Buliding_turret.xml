@@ -464,6 +464,10 @@
 			<drawSize>(1.2, 1.2)</drawSize>
 		</graphicData>
 		<altitudeLayer>Item</altitudeLayer>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		 <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
 		<stealable>false</stealable>
 		<rotatable>false</rotatable>
 		<statBases>
@@ -494,6 +498,21 @@
 					<li>EMP</li>
 				</adaptableDamageDefs>
 			</li>
+			  <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until barrel change</fuelLabel>
+        <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+        <outOfFuelMessage>Needs new barrel</outOfFuelMessage>
+        <fuelFilter><thingDefs><li>Steel</li></thingDefs></fuelFilter>
+        <fuelCapacity>60</fuelCapacity>       <!-- 30 bursts -->
+        <fuelMultiplier>0.75</fuelMultiplier> <!-- 1.333 steel per burst, 80 per full rearm -->
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.5</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+      </li>
 			<li Class="Embergarden.CompProperties_Transformable">
 				<compClass>Embergarden.Comp_TurretTransformable</compClass>
 				<pawnKind>Cinder_Mech_MiniTurretWalker</pawnKind>
