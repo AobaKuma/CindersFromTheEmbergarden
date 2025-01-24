@@ -554,6 +554,13 @@
 		 <li>Cinder_Resurrect</li>
 	  </hediffDefs>
       </li>
+	   <li Class="CompProperties_Spawner">
+        <thingToSpawn>Cinder_AmorphousPolymer</thingToSpawn>
+        <spawnCount>15</spawnCount>
+        <spawnIntervalRange><min>60000</min><max>60000</max></spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>true</showMessageIfOwned>
+      </li>
     </comps>
 	</AlienRace.ThingDef_AlienRace>
 </Defs>
