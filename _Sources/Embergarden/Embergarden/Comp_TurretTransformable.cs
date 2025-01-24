@@ -132,14 +132,6 @@ namespace Embergarden
                 yield return command;
             }
         }
-        public override string CompInspectStringExtra()
-        {
-            return base.CompInspectStringExtra() + $"/n{InnerPawn}";
-        }
-        public override string GetDescriptionPart()
-        {
-            return base.GetDescriptionPart() + $"/n{InnerPawn}";
-        }
         private void UpdateHP()
         {
             if (InnerPawn == null) return;
@@ -150,23 +142,35 @@ namespace Embergarden
         }
         public void TryTransform()
         {
+            if (InnerPawn == null) NewPawn();
+            Pawn p = InnerPawn;
+            p.SetFactionDirect(parent.Faction);
             pawnOwner.TryDropAll(parent.Position, parent.Map, ThingPlaceMode.Direct);
             parent.Destroy(DestroyMode.WillReplace);
+            if (p.IsPlayerControlled) p.drafter.Drafted = true;
         }
 
         public Pawn NewPawn()
         {
+            if (pawnOwner.Any)
+            {
+                while (pawnOwner.Count > 1)
+                {
+                    pawnOwner.RemoveAt(1);
+                }
+                return null;
+            }
             Pawn p = PawnGenerator.GeneratePawn(Props.pawnKind, parent.Faction);
             pawnOwner.TryAdd(p);
             return p;
         }
 
-        public Pawn InnerPawn => pawnOwner.Any ? pawnOwner[0] : (parent.Spawned ? NewPawn() : null);
+        public Pawn InnerPawn => pawnOwner.Any ? pawnOwner[0] : null;
 
         public ThingOwner<Pawn> pawnOwner;
         public Comp_TurretTransformable()
         {
-            pawnOwner = new(this);
+            pawnOwner = new(this, true);
         }
     }
 }
