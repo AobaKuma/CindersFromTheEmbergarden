@@ -88,10 +88,7 @@ namespace Embergarden
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
-            if (needUpdateHP)
-            {
-                UpdateHP();
-            }
+            UpdateHP();
         }
         public override void PostPreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
         {
