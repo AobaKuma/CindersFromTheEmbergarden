@@ -49,4 +49,12 @@ namespace Embergarden
 
         public float tendQuality = 0.5f;
     }
+
+    public class CompAbilityEffect_AIGiveMentalState : CompAbilityEffect_GiveMentalState
+    {
+        public override bool AICanTargetNow(LocalTargetInfo target)
+        {
+            return Valid(target);
+        }
+    }
 }
