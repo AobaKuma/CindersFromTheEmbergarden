@@ -13,6 +13,18 @@ namespace Embergarden
     {
         public CompProperties_Transformable Props => (CompProperties_Transformable)props;
         public Building_TurretGun Turret => parent as Building_TurretGun;
+
+        public override void PostSpawnSetup(bool respawningAfterLoad)
+        {
+            base.PostSpawnSetup(respawningAfterLoad);
+            needUpdateHP = true;
+        }
+
+        public void UpdateRepairCache()
+        {
+            parent.Map.listerBuildingsRepairable.Notify_BuildingTookDamage(Turret);
+        }
+
         public override void CompTick()
         {
             base.CompTick();
@@ -133,12 +145,11 @@ namespace Embergarden
             Log.Message("Update HP");
             if (InnerPawn == null)
             {
-                parent.Map.listerBuildingsRepairable.Notify_BuildingTookDamage(parent as Building);
                 return;
             }
             parent.HitPoints = (int)Mathf.Clamp(InnerPawn.health.summaryHealth.SummaryHealthPercent * parent.MaxHitPoints, 1, parent.MaxHitPoints);
             needUpdateHP = false;
-            parent.Map.listerBuildingsRepairable.Notify_BuildingTookDamage(parent as Building);
+            UpdateRepairCache();
         }
         public void TryTransform()
         {
