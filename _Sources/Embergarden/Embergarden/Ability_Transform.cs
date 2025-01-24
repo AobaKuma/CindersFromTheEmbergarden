@@ -22,14 +22,7 @@ namespace Embergarden
         {
             get
             {
-                if (!turretOwner.Any)
-                {
-                    Log.Message("remake turret");
-                    Building t = (Building)ThingMaker.MakeThing(Prop.buildingDef);
-                    t.SetFaction(parent.pawn.Faction);
-                    turretOwner.TryAdd(t);
-                }
-                return turretOwner.InnerListForReading[0];
+                return turretOwner.Any ? turretOwner.InnerListForReading[0] : null;
             }
             set
             {
@@ -59,6 +52,14 @@ namespace Embergarden
             base.Apply(target, dest);
             if (Prop.buildingDef != null)
             {
+                if (Turret == null)
+                {
+                    Log.Message("remake turret");
+                    Building t = (Building)ThingMaker.MakeThing(Prop.buildingDef);
+                    t.SetFaction(parent.pawn.Faction);
+                    turretOwner.TryAdd(t);
+                }
+
                 var pawn = parent.pawn;
                 var turretCache = Turret;
                 GenSpawn.Spawn(Turret, pawn.Position, pawn.Map);

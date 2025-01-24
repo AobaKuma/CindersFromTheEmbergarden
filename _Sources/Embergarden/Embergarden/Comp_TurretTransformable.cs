@@ -131,11 +131,14 @@ namespace Embergarden
         private void UpdateHP()
         {
             Log.Message("Update HP");
-            parent.Map.listerBuildingsRepairable.Notify_BuildingTookDamage(parent as Building);
-            Log.Message(parent.Map.listerBuildingsRepairable.RepairableBuildings(parent.Faction).ToStringSafeEnumerable());
-            if (InnerPawn == null) return;
+            if (InnerPawn == null)
+            {
+                parent.Map.listerBuildingsRepairable.Notify_BuildingTookDamage(parent as Building);
+                return;
+            }
             parent.HitPoints = (int)Mathf.Clamp(InnerPawn.health.summaryHealth.SummaryHealthPercent * parent.MaxHitPoints, 1, parent.MaxHitPoints);
             needUpdateHP = false;
+            parent.Map.listerBuildingsRepairable.Notify_BuildingTookDamage(parent as Building);
         }
         public void TryTransform()
         {
