@@ -11,11 +11,12 @@
 		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
 		<defName>Cinder_UncontrollableTentacles</defName>
 		<label>UncontrollableTentacles</label>
-		<description>TODO</description>
+		<description>This tentacle will randomly hinder or assist in manipulation.</description>
 		<hediffClass>Embergarden.Hediff_DynamicCap</hediffClass>
 		<isBad>false</isBad>
 		<initialSeverity>0.5</initialSeverity>
 		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
 		<stages>
 			<li>
 				<label>active</label>
@@ -38,6 +39,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
 		<initialSeverity>1</initialSeverity>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
 		 <isBad>false</isBad>
 		<stages>
 		<li>
@@ -62,6 +64,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
 		<initialSeverity>1</initialSeverity>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
 		 <isBad>false</isBad>
 		<comps>
 			<li Class="Embergarden.HediffCompProperties_Resurrect">
@@ -84,6 +87,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
 		<initialSeverity>1</initialSeverity>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
 		 <isBad>false</isBad>
 		<stages>
 			<li>
@@ -104,6 +108,7 @@
 		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
 		<initialSeverity>1</initialSeverity>
 		<description>Resurrection coma caused by resurrection.</description>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
 				<disappearsAfterTicks>7500~7500</disappearsAfterTicks>
@@ -137,6 +142,7 @@
 		<initialSeverity>1</initialSeverity>
 		<maxSeverity>1</maxSeverity>
 		<description>coma caused by suffocation.</description>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-1.0</severityPerDay>
@@ -165,6 +171,7 @@
 		<label>entanglement of tentacles</label>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
 		<initialSeverity>1</initialSeverity>
 		<description>Entangled by tentacles on the ground, affecting vision and mobility.</description>
 		<comps>
@@ -194,6 +201,7 @@
 		<label>erosion</label>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
 		<initialSeverity>1</initialSeverity>
 		<description>The armor on this person's body has been eroded.</description>
 		<comps>

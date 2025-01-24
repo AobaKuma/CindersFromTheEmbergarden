@@ -307,15 +307,15 @@
 	<raceRestriction>
 				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
 				  <blackEndoCategories>
-          <li MayRequire="Ludeon.RimWorld.Biotech">Melanin</li>
-          <li MayRequire="Ludeon.RimWorld.Biotech">BodyType</li>
-          <li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
-          <li MayRequire="Ludeon.RimWorld.Biotech">Nose</li>
-          <li MayRequire="Ludeon.RimWorld.Biotech">Voice</li>
-          <li MayRequire="Ludeon.RimWorld.Biotech">Headbone</li>
-          <li MayRequire="Ludeon.RimWorld.Biotech">Head</li>
-          <li MayRequire="Ludeon.RimWorld.Biotech">Jaw</li>
-          <li MayRequire="Ludeon.RimWorld.Biotech">HairColor</li>
+          <li>Melanin</li>
+          <li>BodyType</li>
+          <li>Ears</li>
+          <li>Nose</li>
+          <li>Voice</li>
+          <li>Headbone</li>
+          <li>Head</li>
+          <li>Jaw</li>
+          <li>HairColor</li>
         </blackEndoCategories>
         <blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
           <li MayRequire="Ludeon.RimWorld.Biotech">HairStyle</li>
