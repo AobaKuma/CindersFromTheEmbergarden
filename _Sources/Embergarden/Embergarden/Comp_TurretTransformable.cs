@@ -149,6 +149,12 @@ namespace Embergarden
         private void UpdateHP()
         {
             Log.Message("Update HP");
+            if (InnerPawn.Dead)
+            {
+                pawnOwner.TryDropAll(parent.Position, parent.Map, ThingPlaceMode.Near);
+                parent.Kill(null);
+                return;
+            }
             if (InnerPawn == null)
             {
                 return;
@@ -164,7 +170,15 @@ namespace Embergarden
             Pawn p = InnerPawn;
             p.SetFactionDirect(parent.Faction);
             pawnOwner.TryDropAll(parent.Position, parent.Map, ThingPlaceMode.Direct);
-            parent.Destroy(DestroyMode.WillReplace);
+            parent.DeSpawn(DestroyMode.WillReplace);
+            foreach (var ab in p.abilities.abilities)
+            {
+                if (ab.CompOfType<AbilityCompEffect_Transform>() is AbilityCompEffect_Transform comp)
+                {
+                    comp.Turret = Turret;
+                }
+            }
+
             if (p.IsPlayerControlled) p.drafter.Drafted = true;
         }
 
