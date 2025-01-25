@@ -26,17 +26,37 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>CinderStory</li>
+					<li>CinderStory_Refugee_Child</li>
+					<li>CinderStory_Refugee</li>
+					<li>CinderStory_DefenseCouncil_Child</li>
+					<li>CinderStory_DefenseCouncil</li>
+					<li>CinderStory_DefenseCouncil_CultChild</li>
+					<li>CinderStory_DefenseCouncil_Cult</li>
+					<li>CinderStory_ESDSP_Worker</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
 		<apparelTags>
 			<li>Cinder_Civilan</li>
 		</apparelTags>
-	<apparelRequired>
-	    <li>Apparel_Pants</li>
-	    <li>Apparel_CollarShirt</li>
-    </apparelRequired>
+		<apparelMoney>
+			<min>200</min>
+			<max>600</max>
+		</apparelMoney>
+	<specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+      </li>
+      <li>
+        <bodyPartGroup>Legs</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+      </li>
+    </specificApparelRequirements>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Cinder_BasePawn">
@@ -47,6 +67,14 @@
 		<initialWillRange>10~30</initialWillRange>
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<maxGenerationAge>45</maxGenerationAge>
+        <minGenerationAge>19</minGenerationAge>
+		<startingHediffs>
+		  <li>
+          <def>Cinder_ExtraArmourPlate</def>
+          <chance>0.15</chance>
+          </li>
+        </startingHediffs>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
@@ -112,6 +140,10 @@
 		<startingHediffs>
           <li>
           <def>Cinder_LongDream</def>
+          </li>
+		  <li>
+          <def>Cinder_ExtraArmourPlate</def>
+          <chance>1</chance>
           </li>
         </startingHediffs>
 		<backstoryFiltersOverride>

@@ -505,6 +505,7 @@
 	<workDisables>Intellectual</workDisables>
 	<forcedTraits>
 	  <Bloodlust>0</Bloodlust>
+	  <Tough>0</Tough>
     </forcedTraits>
 	</BackstoryDef>
 	
@@ -776,6 +777,7 @@ However, in reality, [PAWN_nameDef] is assigned by data intelligence to pilot an
     </skillGains>
     <forcedTraits>
       <DrugDesire>1</DrugDesire>
+	  <Tough>0</Tough>
     </forcedTraits>
 	</BackstoryDef>
 	
@@ -824,9 +826,6 @@ The war attackers [PAWN_pronoun] operates are deployed to launch Hellfire missil
 	   <Shooting>4</Shooting>
 	   <Melee>4</Melee>
     </skillGains>
-	<forcedTraits>
-      <Pyromaniac>0</Pyromaniac>
-    </forcedTraits>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- “稻草人” -->

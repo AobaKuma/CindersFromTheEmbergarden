@@ -86,15 +86,16 @@
 			</skillRequirements>
 		</recipeMaker>
 	<costList>
-			<Cloth>60</Cloth>
+			<Cloth>80</Cloth>
 			<Steel>20</Steel>
 	</costList>
     <statBases>
       <MaxHitPoints>150</MaxHitPoints>
       <WorkToMake>5000</WorkToMake>
+	  <MarketValue>250</MarketValue>
       <Mass>0.5</Mass>
-      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.27</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.07</ArmorRating_Blunt>
       <ArmorRating_Heat>0</ArmorRating_Heat>
 	  <Insulation_Cold>5.4</Insulation_Cold>
 	  <Insulation_Heat>3</Insulation_Heat>
@@ -162,7 +163,7 @@
       <layers>
         <li>Shell</li>
       </layers>
-      <tags>
+      <tags Inherit="false">
 	  <li>Cinder_Outlands</li>
       </tags>
       <defaultOutfitTags>
@@ -200,7 +201,7 @@
       <MaxHitPoints>200</MaxHitPoints>
       <WorkToMake>5000</WorkToMake>
       <Mass>0.5</Mass>
-      <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
 	  <Insulation_Cold>10</Insulation_Cold>
       <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
@@ -252,10 +253,11 @@
     </stuffCategories>
     <statBases>
       <MaxHitPoints>160</MaxHitPoints>
+	  <MarketValue>200</MarketValue>
       <WorkToMake>5000</WorkToMake>
       <Mass>0.5</Mass>
-        <StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
+        <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.5</EquipDelay>
     </statBases>
@@ -303,7 +305,7 @@
       <MaxHitPoints>200</MaxHitPoints>
       <WorkToMake>5000</WorkToMake>
       <Mass>0.5</Mass>
-      <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
 	  <Insulation_Heat>10</Insulation_Heat>
       <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
@@ -355,11 +357,12 @@
     </stuffCategories>
     <statBases>
       <MaxHitPoints>160</MaxHitPoints>
+	  <MarketValue>200</MarketValue>
       <WorkToMake>5000</WorkToMake>
       <Mass>0.5</Mass>
-        <StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.16</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
+        <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.36</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.5</EquipDelay>
     </statBases>
     <apparel>
@@ -424,7 +427,7 @@
       <layers>
         <li>Shell</li>
       </layers>
-      <tags>
+      <tags Inherit="false">
 	  <li>Cinder_Outlands</li>
       </tags>
       <defaultOutfitTags>

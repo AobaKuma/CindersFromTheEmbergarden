@@ -19,7 +19,11 @@
 						<defName>Delicate</defName>
 					</li>
 				</disallowedTraits>
-				<forcedRaceTraitEntries />
+				<forcedRaceTraitEntries>
+				    <li>
+						<defName>Cinder_Coke</defName>
+					</li>
+				</forcedRaceTraitEntries>
 				<alienPartGenerator>
 					<!-- 컬러채널 -->
 					<colorChannels>
