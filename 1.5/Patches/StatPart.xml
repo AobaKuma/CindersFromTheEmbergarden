@@ -76,4 +76,32 @@
         </li>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_AdvancedHelmet"]/apparel/tags</xpath>
+			<value>
+				<li>Cinder_Military</li>
+			</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_SimpleHelmet"]/apparel/tags</xpath>
+			<value>
+				<li>Cinder_Military</li>
+			</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_FlakVest"]/apparel/tags</xpath>
+			<value>
+				<li>Cinder_Military</li>
+			</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Apparel_FlakJacket"]/apparel/tags</xpath>
+			<value>
+				<li>Cinder_Military</li>
+			</value>
+	</Operation>
 </Patch>

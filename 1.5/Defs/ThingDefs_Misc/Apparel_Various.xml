@@ -163,6 +163,7 @@
         <li>Shell</li>
       </layers>
       <tags>
+	  <li>Cinder_Outlands</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -424,6 +425,7 @@
         <li>Shell</li>
       </layers>
       <tags>
+	  <li>Cinder_Outlands</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -557,7 +559,7 @@
         <li>OnSkin</li>
         <li>Middle</li>
       </layers>
-      <tags>
+      <tags Inherit="false">
         <li>Cinder_Ghoul</li>
       </tags>
       <defaultOutfitTags>
@@ -629,7 +631,7 @@
         <li>OnSkin</li>
         <li>Middle</li>
       </layers>
-      <tags>
+      <tags Inherit="false">
         <li>Cinder_Ghoul</li>
       </tags>
       <defaultOutfitTags>
@@ -715,6 +717,9 @@
 					<layer>51</layer>
 				</dataNorth>
 	  </drawData>
+	  <tags Inherit="false">
+        <li>Cinder_Military_Heavy</li>
+      </tags>
     </apparel>
 	<equippedStatOffsets>
 		<MoveSpeed>-0.5</MoveSpeed>
@@ -764,7 +769,8 @@
         <li>Middle</li>
 		 <li>Shell</li>
       </layers>
-      <tags>
+      <tags Inherit="false">
+        <li>Cinder_Military_Heavy</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>

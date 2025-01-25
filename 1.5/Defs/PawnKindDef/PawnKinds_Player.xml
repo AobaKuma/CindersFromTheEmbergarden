@@ -6,14 +6,7 @@
 		<itemQuality>Poor</itemQuality>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
-		<backstoryFiltersOverride>
-			<li>
-				<categories>
-					<li>CinderStory</li>
-				</categories>
-			</li>
-		</backstoryFiltersOverride>
-		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
 		<apparelMoney>
 			<min>100</min>
 			<max>1200</max>
@@ -30,22 +23,82 @@
 		<initialWillRange>10~30</initialWillRange>
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>CinderStory</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<apparelTags>
 			<li>Cinder_Civilan</li>
 		</apparelTags>
+	<apparelRequired>
+	    <li>Apparel_Pants</li>
+	    <li>Apparel_CollarShirt</li>
+    </apparelRequired>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_Outlander</defName>
-		<label>cinder outlander</label>
+		<label>cinder outlander soldier</label>
 		<defaultFactionType>OutlanderCivil</defaultFactionType>
-		<isFighter>false</isFighter>
+		<isFighter>true</isFighter>
 		<initialWillRange>10~30</initialWillRange>
 		<invNutrition>1</invNutrition>
-		<apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>CinderStory</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<apparelTags>
 			<li>Cinder_Military</li>
+			<li>Cinder_Civilan</li>
 		</apparelTags>
+	<specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(66, 61, 51)</color>
+      </li>
+	  <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+		<requiredTag>Cinder_Military</requiredTag>
+		<apparelLayer>Middle</apparelLayer>
+      </li>
+	  <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+		<requiredTag>Cinder_Outlands</requiredTag>
+		<apparelLayer>Shell</apparelLayer>
+      </li>
+      <li>
+        <bodyPartGroup>Legs</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(66, 61, 51)</color>
+      </li>
+    </specificApparelRequirements>
+		<apparelMoney>
+			<min>700</min>
+			<max>1200</max>
+		</apparelMoney>
+	<weaponTags>
+    <li>CinderSimpleGuns</li>
+	<li>CinderRifles</li>
+    </weaponTags>
+    <weaponMoney>400~1200</weaponMoney>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>5~12</range>
+      </li>
+    </skills>
 	</PawnKindDef>
 
 
@@ -53,13 +106,41 @@
 		<defName>Cinder_Ghoul</defName>
 		<label>ghoul unit</label>
 		<defaultFactionType>OutlanderCivil</defaultFactionType>
-		<isFighter>false</isFighter>
-		<initialWillRange>10~30</initialWillRange>
+		<isFighter>true</isFighter>
+		<initialWillRange>10</initialWillRange>
+		<initialResistanceRange>0</initialResistanceRange>
+		<maxGenerationAge>30</maxGenerationAge>
+        <minGenerationAge>19</minGenerationAge>
+		<backstoryFiltersOverride>
+        <li>
+        <categories>
+		  <li>CinderStory_Refugee_Child</li>
+		  <li>CinderStory_ESDSP_Child</li>
+          <li>CinderStory_ESDSP_Ghoul</li>
+        </categories>
+        </li>
+       </backstoryFiltersOverride>
 		<invNutrition>1</invNutrition>
-		<apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>Cinder_Ghoul</li>
 		</apparelTags>
+		<apparelRequired>
+         <li>Cinder_HeadGear_GhoulUnitHelmet</li>
+       </apparelRequired>
+		<apparelMoney>
+			<min>2200</min>
+			<max>3200</max>
+		</apparelMoney>
+		<requiredWorkTags>
+        <li>Violent</li>
+        </requiredWorkTags>
+		<skills>
+      <li>
+        <skill>Melee</skill>
+        <range>7~10</range>
+      </li>
+    </skills>
 	</PawnKindDef>
 
 </Defs>

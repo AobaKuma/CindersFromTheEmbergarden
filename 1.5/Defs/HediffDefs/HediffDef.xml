@@ -23,7 +23,7 @@
 				<minSeverity>0</minSeverity>
 				<statFactors>
 			<MeleeCooldownFactor>1.2</MeleeCooldownFactor>
-			<IncomingDamageFactor>0.8</IncomingDamageFactor>
+			<IncomingDamageFactor>0.75</IncomingDamageFactor>
             </statFactors>
 				<statOffsets>
 					<MeleeDamageFactor>0.5</MeleeDamageFactor>
@@ -43,7 +43,11 @@
 		 <isBad>false</isBad>
 		<stages>
 		<li>
-	  	<painFactor>0.75</painFactor>
+		 <painOffset>-0.5</painOffset>
+		<damageFactors>
+					<Flame>0.1</Flame>
+					<Burn>0.1</Burn>
+				</damageFactors>
 		<totalBleedFactor>0.9</totalBleedFactor>
 		</li>
         </stages>
@@ -111,7 +115,7 @@
 		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
-				<disappearsAfterTicks>7500~7500</disappearsAfterTicks>
+				<disappearsAfterTicks>3500~5500</disappearsAfterTicks>
 				<showRemainingTime>true</showRemainingTime>
 			</li>
 		</comps>

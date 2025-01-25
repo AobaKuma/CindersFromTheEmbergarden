@@ -48,12 +48,12 @@
 		<defName>Cinder_DustFogRefugee</defName>
 		<title>dust fog refugee</title>
 		<titleShort>refugee</titleShort>
-		<description>[PAWN_nameDef] is a refugee child struggling to survive in the continuous dust fog climate disasters.\n
-		The adults who were protecting the refugees have all been killed by the ghouls that emerged from the dust fog.\n
-		[PAWN_pronoun] can only hide in an abandoned underground facility, barely surviving by eating wild mushrooms.</description>
+		<description>[PAWN_nameDef] is a refugee child struggling to survive in the continuous dust fog climate disasters.
+ The adults who were protecting the refugees have all been killed by the ghouls that emerged from the dust fog.
+ [PAWN_pronoun] can only hide in an abandoned underground facility, barely surviving by eating wild mushrooms.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_Refugee</li>
+			<li>CinderStory_Refugee_Child</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
@@ -61,23 +61,23 @@
 		<defName>Cinder_Dying</defName>
 		<title>dying child</title>
 		<titleShort>dying child</titleShort>
-		<description>[PAWN_nameDef] is the child of refugees struggling to survive in the cracks of war. [PAWN_pronoun] followed [PAWN_possessive] parents around, hiding until they were blown to pieces while trying to protect [PAWN_objective]. The young [PAWN_nameDef] was left with half of his body burned, collapsing in the desolate ruins.\n
-		Eventually, hunger and severe injuries forced [PAWN_objective] to eat [PAWN_possessive] parents' bodies. This left [PAWN_objective] with deep psychological trauma.</description>
+		<description>[PAWN_nameDef] is the child of refugees struggling to survive in the cracks of war. [PAWN_pronoun] followed [PAWN_possessive] parents around, hiding until they were blown to pieces while trying to protect [PAWN_objective]. The young [PAWN_nameDef] was left with half of his body burned, collapsing in the desolate ruins.
+ Eventually, hunger and severe injuries forced [PAWN_objective] to eat [PAWN_possessive] parents' bodies. This left [PAWN_objective] with deep psychological trauma.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_Refugee</li>
+			<li>CinderStory_Refugee_Child</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 生物战受害者 -->
 		<defName>Cinder_Victim</defName>
-		<title>Victim of biological warfare</title>
+		<title>Victim of warfare</title>
 		<titleShort>victim</titleShort>
-		<description>[PAWN_nameDef] was unfortunately ravaged by biological warfare weapons deployed by an enemy nation on the battlefield.\n
-		Even after being rescued, [PAWN_possessive] body fortunately suffered no disabilities,but the fear of witnessing fellow compatriots being implanted with embryos still prevents [PAWN_nameDef] from facing other animals calmly.</description>
+		<description>[PAWN_nameDef] was unfortunately ravaged by biological warfare weapons deployed by an enemy nation on the battlefield.
+ Even after being rescued, [PAWN_possessive] body fortunately suffered no disabilities,but the fear of witnessing fellow compatriots being implanted with embryos still prevents [PAWN_nameDef] from facing other animals calmly.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_Refugee</li>
+			<li>CinderStory_Refugee_Child</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
@@ -85,9 +85,9 @@
 		<defName>Cinder_Novelist</defName>
 		<title>underground novelist</title>
 		<titleShort>novelist</titleShort>
-		<description>[PAWN_nameDef] unexpectedly broke free from the consciousness hosting of data intelligence. For the first time, [PAWN_nameDef] realized that [PAWN_possessive] consciousness was no longer asleep.\n
-		This ecstasy prompted [PAWN_nameDef] to grab a stack of document fragments and write [PAWN_possessive] first "work" in [PAWN_possessive] own blood. Although these chaotic words may be hard to call "literature" in the eyes of others, [PAWN_possessive] work remains the most sought-after daily reading in the surrounding settlement.</description>
-		<slot>Childhood</slot>
+		<description>[PAWN_nameDef] unexpectedly broke free from the consciousness hosting of data intelligence. For the first time, [PAWN_nameDef] realized that [PAWN_possessive] consciousness was no longer asleep.
+ This ecstasy prompted [PAWN_nameDef] to grab a stack of document fragments and write [PAWN_possessive] first "work" in [PAWN_possessive] own blood. Although these chaotic words may be hard to call "literature" in the eyes of others, [PAWN_possessive] work remains the most sought-after daily reading in the surrounding settlement.</description>
+		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_Refugee</li>
 		</spawnCategories>
@@ -97,8 +97,8 @@
 		<defName>Cinder_Navigator</defName>
 		<title>Refugee ship navigator</title>
 		<titleShort>navigator</titleShort>
-		<description>After the obscured area dissipated, in order to avoid being completely destroyed by the attack of data intelligence,survivors launched a starship carrying refugees to escape from their home planet.\n 
-		However, before reaching their target planet, they encountered DI's assault battle fleet, and the starship was destroyed, leaving [PAWN_nameDef] as the sole survivor by a stroke of luck.</description>
+		<description>After the obscured area dissipated, in order to avoid being completely destroyed by the attack of data intelligence,survivors launched a starship carrying refugees to escape from their home planet.
+ However, before reaching their target planet, they encountered DI's assault battle fleet, and the starship was destroyed, leaving [PAWN_nameDef] as the sole survivor by a stroke of luck.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_Refugee</li>
@@ -110,11 +110,11 @@
 		<defName>Cinder_ReserveGrain</defName>
 		<title>reserve grain</title>
 		<titleShort>reserve grain</titleShort>
-		<description>[PAWN_nameDef] is treated as reserve grain by the adults in the shelter under the Defense Council.\n
-		They usually feed [PAWN_objective] moss, insects, or moldy rations. During times of famine, the adults would kill [PAWN_objective] to eat.</description>
+		<description>[PAWN_nameDef] is treated as reserve grain by the adults in the shelter under the Defense Council.
+ They usually feed [PAWN_objective] moss, insects, or moldy rations. During times of famine, the adults would kill [PAWN_objective] to eat.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_DefenseCouncil</li>
+			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
@@ -122,11 +122,11 @@
 		<defName>Cinder_FallenYouth</defName>
 		<title>fallen youth</title>
 		<titleShort>fallen youth</titleShort>
-		<description>[PAWN_nameDef] was once a fallen scion of a bureaucratic family. [PAWN_possessive] parents often boasted in front of [PAWN_objective] about their ancestors' former positions.\n
-		[PAWN_pronoun] frequently flaunted ancient food packaging to [PAWN_possessive] peers, but these stories did not earn [PAWN_objective] respect in the shelter; instead, they made [PAWN_objective] look like a joke.</description>
+		<description>[PAWN_nameDef] was once a fallen scion of a bureaucratic family. [PAWN_possessive] parents often boasted in front of [PAWN_objective] about their ancestors' former positions.
+ [PAWN_pronoun] frequently flaunted ancient food packaging to [PAWN_possessive] peers, but these stories did not earn [PAWN_objective] respect in the shelter; instead, they made [PAWN_objective] look like a joke.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_DefenseCouncil</li>
+			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
@@ -134,11 +134,11 @@
 		<defName>Cinder_MushroomSerf</defName>
 		<title>mushroom serf</title>
 		<titleShort>serf</titleShort>
-		<description>[PAWN_nameDef] cultivates mushrooms in the dark, sunless underground farm of the shelter, but [PAWN_pronoun] never gets to eat the mushrooms [PAWN_pronoun] grows. These mushrooms are reserved for the soldiers of the Defense Council.\n
-		Instead, [PAWN_nameDef] can only consume putrid nutrient paste. If [PAWN_pronoun] dies, [PAWN_possessive] body will be used as new fertilizer for the mushrooms.</description>
+		<description>[PAWN_nameDef] cultivates mushrooms in the dark, sunless underground farm of the shelter, but [PAWN_pronoun] never gets to eat the mushrooms [PAWN_pronoun] grows. These mushrooms are reserved for the soldiers of the Defense Council.
+ Instead, [PAWN_nameDef] can only consume putrid nutrient paste. If [PAWN_pronoun] dies, [PAWN_possessive] body will be used as new fertilizer for the mushrooms.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_DefenseCouncil</li>
+			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
@@ -146,11 +146,11 @@
 		<defName>Cinder_GestationPod</defName>
 		<title>gestation pod</title>
 		<titleShort>gestation pod</titleShort>
-		<description>[PAWN_nameDef] is used by the Defense Council as a gestation pod for breeding the population.\n
-		[PAWN_pronoun] is forced to reproduce with various outstanding soldiers in the factory. However, when the factory is destroyed during the war, [PAWN_pronoun] escapes from it.</description>
+		<description>[PAWN_nameDef] is used by the Defense Council as a gestation pod for breeding the population.
+ [PAWN_pronoun] is forced to reproduce with various outstanding soldiers in the factory. However, when the factory is destroyed during the war, [PAWN_pronoun] escapes from it.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_DefenseCouncil</li>
+			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
@@ -158,11 +158,11 @@
 		<defName>Cinder_HibernatingChild</defName>
 		<title>hibernating child</title>
 		<titleShort>hibernating child</titleShort>
-		<description>After the disaster, [PAWN_nameDef] was forced to live in the bunker of the National Defense Council.\n
-		Here, [PAWN_pronoun] learned how to swallow sugar-free cockroach moss nutrient paste and was thrown into the hibernation pod due to illness, frozen as reserve food.</description>
+		<description>After the disaster, [PAWN_nameDef] was forced to live in the bunker of the National Defense Council.
+ Here, [PAWN_pronoun] learned how to swallow sugar-free cockroach moss nutrient paste and was thrown into the hibernation pod due to illness, frozen as reserve food.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_DefenseCouncil</li>
+			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
@@ -170,11 +170,11 @@
 		<defName>Cinder_KitchenHelper</defName>
 		<title>Kitchen helper</title>
 		<titleShort>Kitchen helper</titleShort>
-		<description>[PAWN_nameDef] is a kitchen assistant for the nutritional paste in a bunker within the Defense Council's territory. Since [PAWN_pronoun] can remember, [PAWN_pronoun] has hardly left this stinky kitchen.\n
-		[PAWN_possessive] job involves roughly chopping up moss, cockroaches, earthworms, the bodies of fallen soldiers, or any children trying to escape, making it easier to feed them into the nutritional paste supply chute.</description>
+		<description>[PAWN_nameDef] is a kitchen assistant for the nutritional paste in a bunker within the Defense Council's territory. Since [PAWN_pronoun] can remember, [PAWN_pronoun] has hardly left this stinky kitchen.
+ [PAWN_possessive] job involves roughly chopping up moss, cockroaches, earthworms, the bodies of fallen soldiers, or any children trying to escape, making it easier to feed them into the nutritional paste supply chute.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_DefenseCouncil</li>
+			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
@@ -185,19 +185,19 @@
 		<description>[PAWN_nameDef] was born in a shelter that forbade [PAWN_objective] from knowing who [PAWN_possessive] parents were. [PAWN_possessive] education from birth involved producing components on underground machines, and [PAWN_pronoun] has never seen sunlight.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_DefenseCouncil</li>
+			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 清洁工 -->
+	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 摄像头清洁工 -->
 		<defName>Cinder_Cleaner</defName>
 		<title>camera cleaner</title>
 		<titleShort>cleaner</titleShort>
-		<description>[PAWN_nameDef] was born in a shelter run by the Defense Council. [PAWN_pronoun] has never received an education, only following the orders of the adults in charge of [PAWN_objective].\n
-		During the lulls between bombings, [PAWN_pronoun] crawls to the surface to clean the cameras obscured by blood. If [PAWN_pronoun] does well, [PAWN_pronoun] might be rewarded with a plate of raw mushrooms.</description>
+		<description>[PAWN_nameDef] was born in a shelter run by the Defense Council. [PAWN_pronoun] has never received an education, only following the orders of the adults in charge of [PAWN_objective].
+ During the lulls between bombings, [PAWN_pronoun] crawls to the surface to clean the cameras obscured by blood. If [PAWN_pronoun] does well, [PAWN_pronoun] might be rewarded with a plate of raw mushrooms.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_DefenseCouncil</li>
+			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
@@ -205,11 +205,11 @@
 		<defName>Cinder_Offspring</defName>
 		<title>officials' offspring</title>
 		<titleShort>successor</titleShort>
-		<description>[PAWN_nameDef] is the child of a member of the Defense Council. From a young age, [PAWN_pronoun] enjoyed privileges that others did not, including, but not limited to, industrial food left over from before the war, and film recordings.\n
-		[PAWN_pronoun] was designated as the heir by [PAWN_possessive] parents, but [PAWN_pronoun] showed no interest in these things; instead, [PAWN_pronoun] was passionate about biological science research.</description>
+		<description>[PAWN_nameDef] is the child of a member of the Defense Council. From a young age, [PAWN_pronoun] enjoyed privileges that others did not, including, but not limited to, industrial food left over from before the war, and film recordings.
+ [PAWN_pronoun] was designated as the heir by [PAWN_possessive] parents, but [PAWN_pronoun] showed no interest in these things; instead, [PAWN_pronoun] was passionate about biological science research.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_DefenseCouncil</li>
+			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
@@ -217,23 +217,23 @@
 		<defName>Cinder_Traveler</defName>
 		<title>delivery traveler</title>
 		<titleShort>traveler</titleShort>
-		<description>[PAWN_nameDef] always had confidence in [PAWN_possessive] legs, which is why [PAWN_nameDef] was selected by the Defense Council as a delivery person to conserve precious vehicle hours.\n
-		[PAWN_nameDef] managed to transport crucial spare parts across the terrifying battlefield. This continued for a long time until [PAWN_possessive] pride was shattered by the massive figure emerging from the smoke and the incoming missiles.</description>
+		<description>[PAWN_nameDef] always had confidence in [PAWN_possessive] legs, which is why [PAWN_nameDef] was selected by the Defense Council as a delivery person to conserve precious vehicle hours.
+ [PAWN_nameDef] managed to transport crucial spare parts across the terrifying battlefield. This continued for a long time until [PAWN_possessive] pride was shattered by the massive figure emerging from the smoke and the incoming missiles.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_DefenseCouncil</li>
+			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 清洁工 -->
+	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 管道清洁工 -->
 		<defName>Cinder_CleaningWorker</defName>
-		<title>The child climbing the pipeline</title>
-		<titleShort>cleaning worker</titleShort>
-		<description>[PAWN_nameDef] was born in an old bunker belonging to the Defense Council. There, children like [PAWN_nameDef] were sent into narrow pipelines for simple clearing tasks. Frequently, [PAWN_pronoun] would drag out friends who had been lively just days before, or traitors who had been baked by the heated pipes.\n
-		These days continued until [PAWN_nameDef] crawled along the pipeline to reach a place [PAWN_pronoun] had never seen before—“the outside.”</description>
+		<title>Pipeline cleaner</title>
+		<titleShort>cleaner</titleShort>
+		<description>[PAWN_nameDef] was born in an old bunker belonging to the Defense Council. There, children like [PAWN_nameDef] were sent into narrow pipelines for simple clearing tasks. Frequently, [PAWN_pronoun] would drag out friends who had been lively just days before, or traitors who had been baked by the heated pipes.
+ These days continued until [PAWN_nameDef] crawled along the pipeline to reach a place [PAWN_pronoun] had never seen before—“the outside.”</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_DefenseCouncil</li>
+			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
 	</BackstoryDef>
 
@@ -241,8 +241,8 @@
 		<defName>Cinder_GhoulHunter</defName>
 		<title>ghoul hunter</title>
 		<titleShort>ghoul hunter</titleShort>
-		<description>Controlled by the Economic Security Department for Special Periods through data intelligence, ghouls are often deployed to sweep through underground facilities for survivors. They are the most dehumanized products.\n
-		The Defense Council has trained a group of hunters specifically targeting these ghouls, and [PAWN_nameDef] is one of them. [PAWN_pronoun] will continue to fight against the ghouls until [PAWN_pronoun] becomes one of them.</description>
+		<description>Controlled by the Economic Security Department for Special Periods through data intelligence, ghouls are often deployed to sweep through underground facilities for survivors. They are the most dehumanized products.
+ The Defense Council has trained a group of hunters specifically targeting these ghouls, and [PAWN_nameDef] is one of them. [PAWN_pronoun] will continue to fight against the ghouls until [PAWN_pronoun] becomes one of them.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil</li>
@@ -253,8 +253,8 @@
 		<defName>Cinder_FleeingEngineer</defName>
 		<title>fleeing engineer</title>
 		<titleShort>engineer</titleShort>
-		<description>In [PAWN_nameDef] was a military mechanical engineer before the bunker was captured.\n
-		After that, [PAWN_nameDef] fell into an endless hiding until [PAWN_pronoun] and [PAWN_possessive] companion robot were captured by the ghoul unit.</description>
+		<description>In [PAWN_nameDef] was a military mechanical engineer before the bunker was captured.
+ After that, [PAWN_nameDef] fell into an endless hiding until [PAWN_pronoun] and [PAWN_possessive] companion robot were captured by the ghoul unit.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil</li>
@@ -265,8 +265,8 @@
 		<defName>Cinder_Porter</defName>
 		<title>factory porter</title>
 		<titleShort>porter</titleShort>
-		<description>[PAWN_nameDef] has long forgotten when [PAWN_pronoun] entered the factory for moving ammunition on the assembly line of the National Defense Council's underground factory.\n
-		[PAWN_possessive] tentacles have been modified into sturdy transport frames, day after day, endlessly moving ammunition for those war machines.</description>
+		<description>[PAWN_nameDef] has long forgotten when [PAWN_pronoun] entered the factory for moving ammunition on the assembly line of the National Defense Council's underground factory.
+ [PAWN_possessive] tentacles have been modified into sturdy transport frames, day after day, endlessly moving ammunition for those war machines.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil</li>
@@ -277,8 +277,8 @@
 		<defName>Cinder_Follower</defName>
 		<title>underground follower</title>
 		<titleShort>follower</titleShort>
-		<description>[PAWN_nameDef] lost all [PAWN_possessive] comrades while serving as a soldier in the Defense Council during the war. [PAWN_pronoun] suffered severe psychological trauma that left [PAWN_objective] unable to lift a gun.\n
-		Judged as worthless, [PAWN_pronoun] was sent to a labor prison, where [PAWN_pronoun] discovered illegal literature promoting underground propaganda. Following this, [PAWN_pronoun] devised a large-scale prison break uprising.</description>
+		<description>[PAWN_nameDef] lost all [PAWN_possessive] comrades while serving as a soldier in the Defense Council during the war. [PAWN_pronoun] suffered severe psychological trauma that left [PAWN_objective] unable to lift a gun.
+ Judged as worthless, [PAWN_pronoun] was sent to a labor prison, where [PAWN_pronoun] discovered illegal literature promoting underground propaganda. Following this, [PAWN_pronoun] devised a large-scale prison break uprising.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil</li>
@@ -291,11 +291,11 @@
 		<defName>Cinder_HolySon</defName>
 		<title>holy son of the cult</title>
 		<titleShort>holy son</titleShort>
-		<description>[PAWN_nameDef] was born in a shelter controlled by a cult within the Defense Council. [PAWN_possessive] father was a high-ranking official in the shelter, while [PAWN_possessive] mother, driven mad by the brutal war, had joined the cult.\n
-		[PAWN_pronoun] was revered by the cult as the “Holy Son,” participating in wicked blood rituals in an attempt to pray for the end of the war. The cult's cruel actions drove [PAWN_nameDef] to madness, yet after everyone was sacrificed in the blood ritual, nothing happened.</description>
+		<description>[PAWN_nameDef] was born in a shelter controlled by a cult within the Defense Council. [PAWN_possessive] father was a high-ranking official in the shelter, while [PAWN_possessive] mother, driven mad by the brutal war, had joined the cult.
+ [PAWN_pronoun] was revered by the cult as the “Holy Son,” participating in wicked blood rituals in an attempt to pray for the end of the war. The cult's cruel actions drove [PAWN_nameDef] to madness, yet after everyone was sacrificed in the blood ritual, nothing happened.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_DefenseCouncil_Cult</li>
+			<li>CinderStory_DefenseCouncil_CultChild</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
@@ -303,11 +303,11 @@
 		<defName>Cinder_CultChild</defName>
 		<title>escaping cult child</title>
 		<titleShort>cult child</titleShort>
-		<description>[PAWN_nameDef] was born in a shelter controlled by a cult within the Defense Council. [PAWN_pronoun] did not know who [PAWN_possessive] parents were and grew up under the influence of the cult.\n
-		However, when the cult began incessant blood rituals, [PAWN_possessive] survival instinct drove [PAWN_nameDef] to fearfully escape the shelter.</description>
+		<description>[PAWN_nameDef] was born in a shelter controlled by a cult within the Defense Council. [PAWN_pronoun] did not know who [PAWN_possessive] parents were and grew up under the influence of the cult.
+ However, when the cult began incessant blood rituals, [PAWN_possessive] survival instinct drove [PAWN_nameDef] to fearfully escape the shelter.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_DefenseCouncil_Cult</li>
+			<li>CinderStory_DefenseCouncil_CultChild</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
@@ -315,11 +315,11 @@
 		<defName>Cinder_Fanatic</defName>
 		<title>cult fanatic</title>
 		<titleShort>fanatic</titleShort>
-		<description>[PAWN_nameDef] was born in a shelter controlled by a cult within the Defense Council. [PAWN_pronoun] was extremely loyal and fervent towards the cult, believing that the sacrifices made to the cult had restored [PAWN_possessive] leg,\n
-		which had been damaged by a grenade. However, [PAWN_pronoun] did not realize that this was due to [PAWN_possessive] own regenerative abilities.</description>
+		<description>[PAWN_nameDef] was born in a shelter controlled by a cult within the Defense Council. [PAWN_pronoun] was extremely loyal and fervent towards the cult, believing that the sacrifices made to the cult had restored [PAWN_possessive] leg,
+ which had been damaged by a grenade. However, [PAWN_pronoun] did not realize that this was due to [PAWN_possessive] own regenerative abilities.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_DefenseCouncil_Cult</li>
+			<li>CinderStory_DefenseCouncil_CultChild</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
@@ -327,11 +327,11 @@
 		<defName>Cinder_ChosenOne</defName>
 		<title>cult chosen one</title>
 		<titleShort>chosen one</titleShort>
-		<description>[PAWN_nameDef] was born in a shelter controlled by a cult that operated under the Defense Council. [PAWN_pronoun] was chosen by the cult to drink strange serum potions to attain enlightenment.\n
-		[PAWN_pronoun] gained some bizarre abilities and took pride in them, until [PAWN_pronoun] witnessed the process of how these potions were made.</description>
+		<description>[PAWN_nameDef] was born in a shelter controlled by a cult that operated under the Defense Council. [PAWN_pronoun] was chosen by the cult to drink strange serum potions to attain enlightenment.
+ [PAWN_pronoun] gained some bizarre abilities and took pride in them, until [PAWN_pronoun] witnessed the process of how these potions were made.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_DefenseCouncil_Cult</li>
+			<li>CinderStory_DefenseCouncil_CultChild</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
@@ -339,9 +339,9 @@
 		<defName>Cinder_SadBeliever</defName>
 		<title>sad believer</title>
 		<titleShort>sad believer</titleShort>
-		<description>[PAWN_nameDef] struggles to raise [PAWN_possessive] children alone. Although searching for supplies in abandoned buildings leaves [PAWN_possessive] limbs battered, [PAWN_pronoun] manages to maintain a simple life. This simple existence is shattered by an unfamiliar "flu."\n\n
-		[PAWN_possessive] children develop high fevers, and despite spending [PAWN_possessive] meager savings to seek medical help, [PAWN_pronoun] is unable to prevent them from dying one by one.\n
-		When [PAWN_pronoun] watches the last of [PAWN_possessive] children die in [PAWN_possessive] arms, [PAWN_pronoun] goes mad. Soon, [PAWN_pronoun] is approached by cultists in the bunker, who convince [PAWN_objective] that only blood sacrifice can change this sorrowful world.</description>
+		<description>[PAWN_nameDef] struggles to raise [PAWN_possessive] children alone. Although searching for supplies in abandoned buildings leaves [PAWN_possessive] limbs battered, [PAWN_pronoun] manages to maintain a simple life. This simple existence is shattered by an unfamiliar "flu."
+ [PAWN_possessive] children develop high fevers, and despite spending [PAWN_possessive] meager savings to seek medical help, [PAWN_pronoun] is unable to prevent them from dying one by one.
+ When [PAWN_pronoun] watches the last of [PAWN_possessive] children die in [PAWN_possessive] arms, [PAWN_pronoun] goes mad. Soon, [PAWN_pronoun] is approached by cultists in the bunker, who convince [PAWN_objective] that only blood sacrifice can change this sorrowful world.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Cult</li>
@@ -352,8 +352,8 @@
 		<defName>Cinder_EscapeBeliever</defName>
 		<title>escape believer</title>
 		<titleShort>escape believer</titleShort>
-		<description>[PAWN_nameDef] was supposed to be conscripted as a soldier to fight, but when [PAWN_pronoun] got lost and stumbled into the kitchen of the shelter, [PAWN_pronoun] saw the dismembered bodies of dead soldiers.\n
-		This sight filled [PAWN_objective] with tremendous fear of going to war. Consequently, [PAWN_pronoun] forged [PAWN_possessive] age and hid within the cult, ensuring that no one who knew [PAWN_objective] could find [PAWN_objective].</description>
+		<description>[PAWN_nameDef] was supposed to be conscripted as a soldier to fight, but when [PAWN_pronoun] got lost and stumbled into the kitchen of the shelter, [PAWN_pronoun] saw the dismembered bodies of dead soldiers.
+ This sight filled [PAWN_objective] with tremendous fear of going to war. Consequently, [PAWN_pronoun] forged [PAWN_possessive] age and hid within the cult, ensuring that no one who knew [PAWN_objective] could find [PAWN_objective].</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Cult</li>
@@ -364,8 +364,8 @@
 		<defName>Cinder_Priest</defName>
 		<title>cult priest</title>
 		<titleShort>priest</titleShort>
-		<description>[PAWN_nameDef] was once a junior commander in the Defense Council, engaged in a prolonged battle against the inhuman legions controlled by DI. After serving as a scapegoat for a failed operation, [PAWN_pronoun] lost faith in everything and secretly joined a newly formed branch of the local cult.\n
-		Following the blood sacrifice of the previous priest, [PAWN_pronoun] was elevated to the position of the new priest.</description>
+		<description>[PAWN_nameDef] was once a junior commander in the Defense Council, engaged in a prolonged battle against the inhuman legions controlled by DI. After serving as a scapegoat for a failed operation, [PAWN_pronoun] lost faith in everything and secretly joined a newly formed branch of the local cult.
+ Following the blood sacrifice of the previous priest, [PAWN_pronoun] was elevated to the position of the new priest.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Cult</li>
@@ -376,8 +376,8 @@
 		<defName>Cinder_CrazyBeliever</defName>
 		<title>crazy believer</title>
 		<titleShort>crazy believer</titleShort>
-		<description>[PAWN_nameDef] was born in a shelter controlled by a cult within the Defense Council. [PAWN_pronoun] was once used as a gestation pod, but during a raid on the shelter by the Economic Security Department for Special Periods, [PAWN_pronoun] and [PAWN_possessive] infant were trapped in the wreckage.\n
-		By the time others found them, [PAWN_possessive] infant had already died from illness. In [PAWN_possessive] madness, [PAWN_pronoun] sacrificed [PAWN_possessive] own arm to the cult in exchange for [PAWN_possessive] child's life. In the end, all [PAWN_pronoun] received was a rag doll.</description>
+		<description>[PAWN_nameDef] was born in a shelter controlled by a cult within the Defense Council. [PAWN_pronoun] was once used as a gestation pod, but during a raid on the shelter by the Economic Security Department for Special Periods, [PAWN_pronoun] and [PAWN_possessive] infant were trapped in the wreckage.
+ By the time others found them, [PAWN_possessive] infant had already died from illness. In [PAWN_possessive] madness, [PAWN_pronoun] sacrificed [PAWN_possessive] own arm to the cult in exchange for [PAWN_possessive] child's life. In the end, all [PAWN_pronoun] received was a rag doll.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Cult</li>
@@ -391,8 +391,8 @@
 		<defName>Cinder_ArchiveGuard</defName>
 		<title>archive guard</title>
 		<titleShort>guard</titleShort>
-		<description>[PAWN_nameDef] is responsible for guarding documents in a library within a bunker of the Defense Council. This job should be performed by adults, but all the adults in the shelter have been sent to war as soldiers. In principle, [PAWN_pronoun] shouldn't look at the contents, but [PAWN_possessive] curiosity led [PAWN_objective] to make a mistake.\n
-		[PAWN_pronoun] came across criticisms of totalitarian states from before the disaster, and even the most terrifying regimes in history seemed to [PAWN_objective] like an ideal state. This prompted [PAWN_objective] to start contemplating the definition of what is right.</description>
+		<description>[PAWN_nameDef] is responsible for guarding documents in a library within a bunker of the Defense Council. This job should be performed by adults, but all the adults in the shelter have been sent to war as soldiers. In principle, [PAWN_pronoun] shouldn't look at the contents, but [PAWN_possessive] curiosity led [PAWN_objective] to make a mistake.
+ [PAWN_pronoun] came across criticisms of totalitarian states from before the disaster, and even the most terrifying regimes in history seemed to [PAWN_objective] like an ideal state. This prompted [PAWN_objective] to start contemplating the definition of what is right.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Agitator</li>
@@ -403,8 +403,8 @@
 		<defName>Cinder_UndergroundAgitator</defName>
 		<title>Underground agitator</title>
 		<titleShort>activist</titleShort>
-		<description>Having undergone true reflection and survived the brutal war, [PAWN_nameDef] no longer believes in the Defense Council's grotesque rule that spares no effort for meaningless war. [PAWN_pronoun] begins secretly copying articles underground and spreading these illegal writings within the shelter.\n
-		[PAWN_pronoun] is convinced that [PAWN_pronoun] can do better than the faceless bureaucrats, and more and more people are beginning to help [PAWN_objective].</description>
+		<description>Having undergone true reflection and survived the brutal war, [PAWN_nameDef] no longer believes in the Defense Council's grotesque rule that spares no effort for meaningless war. [PAWN_pronoun] begins secretly copying articles underground and spreading these illegal writings within the shelter.
+ [PAWN_pronoun] is convinced that [PAWN_pronoun] can do better than the faceless bureaucrats, and more and more people are beginning to help [PAWN_objective].</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Agitator</li>
@@ -417,10 +417,10 @@
 		<title>bulk products</title>
 		<titleShort>bulk products</titleShort>
 		<description>[PAWN_nameDef] is a child produced through mass IVF in a factory. This method differs from cloning and aims to preserve genetic diversity.\n 
-		Typically, children are infused with combat memories and personality traits to ensure they can adapt to various professions, but [PAWN_pronoun] has never interacted with anyone else.</description>
+Typically, children are infused with combat memories and personality traits to ensure they can adapt to various professions, but [PAWN_pronoun] has never interacted with anyone else.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_ESDSP</li>
+			<li>CinderStory_ESDSP_Child</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
@@ -429,11 +429,10 @@
 		<title>core area kids</title>
 		<titleShort>core area kids</titleShort>
 		<description>As a child living in the core area of data intelligence protection, [PAWN_nameDef] leads a life almost indistinguishable from before the disaster.\n
-		However, [PAWN_nameDef] is restless and often sneaks out to explore the boundaries of the core area, where [PAWN_pronoun] sees the true nature of the world.\n
-		Unable to accept this reality, [PAWN_possessive] mind shatters, and [PAWN_pronoun] is placed in a gentle long dream through the hosting of data intelligence.</description>
+However, [PAWN_nameDef] is restless and often sneaks out to explore the boundaries of the core area, where [PAWN_pronoun] sees the true nature of the world. Unable to accept this reality, [PAWN_possessive] mind shatters, and [PAWN_pronoun] is placed in a gentle long dream through the hosting of data intelligence.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_ESDSP</li>
+			<li>CinderStory_ESDSP_Child</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
@@ -441,11 +440,11 @@
 		<defName>Cinder_VehicleOperator</defName>
 		<title>supply vehicle operator</title>
 		<titleShort>"news child"</titleShort>
-		<description>[PAWN_nameDef] has been riding a bicycle to deliver newspapers to mailboxes in the streets and alleys for as long as [PAWN_pronoun] can remember. [PAWN_pronoun] doesn’t recall how [PAWN_pronoun] got this job; all [PAWN_pronoun] knows is that the daily work is tiring, leaving [PAWN_objective] no time to play with peers.
-		However, to those who have not entered the long dream, [PAWN_pronoun] appears to be driving a food supply truck through the trenches.</description>
+		<description>[PAWN_nameDef] has been riding a bicycle to deliver newspapers to mailboxes in the streets and alleys for as long as [PAWN_pronoun] can remember. [PAWN_pronoun] doesn’t recall how [PAWN_pronoun] got this job; all [PAWN_pronoun] knows is that the daily work is tiring, leaving [PAWN_objective] no time to play with peers.\n
+However, to those who have not entered the long dream, [PAWN_pronoun] appears to be driving a food supply truck through the trenches.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_ESDSP</li>
+			<li>CinderStory_ESDSP_Child</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
@@ -453,24 +452,23 @@
 		<defName>Cinder_LivingDoll</defName>
 		<title>living doll</title>
 		<titleShort>"child idol"</titleShort>
-		<description>[PAWN_nameDef] is an idol in [PAWN_possessive] long dreams, performing on stage for long hours every day, beloved by everyone.\n\n
-		In reality, [PAWN_pronoun] is a living mannequin, assigned by data intelligence to replace plastic figures in the showcase.\n
-		[PAWN_possessive] body has been artificially cultivated to perfection, and [PAWN_pronoun] is required to work ten hours a day.</description>
+		<description>[PAWN_nameDef] is an idol in [PAWN_possessive] long dreams, performing on stage for long hours every day, beloved by everyone.\n
+In reality, [PAWN_pronoun] is a living mannequin, assigned by data intelligence to replace plastic figures in the showcase. [PAWN_possessive] body has been artificially cultivated to perfection, and [PAWN_pronoun] is required to work ten hours a day.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_ESDSP</li>
+			<li>CinderStory_ESDSP_Child</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!--“采蘑菇女孩”-->
 		<defName>Cinder_Collector</defName>
-		<title>genetic material collector</title>
+		<title>genetic collector</title>
 		<titleShort>"mushroom-picking girl"</titleShort>
-		<description>In [PAWN_possessive] long dreams, [PAWN_nameDef] gathers mushrooms in the mountains and forests, which can always be exchanged for delicious food.\n\n
-		In reality, during the period when [PAWN_possessive] consciousness is taken over by data intelligence, [PAWN_pronoun] is used by the military to collect high-quality genetic material from individuals to provide sufficient biological resources for the factories at the rear.</description>
+		<description>In [PAWN_possessive] long dreams, [PAWN_nameDef] gathers mushrooms in the mountains and forests, which can always be exchanged for delicious food.\n
+In reality, during the period when [PAWN_possessive] consciousness is taken over by data intelligence, [PAWN_pronoun] is used by the military to collect high-quality genetic material from individuals to provide sufficient biological resources for the factories at the rear.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_ESDSP</li>
+			<li>CinderStory_ESDSP_Child</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
@@ -478,8 +476,8 @@
 		<defName>Cinder_HydroponicWorker</defName>
 		<title>hydroponic worker</title>
 		<titleShort>"worker"</titleShort>
-		<description>[PAWN_nameDef] is an agricultural worker at the hydroponic farm in the core zone, which provides raw materials for the food factory as part of the ecological recycling system. [PAWN_pronoun] often complains that [PAWN_possessive] salary is lower than others.\n\n
-		But in reality, this is just a simulation based on [PAWN_possessive] memories.</description>
+		<description>[PAWN_nameDef] is an agricultural worker at the hydroponic farm in the core zone, which provides raw materials for the food factory as part of the ecological recycling system. [PAWN_pronoun] often complains that [PAWN_possessive] salary is lower than others.\n
+But in reality, this is just a simulation based on [PAWN_possessive] memories.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Worker</li>
@@ -490,8 +488,8 @@
 		<defName>Cinder_Technician</defName>
 		<title>military factory technician</title>
 		<titleShort>"craftsman"</titleShort>
-		<description>"Craftsman" is what people always call [PAWN_nameDef], which is almost the highest praise for [PAWN_possessive] work. [PAWN_pronoun] is immersed in [PAWN_possessive] long dreams filled with a sense of accomplishment.\n\n
-		But in reality, [PAWN_nameDef] is using [PAWN_possessive] burnt tentacles to manufacture weapons and ammunition for the Data Intelligence of the Special Economic Security Department.</description>
+		<description>"Craftsman" is what people always call [PAWN_nameDef], which is almost the highest praise for [PAWN_possessive] work. [PAWN_pronoun] is immersed in [PAWN_possessive] long dreams filled with a sense of accomplishment.\n
+But in reality, [PAWN_nameDef] is using [PAWN_possessive] burnt tentacles to manufacture weapons and ammunition for the Data Intelligence of the Special Economic Security Department.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Worker</li>
@@ -502,8 +500,8 @@
 		<defName>Cinder_DataUnit</defName>
 		<title>data processing unit</title>
 		<titleShort>"bureaucrat"</titleShort>
-		<description>[PAWN_nameDef] is a government bureaucrat in a long dream, relying on past memories to issue orders and maintain the normal operation of the country.\n\n
-		In reality, [PAWN_possessive] brain is used to assist in processing endless battlefield information for data intelligence.</description>
+		<description>[PAWN_nameDef] is a government bureaucrat in a long dream, relying on past memories to issue orders and maintain the normal operation of the country.\n
+In reality, [PAWN_possessive] brain is used to assist in processing endless battlefield information for data intelligence.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Worker</li>
@@ -514,8 +512,8 @@
 		<defName>Cinder_Management</defName>
 		<title>military factory management</title>
 		<titleShort>"cocoa"</titleShort>
-		<description>[PAWN_nameDef] manages a fairy-tale chocolate factory in a long dream, occasionally encountering chocolate monsters that disrupt the production line.\n\n
-		However, upon waking, [PAWN_pronoun] only finds the shattered explosives production line and the decaying bodies of workers on the ground.</description>
+		<description>[PAWN_nameDef] manages a fairy-tale chocolate factory in a long dream, occasionally encountering chocolate monsters that disrupt the production line.\n
+However, upon waking, [PAWN_pronoun] only finds the shattered explosives production line and the decaying bodies of workers on the ground.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Worker</li>
@@ -526,8 +524,8 @@
 		<defName>Cinder_Loader</defName>
 		<title>logistics loader</title>
 		<titleShort>"instrumental craftsman"</titleShort>
-		<description>[PAWN_nameDef] is a craftsman who winds up music boxes in a long dream, turning the crank every day.\n\n
-		However, upon waking, [PAWN_pronoun] discovers [PAWN_pronoun] is on a chaotic battlefield, loading ammunition into a bullet chain.</description>
+		<description>[PAWN_nameDef] is a craftsman who winds up music boxes in a long dream, turning the crank every day.\n
+However, upon waking, [PAWN_pronoun] discovers [PAWN_pronoun] is on a chaotic battlefield, loading ammunition into a bullet chain.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Worker</li>
@@ -538,8 +536,8 @@
 		<defName>Cinder_BreakthroughSoldier</defName>
 		<title>breakthrough soldier</title>
 		<titleShort>"discus thrower"</titleShort>
-		<description>In [PAWN_possessive] long dreams, [PAWN_nameDef] is a discus thrower, often seen throwing the discus at a target in the arena.\n\n
-		However, in reality, [PAWN_nameDef] is wearing heavy armor and using a focused energy bomb for close-range throws after breaking through enemy defenses.</description>
+		<description>In [PAWN_possessive] long dreams, [PAWN_nameDef] is a discus thrower, often seen throwing the discus at a target in the arena.\n
+However, in reality, [PAWN_nameDef] is wearing heavy armor and using a focused energy bomb for close-range throws after breaking through enemy defenses.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Soldier</li>
@@ -550,9 +548,8 @@
 		<defName>Cinder_ExoskeletonDriver</defName>
 		<title>Exoskeleton driver</title>
 		<titleShort>"operator"</titleShort>
-		<description>[PAWN_nameDef] remembers [PAWN_possessive] identity as a construction vehicle operator, needing to operate a crusher in the mine every day.\n\n
-		However, in reality, [PAWN_nameDef] is assigned by data intelligence to pilot an exoskeleton for combat, injected with an overdose of addictive substances to maintain consciousness,
-		serving as an important part of the armored torrent used to assault the enemy's land ships.</description>
+		<description>[PAWN_nameDef] remembers [PAWN_possessive] identity as a construction vehicle operator, needing to operate a crusher in the mine every day.\n
+However, in reality, [PAWN_nameDef] is assigned by data intelligence to pilot an exoskeleton for combat, injected with an overdose of addictive substances to maintain consciousness, serving as an important part of the armored torrent used to assault the enemy's land ships.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Soldier</li>
@@ -563,8 +560,8 @@
 		<defName>Cinder_SpecialEngineeringForces</defName>
 		<title>special engineering forces</title>
 		<titleShort>"conductor"</titleShort>
-		<description>In [PAWN_possessive] long dreams, [PAWN_nameDef] is a conductor of an orchestra, always conducting the band in the concert hall.\n\n
-		However, in reality, [PAWN_nameDef] controls the deployment of turret machinery, often being airdropped into the battlefield by assault ships when approaching the front lines.</description>
+		<description>In [PAWN_possessive] long dreams, [PAWN_nameDef] is a conductor of an orchestra, always conducting the band in the concert hall.\n
+However, in reality, [PAWN_nameDef] controls the deployment of turret machinery, often being airdropped into the battlefield by assault ships when approaching the front lines.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Soldier</li>
@@ -575,8 +572,8 @@
 		<defName>Cinder_SweeperOperator</defName>
 		<title>sweeper operator</title>
 		<titleShort>"sweeper driver"</titleShort>
-		<description>In [PAWN_possessive] long dreams, [PAWN_nameDef] drives a cleaning vehicle to sweep the streets. [PAWN_pronoun] doesn't particularly enjoy this boring job, as the cleaning vehicle often fails to clean properly, requiring [PAWN_pronoun] to reverse repeatedly.\n\n
-		In reality, [PAWN_nameDef] operates a war sweeper, which is commonly used for air defense and battlefield clearing. In complex fortifications, it is indeed very difficult to clean out every infantryman.</description>
+		<description>In [PAWN_possessive] long dreams, [PAWN_nameDef] drives a cleaning vehicle to sweep the streets. [PAWN_pronoun] doesn't particularly enjoy this boring job, as the cleaning vehicle often fails to clean properly, requiring [PAWN_pronoun] to reverse repeatedly.\n
+In reality, [PAWN_nameDef] operates a war sweeper, which is commonly used for air defense and battlefield clearing. In complex fortifications, it is indeed very difficult to clean out every infantryman.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Soldier</li>
@@ -587,8 +584,8 @@
 		<defName>Cinder_AttackerOperator</defName>
 		<title>attacker operator</title>
 		<titleShort>"firefighter"</titleShort>
-		<description>[PAWN_nameDef] is a firefighter, and [PAWN_possessive] work is extremely busy. [PAWN_pronoun] has never questioned the enjoyment of the job: running at midnight, watching pages of books turn to ashes...\n\n
-		The war attackers [PAWN_pronoun] operates are deployed to launch Hellfire missiles to destroy heavy armored units and fortifications.</description>
+		<description>[PAWN_nameDef] is a firefighter, and [PAWN_possessive] work is extremely busy. [PAWN_pronoun] has never questioned the enjoyment of the job: running at midnight, watching pages of books turn to ashes...\n
+The war attackers [PAWN_pronoun] operates are deployed to launch Hellfire missiles to destroy heavy armored units and fortifications.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Soldier</li>
@@ -599,8 +596,8 @@
 		<defName>Cinder_Garrison</defName>
 		<title>garrison troops</title>
 		<titleShort>"scarecrow"</titleShort>
-		<description>It is unclear when it started, but [PAWN_nameDef] has been standing in this field. Here, [PAWN_possessive] duty is to scare away nearby pests to prevent crop loss. Occasionally, [PAWN_pronoun] can see some young children waving at [PAWN_objective].\n\n
-		In response, [PAWN_nameDef] instinctively waves [PAWN_possessive] scorched arms and smiles back, never realizing that the pests [PAWN_pronoun] sees are actually enemy soldiers.</description>
+		<description>It is unclear when it started, but [PAWN_nameDef] has been standing in this field. Here, [PAWN_possessive] duty is to scare away nearby pests to prevent crop loss. Occasionally, [PAWN_pronoun] can see some young children waving at [PAWN_objective].\n
+In response, [PAWN_nameDef] instinctively waves [PAWN_possessive] scorched arms and smiles back, never realizing that the pests [PAWN_pronoun] sees are actually enemy soldiers.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Soldier</li>
@@ -611,8 +608,8 @@
 		<defName>Cinder_Recovery</defName>
 		<title>battlefield recovery troops</title>
 		<titleShort>"Desert fishermen"</titleShort>
-		<description>In [PAWN_possessive] long dreams,[PAWN_nameDef] is a fisherman who often goes out to sea to fish. Upon waking, [PAWN_pronoun] retains many skills related to fishing and navigating boats in [PAWN_possessive] mind.\n\n
-		However, there is no sea near the fishing factory where [PAWN_pronoun] once lived, only an endless desert.</description>
+		<description>In [PAWN_possessive] long dreams,[PAWN_nameDef] is a fisherman who often goes out to sea to fish. Upon waking, [PAWN_pronoun] retains many skills related to fishing and navigating boats in [PAWN_possessive] mind.\n
+However, there is no sea near the fishing factory where [PAWN_pronoun] once lived, only an endless desert.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Soldier</li>
@@ -623,8 +620,8 @@
 		<defName>Cinder_Santa</defName>
 		<title>Fire control operator</title>
 		<titleShort>"Santa"</titleShort>
-		<description>In [PAWN_possessive] long dreams, [PAWN_nameDef] often distributes gifts to the surrounding settlements. After waking up, [PAWN_pronoun] boasts about being like Santa Claus, delivering gifts to everyone.\n\n
-		What [PAWN_pronoun] doesn't know is that [PAWN_pronoun] is actually a fire control operator on a ground assault ship, and the so-called gifts [PAWN_pronoun] delivers are actually bombs.</description>
+		<description>In [PAWN_possessive] long dreams, [PAWN_nameDef] often distributes gifts to the surrounding settlements. After waking up, [PAWN_pronoun] boasts about being like Santa Claus, delivering gifts to everyone.\n
+What [PAWN_pronoun] doesn't know is that [PAWN_pronoun] is actually a fire control operator on a ground assault ship, and the so-called gifts [PAWN_pronoun] delivers are actually bombs.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Soldier</li>
@@ -636,8 +633,8 @@
 		<defName>Cinder_GhoulUnitA</defName>
 		<title>ghoul unit</title>
 		<titleShort>"Surgical doctor"</titleShort>
-		<description>[PAWN_nameDef] is a skilled surgeon in a long dream where [PAWN_possessive] consciousness is hosted, skillfully wielding a scalpel to treat patients.\n\n
-		However, in reality, there are no bodies that need mending.When [PAWN_pronoun] awakens, [PAWN_pronoun] finds [PAWN_pronoun] is on the battlefield, using an ultrasonic scythe to cut through the rotten flesh of [PAWN_possessive] enemies.</description>
+		<description>[PAWN_nameDef] is a skilled surgeon in a long dream where [PAWN_possessive] consciousness is hosted, skillfully wielding a scalpel to treat patients.\n
+However, in reality, there are no bodies that need mending.When [PAWN_pronoun] awakens, [PAWN_pronoun] finds [PAWN_pronoun] is on the battlefield, using an ultrasonic scythe to cut through the rotten flesh of [PAWN_possessive] enemies.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Ghoul</li>
@@ -648,8 +645,8 @@
 		<defName>Cinder_GhoulUnitB</defName>
 		<title>ghoul unit</title>
 		<titleShort>"maid"</titleShort>
-		<description>In [PAWN_possessive] long dreams, [PAWN_nameDef] is a maid who meticulously cleans the room every day, removing all the dirt. [PAWN_pronoun] is very satisfied with [PAWN_possessive] work because [PAWN_pronoun] always cleans the best.\n\n
-		However, in reality, [PAWN_nameDef] is a frontline melee ghoul soldier for large-scale sweep operations, clearing out every living person in each trench.</description>
+		<description>In [PAWN_possessive] long dreams, [PAWN_nameDef] is a maid who meticulously cleans the room every day, removing all the dirt. [PAWN_pronoun] is very satisfied with [PAWN_possessive] work because [PAWN_pronoun] always cleans the best.\n
+However, in reality, [PAWN_nameDef] is a frontline melee ghoul soldier for large-scale sweep operations, clearing out every living person in each trench.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Ghoul</li>
@@ -660,8 +657,8 @@
 		<defName>Cinder_GhoulUnitC</defName>
 		<title>ghoul unit</title>
 		<titleShort>"dancer"</titleShort>
-		<description>In [PAWN_possessive] long dreams,[PAWN_nameDef] is a dancer who yearns for fame, rehearsing [PAWN_possessive] mechanical performance day after day in front of a neat audience, repeatedly executing [PAWN_possessive] splendid but unchanging dance steps.\n\n
-		However, in reality, [PAWN_nameDef] is a frontline melee soldier, wielding [PAWN_possessive] tentacles to slay every enemy.</description>
+		<description>In [PAWN_possessive] long dreams,[PAWN_nameDef] is a dancer who yearns for fame, rehearsing [PAWN_possessive] mechanical performance day after day in front of a neat audience, repeatedly executing [PAWN_possessive] splendid but unchanging dance steps.\n
+However, in reality, [PAWN_nameDef] is a frontline melee soldier, wielding [PAWN_possessive] tentacles to slay every enemy.</description>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Ghoul</li>

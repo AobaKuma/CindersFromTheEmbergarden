@@ -306,7 +306,7 @@
 			</styleSettings>
 	<raceRestriction>
 				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
-				  <blackEndoCategories>
+		<blackEndoCategories>
           <li>Melanin</li>
           <li>BodyType</li>
           <li>Ears</li>
