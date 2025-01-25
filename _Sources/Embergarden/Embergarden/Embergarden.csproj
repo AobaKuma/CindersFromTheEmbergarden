@@ -84,6 +84,7 @@
     <Compile Include="HarmonyPatch\Pawn_DraftController_Postfix.cs" />
     <Compile Include="HediffComp_CustomRegeneration.cs" />
     <Compile Include="HediffComp_LimitedResurrect.cs" />
+    <Compile Include="HediffComp_NewHediffAfterDisappear.cs" />
     <Compile Include="HediffComp_ProtectiveShield.cs" />
     <Compile Include="Hediff_DynamicCap.cs" />
     <Compile Include="Projectile_CompExplosive.cs" />
