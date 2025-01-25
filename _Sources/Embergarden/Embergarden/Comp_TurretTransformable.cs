@@ -28,7 +28,7 @@ namespace Embergarden
         public override void CompTick()
         {
             base.CompTick();
-            if (InnerPawn == null)
+            if (needUpdateHP && InnerPawn == null)
             {
                 NewPawn();
             }
@@ -104,22 +104,13 @@ namespace Embergarden
                 return;
             }
             InnerPawn.TakeDamage(dinfo);
-            if (InnerPawn.Dead)
-            {
-                var p = InnerPawn;
-                pawnOwner.Remove(p);
-                Corpse corpse = (Corpse)ThingMaker.MakeThing(p.RaceProps.corpseDef);
-                corpse.InnerPawn = p;
-                GenSpawn.Spawn(corpse, parent.Position, parent.Map, WipeMode.Vanish);
-                parent.Destroy(DestroyMode.KillFinalize);
-            }
             UpdateHP();
             absorbed = true;
         }
         public override void PostDestroy(DestroyMode mode, Map previousMap)
         {
             base.PostDestroy(mode, previousMap);
-            if (mode == DestroyMode.KillFinalize && !InnerPawn.Dead)
+            if (mode == DestroyMode.KillFinalize && InnerPawn != null && !InnerPawn.Dead)
             {
                 Pawn p = InnerPawn;
                 pawnOwner.TryDropAll(parent.Position, previousMap, ThingPlaceMode.Near);
@@ -149,14 +140,11 @@ namespace Embergarden
         private void UpdateHP()
         {
             Log.Message("Update HP");
-            if (InnerPawn.Dead)
+            if (InnerPawn == null || InnerPawn.Dead)
             {
+                Log.Message("kill");
                 pawnOwner.TryDropAll(parent.Position, parent.Map, ThingPlaceMode.Near);
                 parent.Kill(null);
-                return;
-            }
-            if (InnerPawn == null)
-            {
                 return;
             }
             parent.HitPoints = (int)Mathf.Clamp(InnerPawn.health.summaryHealth.SummaryHealthPercent * parent.MaxHitPoints, 1, parent.MaxHitPoints);
