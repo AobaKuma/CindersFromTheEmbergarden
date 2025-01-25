@@ -57,4 +57,12 @@ namespace Embergarden
             return Valid(target);
         }
     }
+
+    public class CompAbilityEffect_ConnectingFleckLineAI : CompAbilityEffect_ConnectingFleckLine
+    {
+        public override bool AICanTargetNow(LocalTargetInfo target)
+        {
+            return true;
+        }
+    }
 }
