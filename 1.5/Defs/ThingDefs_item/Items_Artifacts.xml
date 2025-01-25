@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+   <ThingDef ParentName="ResourceBase" Name="Cinder_ArtifactBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <techLevel>Archotech</techLevel>
+    <thingCategories>
+      <li>Artifacts</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Artifact</li>
+    </tradeTags>
+    <statBases>
+      <Mass>0.5</Mass>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseArtifact</useJob>
+        <useLabel>Activate {0_label}</useLabel>
+        <showUseGizmo>true</showUseGizmo>
+        <useDuration>132</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf" />
+      <li Class="CompProperties_Styleable"></li>
+    </comps>
+    </ThingDef>
+
+	<ThingDef ParentName="Cinder_ArtifactBase">
+		<defName>Cinder_ErosionAgent</defName>
+		<label>erosion agent</label>
+		<description>A drug containing a large amount of amorphous polymer, which can obtain some special abilities after injection.</description>
+		<tradeability>None</tradeability>
+		<graphicData>
+			<texPath>Things/Item/ErosionAgent</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<stealable>false</stealable>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>5</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>true</useHitPoints>
+		<relicChance>0</relicChance>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<MaxHitPoints>2000</MaxHitPoints>
+		</statBases>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<thingSetMakerTags IsNull="true"/>
+		<comps>
+			<li Class="Embergarden.CompProperties_UseEffect_RandomAbilityGain">
+				<abilityDefs>
+				<li>Cinder_BurnHemostasis</li>
+				<li>Cinder_SuffocatingWhispers</li>
+				<li>Cinder_EternalFearAbility</li>
+				<li>Cinder_FearPulse</li>
+				<li>Cinder_AmorphousWall</li>
+				<li>Cinder_AmorphousIED</li>
+				<li>Cinder_AmorphousWinding</li>
+				<li>Cinder_ErodedBomb</li>
+				</abilityDefs>
+				<compClass>Embergarden.CompUseEffect_RandomAbilityGain</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="Cinder_ArtifactBase">
+		<defName>Cinder_RegeneratedEnhancedSerum</defName>
+		<label>regenerated enhanced serum</label>
+		<description>A kind of eroded golden serum, people who drink it will feel the gaze of unknown things and gain the ability to transform.But the side effect of sublimation is death, which most people cannot bear.</description>
+		<tradeability>None</tradeability>
+		<graphicData>
+			<texPath>Things/Item/RegeneratedEnhancedSerum/RegeneratedEnhancedSerum</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stealable>false</stealable>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>5</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>true</useHitPoints>
+		<relicChance>0</relicChance>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<MaxHitPoints>2000</MaxHitPoints>
+		</statBases>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<thingSetMakerTags IsNull="true"/>
+	</ThingDef>
+
+<RecipeDef>
+    <defName>Make_BreadMo_AAT_ErodedSerum</defName>
+    <label>make eroded serum</label>
+    <description>Make eroded serum.</description>
+    <jobString>Making eroded serum.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workAmount>6000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineHerbal</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>45</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Gold</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <BreadMo_AAT_ErodedSerum>1</BreadMo_AAT_ErodedSerum>
+    </products>
+	<recipeUsers>
+		<li>DrugLab</li>
+	</recipeUsers>
+    <researchPrerequisite>BreadMo_AAT_Tech</researchPrerequisite>
+    <skillRequirements>
+      <Medicine>6</Medicine>
+    </skillRequirements>
+    <workSkill>Medicine</workSkill>
+    <displayPriority>0</displayPriority>
+  </RecipeDef>
+
+
+</Defs>

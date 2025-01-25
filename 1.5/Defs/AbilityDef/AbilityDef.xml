@@ -318,13 +318,10 @@
     </verbProperties>
     <comps>
       <li Class="CompProperties_AbilityGiveMentalState">
-        <compClass>CompAbilityEffect_GiveMentalState</compClass>
+        <compClass>Embergarden.CompAbilityEffect_AIGiveMentalState</compClass>
         <stateDef>Cinder_EternalFear</stateDef>
         <goodwillImpact>-25</goodwillImpact>
         <forced>true</forced>
-      </li>
-      <li Class="CompProperties_AbilityConnectingFleckLine">
-        <fleckDef>PsycastPsychicLine</fleckDef>
       </li>
     </comps>
   </AbilityDef>

@@ -50,7 +50,11 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>CinderStory</li>
+					<li>CinderStory_Refugee_Child</li>
+					<li>CinderStory_Refugee</li>
+					<li>CinderStory_DefenseCouncil_Child</li>
+					<li>CinderStory_DefenseCouncil</li>
+					<li>CinderStory_DefenseCouncil_CultChild</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -92,13 +96,7 @@
     <li>CinderSimpleGuns</li>
 	<li>CinderRifles</li>
     </weaponTags>
-    <weaponMoney>400~1200</weaponMoney>
-	<skills>
-      <li>
-        <skill>Shooting</skill>
-        <range>5~12</range>
-      </li>
-    </skills>
+    <weaponMoney>400~900</weaponMoney>
 	</PawnKindDef>
 
 
@@ -111,6 +109,11 @@
 		<initialResistanceRange>0</initialResistanceRange>
 		<maxGenerationAge>30</maxGenerationAge>
         <minGenerationAge>19</minGenerationAge>
+		<startingHediffs>
+          <li>
+          <def>Cinder_LongDream</def>
+          </li>
+        </startingHediffs>
 		<backstoryFiltersOverride>
         <li>
         <categories>

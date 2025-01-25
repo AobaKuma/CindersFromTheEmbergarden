@@ -53,9 +53,9 @@
         </stages>
 		<comps>
 			<li Class="Embergarden.HediffCompProperties_Regen">
-            <healPerDay>3</healPerDay>
+            <healPerDay>10</healPerDay>
 			<checkInterval>600</checkInterval>
-			<healPerDayUnlocked>25</healPerDayUnlocked>
+			<healPerDayUnlocked>50</healPerDayUnlocked>
 			<maxPartHpForLocked>10</maxPartHpForLocked>
 			</li>
 		</comps>
@@ -121,6 +121,8 @@
 		</comps>
 		<stages>
 			<li>
+			<totalBleedFactor>0</totalBleedFactor>
+			<hungerRateFactor>0</hungerRateFactor>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
@@ -132,7 +134,8 @@
 					</li>
 				</capMods>
 				<statFactors>
-					<IncomingDamageFactor>0.1</IncomingDamageFactor>
+					<IncomingDamageFactor>0.2</IncomingDamageFactor>
+					<RestFallRateFactor>0</RestFallRateFactor>
 				</statFactors>
 			</li>
 		</stages>
@@ -169,6 +172,187 @@
 			</li>
 		</stages>
 	</HediffDef>
+	
+	 <HediffDef>
+    <defName>Cinder_LongDream</defName>
+    <label>long dream</label>
+    <labelNoun>long dream</labelNoun>
+    <description>A gentle long dream, the consciousness of this unit has been taken over and there will be no pain or sadness.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <isBad>false</isBad>
+	<disablesNeeds>
+           <li>Beauty</li>
+           <li>Outdoors</li>
+		   <li>Rest</li>
+           <li>Comfort</li>
+		   <li>Joy</li>
+		   <li>Mood</li>
+		   <li>RoomSize</li>
+    </disablesNeeds>
+    <stages>
+      <li>
+	    <painFactor>0</painFactor>
+		<hungerRateFactor>0.5</hungerRateFactor>
+        <minSeverity>0</minSeverity>
+        <label>long dream</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+		<statFactors>
+					<IncomingDamageFactor>0.75</IncomingDamageFactor>
+		</statFactors>
+		<statOffsets>
+					<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+					<ArmorRating_Heat>2</ArmorRating_Heat>
+		</statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+		<showDaysToRecover>true</showDaysToRecover>
+      </li>
+	  <li Class="Embergarden.HediffCompProperties_NewHediffAfterDisappear">
+	  <hediffDef>Cinder_DeepSleep</hediffDef>
+	  </li>
+    </comps>
+  </HediffDef>
+  
+   <HediffDef>
+    <defName>Cinder_DeepSleep</defName>
+    <label>deep sleep</label>
+    <labelNoun>deep sleep</labelNoun>
+    <description>Being taken over consciousness, still sleeping soundly.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <isBad>false</isBad>
+	<disablesNeeds>
+           <li>Beauty</li>
+           <li>Outdoors</li>
+		   <li>Rest</li>
+		   <li>Joy</li>
+		   <li>Mood</li>
+		   <li>RoomSize</li>
+    </disablesNeeds>
+    <stages>
+      <li>
+	    <painFactor>0.2</painFactor>
+		<hungerRateFactor>0.5</hungerRateFactor>
+        <minSeverity>0</minSeverity>
+        <label>deep sleep</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.05</offset>
+          </li>
+        </capMods>
+		<statFactors>
+					<IncomingDamageFactor>0.8</IncomingDamageFactor>
+		</statFactors>
+		<statOffsets>
+					<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+					<ArmorRating_Heat>2</ArmorRating_Heat>
+		</statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+		<showDaysToRecover>true</showDaysToRecover>
+      </li>
+	  <li Class="Embergarden.HediffCompProperties_NewHediffAfterDisappear">
+	  <hediffDef>Cinder_LightSleep</hediffDef>
+	  </li>
+    </comps>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>Cinder_LightSleep</defName>
+    <label>light sleep</label>
+    <labelNoun>light sleep</labelNoun>
+    <description>Consciousness gradually recovers, blurring the gap between reality and dreams.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <isBad>false</isBad>
+	<disablesNeeds>
+           <li>Beauty</li>
+           <li>Outdoors</li>
+		   <li>Joy</li>
+		   <li>RoomSize</li>
+    </disablesNeeds>
+    <stages>
+      <li>
+	    <painFactor>0.4</painFactor>
+		<hungerRateFactor>0.8</hungerRateFactor>
+        <minSeverity>0</minSeverity>
+        <label>light sleep</label>
+		<statFactors>
+					<IncomingDamageFactor>0.9</IncomingDamageFactor>
+		</statFactors>
+		<statOffsets>
+					<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+					<ArmorRating_Heat>1.5</ArmorRating_Heat>
+		</statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+		<showDaysToRecover>true</showDaysToRecover>
+      </li>
+	  <li Class="Embergarden.HediffCompProperties_NewHediffAfterDisappear">
+	  <hediffDef>Cinder_GraduallyAwakening</hediffDef>
+	  </li>
+    </comps>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>Cinder_GraduallyAwakening</defName>
+    <label>gradually awakening</label>
+    <labelNoun>gradually awakening</labelNoun>
+    <description>The dream scene is almost no longer visible, gradually waking up to face reality.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <isBad>false</isBad>
+	<disablesNeeds>
+           <li>Beauty</li>
+           <li>Outdoors</li>
+		   <li>RoomSize</li>
+    </disablesNeeds>
+    <stages>
+      <li>
+	    <painFactor>0.8</painFactor>
+        <minSeverity>0</minSeverity>
+        <label>gradually awakening</label>
+		<statOffsets>
+					<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+					<ArmorRating_Heat>1.2</ArmorRating_Heat>
+		</statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+		<showDaysToRecover>true</showDaysToRecover>
+      </li>
+    </comps>
+  </HediffDef>
 	
 	<HediffDef>
 		<defName>Cinder_Blindness</defName>

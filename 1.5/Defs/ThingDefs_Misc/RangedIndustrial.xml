@@ -20,13 +20,13 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>11</damageAmountBase>
+      <damageAmountBase>13</damageAmountBase>
       <stoppingPower>1</stoppingPower>
       <armorPenetrationBase>0.28</armorPenetrationBase>
 	  <extraDamages>
 				<li>
 					<def>Cinder_ExtraBullet</def>
-					<amount>6</amount>
+					<amount>3</amount>
 				</li>
 	 </extraDamages>
       <speed>65</speed>
@@ -123,7 +123,7 @@
       <damageDef>Bullet</damageDef>
       <damageAmountBase>18</damageAmountBase>
       <stoppingPower>3</stoppingPower>
-      <armorPenetrationBase>0.14</armorPenetrationBase>
+      <armorPenetrationBase>0.22</armorPenetrationBase>
 	  <extraDamages>
 				<li>
 					<def>Cinder_ExtraBullet</def>
@@ -154,7 +154,7 @@
       <WorkToMake>12000</WorkToMake>
       <Mass>3.4</Mass>
       <AccuracyTouch>0.80</AccuracyTouch>
-      <AccuracyShort>0.87</AccuracyShort>
+      <AccuracyShort>0.97</AccuracyShort>
       <AccuracyMedium>0.77</AccuracyMedium>
       <AccuracyLong>0.64</AccuracyLong>
       <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
@@ -177,7 +177,7 @@
 	
     <costList>
       <Steel>60</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <recipeMaker>
       <skillRequirements>
@@ -285,7 +285,7 @@
 		
 	     <costList>
 		  <Steel>75</Steel>
-           <ComponentIndustrial>3</ComponentIndustrial>
+           <ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 		<recipeMaker>
 			<skillRequirements>
@@ -480,7 +480,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Cinder_Bullet_50APE</defaultProjectile>
         <warmupTime>1</warmupTime>
-        <range>32.9</range>
+        <range>28.9</range>
         <burstShotCount>3</burstShotCount>
         <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
         <soundCast>Shot_Autocannon</soundCast>
