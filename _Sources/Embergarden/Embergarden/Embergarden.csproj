@@ -76,6 +76,7 @@
     <Compile Include="ConeExplosionUtility.cs" />
     <Compile Include="ConeExplosion\Projectile_ConeExplosive.cs" />
     <Compile Include="D.cs" />
+    <Compile Include="Gene_AddHediff.cs" />
     <Compile Include="Gizmo_AttachmentShieldStatus.cs" />
     <Compile Include="HarmonyPatch\HarmonyEntry.cs" />
     <Compile Include="HarmonyPatch\Patch_DrawVehicleTurret.cs" />
