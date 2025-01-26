@@ -93,6 +93,7 @@
     <Compile Include="PatchOperationConditionalSettings.cs" />
     <Compile Include="Projectile_CompExplosive.cs" />
     <Compile Include="Projectile_ConeExplosion.cs" />
+    <Compile Include="QuestNode_Root_BossgroupFactionExposed.cs" />
     <Compile Include="Setting.cs" />
     <Compile Include="ThingClass_AltGraphic.cs" />
     <Compile Include="ThinkNode_ConditionalEnemyInRange.cs" />
