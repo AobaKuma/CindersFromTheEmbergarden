@@ -17,8 +17,6 @@ namespace Embergarden
 
         float healPerCycle => healPerDay * Props.checkInterval / 60000;
 
-        public override string CompLabelPrefix => $"({healPerDay} HP/d)";
-
         public bool Unlocked = false;
 
         public override void CompExposeData()
@@ -94,7 +92,9 @@ namespace Embergarden
             return true;
         }
 
-        public override string CompLabelInBracketsExtra => Unlocked ? Props.unlockedString : null;
+
+        public override string CompLabelPrefix => Unlocked ? Props.unlockedString : null;
+        public override string CompLabelInBracketsExtra => $"{healPerDay} HP/d";
     }
 
     public class HediffCompProperties_Regen : HediffCompProperties
