@@ -6,16 +6,15 @@
 		<degreeDatas>
 			<li>
 				<label>coke</label>
-				<description>{PAWN_nameDef}It is a part of an unknown consciousness.</description>
+				<description>{PAWN_nameDef} It is a part of an unknown consciousness. when others approach, they will feel a burning sensation</description>
 				<statOffsets>
+				<PawnBeauty>1</PawnBeauty>
 				</statOffsets>
 				<statFactors>
-					<IncomingDamageFactor>0.8</IncomingDamageFactor>
-					<PsychicSensitivity>0</PsychicSensitivity>
+					<Flammability>0.5</Flammability>
 				</statFactors>
 				<disablesNeeds>
 					<li>Outdoors</li>
-					<li>Joy</li>
 				</disablesNeeds>
 			</li>
 		</degreeDatas>

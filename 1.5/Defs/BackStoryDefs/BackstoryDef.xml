@@ -17,6 +17,8 @@
 			<Pyromaniac />
 			<DislikesMen />
 			<DislikesWomen />
+		    <Beauty>-1</Beauty>
+	        <Beauty>-2</Beauty>
 		</disallowedTraits>
 	</BackstoryDef>
 
@@ -55,6 +57,16 @@
 		<spawnCategories>
 			<li>CinderStory_Refugee_Child</li>
 		</spawnCategories>
+	 <skillGains>
+      <Intellectual>-5</Intellectual>
+      <Social>-3</Social>
+	  <Plants>5</Plants>
+	  <Cooking>1</Cooking>
+    </skillGains>
+	<workDisables>Artistic</workDisables>
+	<possessions>
+          <RawFungus>30~60</RawFungus>
+    </possessions>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 濒死孩子 -->
@@ -67,6 +79,14 @@
 		<spawnCategories>
 			<li>CinderStory_Refugee_Child</li>
 		</spawnCategories>
+    <skillGains>
+      <Intellectual>-5</Intellectual>
+    </skillGains>
+	<workDisables>Social, Cooking</workDisables>
+	 <forcedTraits>
+      <Cannibal>0</Cannibal>
+	  <NaturalMood>-1</NaturalMood>
+    </forcedTraits>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 生物战受害者 -->
@@ -79,18 +99,12 @@
 		<spawnCategories>
 			<li>CinderStory_Refugee_Child</li>
 		</spawnCategories>
-	</BackstoryDef>
-	
-	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 小说家 -->
-		<defName>Cinder_Novelist</defName>
-		<title>underground novelist</title>
-		<titleShort>novelist</titleShort>
-		<description>[PAWN_nameDef] unexpectedly broke free from the consciousness hosting of data intelligence. For the first time, [PAWN_nameDef] realized that [PAWN_possessive] consciousness was no longer asleep.
- This ecstasy prompted [PAWN_nameDef] to grab a stack of document fragments and write [PAWN_possessive] first "work" in [PAWN_possessive] own blood. Although these chaotic words may be hard to call "literature" in the eyes of others, [PAWN_possessive] work remains the most sought-after daily reading in the surrounding settlement.</description>
-		<slot>Adulthood</slot>
-		<spawnCategories>
-			<li>CinderStory_Refugee</li>
-		</spawnCategories>
+	<skillGains>
+      <Melee>4</Melee>
+      <Medicine>3</Medicine>
+	  <Cooking>-2</Cooking>
+    </skillGains>
+	 <workDisables>Animals</workDisables>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 导航员 -->
@@ -103,6 +117,10 @@
 		<spawnCategories>
 			<li>CinderStory_Refugee</li>
 		</spawnCategories>
+	<skillGains>
+      <Intellectual>8</Intellectual>
+      <Social>2</Social>
+    </skillGains>
 	</BackstoryDef>
 
     <!-- 国防委员会 -->
@@ -116,6 +134,10 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
+	<skillGains>
+      <Intellectual>-5</Intellectual>
+    </skillGains>
+	<workDisables>Artistic, Social, Cooking</workDisables>
 	</BackstoryDef>
 	
 	 <BackstoryDef ParentName="BaseCinderBackStory">	<!-- 落魄子弟 -->
@@ -128,6 +150,15 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
+	<skillGains>
+      <Intellectual>-2</Intellectual>
+      <Social>4</Social>
+      <Artistic>4</Artistic>
+    </skillGains>
+	<workDisables>ManualDumb, Hauling</workDisables>
+	<forcedTraits>
+      <Greedy>0</Greedy>
+    </forcedTraits>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 菌菇农奴 -->
@@ -140,6 +171,11 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
+	<skillGains>
+      <Intellectual>-2</Intellectual>
+	  <Plants>6</Plants>
+    </skillGains>
+	<workDisables>Artistic</workDisables>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 孕育舱 -->
@@ -152,6 +188,13 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
+	<skillGains>
+	   <Social>5</Social>
+    </skillGains>
+    <forcedTraits>
+      <Beauty>2</Beauty>
+    </forcedTraits>
+	<workDisables>Intellectual</workDisables>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 休眠孩童 -->
@@ -164,6 +207,11 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
+	<skillGains>
+      <Intellectual>-5</Intellectual>
+	  <Cooking>2</Cooking>
+    </skillGains>
+	<workDisables>Social</workDisables>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 帮厨 -->
@@ -176,6 +224,11 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
+	<skillGains>
+	  <Cooking>4</Cooking>
+	  <Social>2</Social>
+    </skillGains>
+	<workDisables>Intellectual</workDisables>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 童工 -->
@@ -187,6 +240,11 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
+	<skillGains>
+	  <Crafting>6</Crafting>
+	  <Social>-5</Social>
+    </skillGains>
+	<workDisables>Intellectual</workDisables>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 摄像头清洁工 -->
@@ -199,6 +257,10 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
+	<skillGains>
+	 <Melee>2</Melee>
+    </skillGains>
+	<workDisables>Intellectual</workDisables>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 继承者 -->
@@ -211,6 +273,11 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
+	<skillGains>
+      <Intellectual>3</Intellectual>
+	  <Medicine>3</Medicine>
+	  <Animals>1</Animals>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 行者 -->
@@ -223,6 +290,12 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
+	<skillGains>
+      <Social>3</Social>
+    </skillGains>
+	<forcedTraits>
+      <SpeedOffset>2</SpeedOffset>
+    </forcedTraits>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 管道清洁工 -->
@@ -235,6 +308,10 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Child</li>
 		</spawnCategories>
+	<skillGains>
+      <Construction>3</Construction>
+	  <Crafting>1</Crafting>
+    </skillGains>
 	</BackstoryDef>
 
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 尸鬼猎手 -->
@@ -247,6 +324,10 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil</li>
 		</spawnCategories>
+	<skillGains>
+       <Melee>4</Melee>
+       <Shooting>4</Shooting>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 工程师 -->
@@ -259,6 +340,11 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil</li>
 		</spawnCategories>
+	<skillGains>
+      <Intellectual>3</Intellectual>
+	  <Construction>3</Construction>
+	  <Crafting>2</Crafting>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 搬运工 -->
@@ -271,6 +357,12 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil</li>
 		</spawnCategories>
+	<skillGains>
+      <Intellectual>-3</Intellectual>
+    </skillGains>
+	<forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 追随者 -->
@@ -283,6 +375,11 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil</li>
 		</spawnCategories>
+	<skillGains>
+       <Melee>3</Melee>
+       <Shooting>3</Shooting>
+	   <Social>3</Social>
+    </skillGains>
 	</BackstoryDef>
 	
 	<!-- 邪教徒 -->
@@ -297,6 +394,11 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_CultChild</li>
 		</spawnCategories>
+	<skillGains>
+	   <Social>4</Social>
+	   <Medicine>-3</Medicine>
+    </skillGains>
+	<workDisables>Intellectual</workDisables>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 邪教孩子 -->
@@ -309,6 +411,10 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_CultChild</li>
 		</spawnCategories>
+	<skillGains>
+	   <Intellectual>-2</Intellectual>
+	   <Melee>1</Melee>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 狂热信徒 -->
@@ -321,6 +427,11 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_CultChild</li>
 		</spawnCategories>
+	<skillGains>
+	   <Social>4</Social>
+	   <Intellectual>-4</Intellectual>
+	   <Melee>3</Melee>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 受选着 -->
@@ -333,6 +444,10 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_CultChild</li>
 		</spawnCategories>
+	<skillGains>
+	   <Social>4</Social>
+	   <Intellectual>-4</Intellectual>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 悲伤信徒 -->
@@ -346,6 +461,14 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Cult</li>
 		</spawnCategories>
+	<skillGains>
+	   <Social>2</Social>
+	   <Intellectual>-2</Intellectual>
+    </skillGains>
+	<forcedTraits>
+	  <NaturalMood>-1</NaturalMood>
+	  <Tough>0</Tough>
+    </forcedTraits>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 逃避信徒 -->
@@ -358,6 +481,11 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Cult</li>
 		</spawnCategories>
+	<skillGains>
+       <Melee>1</Melee>
+       <Shooting>2</Shooting>
+    </skillGains>
+	<workDisables>Cooking</workDisables>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 祭司 -->
@@ -370,6 +498,15 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Cult</li>
 		</spawnCategories>
+	<skillGains>
+       <Social>4</Social>
+       <Shooting>2</Shooting>
+    </skillGains>
+	<workDisables>Intellectual</workDisables>
+	<forcedTraits>
+	  <Bloodlust>0</Bloodlust>
+	  <Tough>0</Tough>
+    </forcedTraits>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 疯掉的信徒 -->
@@ -382,6 +519,13 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Cult</li>
 		</spawnCategories>
+	<skillGains>
+       <Intellectual>-4</Intellectual>
+    </skillGains>
+	<workDisables>Caring</workDisables>
+	<forcedTraits>
+	  <Beauty>2</Beauty>
+    </forcedTraits>
 	</BackstoryDef>
 	
 	
@@ -397,6 +541,10 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Agitator</li>
 		</spawnCategories>
+	<skillGains>
+	   <Social>2</Social>
+	   <Intellectual>2</Intellectual>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 激进分子	-->
@@ -409,6 +557,12 @@
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_Agitator</li>
 		</spawnCategories>
+	<skillGains>
+	   <Social>5</Social>
+	   <Artistic>8</Artistic>
+	   <Shooting>2</Shooting>
+    </skillGains>
+	<requiredWorkTags>Violent</requiredWorkTags>
 	</BackstoryDef>
 	
 	<!-- 特别时期经济保障部 -->
@@ -422,6 +576,11 @@ Typically, children are infused with combat memories and personality traits to e
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Child</li>
 		</spawnCategories>
+	<skillGains>
+	   <Social>-4</Social>
+	   <Shooting>2</Shooting>
+	   <Melee>3</Melee>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 核心区孩子 -->
@@ -434,6 +593,11 @@ However, [PAWN_nameDef] is restless and often sneaks out to explore the boundari
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Child</li>
 		</spawnCategories>
+	<skillGains>
+	   <Social>2</Social>
+	   <Artistic>2</Artistic>
+	   <Intellectual>2</Intellectual>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- “报童” -->
@@ -446,6 +610,11 @@ However, to those who have not entered the long dream, [PAWN_pronoun] appears to
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Child</li>
 		</spawnCategories>
+	<skillGains>
+	   <Social>2</Social>
+	   <Crafting>2</Crafting>
+	   <Cooking>1</Cooking>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- “儿童偶像” -->
@@ -458,6 +627,10 @@ In reality, [PAWN_pronoun] is a living mannequin, assigned by data intelligence 
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Child</li>
 		</spawnCategories>
+	<skillGains>
+	   <Social>2</Social>
+	   <Artistic>1</Artistic>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!--“采蘑菇女孩”-->
@@ -470,6 +643,10 @@ In reality, during the period when [PAWN_possessive] consciousness is taken over
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Child</li>
 		</spawnCategories>
+	<skillGains>
+	   <Plants>2</Plants>
+	   <Medicine>4</Medicine>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- “工人” -->
@@ -482,6 +659,9 @@ But in reality, this is just a simulation based on [PAWN_possessive] memories.</
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Worker</li>
 		</spawnCategories>
+	<skillGains>
+	   <Plants>6</Plants>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- “能工巧匠” -->
@@ -494,6 +674,9 @@ But in reality, [PAWN_nameDef] is using [PAWN_possessive] burnt tentacles to man
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Worker</li>
 		</spawnCategories>
+	<skillGains>
+	    <Crafting>7</Crafting>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- “官僚” -->
@@ -506,6 +689,28 @@ In reality, [PAWN_possessive] brain is used to assist in processing endless batt
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Worker</li>
 		</spawnCategories>
+	<skillGains>
+	   <Social>4</Social>
+	   <Intellectual>4</Intellectual>
+    </skillGains>
+	<workDisables>ManualDumb, Hauling</workDisables>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 小说家 -->
+		<defName>Cinder_Novelist</defName>
+		<title>underground novelist</title>
+		<titleShort>novelist</titleShort>
+		<description>[PAWN_nameDef] unexpectedly broke free from the consciousness hosting of data intelligence. For the first time, [PAWN_nameDef] realized that [PAWN_possessive] consciousness was no longer asleep.
+ This ecstasy prompted [PAWN_nameDef] to grab a stack of document fragments and write [PAWN_possessive] first "work" in [PAWN_possessive] own blood. Although these chaotic words may be hard to call "literature" in the eyes of others, [PAWN_possessive] work remains the most sought-after daily reading in the surrounding settlement.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CinderStory_ESDSP_Worker</li>
+		</spawnCategories>
+	<skillGains>
+      <Intellectual>2</Intellectual>
+      <Social>2</Social>
+      <Artistic>5</Artistic>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- “可可” -->
@@ -518,6 +723,10 @@ However, upon waking, [PAWN_pronoun] only finds the shattered explosives product
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Worker</li>
 		</spawnCategories>
+	<skillGains>
+	   <Construction>4</Construction>
+	   <Crafting>2</Crafting>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- “乐器匠” -->
@@ -530,6 +739,11 @@ However, upon waking, [PAWN_pronoun] discovers [PAWN_pronoun] is on a chaotic ba
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Worker</li>
 		</spawnCategories>
+	<skillGains>
+	   <Artistic>2</Artistic>
+	   <Shooting>2</Shooting>
+	   <Crafting>2</Crafting>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- “掷铁饼者” -->
@@ -542,6 +756,9 @@ However, in reality, [PAWN_nameDef] is wearing heavy armor and using a focused e
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Soldier</li>
 		</spawnCategories>
+	<skillGains>
+	   <Shooting>4</Shooting>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- “操作员” -->
@@ -554,6 +771,14 @@ However, in reality, [PAWN_nameDef] is assigned by data intelligence to pilot an
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Soldier</li>
 		</spawnCategories>
+	<skillGains>
+	   <Shooting>2</Shooting>
+	   <Mining>6</Mining>
+    </skillGains>
+    <forcedTraits>
+      <DrugDesire>1</DrugDesire>
+	  <Tough>0</Tough>
+    </forcedTraits>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- “音乐指挥” -->
@@ -566,6 +791,10 @@ However, in reality, [PAWN_nameDef] controls the deployment of turret machinery,
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Soldier</li>
 		</spawnCategories>
+	<skillGains>
+	   <Artistic>4</Artistic>
+	   <Shooting>4</Shooting>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- “清洁车司机” -->
@@ -578,6 +807,9 @@ In reality, [PAWN_nameDef] operates a war sweeper, which is commonly used for ai
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Soldier</li>
 		</spawnCategories>
+	<skillGains>
+	   <Shooting>4</Shooting>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- “消防员” -->
@@ -590,6 +822,10 @@ The war attackers [PAWN_pronoun] operates are deployed to launch Hellfire missil
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Soldier</li>
 		</spawnCategories>
+	<skillGains>
+	   <Shooting>4</Shooting>
+	   <Melee>4</Melee>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- “稻草人” -->
@@ -602,6 +838,11 @@ In response, [PAWN_nameDef] instinctively waves [PAWN_possessive] scorched arms 
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Soldier</li>
 		</spawnCategories>
+	<skillGains>
+	   <Shooting>2</Shooting>
+ 	   <Plants>4</Plants>
+       <Animals>2</Animals>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- “沙漠渔民” -->
@@ -614,6 +855,9 @@ However, there is no sea near the fishing factory where [PAWN_pronoun] once live
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Soldier</li>
 		</spawnCategories>
+	<skillGains>
+       <Animals>6</Animals>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- “圣诞老人” -->
@@ -626,6 +870,11 @@ What [PAWN_pronoun] doesn't know is that [PAWN_pronoun] is actually a fire contr
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Soldier</li>
 		</spawnCategories>
+	<skillGains>
+	   <Artistic>2</Artistic>
+	   <Shooting>2</Shooting>
+	   <Crafting>2</Crafting>
+    </skillGains>
 	</BackstoryDef>
 	
 <!-- 特别时期经济保障部:尸鬼单位 -->
@@ -639,6 +888,11 @@ However, in reality, there are no bodies that need mending.When [PAWN_pronoun] a
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Ghoul</li>
 		</spawnCategories>
+	<skillGains>
+      <Melee>4</Melee>
+      <Medicine>4</Medicine>
+    </skillGains>
+	 <workDisables>Cooking</workDisables>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- “女仆” -->
@@ -651,6 +905,11 @@ However, in reality, [PAWN_nameDef] is a frontline melee ghoul soldier for large
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Ghoul</li>
 		</spawnCategories>
+	<skillGains>
+      <Melee>4</Melee>
+	  <Cooking>2</Cooking>
+	  <Social>2</Social>
+    </skillGains>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- “表演家” -->
@@ -663,6 +922,11 @@ However, in reality, [PAWN_nameDef] is a frontline melee soldier, wielding [PAWN
 		<spawnCategories>
 			<li>CinderStory_ESDSP_Ghoul</li>
 		</spawnCategories>
+	<skillGains>
+      <Melee>4</Melee>
+	  <Artistic>2</Artistic>
+	  <Social>2</Social>
+    </skillGains>
 	</BackstoryDef>
 	
 	

@@ -13,13 +13,17 @@
 				<humanRecipeImport>true</humanRecipeImport>
 				<disallowedTraits>
 					<li>
-						<defName>AnnoyingVoice</defName>
+						<defName>Wimp</defName>
 					</li>
-					<li>
-						<defName>CreepyBreathing</defName>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
+						<defName>Delicate</defName>
 					</li>
 				</disallowedTraits>
-				<forcedRaceTraitEntries />
+				<forcedRaceTraitEntries>
+				    <li>
+						<defName>Cinder_Coke</defName>
+					</li>
+				</forcedRaceTraitEntries>
 				<alienPartGenerator>
 					<!-- 컬러채널 -->
 					<colorChannels>
