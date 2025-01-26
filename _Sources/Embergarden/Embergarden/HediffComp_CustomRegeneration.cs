@@ -13,9 +13,11 @@ namespace Embergarden
     {
         HediffCompProperties_Regen Props => base.props as HediffCompProperties_Regen;
 
-        float healPerCycle => (Unlocked ? Props.healPerDayUnlocked : Props.healPerDay) * Props.checkInterval / 60000;
+        float healPerDay => Unlocked ? Props.healPerDayUnlocked : Props.healPerDay;
 
-        public override string CompLabelPrefix => $"({Props.healPerDay} HP/d)";
+        float healPerCycle => healPerDay * Props.checkInterval / 60000;
+
+        public override string CompLabelPrefix => $"({healPerDay} HP/d)";
 
         public bool Unlocked = false;
 
@@ -28,7 +30,7 @@ namespace Embergarden
         {
             if (Pawn.IsHashIntervalTick(Props.checkInterval))
             {
-                List<Hediff> hediffsToHeal = new List<Hediff>();
+                List<Hediff> hediffsToHeal = [];
                 foreach (Hediff hediff in Pawn.health.hediffSet.hediffs.InRandomOrder())
                 {
                     if (hediff is Hediff_Injury)
