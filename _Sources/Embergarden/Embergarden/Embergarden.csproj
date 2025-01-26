@@ -90,8 +90,10 @@
     <Compile Include="HediffComp_NewHediffAfterDisappear.cs" />
     <Compile Include="HediffComp_ProtectiveShield.cs" />
     <Compile Include="Hediff_DynamicCap.cs" />
+    <Compile Include="PatchOperationConditionalSettings.cs" />
     <Compile Include="Projectile_CompExplosive.cs" />
     <Compile Include="Projectile_ConeExplosion.cs" />
+    <Compile Include="Setting.cs" />
     <Compile Include="ThingClass_AltGraphic.cs" />
     <Compile Include="ThinkNode_ConditionalEnemyInRange.cs" />
     <Compile Include="MultiTurrets\CompMultipleTurretGun.cs" />
