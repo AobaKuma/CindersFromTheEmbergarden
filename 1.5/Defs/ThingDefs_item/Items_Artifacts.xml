@@ -84,6 +84,11 @@
 		</statBases>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<thingSetMakerTags IsNull="true"/>
+		<comps>
+			<li Class="CompProperties_UseEffect">
+			<compClass>Embergarden.CompUseEffect_ActivateHediffs</compClass>
+			</li>
+		</comps>
 	</ThingDef>
 	
 	  <ThingDef ParentName="ResourceBase">

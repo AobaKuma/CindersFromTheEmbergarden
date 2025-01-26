@@ -3,9 +3,7 @@
 	<PawnKindDef Name="Cinder_BasePawn" Abstract="True">
 		<combatPower>60</combatPower>
 		<race>Alien_Cinder</race>
-		<itemQuality>Poor</itemQuality>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
 		<apparelMoney>
 			<min>100</min>
@@ -19,10 +17,14 @@
 		<defName>Cinder_Colonist</defName>
 		<label>cinder colonist</label>
 		<defaultFactionType>Cinder_PlayerFaction</defaultFactionType>
+		<itemQuality>Poor</itemQuality>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<isFighter>false</isFighter>
 		<initialWillRange>10~30</initialWillRange>
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+		<maxGenerationAge>55</maxGenerationAge>
+        <minGenerationAge>13</minGenerationAge>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
@@ -50,6 +52,12 @@
 		<requiredTag>IndustrialBasic</requiredTag>
 		<apparelLayer>OnSkin</apparelLayer>
       </li>
+	  <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+		<requiredTag>Cinder_Civilan</requiredTag>
+		<stuff>Synthread</stuff>
+		<apparelLayer>Middle</apparelLayer>
+      </li>
       <li>
         <bodyPartGroup>Legs</bodyPartGroup>
         <stuff>Synthread</stuff>
@@ -61,7 +69,7 @@
 
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_Outlander</defName>
-		<label>cinder outlander soldier</label>
+		<label>cinder soldier</label>
 		<defaultFactionType>OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<initialWillRange>10~30</initialWillRange>
@@ -126,12 +134,138 @@
     </weaponTags>
     <weaponMoney>400~900</weaponMoney>
 	</PawnKindDef>
+	
+	<PawnKindDef ParentName="Cinder_BasePawn">
+		<defName>Cinder_OutlanderElite</defName>
+		<label>cinder elite soldier</label>
+		<defaultFactionType>OutlanderCivil</defaultFactionType>
+		<isFighter>true</isFighter>
+		 <itemQuality>Excellent</itemQuality>
+		<initialWillRange>10~30</initialWillRange>
+		<invNutrition>1</invNutrition>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<maxGenerationAge>35</maxGenerationAge>
+        <minGenerationAge>19</minGenerationAge>
+		<startingHediffs>
+		  <li>
+          <def>Cinder_ExtraArmourPlate</def>
+          <chance>0.5</chance>
+          </li>
+        </startingHediffs>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>CinderStory_Refugee_Child</li>
+					<li>CinderStory_Refugee</li>
+					<li>CinderStory_DefenseCouncil_Child</li>
+					<li>CinderStory_DefenseCouncil</li>
+					<li>CinderStory_DefenseCouncil_CultChild</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelTags>
+			<li>Cinder_Military_Heavy</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+	<specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(66, 61, 51)</color>
+      </li>
+      <li>
+        <bodyPartGroup>Legs</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(66, 61, 51)</color>
+      </li>
+    </specificApparelRequirements>
+	<apparelRequired>
+      <li>Cinder_Apparel_HeavyArmorDress</li>
+    </apparelRequired>
+		<apparelMoney>
+			<min>12500</min>
+			<max>12900</max>
+		</apparelMoney>
+	<weaponTags>
+	<li>CinderHeavy</li>
+	<li>GunHeavy</li>
+	<li>GunSingleUse</li>
+    </weaponTags>
+    <weaponMoney>2400~2900</weaponMoney>
+	</PawnKindDef>
 
+    <PawnKindDef ParentName="Cinder_BasePawn">
+		<defName>Cinder_SoliderUnit</defName>
+		<label>cinder solider unit</label>
+		<defaultFactionType>OutlanderCivil</defaultFactionType>
+		<isFighter>true</isFighter>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<biocodeWeaponChance>0.15</biocodeWeaponChance>
+		<initialWillRange>10~30</initialWillRange>
+		<invNutrition>1</invNutrition>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<maxGenerationAge>35</maxGenerationAge>
+        <minGenerationAge>19</minGenerationAge>
+		<startingHediffs>
+		  <li>
+          <def>Cinder_ExtraArmourPlate</def>
+          <chance>1</chance>
+          </li>
+        </startingHediffs>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>CinderStory_Refugee_Child</li>
+					<li>CinderStory_ESDSP_Child</li>
+					<li>CinderStory_ESDSP_Soldier</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelTags>
+			<li>Cinder_Military_Heavy</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+	<specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(66, 61, 51)</color>
+      </li>
+      <li>
+        <bodyPartGroup>Legs</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(66, 61, 51)</color>
+      </li>
+    </specificApparelRequirements>
+	<apparelRequired>
+      <li>Cinder_Apparel_LowVisibilityDress</li>
+	  <li>Cinder_HeadGear_FullyEnclosedMask</li>
+    </apparelRequired>
+		<apparelMoney>
+			<min>5500</min>
+			<max>5900</max>
+		</apparelMoney>
+	<weaponTags>
+	<li>CinderRifles</li>
+	<li>GunHeavy</li>
+    </weaponTags>
+    <weaponMoney>500~1900</weaponMoney>
+	</PawnKindDef>
 
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_Ghoul</defName>
 		<label>ghoul unit</label>
 		<defaultFactionType>OutlanderCivil</defaultFactionType>
+		<itemQuality>Poor</itemQuality>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<isFighter>true</isFighter>
 		<initialWillRange>10</initialWillRange>
 		<initialResistanceRange>0</initialResistanceRange>

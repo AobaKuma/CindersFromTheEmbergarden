@@ -43,6 +43,7 @@
             <tags Inherit="false">
                 <li>Cinder_Military</li>
                 <li>IndustrialMilitaryBasic</li>
+				<li>Cinder_Military_Heavy</li>
             </tags>
             <defaultOutfitTags>
                 <li>Soldier</li>
