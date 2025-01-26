@@ -35,6 +35,7 @@ namespace Embergarden
                 usedBy.relations.AddDirectRelation(PawnRelationDefOf.Overseer, mech);
             }
             GenPlace.TryPlaceThing(mech, parent.PositionHeld, parent.MapHeld, ThingPlaceMode.Near);
+            mech.Rotation = parent.Rotation;
             parent.DeSpawn();
             parent.Destroy();
         }

@@ -91,6 +91,8 @@ namespace Embergarden
             if (part.def.hitPoints <= Props.maxPartHpForLocked) return false;
             return true;
         }
+
+        public override string CompLabelInBracketsExtra => Unlocked ? Props.unlockedString : null;
     }
 
     public class HediffCompProperties_Regen : HediffCompProperties
@@ -102,6 +104,9 @@ namespace Embergarden
         public float healPerDayUnlocked = 10;
 
         public int maxPartHpForLocked = 10;
+
+        [MustTranslate]
+        public string unlockedString;
 
         public HediffCompProperties_Regen()
         {

@@ -70,6 +70,7 @@
     <Compile Include="CompAddHediff.cs" />
     <Compile Include="CompProperties_Transformable.cs" />
     <Compile Include="CompSecondaryVerb.cs" />
+    <Compile Include="CompUseEffect_ActivateHediffs.cs" />
     <Compile Include="CompUseEffect_ActivateMech.cs" />
     <Compile Include="CompUseEffect_CallBossgroupNoMechanitor.cs" />
     <Compile Include="CompUseEffect_RandomAbilityGain.cs" />

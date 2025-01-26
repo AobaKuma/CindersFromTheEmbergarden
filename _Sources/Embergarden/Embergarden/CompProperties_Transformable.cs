@@ -11,8 +11,9 @@ namespace Embergarden
         public bool autoAI;
         public PawnKindDef pawnKind;
 
-        public string defaultLabel;
-        public string defaultDesc;
+        [MustTranslate]
+        public string defaultLabel, defaultDesc;
+        [NoTranslate]
         public string icon;
 
         Texture2D icon2D;
