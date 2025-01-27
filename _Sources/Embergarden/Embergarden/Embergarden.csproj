@@ -90,6 +90,7 @@
     <Compile Include="HediffComp_NewHediffAfterDisappear.cs" />
     <Compile Include="HediffComp_ProtectiveShield.cs" />
     <Compile Include="Hediff_DynamicCap.cs" />
+    <Compile Include="PatchOperationAddSafe.cs" />
     <Compile Include="PatchOperationConditionalSettings.cs" />
     <Compile Include="Projectile_CompExplosive.cs" />
     <Compile Include="Projectile_ConeExplosion.cs" />

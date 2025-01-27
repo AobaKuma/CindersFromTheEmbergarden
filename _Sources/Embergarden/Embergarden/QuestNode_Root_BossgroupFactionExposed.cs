@@ -4,6 +4,7 @@ using RimWorld.QuestGen;
 using System.Collections.Generic;
 using System.Linq;
 using Verse;
+using static Mono.Security.X509.X520;
 
 namespace Embergarden
 {
@@ -26,7 +27,7 @@ namespace Embergarden
             Faction faction = FactionUtility.DefaultFactionFrom(factionDef);
             if (faction == null)
             {
-                List<FactionRelation> list = new List<FactionRelation>();
+                List<FactionRelation> list = [];
                 foreach (Faction item in Find.FactionManager.AllFactionsListForReading)
                 {
                     list.Add(new FactionRelation

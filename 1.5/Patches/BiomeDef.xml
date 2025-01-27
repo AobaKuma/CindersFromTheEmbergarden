@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="Embergarden.PatchOperationAddSafe">
+		<xpath>Defs/BiomeDef</xpath>
+		<testName>allowedPackAnimals</testName>
+		<value>
+			<li>Muffalo</li>
+		</value>
+	</Operation>
+</Patch>
