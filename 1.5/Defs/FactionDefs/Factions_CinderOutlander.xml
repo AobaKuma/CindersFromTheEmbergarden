@@ -2,17 +2,17 @@
 <Defs>
 	 <FactionDef ParentName="FactionBase">
 	 <defName>Cinder_OutlanderCivil</defName>
-    <label>Lantern Fleet</label>
-    <description>These people have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group holds civil behavior in high regard.</description>
+    <label>lantern fleet</label>
+    <description>These people are fleets fleeing from ancient Earth in all directions of the universe. Their assault landing ship encountered fierce combat near the orbit of this planet, so they made an emergency landing on the planet and re established themselves here.</description>
     <colorSpectrum>
-      <li>(0.5, 0.5, 0.5)</li>
+      <li>(0.45, 0.45, 0.45)</li>
     </colorSpectrum>
     <classicIdeo>true</classicIdeo>
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
     <configurationListOrderPriority>10</configurationListOrderPriority>
-    <pawnSingular>outlander</pawnSingular>
-    <pawnsPlural>outlanders</pawnsPlural>
-    <categoryTag>Outlander</categoryTag>
+    <pawnSingular>crew</pawnSingular>
+    <pawnsPlural>crews</pawnsPlural>
+    <categoryTag>Cinder</categoryTag>
     <listOrderPriority>30</listOrderPriority>
     <settlementGenerationWeight>1</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
@@ -30,11 +30,21 @@
     <factionNameMaker>NamerFactionOutlander</factionNameMaker>
     <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
     <allowedCultures><li>Cinder_Culture</li></allowedCultures>
-    <disallowedMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
-    </disallowedMemes>
+	 <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+    </requiredMemes>
+	<allowedMemes>
+	      <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+    </allowedMemes>
+	<disallowedPrecepts>
+      <li>Slavery_Classic</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
+    </disallowedPrecepts>
     <structureMemeWeights>
       <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
       <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>

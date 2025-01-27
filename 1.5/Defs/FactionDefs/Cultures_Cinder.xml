@@ -13,7 +13,7 @@
       <li>OriginSpacer</li>
     </allowedPlaceTags>
     <iconPath>UI/Icon/Culture_Icon</iconPath>
-    <iconColor>(65, 65, 65)</iconColor>
+    <iconColor>(1, 1, 1)</iconColor>
     <thingStyleCategories>
       <li MayRequire="XMB.AmorphousStylePack.MO">
         <category>BreadMo_AAT_Amorphous</category>

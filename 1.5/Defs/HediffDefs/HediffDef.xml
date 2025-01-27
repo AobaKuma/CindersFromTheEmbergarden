@@ -412,6 +412,35 @@
 		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
 		<comps>
 			<li Class="Embergarden.HediffCompProperties_ProtectiveShield">
+				<hitpoints>40</hitpoints>
+				<filthOnDamaged>Filth_MachineBits</filthOnDamaged>
+				<effectOnDamaged>Deflect_Metal</effectOnDamaged>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<damageFactors>
+					<Bullet>0.75</Bullet>
+					<Bomb>0.25</Bomb>
+				</damageFactors>
+				<statOffsets>
+					<MoveSpeed>-0.1</MoveSpeed>
+					<ArmorRating_Heat>0.5</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Cinder_ExtraArmourPlateII</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>heavy armour Plates</label>
+		<description>Installed additional amorphous polymer armor plates to protect users from injury.\n\nAlthough it is an excellent protective armor, it must be completely replaced once damaged.</description>
+		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+		<isBad>false</isBad>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<comps>
+			<li Class="Embergarden.HediffCompProperties_ProtectiveShield">
 				<hitpoints>80</hitpoints>
 				<filthOnDamaged>Filth_MachineBits</filthOnDamaged>
 				<effectOnDamaged>Deflect_Metal</effectOnDamaged>

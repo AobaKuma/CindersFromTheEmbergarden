@@ -260,10 +260,13 @@
 	   <soundCast>Cinder_TentacleWhisper</soundCast>
       <targetParams>
         <canTargetAnimals>true</canTargetAnimals>
-        <canTargetSelf>true</canTargetSelf>
+		<canTargetPawns>true</canTargetPawns>
+        <canTargetSelf>false</canTargetSelf>
         <canTargetBuildings>false</canTargetBuildings>
         <canTargetMechs>false</canTargetMechs>
         <canTargetBloodfeeders>true</canTargetBloodfeeders>
+		<canTargetMutants>true</canTargetMutants>
+        <neverTargetIncapacitated>true</neverTargetIncapacitated>
       </targetParams>
 	  <soundAiming>Cinder_TentacleAiming</soundAiming>
     </verbProperties>

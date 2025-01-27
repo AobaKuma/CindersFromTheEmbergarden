@@ -81,7 +81,7 @@
         <minGenerationAge>25</minGenerationAge>
 		<startingHediffs>
 		  <li>
-          <def>Cinder_ExtraArmourPlate</def>
+          <def>Cinder_ExtraArmourPlateII</def>
           <chance>1</chance>
           </li>
         </startingHediffs>
@@ -207,7 +207,7 @@
         <minGenerationAge>19</minGenerationAge>
 		<startingHediffs>
 		  <li>
-          <def>Cinder_ExtraArmourPlate</def>
+          <def>Cinder_ExtraArmourPlateII</def>
           <chance>1</chance>
           </li>
         </startingHediffs>
@@ -343,7 +343,7 @@
         <minGenerationAge>19</minGenerationAge>
 		<startingHediffs>
 		  <li>
-          <def>Cinder_ExtraArmourPlate</def>
+          <def>Cinder_ExtraArmourPlateII</def>
           <chance>1</chance>
           </li>
         </startingHediffs>
@@ -596,7 +596,7 @@
         <minGenerationAge>19</minGenerationAge>
 		<startingHediffs>
 		  <li>
-          <def>Cinder_ExtraArmourPlate</def>
+          <def>Cinder_ExtraArmourPlateII</def>
           <chance>0.5</chance>
           </li>
         </startingHediffs>
@@ -740,7 +740,7 @@
           <def>Cinder_LongDream</def>
           </li>
 		  <li>
-          <def>Cinder_ExtraArmourPlate</def>
+          <def>Cinder_ExtraArmourPlateII</def>
           <chance>1</chance>
           </li>
         </startingHediffs>
