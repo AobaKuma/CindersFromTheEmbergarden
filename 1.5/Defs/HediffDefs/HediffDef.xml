@@ -199,12 +199,6 @@
 				<hungerRateFactor>0.5</hungerRateFactor>
 				<minSeverity>0</minSeverity>
 				<label>long dream</label>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>0.1</offset>
-					</li>
-				</capMods>
 				<statFactors>
 					<IncomingDamageFactor>0.75</IncomingDamageFactor>
 				</statFactors>
@@ -250,12 +244,6 @@
 				<hungerRateFactor>0.5</hungerRateFactor>
 				<minSeverity>0</minSeverity>
 				<label>deep sleep</label>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>0.05</offset>
-					</li>
-				</capMods>
 				<statFactors>
 					<IncomingDamageFactor>0.8</IncomingDamageFactor>
 				</statFactors>

@@ -4,7 +4,7 @@
 		<xpath>Defs/BiomeDef</xpath>
 		<testName>allowedPackAnimals</testName>
 		<value>
-			<li>Muffalo</li>
+			<li>Cinder_Trailer</li>
 		</value>
 	</Operation>
 </Patch>

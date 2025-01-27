@@ -374,6 +374,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil</li>
+			<li>CinderStory_Agitator</li>
 		</spawnCategories>
 	<skillGains>
        <Melee>3</Melee>
@@ -393,6 +394,7 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_CultChild</li>
+			<li>CinderStory_Agitator_Child</li>
 		</spawnCategories>
 	<skillGains>
 	   <Social>4</Social>
@@ -539,12 +541,13 @@
  [PAWN_pronoun] came across criticisms of totalitarian states from before the disaster, and even the most terrifying regimes in history seemed to [PAWN_objective] like an ideal state. This prompted [PAWN_objective] to start contemplating the definition of what is right.</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_DefenseCouncil_Agitator</li>
+			<li>CinderStory_Agitator_Child</li>
 		</spawnCategories>
 	<skillGains>
 	   <Social>2</Social>
 	   <Intellectual>2</Intellectual>
     </skillGains>
+	<shuffleable>True</shuffleable>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 激进分子	-->
@@ -555,7 +558,7 @@
  [PAWN_pronoun] is convinced that [PAWN_pronoun] can do better than the faceless bureaucrats, and more and more people are beginning to help [PAWN_objective].</description>
 		<slot>Childhood</slot>
 		<spawnCategories>
-			<li>CinderStory_DefenseCouncil_Agitator</li>
+			<li>CinderStory_Agitator</li>
 		</spawnCategories>
 	<skillGains>
 	   <Social>5</Social>
@@ -563,6 +566,7 @@
 	   <Shooting>2</Shooting>
     </skillGains>
 	<requiredWorkTags>Violent</requiredWorkTags>
+	<shuffleable>True</shuffleable>
 	</BackstoryDef>
 	
 	<!-- 特别时期经济保障部 -->

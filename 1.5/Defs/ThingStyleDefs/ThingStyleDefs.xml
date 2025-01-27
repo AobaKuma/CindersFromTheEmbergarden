@@ -226,4 +226,26 @@
 	 <drawSize>1.24</drawSize>
     </graphicData>
   </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_BrokenMask</defName>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/BrokenMask/Icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.4</drawSize>
+    </graphicData>
+	<wornGraphicPath>Things/Pawn/Humanlike/Apparel/BrokenMask/BrokenMask</wornGraphicPath>
+	<useWornGraphicMask>true</useWornGraphicMask>
+  </ThingStyleDef>
+  
+   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_BrokenFlakMask</defName>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/BrokenMask/BrokenFlakMask</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.4</drawSize>
+    </graphicData>
+	<wornGraphicPath>Things/Pawn/Humanlike/Apparel/BrokenMask/BrokenFlakMask</wornGraphicPath>
+	<useWornGraphicMask>true</useWornGraphicMask>
+  </ThingStyleDef>
 </Defs>

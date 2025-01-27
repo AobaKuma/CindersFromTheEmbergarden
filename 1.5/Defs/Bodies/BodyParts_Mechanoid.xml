@@ -123,6 +123,7 @@
     <bleedRate>0</bleedRate>
     <tags>
       <li>MovingLimbCore</li>
+	   <li>ManipulationLimbCore</li>
     </tags>
   </BodyPartDef>
 </Defs>

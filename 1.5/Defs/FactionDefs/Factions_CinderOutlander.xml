@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	 <FactionDef ParentName="FactionBase">
+	 <defName>Cinder_OutlanderCivil</defName>
+    <label>Lantern Fleet</label>
+    <description>These people have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group holds civil behavior in high regard.</description>
+    <colorSpectrum>
+      <li>(0.5, 0.5, 0.5)</li>
+    </colorSpectrum>
+    <classicIdeo>true</classicIdeo>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>10</configurationListOrderPriority>
+    <pawnSingular>outlander</pawnSingular>
+    <pawnsPlural>outlanders</pawnsPlural>
+    <categoryTag>Outlander</categoryTag>
+    <listOrderPriority>30</listOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+	
+    <leaderTitle>Lantern Bearer</leaderTitle>
+	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+	<fixedLeaderKinds>
+      <li>Cinder_Leader</li>
+    </fixedLeaderKinds>
+	
+    <factionIconPath>UI/Icon/fleetIcon</factionIconPath>
+    <techLevel>Spacer</techLevel>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <allowedCultures><li>Cinder_Culture</li></allowedCultures>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+    <structureMemeWeights>
+      <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+    </structureMemeWeights>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
+      </xenotypeChances>
+    </xenotypeSet>
+    <backstoryFilters>
+      <li>
+			<categories>
+			        <li>CinderStory</li>
+					<li>CinderStory_Refugee_Child</li>
+					<li>CinderStory_Refugee</li>
+					<li>CinderStory_DefenseCouncil_Child</li>
+					<li>CinderStory_DefenseCouncil</li>
+					<li>CinderStory_DefenseCouncil_CultChild</li>
+					<li>CinderStory_DefenseCouncil_Cult</li>
+					<li>CinderStory_ESDSP_Worker</li>
+					<li>CinderStory_DefenseCouncil_Agitator_Child</li>
+					<li>CinderStory_DefenseCouncil_Agitator</li>
+				</categories>
+		  </li>
+    </backstoryFilters>
+    <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+      <li>Caravan_Outlander_PirateMerchant</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>-60~65</allowedArrivalTemperatureRange>
+    <raidLootMaker>Cinder_OutlanderRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <!-- Normal fights, standard mix -->
+        <kindDef>Combat</kindDef>
+        <options>
+          <Cinder_Cult>5</Cinder_Cult>
+          <Cinder_Outlander>25</Cinder_Outlander>
+          <Cinder_Mech_WalkerAutoCannon>5</Cinder_Mech_WalkerAutoCannon>
+		  <Cinder_Grenadier>1.5</Cinder_Grenadier>
+          <Cinder_EliteCult>3</Cinder_EliteCult>
+          <Cinder_OutlanderElite>4</Cinder_OutlanderElite>
+          <Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
+          <Cinder_Mech_WalkerSniper>1.5</Cinder_Mech_WalkerSniper>
+		  <Cinder_Leader>1</Cinder_Leader>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Cinder_OutlanderCivilan>20</Cinder_OutlanderCivilan>
+          <Cinder_Outlander>10</Cinder_Outlander>
+          <Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
+		  <Cinder_Leader>1</Cinder_Leader>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Cinder_SupplyOfficer>1</Cinder_SupplyOfficer>
+        </traders>
+        <carriers>
+          <Cinder_Trailer>6</Cinder_Trailer>
+        </carriers>
+        <guards>
+          <Cinder_OutlanderCivilan>3</Cinder_OutlanderCivilan>
+          <Cinder_Outlander>10</Cinder_Outlander>
+          <Cinder_Grenadier>1.5</Cinder_Grenadier>
+		  <Cinder_Cult>3</Cinder_Cult>
+          <Cinder_EliteCult>3</Cinder_EliteCult>
+          <Cinder_Mech_WalkerAutoCannon>5</Cinder_Mech_WalkerAutoCannon>
+          <Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Cinder_OutlanderCivilan>10</Cinder_OutlanderCivilan>
+          <Cinder_Outlander>10</Cinder_Outlander>
+          <Cinder_Grenadier>1.5</Cinder_Grenadier>
+          <Cinder_OutlanderElite>3</Cinder_OutlanderElite>
+		  <Cinder_EliteCult>3</Cinder_EliteCult>
+          <Cinder_Mech_WalkerAutoCannon>3</Cinder_Mech_WalkerAutoCannon>
+          <Cinder_Mech_MiniTurretWalker>8</Cinder_Mech_MiniTurretWalker>
+          <Cinder_Mech_WalkerSniper>1.5</Cinder_Mech_WalkerSniper>
+		  <Cinder_Leader>10</Cinder_Leader>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Cinder_OutlanderCivilan>1</Cinder_OutlanderCivilan>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Cinder_Outlander>1</Cinder_Outlander>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Cinder_OutlanderCivilan>1</Cinder_OutlanderCivilan>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Cinder_OutlanderCivilan>1</Cinder_OutlanderCivilan>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>UI/Icon/CinderSettlement</settlementTexturePath>
+  </FactionDef>
+  
+  <ThingSetMakerDef>
+    <defName>Cinder_OutlanderRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+            <li>MedicineIndustrial</li>
+            <li>ComponentIndustrial</li>
+            <li>MealSurvivalPack</li>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+
+
+</Defs>

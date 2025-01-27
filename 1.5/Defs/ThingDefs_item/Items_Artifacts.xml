@@ -60,6 +60,9 @@
 				</abilityDefs>
 				<compClass>Embergarden.CompUseEffect_RandomAbilityGain</compClass>
 			</li>
+			<li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>MechSerumUsed</soundOnUsed>
+      </li>
 		</comps>
 	</ThingDef>
 
@@ -88,6 +91,9 @@
 			<li Class="CompProperties_UseEffect">
 				<compClass>Embergarden.CompUseEffect_ActivateHediffs</compClass>
 			</li>
+			<li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>MechSerumUsed</soundOnUsed>
+      </li>
 		</comps>
 	</ThingDef>
 
