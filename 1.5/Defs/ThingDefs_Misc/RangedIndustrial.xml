@@ -237,8 +237,8 @@
       <WorkToMake>30000</WorkToMake>
       <Mass>3.0</Mass>
        <AccuracyTouch>0.60</AccuracyTouch>
-      <AccuracyShort>0.45</AccuracyShort>
-      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyShort>0.4</AccuracyShort>
+      <AccuracyMedium>0.32</AccuracyMedium>
       <AccuracyLong>0.15</AccuracyLong>
       <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
 		</statBases>
@@ -300,7 +300,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Cinder_Bullet_PDW</defaultProjectile>
-        <warmupTime>0.55</warmupTime>
+        <warmupTime>0.6</warmupTime>
         <range>22.9</range>
         <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
@@ -489,6 +489,7 @@
       </li>
     </verbs>
 	<weaponTags>
+	<li>CinderRifles</li>
 	  <li>CinderElite</li>
     </weaponTags>
 		<tools>

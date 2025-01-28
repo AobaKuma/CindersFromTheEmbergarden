@@ -111,7 +111,7 @@
     <defName>Cinder_Trailer</defName>
     <label>trailer</label>
     <race>Cinder_Trailer</race>
-    <combatPower>200</combatPower>
+    <combatPower>75</combatPower>
     <ecoSystemWeight>0.25</ecoSystemWeight>
 	 <wildGroupSize>1~1</wildGroupSize>
     <lifeStages>

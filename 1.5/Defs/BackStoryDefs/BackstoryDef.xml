@@ -374,7 +374,6 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil</li>
-			<li>CinderStory_Agitator</li>
 		</spawnCategories>
 	<skillGains>
        <Melee>3</Melee>
@@ -394,7 +393,6 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>CinderStory_DefenseCouncil_CultChild</li>
-			<li>CinderStory_Agitator_Child</li>
 		</spawnCategories>
 	<skillGains>
 	   <Social>4</Social>
@@ -556,7 +554,7 @@
 		<titleShort>activist</titleShort>
 		<description>Having undergone true reflection and survived the brutal war, [PAWN_nameDef] no longer believes in the Defense Council's grotesque rule that spares no effort for meaningless war. [PAWN_pronoun] begins secretly copying articles underground and spreading these illegal writings within the shelter.
  [PAWN_pronoun] is convinced that [PAWN_pronoun] can do better than the faceless bureaucrats, and more and more people are beginning to help [PAWN_objective].</description>
-		<slot>Childhood</slot>
+		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>CinderStory_Agitator</li>
 		</spawnCategories>

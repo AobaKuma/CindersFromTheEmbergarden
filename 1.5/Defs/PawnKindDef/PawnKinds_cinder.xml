@@ -135,7 +135,7 @@
 
     <PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_OutlanderCivilan</defName>
-		<label>colonist</label>
+		<label>Civilan</label>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<itemQuality>Poor</itemQuality>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
@@ -261,10 +261,11 @@
     </weaponTags>
     <weaponMoney>400~450</weaponMoney>
 	</PawnKindDef>
-
+	
 	<PawnKindDef ParentName="Cinder_BasePawn">
-		<defName>Cinder_Outlander</defName>
+		<defName>Cinder_OutlanderSecond</defName>
 		<label>Logistics troops</label>
+		<combatPower>80</combatPower>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<initialWillRange>10~30</initialWillRange>
@@ -292,7 +293,6 @@
 		<apparelTags>
 			<li>Cinder_Military</li>
 			<li>Cinder_Civilan</li>
-			  <li>BeltDefensePop</li>
 		</apparelTags>
 	<specificApparelRequirements>
       <li>
@@ -321,19 +321,93 @@
       </li>
     </specificApparelRequirements>
 		<apparelMoney>
-			<min>700</min>
-			<max>1200</max>
+			<min>600</min>
+			<max>1000</max>
 		</apparelMoney>
 	<weaponTags>
     <li>CinderSimpleGuns</li>
 	<li>CinderRifles</li>
     </weaponTags>
-    <weaponMoney>300~1000</weaponMoney>
+    <weaponMoney>385~500</weaponMoney>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Cinder_BasePawn">
+		<defName>Cinder_Outlander</defName>
+		<label>Frontline troops</label>
+		<combatPower>120</combatPower>
+		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
+		<isFighter>true</isFighter>
+		<initialWillRange>10~30</initialWillRange>
+		<invNutrition>1</invNutrition>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<maxGenerationAge>45</maxGenerationAge>
+        <minGenerationAge>19</minGenerationAge>
+		<startingHediffs>
+		  <li>
+          <def>Cinder_ExtraArmourPlate</def>
+          <chance>0.35</chance>
+          </li>
+        </startingHediffs>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>CinderStory_Refugee_Child</li>
+					<li>CinderStory_Refugee</li>
+					<li>CinderStory_DefenseCouncil_Child</li>
+					<li>CinderStory_DefenseCouncil</li>
+					<li>CinderStory_DefenseCouncil_CultChild</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelTags>
+			<li>Cinder_Military</li>
+			<li>Cinder_Civilan</li>
+			  <li>BeltDefensePop</li>
+		</apparelTags>
+	<specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(66, 61, 51)</color>
+      </li>
+	  <li>
+		<requiredTag>Cinder_MilitaryMedium</requiredTag>
+		<apparelLayer>Overhead</apparelLayer>
+      </li>
+	  <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+		<requiredTag>Cinder_Military</requiredTag>
+		<apparelLayer>Middle</apparelLayer>
+      </li>
+	  <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+		<requiredTag>Cinder_Outlands</requiredTag>
+		<apparelLayer>Shell</apparelLayer>
+      </li>
+      <li>
+        <bodyPartGroup>Legs</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(66, 61, 51)</color>
+      </li>
+    </specificApparelRequirements>
+		<apparelMoney>
+			<min>800</min>
+			<max>1500</max>
+		</apparelMoney>
+	<weaponTags>
+	<li>CinderRifles</li>
+    </weaponTags>
+    <weaponMoney>385~968</weaponMoney>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_Grenadier</defName>
 		<label>grenadier</label>
+		<combatPower>130</combatPower>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<initialWillRange>10~30</initialWillRange>
@@ -359,8 +433,8 @@
 			</li>
 		</backstoryFiltersOverride>
 		<apparelTags>
-			<li>Cinder_Military</li>
 			<li>Cinder_Civilan</li>
+			<li>Cinder_MilitaryMedium</li>
 		</apparelTags>
 	<specificApparelRequirements>
       <li>
@@ -412,6 +486,7 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_Cult</defName>
 		<label>cult follower</label>
+		<combatPower>100</combatPower>
 		<defaultFactionType>OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<initialWillRange>10~30</initialWillRange>
@@ -487,7 +562,6 @@
 					<li>Cinder_EternalFearAbility</li>
 					<li>Cinder_FearPulse</li>
 					<li>Cinder_AmorphousIED</li>
-					<li>Cinder_AmorphousWinding</li>
 					<li>Cinder_ErodedBomb</li>
 				</abilities>
 			</li>
@@ -497,6 +571,7 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_EliteCult</defName>
 		<label>cult guard</label>
+		<combatPower>150</combatPower>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<initialWillRange>10~30</initialWillRange>
@@ -568,10 +643,8 @@
 	<modExtensions>
 			<li Class="Embergarden.ModExtension_RandomOneAbility">
 				<abilities>
-				    <li>Cinder_BurnHemostasis</li>
 					<li>Cinder_SuffocatingWhispers</li>
 					<li>Cinder_EternalFearAbility</li>
-					<li>Cinder_FearPulse</li>
 					<li>Cinder_AmorphousIED</li>
 					<li>Cinder_AmorphousWinding</li>
 					<li>Cinder_ErodedBomb</li>
@@ -586,6 +659,7 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_OutlanderElite</defName>
 		<label>shock troops</label>
+		<combatPower>170</combatPower>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		 <itemQuality>Excellent</itemQuality>
@@ -658,6 +732,7 @@
     <PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_SoliderUnit</defName>
 		<label>solider unit</label>
+		<combatPower>140</combatPower>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
@@ -726,6 +801,7 @@
 	 <PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_HeavySoliderUnit</defName>
 		<label>break through unit</label>
+		<combatPower>180</combatPower>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<itemQuality>Excellent</itemQuality>
@@ -808,6 +884,7 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_Ghoul</defName>
 		<label>ghoul unit</label>
+		<combatPower>80</combatPower>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<itemQuality>Poor</itemQuality>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
@@ -857,6 +934,7 @@
 		<defName>Cinder_EliteGhoul</defName>
 		<label>ghoul unit</label>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
+		<combatPower>120</combatPower>
 		<itemQuality>Poor</itemQuality>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<isFighter>true</isFighter>

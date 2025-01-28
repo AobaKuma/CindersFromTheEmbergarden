@@ -86,7 +86,8 @@
 		<defName>Cinder_Mech_MiniTurretWalker</defName>
 		<label>Tactical turret walker</label>
 		<race>Cinder_Mech_MiniTurretWalker</race>
-		<combatPower>180</combatPower>
+		<combatPower>60</combatPower>
+		<maxPerGroup>12</maxPerGroup>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<bodyGraphicData>

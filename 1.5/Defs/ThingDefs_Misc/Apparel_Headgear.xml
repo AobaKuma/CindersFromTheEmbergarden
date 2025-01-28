@@ -42,6 +42,7 @@
         <apparel>
             <tags Inherit="false">
                 <li>Cinder_Military</li>
+				<li>Cinder_MilitaryMedium</li>
 				<li>Cinder_Military_Heavy</li>
             </tags>
             <defaultOutfitTags>
@@ -153,6 +154,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
+			<tags Inherit="false">
+				<li>Cinder_Military_Heavy</li>
+            </tags>
         </apparel>
 		<equippedStatOffsets>
         <PainShockThreshold>0.20</PainShockThreshold>
@@ -196,6 +200,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
+			<tags Inherit="false">
+				<li>Cinder_Military_Heavy</li>
+            </tags>
         </apparel>
 		<equippedStatOffsets>
         <PsychicSensitivity>-9999</PsychicSensitivity>
@@ -356,6 +363,7 @@
                 <li>Overhead</li>
             </layers>
 			<tags Inherit="false">
+				<li>Cinder_MilitaryMedium</li>
                 <li>Cinder_Cult</li>
             </tags>
         </apparel>

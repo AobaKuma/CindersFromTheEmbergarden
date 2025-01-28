@@ -66,6 +66,7 @@
     <apparel>
       <tags Inherit="false">
         <li>Cinder_Military</li>
+		<li>Cinder_MilitaryMedium</li>
       </tags>
     </apparel>
   </ThingDef>
