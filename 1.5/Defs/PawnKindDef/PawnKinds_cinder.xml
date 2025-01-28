@@ -304,7 +304,8 @@
       </li>
 	  <li>
         <bodyPartGroup>Torso</bodyPartGroup>
-		<requiredTag>Cinder_Military</requiredTag>
+		<requiredTag>Cinder_Civilan</requiredTag>
+		<stuff>Synthread</stuff>
 		<apparelLayer>Middle</apparelLayer>
       </li>
 	  <li>
@@ -328,13 +329,13 @@
     <li>CinderSimpleGuns</li>
 	<li>CinderRifles</li>
     </weaponTags>
-    <weaponMoney>385~500</weaponMoney>
+    <weaponMoney>285~420</weaponMoney>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_Outlander</defName>
 		<label>Frontline troops</label>
-		<combatPower>120</combatPower>
+		<combatPower>130</combatPower>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<initialWillRange>10~30</initialWillRange>
@@ -407,7 +408,7 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_Grenadier</defName>
 		<label>grenadier</label>
-		<combatPower>130</combatPower>
+		<combatPower>150</combatPower>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<initialWillRange>10~30</initialWillRange>
@@ -505,11 +506,12 @@
 				<categories>
 					<li>CinderStory_DefenseCouncil_CultChild</li>
 					<li>CinderStory_DefenseCouncil_Cult</li>
+					<li>CinderStory_DefenseCouncil</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
 		<apparelTags>
-			<li>Cinder_Military</li>
+			<li>Cinder_Civilan</li>
 		</apparelTags>
 	<specificApparelRequirements>
 	  <li>
@@ -548,7 +550,7 @@
     </apparelRequired>
 		<apparelMoney>
 			<min>300</min>
-			<max>700</max>
+			<max>400</max>
 		</apparelMoney>
 	<weaponTags>
     <li>MedievalMeleeBasic</li>
@@ -561,8 +563,6 @@
                     <li>Cinder_SuffocatingWhispers</li>
 					<li>Cinder_EternalFearAbility</li>
 					<li>Cinder_FearPulse</li>
-					<li>Cinder_AmorphousIED</li>
-					<li>Cinder_ErodedBomb</li>
 				</abilities>
 			</li>
 	</modExtensions>
@@ -571,7 +571,8 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_EliteCult</defName>
 		<label>cult guard</label>
-		<combatPower>150</combatPower>
+		<combatPower>200</combatPower>
+		<maxPerGroup>6</maxPerGroup>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<initialWillRange>10~30</initialWillRange>
@@ -590,6 +591,7 @@
 				<categories>
 					<li>CinderStory_DefenseCouncil_CultChild</li>
 					<li>CinderStory_DefenseCouncil_Cult</li>
+					<li>CinderStory_DefenseCouncil</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -638,6 +640,7 @@
 	<weaponTags>
     <li>MedievalMeleeBasic</li>
 	<li>MedievalMeleeAdvanced</li>
+	<li>Cinder_IndustrialMelee</li>
     </weaponTags>
     <weaponMoney>300~500</weaponMoney>
 	<modExtensions>
@@ -654,12 +657,19 @@
 	<fixedInventory>
 	         <Cinder_EmptyAgentBottle>1</Cinder_EmptyAgentBottle>
 	</fixedInventory>
+	<skills>
+      <li>
+        <skill>Melee</skill>
+        <range>7~10</range>
+      </li>
+    </skills>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_OutlanderElite</defName>
 		<label>shock troops</label>
-		<combatPower>170</combatPower>
+		<combatPower>250</combatPower>
+		<maxPerGroup>3</maxPerGroup>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		 <itemQuality>Excellent</itemQuality>
@@ -671,7 +681,7 @@
 		<startingHediffs>
 		  <li>
           <def>Cinder_ExtraArmourPlateII</def>
-          <chance>0.5</chance>
+          <chance>1</chance>
           </li>
         </startingHediffs>
 		<backstoryFiltersOverride>
@@ -727,6 +737,16 @@
 				</abilities>
 			</li>
 	</modExtensions>
+	 <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>5~6</range>
+      </li>
+	  <li>
+        <skill>Shooting</skill>
+        <range>4~6</range>
+      </li>
+    </skills>
 	</PawnKindDef>
 
     <PawnKindDef ParentName="Cinder_BasePawn">
@@ -794,6 +814,12 @@
 	<li>GunHeavy</li>
     </weaponTags>
     <weaponMoney>500~1900</weaponMoney>
+	 <skills>
+	  <li>
+        <skill>Shooting</skill>
+        <range>4~6</range>
+      </li>
+    </skills>
 	</PawnKindDef>
 	
 
@@ -801,7 +827,7 @@
 	 <PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_HeavySoliderUnit</defName>
 		<label>break through unit</label>
-		<combatPower>180</combatPower>
+		<combatPower>200</combatPower>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<itemQuality>Excellent</itemQuality>
@@ -879,6 +905,16 @@
 	<fixedInventory>
 	        <Cinder_EmptyAgentBottle>1</Cinder_EmptyAgentBottle>
 	</fixedInventory>
+	  <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>5~7</range>
+      </li>
+	  <li>
+        <skill>Shooting</skill>
+        <range>4~8</range>
+      </li>
+    </skills>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Cinder_BasePawn">

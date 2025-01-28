@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <RulePackDef><!-- 提灯舰队名称 -->
+    <defName>Cinder_LanternFleet</defName>
+    <rulePack>
+      <rulesStrings>
+        <!-- 153rd Frontier Division-->
+        <li>r_name-> [BrigadeNum0][BrigadeNum1][BrigadeNum2] [BrigadeType] [complex]</li>
+
+		<li>complex->Division</li>
+		<li>complex->Convoy</li>
+		<li>complex->Fleet</li>
+
+        <li>BrigadeType->Assault</li>
+        <li>BrigadeType->Explore</li>
+        <li>BrigadeType->Transport</li>
+        <li>BrigadeType->Logistic</li>
+
+        <li>BrigadeNum0->1</li>
+        <li>BrigadeNum0->2</li>
+        <li>BrigadeNum0->3</li>
+        <li>BrigadeNum0->4</li>
+        <li>BrigadeNum0->5</li>
+        <li>BrigadeNum0->6</li>
+        <li>BrigadeNum0->7</li>
+        <li>BrigadeNum0->8</li>
+        <li>BrigadeNum0->9</li>
+
+        <li>BrigadeNum1->0</li>
+        <li>BrigadeNum1->1</li>
+        <li>BrigadeNum1->2</li>
+        <li>BrigadeNum1->3</li>
+        <li>BrigadeNum1->4</li>
+        <li>BrigadeNum1->5</li>
+        <li>BrigadeNum1->6</li>
+        <li>BrigadeNum1->7</li>
+        <li>BrigadeNum1->8</li>
+        <li>BrigadeNum1->9</li>
+
+        <li>BrigadeNum2->0th</li>
+        <li>BrigadeNum2->1st</li>
+        <li>BrigadeNum2->2nd</li>
+        <li>BrigadeNum2->3rd</li>
+        <li>BrigadeNum2->4th</li>
+        <li>BrigadeNum2->5th</li>
+        <li>BrigadeNum2->6th</li>
+        <li>BrigadeNum2->7th</li>
+        <li>BrigadeNum2->8th</li>
+        <li>BrigadeNum2->9th</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef><!-- 提灯舰队基地名称 -->
+    <defName>Cinder_LanternFleetBase</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[Number][Number] [complexAdj] [Type]</li>
+
+        <li>Type->Assault Ship</li>
+        <li>Type->Recon Ship</li>
+        <li>Type->Bomber Ship</li>
+        <li>Type->Supply Ship</li>
+        <li>Type->Covert Ops</li>
+        <li>Type->Heavy Interdictor</li>
+        <li>Type->Carrier</li>
+		<li>Type->Dreadnought</li>
+		<li>Type->Ironclad</li>
+        <li>Type->Industrial flagship</li>
+
+        <li>complexAdj->secret</li>
+		<li>complexAdj->ancient</li>
+		<li>complexAdj->old</li>
+		<li>complexAdj->hidden</li>
+		<li>complexAdj->dusty</li>
+		<li>complexAdj->dangerous</li>
+		<li>complexAdj->hidden</li>
+
+        <li>Number->0</li>
+        <li>Number->1</li>
+        <li>Number->2</li>
+        <li>Number->3</li>
+        <li>Number->4</li>
+        <li>Number->5</li>
+        <li>Number->6</li>
+        <li>Number->7</li>
+        <li>Number->8</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

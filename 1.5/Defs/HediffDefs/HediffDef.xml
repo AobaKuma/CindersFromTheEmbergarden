@@ -43,7 +43,7 @@
 		<isBad>false</isBad>
 		<stages>
 			<li>
-				<painOffset>-0.5</painOffset>
+				<painOffset>-0.3</painOffset>
 				<damageFactors>
 					<Flame>0.1</Flame>
 					<Burn>0.1</Burn>
@@ -135,7 +135,7 @@
 					</li>
 				</capMods>
 				<statFactors>
-					<IncomingDamageFactor>0.2</IncomingDamageFactor>
+					<IncomingDamageFactor>0.01</IncomingDamageFactor>
 					<RestFallRateFactor>0</RestFallRateFactor>
 				</statFactors>
 			</li>
@@ -412,7 +412,7 @@
 		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
 		<comps>
 			<li Class="Embergarden.HediffCompProperties_ProtectiveShield">
-				<hitpoints>40</hitpoints>
+				<hitpoints>30</hitpoints>
 				<filthOnDamaged>Filth_MachineBits</filthOnDamaged>
 				<effectOnDamaged>Deflect_Metal</effectOnDamaged>
 			</li>

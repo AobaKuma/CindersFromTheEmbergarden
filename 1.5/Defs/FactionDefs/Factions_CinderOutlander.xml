@@ -28,7 +28,7 @@
 	
     <factionIconPath>UI/Icon/fleetIcon</factionIconPath>
     <techLevel>Spacer</techLevel>
-    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <factionNameMaker>Cinder_LanternFleet</factionNameMaker>
     <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
     <allowedCultures><li>Cinder_Culture</li></allowedCultures>
 	 <requiredMemes>
@@ -48,10 +48,10 @@
     </disallowedPrecepts>
     <structureMemeWeights>
       <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
-      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
       <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
-      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
-      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_Archist>
+      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_OriginChristian>
     </structureMemeWeights>
     <xenotypeSet>
       <xenotypeChances>
@@ -106,7 +106,7 @@
 		  <Cinder_OutlanderSecond>13</Cinder_OutlanderSecond>
           <Cinder_Outlander>13</Cinder_Outlander>
           <Cinder_Mech_WalkerAutoCannon>1.5</Cinder_Mech_WalkerAutoCannon>
-		  <Cinder_Grenadier>0.7</Cinder_Grenadier>
+		  <Cinder_Grenadier>1.2</Cinder_Grenadier>
           <Cinder_EliteCult>2</Cinder_EliteCult>
           <Cinder_OutlanderElite>1</Cinder_OutlanderElite>
           <Cinder_Mech_MiniTurretWalker>13</Cinder_Mech_MiniTurretWalker>
@@ -119,8 +119,8 @@
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>
-          <Cinder_Cult>13</Cinder_Cult>
-          <Cinder_Mech_MiniTurretWalker>13</Cinder_Mech_MiniTurretWalker>
+          <Cinder_Cult>10</Cinder_Cult>
+          <Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
           <Cinder_EliteCult>2.5</Cinder_EliteCult>
           <Cinder_Mech_WalkerAutoCannon>2</Cinder_Mech_WalkerAutoCannon>
 		  <Cinder_Mech_WalkerSniper>0.7</Cinder_Mech_WalkerSniper>
@@ -217,5 +217,5 @@
     </root>
   </ThingSetMakerDef>
 
-
+  
 </Defs>
