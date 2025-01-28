@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>Cinder_ImpactBreaker</defName>
+    <label>impact breaker</label>
+    <description>A breaking hammer used for heavy armored targets and can also be used to smash stones.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Weapons/ImpactBreaker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.4</drawSize>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Industrial</techLevel>
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>4.25</Mass>
+    </statBases>
+	<equippedAngleOffset>-25</equippedAngleOffset>
+    <recipeMaker Inherit="false">
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+	  <recipeUsers>
+        <li>Cinder_AncientWorkstation</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Steel>40</Steel>
+            <Cinder_AmorphousPolymer>40</Cinder_AmorphousPolymer>
+	</costList>
+    <weaponTags>
+      <li>Cinder_IndustrialMelee</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+    <tools>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<equippedStatOffsets>
+         <DeepDrillingSpeed>0.2</DeepDrillingSpeed>
+		 <MiningSpeed>0.5</MiningSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Cinder_ElectricScythe</defName>
+    <label>electric scythe</label>
+    <description>An electric ultrasonic sickle used for rapid cutting of flesh and blood, and can also be used for harvesting crops.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Weapons/ElectricScythe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.6</drawSize>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Industrial</techLevel>
+    <costStuffCount>50</costStuffCount>
+    <weaponTags>
+      <li>Cinder_IndustrialMelee</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>0.85</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+   <recipeMaker Inherit="false">
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+	  <recipeUsers>
+        <li>Cinder_AncientWorkstation</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Steel>40</Steel>
+            <Cinder_AmorphousPolymer>40</Cinder_AmorphousPolymer>
+	</costList>
+    <tools>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+	<equippedStatOffsets>
+        <PlantWorkSpeed>0.60</PlantWorkSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+
+
+  
+</Defs>

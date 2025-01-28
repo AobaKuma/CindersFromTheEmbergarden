@@ -2,12 +2,12 @@
 <Defs>
 	<FactionDef ParentName="PlayerFactionBase">
 		<defName>Cinder_PlayerFaction</defName>
-		<label>"佔位符"</label>
-		<description>"佔位符_簡短介紹"</description>
+		<label>new site</label>
+		<description>A newly established fleet supply station.</description>
 		<isPlayer>true</isPlayer>
 		<basicMemberKind>Cinder_Colonist</basicMemberKind>
-		<pawnSingular>Cinder</pawnSingular>
-		<pawnsPlural>Cinders</pawnsPlural>
+		<pawnSingular>Colonist</pawnSingular>
+		<pawnsPlural>Colonist</pawnsPlural>
 		<techLevel>Industrial</techLevel>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
@@ -15,11 +15,17 @@
 		<backstoryFilters>
 		  <li>
 			<categories>
-			  <li>CinderStory</li>
-			</categories>
+					<li>CinderStory_Refugee_Child</li>
+					<li>CinderStory_Refugee</li>
+					<li>CinderStory_DefenseCouncil_Child</li>
+					<li>CinderStory_DefenseCouncil</li>
+					<li>CinderStory_DefenseCouncil_CultChild</li>
+					<li>CinderStory_DefenseCouncil_Cult</li>
+					<li>CinderStory_ESDSP_Worker</li>
+				</categories>
 		  </li>
 		</backstoryFilters>
-		<factionIconPath>UI/Icon/factionIcon</factionIconPath>
+		<factionIconPath>UI/Icon/playerIcon</factionIconPath>
 		<startingResearchTags>
 		  <li>ClassicStart</li>
 		</startingResearchTags>

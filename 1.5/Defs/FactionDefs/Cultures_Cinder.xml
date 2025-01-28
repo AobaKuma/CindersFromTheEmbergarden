@@ -12,11 +12,11 @@
     <allowedPlaceTags>
       <li>OriginSpacer</li>
     </allowedPlaceTags>
-    <iconPath>Cinder/CultureIcon</iconPath>
-    <iconColor>(65, 65, 65)</iconColor>
+    <iconPath>UI/Icon/Culture_Icon</iconPath>
+    <iconColor>(1, 1, 1)</iconColor>
     <thingStyleCategories>
-      <li MayRequire="Ludeon.RimWorld.Ideology">
-        <category>Rustic</category>
+      <li MayRequire="XMB.AmorphousStylePack.MO">
+        <category>BreadMo_AAT_Amorphous</category>
         <priority>2</priority>
       </li>
     </thingStyleCategories>

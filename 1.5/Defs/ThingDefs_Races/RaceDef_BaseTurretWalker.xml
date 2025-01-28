@@ -5,8 +5,8 @@
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<statBases>
 			<MoveSpeed>4.3</MoveSpeed>
-			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
 			<MarketValue>1200</MarketValue>
 			<PsychicSensitivity>0.5</PsychicSensitivity>
 			<ToxicResistance>1</ToxicResistance>

@@ -42,7 +42,6 @@
         <apparel>
             <tags Inherit="false">
                 <li>Cinder_Military</li>
-                <li>IndustrialMilitaryBasic</li>
 				<li>Cinder_Military_Heavy</li>
             </tags>
             <defaultOutfitTags>
@@ -310,6 +309,58 @@
         <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
 		<ToxicEnvironmentResistance>0.75</ToxicEnvironmentResistance>
 		<PainShockThreshold>0.20</PainShockThreshold>
+        </equippedStatOffsets>
+    </ThingDef>
+	
+	
+	<ThingDef ParentName="Cinder_ArmorHelmetBase">
+        <defName>Cinder_HeadGear_BrokenMask</defName>
+        <label>broken mask</label>
+        <description>The damaged mask recovered from the battlefield is already worn out, but there is still a little protective ability.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/BrokenMask/Icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+        </graphicData>
+		<costList>
+			<Cinder_HeadGear_FullyEnclosedMask>1</Cinder_HeadGear_FullyEnclosedMask>
+		</costList>
+        <statBases>
+		    <MarketValue>25</MarketValue>
+            <WorkToMake>9200</WorkToMake>
+            <MaxHitPoints>400</MaxHitPoints>
+            <Mass>2</Mass>
+            <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.26</ArmorRating_Heat>
+			<Insulation_Cold>10.4</Insulation_Cold>
+			<Insulation_Heat>9</Insulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+		<randomStyleChance>1</randomStyleChance>
+       <randomStyle>
+      <li>
+        <styleDef>CinderStyle_BrokenMask</styleDef>
+      </li>
+      <li>
+        <styleDef>CinderStyle_BrokenFlakMask</styleDef>
+      </li>
+    </randomStyle>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/BrokenMask/BrokenMask</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+			<tags Inherit="false">
+                <li>Cinder_Cult</li>
+            </tags>
+        </apparel>
+		<equippedStatOffsets>
+        <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
         </equippedStatOffsets>
     </ThingDef>
 </Defs>
