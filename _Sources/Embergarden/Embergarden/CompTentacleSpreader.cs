@@ -26,12 +26,7 @@ namespace Embergarden
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
-            spawnedThing ??= ThingMaker.MakeThing(Props.spreadedThingDef);
-            if (GenPlace.TryPlaceThing(spawnedThing, parent.Position, parent.Map, ThingPlaceMode.Direct))
-            {
-                spawnedThing.SetFactionDirect(parent.Faction);
-                spawnedThing = null;
-            }
+            SpawnThing(parent.Position);
         }
 
         public override void CompTickRare()
@@ -68,13 +63,8 @@ namespace Embergarden
                 IntVec3 intVec = parent.Position + GenRadial.RadialPattern[i];
                 if (!intVec.InBounds(parent.Map)) continue;
                 if (parent.Map.thingGrid.ThingsListAtFast(intVec).Select(t => t.def).Contains(Props.spreadedThingDef)) continue;
-
-                spawnedThing ??= ThingMaker.MakeThing(Props.spreadedThingDef);
-                if (GenPlace.TryPlaceThing(spawnedThing, intVec, parent.Map, ThingPlaceMode.Direct))
-                {
-                    spawnedThing.SetFactionDirect(parent.Faction);
-                    spawnedThing = null;
-                }
+                if (intVec.Filled(parent.Map)) continue;
+                SpawnThing(intVec);
             }
 
             if (pct >= 1)
@@ -82,6 +72,17 @@ namespace Embergarden
                 parent.Destroy();
                 effecter?.Cleanup();
                 effecter = null;
+            }
+        }
+
+        void SpawnThing(IntVec3 cell)
+        {
+            if (cell.Filled(parent.Map))
+            {
+                spawnedThing ??= ThingMaker.MakeThing(Props.spreadedThingDef);
+                GenPlace.TryPlaceThing(spawnedThing, cell, parent.Map, ThingPlaceMode.Direct);
+                spawnedThing.SetFactionDirect(parent.Faction);
+                spawnedThing = null;
             }
         }
 
