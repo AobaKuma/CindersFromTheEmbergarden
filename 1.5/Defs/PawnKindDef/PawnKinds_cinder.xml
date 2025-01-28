@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<PawnKindDef Name="Cinder_BasePawn" Abstract="True">
-		<combatPower>60</combatPower>
+		<combatPower>50</combatPower>
 		<race>Alien_Cinder</race>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
@@ -265,7 +265,7 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_OutlanderSecond</defName>
 		<label>Logistics troops</label>
-		<combatPower>80</combatPower>
+		<combatPower>70</combatPower>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<initialWillRange>10~30</initialWillRange>
@@ -304,7 +304,7 @@
       </li>
 	  <li>
         <bodyPartGroup>Torso</bodyPartGroup>
-		<requiredTag>Cinder_Civilan</requiredTag>
+		<requiredTag>Cinder_CivilanC</requiredTag>
 		<stuff>Synthread</stuff>
 		<apparelLayer>Middle</apparelLayer>
       </li>
@@ -402,7 +402,7 @@
 	<weaponTags>
 	<li>CinderRifles</li>
     </weaponTags>
-    <weaponMoney>385~968</weaponMoney>
+    <weaponMoney>385~868</weaponMoney>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="Cinder_BasePawn">
@@ -414,6 +414,8 @@
 		<initialWillRange>10~30</initialWillRange>
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<canBeSapper>true</canBeSapper>
+        <isGoodBreacher>true</isGoodBreacher>
 		<maxGenerationAge>45</maxGenerationAge>
         <minGenerationAge>19</minGenerationAge>
 		<startingHediffs>
@@ -471,7 +473,7 @@
 			<max>2200</max>
 		</apparelMoney>
 	<weaponTags>
-    <li>GrenadeDestructive</li>
+    <li>EmpireGrenadeDestructive</li>
     </weaponTags>
     <weaponMoney>300~1000</weaponMoney>
 	<modExtensions>
@@ -525,6 +527,12 @@
 		<requiredTag>IndustrialBasic</requiredTag>
 		<apparelLayer>OnSkin</apparelLayer>
 		 <color>(85, 85, 85)</color>
+      </li>
+	   <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+		<requiredTag>Cinder_CivilanC</requiredTag>
+		<stuff>Synthread</stuff>
+		<apparelLayer>Middle</apparelLayer>
       </li>
 	  <li>
         <apparelLayer>Shell</apparelLayer>
@@ -640,7 +648,6 @@
 	<weaponTags>
     <li>MedievalMeleeBasic</li>
 	<li>MedievalMeleeAdvanced</li>
-	<li>Cinder_IndustrialMelee</li>
     </weaponTags>
     <weaponMoney>300~500</weaponMoney>
 	<modExtensions>
@@ -724,7 +731,6 @@
 		</apparelMoney>
 	<weaponTags>
 	<li>CinderHeavy</li>
-	<li>GunHeavy</li>
 	<li>GunSingleUse</li>
     </weaponTags>
     <weaponMoney>2400~2900</weaponMoney>
@@ -752,7 +758,7 @@
     <PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_SoliderUnit</defName>
 		<label>solider unit</label>
-		<combatPower>140</combatPower>
+		<combatPower>180</combatPower>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
@@ -813,7 +819,7 @@
 	<li>CinderRifles</li>
 	<li>GunHeavy</li>
     </weaponTags>
-    <weaponMoney>500~1900</weaponMoney>
+    <weaponMoney>700~1900</weaponMoney>
 	 <skills>
 	  <li>
         <skill>Shooting</skill>
@@ -822,12 +828,100 @@
     </skills>
 	</PawnKindDef>
 	
-
+    <PawnKindDef ParentName="Cinder_BasePawn">
+		<defName>Cinder_BreakUnit</defName>
+		<label>break through unit</label>
+		<combatPower>280</combatPower>
+		<maxPerGroup>4</maxPerGroup>
+		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
+		<isFighter>true</isFighter>
+		<itemQuality>Excellent</itemQuality>
+		<biocodeWeaponChance>0.7</biocodeWeaponChance>
+		<initialWillRange>10~30</initialWillRange>
+		<canBeSapper>true</canBeSapper>
+        <isGoodBreacher>true</isGoodBreacher>
+		<invNutrition>1</invNutrition>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<maxGenerationAge>35</maxGenerationAge>
+        <minGenerationAge>21</minGenerationAge>
+		<startingHediffs>
+		  <li>
+          <def>Cinder_LongDream</def>
+          </li>
+		  <li>
+          <def>Cinder_ExtraArmourPlateII</def>
+          <chance>1</chance>
+          </li>
+        </startingHediffs>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>CinderStory_Refugee_Child</li>
+					<li>CinderStory_ESDSP_Child</li>
+					<li>CinderStory_ESDSP_Soldier</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelTags>
+			<li>Cinder_Military_Heavy</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+	<specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <stuff>Hyperweave</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(66, 61, 51)</color>
+      </li>
+      <li>
+        <bodyPartGroup>Legs</bodyPartGroup>
+        <stuff>Hyperweave</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(66, 61, 51)</color>
+      </li>
+    </specificApparelRequirements>
+	<apparelRequired>
+      <li>Cinder_Apparel_HeavyArmorDress</li>
+	  <li>Cinder_HeadGear_FullyEnclosedMask</li>
+    </apparelRequired>
+		<apparelMoney>
+			<min>15500</min>
+			<max>15900</max>
+		</apparelMoney>
+	<weaponTags>
+	  <li>CinderHeavy</li>
+	  <li>EmpireGrenadeDestructive</li>
+    </weaponTags>
+    <weaponMoney>3500~3900</weaponMoney>
+	<modExtensions>
+			<li Class="Embergarden.ModExtension_RandomOneAbility">
+				<abilities>
+					<li>Cinder_ErodedBomb</li>
+				</abilities>
+			</li>
+	</modExtensions>
+	<fixedInventory>
+	        <Cinder_EmptyAgentBottle>1</Cinder_EmptyAgentBottle>
+	</fixedInventory>
+	  <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>5~7</range>
+      </li>
+	  <li>
+        <skill>Shooting</skill>
+        <range>4~8</range>
+      </li>
+    </skills>
+	</PawnKindDef>
 	
 	 <PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_HeavySoliderUnit</defName>
-		<label>break through unit</label>
-		<combatPower>200</combatPower>
+		<label>Bombing unit</label>
+		<combatPower>280</combatPower>
+		<maxPerGroup>4</maxPerGroup>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<itemQuality>Excellent</itemQuality>
@@ -885,7 +979,6 @@
 		</apparelMoney>
 	<weaponTags>
 	  <li>CinderHeavy</li>
-	  <li>GunHeavy</li>
 	  <li>GunSingleUse</li>
     </weaponTags>
     <weaponMoney>3500~3900</weaponMoney>
@@ -920,7 +1013,7 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_Ghoul</defName>
 		<label>ghoul unit</label>
-		<combatPower>80</combatPower>
+		<combatPower>100</combatPower>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<itemQuality>Poor</itemQuality>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
@@ -970,7 +1063,7 @@
 		<defName>Cinder_EliteGhoul</defName>
 		<label>ghoul unit</label>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
-		<combatPower>120</combatPower>
+		<combatPower>200</combatPower>
 		<itemQuality>Poor</itemQuality>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<isFighter>true</isFighter>

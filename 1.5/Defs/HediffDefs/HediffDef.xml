@@ -47,6 +47,8 @@
 				<damageFactors>
 					<Flame>0.1</Flame>
 					<Burn>0.1</Burn>
+					<Flame>0</Flame>
+				  <Burn>0</Burn>
 				</damageFactors>
 				<totalBleedFactor>0.9</totalBleedFactor>
 			</li>
@@ -138,6 +140,15 @@
 					<IncomingDamageFactor>0.01</IncomingDamageFactor>
 					<RestFallRateFactor>0</RestFallRateFactor>
 				</statFactors>
+				<damageFactors>
+				 <Flame>0</Flame>
+				 <Burn>0</Burn>
+				  <Cinder_Bomb>0</Cinder_Bomb>
+				  <Cinder_BombB>0</Cinder_BombB>
+				  <Vaporize>0</Vaporize>
+				  <Cinder_BombC>0</Cinder_BombC>
+				  <Bullet>0.6</Bullet>
+                </damageFactors>
 			</li>
 		</stages>
 	</HediffDef>

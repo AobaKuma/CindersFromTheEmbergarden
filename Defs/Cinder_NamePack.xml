@@ -52,6 +52,24 @@
       </rulesStrings>
     </rulePack>
   </RulePackDef>
+  
+    <RulePackDef><!-- 摇篮名称 -->
+    <defName>Cinder_Cradle</defName>
+    <rulePack>
+      <rulesStrings>
+        <!-- 153rd Frontier Division-->
+        <li>r_name->[BrigadeType] [complex]</li>
+
+		<li>complex->Cradle</li>
+		<li>complex->Garden</li>
+
+        <li>BrigadeType->Withering</li>
+        <li>BrigadeType->Ember</li>
+        <li>BrigadeType->Ashe</li>
+        <li>BrigadeType->Tranquil</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
 
   <RulePackDef><!-- 提灯舰队基地名称 -->
     <defName>Cinder_LanternFleetBase</defName>

@@ -498,7 +498,7 @@
 			<MaxHitPoints>190</MaxHitPoints>
 			<Flammability>0</Flammability>
 			<WorkToBuild>1800</WorkToBuild>
-			<Mass>8</Mass>
+			<Mass>3</Mass>
 			<Beauty>-20</Beauty>
 			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
 		</statBases>
@@ -594,7 +594,7 @@
 			<AccuracyLong>0.24</AccuracyLong>
 			<RangedWeapon_Cooldown>4.8</RangedWeapon_Cooldown>
 			<DeteriorationRate>0</DeteriorationRate>
-			<Mass>5</Mass>
+			<Mass>2</Mass>
 			<Flammability>0</Flammability>
 		</statBases>
 		<verbs>

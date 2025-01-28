@@ -48,8 +48,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>10.0</power>
-				<cooldownTime>1</cooldownTime>
+				<power>6.0</power>
+				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
 			</li>
@@ -59,8 +59,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>10.0</power>
-				<cooldownTime>1</cooldownTime>
+				<power>6.0</power>
+				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
 			</li>
@@ -69,8 +69,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>15.5</power>
-				<cooldownTime>1</cooldownTime>
+				<power>10</power>
+				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>

@@ -112,7 +112,7 @@
 		<race>
 			<renderTree>Cinder_ErodedExo</renderTree>
 			<body>Cinder_ErodedEXO</body>
-			<baseHealthScale>6</baseHealthScale>
+			<baseHealthScale>4</baseHealthScale>
 			<detritusLeavings>
 				<li>
 					<def>Cinder_ChunkSlag</def>
@@ -223,8 +223,8 @@
 		<defName>Cinder_Mech_ErodedEXO</defName>
 		<label>eroded exoskeleton</label>
 		<race>Cinder_Mech_ErodedEXO</race>
-		<combatPower>800</combatPower>
-         <maxPerGroup>4</maxPerGroup>
+		<combatPower>900</combatPower>
+         <maxPerGroup>2</maxPerGroup>
          <isBoss>true</isBoss>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">

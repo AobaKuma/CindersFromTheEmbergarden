@@ -56,7 +56,7 @@
 
 	<ThingDef ParentName="Cinder_BaseMechaWalker">
 		<defName>Cinder_Mech_WarAttacker</defName>
-		<label>war sweeper</label>
+		<label>war attacker</label>
 		<description>TODO</description>
 		<tools>
 			<li>
@@ -97,7 +97,7 @@
 			<renderTree>Cinder_WarAttacker</renderTree>
 			<body>Cinder_ErodedEXO</body>
 			<baseBodySize>3.4</baseBodySize>
-			<baseHealthScale>10</baseHealthScale>
+			<baseHealthScale>9</baseHealthScale>
 			<detritusLeavings>
 				<li>
 					<def>Cinder_ChunkSlag</def>
@@ -215,7 +215,7 @@
 		<defName>Cinder_Mech_WarAttacker</defName>
 		<label>war attacker</label>
 		<race>Cinder_Mech_WarAttacker</race>
-		<combatPower>2800</combatPower>
+		<combatPower>1000</combatPower>
          <maxPerGroup>2</maxPerGroup>
          <isBoss>true</isBoss>
 		<lifeStages>
