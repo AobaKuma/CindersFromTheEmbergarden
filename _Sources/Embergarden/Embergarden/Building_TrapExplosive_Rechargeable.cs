@@ -51,10 +51,6 @@ namespace Embergarden
                     progressBarEffecter = null;
                 }
                 countdown = def.building.turretBurstCooldownTime.SecondsToTicks();
-
-                base.SpringSub(p);
-
-                comp.StopWick();
             }
         }
 
