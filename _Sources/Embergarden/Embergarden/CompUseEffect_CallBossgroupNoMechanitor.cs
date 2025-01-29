@@ -11,6 +11,7 @@ namespace Embergarden
         {
             base.DoEffect(usedBy);
 
+            Props.effecterDef?.Spawn(parent.Position, parent.Map);
             GameComponent_Bossgroup component = Current.Game.GetComponent<GameComponent_Bossgroup>();
             if (component != null)
             {
@@ -27,5 +28,7 @@ namespace Embergarden
         }
 
         public BossgroupDef bossgroupDef;
+
+        public EffecterDef effecterDef;
     }
 }

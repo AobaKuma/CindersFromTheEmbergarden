@@ -46,10 +46,9 @@
         <useDuration>900</useDuration>
         <floatMenuFactionIcon>Cinder_ESDSP</floatMenuFactionIcon>
       </li>
-      <li Class="CompProperties_Useable_CallBossgroup">
+      <li Class="Embergarden.CompPropertiesUseable_SummonRaid">
         <bossgroupDef>Cinder_CombatUnitGroup</bossgroupDef>
         <effecterDef>CinderMote_Amorphous</effecterDef>
-        <delayTicks>120</delayTicks>
       </li>
       <li Class="CompProperties_UseEffectDestroySelf">
         <delayTicks>120</delayTicks>
