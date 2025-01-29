@@ -85,6 +85,36 @@
           <Cinder_Mech_MiniTurretWalker>12</Cinder_Mech_MiniTurretWalker>
         </escorts>
       </li>
+	  <li> <!-- 8 -->
+        <bossCount>4</bossCount>
+        <escorts>
+          <Cinder_SoliderUnit>6</Cinder_SoliderUnit>
+		  <Cinder_Mech_ErodedEXO>2</Cinder_Mech_ErodedEXO>
+		  <Cinder_Mech_WarSweeper>1</Cinder_Mech_WarSweeper>
+          <Cinder_HeavySoliderUnit>4</Cinder_HeavySoliderUnit>
+          <Cinder_Mech_MiniTurretWalker>12</Cinder_Mech_MiniTurretWalker>
+        </escorts>
+      </li>
+	  <li> <!-- 9 -->
+        <bossCount>4</bossCount>
+        <escorts>
+          <Cinder_SoliderUnit>10</Cinder_SoliderUnit>
+		  <Cinder_Mech_ErodedEXO>2</Cinder_Mech_ErodedEXO>
+		  <Cinder_Mech_WarSweeper>2</Cinder_Mech_WarSweeper>
+          <Cinder_HeavySoliderUnit>4</Cinder_HeavySoliderUnit>
+          <Cinder_Mech_MiniTurretWalker>12</Cinder_Mech_MiniTurretWalker>
+        </escorts>
+      </li>
+	  <li> <!-- 10 -->
+        <bossCount>4</bossCount>
+        <escorts>
+          <Cinder_SoliderUnit>10</Cinder_SoliderUnit>
+		  <Cinder_Mech_ErodedEXO>2</Cinder_Mech_ErodedEXO>
+		  <Cinder_Mech_WarAttacker>2</Cinder_Mech_WarAttacker>
+          <Cinder_HeavySoliderUnit>4</Cinder_HeavySoliderUnit>
+          <Cinder_Mech_MiniTurretWalker>12</Cinder_Mech_MiniTurretWalker>
+        </escorts>
+      </li>
     </waves>
     <leaderDescription>Standard combat unit group, units with consciousness taken over by DI will independently assess threats and engage in combat.</leaderDescription>
     <rewardDef>Cinder_ExtraArmour</rewardDef>

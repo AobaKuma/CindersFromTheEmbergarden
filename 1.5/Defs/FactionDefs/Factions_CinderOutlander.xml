@@ -264,11 +264,11 @@
     <allowedCultures><li>Cinder_Culture</li></allowedCultures>
 	 <requiredMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
     </requiredMemes>
 	<allowedMemes>
-	      <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
     </allowedMemes>
 	<disallowedPrecepts>
       <li>Slavery_Classic</li>

@@ -33,14 +33,14 @@
 		</questContentRules>
 		<root Class="Embergarden.QuestNode_Root_BossgroupFactionExposed">
 			<factionDef>Cinder_ESDSP</factionDef>
-			<LetterLabelBossgroupSummoned>Boss [BOSSLABEL] summoned TODO</LetterLabelBossgroupSummoned>
-			<LetterBossgroupSummoned>Boss [FACTION] summoned TODO</LetterBossgroupSummoned>
+			<LetterLabelBossgroupSummoned>The combat unit has been summoned</LetterLabelBossgroupSummoned>
+			<LetterBossgroupSummoned>Your forged signal has been sent out, and the combat unit is about to arrive,please prepare for battle.</LetterBossgroupSummoned>
 
-			<LetterLabelBossgroupArrived>Boss [BOSSLABEL] arrived TODO</LetterLabelBossgroupArrived>
-			<LetterBossgroupArrived>Boss [FACTION] [LEADERDESC] [BOSSLABEL] [PAWNPURAL] [WAVEDESC] arrived TODO</LetterBossgroupArrived>
+			<LetterLabelBossgroupArrived>combat unit arrived.</LetterLabelBossgroupArrived>
+			<LetterBossgroupArrived>combat unit arrived！</LetterBossgroupArrived>
 
-			<AlertBossgroupIncoming>Boss [BOSSLABEL] incoming TODO</AlertBossgroupIncoming>
-			<AlertBossgroupIncomingDesc>Boss [BOSSLABEL] incoming TODO</AlertBossgroupIncomingDesc>
+			<AlertBossgroupIncoming>Combat unit is approaching.</AlertBossgroupIncoming>
+			<AlertBossgroupIncomingDesc>Combat unit is approaching.</AlertBossgroupIncomingDesc>
 		</root>
 	</QuestScriptDef>
 
