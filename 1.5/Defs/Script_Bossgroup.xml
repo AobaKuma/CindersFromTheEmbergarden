@@ -32,7 +32,7 @@
 			</rulesStrings>
 		</questContentRules>
 		<root Class="Embergarden.QuestNode_Root_BossgroupFactionExposed">
-			<factionDef></factionDef>
+			<factionDef>Cinder_ESDSP</factionDef>
 		</root>
 	</QuestScriptDef>
 
