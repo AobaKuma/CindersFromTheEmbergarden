@@ -178,7 +178,7 @@
 					</li>
 					<li>
 						<capacity>Moving</capacity>
-						<offset>-999</offset>
+						<setMax>0</setMax>
 					</li>
 				</capMods>
 			</li>

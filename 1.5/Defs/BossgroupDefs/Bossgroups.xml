@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <BossgroupDef Abstract="True" Name="Cinder_BaseBossgroup">
+    <quest>Cinder_Boss</quest>
+    <repeatWaveStartIndex>2</repeatWaveStartIndex>
+  </BossgroupDef>
+
+  <!-- Diabolus -->
+
+  <BossDef>
+    <defName>Cinder_CombatUnitGroup</defName>
+    <kindDef>Cinder_CasterUnit</kindDef>
+    <appearAfterTicks>7200000</appearAfterTicks><!-- 2 years -->
+  </BossDef>
+
+  <BossgroupDef ParentName="BaseBossgroup">
+    <defName>Cinder_CombatUnitGroup</defName>
+    <boss>Cinder_CombatUnitGroup</boss>
+    <waves>
+      <li> <!-- 0 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <Cinder_Ghoul>1</Cinder_Ghoul>
+		   <Cinder_Mech_MiniTurretWalker>1</Cinder_Mech_MiniTurretWalker>
+        </escorts>
+      </li>
+      <li> <!-- 1 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <Cinder_Ghoul>2</Cinder_Ghoul>
+          <Cinder_Mech_MiniTurretWalker>4</Cinder_Mech_MiniTurretWalker>
+        </escorts>
+      </li>
+      <li> <!-- 2 - Repeat starts here -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <Cinder_Ghoul>4</Cinder_Ghoul>
+          <Cinder_EliteGhoul>2</Cinder_EliteGhoul>
+          <Cinder_Mech_MiniTurretWalker>6</Cinder_Mech_MiniTurretWalker>
+        </escorts>
+      </li>
+      <li> <!-- 3 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <Cinder_SoliderUnit>4</Cinder_SoliderUnit>
+          <Cinder_HeavySoliderUnit>1</Cinder_HeavySoliderUnit>
+          <Cinder_Mech_MiniTurretWalker>8</Cinder_Mech_MiniTurretWalker>
+        </escorts>
+      </li>
+      <li> <!-- 4 -->
+        <bossCount>1</bossCount>
+        <escorts>
+          <Cinder_SoliderUnit>4</Cinder_SoliderUnit>
+          <Cinder_HeavySoliderUnit>2</Cinder_HeavySoliderUnit>
+          <Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
+		  <Cinder_Mech_WalkerAutoCannon>2</Cinder_Mech_WalkerAutoCannon>
+        </escorts>
+      </li>
+      <li> <!-- 5 -->
+        <bossCount>2</bossCount>
+        <escorts>
+          <Cinder_SoliderUnit>6</Cinder_SoliderUnit>
+          <Cinder_HeavySoliderUnit>2</Cinder_HeavySoliderUnit>
+          <Cinder_Mech_MiniTurretWalker>12</Cinder_Mech_MiniTurretWalker>
+		  <Cinder_Mech_WalkerAutoCannon>4</Cinder_Mech_WalkerAutoCannon>
+		  <Cinder_Mech_WalkerSniper>2</Cinder_Mech_WalkerSniper>
+        </escorts>
+      </li>
+      <li> <!-- 6 -->
+        <bossCount>3</bossCount>
+        <escorts>
+          <Cinder_SoliderUnit>6</Cinder_SoliderUnit>
+		   <Cinder_Mech_ErodedEXO>1</Cinder_Mech_ErodedEXO>
+          <Cinder_HeavySoliderUnit>2</Cinder_HeavySoliderUnit>
+          <Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
+        </escorts>
+      </li>
+      <li> <!-- 7 -->
+        <bossCount>4</bossCount>
+        <escorts>
+          <Cinder_SoliderUnit>4</Cinder_SoliderUnit>
+		  <Cinder_Mech_ErodedEXO>2</Cinder_Mech_ErodedEXO>
+          <Cinder_HeavySoliderUnit>4</Cinder_HeavySoliderUnit>
+          <Cinder_Mech_MiniTurretWalker>12</Cinder_Mech_MiniTurretWalker>
+        </escorts>
+      </li>
+    </waves>
+    <leaderDescription>Standard combat unit group, units with consciousness taken over by DI will independently assess threats and engage in combat.</leaderDescription>
+    <rewardDef>Cinder_ExtraArmour</rewardDef>
+  </BossgroupDef>
+
+</Defs>
