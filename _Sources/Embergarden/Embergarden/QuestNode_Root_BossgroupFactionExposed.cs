@@ -14,7 +14,8 @@ namespace Embergarden
 
         private static readonly IntRange MinDelayTicksRange = new IntRange(2500, 5000);
         private readonly FactionDef factionDef;
-
+        [MustTranslate]
+        private readonly string LetterLabelBossgroupSummoned, LetterLabelBossgroupArrived, LetterBossgroupSummoned, LetterBossgroupArrived, AlertBossgroupIncoming, AlertBossgroupIncomingDesc;
         protected override void RunInt()
         {
             Slate slate = QuestGen.slate;
@@ -91,8 +92,20 @@ namespace Embergarden
             MapParent parent = map.Parent;
             string inSignal = text;
             quest2.DropPods(parent, enumerable, null, null, null, null, false, useTradeDropSpot: false, joinPlayer: false, makePrisoners: false, inSignal, null, QuestPart.SignalListenMode.OngoingOnly, intVec, destroyItemsOnCleanup: true, dropAllInSamePod: false, allowFogged: false, faction);
-            quest.Letter(LetterDefOf.NeutralEvent, null, null, label: "LetterLabelBossgroupSummoned".Translate(bossgroupDef.boss.kindDef.LabelCap), text: "LetterBossgroupSummoned".Translate(faction.NameColored.ToString()).ToString(), relatedFaction: faction);
-            quest.Letter(LetterDefOf.Bossgroup, label: "LetterLabelBossgroupArrived".Translate(bossgroupDef.boss.kindDef.LabelCap), inSignal: text, chosenPawnSignal: null, text: "LetterBossgroupArrived".Translate(faction.NameColored.ToString(), bossgroupDef.LeaderDescription, bossgroupDef.boss.kindDef.label, faction.def.pawnsPlural, bossgroupDef.GetWaveDescription(waveIndex)).ToString(), relatedFaction: faction, useColonistsOnMap: null, useColonistsFromCaravanArg: false, signalListenMode: QuestPart.SignalListenMode.OngoingOnly, lookTargets: enumerable);
+
+            var BossLabelCap = bossgroupDef.boss.kindDef.LabelCap.Named("BOSSLABEL");
+            var BossLabel = bossgroupDef.boss.kindDef.label.Named("BOSSLABEL");
+            var FactionColored = faction.NameColored.ToString().Named("FACTION");
+
+
+            quest.Letter(LetterDefOf.NeutralEvent, null, null, label: LetterLabelBossgroupSummoned.Formatted(BossLabelCap),
+                text: LetterBossgroupSummoned.Formatted(FactionColored), relatedFaction: faction);
+            quest.Letter(LetterDefOf.Bossgroup,
+                label: LetterLabelBossgroupArrived.Formatted(BossLabelCap),
+                inSignal: text,
+                chosenPawnSignal: null,
+                text: LetterBossgroupArrived.Formatted(FactionColored, bossgroupDef.LeaderDescription.Named("LEADERDESC"), BossLabel, faction.def.pawnsPlural.Named("PAWNPURAL"), bossgroupDef.GetWaveDescription(waveIndex).Named("WAVEDESC"))
+                , relatedFaction: faction, useColonistsOnMap: null, useColonistsFromCaravanArg: false, signalListenMode: QuestPart.SignalListenMode.OngoingOnly, lookTargets: enumerable);
             QuestPart_Bossgroup questPart_Bossgroup = new QuestPart_Bossgroup();
             questPart_Bossgroup.pawns.AddRange(enumerable);
             questPart_Bossgroup.faction = faction;
@@ -101,7 +114,8 @@ namespace Embergarden
             questPart_Bossgroup.stageLocation = intVec;
             questPart_Bossgroup.inSignal = text;
             quest.AddPart(questPart_Bossgroup);
-            quest.Alert("AlertBossgroupIncoming".Translate(bossgroupDef.boss.kindDef.LabelCap), "AlertBossgroupIncomingDesc".Translate(bossgroupDef.boss.kindDef.label), null, critical: true, getLookTargetsFromSignal: false, null, text);
+            quest.Alert(AlertBossgroupIncoming.Formatted(BossLabelCap),
+                AlertBossgroupIncomingDesc.Formatted(BossLabel), null, critical: true, getLookTargetsFromSignal: false, null, text);
             string inSignal4 = QuestGenUtility.HardcodedSignalWithQuestID("escortees.KilledLeavingsLeft");
             quest.ThingAnalyzed(thingDef, delegate
             {

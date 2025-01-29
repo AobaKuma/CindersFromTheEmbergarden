@@ -33,6 +33,14 @@
 		</questContentRules>
 		<root Class="Embergarden.QuestNode_Root_BossgroupFactionExposed">
 			<factionDef>Cinder_ESDSP</factionDef>
+			<LetterLabelBossgroupSummoned>Boss [BOSSLABEL] summoned TODO</LetterLabelBossgroupSummoned>
+			<LetterBossgroupSummoned>Boss [FACTION] summoned TODO</LetterBossgroupSummoned>
+
+			<LetterLabelBossgroupArrived>Boss [BOSSLABEL] arrived TODO</LetterLabelBossgroupArrived>
+			<LetterBossgroupArrived>Boss [FACTION] [LEADERDESC] [BOSSLABEL] [PAWNPURAL] [WAVEDESC] arrived TODO</LetterBossgroupArrived>
+
+			<AlertBossgroupIncoming>Boss [BOSSLABEL] incoming TODO</AlertBossgroupIncoming>
+			<AlertBossgroupIncomingDesc>Boss [BOSSLABEL] incoming TODO</AlertBossgroupIncomingDesc>
 		</root>
 	</QuestScriptDef>
 
