@@ -85,7 +85,7 @@ namespace Embergarden
             if (Hitpoints <=0)
             {
                 Hitpoints = 0;
-                Messages.Message("Embergarden_AddonBroken".Translate(), new LookTargets(parent.pawn.PositionHeld, parent.pawn.MapHeld), MessageTypeDefOf.NeutralEvent);
+                //Messages.Message("Embergarden_AddonBroken".Translate(), new LookTargets(parent.pawn.PositionHeld, parent.pawn.MapHeld), MessageTypeDefOf.NeutralEvent);
                 parent.pawn.health.RemoveHediff(parent);
             }
 

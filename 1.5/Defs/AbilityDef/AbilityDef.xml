@@ -129,7 +129,7 @@
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>2</warmupTime>
 			<soundCast></soundCast>
-			<range>31.9</range>
+			<range>26.9</range>
 			<targetable>false</targetable>
 			<violent>false</violent>
 			<targetParams>
@@ -158,7 +158,7 @@
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>2</warmupTime>
 			<soundCast></soundCast>
-			<range>40.9</range>
+			<range>35.9</range>
 			<targetable>false</targetable>
 			<violent>false</violent>
 			<targetParams>
@@ -264,7 +264,6 @@
         <canTargetSelf>false</canTargetSelf>
         <canTargetBuildings>false</canTargetBuildings>
         <canTargetMechs>false</canTargetMechs>
-        <canTargetBloodfeeders>true</canTargetBloodfeeders>
 		<canTargetMutants>true</canTargetMutants>
         <neverTargetIncapacitated>true</neverTargetIncapacitated>
       </targetParams>
@@ -404,7 +403,7 @@
     <iconPath>UI/Abilities/ErodedMines</iconPath>
     <writeCombatLog>True</writeCombatLog>
 	<aiCanUse>true</aiCanUse>
-	<cooldownTicksRange>7500</cooldownTicksRange>
+	<cooldownTicksRange>47500</cooldownTicksRange>
 	<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
@@ -488,7 +487,7 @@
 		<projectile>
 			<damageDef>Cinder_BombC</damageDef>
 			<explosionRadius>3.5</explosionRadius>
-			<damageAmountBase>40</damageAmountBase>
+			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationBase>2</armorPenetrationBase>
 			<explosionDelay>200</explosionDelay>
 		</projectile>

@@ -97,7 +97,7 @@
 			<renderTree>Cinder_WarSweeper</renderTree>
 			<body>Cinder_ErodedEXO</body>
 			<baseBodySize>3.4</baseBodySize>
-			<baseHealthScale>9</baseHealthScale>
+			<baseHealthScale>7</baseHealthScale>
 			<detritusLeavings>
 				<li>
 					<def>Cinder_ChunkSlag</def>
@@ -282,7 +282,7 @@
 		<label>war sweeper</label>
 		<race>Cinder_Mech_WarSweeper</race>
 		 <combatPower>1000</combatPower>
-         <maxPerGroup>3</maxPerGroup>
+         <maxPerGroup>2</maxPerGroup>
          <isBoss>true</isBoss>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">

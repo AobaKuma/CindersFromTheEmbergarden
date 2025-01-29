@@ -66,6 +66,7 @@
     <apparel>
       <tags Inherit="false">
         <li>Cinder_Military</li>
+		<li>Cinder_MilitaryMedium</li>
       </tags>
     </apparel>
   </ThingDef>
@@ -99,7 +100,7 @@
       <WorkToMake>5000</WorkToMake>
       <Mass>0.5</Mass>
 	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
-        <StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+        <StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.36</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.5</EquipDelay>
@@ -117,6 +118,7 @@
         <li>Middle</li>
       </layers>
       <tags>
+        <li>Cinder_CivilanC</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -259,7 +261,8 @@
 	  <MarketValue>200</MarketValue>
       <WorkToMake>5000</WorkToMake>
       <Mass>0.5</Mass>
-        <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+       <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+        <StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.5</EquipDelay>
@@ -363,7 +366,8 @@
 	  <MarketValue>200</MarketValue>
       <WorkToMake>5000</WorkToMake>
       <Mass>0.5</Mass>
-        <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+       <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+        <StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.36</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.5</EquipDelay>
