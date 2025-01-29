@@ -14,7 +14,7 @@
     <appearAfterTicks>7200000</appearAfterTicks><!-- 2 years -->
   </BossDef>
 
-  <BossgroupDef ParentName="BaseBossgroup">
+  <BossgroupDef ParentName="Cinder_BaseBossgroup">
     <defName>Cinder_CombatUnitGroup</defName>
     <boss>Cinder_CombatUnitGroup</boss>
     <waves>
