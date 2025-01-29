@@ -3,11 +3,29 @@ using Verse;
 
 namespace Embergarden
 {
-    public class CompUseEffect_CallBossgroupNoMechanitor : CompUseEffect_CallBossgroup
+    public class CompUseEffect_SummonRaid : CompUseEffect
     {
-        public override AcceptanceReport CanBeUsedBy(Pawn p)
+        CompPropertiesUseable_SummonRaid Props => props as CompPropertiesUseable_SummonRaid;
+
+        public override void DoEffect(Pawn usedBy)
         {
-            return Props.bossgroupDef.Worker.CanResolve(p);
+            base.DoEffect(usedBy);
+
+            GameComponent_Bossgroup component = Current.Game.GetComponent<GameComponent_Bossgroup>();
+            if (component != null)
+            {
+                Props.bossgroupDef.Worker.Resolve(parent.Map, component.NumTimesCalledBossgroup(Props.bossgroupDef));
+            }
         }
+    }
+
+    public class CompPropertiesUseable_SummonRaid : CompProperties_UseEffect
+    {
+        public CompPropertiesUseable_SummonRaid()
+        {
+            compClass = typeof(CompUseEffect_SummonRaid);
+        }
+
+        public BossgroupDef bossgroupDef;
     }
 }

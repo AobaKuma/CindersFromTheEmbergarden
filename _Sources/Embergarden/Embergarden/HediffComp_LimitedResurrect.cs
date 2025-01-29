@@ -70,8 +70,9 @@ namespace Embergarden
                             || notMissingPart.def == hediffInfo.bodyPart)
                         {
                             Hediff hediff = HediffMaker.MakeHediff(hediffInfo.hediff, Pawn, notMissingPart);
+                            Pawn.health.forceDowned = true;
                             Pawn.health.AddHediff(hediff);
-                            Pawn.health.CheckForStateChange(null, hediff);
+                            Pawn.health.forceDowned = false;
                             break;
                         }
                     }
