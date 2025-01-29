@@ -71,6 +71,7 @@ namespace Embergarden
                         {
                             Hediff hediff = HediffMaker.MakeHediff(hediffInfo.hediff, Pawn, notMissingPart);
                             Pawn.health.AddHediff(hediff);
+                            Pawn.health.CheckForStateChange(null, hediff);
                             break;
                         }
                     }
