@@ -77,13 +77,10 @@ namespace Embergarden
 
         void SpawnThing(IntVec3 cell)
         {
-            if (cell.Filled(parent.Map))
-            {
-                spawnedThing ??= ThingMaker.MakeThing(Props.spreadedThingDef);
-                GenPlace.TryPlaceThing(spawnedThing, cell, parent.Map, ThingPlaceMode.Direct);
-                spawnedThing.SetFactionDirect(parent.Faction);
-                spawnedThing = null;
-            }
+            spawnedThing ??= ThingMaker.MakeThing(Props.spreadedThingDef);
+            GenPlace.TryPlaceThing(spawnedThing, cell, parent.Map, ThingPlaceMode.Direct);
+            spawnedThing.SetFactionDirect(parent.Faction);
+            spawnedThing = null;
         }
 
         public override void PostExposeData()

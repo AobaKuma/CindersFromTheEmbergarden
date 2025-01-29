@@ -10,12 +10,12 @@ namespace Embergarden
 
         public override bool AICanTargetNow(LocalTargetInfo target)
         {
-            return target.Pawn?.BodySize < Props.bodySizeCap;
+            return CanApplyOn(target, target);
         }
 
         public override bool CanApplyOn(LocalTargetInfo target, LocalTargetInfo dest)
         {
-            return target.Pawn?.BodySize < Props.bodySizeCap;
+            return target.Pawn != null && target.Pawn.BodySize < Props.bodySizeCap;
         }
     }
     public class CompProperties_BodySizeCap : CompProperties_AbilityEffect
