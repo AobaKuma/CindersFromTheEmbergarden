@@ -10,6 +10,7 @@ namespace Embergarden
 
         public override bool AICanTargetNow(LocalTargetInfo target)
         {
+            if (target.Thing == parent.pawn) return false;
             return CanApplyOn(target, target);
         }
 
