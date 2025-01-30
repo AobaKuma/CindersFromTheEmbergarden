@@ -36,5 +36,9 @@ namespace Embergarden
             listing_Standard.CheckboxLabeled("Cinder_CommaEyesLabel".Translate(), ref settings.CommaEyes, "Cinder_CommaEyesDesc".Translate());
             listing_Standard.End();
         }
+        public override string SettingsCategory()
+        {
+            return "Cinder_Setting".Translate();
+        }
     }
 }
