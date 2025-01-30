@@ -29,7 +29,7 @@
     <factionIconPath>UI/Icon/fleetIcon</factionIconPath>
     <techLevel>Spacer</techLevel>
     <factionNameMaker>Cinder_LanternFleet</factionNameMaker>
-    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <settlementNameMaker>Cinder_LanternFleetBase</settlementNameMaker>
     <allowedCultures><li>Cinder_Culture</li></allowedCultures>
 	 <requiredMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
@@ -260,7 +260,7 @@
     <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
 	
     <factionNameMaker>Cinder_Cradle</factionNameMaker>
-    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <settlementNameMaker>Cinder_LanternFleetBase</settlementNameMaker>
     <allowedCultures><li>Cinder_Culture</li></allowedCultures>
 	 <requiredMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>

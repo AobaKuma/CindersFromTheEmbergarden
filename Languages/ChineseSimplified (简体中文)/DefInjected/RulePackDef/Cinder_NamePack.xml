@@ -134,7 +134,7 @@
   -->
   <Cinder_LanternFleetBase.rulePack.rulesStrings>
   
-  <li>r_name->[Number][Number] [complexAdj] [Type]</li>
+    <li>r_name->[Number][Number][complexAdj][Type]</li>
     <li>Type->突击舰</li>
     <li>Type->侦察舰</li>
     <li>Type->轰炸舰</li>
