@@ -114,7 +114,10 @@
             <texPath>Things/Pawn/Humanlike/Apparel/AssaultHelmet/Icon</texPath>
         </graphicData>
 		<recipeMaker>
-			<researchPrerequisite>FlakArmor</researchPrerequisite>
+			<researchPrerequisites>
+	  <li>Fabrication</li>
+	  <li>Cinder_HeavyArmor</li>
+    </researchPrerequisites>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>8</Crafting>
@@ -171,7 +174,10 @@
             <texPath>Things/Pawn/Humanlike/Apparel/AssaultHelmetTan/Icon</texPath>
         </graphicData>
 		<recipeMaker>
-			<researchPrerequisite>FlakArmor</researchPrerequisite>
+			<researchPrerequisites>
+	  <li>Fabrication</li>
+	  <li>Cinder_HeavyArmor</li>
+    </researchPrerequisites>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>8</Crafting>
@@ -217,7 +223,10 @@
             <texPath>Things/Pawn/Humanlike/Apparel/GhoulUnitHelmet/Icon</texPath>
         </graphicData>
 		<recipeMaker>
-			<researchPrerequisite>FlakArmor</researchPrerequisite>
+			<researchPrerequisites>
+	          <li>FlakArmor</li>
+	          <li>Cinder_HeavyArmor</li>
+            </researchPrerequisites>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>8</Crafting>
@@ -268,7 +277,10 @@
 			<shaderType>CutoutComplex</shaderType>
         </graphicData>
 		<recipeMaker>
-			<researchPrerequisite>FlakArmor</researchPrerequisite>
+			<researchPrerequisites>
+	          <li>FlakArmor</li>
+	          <li>Cinder_HeavyArmor</li>
+            </researchPrerequisites>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>6</Crafting>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="Embergarden.PatchOperationConditionalSettings">
+		<key>CommaEyes</key>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/graphicPaths/head</xpath>
+					<value>
+						<head>
+					    <path>Things/Pawn/Humanlike/Heads/Vanilla/CinderHead</path>
+					<extendedGraphics>
+						<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
+							Things/Pawn/Humanlike/Heads/Vanilla/GhoulHead</Hediff>
+					</extendedGraphics>
+				</head>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

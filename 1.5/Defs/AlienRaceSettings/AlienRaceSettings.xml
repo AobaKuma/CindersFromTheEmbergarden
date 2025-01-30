@@ -21,7 +21,7 @@
 			<alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>Cinder_Outlander</li>
+						<li>Cinder_OutlanderCivilan</li>
 					</kindDefs>
 					<chance>20.0</chance>
 				</li>
@@ -29,7 +29,7 @@
 			<alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>Cinder_Outlander</li>
+						<li>Cinder_OutlanderCivilan</li>
 					</kindDefs>
 					<chance>10.0</chance>
 				</li>
@@ -39,26 +39,26 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>Cinder_Outlander</li>				
+								<li>Cinder_OutlanderCivilan</li>				
 							</kindDefs>
 							<chance>1.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>OutlanderCivil</li> 
+						<li>Cinder_OutlanderCivil</li> 
 					</factionDefs>
 				</li>
 				<li>
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>Cinder_Outlander</li>				
+								<li>Cinder_OutlanderCivilan</li>				
 							</kindDefs>
 							<chance>1.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>OutlanderCivil</li> 
+						<li>Cinder_OutlanderCivil</li> 
 					</factionDefs>
 				</li>
 			</alienwandererkinds>			

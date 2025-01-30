@@ -126,6 +126,34 @@
       <li>
         <compClass>CompHarbingerTreeConsumable</compClass>
       </li>
+	  <li Class="CompProperties_CompAnalyzableUnlockResearch">
+		<analysisID>122249064</analysisID>
+
+        <!-- Analyzable -->
+
+        <analysisDurationHours>0.25</analysisDurationHours>
+        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+        <completedLetterLabel>Burnt strange meat studied: {RESEARCH} unlocked</completedLetterLabel>
+        <completedLetter>By studying the burnt strange meat, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+        <completedLetterDef>PositiveEvent</completedLetterDef>
+
+        <!-- Interactable -->
+
+        <activateTexPath>UI/Icons/Study</activateTexPath>
+
+        <activateLabelString>Analyze...</activateLabelString>
+        <activateDescString>Analyze the burnt strange meat.</activateDescString>
+        <jobString>analyze burnt strange meat</jobString>
+        <guiLabelString>Choose who should analyze this</guiLabelString>
+        <inspectString>Can be analyzed by a colonist.</inspectString>
+
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+			</li>
     </comps>
   </ThingDef>
 

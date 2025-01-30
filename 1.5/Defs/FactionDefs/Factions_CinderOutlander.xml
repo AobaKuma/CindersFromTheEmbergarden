@@ -35,21 +35,21 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
     </requiredMemes>
 	<allowedMemes>
-	      <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+	   <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
     </allowedMemes>
 	<disallowedPrecepts>
       <li>Slavery_Classic</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
     </disallowedPrecepts>
     <structureMemeWeights>
-      <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
-      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
-      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_TheistAbstract>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_Ideological>
       <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_Archist>
       <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_OriginChristian>
     </structureMemeWeights>
@@ -264,11 +264,11 @@
     <allowedCultures><li>Cinder_Culture</li></allowedCultures>
 	 <requiredMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
-	  <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
-	  <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
     </requiredMemes>
 	<allowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+	   <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
     </allowedMemes>
 	<disallowedPrecepts>
       <li>Slavery_Classic</li>
@@ -278,9 +278,8 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
     </disallowedPrecepts>
     <structureMemeWeights>
-      <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
-      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
-      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_TheistAbstract>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_Ideological>
       <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_Archist>
       <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_OriginChristian>
     </structureMemeWeights>

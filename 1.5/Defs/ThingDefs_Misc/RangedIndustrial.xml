@@ -184,6 +184,9 @@
         <Crafting>5</Crafting>
       </skillRequirements>
       <displayPriority>430</displayPriority>
+	  <researchPrerequisites>
+	  <li>Cinder_MultipleWarheads</li>
+    </researchPrerequisites>
     </recipeMaker>
     <verbs>
       <li>
@@ -291,7 +294,8 @@
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
-			<researchPrerequisites>
+	<researchPrerequisite Inherit="False"/>
+	<researchPrerequisites Inherit="False">
 	  <li>GasOperation</li>
     </researchPrerequisites>
 		</recipeMaker>
@@ -380,8 +384,10 @@
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
-			<researchPrerequisites>
+	<researchPrerequisite Inherit="False"/>
+	<researchPrerequisites Inherit="False">
 	  <li>PrecisionRifling</li>
+	  <li>Cinder_MultipleWarheads</li>
     </researchPrerequisites>
 		</recipeMaker>
     <verbs>
@@ -470,7 +476,8 @@
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
-			<researchPrerequisites>
+			<researchPrerequisite Inherit="False"/>
+	<researchPrerequisites Inherit="False">
 	  <li>PrecisionRifling</li>
     </researchPrerequisites>
 		</recipeMaker>
@@ -544,8 +551,10 @@
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
-			<researchPrerequisites>
-	  <li>PrecisionRifling</li>
+	<researchPrerequisite Inherit="False"/>
+	<researchPrerequisites Inherit="False">
+			 <li>MultibarrelWeapons</li>
+	  <li>Cinder_ShapedCharges</li>
     </researchPrerequisites>
 		</recipeMaker>
     <verbs>

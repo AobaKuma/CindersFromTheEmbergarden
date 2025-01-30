@@ -181,6 +181,10 @@
 						<setMax>0</setMax>
 					</li>
 				</capMods>
+				<statFactors>
+					<IncomingDamageFactor>0.01</IncomingDamageFactor>
+					<RestFallRateFactor>0</RestFallRateFactor>
+				</statFactors>
 			</li>
 		</stages>
 	</HediffDef>

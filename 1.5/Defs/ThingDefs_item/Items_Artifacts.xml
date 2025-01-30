@@ -126,6 +126,36 @@
 		</statBases>
 		<intricate>true</intricate>
 		<allowedArchonexusCount>5</allowedArchonexusCount>
+		<comps>
+			<li Class="CompProperties_CompAnalyzableUnlockResearch">
+		<analysisID>122249063</analysisID>
+
+        <!-- Analyzable -->
+
+        <analysisDurationHours>0.25</analysisDurationHours>
+        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+        <completedLetterLabel>Empty agent bottle studied: {RESEARCH} unlocked</completedLetterLabel>
+        <completedLetter>By studying the empty agent bottle, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+        <completedLetterDef>PositiveEvent</completedLetterDef>
+
+        <!-- Interactable -->
+
+        <activateTexPath>UI/Icons/Study</activateTexPath>
+
+        <activateLabelString>Analyze...</activateLabelString>
+        <activateDescString>Analyze the empty agent bottle.</activateDescString>
+        <jobString>analyze empty agent bottle</jobString>
+        <guiLabelString>Choose who should analyze this</guiLabelString>
+        <inspectString>Can be analyzed by a colonist.</inspectString>
+
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<RecipeDef>
@@ -183,7 +213,7 @@
 		<recipeUsers>
 			<li>Cinder_AncientWorkstation</li>
 		</recipeUsers>
-		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<researchPrerequisite>Cinder_TwistedPharmacology</researchPrerequisite>
 		<skillRequirements>
 			<Medicine>6</Medicine>
 		</skillRequirements>
@@ -246,7 +276,7 @@
 		<recipeUsers>
 			<li>Cinder_AncientWorkstation</li>
 		</recipeUsers>
-		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<researchPrerequisite>Cinder_TwistedPharmacology</researchPrerequisite>
 		<skillRequirements>
 			<Medicine>6</Medicine>
 		</skillRequirements>
@@ -301,6 +331,34 @@
 				<soundOnUsed>Cinder_Transform</soundOnUsed>
 			</li>
 			<li Class="CompProperties_UseEffectDestroySelf" />
+			<li Class="CompProperties_CompAnalyzableUnlockResearch">
+		<analysisID>122249062</analysisID>
+
+        <!-- Analyzable -->
+
+        <analysisDurationHours>0.25</analysisDurationHours>
+        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+        <completedLetterLabel>Extra armour plate studied: {RESEARCH} unlocked</completedLetterLabel>
+        <completedLetter>By studying the extra armour plate, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+        <completedLetterDef>PositiveEvent</completedLetterDef>
+
+        <!-- Interactable -->
+
+        <activateTexPath>UI/Icons/Study</activateTexPath>
+
+        <activateLabelString>Analyze...</activateLabelString>
+        <activateDescString>Analyze the extra armour plate.</activateDescString>
+        <jobString>analyze extra armour plate</jobString>
+        <guiLabelString>Choose who should analyze this</guiLabelString>
+        <inspectString>Can be analyzed by a colonist.</inspectString>
+
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -336,7 +394,7 @@
 		<recipeUsers>
 			<li>Cinder_AncientWorkstation</li>
 		</recipeUsers>
-		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<researchPrerequisite>Cinder_Separation</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>6</Crafting>
 		</skillRequirements>

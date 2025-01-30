@@ -136,6 +136,7 @@
 		</building>
 		<researchPrerequisites>
 			<li>HeavyTurrets</li>
+			<li>Cinder_TentacleWalkingMechanism</li>
 		</researchPrerequisites>
 	</ThingDef>
 
@@ -251,6 +252,7 @@
 		</building>
 		<researchPrerequisites>
 			<li>SniperTurret</li>
+			<li>Cinder_TentacleWalkingMechanism</li>
 		</researchPrerequisites>
 	</ThingDef>
 
@@ -416,6 +418,7 @@
 		<designationHotKey>Misc2</designationHotKey>
 		<researchPrerequisites>
 			<li>RocketswarmLauncher</li>
+			<li>Cinder_TentacleWalkingMechanism</li>
 		</researchPrerequisites>
 	</ThingDef>
 
@@ -576,6 +579,7 @@
 		<designationCategory>Security</designationCategory>
 		<researchPrerequisites>
 			<li>GunTurrets</li>
+			<li>Cinder_TentacleMechanism</li>
 		</researchPrerequisites>
 	</ThingDef>
 

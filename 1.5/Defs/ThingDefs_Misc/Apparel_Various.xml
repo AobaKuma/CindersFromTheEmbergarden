@@ -521,7 +521,10 @@
 			<shaderType>CutoutComplex</shaderType>
     </graphicData>
 	<recipeMaker>
-			<researchPrerequisite>FlakArmor</researchPrerequisite>
+	<researchPrerequisites>
+	  <li>FlakArmor</li>
+	  <li>Cinder_HeavyArmor</li>
+    </researchPrerequisites>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
@@ -669,7 +672,10 @@
 	  <shaderType>CutoutComplex</shaderType>
     </graphicData>
    <recipeMaker>
-			<researchPrerequisite>FlakArmor</researchPrerequisite>
+	<researchPrerequisites>
+	  <li>Fabrication</li>
+	  <li>Cinder_HeavyArmor</li>
+    </researchPrerequisites>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
@@ -746,7 +752,10 @@
       <texPath>Things/Pawn/Humanlike/Apparel/LowVisibilityDress/Icon</texPath>
     </graphicData>
 	<recipeMaker>
-			<researchPrerequisite>FlakArmor</researchPrerequisite>
+	 <researchPrerequisites>
+	  <li>FlakArmor</li>
+	  <li>Cinder_HeavyArmor</li>
+    </researchPrerequisites>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
