@@ -3,7 +3,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 		<defName>Alien_Cinder</defName>
 		<label>Cinder</label>
-		<description>"佔位符"</description>
+		<description>“However, as prosperity inevitably leads to decline, this civilization did not escape the fate of destruction.” The Thucydides Trap led to a great war between two totalitarian regimes on this planet. The outcome of this war has long been lost to history, but one of its most direct consequences was a series of explosions at a nuclear power plant cluster in Siberia, part of the 'Eurasian Common Defense Agreement Alliance.' The massive energy and radioactive materials released from the explosions accidentally awakened a dormant avatar of an ancient god deep within the planet (note: to be verified). The awakening of this ancient god resulted in two chain reactions: first, the entire Siberian region and parts of Central Asia transformed into shadow zones, making them inaccessible and unobservable from the outside; second, those who were trapped inside the shadow zones, fortunate enough to have survived the war and the 'awakening,' underwent inhuman mutations. The modern scientific community unanimously agrees that these mutated humans are the original 'cinders.'</description>
 		<alienRace>
 			<generalSettings>
 				<maleGenderProbability>0.3</maleGenderProbability>

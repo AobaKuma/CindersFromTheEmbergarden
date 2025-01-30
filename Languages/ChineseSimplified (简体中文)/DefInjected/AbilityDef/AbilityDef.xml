@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Transformation -->
+  <Ability_Transformation_Cannon.label>扎根</Ability_Transformation_Cannon.label>
+  <!-- EN: Transform to a turret. -->
+  <Ability_Transformation_Cannon.description>在原地部署为炮塔形态，可以开火。</Ability_Transformation_Cannon.description>
+  
+  <!-- EN: Transformation -->
+  <Ability_Transformation_Rocket.label>扎根</Ability_Transformation_Rocket.label>
+  <!-- EN: Transform to a turret. -->
+  <Ability_Transformation_Rocket.description>在原地部署为炮塔形态，可以开火。</Ability_Transformation_Rocket.description>
+  
+  <!-- EN: Transformation -->
+  <Ability_Transformation_Sniper.label>扎根</Ability_Transformation_Sniper.label>
+  <!-- EN: Transform to a turret. -->
+  <Ability_Transformation_Sniper.description>在原地部署为炮塔形态，可以开火。</Ability_Transformation_Sniper.description>
+  
+  <!-- EN: Transformation -->
+  <Ability_Transformation_TacticalTurret.label>扎根</Ability_Transformation_TacticalTurret.label>
+  <!-- EN: Transform to a turret. -->
+  <Ability_Transformation_TacticalTurret.description>在原地部署为炮塔形态，可以开火。</Ability_Transformation_TacticalTurret.description>
+  
+  <!-- EN: amorphous IED -->
+  <Cinder_AmorphousIED.label>无形陷阱</Cinder_AmorphousIED.label>
+  <!-- EN: Summon a bomb trap from underground, which will automatically reload. -->
+  <Cinder_AmorphousIED.description>召唤一个破土而出的小型触手炸弹陷阱，它会像地雷一样爆炸，然后会在数小时后填装完毕。</Cinder_AmorphousIED.description>
+  
+  <!-- EN: amorphous wall -->
+  <Cinder_AmorphousWall.label>硬化触手</Cinder_AmorphousWall.label>
+  <!-- EN: Summon a sturdy tentacle wall from underground. -->
+  <Cinder_AmorphousWall.description>召唤一个破土而出是大型触手团块，充当临时墙体。</Cinder_AmorphousWall.description>
+  
+  <!-- EN: amorphous winding -->
+  <Cinder_AmorphousWinding.label>无定形缠绕</Cinder_AmorphousWinding.label>
+  <!-- EN: Summon a vast tentacle terrain and entangle anyone walking on it. -->
+  <Cinder_AmorphousWinding.description>召唤一大片触手地形，减速并致盲所有在上面行走的人。</Cinder_AmorphousWinding.description>
+  
+  <!-- EN: burn hemostasis -->
+  <Cinder_BurnHemostasis.label>灼烧止血</Cinder_BurnHemostasis.label>
+  <!-- EN: Use burnt tentacles to stop bleeding from wounds on the target's body. -->
+  <Cinder_BurnHemostasis.description>用烧焦触手来让目标身上的流血伤口止血。</Cinder_BurnHemostasis.description>
+  
+  <!-- EN: eroded bomb -->
+  <Cinder_ErodedBomb.label>侵蚀炸弹</Cinder_ErodedBomb.label>
+  <!-- EN: Throws a eroded bomb -->
+  <Cinder_ErodedBomb.description>投出一个可以侵蚀敌人护甲的炸弹。</Cinder_ErodedBomb.description>
+  
+  <!-- EN: eternal fear -->
+  <Cinder_EternalFearAbility.label>永恒恐惧</Cinder_EternalFearAbility.label>
+  <!-- EN: Erosion the spirit of the target, detach it from the protection of reason, and make them fall into a state of fear. -->
+  <Cinder_EternalFearAbility.description>侵蚀目标的精神，使其看到超越现实的景象而陷入巨大的恐惧之中。</Cinder_EternalFearAbility.description>
+  
+  <!-- EN: fear pulse -->
+  <Cinder_FearPulse.label>恐惧脉冲</Cinder_FearPulse.label>
+  <!-- EN: Erosion the spirits of nearby animals, causing them to fall into a state of fear. -->
+  <Cinder_FearPulse.description>侵蚀周围动物的精神，使它们疯狂逃跑。</Cinder_FearPulse.description>
+  
+  <!-- EN: Hellfire Missile -->
+  <Cinder_LaunchHellfireMissile.label>地狱火导弹</Cinder_LaunchHellfireMissile.label>
+  <!-- EN: Launch Missile -->
+  <Cinder_LaunchHellfireMissile.description>锁定并发射地狱火导弹。</Cinder_LaunchHellfireMissile.description>
+  
+  <!-- EN: Hellfire Missile -->
+  <Cinder_LaunchHellfireMissileB.label>地狱火导弹</Cinder_LaunchHellfireMissileB.label>
+  <!-- EN: Launch Missile -->
+  <Cinder_LaunchHellfireMissileB.description>锁定并发射地狱火导弹。</Cinder_LaunchHellfireMissileB.description>
+  
+  <!-- EN: suffocating whispers -->
+  <Cinder_SuffocatingWhispers.label>窒息缠绕</Cinder_SuffocatingWhispers.label>
+  <!-- EN: Entangled the target with tentacles, causing temporary suffocation and coma. -->
+  <Cinder_SuffocatingWhispers.description>使用触手缠绕附近的一个目标，剥夺它的移动能力而使其暂时性的陷入昏迷。</Cinder_SuffocatingWhispers.description>
+  
+</LanguageData>

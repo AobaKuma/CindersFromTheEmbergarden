@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Autocannon walker -->
+  <Cinder_Mech_WalkerAutoCannon.label>自动炮步行者</Cinder_Mech_WalkerAutoCannon.label>
+  <!-- EN: TODO -->
+  <Cinder_Mech_WalkerAutoCannon.description>一种大型步行炮塔，拥有厚实的装甲与大口径自动加农炮，可以被当作小型IFV使用。</Cinder_Mech_WalkerAutoCannon.description>
+  <!-- EN: Left tentacle -->
+  <Cinder_Mech_WalkerAutoCannon.tools.Left_tentacle.label>左触手</Cinder_Mech_WalkerAutoCannon.tools.Left_tentacle.label>
+  <!-- EN: tentacle -->
+  <Cinder_Mech_WalkerAutoCannon.tools.Left_tentacle.labelNoLocation>触手</Cinder_Mech_WalkerAutoCannon.tools.Left_tentacle.labelNoLocation>
+  <!-- EN: right tentacle -->
+  <Cinder_Mech_WalkerAutoCannon.tools.right_tentacle.label>右触手</Cinder_Mech_WalkerAutoCannon.tools.right_tentacle.label>
+  <!-- EN: tentacle -->
+  <Cinder_Mech_WalkerAutoCannon.tools.right_tentacle.labelNoLocation>触手</Cinder_Mech_WalkerAutoCannon.tools.right_tentacle.labelNoLocation>
+  <!-- EN: Front tentacle -->
+  <Cinder_Mech_WalkerAutoCannon.tools.Front_tentacle.label>前触手</Cinder_Mech_WalkerAutoCannon.tools.Front_tentacle.label>
+  
+  <!-- EN: rocketswarm walker -->
+  <Cinder_Mech_WalkerRocket.label>火箭炮步行者</Cinder_Mech_WalkerRocket.label>
+  <!-- EN: TODO -->
+  <Cinder_Mech_WalkerRocket.description>一种大型步行炮塔，拥有厚实的装甲与集群火箭炮，可以被当作小型火箭发射车使用。</Cinder_Mech_WalkerRocket.description>
+  <!-- EN: Left tentacle -->
+  <Cinder_Mech_WalkerRocket.tools.Left_tentacle.label>左触手</Cinder_Mech_WalkerRocket.tools.Left_tentacle.label>
+  <!-- EN: tentacle -->
+  <Cinder_Mech_WalkerRocket.tools.Left_tentacle.labelNoLocation>触手</Cinder_Mech_WalkerRocket.tools.Left_tentacle.labelNoLocation>
+  <!-- EN: right tentacle -->
+  <Cinder_Mech_WalkerRocket.tools.right_tentacle.label>右触手</Cinder_Mech_WalkerRocket.tools.right_tentacle.label>
+  <!-- EN: tentacle -->
+  <Cinder_Mech_WalkerRocket.tools.right_tentacle.labelNoLocation>触手</Cinder_Mech_WalkerRocket.tools.right_tentacle.labelNoLocation>
+  <!-- EN: Front tentacle -->
+  <Cinder_Mech_WalkerRocket.tools.Front_tentacle.label>前触手</Cinder_Mech_WalkerRocket.tools.Front_tentacle.label>
+  
+  <!-- EN: Uranium slug walker -->
+  <Cinder_Mech_WalkerSniper.label>铀弹炮步行者</Cinder_Mech_WalkerSniper.label>
+  <!-- EN: TODO -->
+  <Cinder_Mech_WalkerSniper.description>一种大型步行炮塔，拥有厚实的装甲与穿甲铀弹炮，可以被当作小型反装甲车使用。</Cinder_Mech_WalkerSniper.description>
+  <!-- EN: Left tentacle -->
+  <Cinder_Mech_WalkerSniper.tools.Left_tentacle.label>左触手</Cinder_Mech_WalkerSniper.tools.Left_tentacle.label>
+  <!-- EN: tentacle -->
+  <Cinder_Mech_WalkerSniper.tools.Left_tentacle.labelNoLocation>触手</Cinder_Mech_WalkerSniper.tools.Left_tentacle.labelNoLocation>
+  <!-- EN: right tentacle -->
+  <Cinder_Mech_WalkerSniper.tools.right_tentacle.label>右触手</Cinder_Mech_WalkerSniper.tools.right_tentacle.label>
+  <!-- EN: tentacle -->
+  <Cinder_Mech_WalkerSniper.tools.right_tentacle.labelNoLocation>触手</Cinder_Mech_WalkerSniper.tools.right_tentacle.labelNoLocation>
+  <!-- EN: Front tentacle -->
+  <Cinder_Mech_WalkerSniper.tools.Front_tentacle.label>前触手</Cinder_Mech_WalkerSniper.tools.Front_tentacle.label>
+  
+</LanguageData>

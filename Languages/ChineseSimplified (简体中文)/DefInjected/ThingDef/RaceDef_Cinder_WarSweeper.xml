@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: war sweeper -->
+  <Cinder_Mech_WarSweeper.label>战争清扫者</Cinder_Mech_WarSweeper.label>
+  <!-- EN: TODO -->
+  <Cinder_Mech_WarSweeper.description>一种三米高量级的重装甲防空步行机器，拥有不同口径的防空火力武装，充沛的弹药量能够伴随步兵进行防空作业。</Cinder_Mech_WarSweeper.description>
+  <!-- EN: exo minigun -->
+  <Cinder_Mech_WarSweeper.comps.CompMultipleTurretGun.subTurrets.0.renderNodeProperties.0.debugLabel>速射机枪</Cinder_Mech_WarSweeper.comps.CompMultipleTurretGun.subTurrets.0.renderNodeProperties.0.debugLabel>
+  <!-- EN: anti air turret -->
+  <Cinder_Mech_WarSweeper.comps.CompMultipleTurretGun.subTurrets.1.renderNodeProperties.0.debugLabel>防空炮塔</Cinder_Mech_WarSweeper.comps.CompMultipleTurretGun.subTurrets.1.renderNodeProperties.0.debugLabel>
+  <!-- EN: rocket pod right -->
+  <Cinder_Mech_WarSweeper.comps.CompMultipleTurretGun.subTurrets.2.renderNodeProperties.0.debugLabel>右火箭巢</Cinder_Mech_WarSweeper.comps.CompMultipleTurretGun.subTurrets.2.renderNodeProperties.0.debugLabel>
+  <!-- EN: rocket pod left -->
+  <Cinder_Mech_WarSweeper.comps.CompMultipleTurretGun.subTurrets.3.renderNodeProperties.0.debugLabel>左火箭巢</Cinder_Mech_WarSweeper.comps.CompMultipleTurretGun.subTurrets.3.renderNodeProperties.0.debugLabel>
+  <!-- EN: Left tentacle -->
+  <Cinder_Mech_WarSweeper.tools.Left_tentacle.label>左触手</Cinder_Mech_WarSweeper.tools.Left_tentacle.label>
+  <!-- EN: tentacle -->
+  <Cinder_Mech_WarSweeper.tools.Left_tentacle.labelNoLocation>触手</Cinder_Mech_WarSweeper.tools.Left_tentacle.labelNoLocation>
+  <!-- EN: right tentacle -->
+  <Cinder_Mech_WarSweeper.tools.right_tentacle.label>右触手</Cinder_Mech_WarSweeper.tools.right_tentacle.label>
+  <!-- EN: tentacle -->
+  <Cinder_Mech_WarSweeper.tools.right_tentacle.labelNoLocation>触手</Cinder_Mech_WarSweeper.tools.right_tentacle.labelNoLocation>
+  <!-- EN: Front tentacle -->
+  <Cinder_Mech_WarSweeper.tools.Front_tentacle.label>前触手</Cinder_Mech_WarSweeper.tools.Front_tentacle.label>
+  
+</LanguageData>

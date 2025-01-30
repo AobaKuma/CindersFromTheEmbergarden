@@ -40,7 +40,7 @@
 	<ThingDef ParentName="Cinder_MiniTurretWalker">
 		<defName>Cinder_Mech_MiniTurretWalker</defName>
 		<label>Tactical turret walker</label>
-		<description>TODO</description>
+		<description>A small walking turret that can share some of the infantry's workload and attract firepower</description>
 		<tools>
 			<li>
 				<label>Left tentacle</label>

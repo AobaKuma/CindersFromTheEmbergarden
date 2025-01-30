@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: bipedal exo walker -->
+  <Cinder_ErodedEXO.label>被侵蚀的外骨骼</Cinder_ErodedEXO.label>
+  <!-- EN: left sight sensor -->
+  <Cinder_ErodedEXO.corePart.parts.Cinder_ArmoredRing.parts.MechanicalHead.parts.left_sight_sensor.customLabel>左光电球</Cinder_ErodedEXO.corePart.parts.Cinder_ArmoredRing.parts.MechanicalHead.parts.left_sight_sensor.customLabel>
+  <!-- EN: right sight sensor -->
+  <Cinder_ErodedEXO.corePart.parts.Cinder_ArmoredRing.parts.MechanicalHead.parts.right_sight_sensor.customLabel>右光电球</Cinder_ErodedEXO.corePart.parts.Cinder_ArmoredRing.parts.MechanicalHead.parts.right_sight_sensor.customLabel>
+  <!-- EN: left hearing sensor -->
+  <Cinder_ErodedEXO.corePart.parts.Cinder_ArmoredRing.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>左听觉传感器</Cinder_ErodedEXO.corePart.parts.Cinder_ArmoredRing.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+  <!-- EN: right hearing sensor -->
+  <Cinder_ErodedEXO.corePart.parts.Cinder_ArmoredRing.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>右听觉传感器</Cinder_ErodedEXO.corePart.parts.Cinder_ArmoredRing.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+  <!-- EN: left mechanical shoulder -->
+  <Cinder_ErodedEXO.corePart.parts.left_mechanical_shoulder.customLabel>左机械肩部</Cinder_ErodedEXO.corePart.parts.left_mechanical_shoulder.customLabel>
+  <!-- EN: left arm -->
+  <Cinder_ErodedEXO.corePart.parts.left_mechanical_shoulder.parts.left_arm.customLabel>左臂</Cinder_ErodedEXO.corePart.parts.left_mechanical_shoulder.parts.left_arm.customLabel>
+  <!-- EN: left hand -->
+  <Cinder_ErodedEXO.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.customLabel>左手</Cinder_ErodedEXO.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.customLabel>
+  <!-- EN: left pinky -->
+  <Cinder_ErodedEXO.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>左小指</Cinder_ErodedEXO.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>
+  <!-- EN: left middle finger -->
+  <Cinder_ErodedEXO.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>左中指</Cinder_ErodedEXO.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>
+  <!-- EN: left index finger -->
+  <Cinder_ErodedEXO.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>左食指</Cinder_ErodedEXO.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>
+  <!-- EN: left thumb -->
+  <Cinder_ErodedEXO.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>左大拇指</Cinder_ErodedEXO.corePart.parts.left_mechanical_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>
+  <!-- EN: right mechanical shoulder -->
+  <Cinder_ErodedEXO.corePart.parts.right_mechanical_shoulder.customLabel>右机械肩部</Cinder_ErodedEXO.corePart.parts.right_mechanical_shoulder.customLabel>
+  <!-- EN: right arm -->
+  <Cinder_ErodedEXO.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>右臂</Cinder_ErodedEXO.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>
+  <!-- EN: right hand -->
+  <Cinder_ErodedEXO.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>右手</Cinder_ErodedEXO.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>
+  <!-- EN: right pinky -->
+  <Cinder_ErodedEXO.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>右小指</Cinder_ErodedEXO.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>
+  <!-- EN: right middle finger -->
+  <Cinder_ErodedEXO.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>右中指</Cinder_ErodedEXO.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>
+  <!-- EN: right index finger -->
+  <Cinder_ErodedEXO.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>右食指</Cinder_ErodedEXO.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>
+  <!-- EN: right thumb -->
+  <Cinder_ErodedEXO.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>右大拇指</Cinder_ErodedEXO.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>
+  <!-- EN: tentacle -->
+  <Cinder_ErodedEXO.corePart.parts.right_mechanical_shoulder.parts.tentacle.customLabel>触手</Cinder_ErodedEXO.corePart.parts.right_mechanical_shoulder.parts.tentacle.customLabel>
+  <!-- EN: left leg -->
+  <Cinder_ErodedEXO.corePart.parts.left_leg.customLabel>左腿</Cinder_ErodedEXO.corePart.parts.left_leg.customLabel>
+  <!-- EN: left foot -->
+  <Cinder_ErodedEXO.corePart.parts.left_leg.parts.left_foot.customLabel>左行走机构</Cinder_ErodedEXO.corePart.parts.left_leg.parts.left_foot.customLabel>
+  <!-- EN: right leg -->
+  <Cinder_ErodedEXO.corePart.parts.right_leg.customLabel>右腿</Cinder_ErodedEXO.corePart.parts.right_leg.customLabel>
+  <!-- EN: right foot -->
+  <Cinder_ErodedEXO.corePart.parts.right_leg.parts.right_foot.customLabel>右行走机构</Cinder_ErodedEXO.corePart.parts.right_leg.parts.right_foot.customLabel>
+  <!-- EN: left armour plate -->
+  <Cinder_ErodedEXO.corePart.parts.left_armour_plate.customLabel>左装甲板</Cinder_ErodedEXO.corePart.parts.left_armour_plate.customLabel>
+  <!-- EN: right armour plate -->
+  <Cinder_ErodedEXO.corePart.parts.right_armour_plate.customLabel>右装甲板</Cinder_ErodedEXO.corePart.parts.right_armour_plate.customLabel>
+  <!-- EN: forward armour plate -->
+  <Cinder_ErodedEXO.corePart.parts.forward_armour_plate.customLabel>正面装甲板</Cinder_ErodedEXO.corePart.parts.forward_armour_plate.customLabel>
+  
+  <!-- EN: Turret walker -->
+  <Cinder_MiniTurretWalker.label>炮塔步行者</Cinder_MiniTurretWalker.label>
+  <!-- EN: Top arm connecting shaft -->
+  <Cinder_MiniTurretWalker.corePart.parts.Top_arm_connecting_shaft.customLabel>顶部炮塔轴</Cinder_MiniTurretWalker.corePart.parts.Top_arm_connecting_shaft.customLabel>
+  <!-- EN: Turret components -->
+  <Cinder_MiniTurretWalker.corePart.parts.Top_arm_connecting_shaft.parts.Turret_components.customLabel>炮塔组件</Cinder_MiniTurretWalker.corePart.parts.Top_arm_connecting_shaft.parts.Turret_components.customLabel>
+  <!-- EN: left sight sensor -->
+  <Cinder_MiniTurretWalker.corePart.parts.Top_arm_connecting_shaft.parts.Turret_components.parts.left_sight_sensor.customLabel>左光电球</Cinder_MiniTurretWalker.corePart.parts.Top_arm_connecting_shaft.parts.Turret_components.parts.left_sight_sensor.customLabel>
+  <!-- EN: right hearing sensor -->
+  <Cinder_MiniTurretWalker.corePart.parts.Top_arm_connecting_shaft.parts.Turret_components.parts.right_hearing_sensor.customLabel>左右电球</Cinder_MiniTurretWalker.corePart.parts.Top_arm_connecting_shaft.parts.Turret_components.parts.right_hearing_sensor.customLabel>
+  <!-- EN: frount tentacle -->
+  <Cinder_MiniTurretWalker.corePart.parts.frount_tentacle.customLabel>前触手</Cinder_MiniTurretWalker.corePart.parts.frount_tentacle.customLabel>
+  <!-- EN: left rear tentacle -->
+  <Cinder_MiniTurretWalker.corePart.parts.left_rear_tentacle.customLabel>左后触手</Cinder_MiniTurretWalker.corePart.parts.left_rear_tentacle.customLabel>
+  <!-- EN: right rear tentacle -->
+  <Cinder_MiniTurretWalker.corePart.parts.right_rear_tentacle.customLabel>右后触手</Cinder_MiniTurretWalker.corePart.parts.right_rear_tentacle.customLabel>
+  
+  <!-- EN: Turret walker -->
+  <Cinder_TurretWalker.label>炮塔步行者</Cinder_TurretWalker.label>
+  <!-- EN: Top arm connecting shaft -->
+  <Cinder_TurretWalker.corePart.parts.Top_arm_connecting_shaft.customLabel>顶部炮塔轴</Cinder_TurretWalker.corePart.parts.Top_arm_connecting_shaft.customLabel>
+  <!-- EN: Turret components -->
+  <Cinder_TurretWalker.corePart.parts.Top_arm_connecting_shaft.parts.Turret_components.customLabel>炮塔组件</Cinder_TurretWalker.corePart.parts.Top_arm_connecting_shaft.parts.Turret_components.customLabel>
+  <!-- EN: left sight sensor -->
+  <Cinder_TurretWalker.corePart.parts.Top_arm_connecting_shaft.parts.Turret_components.parts.left_sight_sensor.customLabel>左光电球</Cinder_TurretWalker.corePart.parts.Top_arm_connecting_shaft.parts.Turret_components.parts.left_sight_sensor.customLabel>
+  <!-- EN: right hearing sensor -->
+  <Cinder_TurretWalker.corePart.parts.Top_arm_connecting_shaft.parts.Turret_components.parts.right_hearing_sensor.customLabel>右光电球</Cinder_TurretWalker.corePart.parts.Top_arm_connecting_shaft.parts.Turret_components.parts.right_hearing_sensor.customLabel>
+  <!-- EN: left tentacle -->
+  <Cinder_TurretWalker.corePart.parts.left_tentacle.customLabel>左触手</Cinder_TurretWalker.corePart.parts.left_tentacle.customLabel>
+  <!-- EN: left rear tentacle -->
+  <Cinder_TurretWalker.corePart.parts.left_rear_tentacle.customLabel>左后触手</Cinder_TurretWalker.corePart.parts.left_rear_tentacle.customLabel>
+  <!-- EN: right tentacle -->
+  <Cinder_TurretWalker.corePart.parts.right_tentacle.customLabel>右触手</Cinder_TurretWalker.corePart.parts.right_tentacle.customLabel>
+  <!-- EN: right rear tentacle -->
+  <Cinder_TurretWalker.corePart.parts.right_rear_tentacle.customLabel>右后触手</Cinder_TurretWalker.corePart.parts.right_rear_tentacle.customLabel>
+  <!-- EN: left armour plate -->
+  <Cinder_TurretWalker.corePart.parts.left_armour_plate.customLabel>左装甲板</Cinder_TurretWalker.corePart.parts.left_armour_plate.customLabel>
+  <!-- EN: right armour plate -->
+  <Cinder_TurretWalker.corePart.parts.right_armour_plate.customLabel>右装甲板</Cinder_TurretWalker.corePart.parts.right_armour_plate.customLabel>
+  <!-- EN: forward armour plate -->
+  <Cinder_TurretWalker.corePart.parts.forward_armour_plate.customLabel>正面装甲板</Cinder_TurretWalker.corePart.parts.forward_armour_plate.customLabel>
+  
+</LanguageData>

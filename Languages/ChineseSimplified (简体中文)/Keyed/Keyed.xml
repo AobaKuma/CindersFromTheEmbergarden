@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <Cinder_Setting>无定形余烬</Cinder_Setting>
+	<!-- EN: {0} has appeared! -->
+  <Cinder_CommaEyesLabel>原版脸</Cinder_CommaEyesLabel>
+  <Cinder_CommaEyesDesc>将脸部与身体替换为原版风格的逗号脸与原版身体</Cinder_CommaEyesDesc>
+  <Cinder_NeedResurrectOrRegen>需要具有无定形再生能力的人使用</Cinder_NeedResurrectOrRegen>
+  <Cinder_AllAbilityGained>已经获得所有能力了</Cinder_AllAbilityGained>
+  <Embergarden_PlatingTooltip>{0}身上的装甲板已经完全损坏</Embergarden_PlatingTooltip>
+</LanguageData>

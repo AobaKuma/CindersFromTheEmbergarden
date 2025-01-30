@@ -474,7 +474,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>Cinder_TacticalTurret</defName>
 		<label>walker tactical turret</label>
-		<description>A movable short-range turret. It will stop functioning once its battery runs out. If damaged sufficiently, it may explode.</description>
+		<description>A movable short-range turret, If damaged sufficiently, it may explode.</description>
 		<thingClass>Building_TurretGun</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<uiIconPath>Things/Building/WalkerTacticalTurret/WalkerTacticalTurret_MenuIcon</uiIconPath>

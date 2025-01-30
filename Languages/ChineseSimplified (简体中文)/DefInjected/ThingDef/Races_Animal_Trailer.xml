@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: trailer -->
+  <Cinder_Trailer.label>拖车</Cinder_Trailer.label>
+  <!-- EN: An artificial life form assembled from discarded armored vehicle components and amorphous polymers, which can be used as a transport truck and can replace freight vehicles on rough roads. -->
+  <Cinder_Trailer.description>一种由废弃的装甲车部件和无定形聚合物组装而成的人造生命体，可以用作运输卡车，可以在崎岖的道路上取代货运车辆。</Cinder_Trailer.description>
+  <!-- EN: Left tentacle -->
+  <Cinder_Trailer.tools.Left_tentacle.label>左触手</Cinder_Trailer.tools.Left_tentacle.label>
+  <!-- EN: tentacle -->
+  <Cinder_Trailer.tools.Left_tentacle.labelNoLocation>触手</Cinder_Trailer.tools.Left_tentacle.labelNoLocation>
+  <!-- EN: right tentacle -->
+  <Cinder_Trailer.tools.right_tentacle.label>右触手</Cinder_Trailer.tools.right_tentacle.label>
+  <!-- EN: tentacle -->
+  <Cinder_Trailer.tools.right_tentacle.labelNoLocation>触手</Cinder_Trailer.tools.right_tentacle.labelNoLocation>
+  <!-- EN: Front tentacle -->
+  <Cinder_Trailer.tools.Front_tentacle.label>前触手</Cinder_Trailer.tools.Front_tentacle.label>
+  
+</LanguageData>

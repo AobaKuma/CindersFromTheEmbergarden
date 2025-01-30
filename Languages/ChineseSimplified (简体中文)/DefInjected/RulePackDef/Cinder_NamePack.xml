@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>r_name->[BrigadeType] [complex]</li>
+    <li>complex->Cradle</li>
+    <li>complex->Garden</li>
+    <li>BrigadeType->Withering</li>
+    <li>BrigadeType->Ember</li>
+    <li>BrigadeType->Ashe</li>
+    <li>BrigadeType->Tranquil</li>
+  -->
+  <Cinder_Cradle.rulePack.rulesStrings>
+  
+   <li>r_name->[BrigadeType][complex]</li>
+    <li>complex->摇篮</li>
+    <li>complex->花园</li>
+    <li>BrigadeType->凋零</li>
+    <li>BrigadeType->灰烬</li>
+    <li>BrigadeType->余烬</li>
+    <li>BrigadeType->静谧</li>
+  
+  </Cinder_Cradle.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>r_name-> [BrigadeNum0][BrigadeNum1][BrigadeNum2] [BrigadeType] [complex]</li>
+    <li>complex->Division</li>
+    <li>complex->Convoy</li>
+    <li>complex->Fleet</li>
+    <li>BrigadeType->Assault</li>
+    <li>BrigadeType->Explore</li>
+    <li>BrigadeType->Transport</li>
+    <li>BrigadeType->Logistic</li>
+    <li>BrigadeNum0->1</li>
+    <li>BrigadeNum0->2</li>
+    <li>BrigadeNum0->3</li>
+    <li>BrigadeNum0->4</li>
+    <li>BrigadeNum0->5</li>
+    <li>BrigadeNum0->6</li>
+    <li>BrigadeNum0->7</li>
+    <li>BrigadeNum0->8</li>
+    <li>BrigadeNum0->9</li>
+    <li>BrigadeNum1->0</li>
+    <li>BrigadeNum1->1</li>
+    <li>BrigadeNum1->2</li>
+    <li>BrigadeNum1->3</li>
+    <li>BrigadeNum1->4</li>
+    <li>BrigadeNum1->5</li>
+    <li>BrigadeNum1->6</li>
+    <li>BrigadeNum1->7</li>
+    <li>BrigadeNum1->8</li>
+    <li>BrigadeNum1->9</li>
+    <li>BrigadeNum2->0th</li>
+    <li>BrigadeNum2->1st</li>
+    <li>BrigadeNum2->2nd</li>
+    <li>BrigadeNum2->3rd</li>
+    <li>BrigadeNum2->4th</li>
+    <li>BrigadeNum2->5th</li>
+    <li>BrigadeNum2->6th</li>
+    <li>BrigadeNum2->7th</li>
+    <li>BrigadeNum2->8th</li>
+    <li>BrigadeNum2->9th</li>
+  -->
+  <Cinder_LanternFleet.rulePack.rulesStrings>
+  
+  <li>r_name-> [BrigadeNum0][BrigadeNum1][BrigadeNum2][BrigadeType][complex]</li>
+    <li>complex->战斗群</li>
+    <li>complex->船团</li>
+    <li>complex->舰队</li>
+    <li>BrigadeType->突击</li>
+    <li>BrigadeType->探索</li>
+    <li>BrigadeType->运输</li>
+    <li>BrigadeType->物流</li>
+    <li>BrigadeNum0->第1</li>
+    <li>BrigadeNum0->第2</li>
+    <li>BrigadeNum0->第3</li>
+    <li>BrigadeNum0->第4</li>
+    <li>BrigadeNum0->第5</li>
+    <li>BrigadeNum0->第6</li>
+    <li>BrigadeNum0->第7</li>
+    <li>BrigadeNum0->第8</li>
+    <li>BrigadeNum0->第9</li>
+    <li>BrigadeNum1->第0</li>
+    <li>BrigadeNum1->1</li>
+    <li>BrigadeNum1->2</li>
+    <li>BrigadeNum1->3</li>
+    <li>BrigadeNum1->4</li>
+    <li>BrigadeNum1->5</li>
+    <li>BrigadeNum1->6</li>
+    <li>BrigadeNum1->7</li>
+    <li>BrigadeNum1->8</li>
+    <li>BrigadeNum1->9</li>
+    <li>BrigadeNum2->0</li>
+    <li>BrigadeNum2->1</li>
+    <li>BrigadeNum2->2</li>
+    <li>BrigadeNum2->3</li>
+    <li>BrigadeNum2->4</li>
+    <li>BrigadeNum2->5</li>
+    <li>BrigadeNum2->6</li>
+    <li>BrigadeNum2->7</li>
+    <li>BrigadeNum2->8</li>
+    <li>BrigadeNum2->9</li>
+  
+  </Cinder_LanternFleet.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>r_name->[Number][Number] [complexAdj] [Type]</li>
+    <li>Type->Assault Ship</li>
+    <li>Type->Recon Ship</li>
+    <li>Type->Bomber Ship</li>
+    <li>Type->Supply Ship</li>
+    <li>Type->Covert Ops</li>
+    <li>Type->Heavy Interdictor</li>
+    <li>Type->Carrier</li>
+    <li>Type->Dreadnought</li>
+    <li>Type->Ironclad</li>
+    <li>Type->Industrial flagship</li>
+    <li>complexAdj->secret</li>
+    <li>complexAdj->ancient</li>
+    <li>complexAdj->old</li>
+    <li>complexAdj->hidden</li>
+    <li>complexAdj->dusty</li>
+    <li>complexAdj->dangerous</li>
+    <li>complexAdj->hidden</li>
+    <li>Number->0</li>
+    <li>Number->1</li>
+    <li>Number->2</li>
+    <li>Number->3</li>
+    <li>Number->4</li>
+    <li>Number->5</li>
+    <li>Number->6</li>
+    <li>Number->7</li>
+    <li>Number->8</li>
+  -->
+  <Cinder_LanternFleetBase.rulePack.rulesStrings>
+  
+  <li>r_name->[Number][Number] [complexAdj] [Type]</li>
+    <li>Type->突击舰</li>
+    <li>Type->侦察舰</li>
+    <li>Type->轰炸舰</li>
+    <li>Type->补给舰</li>
+    <li>Type->黑隐特勤舰</li>
+    <li>Type->重型拦截舰</li>
+    <li>Type->母舰</li>
+    <li>Type->无畏舰</li>
+    <li>Type->装甲舰</li>
+    <li>Type->工业旗舰</li>
+    <li>complexAdj->秘密</li>
+    <li>complexAdj->古老</li>
+    <li>complexAdj->古代</li>
+    <li>complexAdj->隐蔽</li>
+    <li>complexAdj->尘封</li>
+    <li>complexAdj->危险</li>
+    <li>complexAdj->隐藏</li>
+    <li>Number->0</li>
+    <li>Number->1</li>
+    <li>Number->2</li>
+    <li>Number->3</li>
+    <li>Number->4</li>
+    <li>Number->5</li>
+    <li>Number->6</li>
+    <li>Number->7</li>
+    <li>Number->8</li>
+  
+  </Cinder_LanternFleetBase.rulePack.rulesStrings>
+  
+</LanguageData>

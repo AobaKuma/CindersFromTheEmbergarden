@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Multiple bullet -->
+  <Cinder_Bullet_308APE.label>多头弹</Cinder_Bullet_308APE.label>
+  
+  <!-- EN: .50 bullet -->
+  <Cinder_Bullet_50APE.label>大口径弹药</Cinder_Bullet_50APE.label>
+  
+  <!-- EN: Flechette blast -->
+  <Cinder_Bullet_Flechette.label>镖弹</Cinder_Bullet_Flechette.label>
+  
+  <!-- EN: needle bullet -->
+  <Cinder_Bullet_PDW.label>pdw针弹</Cinder_Bullet_PDW.label>
+  
+  <!-- EN: Energy gathering bomb -->
+  <Cinder_Bullet_RPG.label>聚能装药弹</Cinder_Bullet_RPG.label>
+  
+  <!-- EN: Dragon slayer Bow -->
+  <Cinder_Dragonslayer.label>猎龙大弓</Cinder_Dragonslayer.label>
+  <!-- EN: An ancient extended range anti armor rocket launcher that destroys heavy armor by launching tentacle shaped charge bombs inside. It can also transform into a minigun to deal with cluster targets. -->
+  <Cinder_Dragonslayer.description>一种古老的远程反装甲火箭发射器，通过在内部发射触手形装药炸弹来摧毁重型装甲。它还可以变成速射机枪来处理集群目标。</Cinder_Dragonslayer.description>
+  <!-- EN: Switch weapon form -->
+  <Cinder_Dragonslayer.comps.CompSecondaryVerb.description>切换武器形态</Cinder_Dragonslayer.comps.CompSecondaryVerb.description>
+  <!-- EN: Rocket -->
+  <Cinder_Dragonslayer.comps.CompSecondaryVerb.mainWeaponLabel>火箭</Cinder_Dragonslayer.comps.CompSecondaryVerb.mainWeaponLabel>
+  <!-- EN: Minigun -->
+  <Cinder_Dragonslayer.comps.CompSecondaryVerb.secondaryWeaponLabel>速射机枪</Cinder_Dragonslayer.comps.CompSecondaryVerb.secondaryWeaponLabel>
+  <!-- EN: stock -->
+  <Cinder_Dragonslayer.tools.stock.label>枪托</Cinder_Dragonslayer.tools.stock.label>
+  <!-- EN: barrel -->
+  <Cinder_Dragonslayer.tools.barrel.label>枪管</Cinder_Dragonslayer.tools.barrel.label>
+  <!-- EN: Dragon slayer Bow -->
+  <Cinder_Dragonslayer.verbs.Verb_Shoot.label>猎龙大弓</Cinder_Dragonslayer.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Flint anti material rifle -->
+  <Cinder_Flint50A.label>火石反器材步枪</Cinder_Flint50A.label>
+  <!-- EN: An ancient anti material assault rifle that uses large caliber bullets and can effectively destroy lightly armored targets or military equipment, with a recoil that is difficult to withstand., occasionally this gun grows some strange tentacles. -->
+  <Cinder_Flint50A.description>一种古老的反器材突击步枪，使用大口径子弹，能有效摧毁轻装甲目标或军事装备，后坐力难以承受，这把枪偶尔会长出一些奇怪的触手。</Cinder_Flint50A.description>
+  <!-- EN: stock -->
+  <Cinder_Flint50A.tools.stock.label>枪托</Cinder_Flint50A.tools.stock.label>
+  <!-- EN: barrel -->
+  <Cinder_Flint50A.tools.barrel.label>枪管</Cinder_Flint50A.tools.barrel.label>
+  <!-- EN: Flint anti material rifle -->
+  <Cinder_Flint50A.verbs.Verb_Shoot.label>火石反器材步枪</Cinder_Flint50A.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Magistrate shotgun -->
+  <Cinder_Magistrate.label>判官霰弹枪</Cinder_Magistrate.label>
+  <!-- EN: An ancient design of shotgun that use special dart bullets. Deadly, but short range.Sometimes tentacles grow on the muzzle of a gun. -->
+  <Cinder_Magistrate.description>一种使用特殊飞镖子弹的古老霰弹枪设计。致命，但射程短。有时，枪口上会长出触手。</Cinder_Magistrate.description>
+  <!-- EN: stock -->
+  <Cinder_Magistrate.tools.stock.label>枪托</Cinder_Magistrate.tools.stock.label>
+  <!-- EN: barrel -->
+  <Cinder_Magistrate.tools.barrel.label>枪管</Cinder_Magistrate.tools.barrel.label>
+  <!-- EN: Magistrate shotgun -->
+  <Cinder_Magistrate.verbs.Verb_Shoot.label>判官霰弹枪</Cinder_Magistrate.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Needle PDW -->
+  <Cinder_MP12A.label>针式PDW</Cinder_MP12A.label>
+  <!-- EN: An ancient rapid fire armor piercing submachine gun/short rifle that uses armor piercing ammunition and was used as a weapon for vehicle crew members or operators to confront armed soldiers, occasionally this gun grows some strange tentacles. -->
+  <Cinder_MP12A.description>一种古老的速射穿甲冲锋枪/短步枪，使用穿甲弹药，被用作车组乘员或操作员对抗前线武装士兵的武器，偶尔这种枪会长出一些奇怪的触手。</Cinder_MP12A.description>
+  <!-- EN: stock -->
+  <Cinder_MP12A.tools.stock.label>枪托</Cinder_MP12A.tools.stock.label>
+  <!-- EN: barrel -->
+  <Cinder_MP12A.tools.barrel.label>枪管</Cinder_MP12A.tools.barrel.label>
+  <!-- EN: Needle PDW -->
+  <Cinder_MP12A.verbs.Verb_Shoot.label>针式PDW</Cinder_MP12A.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Ouroboros rifle -->
+  <Cinder_PCX33A.label>衔尾蛇步枪</Cinder_PCX33A.label>
+  <!-- EN: An ancient Hi-Power rifle,The actual damage it causes is not as simple as it seems.Its special warhead will shatter upon hitting the target, causing serious damage,Not clearing what twisted it, occasionally this gun grows some strange tentacles. -->
+  <Cinder_PCX33A.description>一支古老的高威力步枪，它造成的实际伤害并不像看起来那么简单。它的特殊弹头在击中目标时会粉碎，造成严重伤害，不清楚是什么扭曲了它，偶尔这把枪会长出一些奇怪的触手。</Cinder_PCX33A.description>
+  <!-- EN: stock -->
+  <Cinder_PCX33A.tools.stock.label>枪托</Cinder_PCX33A.tools.stock.label>
+  <!-- EN: barrel -->
+  <Cinder_PCX33A.tools.barrel.label>枪管</Cinder_PCX33A.tools.barrel.label>
+  <!-- EN: Ouroboros rifle -->
+  <Cinder_PCX33A.verbs.Verb_Shoot.label>衔尾蛇步枪</Cinder_PCX33A.verbs.Verb_Shoot.label>
+  
+</LanguageData>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: eternal fear -->
+  <Cinder_EternalFear.label>永恒恐惧</Cinder_EternalFear.label>
+  <!-- EN: Mental state: Eternal Fear -->
+  <Cinder_EternalFear.baseInspectLine>崩溃：永恒恐惧</Cinder_EternalFear.baseInspectLine>
+  <!-- EN: {0} seeing the true essence through the surface of the world, {PAWN_pronoun} spirit has been greatly impacted， {PAWN_pronoun} began to run away in panic. -->
+  <Cinder_EternalFear.beginLetter>{0}透过世界的表面看到了本质,{PAWN_pronoun}的精神受到了极大冲击，{PAWN_pronoun}开始惊慌失措地逃跑。</Cinder_EternalFear.beginLetter>
+  <!-- EN: escaping -->
+  <Cinder_EternalFear.beginLetterLabel>逃跑中</Cinder_EternalFear.beginLetterLabel>
+  <!-- EN: {0} is no longer escaping. -->
+  <Cinder_EternalFear.recoveryMessage>{0}不再逃跑了。</Cinder_EternalFear.recoveryMessage>
+  
+</LanguageData>

@@ -10,7 +10,7 @@
 		</modExtensions>
 		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
 		<defName>Cinder_UncontrollableTentacles</defName>
-		<label>UncontrollableTentacles</label>
+		<label>Uncontrollable tentacles</label>
 		<description>This tentacle will randomly hinder or assist in manipulation.</description>
 		<hediffClass>Embergarden.Hediff_DynamicCap</hediffClass>
 		<isBad>false</isBad>

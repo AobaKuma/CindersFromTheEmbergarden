@@ -431,7 +431,7 @@
 	<ThingDef ParentName="Cinder_Gun">
 		<defName>Cinder_Flint50A</defName>
 		<label>Flint anti material rifle</label>
-		<description>An ancient anti material assault rifle that uses large caliber bullets and can effectively destroy lightly armored targets or military equipment, with a recoil that is difficult to withstand., occasionally this gun grows some strange tentacles.</description>
+		<description>An ancient anti material assault rifle that uses large caliber bullets and can effectively destroy lightly armored targets or military equipment, with a recoil that is difficult to withstand, occasionally this gun grows some strange tentacles.</description>
 		<graphicData>
 			<texPath>Things/Weapons/Flint50/Flint50D</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

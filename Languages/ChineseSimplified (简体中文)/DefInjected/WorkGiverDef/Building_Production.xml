@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Working at a workstation -->
+  <Cinder_DoBillsMachiningTable.label>在工作站工作</Cinder_DoBillsMachiningTable.label>
+  <!-- EN: working at -->
+  <Cinder_DoBillsMachiningTable.gerund>工作于</Cinder_DoBillsMachiningTable.gerund>
+  <!-- EN: work -->
+  <Cinder_DoBillsMachiningTable.verb>工作</Cinder_DoBillsMachiningTable.verb>
+  
+</LanguageData>

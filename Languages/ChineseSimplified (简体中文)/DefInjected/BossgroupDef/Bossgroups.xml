@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Standard combat unit group, units with consciousness taken over by DI will independently assess threats and engage in combat. -->
+  <Cinder_CombatUnitGroup.leaderDescription>标准战斗单位集群，被DI接管意识的单位将会全自动判断威胁并进行战斗。</Cinder_CombatUnitGroup.leaderDescription>
+  
+</LanguageData>

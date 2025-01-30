@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Amorphous wall -->
+  <Cinder_AmorphousWall.label>无定形墙体</Cinder_AmorphousWall.label>
+  <!-- EN: An indescribable amorphous tentacle mixed with a lump of metal, emitting a burnt odor. -->
+  <Cinder_AmorphousWall.description>一种难以名状的无定形触手，混有一块金属，散发出烧焦的气味。</Cinder_AmorphousWall.description>
+  
+  <!-- EN: tentacle -->
+  <Cinder_BlackTentacle.label>触手</Cinder_BlackTentacle.label>
+  
+  <!-- EN: Tentacle trap -->
+  <Cinder_TentacleTrap.label>触手陷阱</Cinder_TentacleTrap.label>
+  <!-- EN: / -->
+  <Cinder_TentacleTrap.description>缠绕在地板上的触手</Cinder_TentacleTrap.description>
+  
+  <!-- EN: Amorphous trap -->
+  <Cinder_TrapIED_HighExplosive.label>无形陷阱</Cinder_TrapIED_HighExplosive.label>
+  <!-- EN: A pair of high-explosive shells connected to a trigger which detonates on touch or bullet impact. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm. -->
+  <Cinder_TrapIED_HighExplosive.description>小型触手炸弹陷阱，它会像地雷一样爆炸，然后会在数小时后填装完毕。</Cinder_TrapIED_HighExplosive.description>
+  
+</LanguageData>

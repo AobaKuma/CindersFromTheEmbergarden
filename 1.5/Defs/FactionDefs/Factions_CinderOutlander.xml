@@ -236,7 +236,7 @@
    <FactionDef ParentName="FactionBase">
 	 <defName>Cinder_ESDSP</defName>
     <label>cradle</label>
-    <description>These people are fleets fleeing from ancient Earth in all directions of the universe. Their assault landing ship encountered fierce combat near the orbit of this planet, so they made an emergency landing on the planet and re established themselves here.</description>
+    <description>Driven to a dead end by the war, the cinders entrusted everything they had, including their own bodies, to DI in an attempt to end the conflict. However, the underlying logic of DI is chaotic, stemming from the ancient god's blood and flesh remnants, rendering it incapable of making a correct judgment on whether the war has ended. Even thousands of years later, after the shadow zones dissipated and the so-called enemies were overthrown and disintegrated, it still cannot determine that the war is over. Instead, it gazes into the boundless starry sky and begins an endless war against any armed threat that has yet to surrender..</description>
     <colorSpectrum>
       <li>(1, 1, 1)</li>
     </colorSpectrum>

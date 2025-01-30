@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: [PAWN_nameDef] is responsible for guarding documents in a library within a bunker of the Defense Council. This job should be performed by adults, but all the adults in the shelter have been sent to war as soldiers. In principle, [PAWN_pronoun] shouldn't look at the contents, but [PAWN_possessive] curiosity led [PAWN_objective] to make a mistake.\n [PAWN_pronoun] came across criticisms of totalitarian states from before the disaster, and even the most terrifying regimes in history seemed to [PAWN_objective] like an ideal state. This prompted [PAWN_objective] to start contemplating the definition of what is right. -->
+  <Cinder_ArchiveGuard.description>[PAWN_nameDef]在国防委员会一个地堡资料馆里负责看管资料，这份工作本应由成年人担任，但该避难所的成年人都已作为士兵投入战争，原则上[PAWN_pronoun]不能看里面的东西，但是[PAWN_possessive]好奇心让[PAWN_pronoun]犯下了错误，[PAWN_pronoun]看到了灾难前一些针对极权国家的批判，但哪怕历史中最恐怖的统治，在[PAWN_pronoun]看来都像是理想国。这让[PAWN_pronoun]开始思考正确的定义。</Cinder_ArchiveGuard.description>
+  <!-- EN: archive guard -->
+  <Cinder_ArchiveGuard.title>资料馆看守</Cinder_ArchiveGuard.title>
+  <!-- EN: guard -->
+  <Cinder_ArchiveGuard.titleShort>看守</Cinder_ArchiveGuard.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is a firefighter, and [PAWN_possessive] work is extremely busy. [PAWN_pronoun] has never questioned the enjoyment of the job: running at midnight, watching pages of books turn to ashes...\n\nThe war attackers [PAWN_pronoun] operates are deployed to launch Hellfire missiles to destroy heavy armored units and fortifications. -->
+  <Cinder_AttackerOperator.description>[PAWN_nameDef]是一名消防员，[PAWN_possessive]工作非常忙，并且从来没有质疑过自己所从事工作的乐趣：在午夜奔跑，看着书一页一页地烧成灰烬...[PAWN_pronoun]操作的战争攻击者被部署用于发射地狱火导弹摧毁重装甲单位与工事。</Cinder_AttackerOperator.description>
+  <!-- EN: attacker operator -->
+  <Cinder_AttackerOperator.title>打击者操作员</Cinder_AttackerOperator.title>
+  <!-- EN: "firefighter" -->
+  <Cinder_AttackerOperator.titleShort>“消防员”</Cinder_AttackerOperator.titleShort>
+  
+  <!-- EN: In [PAWN_possessive] long dreams, [PAWN_nameDef] is a discus thrower, often seen throwing the discus at a target in the arena.\n\nHowever, in reality, [PAWN_nameDef] is wearing heavy armor and using a focused energy bomb for close-range throws after breaking through enemy defenses. -->
+  <Cinder_BreakthroughSoldier.description>[PAWN_nameDef]在长梦中是一名铁饼运动员，[PAWN_pronoun]常常在赛场上对着目标投掷铁饼，但实际上那是穿着厚重的装甲用于突破敌军的防御后，近距离投掷的聚能炸弹。</Cinder_BreakthroughSoldier.description>
+  <!-- EN: breakthrough soldier -->
+  <Cinder_BreakthroughSoldier.title>突破单位</Cinder_BreakthroughSoldier.title>
+  <!-- EN: "discus thrower" -->
+  <Cinder_BreakthroughSoldier.titleShort>“掷铁饼者”</Cinder_BreakthroughSoldier.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is a child produced through mass IVF in a factory. This method differs from cloning and aims to preserve genetic diversity.\n \nTypically, children are infused with combat memories and personality traits to ensure they can adapt to various professions, but [PAWN_pronoun] has never interacted with anyone else. -->
+  <Cinder_BulkProducts.description>[PAWN_nameDef]是一个由工厂批量化试管受精生产的儿童，这种方式与克隆不同，旨在保存基因多样性，通常会被灌输战斗记忆与人格常识以保证能够适应各种职业，但[PAWN_nameDef]从未与其他人交流过。</Cinder_BulkProducts.description>
+  <!-- EN: bulk products -->
+  <Cinder_BulkProducts.title>量产儿童</Cinder_BulkProducts.title>
+  <!-- EN: bulk products -->
+  <Cinder_BulkProducts.titleShort>量产品</Cinder_BulkProducts.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was born in a shelter that forbade [PAWN_objective] from knowing who [PAWN_possessive] parents were. [PAWN_possessive] education from birth involved producing components on underground machines, and [PAWN_pronoun] has never seen sunlight. -->
+  <Cinder_ChildLabourer.description>[PAWN_nameDef]在一个避难所出生，避难所不允许[PAWN_pronoun]知道自己的父母是谁，[PAWN_pronoun]从出生所受的教育就是在地下的机器上生产零件，[PAWN_nameDef]从未见过阳光。</Cinder_ChildLabourer.description>
+  <!-- EN: shelters child labourer -->
+  <Cinder_ChildLabourer.title>避难所童工</Cinder_ChildLabourer.title>
+  <!-- EN: child labourer -->
+  <Cinder_ChildLabourer.titleShort>童工</Cinder_ChildLabourer.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was born in a shelter controlled by a cult that operated under the Defense Council. [PAWN_pronoun] was chosen by the cult to drink strange serum potions to attain enlightenment.\n [PAWN_pronoun] gained some bizarre abilities and took pride in them, until [PAWN_pronoun] witnessed the process of how these potions were made. -->
+  <Cinder_ChosenOne.description>[PAWN_nameDef]出生于一个被邪教教团控制的国防委员会避难所里，[PAWN_pronoun]被邪教选中喝下一些奇怪的药剂血清以获得神启，[PAWN_pronoun]获得了一些诡异的能力，[PAWN_pronoun]对此很自豪，直到[PAWN_pronoun]看到了这些药剂的制作过程。</Cinder_ChosenOne.description>
+  <!-- EN: cult chosen one -->
+  <Cinder_ChosenOne.title>邪教受选者</Cinder_ChosenOne.title>
+  <!-- EN: chosen one -->
+  <Cinder_ChosenOne.titleShort>受选者</Cinder_ChosenOne.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was born in a shelter run by the Defense Council. [PAWN_pronoun] has never received an education, only following the orders of the adults in charge of [PAWN_objective].\n During the lulls between bombings, [PAWN_pronoun] crawls to the surface to clean the cameras obscured by blood. If [PAWN_pronoun] does well, [PAWN_pronoun] might be rewarded with a plate of raw mushrooms. -->
+  <Cinder_Cleaner.description>[PAWN_nameDef]出生在一个国防委员会的避难所里，[PAWN_pronoun]从未受到过教育，只是听从负责看管[PAWN_possessive]大人的命令，在炸弹落下的间隙爬到地表去擦干净被血污遮盖住的摄像头，做的好的话还能得到一盘生菌菇作为奖励。</Cinder_Cleaner.description>
+  <!-- EN: camera cleaner -->
+  <Cinder_Cleaner.title>摄像头清洁工</Cinder_Cleaner.title>
+  <!-- EN: cleaner -->
+  <Cinder_Cleaner.titleShort>清洁工</Cinder_Cleaner.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was born in an old bunker belonging to the Defense Council. There, children like [PAWN_nameDef] were sent into narrow pipelines for simple clearing tasks. Frequently, [PAWN_pronoun] would drag out friends who had been lively just days before, or traitors who had been baked by the heated pipes.\n These days continued until [PAWN_nameDef] crawled along the pipeline to reach a place [PAWN_pronoun] had never seen before—“the outside.” -->
+  <Cinder_CleaningWorker.description>[PAWN_nameDef]出生在国防委员会所属的老旧地堡中。在那里，像[PAWN_nameDef]这样的小孩会被派去进入狭长的主管道进行简单的疏通作业。经常的，[PAWN_nameDef]会拖出前几天还活蹦乱跳的朋友，或者被发热管道烤干的叛徒。这样的日子持续到[PAWN_nameDef]沿着主管网爬到了[PAWN_pronoun]从未见过的“外面”。</Cinder_CleaningWorker.description>
+  <!-- EN: Pipeline cleaner -->
+  <Cinder_CleaningWorker.title>爬管道的孩子</Cinder_CleaningWorker.title>
+  <!-- EN: cleaner -->
+  <Cinder_CleaningWorker.titleShort>清理工</Cinder_CleaningWorker.titleShort>
+  
+  <!-- EN: In [PAWN_possessive] long dreams, [PAWN_nameDef] gathers mushrooms in the mountains and forests, which can always be exchanged for delicious food.\n\nIn reality, during the period when [PAWN_possessive] consciousness is taken over by data intelligence, [PAWN_pronoun] is used by the military to collect high-quality genetic material from individuals to provide sufficient biological resources for the factories at the rear. -->
+  <Cinder_Collector.description>[PAWN_nameDef]经常梦见自己在山林中采集蘑菇，这些蘑菇总能换一些好吃的，实际上在被接管意识的期间[PAWN_pronoun]被用于在军队中采集优质个体的遗传物质来为后方的工厂提供足够的生物材料。</Cinder_Collector.description>
+  <!-- EN: genetic collector -->
+  <Cinder_Collector.title>基因采集者</Cinder_Collector.title>
+  <!-- EN: "mushroom-picking girl" -->
+  <Cinder_Collector.titleShort>“蘑菇女孩”</Cinder_Collector.titleShort>
+  
+  <!-- EN: As a child living in the core area of data intelligence protection, [PAWN_nameDef] leads a life almost indistinguishable from before the disaster.\n\nHowever, [PAWN_nameDef] is restless and often sneaks out to explore the boundaries of the core area, where [PAWN_pronoun] sees the true nature of the world. Unable to accept this reality, [PAWN_possessive] mind shatters, and [PAWN_pronoun] is placed in a gentle long dream through the hosting of data intelligence. -->
+  <Cinder_CoreChildren.description>作为在DI保护的核心区活着的孩子，[PAWN_nameDef]过着和灾难前几乎无异的同年生活，但是[PAWN_nameDef]并不安分，常常偷跑到核心区的边界探险，在那里，[PAWN_pronoun]看到了世界的真实样貌，之后无法接受现实，心智崩毁的[PAWN_pronoun]被DI托管意识，进入温柔的长梦中。</Cinder_CoreChildren.description>
+  <!-- EN: core area kids -->
+  <Cinder_CoreChildren.title>核心区孩子</Cinder_CoreChildren.title>
+  <!-- EN: core area kids -->
+  <Cinder_CoreChildren.titleShort>核心区孩子</Cinder_CoreChildren.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was born in a shelter controlled by a cult within the Defense Council. [PAWN_pronoun] was once used as a gestation pod, but during a raid on the shelter by the Economic Security Department for Special Periods, [PAWN_pronoun] and [PAWN_possessive] infant were trapped in the wreckage.\n By the time others found them, [PAWN_possessive] infant had already died from illness. In [PAWN_possessive] madness, [PAWN_pronoun] sacrificed [PAWN_possessive] own arm to the cult in exchange for [PAWN_possessive] child's life. In the end, all [PAWN_pronoun] received was a rag doll. -->
+  <Cinder_CrazyBeliever.description>[PAWN_nameDef]出生于一个被邪教教团控制的国防委员会避难所里，[PAWN_pronoun]曾被当作孕育舱使用，但在经济保障部的一次针对避难所的突袭中[PAWN_pronoun]和[PAWN_possessive]幼子被困在残骸中，直到被其他人发现时[PAWN_possessive]幼子已经重病身亡，[PAWN_pronoun]向邪教献祭了自己的手臂以换取幼子的生命，精神错乱的[PAWN_pronoun]最后得到的是一个布娃娃</Cinder_CrazyBeliever.description>
+  <!-- EN: crazy believer -->
+  <Cinder_CrazyBeliever.title>疯狂信徒</Cinder_CrazyBeliever.title>
+  <!-- EN: crazy believer -->
+  <Cinder_CrazyBeliever.titleShort>疯狂信徒</Cinder_CrazyBeliever.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was born in a shelter controlled by a cult within the Defense Council. [PAWN_pronoun] did not know who [PAWN_possessive] parents were and grew up under the influence of the cult.\n However, when the cult began incessant blood rituals, [PAWN_possessive] survival instinct drove [PAWN_nameDef] to fearfully escape the shelter. -->
+  <Cinder_CultChild.description>[PAWN_nameDef]出生于一个被邪教教团控制的国防委员会避难所里，[PAWN_pronoun]不知道自己的父母是谁，而是在邪教的培养下长大，但当邪教开始不停的血祭时，生存的本能让[PAWN_nameDef]害怕的逃离了避难所。</Cinder_CultChild.description>
+  <!-- EN: escaping cult child -->
+  <Cinder_CultChild.title>逃离的邪教孩子</Cinder_CultChild.title>
+  <!-- EN: cult child -->
+  <Cinder_CultChild.titleShort>邪教孩子</Cinder_CultChild.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is a government bureaucrat in a long dream, relying on past memories to issue orders and maintain the normal operation of the country.\n\nIn reality, [PAWN_possessive] brain is used to assist in processing endless battlefield information for data intelligence. -->
+  <Cinder_DataUnit.description>[PAWN_nameDef]在长梦中是一名政府官僚，[PAWN_pronoun]依赖着以前的记忆进行政令发布以维持国家正常运转，实际上[PAWN_possessive]大脑被用于辅助DI处理前线无休止的战事信息。</Cinder_DataUnit.description>
+  <!-- EN: data processing unit -->
+  <Cinder_DataUnit.title>数据处理单位</Cinder_DataUnit.title>
+  <!-- EN: "bureaucrat" -->
+  <Cinder_DataUnit.titleShort>“官僚”</Cinder_DataUnit.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is a refugee child struggling to survive in the continuous dust fog climate disasters.\n The adults who were protecting the refugees have all been killed by the ghouls that emerged from the dust fog.\n [PAWN_pronoun] can only hide in an abandoned underground facility, barely surviving by eating wild mushrooms. -->
+  <Cinder_DustFogRefugee.description>[PAWN_nameDef]是在接连不断的尘雾气候灾难中艰难求生的难民小孩，保护难民的成年人们都被尘雾中跑出来的尸鬼杀死了，[PAWN_pronoun]只能躲在没人的地下设施内苟延残喘，靠着吃野生菌菇活下去。</Cinder_DustFogRefugee.description>
+  <!-- EN: dust fog refugee -->
+  <Cinder_DustFogRefugee.title>尘雾难民</Cinder_DustFogRefugee.title>
+  <!-- EN: refugee -->
+  <Cinder_DustFogRefugee.titleShort>难民</Cinder_DustFogRefugee.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is the child of refugees struggling to survive in the cracks of war. [PAWN_pronoun] followed [PAWN_possessive] parents around, hiding until they were blown to pieces while trying to protect [PAWN_objective]. The young [PAWN_nameDef] was left with half of his body burned, collapsing in the desolate ruins.\n Eventually, hunger and severe injuries forced [PAWN_objective] to eat [PAWN_possessive] parents' bodies. This left [PAWN_objective] with deep psychological trauma. -->
+  <Cinder_Dying.description>[PAWN_nameDef]是在战争夹缝中求生的难民的孩子，[PAWN_pronoun]从小跟着父母到处躲藏，直到父母为了保护[PAWN_pronoun]被炸成了碎片，年幼的[PAWN_nameDef]也被烧焦了半个身体，瘫倒在空无一人的废墟里，直到饥饿与重伤让[PAWN_pronoun]不得已吃下了父母的尸体。这让[PAWN_possessive]心理受到了极大的创伤。</Cinder_Dying.description>
+  <!-- EN: dying child -->
+  <Cinder_Dying.title>濒死的孩子</Cinder_Dying.title>
+  <!-- EN: dying child -->
+  <Cinder_Dying.titleShort>濒死的孩子</Cinder_Dying.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was supposed to be conscripted as a soldier to fight, but when [PAWN_pronoun] got lost and stumbled into the kitchen of the shelter, [PAWN_pronoun] saw the dismembered bodies of dead soldiers.\n This sight filled [PAWN_objective] with tremendous fear of going to war. Consequently, [PAWN_pronoun] forged [PAWN_possessive] age and hid within the cult, ensuring that no one who knew [PAWN_objective] could find [PAWN_objective]. -->
+  <Cinder_EscapeBeliever.description>[PAWN_nameDef]本应被征召为士兵参战，但当[PAWN_pronoun]在一次迷路时走到了避难所的厨房，在那里[PAWN_pronoun]看见了被拆解分尸的死亡士兵尸体，[PAWN_pronoun]对参战产生了极大的恐惧，于是伪造了自己的年龄躲在了邪教教团中，不让任何认识的人找到[PAWN_pronoun]。</Cinder_EscapeBeliever.description>
+  <!-- EN: escape believer -->
+  <Cinder_EscapeBeliever.title>逃避信徒</Cinder_EscapeBeliever.title>
+  <!-- EN: escape believer -->
+  <Cinder_EscapeBeliever.titleShort>逃避信徒</Cinder_EscapeBeliever.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] remembers [PAWN_possessive] identity as a construction vehicle operator, needing to operate a crusher in the mine every day.\n\nHowever, in reality, [PAWN_nameDef] is assigned by data intelligence to pilot an exoskeleton for combat, injected with an overdose of addictive substances to maintain consciousness, serving as an important part of the armored torrent used to assault the enemy's land ships. -->
+  <Cinder_ExoskeletonDriver.description>[PAWN_nameDef]记得自己是一名工程车操作员，每天都需要在矿场操作一个碎石机来破碎矿物，但实际上[PAWN_pronoun]被DI指派驾驶外骨骼作战，被注射超量使用成瘾品以维持意识，作为装甲洪流的重要组成部分用于突击敌方的陆行舰。</Cinder_ExoskeletonDriver.description>
+  <!-- EN: Exoskeleton driver -->
+  <Cinder_ExoskeletonDriver.title>外骨骼驾驶员</Cinder_ExoskeletonDriver.title>
+  <!-- EN: "operator" -->
+  <Cinder_ExoskeletonDriver.titleShort>“操作员”</Cinder_ExoskeletonDriver.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was once a fallen scion of a bureaucratic family. [PAWN_possessive] parents often boasted in front of [PAWN_objective] about their ancestors' former positions.\n [PAWN_pronoun] frequently flaunted ancient food packaging to [PAWN_possessive] peers, but these stories did not earn [PAWN_objective] respect in the shelter; instead, they made [PAWN_objective] look like a joke. -->
+  <Cinder_FallenYouth.description>[PAWN_nameDef]曾是落魄权贵的子弟，[PAWN_possessive]父母经常在[PAWN_pronoun]面前吹嘘祖辈曾经的位置。[PAWN_pronoun]经常在伙伴面前拿出古代食品包装炫耀，但这些故事并不能让[PAWN_pronoun]在避难所内得到尊重，反而让[PAWN_pronoun]看起来像个笑话。</Cinder_FallenYouth.description>
+  <!-- EN: fallen youth -->
+  <Cinder_FallenYouth.title>落魄子弟</Cinder_FallenYouth.title>
+  <!-- EN: fallen youth -->
+  <Cinder_FallenYouth.titleShort>纨绔</Cinder_FallenYouth.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was born in a shelter controlled by a cult within the Defense Council. [PAWN_pronoun] was extremely loyal and fervent towards the cult, believing that the sacrifices made to the cult had restored [PAWN_possessive] leg,\n which had been damaged by a grenade. However, [PAWN_pronoun] did not realize that this was due to [PAWN_possessive] own regenerative abilities. -->
+  <Cinder_Fanatic.description>[PAWN_nameDef]出生于一个被邪教教团控制的国防委员会避难所里，[PAWN_pronoun]对教团十分忠心且狂热，因为对教团的献祭让[PAWN_pronoun]被榴弹炸坏的腿重新长出来了，但[PAWN_pronoun]不知道这是来自于[PAWN_pronoun]自己的再生能力。</Cinder_Fanatic.description>
+  <!-- EN: cult fanatic -->
+  <Cinder_Fanatic.title>狂热信徒</Cinder_Fanatic.title>
+  <!-- EN: fanatic -->
+  <Cinder_Fanatic.titleShort>狂热信徒</Cinder_Fanatic.titleShort>
+  
+  <!-- EN: In [PAWN_nameDef] was a military mechanical engineer before the bunker was captured.\n After that, [PAWN_nameDef] fell into an endless hiding until [PAWN_pronoun] and [PAWN_possessive] companion robot were captured by the ghoul unit. -->
+  <Cinder_FleeingEngineer.description>[PAWN_nameDef]在地堡被攻占之前是一名军用机械工程师。在那之后，[PAWN_pronoun]陷入了无休无止的躲藏之中，直到[PAWN_pronoun]和[PAWN_possessive]机器人被尸鬼单位抓获。</Cinder_FleeingEngineer.description>
+  <!-- EN: fleeing engineer -->
+  <Cinder_FleeingEngineer.title>逃避的工程师</Cinder_FleeingEngineer.title>
+  <!-- EN: engineer -->
+  <Cinder_FleeingEngineer.titleShort>工程师</Cinder_FleeingEngineer.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] lost all [PAWN_possessive] comrades while serving as a soldier in the Defense Council during the war. [PAWN_pronoun] suffered severe psychological trauma that left [PAWN_objective] unable to lift a gun.\n Judged as worthless, [PAWN_pronoun] was sent to a labor prison, where [PAWN_pronoun] discovered illegal literature promoting underground propaganda. Following this, [PAWN_pronoun] devised a large-scale prison break uprising. -->
+  <Cinder_Follower.description>[PAWN_nameDef]在作为国防委员会的士兵在战争中失去了所有同伴，[PAWN_pronoun]本人也受到了严重的心理打击导致一度无法拿起枪，[PAWN_pronoun]被判断为没有价值而送到监狱劳动，在那里[PAWN_pronoun]看到了一些地下秘密宣传的非法读物，在这之后，[PAWN_pronoun]策划了一场规模浩大的越狱暴动。</Cinder_Follower.description>
+  <!-- EN: underground follower -->
+  <Cinder_Follower.title>地下追随者</Cinder_Follower.title>
+  <!-- EN: follower -->
+  <Cinder_Follower.titleShort>追随者</Cinder_Follower.titleShort>
+  
+  <!-- EN: It is unclear when it started, but [PAWN_nameDef] has been standing in this field. Here, [PAWN_possessive] duty is to scare away nearby pests to prevent crop loss. Occasionally, [PAWN_pronoun] can see some young children waving at [PAWN_objective].\n\nIn response, [PAWN_nameDef] instinctively waves [PAWN_possessive] scorched arms and smiles back, never realizing that the pests [PAWN_pronoun] sees are actually enemy soldiers. -->
+  <Cinder_Garrison.description>不知从何时开始，[PAWN_nameDef]就站在这片田地里了。在这里，[PAWN_possessive]职责是驱赶附近的害兽防止作物减产。偶尔，[PAWN_pronoun]能看见一些年幼的孩子向[PAWN_pronoun]招手。而相应地，[PAWN_pronoun]也会肌肉记忆般地挥动自己烧焦的触手微笑回应，[PAWN_pronoun]从来都不知道自己看见的害兽实际上是敌军士兵。</Cinder_Garrison.description>
+  <!-- EN: garrison troops -->
+  <Cinder_Garrison.title>卫戍单位</Cinder_Garrison.title>
+  <!-- EN: "scarecrow" -->
+  <Cinder_Garrison.titleShort>“稻草人”</Cinder_Garrison.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is used by the Defense Council as a gestation pod for breeding the population.\n [PAWN_pronoun] is forced to reproduce with various outstanding soldiers in the factory. However, when the factory is destroyed during the war, [PAWN_pronoun] escapes from it. -->
+  <Cinder_GestationPod.description>[PAWN_nameDef]被国防委员会用做生育人口的孕育舱，[PAWN_pronoun]在工厂内被强迫和不同的优秀士兵生育，但在战争中工厂被摧毁，[PAWN_nameDef]也逃出了工厂。</Cinder_GestationPod.description>
+  <!-- EN: gestation pod -->
+  <Cinder_GestationPod.title>孕育舱</Cinder_GestationPod.title>
+  <!-- EN: gestation pod -->
+  <Cinder_GestationPod.titleShort>孕育舱</Cinder_GestationPod.titleShort>
+  
+  <!-- EN: Controlled by the Economic Security Department for Special Periods through data intelligence, ghouls are often deployed to sweep through underground facilities for survivors. They are the most dehumanized products.\n The Defense Council has trained a group of hunters specifically targeting these ghouls, and [PAWN_nameDef] is one of them. [PAWN_pronoun] will continue to fight against the ghouls until [PAWN_pronoun] becomes one of them. -->
+  <Cinder_GhoulHunter.description>特别时期经济保障部的DI控制的尸鬼们常常被部署用于扫荡地下设施里的幸存者，是最泯灭人性的产物，国防委员会训练了一批专门针对尸鬼的猎杀者，[PAWN_nameDef]就是其中一员，[PAWN_pronoun]将一直与尸鬼战斗到成为它们的一分子。</Cinder_GhoulHunter.description>
+  <!-- EN: ghoul hunter -->
+  <Cinder_GhoulHunter.title>尸鬼猎手</Cinder_GhoulHunter.title>
+  <!-- EN: ghoul hunter -->
+  <Cinder_GhoulHunter.titleShort>尸鬼猎手</Cinder_GhoulHunter.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is a skilled surgeon in a long dream where [PAWN_possessive] consciousness is hosted, skillfully wielding a scalpel to treat patients.\n\nHowever, in reality, there are no bodies that need mending.When [PAWN_pronoun] awakens, [PAWN_pronoun] finds [PAWN_pronoun] is on the battlefield, using an ultrasonic scythe to cut through the rotten flesh of [PAWN_possessive] enemies. -->
+  <Cinder_GhoulUnitA.description>[PAWN_nameDef]在长梦中是一名专业的外科医生，摆弄着手术刀，治疗病人。但实际上，并没有什么值得修复的躯体，当[PAWN_pronoun]醒来时，[PAWN_pronoun]发现自己在战场上用超声波镰刀切割敌人身上的烂肉。</Cinder_GhoulUnitA.description>
+  <!-- EN: ghoul unit -->
+  <Cinder_GhoulUnitA.title>尸鬼单位</Cinder_GhoulUnitA.title>
+  <!-- EN: "Surgical doctor" -->
+  <Cinder_GhoulUnitA.titleShort>“手术医生”</Cinder_GhoulUnitA.titleShort>
+  
+  <!-- EN: In [PAWN_possessive] long dreams, [PAWN_nameDef] is a maid who meticulously cleans the room every day, removing all the dirt. [PAWN_pronoun] is very satisfied with [PAWN_possessive] work because [PAWN_pronoun] always cleans the best.\n\nHowever, in reality, [PAWN_nameDef] is a frontline melee ghoul soldier for large-scale sweep operations, clearing out every living person in each trench. -->
+  <Cinder_GhoulUnitB.description>[PAWN_nameDef]在长梦中是一名女仆，[PAWN_pronoun]每天都要为房间进行仔细的打扫，清除掉所有脏东西，[PAWN_nameDef]很满意自己的工作，因为[PAWN_pronoun]总是扫的最干净的，但实际上[PAWN_pronoun]是用于大规模扫荡任务的前线近战士兵，清扫每一个战壕里的活人。</Cinder_GhoulUnitB.description>
+  <!-- EN: ghoul unit -->
+  <Cinder_GhoulUnitB.title>尸鬼单位</Cinder_GhoulUnitB.title>
+  <!-- EN: "maid" -->
+  <Cinder_GhoulUnitB.titleShort>“女仆”</Cinder_GhoulUnitB.titleShort>
+  
+  <!-- EN: In [PAWN_possessive] long dreams,[PAWN_nameDef] is a dancer who yearns for fame, rehearsing [PAWN_possessive] mechanical performance day after day in front of a neat audience, repeatedly executing [PAWN_possessive] splendid but unchanging dance steps.\n\nHowever, in reality, [PAWN_nameDef] is a frontline melee soldier, wielding [PAWN_possessive] tentacles to slay every enemy. -->
+  <Cinder_GhoulUnitC.description>[PAWN_nameDef]在长梦中是一位舞蹈家，[PAWN_pronoun]渴望着成名，日复一日的排练着机械的表演，对着整齐的观众，不断地重复着一成不变的华丽舞步，但实际上，[PAWN_pronoun]只是挥舞着触手残杀着每一个敌人的前线近战士兵。</Cinder_GhoulUnitC.description>
+  <!-- EN: ghoul unit -->
+  <Cinder_GhoulUnitC.title>尸鬼单位</Cinder_GhoulUnitC.title>
+  <!-- EN: "dancer" -->
+  <Cinder_GhoulUnitC.titleShort>“表演家”</Cinder_GhoulUnitC.titleShort>
+  
+  <!-- EN: After the disaster, [PAWN_nameDef] was forced to live in the bunker of the National Defense Council.\n Here, [PAWN_pronoun] learned how to swallow sugar-free cockroach moss nutrient paste and was thrown into the hibernation pod due to illness, frozen as reserve food. -->
+  <Cinder_HibernatingChild.description>在灾难发生后，[PAWN_nameDef]就被迫进入避难所生活了。在这里，[PAWN_pronoun]学会了如何咽下无糖的蟑螂苔藓营养膏，并因为疾病进入了休眠仓，被冷冻起来当作储备粮。</Cinder_HibernatingChild.description>
+  <!-- EN: hibernating child -->
+  <Cinder_HibernatingChild.title>休眠孩童</Cinder_HibernatingChild.title>
+  <!-- EN: hibernating child -->
+  <Cinder_HibernatingChild.titleShort>休眠孩童</Cinder_HibernatingChild.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was born in a shelter controlled by a cult within the Defense Council. [PAWN_possessive] father was a high-ranking official in the shelter, while [PAWN_possessive] mother, driven mad by the brutal war, had joined the cult.\n [PAWN_pronoun] was revered by the cult as the “Holy Son,” participating in wicked blood rituals in an attempt to pray for the end of the war. The cult's cruel actions drove [PAWN_nameDef] to madness, yet after everyone was sacrificed in the blood ritual, nothing happened. -->
+  <Cinder_HolySon.description>[PAWN_nameDef]出生于一个被邪教教团控制的国防委员会避难所里，[PAWN_possessive]父亲是避难所高官，而[PAWN_possessive]母亲因为残酷的战争已经疯了，投入了邪教的怀抱，[PAWN_nameDef]被邪教尊崇为圣子，举行着邪恶的血祭试图祈求着战争的结束，邪教的残酷行径逼疯了[PAWN_nameDef]，然而在所有人都被血祭后，什么都没有发生。</Cinder_HolySon.description>
+  <!-- EN: holy son of the cult -->
+  <Cinder_HolySon.title>邪教圣子</Cinder_HolySon.title>
+  <!-- EN: holy son -->
+  <Cinder_HolySon.titleShort>圣子</Cinder_HolySon.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is an agricultural worker at the hydroponic farm in the core zone, which provides raw materials for the food factory as part of the ecological recycling system. [PAWN_pronoun] often complains that [PAWN_possessive] salary is lower than others.\n\nBut in reality, this is just a simulation based on [PAWN_possessive] memories. -->
+  <Cinder_HydroponicWorker.description>[PAWN_nameDef]是核心区水培农场的农业工人，这里作为生态循环系统的一部分为食物工厂提供原料，[PAWN_nameDef]会抱怨自己的工资比别人少，但实际上这也只是在长梦中基于[PAWN_pronoun]记忆的模拟。</Cinder_HydroponicWorker.description>
+  <!-- EN: hydroponic worker -->
+  <Cinder_HydroponicWorker.title>水培农业工人</Cinder_HydroponicWorker.title>
+  <!-- EN: "worker" -->
+  <Cinder_HydroponicWorker.titleShort>“工人”</Cinder_HydroponicWorker.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is a kitchen assistant for the nutritional paste in a bunker within the Defense Council's territory. Since [PAWN_pronoun] can remember, [PAWN_pronoun] has hardly left this stinky kitchen.\n [PAWN_possessive] job involves roughly chopping up moss, cockroaches, earthworms, the bodies of fallen soldiers, or any children trying to escape, making it easier to feed them into the nutritional paste supply chute. -->
+  <Cinder_KitchenHelper.description>[PAWN_nameDef]是国防委员会势力范围内一个地堡的营养膏帮厨，[PAWN_pronoun]从记事开始就几乎没离开过这个臭烘烘的厨房，[PAWN_possessive]工作是负责把苔藓，蟑螂，蚯蚓，战死士兵的尸体，或者试图逃跑的小孩初步剁碎，方便倒入营养膏供料口。</Cinder_KitchenHelper.description>
+  <!-- EN: Kitchen helper -->
+  <Cinder_KitchenHelper.title>营养膏帮厨</Cinder_KitchenHelper.title>
+  <!-- EN: Kitchen helper -->
+  <Cinder_KitchenHelper.titleShort>帮厨</Cinder_KitchenHelper.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is an idol in [PAWN_possessive] long dreams, performing on stage for long hours every day, beloved by everyone.\n\nIn reality, [PAWN_pronoun] is a living mannequin, assigned by data intelligence to replace plastic figures in the showcase. [PAWN_possessive] body has been artificially cultivated to perfection, and [PAWN_pronoun] is required to work ten hours a day. -->
+  <Cinder_LivingDoll.description>[PAWN_nameDef]在长梦中是一名偶像，每天都需要在舞台上表演很久，每个人都很喜欢[PAWN_pronoun]，但实际上[PAWN_pronoun]是被DI指派代替塑料人摆在橱窗里的活体假人。身体被培养成最完美的模样，每天需要工作十个小时。</Cinder_LivingDoll.description>
+  <!-- EN: living doll -->
+  <Cinder_LivingDoll.title>活体人偶</Cinder_LivingDoll.title>
+  <!-- EN: "child idol" -->
+  <Cinder_LivingDoll.titleShort>“儿童偶像”</Cinder_LivingDoll.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is a craftsman who winds up music boxes in a long dream, turning the crank every day.\n\nHowever, upon waking, [PAWN_pronoun] discovers [PAWN_pronoun] is on a chaotic battlefield, loading ammunition into a bullet chain. -->
+  <Cinder_Loader.description>[PAWN_nameDef]在长梦中是一名为音乐盒上弦的乐器匠，每天都在摇动曲柄，直到[PAWN_pronoun]醒来发现自己在一片狼藉的战场上为弹链装弹。</Cinder_Loader.description>
+  <!-- EN: logistics loader -->
+  <Cinder_Loader.title>后勤装填单位</Cinder_Loader.title>
+  <!-- EN: "instrumental craftsman" -->
+  <Cinder_Loader.titleShort>“乐器匠”</Cinder_Loader.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] manages a fairy-tale chocolate factory in a long dream, occasionally encountering chocolate monsters that disrupt the production line.\n\nHowever, upon waking, [PAWN_pronoun] only finds the shattered explosives production line and the decaying bodies of workers on the ground. -->
+  <Cinder_Management.description>[PAWN_nameDef]在长梦中管理一间童话巧克力工厂，偶尔也会遇到巧克力怪兽破坏生产线的情况，但醒来后[PAWN_pronoun]只发现被炸碎的炸药生产线和腐烂在地上的工人尸体。</Cinder_Management.description>
+  <!-- EN: military factory management -->
+  <Cinder_Management.title>军工厂管理</Cinder_Management.title>
+  <!-- EN: "cocoa" -->
+  <Cinder_Management.titleShort>“可可”</Cinder_Management.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] cultivates mushrooms in the dark, sunless underground farm of the shelter, but [PAWN_pronoun] never gets to eat the mushrooms [PAWN_pronoun] grows. These mushrooms are reserved for the soldiers of the Defense Council.\n Instead, [PAWN_nameDef] can only consume putrid nutrient paste. If [PAWN_pronoun] dies, [PAWN_possessive] body will be used as new fertilizer for the mushrooms. -->
+  <Cinder_MushroomSerf.description>[PAWN_nameDef]在暗无天日的避难所地下农场里培育菌菇，但[PAWN_pronoun]从来都吃不到自己种植的菌菇，这些菌菇是供给国防委员会的士兵食用的，[PAWN_nameDef]只能吃到发臭的营养膏，如果死掉，[PAWN_nameDef]的尸体就会作为菌菇的新养料。</Cinder_MushroomSerf.description>
+  <!-- EN: mushroom serf -->
+  <Cinder_MushroomSerf.title>菌菇农奴</Cinder_MushroomSerf.title>
+  <!-- EN: serf -->
+  <Cinder_MushroomSerf.titleShort>农奴</Cinder_MushroomSerf.titleShort>
+  
+  <!-- EN: After the obscured area dissipated, in order to avoid being completely destroyed by the attack of data intelligence,survivors launched a starship carrying refugees to escape from their home planet.\n However, before reaching their target planet, they encountered DI's assault battle fleet, and the starship was destroyed, leaving [PAWN_nameDef] as the sole survivor by a stroke of luck. -->
+  <Cinder_Navigator.description>在遮蔽区散去之后，为了避免被DI的攻击彻底摧毁，幸存者发射了星舰载着难民们逃离了母星，但在到达目标星球之前，他们遭遇了DI的突击战斗舰，星舰被摧毁，而[PAWN_nameDef]侥幸存活。</Cinder_Navigator.description>
+  <!-- EN: Refugee ship navigator -->
+  <Cinder_Navigator.title>难民舰导航员</Cinder_Navigator.title>
+  <!-- EN: navigator -->
+  <Cinder_Navigator.titleShort>导航员</Cinder_Navigator.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] unexpectedly broke free from the consciousness hosting of data intelligence. For the first time, [PAWN_nameDef] realized that [PAWN_possessive] consciousness was no longer asleep.\n This ecstasy prompted [PAWN_nameDef] to grab a stack of document fragments and write [PAWN_possessive] first "work" in [PAWN_possessive] own blood. Although these chaotic words may be hard to call "literature" in the eyes of others, [PAWN_possessive] work remains the most sought-after daily reading in the surrounding settlement. -->
+  <Cinder_Novelist.description>[PAWN_nameDef]意外脱离了DI托管，[PAWN_pronoun]第一次发觉了自己的意识不再沉睡，这种狂喜促使着[PAWN_pronoun]随手抓起了一叠文件的残片，用自己的血写下了[PAWN_possessive]第一篇“作品”，尽管也许在其他人眼里这些错乱的文字很难被称为“文学”，但[PAWN_possessive]作品仍然是周围聚居地中最抢手的日常读物。</Cinder_Novelist.description>
+  <!-- EN: underground novelist -->
+  <Cinder_Novelist.title>地下书籍作者</Cinder_Novelist.title>
+  <!-- EN: novelist -->
+  <Cinder_Novelist.titleShort>小说家</Cinder_Novelist.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is the child of a member of the Defense Council. From a young age, [PAWN_pronoun] enjoyed privileges that others did not, including, but not limited to, industrial food left over from before the war, and film recordings.\n [PAWN_pronoun] was designated as the heir by [PAWN_possessive] parents, but [PAWN_pronoun] showed no interest in these things; instead, [PAWN_pronoun] was passionate about biological science research. -->
+  <Cinder_Offspring.description>[PAWN_nameDef]是国防委员会委员的孩子，[PAWN_pronoun]从小就享受着其他人没有的东西，包括但不限于战前遗留的工业食品，电影录像等，[PAWN_pronoun]被父母指定为继承人，但[PAWN_pronoun]对这些都没兴趣，反而钟情于生物科学研究。</Cinder_Offspring.description>
+  <!-- EN: officials' offspring -->
+  <Cinder_Offspring.title>高官子弟</Cinder_Offspring.title>
+  <!-- EN: successor -->
+  <Cinder_Offspring.titleShort>继承者</Cinder_Offspring.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] has long forgotten when [PAWN_pronoun] entered the factory for moving ammunition on the assembly line of the National Defense Council's underground factory.\n [PAWN_possessive] tentacles have been modified into sturdy transport frames, day after day, endlessly moving ammunition for those war machines. -->
+  <Cinder_Porter.description>地下工厂流水线上的[PAWN_nameDef]已经不记得到底是什么时候进入到搬运炮弹的工厂里了，国防委员会把[PAWN_nameDef]的触手形状改造成结实的搬运框架，日复一日且永无止境的，为着那些战争机器搬运炮弹。</Cinder_Porter.description>
+  <!-- EN: factory porter -->
+  <Cinder_Porter.title>工厂搬运工</Cinder_Porter.title>
+  <!-- EN: porter -->
+  <Cinder_Porter.titleShort>搬运工</Cinder_Porter.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was once a junior commander in the Defense Council, engaged in a prolonged battle against the inhuman legions controlled by DI. After serving as a scapegoat for a failed operation, [PAWN_pronoun] lost faith in everything and secretly joined a newly formed branch of the local cult.\n Following the blood sacrifice of the previous priest, [PAWN_pronoun] was elevated to the position of the new priest. -->
+  <Cinder_Priest.description>[PAWN_nameDef]曾经是国防委员会的一名下级指挥官，和DI控制的非人军团进行着漫长的战斗。在为一次失败的行动充当替罪羊之后，不再相信一切的[PAWN_pronoun]秘密加入当地新生的教团分支，在上一任祭司把自己血祭后，[PAWN_pronoun]被推举为新的祭司。</Cinder_Priest.description>
+  <!-- EN: cult priest -->
+  <Cinder_Priest.title>邪教祭司</Cinder_Priest.title>
+  <!-- EN: priest -->
+  <Cinder_Priest.titleShort>祭司</Cinder_Priest.titleShort>
+  
+  <!-- EN: In [PAWN_possessive] long dreams,[PAWN_nameDef] is a fisherman who often goes out to sea to fish. Upon waking, [PAWN_pronoun] retains many skills related to fishing and navigating boats in [PAWN_possessive] mind.\n\nHowever, there is no sea near the fishing factory where [PAWN_pronoun] once lived, only an endless desert. -->
+  <Cinder_Recovery.description>[PAWN_nameDef]在长梦里是一个渔民，经常在大海上打渔，在醒过来之后，[PAWN_possessive]意识中依然保留了很多打渔以及船只驾驶的技巧。但[PAWN_pronoun]曾经生活的渔猎工厂附近根本就没有大海，只有一望无际的沙漠。</Cinder_Recovery.description>
+  <!-- EN: battlefield recovery troops -->
+  <Cinder_Recovery.title>战场回收单位</Cinder_Recovery.title>
+  <!-- EN: "Desert fishermen" -->
+  <Cinder_Recovery.titleShort>“沙漠渔民”</Cinder_Recovery.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is treated as reserve grain by the adults in the shelter under the Defense Council.\n They usually feed [PAWN_objective] moss, insects, or moldy rations. During times of famine, the adults would kill [PAWN_objective] to eat. -->
+  <Cinder_ReserveGrain.description>[PAWN_nameDef]被[PAWN_pronoun]所在国防委员会避难所的成年人当作储备粮培养，他们通常只会喂[PAWN_pronoun]苔藓，昆虫，或者发霉的干粮，在饥荒的时候，成年人就会把[PAWN_pronoun]杀死吃掉。</Cinder_ReserveGrain.description>
+  <!-- EN: reserve grain -->
+  <Cinder_ReserveGrain.title>储备粮</Cinder_ReserveGrain.title>
+  <!-- EN: reserve grain -->
+  <Cinder_ReserveGrain.titleShort>储备粮</Cinder_ReserveGrain.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] struggles to raise [PAWN_possessive] children alone. Although searching for supplies in abandoned buildings leaves [PAWN_possessive] limbs battered, [PAWN_pronoun] manages to maintain a simple life. This simple existence is shattered by an unfamiliar "flu."\n [PAWN_possessive] children develop high fevers, and despite spending [PAWN_possessive] meager savings to seek medical help, [PAWN_pronoun] is unable to prevent them from dying one by one.\n When [PAWN_pronoun] watches the last of [PAWN_possessive] children die in [PAWN_possessive] arms, [PAWN_pronoun] goes mad. Soon, [PAWN_pronoun] is approached by cultists in the bunker, who convince [PAWN_objective] that only blood sacrifice can change this sorrowful world. -->
+  <Cinder_SadBeliever.description>[PAWN_nameDef]艰辛的独自抚养者[PAWN_possessive]孩子们，虽然每天在废弃建筑物内寻找物资让[PAWN_possessive]触手变得伤痕累累，但也能勉强维持目前的生活。这样朴素的日子在一种从未见过的“流感”打破了，[PAWN_possessive]孩子们高烧不退，[PAWN_nameDef]拿出微薄的积蓄到处求医也无法阻止孩子们一个个相继离世，在[PAWN_pronoun]看着怀里最后一个孩子死去时，[PAWN_pronoun]疯了。很快[PAWN_pronoun]就被地堡里的邪教徒拉拢，[PAWN_pronoun]相信只有血祭才能改变这个悲伤的世界。</Cinder_SadBeliever.description>
+  <!-- EN: sad believer -->
+  <Cinder_SadBeliever.title>悲伤信徒</Cinder_SadBeliever.title>
+  <!-- EN: sad believer -->
+  <Cinder_SadBeliever.titleShort>悲伤信徒</Cinder_SadBeliever.titleShort>
+  
+  <!-- EN: In [PAWN_possessive] long dreams, [PAWN_nameDef] often distributes gifts to the surrounding settlements. After waking up, [PAWN_pronoun] boasts about being like Santa Claus, delivering gifts to everyone.\n\nWhat [PAWN_pronoun] doesn't know is that [PAWN_pronoun] is actually a fire control operator on a ground assault ship, and the so-called gifts [PAWN_pronoun] delivers are actually bombs. -->
+  <Cinder_Santa.description>[PAWN_nameDef]在长梦中经常梦见自己给周围的定居点发放礼物，[PAWN_pronoun]在醒来后一直吹嘘自己像圣诞老人一样为大家送递礼物。而[PAWN_pronoun]不知道的是，[PAWN_pronoun]其实是一名陆行突击舰的火控操作员，所谓送递的礼物其实都是炸弹。</Cinder_Santa.description>
+  <!-- EN: Fire control operator -->
+  <Cinder_Santa.title>火控操作员</Cinder_Santa.title>
+  <!-- EN: "Santa" -->
+  <Cinder_Santa.titleShort>“圣诞老人”</Cinder_Santa.titleShort>
+  
+  <!-- EN: In [PAWN_possessive] long dreams, [PAWN_nameDef] is a conductor of an orchestra, always conducting the band in the concert hall.\n\nHowever, in reality, [PAWN_nameDef] controls the deployment of turret machinery, often being airdropped into the battlefield by assault ships when approaching the front lines. -->
+  <Cinder_SpecialEngineeringForces.description>[PAWN_nameDef]在长梦中是一名管弦乐队的指挥员，[PAWN_pronoun]总是在音乐厅指挥着乐队的演奏，但实际上[PAWN_pronoun]调控操作的是炮塔机械的部署，常会在临近战场时被突击舰空投投放进入战场。</Cinder_SpecialEngineeringForces.description>
+  <!-- EN: special engineering forces -->
+  <Cinder_SpecialEngineeringForces.title>特种工程单位</Cinder_SpecialEngineeringForces.title>
+  <!-- EN: "conductor" -->
+  <Cinder_SpecialEngineeringForces.titleShort>“乐队指挥”</Cinder_SpecialEngineeringForces.titleShort>
+  
+  <!-- EN: In [PAWN_possessive] long dreams, [PAWN_nameDef] drives a cleaning vehicle to sweep the streets. [PAWN_pronoun] doesn't particularly enjoy this boring job, as the cleaning vehicle often fails to clean properly, requiring [PAWN_pronoun] to reverse repeatedly.\n\nIn reality, [PAWN_nameDef] operates a war sweeper, which is commonly used for air defense and battlefield clearing. In complex fortifications, it is indeed very difficult to clean out every infantryman. -->
+  <Cinder_SweeperOperator.description>[PAWN_nameDef]在长梦中驾驶着清洗车清扫路面，[PAWN_pronoun]不是很喜欢这份无聊的工作，因为清洗车老是洗不干净需要[PAWN_pronoun]来回倒车，实际上[PAWN_pronoun]操作的战争清扫者常用于对空以及清扫作战，在复杂的掩体里清扫每一个步兵确实很难打扫干净。</Cinder_SweeperOperator.description>
+  <!-- EN: sweeper operator -->
+  <Cinder_SweeperOperator.title>清扫者操作员</Cinder_SweeperOperator.title>
+  <!-- EN: "sweeper driver" -->
+  <Cinder_SweeperOperator.titleShort>“清洗车司机”</Cinder_SweeperOperator.titleShort>
+  
+  <!-- EN: "Craftsman" is what people always call [PAWN_nameDef], which is almost the highest praise for [PAWN_possessive] work. [PAWN_pronoun] is immersed in [PAWN_possessive] long dreams filled with a sense of accomplishment.\n\nBut in reality, [PAWN_nameDef] is using [PAWN_possessive] burnt tentacles to manufacture weapons and ammunition for the Data Intelligence of the Special Economic Security Department. -->
+  <Cinder_Technician.description>“能工巧匠”，人们总是这么称呼[PAWN_nameDef]，这几乎是对[PAWN_possessive]工作的最高赞美了，[PAWN_nameDef]沉浸于自己满是成就感的长梦里。但实际上，[PAWN_pronoun]是在用自己烧焦的触手为特别经济保障部的DI制造武器和炮弹。</Cinder_Technician.description>
+  <!-- EN: military factory technician -->
+  <Cinder_Technician.title>军工厂技工</Cinder_Technician.title>
+  <!-- EN: "craftsman" -->
+  <Cinder_Technician.titleShort>“能工巧匠”</Cinder_Technician.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] always had confidence in [PAWN_possessive] legs, which is why [PAWN_nameDef] was selected by the Defense Council as a delivery person to conserve precious vehicle hours.\n [PAWN_nameDef] managed to transport crucial spare parts across the terrifying battlefield. This continued for a long time until [PAWN_possessive] pride was shattered by the massive figure emerging from the smoke and the incoming missiles. -->
+  <Cinder_Traveler.description>[PAWN_nameDef]对[PAWN_possessive]双腿总是很有信心，因此[PAWN_pronoun]被国防委员会选中，作为节约车辆宝贵摩托小时的替代品的送货员，在恐怖的战场上设法运输重要备件，这样的日子持续了很久，直到[PAWN_possessive]骄傲被烟尘背后走出的巨大身影和呼啸而至的导弹砸得粉碎。</Cinder_Traveler.description>
+  <!-- EN: delivery traveler -->
+  <Cinder_Traveler.title>送货员</Cinder_Traveler.title>
+  <!-- EN: traveler -->
+  <Cinder_Traveler.titleShort>行者</Cinder_Traveler.titleShort>
+  
+  <!-- EN: Having undergone true reflection and survived the brutal war, [PAWN_nameDef] no longer believes in the Defense Council's grotesque rule that spares no effort for meaningless war. [PAWN_pronoun] begins secretly copying articles underground and spreading these illegal writings within the shelter.\n [PAWN_pronoun] is convinced that [PAWN_pronoun] can do better than the faceless bureaucrats, and more and more people are beginning to help [PAWN_objective]. -->
+  <Cinder_UndergroundAgitator.description>经历过真正的思考，并且从残酷的战争中幸存下来后，[PAWN_nameDef]已经彻底不再相信国防委员会为了无意义的战争不惜一切的畸形统治，[PAWN_pronoun]开始在地下秘密抄写文章，并将这些非法读物在避难所中散播，[PAWN_pronoun]坚信自己可以比那些从不露面的官僚做的更好，帮助[PAWN_possessive]人越来越多。</Cinder_UndergroundAgitator.description>
+  <!-- EN: Underground agitator -->
+  <Cinder_UndergroundAgitator.title>地下煽动者</Cinder_UndergroundAgitator.title>
+  <!-- EN: activist -->
+  <Cinder_UndergroundAgitator.titleShort>活动家</Cinder_UndergroundAgitator.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] has been riding a bicycle to deliver newspapers to mailboxes in the streets and alleys for as long as [PAWN_pronoun] can remember. [PAWN_pronoun] doesn’t recall how [PAWN_pronoun] got this job; all [PAWN_pronoun] knows is that the daily work is tiring, leaving [PAWN_objective] no time to play with peers.\n\nHowever, to those who have not entered the long dream, [PAWN_pronoun] appears to be driving a food supply truck through the trenches. -->
+  <Cinder_VehicleOperator.description>不知从何时开始，[PAWN_nameDef]骑着自行车在大街小巷为邮箱递送报纸，[PAWN_pronoun]不记得自己是怎么获得这份工作了，只是每天的工作都很累，没有时间和同龄人玩，可在未进入长梦的人眼中，[PAWN_pronoun]开着食物补给车在战壕间穿行。</Cinder_VehicleOperator.description>
+  <!-- EN: supply vehicle operator -->
+  <Cinder_VehicleOperator.title>补给车操作员</Cinder_VehicleOperator.title>
+  <!-- EN: "news child" -->
+  <Cinder_VehicleOperator.titleShort>“报童”</Cinder_VehicleOperator.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was unfortunately ravaged by biological warfare weapons deployed by an enemy nation on the battlefield.\n Even after being rescued, [PAWN_possessive] body fortunately suffered no disabilities,but the fear of witnessing fellow compatriots being implanted with embryos still prevents [PAWN_nameDef] from facing other animals calmly. -->
+  <Cinder_Victim.description>[PAWN_nameDef]在战场中曾不幸被敌国所投放的生物战武器所蹂躏，即使在获救后[PAWN_possessive]身体很幸运的没有造成任何的残疾，但目睹同胞被植入胚胎的恐惧依然让[PAWN_pronoun]不再能平静的面对其[PAWN_pronoun]动物。</Cinder_Victim.description>
+  <!-- EN: Victim of warfare -->
+  <Cinder_Victim.title>生物战受害者</Cinder_Victim.title>
+  <!-- EN: victim -->
+  <Cinder_Victim.titleShort>受害者</Cinder_Victim.titleShort>
+  
+</LanguageData>

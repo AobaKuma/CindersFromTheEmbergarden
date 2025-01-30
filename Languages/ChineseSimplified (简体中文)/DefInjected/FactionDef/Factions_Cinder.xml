@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: new site -->
+  <Cinder_PlayerFaction.label>新站点</Cinder_PlayerFaction.label>
+  <!-- EN: A newly established fleet supply station. -->
+  <Cinder_PlayerFaction.description>一个新建立的补给站。</Cinder_PlayerFaction.description>
+  <!-- EN: leader -->
+  <Cinder_PlayerFaction.leaderTitle>领袖</Cinder_PlayerFaction.leaderTitle>
+  <!-- EN: Colonist -->
+  <Cinder_PlayerFaction.pawnSingular>殖民者</Cinder_PlayerFaction.pawnSingular>
+  <!-- EN: Colonist -->
+  <Cinder_PlayerFaction.pawnsPlural>殖民者</Cinder_PlayerFaction.pawnsPlural>
+  
+</LanguageData>

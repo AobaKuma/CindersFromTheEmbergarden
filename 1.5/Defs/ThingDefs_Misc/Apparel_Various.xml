@@ -591,7 +591,7 @@
     ParentName="Cinder_ApparelArmorBase">
     <defName>Cinder_Apparel_BrokenGhoulUnitGear</defName>
     <label>broken ghoul unit gear</label>
-    <description>A set of broken Ghoul unit gear, with armor full of holes and weaker defense than before, and will slow down the wearer's movement speedIt can be obtained by dismantling the Ghoul unit gear, the only benefit is that this thing is worthless, and the raiders won't even glance at it..</description>
+    <description>A set of broken Ghoul unit gear, with armor full of holes and weaker defense than before, and will slow down the wearer's movement speedIt can be obtained by dismantling the Ghoul unit gear, the only benefit is that this thing is worthless, and the raiders won't even glance at it.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/BrokenGhoulUnitGear/Icon</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>

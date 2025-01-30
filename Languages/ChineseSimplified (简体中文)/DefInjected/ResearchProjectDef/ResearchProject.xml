@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Heavy armor application -->
+  <Cinder_HeavyArmor.label>重型装甲应用</Cinder_HeavyArmor.label>
+  <!-- EN: Further strengthen amorphous polymers for application on heavy defensive armor clothing or other armor. -->
+  <Cinder_HeavyArmor.description>进一步研究无定形聚合物的应用，将其用于装甲板上，以制造重型装甲衣物或其他装甲。</Cinder_HeavyArmor.description>
+  
+  <!-- EN: hellfire missile -->
+  <Cinder_HellfireMissile.label>地狱火导弹</Cinder_HellfireMissile.label>
+  <!-- EN: Further application of the Monroe effect. -->
+  <Cinder_HellfireMissile.description>门罗效应的进一步应用。</Cinder_HellfireMissile.description>
+  
+  <!-- EN: Multiple warheads -->
+  <Cinder_MultipleWarheads.label>多头弹</Cinder_MultipleWarheads.label>
+  <!-- EN: An improvement to firearms and ammunition that can cause more damage when bullets hit enemies. -->
+  <Cinder_MultipleWarheads.description>对弹药进行改进，当子弹击中敌人时会造成更大的伤害。</Cinder_MultipleWarheads.description>
+  
+  <!-- EN: Amorphous polymer separation -->
+  <Cinder_Separation.label>无定形聚合物分离</Cinder_Separation.label>
+  <!-- EN: Attempt to separate the solid phase from the biological part in amorphous polymers. -->
+  <Cinder_Separation.description>尝试将无定形聚合物中的生物活性成分与固相部分分离。</Cinder_Separation.description>
+  <!-- EN: Some hostile army units sometimes carry empty bottles like this, which can be obtained by defeating them.You can also obtain it through purchase. -->
+  <Cinder_Separation.discoveredLetterText>有些敌人会携带类这样的空药剂瓶，击败他们以获取。</Cinder_Separation.discoveredLetterText>
+  <!-- EN: About: empty agent bottle -->
+  <Cinder_Separation.discoveredLetterTitle>关于：空的药剂瓶</Cinder_Separation.discoveredLetterTitle>
+  <!-- EN:
+    <li>subject->Separation</li>
+    <li>subject_story->separate armor plates from this strange twisted mixed substance</li>
+    <li>subject_story->separate some meat with a burnt smell from amorphous polymers</li>
+    <li>subject_story->exploring the Applications of Amorphous Polymers</li>
+    <li>subject_gerund->separat amorphous polymer</li>
+  -->
+  <Cinder_Separation.generalRules.rulesStrings>
+  
+     <li>subject->分离</li>
+    <li>subject_story->从奇怪的扭曲混合物质中分离出装甲板</li>
+    <li>subject_story->从无定形聚合物中分离出一些有烧焦气味的肉</li>
+    <li>subject_story->探索无定形聚合物的应用</li>
+    <li>subject_gerund->分无定形聚合物</li>
+  
+  </Cinder_Separation.generalRules.rulesStrings>
+  
+  <!-- EN: Shaped charges -->
+  <Cinder_ShapedCharges.label>聚能装药</Cinder_ShapedCharges.label>
+  <!-- EN: Research on a bomb based on the principle of energy gathering using conical charges, which focuses a high-temperature and high-pressure metal jet into a line to penetrate thick armor. -->
+  <Cinder_ShapedCharges.description>基于锥形装药能量收集原理的炸弹研究，该原理将高温高压金属射流聚焦成一条线，以穿透厚装甲。</Cinder_ShapedCharges.description>
+  <!-- EN:
+    <li>subject->Shaped charges</li>
+    <li>subject->HEAT warhead</li>
+    <li>subject_story->analyzing the Principle of the Monroe Effect</li>
+    <li>subject_story->manufacturing powerful HEAT armor piercing bombs</li>
+    <li>subject_gerund->manufacturing Shaped Charges</li>
+  -->
+  <Cinder_ShapedCharges.generalRules.rulesStrings>
+  
+    <li>subject->聚能装药</li>
+    <li>subject->破甲弹头</li>
+    <li>subject_story->门罗效应原理分析</li>
+    <li>subject_story->制造威力强大的HEAT穿甲弹</li>
+    <li>subject_gerund->制造聚能装药炸弹</li>
+  
+  </Cinder_ShapedCharges.generalRules.rulesStrings>
+  
+  <!-- EN: Tentacle mechanism application -->
+  <Cinder_TentacleMechanism.label>触手机构应用</Cinder_TentacleMechanism.label>
+  <!-- EN: Attempt to artificially cultivate tentacle walking mechanisms using amorphous polymers and install them on mechanical structures. -->
+  <Cinder_TentacleMechanism.description>尝试使用无定形聚合物人工培养触手行走机构，并将其安装在机械结构上。</Cinder_TentacleMechanism.description>
+  <!-- EN: This is a bioactive part extracted from amorphous polymers with a burnt odor, strangely it does not decay. -->
+  <Cinder_TentacleMechanism.discoveredLetterText>这是一种从无定形聚合物中提取的生物活性成分，有烧焦的气味，奇怪的是它不会腐烂。</Cinder_TentacleMechanism.discoveredLetterText>
+  <!-- EN: About: burnt strange meat -->
+  <Cinder_TentacleMechanism.discoveredLetterTitle>关于：烧焦怪肉</Cinder_TentacleMechanism.discoveredLetterTitle>
+  <!-- EN:
+    <li>subject->Tentacle mechanism</li>
+    <li>subject->Walking mechanism</li>
+    <li>subject->military-Tentacle application</li>
+    <li>subject_story->modify some frontline turrets to enable them to change their deployment positions on their own, so that the turrets can accompany the troops' attacks</li>
+    <li>subject_story->a completely different way of movement from wheeled, tracked, and mechanical walking, with low noise and strong passability</li>
+    <li>subject_gerund->make some immovable buildings move automatically</li>
+  -->
+  <Cinder_TentacleMechanism.generalRules.rulesStrings>
+  
+  <li>subject->触手机构</li>
+    <li>subject->行走机构</li>
+    <li>subject->军事触手应用</li>
+    <li>subject_story->修改一些不能移动的炮塔，使其能够自行改变部署位置，以便炮塔能够配合部队的攻击</li>
+    <li>subject_story->与轮式、履带式和机械行走完全不同的运动方式，噪音低，通行能力强</li>
+    <li>subject_gerund->使一些不可移动的建筑物自动移动</li>
+	
+  </Cinder_TentacleMechanism.generalRules.rulesStrings>
+  
+  <!-- EN: Large walking mechanism -->
+  <Cinder_TentacleWalkingMechanism.label>大型行走机构</Cinder_TentacleWalkingMechanism.label>
+  <!-- EN: A larger tentacle walking mechanism requires further research on the bioactive parts in amorphous polymers to prepare for heavier platforms. -->
+  <Cinder_TentacleWalkingMechanism.description>要制造更大的触手行走机构，就需要对无定形聚合物中的生物活性部分进行进一步研究，为更重的平台做准备。</Cinder_TentacleWalkingMechanism.description>
+  
+  <!-- EN: Twisted pharmacology -->
+  <Cinder_TwistedPharmacology.label>扭曲药剂学</Cinder_TwistedPharmacology.label>
+  <!-- EN: Research on the medicinal value of amorphous polymers and the production of agent that enable people to acquire various abilities. -->
+  <Cinder_TwistedPharmacology.description>研究无定形聚合物的药用价值，生产能让人获得各种神奇能力的药剂。</Cinder_TwistedPharmacology.description>
+  <!-- EN:
+    <li>subject->Twisted pharmacology</li>
+    <li>subject->Erosion agent</li>
+    <li>subject_story->study the influence of different material ratios on the efficacy of pharmaceuticals</li>
+    <li>subject_story->explore the sources of special skills on Caster</li>
+    <li>subject_story->find ways to improve the regeneration ability of amorphous polymers</li>
+    <li>subject_gerund->Can manufacture erosion and regeneration agents with unstable effects</li>
+  -->
+  <Cinder_TwistedPharmacology.generalRules.rulesStrings>
+  
+  <li>subject->扭曲药剂学</li>
+    <li>subject->侵蚀药剂</li>
+    <li>subject_story->不同物料配比对药物疗效的影响研究</li>
+    <li>subject_story->探究施法者的技能来源</li>
+    <li>subject_story->寻找提高无定形聚合物再生能力的方法</li>
+    <li>subject_gerund->可以制造效果不稳定的侵蚀剂和再生剂</li>
+  
+  </Cinder_TwistedPharmacology.generalRules.rulesStrings>
+  
+  <!-- EN: War attacker -->
+  <Cinder_WarAttacker.label>战争打击者</Cinder_WarAttacker.label>
+  <!-- EN: Reverse engineer an ancient heavy attack mecha to create a usable heavy armed walking machine. -->
+  <Cinder_WarAttacker.description>逆向工程一个古老的重型攻击机甲，以创建一个可用的重型武装步行机。</Cinder_WarAttacker.description>
+  
+  <!-- EN: War machinery -->
+  <Cinder_WarMachinery.label>战争机械</Cinder_WarMachinery.label>
+  <!-- EN: A self disciplined war machine with powerful firepower that can guide Hellfire missiles to destroy heavily armored targets. -->
+  <Cinder_WarMachinery.description>一种具有强大火力的自律战争机器，可以引导地狱火导弹摧毁重型装甲目标。</Cinder_WarMachinery.description>
+  
+</LanguageData>

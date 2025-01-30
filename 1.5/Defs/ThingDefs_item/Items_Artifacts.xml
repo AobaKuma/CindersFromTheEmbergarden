@@ -69,7 +69,7 @@
 	<ThingDef ParentName="Cinder_ArtifactBase">
 		<defName>Cinder_RegeneratedEnhancedSerum</defName>
 		<label>regenerated enhanced serum</label>
-		<description>A kind of eroded golden serum, people who drink it will feel the gaze of unknown things and gain the ability to transform.But the side effect of sublimation is death, which most people cannot bear.</description>
+		<description>A type of eroded golden serum, injected into the human body, enhances the regeneration ability of amorphous polymers and gives the user the ability to come back to life after death.</description>
 		<tradeability>None</tradeability>
 		<graphicData>
 			<texPath>Things/Item/RegeneratedEnhancedSerum/RegeneratedEnhancedSerum</texPath>
@@ -308,7 +308,7 @@
 	<ThingDef ParentName="Cinder_BaseModificationItem">
 		<defName>Cinder_ExtraArmour</defName>
 		<label>extra armour plates</label>
-		<description>A sturdy metal plate separated from amorphous polymer. Once damaged, the armor plating must be completely replaced.\n\nThe maximum amount of plating able to be installed on a mech can depends on its body size.</description>
+		<description>A sturdy metal plate separated from amorphous polymer. Once damaged, the armor plating must be completely replaced.</description>
 		<descriptionHyperlinks>
 			<HediffDef>Cinder_ExtraArmourPlate</HediffDef>
 		</descriptionHyperlinks>

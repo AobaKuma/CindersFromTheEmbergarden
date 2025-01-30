@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ExtraBullet -->
+  <Cinder_ExtraBullet.label>多头弹</Cinder_ExtraBullet.label>
+  <!-- EN: {0} has been shot to death. -->
+  <Cinder_ExtraBullet.deathMessage>{0}被射杀了.</Cinder_ExtraBullet.deathMessage>
+  
+</LanguageData>

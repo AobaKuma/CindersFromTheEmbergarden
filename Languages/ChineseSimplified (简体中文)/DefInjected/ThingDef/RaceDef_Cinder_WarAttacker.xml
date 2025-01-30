@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: war attacker -->
+  <Cinder_Mech_WarAttacker.label>战争打击者</Cinder_Mech_WarAttacker.label>
+  <!-- EN: TODO -->
+  <Cinder_Mech_WarAttacker.description>一种三米高量级的重装甲突击步行机器，拥有惊人的弹药携带量，就像是一个步行的武装直升机，能够用八发地狱火导弹将敌人的阵地夷为平地。</Cinder_Mech_WarAttacker.description>
+  <!-- EN: exo minigun -->
+  <Cinder_Mech_WarAttacker.comps.CompMultipleTurretGun.subTurrets.0.renderNodeProperties.0.debugLabel>速射机枪</Cinder_Mech_WarAttacker.comps.CompMultipleTurretGun.subTurrets.0.renderNodeProperties.0.debugLabel>
+  <!-- EN: anti air turret -->
+  <Cinder_Mech_WarAttacker.comps.CompMultipleTurretGun.subTurrets.1.renderNodeProperties.0.debugLabel>防空炮塔</Cinder_Mech_WarAttacker.comps.CompMultipleTurretGun.subTurrets.1.renderNodeProperties.0.debugLabel>
+  <!-- EN: Left tentacle -->
+  <Cinder_Mech_WarAttacker.tools.Left_tentacle.label>左触手</Cinder_Mech_WarAttacker.tools.Left_tentacle.label>
+  <!-- EN: tentacle -->
+  <Cinder_Mech_WarAttacker.tools.Left_tentacle.labelNoLocation>触手</Cinder_Mech_WarAttacker.tools.Left_tentacle.labelNoLocation>
+  <!-- EN: right tentacle -->
+  <Cinder_Mech_WarAttacker.tools.right_tentacle.label>右触手</Cinder_Mech_WarAttacker.tools.right_tentacle.label>
+  <!-- EN: tentacle -->
+  <Cinder_Mech_WarAttacker.tools.right_tentacle.labelNoLocation>触手</Cinder_Mech_WarAttacker.tools.right_tentacle.labelNoLocation>
+  <!-- EN: Front tentacle -->
+  <Cinder_Mech_WarAttacker.tools.Front_tentacle.label>前触手</Cinder_Mech_WarAttacker.tools.Front_tentacle.label>
+  
+</LanguageData>

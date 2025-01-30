@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: bomb -->
+  <Cinder_Bomb.label>爆炸</Cinder_Bomb.label>
+  <!-- EN: {0} has died in an explosion. -->
+  <Cinder_Bomb.deathMessage>{0}死于爆炸。</Cinder_Bomb.deathMessage>
+  
+  <!-- EN: bomb -->
+  <Cinder_BombB.label>爆炸</Cinder_BombB.label>
+  <!-- EN: {0} has died in an explosion. -->
+  <Cinder_BombB.deathMessage>{0}死于爆炸。</Cinder_BombB.deathMessage>
+  
+  <!-- EN: bomb -->
+  <Cinder_BombC.label>爆炸</Cinder_BombC.label>
+  <!-- EN: {0} has died in an explosion. -->
+  <Cinder_BombC.deathMessage>{0}死于爆炸。</Cinder_BombC.deathMessage>
+  
+</LanguageData>

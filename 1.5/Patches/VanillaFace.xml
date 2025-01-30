@@ -16,6 +16,34 @@
 				        </head>
 					</value>
 				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/alienRace/graphicPaths/body</xpath>
+					<value>
+						<body>
+					<path>Things/Pawn/Humanlike/Bodies/Naked_Female</path>
+					<extendedGraphics>
+						<Age For="HumanlikeBaby" MayRequire="Ludeon.RimWorld.Biotech">
+							Things/Pawn/Humanlike/Body/Naked_Child</Age>
+						<Age For="HumanlikeChild" MayRequire="Ludeon.RimWorld.Biotech">
+							<path>Things/Pawn/Humanlike/Body/CinderNaked_Child</path>
+							<extendedGraphics>
+								<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
+									Things/Pawn/Humanlike/Body/GhoulNaked_Child</Hediff>
+							</extendedGraphics>
+						</Age>
+						 <Age For="HumanlikeAdult">
+                            <path>Things/Pawn/Humanlike/Bodies/Naked_Female</path>
+                            <extendedGraphics>
+                                       <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Things/Pawn/Ghoul/Bodies/Ghoulskin_Female</Hediff>
+                            </extendedGraphics>
+                        </Age>
+					</extendedGraphics>
+				</body>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/alienRace/generalSettings/alienPartGenerator/headOffset</xpath>
+				</li>
 			</operations>
 		</match>
 	</Operation>

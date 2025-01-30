@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: eroded exoskeleton -->
+  <Cinder_Mech_ErodedEXO.label>被侵蚀的外骨骼</Cinder_Mech_ErodedEXO.label>
+  <!-- EN: TODO -->
+  <Cinder_Mech_ErodedEXO.description>一种三米高的量产型主力攻击装甲机甲，用于填补步兵和坦克之间的空缺，携带有许多武器与反坦克导弹，是装甲洪流的组成部分。</Cinder_Mech_ErodedEXO.description>
+  <!-- EN: Left tentacle -->
+  <Cinder_Mech_ErodedEXO.tools.Left_tentacle.label>左触手</Cinder_Mech_ErodedEXO.tools.Left_tentacle.label>
+  <!-- EN: tentacle -->
+  <Cinder_Mech_ErodedEXO.tools.Left_tentacle.labelNoLocation>触手</Cinder_Mech_ErodedEXO.tools.Left_tentacle.labelNoLocation>
+  <!-- EN: right tentacle -->
+  <Cinder_Mech_ErodedEXO.tools.right_tentacle.label>左触手</Cinder_Mech_ErodedEXO.tools.right_tentacle.label>
+  <!-- EN: tentacle -->
+  <Cinder_Mech_ErodedEXO.tools.right_tentacle.labelNoLocation>触手</Cinder_Mech_ErodedEXO.tools.right_tentacle.labelNoLocation>
+  <!-- EN: Front tentacle -->
+  <Cinder_Mech_ErodedEXO.tools.Front_tentacle.label>前触手</Cinder_Mech_ErodedEXO.tools.Front_tentacle.label>
+  
+</LanguageData>

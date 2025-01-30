@@ -73,7 +73,7 @@
 	<ThingDef ParentName="Cinder_BaseMechaWalker">
 		<defName>Cinder_Mech_ErodedEXO</defName>
 		<label>eroded exoskeleton</label>
-		<description>TODO</description>
+		<description>A three meter high mass-produced main attack armored mecha, used to fill the gap between infantry and tanks, carrying many weapons and anti tank missiles, and is a component of the armored torrent.</description>
 		<tools>
 			<li>
 				<label>Left tentacle</label>

@@ -3,7 +3,7 @@
 	<ThingDef ParentName="Cinder_BaseTurretWalker">
 		<defName>Cinder_Mech_WalkerAutoCannon</defName>
 		<label>Autocannon walker</label>
-		<description>TODO</description>
+		<description>A large walking turret with thick armor and large caliber automatic cannon, which can be used as a small IFV.</description>
 		<tools>
 			<li>
 				<label>Left tentacle</label>
@@ -95,7 +95,7 @@
 	<ThingDef ParentName="Cinder_BaseTurretWalker">
 		<defName>Cinder_Mech_WalkerRocket</defName>
 		<label>rocketswarm walker</label>
-		<description>TODO</description>
+		<description>A large walking turret with thick armor and cluster rocket launchers, which can be used as a small rocket launcher.</description>
 		<tools>
 			<li>
 				<label>Left tentacle</label>
@@ -185,7 +185,7 @@
 	<ThingDef ParentName="Cinder_BaseTurretWalker">
 		<defName>Cinder_Mech_WalkerSniper</defName>
 		<label>Uranium slug walker</label>
-		<description>TODO</description>
+		<description>A large walking turret with thick armor and armor piercing uranium shells, which can be used as a small anti armor vehicle。</description>
 		<tools>
 			<li>
 				<label>Left tentacle</label>

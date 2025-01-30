@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Armored seat ring -->
+  <Cinder_ArmoredRing.label>装甲座圈</Cinder_ArmoredRing.label>
+  
+  <!-- EN: armour plate -->
+  <Cinder_ArmourPlate.label>装甲板</Cinder_ArmourPlate.label>
+  
+  <!-- EN: armored core -->
+  <Cinder_ArtificialBrain.label>装甲核心</Cinder_ArtificialBrain.label>
+  
+  <!-- EN: fluid ganglion -->
+  <Cinder_Ganglion.label>液体神经节</Cinder_Ganglion.label>
+  
+  <!-- EN: integrated sensors -->
+  <Cinder_IntegratedSensors.label>集成传感器</Cinder_IntegratedSensors.label>
+  
+  <!-- EN: armored chassis -->
+  <Cinder_MechanicalThorax.label>装甲躯干</Cinder_MechanicalThorax.label>
+  
+  <!-- EN: neural spine -->
+  <Cinder_NeuralSpine.label>神经棘</Cinder_NeuralSpine.label>
+  
+  <!-- EN: tentacle -->
+  <Cinder_Tentacle.label>触手</Cinder_Tentacle.label>
+  
+  <!-- EN: Tentacle leg -->
+  <Cinder_TentacleLeg.label>触手腿</Cinder_TentacleLeg.label>
+  
+</LanguageData>

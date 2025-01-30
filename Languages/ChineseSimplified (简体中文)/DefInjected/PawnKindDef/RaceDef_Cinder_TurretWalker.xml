@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Autocannon walker -->
+  <Cinder_Mech_WalkerAutoCannon.label>自动炮步行者</Cinder_Mech_WalkerAutoCannon.label>
+  
+  <!-- EN: rocketswarm walker -->
+  <Cinder_Mech_WalkerRocket.label>火箭炮步行者</Cinder_Mech_WalkerRocket.label>
+  
+  <!-- EN: Uranium slug walker -->
+  <Cinder_Mech_WalkerSniper.label>铀弹炮步行者</Cinder_Mech_WalkerSniper.label>
+  
+</LanguageData>
