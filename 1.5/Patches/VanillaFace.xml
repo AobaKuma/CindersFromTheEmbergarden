@@ -5,7 +5,7 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/graphicPaths/head</xpath>
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/alienRace/graphicPaths/head</xpath>
 					<value>
 						<head>
 					    <path>Things/Pawn/Humanlike/Heads/Vanilla/CinderHead</path>
@@ -13,7 +13,7 @@
 						<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
 							Things/Pawn/Humanlike/Heads/Vanilla/GhoulHead</Hediff>
 					</extendedGraphics>
-				</head>
+				        </head>
 					</value>
 				</li>
 			</operations>
