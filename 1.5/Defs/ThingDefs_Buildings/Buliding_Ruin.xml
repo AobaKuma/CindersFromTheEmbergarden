@@ -52,6 +52,108 @@
 		</killedLeavingsRanges>
 	</ThingDef>
 	
+	<ThingDef ParentName="Cinder_NonfunctionalBuilding_Impassable">
+		<defName>Cinder_ErodedEXOBuliding</defName>
+		<label>eroded EXO(Not Started)</label>
+		<description>A three meter high mass-produced main attack armored mecha, used to fill the gap between infantry and tanks, carrying many weapons and anti tank missiles, and is a component of the armored torrent.\n\nNeed a Mechanitor to activate it.</description>
+		<rotatable>true</rotatable>
+		<graphicData>
+			<texPath>Things/Pawn/Mech/EXObuliding/ErodedEXO</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>3</drawSize>
+			 <shadowData>
+                <volume>(1.1, 1.0, 1.1)</volume>
+            </shadowData>
+		</graphicData>
+		<size>(2,2)</size>
+		<costList>
+           <Steel>240</Steel>
+		   <Cinder_AmorphousPolymer>200</Cinder_AmorphousPolymer>
+		   <Uranium>60</Uranium>
+           <ComponentSpacer>8</ComponentSpacer>
+        </costList>
+		<researchPrerequisites>
+          <li>Cinder_WarMachinery</li>
+        </researchPrerequisites>
+		<statBases>
+		    <WorkToBuild>150000</WorkToBuild>
+			<MaxHitPoints>1500</MaxHitPoints>
+			<Mass>100</Mass>
+		</statBases>
+		<killedLeavingsRanges>
+			<ChunkSlagSteel>4~5</ChunkSlagSteel>
+		</killedLeavingsRanges>
+		<designationCategory MayRequire="Ludeon.RimWorld.Biotech">Biotech</designationCategory>
+	</ThingDef>
+	
+	<ThingDef ParentName="Cinder_NonfunctionalBuilding_Impassable">
+		<defName>Cinder_WarAttackerBuliding</defName>
+		<label>war attacker(Not Started)</label>
+		<description>A three meter high heavy armored assault walking machine with astonishing ammunition carrying capacity, like a walking armed helicopter, capable of leveling enemy positions with eight Hellfire missiles.\n\nNeed a Mechanitor to activate it.</description>
+		<rotatable>true</rotatable>
+		<graphicData>
+			<texPath>Things/Pawn/Mech/WarAttacker</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>3.6</drawSize>
+			 <shadowData>
+                <volume>(1.1, 1.0, 1.1)</volume>
+            </shadowData>
+		</graphicData>
+		<size>(2,2)</size>
+		<costList>
+           <Steel>340</Steel>
+		   <Cinder_AmorphousPolymer>400</Cinder_AmorphousPolymer>
+		   <Uranium>120</Uranium>
+           <ComponentSpacer>12</ComponentSpacer>
+        </costList>
+		<researchPrerequisites>
+          <li>Cinder_WarAttacker</li>
+        </researchPrerequisites>
+		<statBases>
+		    <WorkToBuild>180000</WorkToBuild>
+			<MaxHitPoints>1500</MaxHitPoints>
+			<Mass>100</Mass>
+		</statBases>
+		<killedLeavingsRanges>
+			<ChunkSlagSteel>4~6</ChunkSlagSteel>
+		</killedLeavingsRanges>
+		<designationCategory MayRequire="Ludeon.RimWorld.Biotech">Biotech</designationCategory>
+	</ThingDef>
+	
+	<ThingDef ParentName="Cinder_NonfunctionalBuilding_Impassable">
+		<defName>Cinder_WarSweeperBuliding</defName>
+		<label>war sweeper(Not Started)</label>
+		<description>A heavy armored anti-aircraft walking machine on the order of three meters high, equipped with anti-aircraft firepower of different calibers and abundant ammunition to accompany infantry in anti-aircraft operations.\n\nNeed a Mechanitor to activate it.</description>
+		<rotatable>true</rotatable>
+		<graphicData>
+			<texPath>Things/Pawn/Mech/WarSweeper</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>3.6</drawSize>
+			 <shadowData>
+                <volume>(1.1, 1.0, 1.1)</volume>
+            </shadowData>
+		</graphicData>
+		<size>(2,2)</size>
+		<costList>
+           <Steel>240</Steel>
+		   <Cinder_AmorphousPolymer>300</Cinder_AmorphousPolymer>
+		   <Uranium>90</Uranium>
+           <ComponentSpacer>12</ComponentSpacer>
+        </costList>
+		<researchPrerequisites>
+          <li>Cinder_WarAttacker</li>
+        </researchPrerequisites>
+		<statBases>
+		    <WorkToBuild>170000</WorkToBuild>
+			<MaxHitPoints>1500</MaxHitPoints>
+			<Mass>100</Mass>
+		</statBases>
+		<killedLeavingsRanges>
+			<ChunkSlagSteel>4~6</ChunkSlagSteel>
+		</killedLeavingsRanges>
+		<designationCategory MayRequire="Ludeon.RimWorld.Biotech">Biotech</designationCategory>
+	</ThingDef>
+	
     <ThingDef Name="Cinder_TrapIEDBase" ParentName="BuildingBase" Abstract="True">
     <thingClass>Embergarden.Building_TrapExplosive_Rechargeable</thingClass>
     <graphicData>

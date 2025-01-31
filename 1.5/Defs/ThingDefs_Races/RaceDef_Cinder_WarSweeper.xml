@@ -57,7 +57,7 @@
 	<ThingDef ParentName="Cinder_BaseMechaWalker">
 		<defName>Cinder_Mech_WarSweeper</defName>
 		<label>war sweeper</label>
-		<description>A heavy armored anti-aircraft walking machine on the order of three meters high, equipped with anti-aircraft firepower of different calibers and abundant ammunition to accompany infantry in anti-aircraft operations</description>
+		<description>A heavy armored anti-aircraft walking machine on the order of three meters high, equipped with anti-aircraft firepower of different calibers and abundant ammunition to accompany infantry in anti-aircraft operations.</description>
 		<tools>
 			<li>
 				<label>Left tentacle</label>
