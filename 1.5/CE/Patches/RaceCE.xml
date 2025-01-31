@@ -22,7 +22,6 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/statBases</xpath>
 		<value>
-			<MeleeDodgeChance>1</MeleeDodgeChance>
 			<MeleeCritChance>1</MeleeCritChance>
 			<MeleeParryChance>1</MeleeParryChance>
 			<Suppressability>1</Suppressability>
