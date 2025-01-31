@@ -80,6 +80,7 @@
     <Compile Include="D.cs" />
     <Compile Include="Gene_AddHediff.cs" />
     <Compile Include="Gizmo_AttachmentShieldStatus.cs" />
+    <Compile Include="HarmonyPatch\FuckMechanitorPatch.cs" />
     <Compile Include="HarmonyPatch\HarmonyEntry.cs" />
     <Compile Include="HarmonyPatch\Patch_DrawVehicleTurret.cs" />
     <Compile Include="HarmonyPatch\PawnGeneratorPatch.cs" />
