@@ -1,45 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[@Name="Cinder_BaseTurretWalker"]/statBases</xpath>
-		<value>
-			<SmokeSensitivity>0</SmokeSensitivity>
-			<NightVisionEfficiency>0.80</NightVisionEfficiency>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[@Name="Cinder_BaseTurretWalker"]/statBases/ArmorRating_Heat</xpath>
-		<value>
-			<ArmorRating_Heat>0.00</ArmorRating_Heat>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[@Name="Cinder_BaseTurretWalker"]</xpath>
-		<value>
-			<li Class="CombatExtended.RacePropertiesExtensionCE">
-				<bodyShape>QuadrupedLow</bodyShape>
-			</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[@Name="Cinder_BaseTurretWalker"]/statBases</xpath>
-		<value>
-			<CarryWeight>50</CarryWeight>
-			<CarryBulk>20</CarryBulk>
-			<AimingAccuracy>1</AimingAccuracy>
-			<ShootingAccuracyPawn>1</ShootingAccuracyPawn>
-			<MeleeDodgeChance>0</MeleeDodgeChance>
-			<MeleeCritChance>0</MeleeCritChance>
-			<MeleeParryChance>0</MeleeParryChance>
-			<MaxHitPoints>200</MaxHitPoints>
-		</value>
-	</Operation>
-
-
-
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/ThingDef[@Name="Cinder_BaseMechaWalker"]</xpath>
 		<value>

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using Verse;
 using UnityEngine;
 using System.ComponentModel.Composition.Primitives;
+using Embergarden;
+using RimWorld;
+using static UnityEngine.GraphicsBuffer;
 
 namespace EmbergardenCE
 {
@@ -98,5 +101,12 @@ namespace EmbergardenCE
             path.Add(currentTarget.Cell);
             path.SortBy((IntVec3 c) => (c.ToVector3Shifted() - caster.DrawPos).Yto0().normalized.AngleToFlat(tan));
         }
+    }
+
+
+
+    public class Comp_TurretTransformableCE : Comp_TurretTransformableAbstract
+    {
+        public override LocalTargetInfo CurrentTarget => (Turret as Building_TurretGunCE).CurrentTarget;
     }
 }

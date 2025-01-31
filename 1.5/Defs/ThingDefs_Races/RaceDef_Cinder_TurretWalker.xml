@@ -40,16 +40,11 @@
 			</li>
 		</tools>
 		<race>
-		<intelligence>ToolUser</intelligence>
+			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Cinder_WalkerTurret</thinkTreeMain>
 			<body>Cinder_TurretWalker</body>
 			<baseHealthScale>3</baseHealthScale>
 		</race>
-		<modExtensions>
-
-			<li Class="Embergarden.ModExtension_Draftable">
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BaseMechanoidKind">
@@ -132,16 +127,11 @@
 			</li>
 		</tools>
 		<race>
-		<intelligence>ToolUser</intelligence>
+			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Cinder_WalkerTurret</thinkTreeMain>
 			<body>Cinder_TurretWalker</body>
 			<baseHealthScale>3</baseHealthScale>
 		</race>
-		<modExtensions>
-
-			<li Class="Embergarden.ModExtension_Draftable">
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BaseMechanoidKind">
@@ -222,16 +212,11 @@
 			</li>
 		</tools>
 		<race>
-		<intelligence>ToolUser</intelligence>
+			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Cinder_WalkerTurret</thinkTreeMain>
 			<body>Cinder_TurretWalker</body>
 			<baseHealthScale>3</baseHealthScale>
 		</race>
-		<modExtensions>
-
-			<li Class="Embergarden.ModExtension_Draftable">
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BaseMechanoidKind">

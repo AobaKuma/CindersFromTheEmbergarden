@@ -9,10 +9,12 @@ namespace Embergarden
     /// <summary>
     /// 移动炮塔 建筑形态Comp
     /// </summary>
-    public partial class Comp_TurretTransformable : ThingComp
+    public abstract partial class Comp_TurretTransformableAbstract : ThingComp
     {
         public CompProperties_Transformable Props => (CompProperties_Transformable)props;
-        public Building_TurretGun Turret => parent as Building_TurretGun;
+        public Building Turret => parent as Building;
+
+        public abstract LocalTargetInfo CurrentTarget { get; }
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
@@ -58,8 +60,8 @@ namespace Embergarden
             {
                 return;
             }
-            D.Message($"Ticked, Target is {Turret.CurrentTarget}, next Transformation Tick is {lastHaveTargetTick + Props.idleSeconds.SecondsToTicks()}");
-            if (Turret.CurrentTarget.IsValid)
+            D.Message($"Ticked, Target is {CurrentTarget}, next Transformation Tick is {lastHaveTargetTick + Props.idleSeconds.SecondsToTicks()}");
+            if (CurrentTarget.IsValid)
             {
                 if (lastHaveTargetTick > 0)
                     lastHaveTargetTick = -1;
@@ -86,7 +88,8 @@ namespace Embergarden
         bool needUpdateHP = true;
         bool needCheckRepair = true;
     }
-    public partial class Comp_TurretTransformable : IThingHolder
+
+    public abstract partial class Comp_TurretTransformableAbstract : IThingHolder
     {
         public void GetChildHolders(List<IThingHolder> outChildren)
         {
@@ -158,6 +161,7 @@ namespace Embergarden
             Pawn p = InnerPawn;
             p.SetFactionDirect(parent.Faction);
             pawnOwner.TryDropAll(parent.Position, parent.Map, ThingPlaceMode.Direct);
+            bool flag = Find.Selector.SelectedObjectsListForReading.Contains(parent);
             parent.DeSpawn(DestroyMode.WillReplace);
             foreach (var ab in p.abilities.abilities)
             {
@@ -168,6 +172,10 @@ namespace Embergarden
             }
 
             if (p.IsPlayerControlled) p.drafter.Drafted = true;
+            if (flag)
+            {
+                Find.Selector.Select(p);
+            }
         }
 
         public Pawn NewPawn()
@@ -201,9 +209,14 @@ namespace Embergarden
         public Pawn InnerPawn => pawnOwner.Any ? pawnOwner[0] : null;
 
         public ThingOwner<Pawn> pawnOwner;
-        public Comp_TurretTransformable()
+        public Comp_TurretTransformableAbstract()
         {
             pawnOwner = new(this, true);
         }
+    }
+
+    public class Comp_TurretTransformable : Comp_TurretTransformableAbstract
+    {
+        public override LocalTargetInfo CurrentTarget => (Turret as Building_TurretGun).CurrentTarget;
     }
 }

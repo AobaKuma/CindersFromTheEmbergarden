@@ -30,11 +30,6 @@
 		<butcherProducts>
 			<Cinder_AmorphousPolymer>25</Cinder_AmorphousPolymer>
 		</butcherProducts>
-		<modExtensions>
-
-			<li Class="Embergarden.ModExtension_Draftable">
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="Cinder_MiniTurretWalker">
@@ -96,9 +91,9 @@
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(1.2, 1.2)</drawSize>
 					<shadowData>
-				    <volume>(0.27,0.25,0.27)</volume>
-				   <offset>(0,0,0)</offset>
-			       </shadowData>
+						<volume>(0.27,0.25,0.27)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
 					<drawOffset>(0,0,-0.05)</drawOffset>
 				</bodyGraphicData>
 			</li>
@@ -109,9 +104,9 @@
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(1.2, 1.2)</drawSize>
 					<shadowData>
-				    <volume>(0.27,0.25,0.27)</volume>
-				   <offset>(0,0,0)</offset>
-			       </shadowData>
+						<volume>(0.27,0.25,0.27)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
 					<drawOffset>(0,0,-0.05)</drawOffset>
 				</bodyGraphicData>
 			</li>

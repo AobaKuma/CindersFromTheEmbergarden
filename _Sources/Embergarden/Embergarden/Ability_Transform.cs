@@ -65,7 +65,7 @@ namespace Embergarden
                 GenPlace.TryPlaceThing(Turret, pawn.Position, pawn.Map, ThingPlaceMode.Near);
                 pawn.DeSpawn(DestroyMode.WillReplace);
 
-                turretCache.TryGetComp<Comp_TurretTransformable>().pawnOwner.TryAdd(pawn);
+                turretCache.TryGetComp<Comp_TurretTransformableAbstract>().pawnOwner.TryAdd(pawn);
             }
         }
     }
