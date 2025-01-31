@@ -127,7 +127,10 @@
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Things/Pawn/Humanlike/Body/CinderFin/CinderFin</texPath>
+        <texPaths>
+		<li>Things/Pawn/Humanlike/Body/CinderFin/CinderFin</li>
+		<li>Things/Pawn/Humanlike/Body/Biotech/CinderFinA</li>
+		</texPaths>
         <colorType>Hair</colorType>
         <parentTagDef>Head</parentTagDef>
         <useSkinShader>true</useSkinShader>
@@ -141,34 +144,6 @@
     </renderNodeProperties>
   </GeneDef>
   
-  <GeneDef ParentName="GeneEarsBase">
-    <defName>Cinder_FinA</defName>
-    <label>fin</label>
-    <labelShortAdj>fin</labelShortAdj>
-    <description>Carriers of this gene will grow head fins.</description>
-    <iconPath>UI/Gene/Fin</iconPath>
-	<selectionWeight>1.5</selectionWeight>
-    <displayOrderInCategory>0</displayOrderInCategory>
-	 <exclusionTags>
-      <li>CinderFin</li>
-    </exclusionTags>
-    <renderNodeProperties>
-      <li>
-        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-        <texPath>Things/Pawn/Humanlike/Body/Biotech/CinderFinA</texPath>
-        <colorType>Hair</colorType>
-        <parentTagDef>Head</parentTagDef>
-        <useSkinShader>true</useSkinShader>
-        <useRottenColor>true</useRottenColor>
-        <drawData>
-          <defaultData>
-            <layer>70</layer>
-          </defaultData>
-        </drawData>
-      </li>
-    </renderNodeProperties>
-  </GeneDef>
   
   <GeneDef ParentName="GeneTailBase">
     <defName>Cinder_UncontrollableTentacle</defName>
@@ -186,7 +161,11 @@
     <renderNodeProperties>
       <li>
         <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-        <texPath>Things/Pawn/Humanlike/Body/CinderTentacle/CinderTentacle</texPath>
+        <texPaths>
+		<li>Things/Pawn/Humanlike/Body/CinderTentacle/CinderTentacle</li>
+		<li>Things/Pawn/Humanlike/Body/Biotech/CinderTentacleA</li>
+		<li>Things/Pawn/Humanlike/Body/Biotech/CinderTentacleB</li>
+		</texPaths>
         <colorType>Skin</colorType>
         <overrideMeshSize>(1.5, 1.5)</overrideMeshSize>
         <parentTagDef>Body</parentTagDef>
@@ -219,101 +198,4 @@
 	</modExtensions>
   </GeneDef>
   
-   <GeneDef ParentName="GeneTailBase">
-    <defName>Cinder_UncontrollableTentacleA</defName>
-    <label>uncontrollable tentacle</label>
-    <description>Carriers of this gene will grow uncontrollable tentacle.</description>
-	<geneClass>Embergarden.Gene_AddHediff</geneClass>
-    <iconPath>UI/Gene/UncontrollableTentacle</iconPath>
-	<selectionWeight>1.5</selectionWeight>
-    <displayOrderInCategory>0</displayOrderInCategory>
-    <biostatCpx>1</biostatCpx>
-    <biostatMet>4</biostatMet>
-	 <exclusionTags>
-      <li>CinderTentacle</li>
-    </exclusionTags>
-    <renderNodeProperties>
-      <li>
-        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-        <texPath>Things/Pawn/Humanlike/Body/Biotech/CinderTentacleA</texPath>
-        <colorType>Skin</colorType>
-        <overrideMeshSize>(1.5, 1.5)</overrideMeshSize>
-        <parentTagDef>Body</parentTagDef>
-        <rotDrawMode>Fresh, Rotting</rotDrawMode>
-        <drawData>
-          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
-          <defaultData>
-            <layer>90</layer>
-          </defaultData>
-          <dataNorth>
-            <offset>(0, 0, 0)</offset>
-            <layer>90</layer>
-          </dataNorth>
-          <dataSouth>
-           <offset>(0, 0, 0)</offset>
-          </dataSouth>
-          <dataEast>
-             <offset>(0, 0,0.05)</offset>
-          </dataEast>
-          <dataWest>
-            <offset>(0, 0,0.05)</offset>
-          </dataWest>
-        </drawData>
-      </li>
-    </renderNodeProperties>
-	<modExtensions>
-			<li Class="Embergarden.ModExtension_GeneAddHediff">
-				<HediffDef>Cinder_UncontrollableTentacles</HediffDef>
-			</li>
-	</modExtensions>
-  </GeneDef>
-  
-  <GeneDef ParentName="GeneTailBase">
-    <defName>Cinder_UncontrollableTentacleB</defName>
-    <label>uncontrollable tentacle</label>
-    <description>Carriers of this gene will grow uncontrollable tentacle.</description>
-	<geneClass>Embergarden.Gene_AddHediff</geneClass>
-    <iconPath>UI/Gene/UncontrollableTentacle</iconPath>
-	<selectionWeight>1.5</selectionWeight>
-    <displayOrderInCategory>0</displayOrderInCategory>
-    <biostatCpx>1</biostatCpx>
-    <biostatMet>4</biostatMet>
-	 <exclusionTags>
-      <li>CinderTentacle</li>
-    </exclusionTags>
-    <renderNodeProperties>
-      <li>
-        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-        <texPath>Things/Pawn/Humanlike/Body/Biotech/CinderTentacleB</texPath>
-        <colorType>Skin</colorType>
-        <overrideMeshSize>(1.5, 1.5)</overrideMeshSize>
-        <parentTagDef>Body</parentTagDef>
-        <rotDrawMode>Fresh, Rotting</rotDrawMode>
-        <drawData>
-          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
-          <defaultData>
-            <layer>90</layer>
-          </defaultData>
-          <dataNorth>
-            <offset>(0, 0, 0)</offset>
-            <layer>90</layer>
-          </dataNorth>
-          <dataSouth>
-           <offset>(0, 0, 0)</offset>
-          </dataSouth>
-          <dataEast>
-             <offset>(0, 0,0.05)</offset>
-          </dataEast>
-          <dataWest>
-            <offset>(0, 0,0.05)</offset>
-          </dataWest>
-        </drawData>
-      </li>
-    </renderNodeProperties>
-	<modExtensions>
-			<li Class="Embergarden.ModExtension_GeneAddHediff">
-				<HediffDef>Cinder_UncontrollableTentacles</HediffDef>
-			</li>
-	</modExtensions>
-  </GeneDef>
 </Defs>
