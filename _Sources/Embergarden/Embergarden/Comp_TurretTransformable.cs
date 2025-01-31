@@ -129,8 +129,8 @@ namespace Embergarden
             {
                 Command_Action command = new()
                 {
-                    defaultLabel = Props.defaultLabel.Translate(),
-                    defaultDesc = Props.defaultDesc.Translate(),
+                    defaultLabel = Props.defaultLabel,
+                    defaultDesc = Props.defaultDesc,
                     icon = Props.Icon2D,
                     action = TryTransform,
                 };

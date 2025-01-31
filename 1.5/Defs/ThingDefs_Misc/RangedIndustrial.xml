@@ -1,225 +1,225 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef Name="Cinder_Gun" ParentName="BaseHumanMakeableGun" Abstract="True">
-    <weaponTags Inherit="False">
-	  <li>Cinder_Gun</li>
-    </weaponTags>
-    <tradeTags Inherit="False">  
-	  <li>Cinder_Gun</li>
-    </tradeTags>
-  </ThingDef>
- 
-	
+	<ThingDef Name="Cinder_Gun" ParentName="BaseHumanMakeableGun" Abstract="True">
+		<weaponTags Inherit="False">
+			<li>Cinder_Gun</li>
+		</weaponTags>
+		<tradeTags Inherit="False">
+			<li>Cinder_Gun</li>
+		</tradeTags>
+	</ThingDef>
+
+
 	<ThingDef ParentName="BaseBullet">
-    <defName>Cinder_Bullet_308APE</defName>
-    <label>Multiple bullet</label>
-    <graphicData>
-      <texPath>Things/Weapons/Bullet_clustered</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>13</damageAmountBase>
-      <stoppingPower>1</stoppingPower>
-      <armorPenetrationBase>0.28</armorPenetrationBase>
-	  <extraDamages>
+		<defName>Cinder_Bullet_308APE</defName>
+		<label>Multiple bullet</label>
+		<graphicData>
+			<texPath>Things/Weapons/Bullet_clustered</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<armorPenetrationBase>0.28</armorPenetrationBase>
+			<extraDamages>
 				<li>
 					<def>Cinder_ExtraBullet</def>
 					<amount>3</amount>
 				</li>
-	 </extraDamages>
-      <speed>65</speed>
-    </projectile>
-  </ThingDef>
-  
-   <ThingDef ParentName="BaseBullet">
-    <defName>Cinder_Bullet_RPG</defName>
-    <label>Energy gathering bomb</label>
-    <thingClass>Embergarden.Projectile_ConeExplosion</thingClass>
-    <graphicData>
-      <texPath>Things/Weapons/Bullet_RPG</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Cinder_Bomb</damageDef>
-	   <damageAmountBase>150</damageAmountBase>
-	  <armorPenetrationBase>1.5</armorPenetrationBase>
-      <speed>75</speed>
-      <explosionRadius>3</explosionRadius>
-    </projectile>
-	<comps>
-        <li Class="CompProperties_Explosive">
-       <explosiveRadius>2</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-		<damageAmountBase>50</damageAmountBase>
-		<armorPenetrationBase>0.25</armorPenetrationBase>
-        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
-        <wickTicks>15</wickTicks>
-        <startWickOnDamageTaken>
-          <li>Bullet</li>
-          <li>Arrow</li>
-          <li>ArrowHighVelocity</li>
-        </startWickOnDamageTaken>
-		<destroyThingOnExplosionSize>9999</destroyThingOnExplosionSize>
-		<propagationSpeed>0.5</propagationSpeed>
-      </li>
-    </comps>
-	<modExtensions>
+			</extraDamages>
+			<speed>65</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Cinder_Bullet_RPG</defName>
+		<label>Energy gathering bomb</label>
+		<thingClass>Embergarden.Projectile_ConeExplosion</thingClass>
+		<graphicData>
+			<texPath>Things/Weapons/Bullet_RPG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Cinder_Bomb</damageDef>
+			<damageAmountBase>150</damageAmountBase>
+			<armorPenetrationBase>1.5</armorPenetrationBase>
+			<speed>75</speed>
+			<explosionRadius>3</explosionRadius>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<damageAmountBase>50</damageAmountBase>
+				<armorPenetrationBase>0.25</armorPenetrationBase>
+				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+				<wickTicks>15</wickTicks>
+				<startWickOnDamageTaken>
+					<li>Bullet</li>
+					<li>Arrow</li>
+					<li>ArrowHighVelocity</li>
+				</startWickOnDamageTaken>
+				<destroyThingOnExplosionSize>9999</destroyThingOnExplosionSize>
+				<propagationSpeed>0.5</propagationSpeed>
+			</li>
+		</comps>
+		<modExtensions>
 			<li Class="Embergarden.DefModExtension_ConeExplosion">
-			<angle>15</angle>	
-			<invert>false</invert>
+				<angle>15</angle>
+				<invert>false</invert>
 			</li>
 		</modExtensions>
-  </ThingDef>
-  
-  <ThingDef ParentName="BaseBullet">
-    <defName>Cinder_Bullet_50APE</defName>
-    <label>.50 bullet</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Big</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>20</damageAmountBase>
-      <stoppingPower>5</stoppingPower>
-      <armorPenetrationBase>0.32</armorPenetrationBase>
-      <speed>65</speed>
-    </projectile>
-  </ThingDef>
-  
-  <ThingDef ParentName="BaseBullet">
-    <defName>Cinder_Bullet_PDW</defName>
-    <label>needle bullet</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>10</damageAmountBase>
-      <stoppingPower>0.5</stoppingPower>
-      <armorPenetrationBase>0.25</armorPenetrationBase>
-      <speed>65</speed>
-    </projectile>
-  </ThingDef>
-  
-  
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Cinder_Bullet_50APE</defName>
+		<label>.50 bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>5</stoppingPower>
+			<armorPenetrationBase>0.32</armorPenetrationBase>
+			<speed>65</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Cinder_Bullet_PDW</defName>
+		<label>needle bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<stoppingPower>0.5</stoppingPower>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>65</speed>
+		</projectile>
+	</ThingDef>
+
+
 	<DamageDef ParentName="Bullet">
 		<defName>Cinder_ExtraBullet</defName>
 		<label>ExtraBullet</label>
 		<minDamageToFragment>5</minDamageToFragment>
 	</DamageDef>
-	
-	  <ThingDef ParentName="BaseBullet">
-    <defName>Cinder_Bullet_Flechette</defName>
-    <label>Flechette blast</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>18</damageAmountBase>
-      <stoppingPower>3</stoppingPower>
-      <armorPenetrationBase>0.22</armorPenetrationBase>
-	  <extraDamages>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Cinder_Bullet_Flechette</defName>
+		<label>Flechette blast</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<stoppingPower>3</stoppingPower>
+			<armorPenetrationBase>0.22</armorPenetrationBase>
+			<extraDamages>
 				<li>
 					<def>Cinder_ExtraBullet</def>
 					<amount>3</amount>
 				</li>
-	 </extraDamages>
-      <speed>55</speed>
-    </projectile>
-  </ThingDef>
-	
+			</extraDamages>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+
 	<ThingDef ParentName="Cinder_Gun">
-    <defName>Cinder_Magistrate</defName>
-    <label>Magistrate shotgun</label>
-    <description>An ancient design of shotgun that use special dart bullets. Deadly, but short range.Sometimes tentacles grow on the muzzle of a gun.</description>
-    <possessionCount>1</possessionCount>
-    <graphicData>
-      <texPath>Things/Weapons/Magistrate/MagistrateA</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <soundInteract>Interact_Shotgun</soundInteract>
-    <weaponClasses>
-      <li>ShortShots</li>
-    </weaponClasses>
-    <weaponTags>
-      <li>CinderSimpleGuns</li>
-    </weaponTags>
-    <statBases>
-      <WorkToMake>12000</WorkToMake>
-      <Mass>3.4</Mass>
-      <AccuracyTouch>0.80</AccuracyTouch>
-      <AccuracyShort>0.97</AccuracyShort>
-      <AccuracyMedium>0.77</AccuracyMedium>
-      <AccuracyLong>0.64</AccuracyLong>
-      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
-    </statBases>
-	<randomStyleChance>1</randomStyleChance>
-       <randomStyle>
-      <li>
-        <styleDef>CinderStyle_MagistrateA</styleDef>
-      </li>
-      <li>
-        <styleDef>CinderStyle_MagistrateB</styleDef>
-      </li>
-      <li>
-        <styleDef>CinderStyle_MagistrateC</styleDef>
-      </li>
-      <li>
-        <styleDef>CinderStyle_MagistrateD</styleDef>
-      </li>
-    </randomStyle>
-	
-    <costList>
-      <Steel>60</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
-    </costList>
-    <recipeMaker>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-      <displayPriority>430</displayPriority>
-	  <researchPrerequisites>
-	  <li>Cinder_MultipleWarheads</li>
-    </researchPrerequisites>
-    </recipeMaker>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Cinder_Bullet_Flechette</defaultProjectile>
-        <warmupTime>0.3</warmupTime>
-        <range>17.9</range>
-        <soundCast>Shot_Shotgun</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>stock</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
+		<defName>Cinder_Magistrate</defName>
+		<label>Magistrate shotgun</label>
+		<description>An ancient design of shotgun that use special dart bullets. Deadly, but short range.Sometimes tentacles grow on the muzzle of a gun.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Weapons/Magistrate/MagistrateA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<weaponClasses>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>CinderSimpleGuns</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>3.4</Mass>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.97</AccuracyShort>
+			<AccuracyMedium>0.77</AccuracyMedium>
+			<AccuracyLong>0.64</AccuracyLong>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+		</statBases>
+		<randomStyleChance>1</randomStyleChance>
+		<randomStyle>
+			<li>
+				<styleDef>CinderStyle_MagistrateA</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_MagistrateB</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_MagistrateC</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_MagistrateD</styleDef>
+			</li>
+		</randomStyle>
+
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<displayPriority>430</displayPriority>
+			<researchPrerequisites>
+				<li>Cinder_MultipleWarheads</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Cinder_Bullet_Flechette</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<range>17.9</range>
+				<soundCast>Shot_Shotgun</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
 
 
 	<ThingDef ParentName="Cinder_Gun">
@@ -233,89 +233,89 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
-			 <li>RangedLight</li>
-			 <li>ShortShots</li>
+			<li>RangedLight</li>
+			<li>ShortShots</li>
 		</weaponClasses>
 		<statBases>
-      <WorkToMake>30000</WorkToMake>
-      <Mass>3.0</Mass>
-       <AccuracyTouch>0.60</AccuracyTouch>
-      <AccuracyShort>0.47</AccuracyShort>
-      <AccuracyMedium>0.32</AccuracyMedium>
-      <AccuracyLong>0.15</AccuracyLong>
-      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>3.0</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.47</AccuracyShort>
+			<AccuracyMedium>0.32</AccuracyMedium>
+			<AccuracyLong>0.15</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
 		</statBases>
-		
+
 		<randomStyleChance>1</randomStyleChance>
-       <randomStyle>
-      <li>
-        <styleDef>CinderStyle_MP12A</styleDef>
-      </li>
-      <li>
-        <styleDef>CinderStyle_MP12B</styleDef>
-      </li>
-      <li>
-        <styleDef>CinderStyle_MP12C</styleDef>
-      </li>
-      <li>
-        <styleDef>CinderStyle_MP12D</styleDef>
-      </li>
-	  <li>
-        <styleDef>CinderStyle_MP12E</styleDef>
-      </li>
-	  <li>
-        <styleDef>CinderStyle_MP12F</styleDef>
-      </li>
-	  <li>
-        <styleDef>CinderStyle_MP12G</styleDef>
-      </li>
-	  <li>
-        <styleDef>CinderStyle_MP12H</styleDef>
-      </li>
-	  <li>
-        <styleDef>CinderStyle_MP12I</styleDef>
-      </li>
-	   <li>
-        <styleDef>CinderStyle_MP12J</styleDef>
-      </li>
-	   <li>
-        <styleDef>CinderStyle_MP12K</styleDef>
-      </li>
-	  <li>
-        <styleDef>CinderStyle_MP12L</styleDef>
-      </li>
-    </randomStyle>
-		
-	     <costList>
-		  <Steel>75</Steel>
-           <ComponentIndustrial>4</ComponentIndustrial>
+		<randomStyle>
+			<li>
+				<styleDef>CinderStyle_MP12A</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_MP12B</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_MP12C</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_MP12D</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_MP12E</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_MP12F</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_MP12G</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_MP12H</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_MP12I</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_MP12J</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_MP12K</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_MP12L</styleDef>
+			</li>
+		</randomStyle>
+
+		<costList>
+			<Steel>75</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 		<recipeMaker>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
-	<researchPrerequisite Inherit="False"/>
-	<researchPrerequisites Inherit="False">
-	  <li>GasOperation</li>
-    </researchPrerequisites>
+			<researchPrerequisite Inherit="False"/>
+			<researchPrerequisites Inherit="False">
+				<li>GasOperation</li>
+			</researchPrerequisites>
 		</recipeMaker>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Cinder_Bullet_PDW</defaultProjectile>
-        <warmupTime>0.6</warmupTime>
-        <range>23.9</range>
-        <burstShotCount>6</burstShotCount>
-        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
-        <soundCast>Cinder_Shot_12J</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-	<weaponTags>
-      <li>CinderRifles</li>
-    </weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Cinder_Bullet_PDW</defaultProjectile>
+				<warmupTime>0.6</warmupTime>
+				<range>23.9</range>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<soundCast>Cinder_Shot_12J</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>CinderRifles</li>
+		</weaponTags>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -335,8 +335,8 @@
 				<cooldownTime>1.5</cooldownTime>
 			</li>
 		</tools>
-    </ThingDef>
-	
+	</ThingDef>
+
 	<ThingDef ParentName="Cinder_Gun">
 		<defName>Cinder_PCX33A</defName>
 		<label>Ouroboros rifle</label>
@@ -348,65 +348,65 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
-			 <li>RangedHeavy</li>
+			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-      <WorkToMake>40000</WorkToMake>
-      <Mass>3.0</Mass>
-       <AccuracyTouch>0.60</AccuracyTouch>
-      <AccuracyShort>0.75</AccuracyShort>
-      <AccuracyMedium>0.75</AccuracyMedium>
-      <AccuracyLong>0.75</AccuracyLong>
-      <RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.0</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.75</AccuracyLong>
+			<RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
 		</statBases>
-		
+
 		<randomStyleChance>1</randomStyleChance>
-       <randomStyle>
-      <li>
-        <styleDef>CinderStyle_PCX33A</styleDef>
-      </li>
-      <li>
-        <styleDef>CinderStyle_PCX33B</styleDef>
-      </li>
-      <li>
-        <styleDef>CinderStyle_PCX33C</styleDef>
-      </li>
-      <li>
-        <styleDef>CinderStyle_PCX33D</styleDef>
-      </li>
-    </randomStyle>
-		
-	     <costList>
-		  <Steel>120</Steel>
-           <ComponentIndustrial>9</ComponentIndustrial>
+		<randomStyle>
+			<li>
+				<styleDef>CinderStyle_PCX33A</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_PCX33B</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_PCX33C</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_PCX33D</styleDef>
+			</li>
+		</randomStyle>
+
+		<costList>
+			<Steel>120</Steel>
+			<ComponentIndustrial>9</ComponentIndustrial>
 		</costList>
 		<recipeMaker>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
-	<researchPrerequisite Inherit="False"/>
-	<researchPrerequisites Inherit="False">
-	  <li>PrecisionRifling</li>
-	  <li>Cinder_MultipleWarheads</li>
-    </researchPrerequisites>
+			<researchPrerequisite Inherit="False"/>
+			<researchPrerequisites Inherit="False">
+				<li>PrecisionRifling</li>
+				<li>Cinder_MultipleWarheads</li>
+			</researchPrerequisites>
 		</recipeMaker>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Cinder_Bullet_308APE</defaultProjectile>
-        <warmupTime>0.45</warmupTime>
-        <range>29.9</range>
-        <burstShotCount>3</burstShotCount>
-        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-        <soundCast>Cinder_Shot_33A</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-	<weaponTags>
-      <li>CinderRifles</li>
-    </weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Cinder_Bullet_308APE</defaultProjectile>
+				<warmupTime>0.45</warmupTime>
+				<range>29.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<soundCast>Cinder_Shot_33A</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>CinderRifles</li>
+		</weaponTags>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -426,7 +426,7 @@
 				<cooldownTime>1.5</cooldownTime>
 			</li>
 		</tools>
-    </ThingDef>
+	</ThingDef>
 
 	<ThingDef ParentName="Cinder_Gun">
 		<defName>Cinder_Flint50A</defName>
@@ -439,66 +439,66 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
-			 <li>RangedHeavy</li>
+			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-      <WorkToMake>50000</WorkToMake>
-      <Mass>3.0</Mass>
-       <AccuracyTouch>0.60</AccuracyTouch>
-      <AccuracyShort>0.75</AccuracyShort>
-      <AccuracyMedium>0.65</AccuracyMedium>
-      <AccuracyLong>0.55</AccuracyLong>
-      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+			<WorkToMake>50000</WorkToMake>
+			<Mass>3.0</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
 		</statBases>
-		
+
 		<randomStyleChance>1</randomStyleChance>
-       <randomStyle>
-      <li>
-        <styleDef>CinderStyle_Flint50A</styleDef>
-      </li>
-      <li>
-        <styleDef>CinderStyle_Flint50B</styleDef>
-      </li>
-      <li>
-        <styleDef>CinderStyle_Flint50C</styleDef>
-      </li>
-      <li>
-        <styleDef>CinderStyle_Flint50D</styleDef>
-      </li>
-    </randomStyle>
-		
-	     <costList>
-		  <Steel>120</Steel>
-		  <Cinder_AmorphousPolymer>50</Cinder_AmorphousPolymer>
-           <ComponentIndustrial>10</ComponentIndustrial>
+		<randomStyle>
+			<li>
+				<styleDef>CinderStyle_Flint50A</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_Flint50B</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_Flint50C</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_Flint50D</styleDef>
+			</li>
+		</randomStyle>
+
+		<costList>
+			<Steel>120</Steel>
+			<Cinder_AmorphousPolymer>50</Cinder_AmorphousPolymer>
+			<ComponentIndustrial>10</ComponentIndustrial>
 		</costList>
 		<recipeMaker>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
 			<researchPrerequisite Inherit="False"/>
-	<researchPrerequisites Inherit="False">
-	  <li>PrecisionRifling</li>
-    </researchPrerequisites>
+			<researchPrerequisites Inherit="False">
+				<li>PrecisionRifling</li>
+			</researchPrerequisites>
 		</recipeMaker>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Cinder_Bullet_50APE</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <range>28.9</range>
-        <burstShotCount>3</burstShotCount>
-        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-        <soundCast>Shot_Autocannon</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-	<weaponTags>
-	<li>CinderRifles</li>
-	  <li>CinderElite</li>
-    </weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Cinder_Bullet_50APE</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>28.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<soundCast>Shot_Autocannon</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>CinderRifles</li>
+			<li>CinderElite</li>
+		</weaponTags>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -518,8 +518,8 @@
 				<cooldownTime>1.5</cooldownTime>
 			</li>
 		</tools>
-    </ThingDef>
-	
+	</ThingDef>
+
 	<ThingDef ParentName="Cinder_Gun">
 		<defName>Cinder_Dragonslayer</defName>
 		<thingClass>Embergarden.ThingClass_AltGraphic</thingClass>
@@ -532,49 +532,49 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
-			 <li>RangedHeavy</li>
+			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-      <WorkToMake>50000</WorkToMake>
-      <Mass>10.0</Mass>
-        <AccuracyTouch>0.84</AccuracyTouch>
+			<WorkToMake>50000</WorkToMake>
+			<Mass>10.0</Mass>
+			<AccuracyTouch>0.84</AccuracyTouch>
 			<AccuracyShort>0.95</AccuracyShort>
 			<AccuracyMedium>0.92</AccuracyMedium>
 			<AccuracyLong>0.90</AccuracyLong>
 		</statBases>
-	     <costList>
-		  <Steel>130</Steel>
-		  <Cinder_AmorphousPolymer>150</Cinder_AmorphousPolymer>
-           <ComponentIndustrial>20</ComponentIndustrial>
+		<costList>
+			<Steel>130</Steel>
+			<Cinder_AmorphousPolymer>150</Cinder_AmorphousPolymer>
+			<ComponentIndustrial>20</ComponentIndustrial>
 		</costList>
 		<recipeMaker>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
-	<researchPrerequisite Inherit="False"/>
-	<researchPrerequisites Inherit="False">
-			 <li>MultibarrelWeapons</li>
-	  <li>Cinder_ShapedCharges</li>
-    </researchPrerequisites>
+			<researchPrerequisite Inherit="False"/>
+			<researchPrerequisites Inherit="False">
+				<li>MultibarrelWeapons</li>
+				<li>Cinder_ShapedCharges</li>
+			</researchPrerequisites>
 		</recipeMaker>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-		 <forcedMissRadius>0.5</forcedMissRadius>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Cinder_Bullet_RPG</defaultProjectile>
-        <warmupTime>6.5</warmupTime>
-        <range>30.9</range>
-        <burstShotCount>1</burstShotCount>
-        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-        <soundCast>InfernoCannon_Fire</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-	<weaponTags>
-      <li>CinderHeavy</li>
-    </weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<forcedMissRadius>0.5</forcedMissRadius>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Cinder_Bullet_RPG</defaultProjectile>
+				<warmupTime>6.5</warmupTime>
+				<range>30.9</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>CinderHeavy</li>
+		</weaponTags>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -595,41 +595,41 @@
 			</li>
 		</tools>
 		<comps>
-      <li Class="Embergarden.CompProperties_SecondaryVerb">
-        <verbProps>
-          <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_Minigun</defaultProjectile>
-        <warmupTime>2.5</warmupTime>
-        <range>30.9</range>
-        <burstShotCount>25</burstShotCount>
-        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-        <soundCast>Shot_Minigun</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-        </verbProps>
-		<statOffsets>
-		 <AccuracyTouch>-0.69</AccuracyTouch>
-         <AccuracyShort>-0.7</AccuracyShort>
-        <AccuracyMedium>-0.67</AccuracyMedium>
-         <AccuracyLong>-0.72</AccuracyLong>
-		</statOffsets>
-        <mainWeaponLabel>Rocket</mainWeaponLabel>
-        <mainCommandIcon>UI/Icon/RPG</mainCommandIcon>
-        <secondaryWeaponLabel>Minigun</secondaryWeaponLabel>
-        <secondaryCommandIcon>UI/Icon/Minigun</secondaryCommandIcon>
-        <description>Switch weapon form</description>
-		<sound>Cinder_Transform</sound>
-      </li>
-    </comps>
-	<modExtensions>
+			<li Class="Embergarden.CompProperties_SecondaryVerb">
+				<verbProps>
+					<verbClass>Verb_Shoot</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_Minigun</defaultProjectile>
+					<warmupTime>2.5</warmupTime>
+					<range>30.9</range>
+					<burstShotCount>25</burstShotCount>
+					<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+					<soundCast>Shot_Minigun</soundCast>
+					<soundCastTail>GunTail_Medium</soundCastTail>
+					<muzzleFlashScale>9</muzzleFlashScale>
+				</verbProps>
+				<statOffsets>
+					<AccuracyTouch>-0.69</AccuracyTouch>
+					<AccuracyShort>-0.7</AccuracyShort>
+					<AccuracyMedium>-0.67</AccuracyMedium>
+					<AccuracyLong>-0.72</AccuracyLong>
+				</statOffsets>
+				<mainWeaponLabel>Rocket</mainWeaponLabel>
+				<mainCommandIcon>UI/Icon/RPG</mainCommandIcon>
+				<secondaryWeaponLabel>Minigun</secondaryWeaponLabel>
+				<secondaryCommandIcon>UI/Icon/Minigun</secondaryCommandIcon>
+				<description>Switch weapon form</description>
+				<sound>Cinder_Transform</sound>
+			</li>
+		</comps>
+		<modExtensions>
 			<li Class="Embergarden.DefModExtension_WeaponAltGraphic">
 				<graphicData>
-			<texPath>Things/Weapons/DragonslayerRapidFire</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.1</drawSize>
-		</graphicData>
+					<texPath>Things/Weapons/DragonslayerRapidFire</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>1.1</drawSize>
+				</graphicData>
 			</li>
 		</modExtensions>
-    </ThingDef>
+	</ThingDef>
 </Defs>

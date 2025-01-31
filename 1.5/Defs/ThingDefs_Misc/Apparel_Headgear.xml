@@ -1,64 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <ThingDef ParentName="ApparelBase" Name="Cinder_HatBase" Abstract="True">
-        <thingCategories Inherit="false">
-            <li>Headgear</li>
-        </thingCategories>
-        <smeltable>false</smeltable>
-        <graphicData>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <uiIconScale>1.4</uiIconScale>
-        <apparel>
-            <parentTagDef>ApparelHead</parentTagDef>
-            <countsAsClothingForNudity>false</countsAsClothingForNudity>
-            <renderSkipFlags>
-                <li>None</li>
-            </renderSkipFlags>
-            <tags>
-                <li>Cinder_Civilan</li>
-            </tags>
-        </apparel>
-	  		<recipeMaker>
+	<ThingDef ParentName="ApparelBase" Name="Cinder_HatBase" Abstract="True">
+		<thingCategories Inherit="false">
+			<li>Headgear</li>
+		</thingCategories>
+		<smeltable>false</smeltable>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<apparel>
+			<parentTagDef>ApparelHead</parentTagDef>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<tags>
+				<li>Cinder_Civilan</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
 			<recipeUsers>
-        <li>Cinder_AncientWorkstation</li>
-      </recipeUsers>
+				<li>Cinder_AncientWorkstation</li>
+			</recipeUsers>
 		</recipeMaker>
-    </ThingDef>
+	</ThingDef>
 
-    <ThingDef ParentName="Cinder_HatBase" Name="Cinder_ArmorHelmetBase" Abstract="True">
-        <thingCategories Inherit="false">
-            <li>ArmorHeadgear</li>
-        </thingCategories>
-        <smeltable>true</smeltable>
-        <smeltProducts>
-            <Steel>20</Steel>
-        </smeltProducts>
-        <techLevel>Industrial</techLevel>
-        <tradeTags>
-            <li>Clothing</li>
-            <li>Armor</li>
-        </tradeTags>
-        <apparel>
-            <tags Inherit="false">
-                <li>Cinder_Military</li>
+	<ThingDef ParentName="Cinder_HatBase" Name="Cinder_ArmorHelmetBase" Abstract="True">
+		<thingCategories Inherit="false">
+			<li>ArmorHeadgear</li>
+		</thingCategories>
+		<smeltable>true</smeltable>
+		<smeltProducts>
+			<Steel>20</Steel>
+		</smeltProducts>
+		<techLevel>Industrial</techLevel>
+		<tradeTags>
+			<li>Clothing</li>
+			<li>Armor</li>
+		</tradeTags>
+		<apparel>
+			<tags Inherit="false">
+				<li>Cinder_Military</li>
 				<li>Cinder_MilitaryMedium</li>
 				<li>Cinder_Military_Heavy</li>
-            </tags>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
-        </apparel>
-    </ThingDef>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
 
-    <!-- Cinder_Apparel_DamagedScarf -->
-    <ThingDef ParentName="Cinder_HatBase">
-        <defName>Cinder_HeadGear_DamagedScarf</defName>
-        <label>damaged scarf</label>
-        <description>A scarf with burnt edges and metal chain armor wrapped inside can provide some protection for the neck.</description>
-        <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/DamagedScarf/Icon</texPath>
-        </graphicData>
+	<!-- Cinder_Apparel_DamagedScarf -->
+	<ThingDef ParentName="Cinder_HatBase">
+		<defName>Cinder_HeadGear_DamagedScarf</defName>
+		<label>damaged scarf</label>
+		<description>A scarf with burnt edges and metal chain armor wrapped inside can provide some protection for the neck.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/DamagedScarf/Icon</texPath>
+		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 			<skillRequirements>
@@ -69,55 +69,55 @@
 			<Cloth>50</Cloth>
 			<Steel>20</Steel>
 		</costList>
-        <statBases>
-            <MaxHitPoints>200</MaxHitPoints>
-            <WorkToMake>2100</WorkToMake>
-            <Mass>0.5</Mass>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>2100</WorkToMake>
+			<Mass>0.5</Mass>
 			<ArmorRating_Sharp>0.42</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.7</ArmorRating_Heat>
 			<Insulation_Cold>14.4</Insulation_Cold>
 			<Insulation_Heat>3</Insulation_Heat>
 			<EquipDelay>1.3</EquipDelay>
-        </statBases>
-        <apparel>
-		    <parentTagDef>ApparelBody</parentTagDef>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/DamagedScarf/DamagedScarf</wornGraphicPath>
-            <bodyPartGroups>
-                <li>Neck</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Overhead</li>
-            </layers>
-            <renderSkipFlags>
-                <li>None</li>
-            </renderSkipFlags>
-            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
-            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
-            <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
-            <drawData>
-                <defaultData>
-                    <layer>48</layer>
-                </defaultData>
-                <dataNorth>
-                    <layer>51</layer>
-                </dataNorth>
-            </drawData>
-        </apparel>
-    </ThingDef>
+		</statBases>
+		<apparel>
+			<parentTagDef>ApparelBody</parentTagDef>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/DamagedScarf/DamagedScarf</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			<drawData>
+				<defaultData>
+					<layer>48</layer>
+				</defaultData>
+				<dataNorth>
+					<layer>51</layer>
+				</dataNorth>
+			</drawData>
+		</apparel>
+	</ThingDef>
 
-    <ThingDef ParentName="Cinder_ArmorHelmetBase">
-        <defName>Cinder_HeadGear_AssaultHelmet</defName>
-        <label>assault helmet</label>
-        <description>A bulletproof helmet for assault missions, reinforced with plasteel, heavy but capable of providing effective defense.</description>
-        <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/AssaultHelmet/Icon</texPath>
-        </graphicData>
+	<ThingDef ParentName="Cinder_ArmorHelmetBase">
+		<defName>Cinder_HeadGear_AssaultHelmet</defName>
+		<label>assault helmet</label>
+		<description>A bulletproof helmet for assault missions, reinforced with plasteel, heavy but capable of providing effective defense.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/AssaultHelmet/Icon</texPath>
+		</graphicData>
 		<recipeMaker>
 			<researchPrerequisites>
-	  <li>Fabrication</li>
-	  <li>Cinder_HeavyArmor</li>
-    </researchPrerequisites>
+				<li>Fabrication</li>
+				<li>Cinder_HeavyArmor</li>
+			</researchPrerequisites>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>8</Crafting>
@@ -131,53 +131,53 @@
 		</recipeMaker>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
-            <Plasteel>20</Plasteel>
+			<Plasteel>20</Plasteel>
 		</costList>
 		<stuffCategories>
-				<li>Metallic</li>
-			</stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
 		<costStuffCount>30</costStuffCount>
-        <statBases>
-            <WorkToMake>12000</WorkToMake>
-            <MaxHitPoints>400</MaxHitPoints>
-            <Mass>2</Mass>
-            <ArmorRating_Sharp>0.52</ArmorRating_Sharp>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>2</Mass>
+			<ArmorRating_Sharp>0.52</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.9</ArmorRating_Heat>
 			<StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
 			<Insulation_Cold>10.4</Insulation_Cold>
 			<Insulation_Heat>9</Insulation_Heat>
-            <EquipDelay>3</EquipDelay>
-        </statBases>
-        <apparel>
-            <bodyPartGroups>
-                <li>FullHead</li>
-            </bodyPartGroups>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/AssaultHelmet/AssaultHelmet</wornGraphicPath>
-            <layers>
-                <li>Overhead</li>
-            </layers>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/AssaultHelmet/AssaultHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
 			<tags Inherit="false">
 				<li>Cinder_Military_Heavy</li>
-            </tags>
-        </apparel>
+			</tags>
+		</apparel>
 		<equippedStatOffsets>
-        <PainShockThreshold>0.20</PainShockThreshold>
-        </equippedStatOffsets>
-    </ThingDef>
+			<PainShockThreshold>0.20</PainShockThreshold>
+		</equippedStatOffsets>
+	</ThingDef>
 
-    <ThingDef ParentName="Cinder_ArmorHelmetBase">
-        <defName>Cinder_HeadGear_AssaultHelmetTan</defName>
-        <label>assault helmet tan</label>
-        <description>A helmet made entirely of amorphous polymer as a bulletproof material.It can completely blocks psychic flows to prevent the user from being affected by psycast.</description>
-        <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/AssaultHelmetTan/Icon</texPath>
-        </graphicData>
+	<ThingDef ParentName="Cinder_ArmorHelmetBase">
+		<defName>Cinder_HeadGear_AssaultHelmetTan</defName>
+		<label>assault helmet tan</label>
+		<description>A helmet made entirely of amorphous polymer as a bulletproof material.It can completely blocks psychic flows to prevent the user from being affected by psycast.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/AssaultHelmetTan/Icon</texPath>
+		</graphicData>
 		<recipeMaker>
 			<researchPrerequisites>
-	  <li>Fabrication</li>
-	  <li>Cinder_HeavyArmor</li>
-    </researchPrerequisites>
+				<li>Fabrication</li>
+				<li>Cinder_HeavyArmor</li>
+			</researchPrerequisites>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>8</Crafting>
@@ -185,48 +185,48 @@
 		</recipeMaker>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
-            <Cinder_AmorphousPolymer>75</Cinder_AmorphousPolymer>
+			<Cinder_AmorphousPolymer>75</Cinder_AmorphousPolymer>
 		</costList>
-        <statBases>
-            <WorkToMake>12000</WorkToMake>
-            <MaxHitPoints>400</MaxHitPoints>
-            <Mass>2</Mass>
-            <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
-            <ArmorRating_Blunt>1.0</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.9</ArmorRating_Heat>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>2</Mass>
+			<ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.9</ArmorRating_Heat>
 			<Insulation_Cold>10.4</Insulation_Cold>
 			<Insulation_Heat>9</Insulation_Heat>
-            <EquipDelay>3</EquipDelay>
-        </statBases>
-        <apparel>
-            <bodyPartGroups>
-                <li>FullHead</li>
-            </bodyPartGroups>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/AssaultHelmetTan/AssaultHelmetTan</wornGraphicPath>
-            <layers>
-                <li>Overhead</li>
-            </layers>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/AssaultHelmetTan/AssaultHelmetTan</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
 			<tags Inherit="false">
 				<li>Cinder_Military_Heavy</li>
-            </tags>
-        </apparel>
+			</tags>
+		</apparel>
 		<equippedStatOffsets>
-        <PsychicSensitivity>-9999</PsychicSensitivity>
-        </equippedStatOffsets>
-    </ThingDef>
-	
-    <ThingDef ParentName="Cinder_ArmorHelmetBase">
-        <defName>Cinder_HeadGear_GhoulUnitHelmet</defName>
-        <label>ghoul unit helmet</label>
-        <description>The thermal imaging helmet used by the Ghoul unit can scan targets in complex tunnels.</description>
-        <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/GhoulUnitHelmet/Icon</texPath>
-        </graphicData>
+			<PsychicSensitivity>-9999</PsychicSensitivity>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="Cinder_ArmorHelmetBase">
+		<defName>Cinder_HeadGear_GhoulUnitHelmet</defName>
+		<label>ghoul unit helmet</label>
+		<description>The thermal imaging helmet used by the Ghoul unit can scan targets in complex tunnels.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/GhoulUnitHelmet/Icon</texPath>
+		</graphicData>
 		<recipeMaker>
 			<researchPrerequisites>
-	          <li>FlakArmor</li>
-	          <li>Cinder_HeavyArmor</li>
-            </researchPrerequisites>
+				<li>FlakArmor</li>
+				<li>Cinder_HeavyArmor</li>
+			</researchPrerequisites>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>8</Crafting>
@@ -234,53 +234,53 @@
 		</recipeMaker>
 		<costList>
 			<ComponentIndustrial>3</ComponentIndustrial>
-            <Cinder_AmorphousPolymer>30</Cinder_AmorphousPolymer>
+			<Cinder_AmorphousPolymer>30</Cinder_AmorphousPolymer>
 		</costList>
-        <statBases>
-            <WorkToMake>9200</WorkToMake>
-            <MaxHitPoints>300</MaxHitPoints>
-            <Mass>2</Mass>
-            <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
-            <ArmorRating_Blunt>1.0</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.5</ArmorRating_Heat>
+		<statBases>
+			<WorkToMake>9200</WorkToMake>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>2</Mass>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
 			<Insulation_Cold>3.4</Insulation_Cold>
 			<Insulation_Heat>3</Insulation_Heat>
-            <EquipDelay>2</EquipDelay>
-        </statBases>
-        <apparel>
-            <bodyPartGroups>
-			    <li>UpperHead</li>
-                <li>Eyes</li>
-            </bodyPartGroups>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/GhoulUnitHelmet/GhoulUnitHelmet</wornGraphicPath>
-            <layers>
-                <li>Overhead</li>
-            </layers>
-            <tags>
-                <li>Cinder_Ghoul</li>
-            </tags>
-        </apparel>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/GhoulUnitHelmet/GhoulUnitHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Cinder_Ghoul</li>
+			</tags>
+		</apparel>
 		<equippedStatOffsets>
-		    <PsychicSensitivity>-9999</PsychicSensitivity>
-        	<MeleeDodgeChance>2</MeleeDodgeChance>
+			<PsychicSensitivity>-9999</PsychicSensitivity>
+			<MeleeDodgeChance>2</MeleeDodgeChance>
 			<MeleeHitChance>4</MeleeHitChance>
-        </equippedStatOffsets>
-    </ThingDef>
+		</equippedStatOffsets>
+	</ThingDef>
 
-    <ThingDef ParentName="Cinder_ArmorHelmetBase">
-        <defName>Cinder_HeadGear_FullyEnclosedMask</defName>
-        <label>fully enclosed mask</label>
-        <description>A fully covered heavy-duty bulletproof mask reinforced with amorphous polymer, capable of providing protection for the entire head and resisting toxic environments. But its field of view is limited, affecting shooting accuracy.</description>
-        <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/FullyEnclosedMask/Icon</texPath>
+	<ThingDef ParentName="Cinder_ArmorHelmetBase">
+		<defName>Cinder_HeadGear_FullyEnclosedMask</defName>
+		<label>fully enclosed mask</label>
+		<description>A fully covered heavy-duty bulletproof mask reinforced with amorphous polymer, capable of providing protection for the entire head and resisting toxic environments. But its field of view is limited, affecting shooting accuracy.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/FullyEnclosedMask/Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-        </graphicData>
+		</graphicData>
 		<recipeMaker>
 			<researchPrerequisites>
-	          <li>FlakArmor</li>
-	          <li>Cinder_HeavyArmor</li>
-            </researchPrerequisites>
+				<li>FlakArmor</li>
+				<li>Cinder_HeavyArmor</li>
+			</researchPrerequisites>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>6</Crafting>
@@ -295,92 +295,92 @@
 		<costList>
 			<ComponentIndustrial>3</ComponentIndustrial>
 			<Cloth>30</Cloth>
-            <Cinder_AmorphousPolymer>30</Cinder_AmorphousPolymer>
+			<Cinder_AmorphousPolymer>30</Cinder_AmorphousPolymer>
 		</costList>
 		<stuffCategories>
-				<li>Metallic</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<defaultStuff>Cinder_AmorphousPolymer</defaultStuff>
 		<costStuffCount>30</costStuffCount>
-        <statBases>
-            <WorkToMake>9200</WorkToMake>
-            <MaxHitPoints>400</MaxHitPoints>
-            <Mass>2</Mass>
-            <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+		<statBases>
+			<WorkToMake>9200</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>2</Mass>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.26</ArmorRating_Heat>
 			<StuffEffectMultiplierArmor>0.90</StuffEffectMultiplierArmor>
 			<Insulation_Cold>10.4</Insulation_Cold>
 			<Insulation_Heat>9</Insulation_Heat>
-            <EquipDelay>1.5</EquipDelay>
-        </statBases>
-        <apparel>
-            <bodyPartGroups>
-                <li>FullHead</li>
-            </bodyPartGroups>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/FullyEnclosedMask/FullyEnclosedMask</wornGraphicPath>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/FullyEnclosedMask/FullyEnclosedMask</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
-            <layers>
-                <li>Overhead</li>
-            </layers>
-        </apparel>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+		</apparel>
 		<equippedStatOffsets>
-        <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
-		<ToxicEnvironmentResistance>0.75</ToxicEnvironmentResistance>
-		<PainShockThreshold>0.20</PainShockThreshold>
-        </equippedStatOffsets>
-    </ThingDef>
-	
-	
+			<ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
+			<ToxicEnvironmentResistance>0.75</ToxicEnvironmentResistance>
+			<PainShockThreshold>0.20</PainShockThreshold>
+		</equippedStatOffsets>
+	</ThingDef>
+
+
 	<ThingDef ParentName="Cinder_ArmorHelmetBase">
-        <defName>Cinder_HeadGear_BrokenMask</defName>
-        <label>broken mask</label>
-        <description>The damaged mask recovered from the battlefield is already worn out, but there is still a little protective ability.</description>
-        <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/BrokenMask/Icon</texPath>
+		<defName>Cinder_HeadGear_BrokenMask</defName>
+		<label>broken mask</label>
+		<description>The damaged mask recovered from the battlefield is already worn out, but there is still a little protective ability.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/BrokenMask/Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-        </graphicData>
+		</graphicData>
 		<costList>
 			<Cinder_HeadGear_FullyEnclosedMask>1</Cinder_HeadGear_FullyEnclosedMask>
 		</costList>
-        <statBases>
-		    <MarketValue>25</MarketValue>
-            <WorkToMake>9200</WorkToMake>
-            <MaxHitPoints>400</MaxHitPoints>
-            <Mass>2</Mass>
-            <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+		<statBases>
+			<MarketValue>25</MarketValue>
+			<WorkToMake>9200</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>2</Mass>
+			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.26</ArmorRating_Heat>
 			<Insulation_Cold>10.4</Insulation_Cold>
 			<Insulation_Heat>9</Insulation_Heat>
-            <EquipDelay>1.5</EquipDelay>
-        </statBases>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
 		<randomStyleChance>1</randomStyleChance>
-       <randomStyle>
-      <li>
-        <styleDef>CinderStyle_BrokenMask</styleDef>
-      </li>
-      <li>
-        <styleDef>CinderStyle_BrokenFlakMask</styleDef>
-      </li>
-    </randomStyle>
-        <apparel>
-            <bodyPartGroups>
-                <li>FullHead</li>
-            </bodyPartGroups>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/BrokenMask/BrokenMask</wornGraphicPath>
+		<randomStyle>
+			<li>
+				<styleDef>CinderStyle_BrokenMask</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_BrokenFlakMask</styleDef>
+			</li>
+		</randomStyle>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/BrokenMask/BrokenMask</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
-            <layers>
-                <li>Overhead</li>
-            </layers>
+			<layers>
+				<li>Overhead</li>
+			</layers>
 			<tags Inherit="false">
 				<li>Cinder_MilitaryMedium</li>
-                <li>Cinder_Cult</li>
-            </tags>
-        </apparel>
+				<li>Cinder_Cult</li>
+			</tags>
+		</apparel>
 		<equippedStatOffsets>
-        <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
-        </equippedStatOffsets>
-    </ThingDef>
+			<ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+	</ThingDef>
 </Defs>
