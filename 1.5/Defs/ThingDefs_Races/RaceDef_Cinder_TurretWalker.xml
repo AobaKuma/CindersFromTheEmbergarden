@@ -58,6 +58,7 @@
 		<race>Cinder_Mech_WalkerAutoCannon</race>
 		<combatPower>650</combatPower>
 		<maxPerGroup>5</maxPerGroup>
+		<allowInMechClusters>false</allowInMechClusters>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<bodyGraphicData>
@@ -149,6 +150,7 @@
 		<label>rocketswarm walker</label>
 		<race>Cinder_Mech_WalkerRocket</race>
 		<combatPower>650</combatPower>
+		<allowInMechClusters>false</allowInMechClusters>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<bodyGraphicData>
@@ -239,6 +241,7 @@
 		<label>Uranium slug walker</label>
 		<race>Cinder_Mech_WalkerSniper</race>
 		<combatPower>800</combatPower>
+		<allowInMechClusters>false</allowInMechClusters>
 		<maxPerGroup>2</maxPerGroup>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">

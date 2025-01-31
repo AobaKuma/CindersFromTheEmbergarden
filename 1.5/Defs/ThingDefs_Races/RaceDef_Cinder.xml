@@ -310,6 +310,7 @@
 			</styleSettings>
 	<raceRestriction>
 				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
+				 <onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
 		<blackEndoCategories>
           <li>Melanin</li>
           <li>BodyType</li>
@@ -343,6 +344,18 @@
           <li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
           <li MayRequire="Ludeon.RimWorld.Biotech">Highmate</li>
         </blackXenotypeList>
+		<apparelList>
+		<li>Cinder_Apparel_Commemorative</li>
+		<li>Cinder_Apparel_SnowyNightShawl</li>
+		<li>Cinder_Apparel_SnowyNight</li>
+		<li>Cinder_Apparel_StarryShawl</li>
+		<li>Cinder_Apparel_Starry</li>
+		<li>Cinder_Apparel_GhoulUnitGear</li>
+		<li>Cinder_Apparel_BrokenGhoulUnitGear</li>
+		</apparelList>
+		 <whiteXenotypeList>
+          <li MayRequire="Ludeon.RimWorld.Biotech">Cinder_Xenotype</li>
+        </whiteXenotypeList>
 	</raceRestriction>
 		</alienRace>
 		<!--=============================================================================================================================-->

@@ -11,6 +11,11 @@
 		</apparelMoney>
 		<initialWillRange>10~20</initialWillRange>
 		<initialResistanceRange>10~40</initialResistanceRange>
+		<xenotypeSet Inherit="False">
+          <xenotypeChances>
+           <Cinder_Xenotype MayRequire="Ludeon.RimWorld.Biotech">1</Cinder_Xenotype>
+           </xenotypeChances>
+         </xenotypeSet>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Cinder_BasePawn">

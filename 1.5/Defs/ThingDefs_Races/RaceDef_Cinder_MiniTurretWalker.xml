@@ -88,6 +88,7 @@
 		<race>Cinder_Mech_MiniTurretWalker</race>
 		<combatPower>60</combatPower>
 		<maxPerGroup>12</maxPerGroup>
+		<allowInMechClusters>false</allowInMechClusters>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<bodyGraphicData>

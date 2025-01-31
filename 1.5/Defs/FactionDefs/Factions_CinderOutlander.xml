@@ -55,7 +55,7 @@
     </structureMemeWeights>
     <xenotypeSet>
       <xenotypeChances>
-        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
+        <Cinder_Xenotype MayRequire="Ludeon.RimWorld.Biotech">1</Cinder_Xenotype>
       </xenotypeChances>
     </xenotypeSet>
     <backstoryFilters>
@@ -285,7 +285,7 @@
     </structureMemeWeights>
     <xenotypeSet>
       <xenotypeChances>
-        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
+        <Cinder_Xenotype MayRequire="Ludeon.RimWorld.Biotech">1</Cinder_Xenotype>
       </xenotypeChances>
     </xenotypeSet>
     <backstoryFilters>

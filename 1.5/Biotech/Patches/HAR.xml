@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Humanoid Alien Races</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/alienRace/generalSettings/alienPartGenerator/offsetDefaults</xpath>
+				</li>
+                <li Class="PatchOperationRemove">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/comps/li[@Class="Embergarden.CompProperties_AddHediff"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/GeneDef[defName="Cinder_ErosionEyes"]/renderNodeProperties</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/alienRace/raceRestriction/blackEndoCategories</xpath>
+					<value>
+                      <blackEndoCategories>
+                         <li>Melanin</li>
+                         <li>BodyType</li>
+                         <li>Nose</li>
+                         <li>Voice</li>
+                         <li>Headbone</li>
+                         <li>Head</li>
+                         <li>Jaw</li>
+                      </blackEndoCategories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/alienRace/raceRestriction/blackGeneTags</xpath>
+					<value>
+                     <blackGeneTags>
+                      <li>BeardStyle</li>
+                      <li>Fur</li>
+                     </blackGeneTags>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

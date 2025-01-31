@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <XenotypeDef MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>Cinder_Xenotype</defName>
+    <label>Cinder</label>
+    <description>A pure blooded human that has never undergone genetic modification, but has foreign non biological components on its body.</description>
+    <descriptionShort>A semi biological and semi non biological variant produced by humans, unable to determine whether it is a gene or some strange creation on this person's body.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+    <!--可继承-->
+    <inheritable>true</inheritable>
+    <!--异种人显示位置-->
+    <displayPriority>-1000</displayPriority>
+    <!--战斗力调整-->
+    <combatPowerFactor>1</combatPowerFactor>
+    <!--基因持有者是否可以战斗-->
+    <canGenerateAsCombatant>true</canGenerateAsCombatant>
+    <!--无派系小人生成基因概率-->
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <!--//不准胡子-->
+	  <li>Beard_NoBeardOnly</li>
+	   <!--//Cinder外观-->
+	   <li>Cinder_HairOnly</li>
+	   <li>Cinder_ErosionEyes</li>
+	   <li>Cinder_UncontrollableTentacle</li>
+	   <li>Cinder_UncontrollableTentacleA</li>
+	   <li>Cinder_UncontrollableTentacleB</li>
+	   <li>Cinder_Fin</li>
+	   <li>Cinder_FinA</li>
+	   <li>Cinder_BlackHair</li>
+	   <li>Cinder_LowBlackHair</li>
+	   <li>Cinder_WhiteHair</li>
+	   <li>Cinder_BrownHair</li>
+      <!--体型-->
+      <li>Body_Standard</li>
+      <!--肤色-->
+      <li>Skin_SheerWhite</li>
+      <!--手-->
+      <li>Hands_Human</li>
+      <!--//再生与复活-->
+      <li>Cinder_Regeneration</li>
+      <li>Cinder_Revive</li>
+    </genes>
+  </XenotypeDef>
+</Defs>
