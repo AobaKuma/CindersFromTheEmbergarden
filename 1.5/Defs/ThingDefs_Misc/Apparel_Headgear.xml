@@ -20,9 +20,14 @@
 			</tags>
 		</apparel>
 		<recipeMaker>
+		     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+             <workSkill>Crafting</workSkill>
+             <effectWorking>Tailor</effectWorking>
+             <soundWorking>Recipe_Tailor</soundWorking>
 			<recipeUsers>
 				<li>Cinder_AncientWorkstation</li>
 			</recipeUsers>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
 		</recipeMaker>
 	</ThingDef>
 
@@ -49,6 +54,11 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
+		<recipeMaker>
+		    <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
 	</ThingDef>
 
 	<!-- Cinder_Apparel_DamagedScarf -->

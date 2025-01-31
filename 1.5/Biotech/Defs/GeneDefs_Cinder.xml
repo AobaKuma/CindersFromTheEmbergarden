@@ -52,7 +52,7 @@
     <defName>Cinder_BrownHair</defName>
     <label>dark brown hair</label>
     <hairColorOverride>(0.26,0.24,0.20)</hairColorOverride>
-    <selectionWeight>1.5</selectionWeight>
+    <selectionWeight>1.8</selectionWeight>
     <displayOrderInCategory>110</displayOrderInCategory>
   </GeneDef>
   
@@ -75,7 +75,7 @@
   <GeneDef ParentName="GeneHairColorBase">
     <defName>Cinder_WhiteHair</defName>
     <label>white hair</label>
-    <hairColorOverride>(0.2,0.2,0.2)</hairColorOverride>
+    <hairColorOverride>(0.8,0.8,0.8)</hairColorOverride>
     <selectionWeight>1.5</selectionWeight>
     <displayOrderInCategory>110</displayOrderInCategory>
   </GeneDef>
