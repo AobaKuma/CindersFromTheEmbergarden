@@ -2,6 +2,7 @@
 using HarmonyLib;
 using RimWorld;
 using System.Reflection;
+using static RimWorld.MechClusterSketch;
 
 namespace Embergarden
 {
@@ -24,8 +25,77 @@ namespace Embergarden
         }
     }
 
+    [StaticConstructorOnStartup]
+    [HarmonyPatch]
+    static class Pawn_IsColonyMech_Postfix
+    {
+        static MethodBase TargetMethod()
+        {
+            return typeof(Pawn).PropertyGetter("IsColonyMech");
+        }
+
+        [HarmonyPostfix]
+        static void Postfix(ref bool __result, Pawn __instance)
+        {
+            if (!__result && __instance.def.HasModExtension<ModExtension_Draftable>())
+            {
+                __result = __instance.Faction == Faction.OfPlayer;
+            }
+        }
+    }
+
+    [StaticConstructorOnStartup]
+    [HarmonyPatch]
+    static class Pawn_IsColonyMechPlayerControlled_Postfix
+    {
+        static MethodBase TargetMethod()
+        {
+            return typeof(Pawn).PropertyGetter("IsColonyMechPlayerControlled");
+        }
+
+        [HarmonyPostfix]
+        static void Postfix(ref bool __result, Pawn __instance)
+        {
+            if (!__result)
+            {
+                __result = ModExtension_Draftable.CanDraft(__instance);
+            }
+        }
+    }
+
+    [StaticConstructorOnStartup]
+    [HarmonyPatch(typeof(MechanitorUtility), "CanDraftMech")]
+    static class MechanitorUtility_Postfix
+    {
+        [HarmonyPostfix]
+        static void Postfix(ref AcceptanceReport __result, Pawn mech)
+        {
+            if (!__result)
+            {
+                __result = ModExtension_Draftable.CanDraft(mech);
+            }
+        }
+    }
+
+    [StaticConstructorOnStartup]
+    [HarmonyPatch(typeof(MechanitorUtility), "InMechanitorCommandRange")]
+    static class InMechanitorCommandRange_Postfix
+    {
+        [HarmonyPostfix]
+        static void Postfix(ref bool __result, Pawn mech)
+        {
+            if (!__result)
+            {
+                __result = ModExtension_Draftable.CanDraft(mech);
+            }
+        }
+    }
+
     public class ModExtension_Draftable : DefModExtension
     {
-
+        public static bool CanDraft(Pawn p)
+        {
+            return p.def.HasModExtension<ModExtension_Draftable>() && p.Faction == Faction.OfPlayer && p.MentalStateDef == null;
+        }
     }
 }

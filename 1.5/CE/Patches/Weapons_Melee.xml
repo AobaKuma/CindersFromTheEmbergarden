@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_ImpactBreaker"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>handle</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>20</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationBlunt>50</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_ImpactBreaker"]/statBases/Mass</xpath>
+		<value>
+			<Mass>25</Mass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Cinder_ImpactBreaker"]/statBases</xpath>
+		<value>
+			<Bulk>15</Bulk>
+			<MeleeCounterParryBonus>2</MeleeCounterParryBonus>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Cinder_ImpactBreaker"]/equippedStatOffsets</xpath>
+		<value>
+			<MeleeCritChance>1</MeleeCritChance>
+			<MeleeParryChance>-1</MeleeParryChance>
+			<MeleeDodgeChance>-1</MeleeDodgeChance>
+		</value>
+	</Operation>
+
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_ElectricScythe"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>handle</label>
+					<capacities>
+						<li>Poke</li>
+					</capacities>
+					<power>10</power>
+					<chanceFactor>0.33</chanceFactor>
+					<cooldownTime>1.44</cooldownTime>
+					<armorPenetrationBlunt>2.425</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>edge</label>
+					<capacities>
+						<li>Cut</li>
+					</capacities>
+					<power>16</power>
+					<cooldownTime>1.5</cooldownTime>
+					<armorPenetrationBlunt>1</armorPenetrationBlunt>
+					<armorPenetrationSharp>1.2</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_ElectricScythe"]/statBases/Mass</xpath>
+		<value>
+			<Mass>10</Mass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Cinder_ElectricScythe"]/statBases</xpath>
+		<value>
+			<Bulk>10.5</Bulk>
+			<MeleeCounterParryBonus>-0.5</MeleeCounterParryBonus>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Cinder_ElectricScythe"]/equippedStatOffsets</xpath>
+		<value>
+			<MeleeCritChance>0.5</MeleeCritChance>
+			<MeleeParryChance>0.5</MeleeParryChance>
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+		</value>
+	</Operation>
+</Patch>

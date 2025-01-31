@@ -2,101 +2,15 @@
 <Patch>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_DamagedScarf"]/statBases/ArmorRating_Sharp</xpath>
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_Commemorative"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
 			<ArmorRating_Sharp>1</ArmorRating_Sharp>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_DamagedScarf"]/statBases/ArmorRating_Blunt</xpath>
-		<value>
 			<ArmorRating_Blunt>3</ArmorRating_Blunt>
 		</value>
 	</Operation>
 
-
-
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_AssaultHelmet"]/statBases/StuffEffectMultiplierArmor</xpath>
-		<value>
-			<StuffEffectMultiplierArmor>5</StuffEffectMultiplierArmor>
-			<Bulk>5</Bulk>
-			<WornBulk>2</WornBulk>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_AssaultHelmet"]/statBases/ArmorRating_Sharp</xpath>
-		<value>
-			<ArmorRating_Sharp>4</ArmorRating_Sharp>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_AssaultHelmet"]/statBases/ArmorRating_Blunt</xpath>
-		<value>
-			<ArmorRating_Blunt>8</ArmorRating_Blunt>
-		</value>
-	</Operation>
-
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_AssaultHelmetTan"]/statBases/ArmorRating_Sharp</xpath>
-		<value>
-			<ArmorRating_Sharp>25</ArmorRating_Sharp>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_AssaultHelmetTan"]/statBases/ArmorRating_Blunt</xpath>
-		<value>
-			<ArmorRating_Blunt>50</ArmorRating_Blunt>
-		</value>
-	</Operation>
-
-
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_GhoulUnitHelmet"]/statBases/ArmorRating_Sharp</xpath>
-		<value>
-			<ArmorRating_Sharp>18</ArmorRating_Sharp>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_GhoulUnitHelmet"]/statBases/ArmorRating_Blunt</xpath>
-		<value>
-			<ArmorRating_Blunt>30</ArmorRating_Blunt>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_GhoulUnitHelmet"]/statBases</xpath>
-		<value>
-			<Bulk>5</Bulk>
-			<WornBulk>1</WornBulk>
-			<NightVisionEfficiency_Apparel>0.6</NightVisionEfficiency_Apparel>
-		</value>
-	</Operation>
-
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_FullyEnclosedMask"]/statBases/ArmorRating_Sharp</xpath>
-		<value>
-			<ArmorRating_Sharp>18</ArmorRating_Sharp>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_FullyEnclosedMask"]/statBases/ArmorRating_Blunt</xpath>
-		<value>
-			<ArmorRating_Blunt>30</ArmorRating_Blunt>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_FullyEnclosedMask"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_Commemorative"]/statBases/StuffEffectMultiplierArmor</xpath>
 		<value>
 			<StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
 			<Bulk>5</Bulk>
@@ -104,42 +18,286 @@
 		</value>
 	</Operation>
 
+
+
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_FullyEnclosedMask"]/apparel/layers</xpath>
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_ScavHeavyCoat"]/statBases</xpath>
 		<value>
-			<li>StrappedHead</li>
+			<Bulk>5</Bulk>
+			<WornBulk>2.5</WornBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_ScavHeavyCoat"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>4</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_ScavHeavyCoat"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>10</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_ScavHeavyCoat"]/statBases/Mass</xpath>
+		<value>
+			<Mass>4</Mass>
+		</value>
+	</Operation>
+
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_SnowyNightShawl"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>5</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_SnowyNight"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_StarryShawl"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_Starry"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
 		</value>
 	</Operation>
 
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_BrokenMask"]/statBases/ArmorRating_Sharp</xpath>
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_WorkwearJacket"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
-			<ArmorRating_Sharp>5</ArmorRating_Sharp>
+			<ArmorRating_Sharp>3</ArmorRating_Sharp>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_BrokenMask"]/statBases/ArmorRating_Blunt</xpath>
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_WorkwearJacket"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>18</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_WorkwearJacket"]/statBases</xpath>
+		<value>
+			<Bulk>5</Bulk>
+			<WornBulk>2.5</WornBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_WorkwearJacket"]/statBases/Mass</xpath>
+		<value>
+			<Mass>4</Mass>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_BulletproofEquipment"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_BulletproofEquipment"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>4</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_BulletproofEquipment"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
 			<ArmorRating_Blunt>8</ArmorRating_Blunt>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_BrokenMask"]/statBases</xpath>
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_BulletproofEquipment"]/statBases</xpath>
 		<value>
-			<Bulk>5</Bulk>
+			<Bulk>10</Bulk>
 			<WornBulk>1</WornBulk>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_BrokenMask"]/apparel/layers</xpath>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_BulletproofEquipment"]</xpath>
 		<value>
-			<layers>
-				<li>StrappedHead</li>
-			</layers>
+			<li Class="CombatExtended.PartialArmorExt">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+						<parts>
+							<li>Leg</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+						<parts>
+							<li>Leg</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+						<parts>
+							<li>Arm</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+						<parts>
+							<li>Arm</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</value>
+	</Operation>
+
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_GhoulUnitGear"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>12</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_GhoulUnitGear"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>30</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_GhoulUnitGear"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<Bulk>15</Bulk>
+			<WornBulk>2</WornBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_GhoulUnitGear"]/equippedStatOffsets</xpath>
+		<value>
+			<Suppressability>-0.3</Suppressability>
+		</value>
+	</Operation>
+
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_BrokenGhoulUnitGear"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>8</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_BrokenGhoulUnitGear"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>20</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_BrokenGhoulUnitGear"]/statBases</xpath>
+		<value>
+			<Bulk>15</Bulk>
+			<WornBulk>6</WornBulk>
+		</value>
+	</Operation>
+
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_HeavyArmorDress"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>6</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_HeavyArmorDress"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>2</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_HeavyArmorDress"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>5</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_HeavyArmorDress"]/statBases</xpath>
+		<value>
+			<Bulk>15</Bulk>
+			<WornBulk>2</WornBulk>
+		</value>
+	</Operation>
+
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_LowVisibilityDress"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>20</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_LowVisibilityDress"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>50</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_LowVisibilityDress"]/statBases</xpath>
+		<value>
+			<Bulk>15</Bulk>
+			<WornBulk>2</WornBulk>
 		</value>
 	</Operation>
 </Patch>

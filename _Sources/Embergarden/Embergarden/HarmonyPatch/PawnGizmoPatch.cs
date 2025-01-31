@@ -31,20 +31,6 @@ namespace Embergarden
                     }
                 }
             }
-            if (__instance.def.HasModExtension<ModExtension_Draftable>() && __instance.drafter != null)
-            {
-                AcceptanceReport allowsDrafting = __instance.GetLord()?.AllowsDrafting(__instance) ?? ((AcceptanceReport)true);
-                foreach (Gizmo gizmo2 in drafterGizmo.Invoke(__instance.drafter, []) as IEnumerable<Gizmo>)
-                {
-                    if (!allowsDrafting && !gizmo2.Disabled)
-                    {
-                        gizmo2.Disabled = true;
-                        gizmo2.disabledReason = allowsDrafting.Reason;
-                    }
-                    yield return gizmo2;
-                }
-            }
-
         }
     }
 }
