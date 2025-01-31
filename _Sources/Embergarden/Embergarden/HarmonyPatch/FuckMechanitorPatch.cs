@@ -8,9 +8,14 @@ namespace Embergarden
     [HarmonyPatch(typeof(CallBossgroupUtility), "BossgroupEverCallable")]
     public static class FuckMechanitorPatch
     {
-        public static bool Prefix(BossgroupDef def)
+        public static bool Prefix(BossgroupDef def, ref AcceptanceReport __result)
         {
-            return !def.HasModExtension<FuckMechanitor>();
+            if (def.HasModExtension<FuckMechanitor>())
+            {
+                __result = false;
+                return false;
+            }
+            return true;
         }
     }
 
