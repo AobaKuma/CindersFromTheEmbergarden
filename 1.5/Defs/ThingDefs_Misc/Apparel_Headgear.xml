@@ -315,6 +315,7 @@
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<apparel>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>

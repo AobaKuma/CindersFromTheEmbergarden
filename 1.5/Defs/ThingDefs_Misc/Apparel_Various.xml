@@ -1,530 +1,530 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef Name="Cinder_ApparelBase" Abstract="True">
-    <thingClass>Apparel</thingClass>
-    <category>Item</category>
-    <drawerType>MapMeshOnly</drawerType>
-    <selectable>True</selectable>
-    <pathCost>14</pathCost>
-    <useHitPoints>True</useHitPoints>
-    <techLevel>Industrial</techLevel>
-    <thingCategories>
-      <li>Apparel</li>
-    </thingCategories>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
-    </graphicData>
-    <drawGUIOverlay>true</drawGUIOverlay>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-      <DeteriorationRate>2</DeteriorationRate>
-      <Beauty>-3</Beauty>
-    </statBases>
-    <tradeTags>
-      <li>Clothing</li>
-    </tradeTags>
-    <altitudeLayer>Item</altitudeLayer>
-    <alwaysHaulable>True</alwaysHaulable>
-    <tickerType>Never</tickerType>
-    <burnableByRecipe>true</burnableByRecipe>
-    <comps>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-      <li Class="CompProperties_Styleable" />
-      <li Class="CompProperties_Forbiddable" />
-      <li>
-        <compClass>CompColorable</compClass>
-      </li>
-    </comps>
-    <apparel>
-      <tags>
-        <li>Cinder_Civilan</li>
-      </tags>
-    </apparel>
-	<recipeMaker>
+	<ThingDef Name="Cinder_ApparelBase" Abstract="True">
+		<thingClass>Apparel</thingClass>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<selectable>True</selectable>
+		<pathCost>14</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<techLevel>Industrial</techLevel>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Beauty>-3</Beauty>
+		</statBases>
+		<tradeTags>
+			<li>Clothing</li>
+		</tradeTags>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<burnableByRecipe>true</burnableByRecipe>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Styleable" />
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+		<apparel>
+			<tags>
+				<li>Cinder_Civilan</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
 			<recipeUsers>
-        <li>Cinder_AncientWorkstation</li>
-      </recipeUsers>
+				<li>Cinder_AncientWorkstation</li>
+			</recipeUsers>
 		</recipeMaker>
-  </ThingDef>
+	</ThingDef>
 
-  <ThingDef
-    ParentName="Cinder_ApparelBase" Name="Cinder_ApparelArmorBase" Abstract="True">
-    <thingCategories Inherit="false">
-      <li>ApparelArmor</li>
-    </thingCategories>
-    <smeltable>true</smeltable>
-    <smeltProducts>
-      <Steel>20</Steel>
-    </smeltProducts>
-    <tradeTags>
-      <li>Armor</li>
-    </tradeTags>
-    <apparel>
-      <tags Inherit="false">
-        <li>Cinder_Military</li>
-		<li>Cinder_MilitaryMedium</li>
-      </tags>
-    </apparel>
-  </ThingDef>
+	<ThingDef
+	  ParentName="Cinder_ApparelBase" Name="Cinder_ApparelArmorBase" Abstract="True">
+		<thingCategories Inherit="false">
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<smeltable>true</smeltable>
+		<smeltProducts>
+			<Steel>20</Steel>
+		</smeltProducts>
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+		<apparel>
+			<tags Inherit="false">
+				<li>Cinder_Military</li>
+				<li>Cinder_MilitaryMedium</li>
+			</tags>
+		</apparel>
+	</ThingDef>
 
-  <!-- Cinder_Apparel_Commemorative -->
-  <ThingDef
-    ParentName="Cinder_ApparelBase">
-    <defName>Cinder_Apparel_Commemorative</defName>
-    <label>commemorative</label>
-    <description>A gorgeous dress used to commemorate someone, decorated with some metal pieces.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/Commemorative/Icon</texPath>
-    </graphicData>
-	<recipeMaker>
+	<!-- Cinder_Apparel_Commemorative -->
+	<ThingDef
+	  ParentName="Cinder_ApparelBase">
+		<defName>Cinder_Apparel_Commemorative</defName>
+		<label>commemorative</label>
+		<description>A gorgeous dress used to commemorate someone, decorated with some metal pieces.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Commemorative/Icon</texPath>
+		</graphicData>
+		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-	<costList>
+		<costList>
 			<Steel>20</Steel>
-	</costList>
-	<costStuffCount>75</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <statBases>
-      <MaxHitPoints>160</MaxHitPoints>
-	  <MarketValue>200</MarketValue>
-      <WorkToMake>5000</WorkToMake>
-      <Mass>0.5</Mass>
-	  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
-        <StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.36</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>1.5</EquipDelay>
-    </statBases>
-    <apparel>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Commemorative/Commemorative</wornGraphicPath>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-        <li>Legs</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Middle</li>
-      </layers>
-      <tags>
-        <li>Cinder_CivilanC</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Worker</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
+		</costList>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<MarketValue>200</MarketValue>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.36</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Commemorative/Commemorative</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>Cinder_CivilanC</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
 
-  <!-- Cinder_Apparel_ScavHeavyCoat -->
-  <ThingDef
-    ParentName="Cinder_ApparelBase">
-    <defName>Cinder_Apparel_ScavHeavyCoat</defName>
-    <label>scav heavy coat</label>
-    <description>A tattered scavenger coat made of a blend of metal plates and fabric, much more durable than it looks.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/ScavHeavyCoat/Icon</texPath>
-    </graphicData>
-	<recipeMaker>
+	<!-- Cinder_Apparel_ScavHeavyCoat -->
+	<ThingDef
+	  ParentName="Cinder_ApparelBase">
+		<defName>Cinder_Apparel_ScavHeavyCoat</defName>
+		<label>scav heavy coat</label>
+		<description>A tattered scavenger coat made of a blend of metal plates and fabric, much more durable than it looks.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/ScavHeavyCoat/Icon</texPath>
+		</graphicData>
+		<recipeMaker>
 			<researchPrerequisite>FlakArmor</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-	<costList>
+		<costList>
 			<Cloth>90</Cloth>
 			<Steel>40</Steel>
-	</costList>
-    <statBases>
-      <MaxHitPoints>250</MaxHitPoints>
-      <WorkToMake>5000</WorkToMake>
-      <Mass>0.5</Mass>
-      <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.4</ArmorRating_Heat>
-	  <Insulation_Cold>17.4</Insulation_Cold>
-	  <Insulation_Heat>3</Insulation_Heat>
-      <EquipDelay>3</EquipDelay>
-    </statBases>
-    <apparel>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ScavHeavyCoat/ScavHeavyCoat</wornGraphicPath>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-        <li>Legs</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Shell</li>
-      </layers>
-      <tags Inherit="false">
-	  <li>Cinder_Outlands</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Worker</li>
-      </defaultOutfitTags>
-	  <drawData>
+		</costList>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Cold>17.4</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/ScavHeavyCoat/ScavHeavyCoat</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags Inherit="false">
+				<li>Cinder_Outlands</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<drawData>
 				<dataNorth>
 					<layer>51</layer>
 				</dataNorth>
-	  </drawData>
-    </apparel>
-  </ThingDef>
+			</drawData>
+		</apparel>
+	</ThingDef>
 
-  <!-- Cinder_Apparel_SnowyNightShawl -->
-  <ThingDef
-    ParentName="Cinder_ApparelBase">
-    <defName>Cinder_Apparel_SnowyNightShawl</defName>
-    <label>snowy night shawl</label>
-    <description>A traditional style shawl，often worn in winter.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/SnowyNightShawl/Icon</texPath>
-    </graphicData>
-	<recipeMaker>
+	<!-- Cinder_Apparel_SnowyNightShawl -->
+	<ThingDef
+	  ParentName="Cinder_ApparelBase">
+		<defName>Cinder_Apparel_SnowyNightShawl</defName>
+		<label>snowy night shawl</label>
+		<description>A traditional style shawl，often worn in winter.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/SnowyNightShawl/Icon</texPath>
+		</graphicData>
+		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-	<costStuffCount>60</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
-      <WorkToMake>5000</WorkToMake>
-      <Mass>0.5</Mass>
-      <StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
-	  <Insulation_Cold>10</Insulation_Cold>
-      <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>1.5</EquipDelay>
-    </statBases>
-    <apparel>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/SnowyNightShawl/Shawl</wornGraphicPath>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Shell</li>
-      </layers>
-      <tags>
-      </tags>
-      <defaultOutfitTags>
-        <li>Worker</li>
-      </defaultOutfitTags>
-	  <drawData>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+			<Insulation_Cold>10</Insulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/SnowyNightShawl/Shawl</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<drawData>
 				<dataNorth>
 					<layer>51</layer>
 				</dataNorth>
-	  </drawData>
-    </apparel>
-  </ThingDef>
+			</drawData>
+		</apparel>
+	</ThingDef>
 
-  <!-- Cinder_Apparel_SnowyNight -->
-  <ThingDef
-    ParentName="Cinder_ApparelBase">
-    <defName>Cinder_Apparel_SnowyNight</defName>
-    <label>snowy night</label>
-	<description>A traditional style dress，often worn in winter.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/SnowyNight/Icon</texPath>
-    </graphicData>
-	<recipeMaker>
+	<!-- Cinder_Apparel_SnowyNight -->
+	<ThingDef
+	  ParentName="Cinder_ApparelBase">
+		<defName>Cinder_Apparel_SnowyNight</defName>
+		<label>snowy night</label>
+		<description>A traditional style dress，often worn in winter.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/SnowyNight/Icon</texPath>
+		</graphicData>
+		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-	<costStuffCount>75</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <statBases>
-      <MaxHitPoints>160</MaxHitPoints>
-	  <MarketValue>200</MarketValue>
-      <WorkToMake>5000</WorkToMake>
-      <Mass>0.5</Mass>
-       <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
-        <StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>1.5</EquipDelay>
-    </statBases>
-    <apparel>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/SnowyNight/SnowyNight</wornGraphicPath>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-        <li>Legs</li>
-      </bodyPartGroups>
-      <layers>
-         <li>Middle</li>
-      </layers>
-      <tags>
-      </tags>
-      <defaultOutfitTags>
-        <li>Worker</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<MarketValue>200</MarketValue>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/SnowyNight/SnowyNight</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
 
-  <!-- Cinder_Apparel_StarryShawl -->
-  <ThingDef
-    ParentName="Cinder_ApparelBase">
-    <defName>Cinder_Apparel_StarryShawl</defName>
-    <label>starry shawl</label>
-    <description>A traditional style shawl adorned with starry patterns, often worn in summer.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/StarryShawl/Icon</texPath>
-    </graphicData>
-    <recipeMaker>
+	<!-- Cinder_Apparel_StarryShawl -->
+	<ThingDef
+	  ParentName="Cinder_ApparelBase">
+		<defName>Cinder_Apparel_StarryShawl</defName>
+		<label>starry shawl</label>
+		<description>A traditional style shawl adorned with starry patterns, often worn in summer.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/StarryShawl/Icon</texPath>
+		</graphicData>
+		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-	<costStuffCount>60</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
-      <WorkToMake>5000</WorkToMake>
-      <Mass>0.5</Mass>
-      <StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
-	  <Insulation_Heat>10</Insulation_Heat>
-      <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>1.5</EquipDelay>
-    </statBases>
-    <apparel>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/StarryShawl/Shawl</wornGraphicPath>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Shell</li>
-      </layers>
-      <tags>
-      </tags>
-      <defaultOutfitTags>
-        <li>Worker</li>
-      </defaultOutfitTags>
-	  <drawData>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+			<Insulation_Heat>10</Insulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/StarryShawl/Shawl</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<drawData>
 				<dataNorth>
 					<layer>51</layer>
 				</dataNorth>
-	  </drawData>
-    </apparel>
-  </ThingDef>
+			</drawData>
+		</apparel>
+	</ThingDef>
 
-  <!-- Cinder_Apparel_Starry -->
-  <ThingDef
-    ParentName="Cinder_ApparelBase">
-    <defName>Cinder_Apparel_Starry</defName>
-    <label>starry</label>
-    <description>A traditional style dress adorned with starry patterns, often worn in summer.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/Starry/Icon</texPath>
-    </graphicData>
-	<recipeMaker>
+	<!-- Cinder_Apparel_Starry -->
+	<ThingDef
+	  ParentName="Cinder_ApparelBase">
+		<defName>Cinder_Apparel_Starry</defName>
+		<label>starry</label>
+		<description>A traditional style dress adorned with starry patterns, often worn in summer.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Starry/Icon</texPath>
+		</graphicData>
+		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-	<costStuffCount>75</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <statBases>
-      <MaxHitPoints>160</MaxHitPoints>
-	  <MarketValue>200</MarketValue>
-      <WorkToMake>5000</WorkToMake>
-      <Mass>0.5</Mass>
-       <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
-        <StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.36</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>1.5</EquipDelay>
-    </statBases>
-    <apparel>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Starry/Starry</wornGraphicPath>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-        <li>Legs</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Middle</li>
-      </layers>
-      <tags>
-      </tags>
-      <defaultOutfitTags>
-        <li>Worker</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<MarketValue>200</MarketValue>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.36</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Starry/Starry</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
 
-  <!-- Cinder_Apparel_WorkwearJacket -->
-  <ThingDef
-    ParentName="Cinder_ApparelBase">
-    <defName>Cinder_Apparel_WorkwearJacket</defName>
-    <label>workwear jacket</label>
-    <description>A sturdy jacket with embedded metal plates to prevent accidental injuries.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/WorkwearJacket/Icon</texPath>
-    </graphicData>
-    <recipeMaker>
+	<!-- Cinder_Apparel_WorkwearJacket -->
+	<ThingDef
+	  ParentName="Cinder_ApparelBase">
+		<defName>Cinder_Apparel_WorkwearJacket</defName>
+		<label>workwear jacket</label>
+		<description>A sturdy jacket with embedded metal plates to prevent accidental injuries.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/WorkwearJacket/Icon</texPath>
+		</graphicData>
+		<recipeMaker>
 			<researchPrerequisite>FlakArmor</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-	<costList>
+		<costList>
 			<Cloth>80</Cloth>
 			<Steel>30</Steel>
-	</costList>
-    <statBases>
-      <MaxHitPoints>250</MaxHitPoints>
-      <WorkToMake>5000</WorkToMake>
-      <Mass>0.5</Mass>
-      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.4</ArmorRating_Heat>
-	  <Insulation_Cold>7.4</Insulation_Cold>
-	  <Insulation_Heat>13</Insulation_Heat>
-      <EquipDelay>3</EquipDelay>
-    </statBases>
-    <apparel>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/WorkwearJacket/WorkwearJacket</wornGraphicPath>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-        <li>Legs</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Shell</li>
-      </layers>
-      <tags Inherit="false">
-	  <li>Cinder_Outlands</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Worker</li>
-      </defaultOutfitTags>
-	  <drawData>
+		</costList>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Cold>7.4</Insulation_Cold>
+			<Insulation_Heat>13</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/WorkwearJacket/WorkwearJacket</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags Inherit="false">
+				<li>Cinder_Outlands</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<drawData>
 				<dataNorth>
 					<layer>51</layer>
 				</dataNorth>
-	  </drawData>
-    </apparel>
-  </ThingDef>
+			</drawData>
+		</apparel>
+	</ThingDef>
 
-  <!-- ==========================軍用服飾 -->
+	<!-- ==========================軍用服飾 -->
 
-  <!-- Cinder_Apparel_BulletproofEquipment -->
-  <ThingDef
-    ParentName="Cinder_ApparelArmorBase">
-    <defName>Cinder_Apparel_BulletproofEquipment</defName>
-    <label>bulletproof equipment</label>
-    <description>A lightweight bulletproof suit consisting of a bulletproof vest and a sturdy fabric outer garment, which will not affect daily work and movement, and can defend the whole body, but the armor is generally not as good as a flak vest.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/BulletproofEquipment/Icon</texPath>
-	  <graphicClass>Graphic_Single</graphicClass>
+	<!-- Cinder_Apparel_BulletproofEquipment -->
+	<ThingDef
+	  ParentName="Cinder_ApparelArmorBase">
+		<defName>Cinder_Apparel_BulletproofEquipment</defName>
+		<label>bulletproof equipment</label>
+		<description>A lightweight bulletproof suit consisting of a bulletproof vest and a sturdy fabric outer garment, which will not affect daily work and movement, and can defend the whole body, but the armor is generally not as good as a flak vest.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/BulletproofEquipment/Icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-    </graphicData>
-	 <recipeMaker>
+		</graphicData>
+		<recipeMaker>
 			<researchPrerequisite>FlakArmor</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-	<costList>
+		<costList>
 			<Steel>45</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
-	</costList>
+		</costList>
 		<stuffCategories>
-				<li>Fabric</li>
-                <li>Leathery</li>
-			</stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
-    <statBases>
-      <MaxHitPoints>350</MaxHitPoints>
-      <WorkToMake>9000</WorkToMake>
-      <Mass>5.5</Mass>
-      <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.5</ArmorRating_Heat>
-	  <StuffEffectMultiplierArmor>0.22</StuffEffectMultiplierArmor>
-	  <Insulation_Cold>10.4</Insulation_Cold>
-	  <Insulation_Heat>3</Insulation_Heat>
-      <EquipDelay>6</EquipDelay>
-    </statBases>
-    <apparel>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/BulletproofEquipment/BulletproofEquipment</wornGraphicPath>
-	  <useWornGraphicMask>true</useWornGraphicMask>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-        <li>Legs</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Middle</li>
-      </layers>
-      <tags>
-      </tags>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>5.5</Mass>
+			<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<StuffEffectMultiplierArmor>0.22</StuffEffectMultiplierArmor>
+			<Insulation_Cold>10.4</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/BulletproofEquipment/BulletproofEquipment</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
 
-  <!-- Cinder_Apparel_GhoulUnitGear -->
-  <ThingDef
-    ParentName="Cinder_ApparelArmorBase">
-    <defName>Cinder_Apparel_GhoulUnitGear</defName>
-    <label>ghoul unit gear</label>
-    <description>The heavy armor suit of the Ghoul unit, which uses artificial muscles and amorphous polymers to form a sturdy suit, allows the Ghoul unit to charge without damage under fire suppression.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/GhoulUnitGear/Icon</texPath>
-	    <graphicClass>Graphic_Single</graphicClass>
+	<!-- Cinder_Apparel_GhoulUnitGear -->
+	<ThingDef
+	  ParentName="Cinder_ApparelArmorBase">
+		<defName>Cinder_Apparel_GhoulUnitGear</defName>
+		<label>ghoul unit gear</label>
+		<description>The heavy armor suit of the Ghoul unit, which uses artificial muscles and amorphous polymers to form a sturdy suit, allows the Ghoul unit to charge without damage under fire suppression.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/GhoulUnitGear/Icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-    </graphicData>
-	<recipeMaker>
-	<researchPrerequisites>
-	  <li>FlakArmor</li>
-	  <li>Cinder_HeavyArmor</li>
-    </researchPrerequisites>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>FlakArmor</li>
+				<li>Cinder_HeavyArmor</li>
+			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
@@ -535,69 +535,69 @@
 				</disallowedThingDefs>
 			</defaultIngredientFilter>
 		</recipeMaker>
-	<costList>
+		<costList>
 			<Cinder_AmorphousPolymer>75</Cinder_AmorphousPolymer>
 			<ComponentIndustrial>10</ComponentIndustrial>
 			<Cinder_BurntStrangeMeat>25</Cinder_BurntStrangeMeat>
-	</costList>
+		</costList>
 		<stuffCategories>
-				<li>Metallic</li>
-				</stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
 		<costStuffCount>40</costStuffCount>
-    <statBases>
-      <MaxHitPoints>400</MaxHitPoints>
-      <WorkToMake>25000</WorkToMake>
-      <Mass>8</Mass>
-	  <StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
-      <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.5</ArmorRating_Heat>
-	  <Insulation_Cold>30.4</Insulation_Cold>
-	  <Insulation_Heat>13</Insulation_Heat>
-      <EquipDelay>13</EquipDelay>
-    </statBases>
-    <apparel>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/GhoulUnitGear/GhoulUnitGear</wornGraphicPath>
-	  <useWornGraphicMask>true</useWornGraphicMask>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-        <li>Legs</li>
-		<li>Hands</li>
-		<li>Feet</li>
-      </bodyPartGroups>
-      <layers>
-        <li>OnSkin</li>
-        <li>Middle</li>
-      </layers>
-      <tags Inherit="false">
-        <li>Cinder_Ghoul</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-	<equippedStatOffsets>
-        <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
-		<ToxicEnvironmentResistance>0.75</ToxicEnvironmentResistance>
-		<PainShockThreshold>0.50</PainShockThreshold>
-    </equippedStatOffsets>
-  </ThingDef>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>8</Mass>
+			<StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<Insulation_Cold>30.4</Insulation_Cold>
+			<Insulation_Heat>13</Insulation_Heat>
+			<EquipDelay>13</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/GhoulUnitGear/GhoulUnitGear</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+				<li>Middle</li>
+			</layers>
+			<tags Inherit="false">
+				<li>Cinder_Ghoul</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+			<ToxicEnvironmentResistance>0.75</ToxicEnvironmentResistance>
+			<PainShockThreshold>0.50</PainShockThreshold>
+		</equippedStatOffsets>
+	</ThingDef>
 
-  <!-- Cinder_Apparel_BrokenGhoulUnitGear -->
-  <ThingDef
-    ParentName="Cinder_ApparelArmorBase">
-    <defName>Cinder_Apparel_BrokenGhoulUnitGear</defName>
-    <label>broken ghoul unit gear</label>
-    <description>A set of broken Ghoul unit gear, with armor full of holes and weaker defense than before, and will slow down the wearer's movement speedIt can be obtained by dismantling the Ghoul unit gear, the only benefit is that this thing is worthless, and the raiders won't even glance at it.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/BrokenGhoulUnitGear/Icon</texPath>
-	  <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-	<recipeMaker>
+	<!-- Cinder_Apparel_BrokenGhoulUnitGear -->
+	<ThingDef
+	  ParentName="Cinder_ApparelArmorBase">
+		<defName>Cinder_Apparel_BrokenGhoulUnitGear</defName>
+		<label>broken ghoul unit gear</label>
+		<description>A set of broken Ghoul unit gear, with armor full of holes and weaker defense than before, and will slow down the wearer's movement speedIt can be obtained by dismantling the Ghoul unit gear, the only benefit is that this thing is worthless, and the raiders won't even glance at it.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/BrokenGhoulUnitGear/Icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
 			<researchPrerequisite>FlakArmor</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>
@@ -609,73 +609,73 @@
 				</disallowedThingDefs>
 			</defaultIngredientFilter>
 		</recipeMaker>
-	<costList>
+		<costList>
 			<Cinder_Apparel_GhoulUnitGear>1</Cinder_Apparel_GhoulUnitGear>
-	</costList>
+		</costList>
 		<stuffCategories>
-				<li>Metallic</li>
-			</stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
 		<costStuffCount>10</costStuffCount>
-    <statBases>
-	   <MarketValue>25</MarketValue>
-      <MaxHitPoints>400</MaxHitPoints>
-      <WorkToMake>1600</WorkToMake>
-      <Mass>7.5</Mass>
-	  <StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
-      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.4</ArmorRating_Heat>
-	  <Insulation_Cold>20.4</Insulation_Cold>
-	  <Insulation_Heat>3</Insulation_Heat>
-      <EquipDelay>13</EquipDelay>
-    </statBases>
-    <apparel>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/BrokenGhoulUnitGear/BrokenGhoulUnitGear</wornGraphicPath>
-	  <useWornGraphicMask>true</useWornGraphicMask>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-        <li>Legs</li>
-		<li>Hands</li>
-      </bodyPartGroups>
-      <layers>
-        <li>OnSkin</li>
-        <li>Middle</li>
-      </layers>
-      <tags Inherit="false">
-        <li>Cinder_Ghoul</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-	<equippedStatOffsets>
-        <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
-		<ToxicEnvironmentResistance>0.25</ToxicEnvironmentResistance>
-		<MoveSpeed>-0.3</MoveSpeed>
-		<RestFallRateFactor>0.25</RestFallRateFactor>
-		<PainShockThreshold>0.50</PainShockThreshold>
-    </equippedStatOffsets>
-  </ThingDef>
+		<statBases>
+			<MarketValue>25</MarketValue>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToMake>1600</WorkToMake>
+			<Mass>7.5</Mass>
+			<StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Cold>20.4</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>13</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/BrokenGhoulUnitGear/BrokenGhoulUnitGear</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+				<li>Middle</li>
+			</layers>
+			<tags Inherit="false">
+				<li>Cinder_Ghoul</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+			<ToxicEnvironmentResistance>0.25</ToxicEnvironmentResistance>
+			<MoveSpeed>-0.3</MoveSpeed>
+			<RestFallRateFactor>0.25</RestFallRateFactor>
+			<PainShockThreshold>0.50</PainShockThreshold>
+		</equippedStatOffsets>
+	</ThingDef>
 
-  <!-- Cinder_Apparel_HeavyArmorDress -->
-  <ThingDef
-    ParentName="Cinder_ApparelArmorBase">
-    <defName>Cinder_Apparel_HeavyArmorDress</defName>
-    <label>heavy armor dress</label>
-    <description>Heavy armored equipment with additional plasteel chest armor and servo motor power frame, with astonishing defensive power and acceptable weight.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/HeavyArmorDress/Icon</texPath>
-	  <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-   <recipeMaker>
-	<researchPrerequisites>
-	  <li>Fabrication</li>
-	  <li>Cinder_HeavyArmor</li>
-    </researchPrerequisites>
+	<!-- Cinder_Apparel_HeavyArmorDress -->
+	<ThingDef
+	  ParentName="Cinder_ApparelArmorBase">
+		<defName>Cinder_Apparel_HeavyArmorDress</defName>
+		<label>heavy armor dress</label>
+		<description>Heavy armored equipment with additional plasteel chest armor and servo motor power frame, with astonishing defensive power and acceptable weight.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/HeavyArmorDress/Icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Fabrication</li>
+				<li>Cinder_HeavyArmor</li>
+			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
@@ -686,15 +686,15 @@
 				</disallowedThingDefs>
 			</defaultIngredientFilter>
 		</recipeMaker>
-	    <costList>
+		<costList>
 			<Cloth>80</Cloth>
 			<Plasteel>40</Plasteel>
 			<ComponentSpacer>4</ComponentSpacer>
 			<Cinder_AmorphousPolymer>75</Cinder_AmorphousPolymer>
 		</costList>
-			<stuffCategories>
-				<li>Metallic</li>
-			</stuffCategories>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
 		<statBases>
 			<MaxHitPoints>400</MaxHitPoints>
@@ -709,101 +709,101 @@
 			<Insulation_Heat>3</Insulation_Heat>
 			<EquipDelay>13</EquipDelay>
 		</statBases>
-    <apparel>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/HeavyArmorDress/HeavyArmorDress</wornGraphicPath>
-	  <useWornGraphicMask>true</useWornGraphicMask>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-        <li>Legs</li>
-		<li>Hands</li>
-		<li>Feet</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Middle</li>
-        <li>Shell</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-	  <drawData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/HeavyArmorDress/HeavyArmorDress</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<drawData>
 				<dataNorth>
 					<layer>51</layer>
 				</dataNorth>
-	  </drawData>
-	  <tags Inherit="false">
-        <li>Cinder_Military_Heavy</li>
-      </tags>
-    </apparel>
-	<equippedStatOffsets>
-		<MoveSpeed>-0.5</MoveSpeed>
-    </equippedStatOffsets>
-  </ThingDef>
+			</drawData>
+			<tags Inherit="false">
+				<li>Cinder_Military_Heavy</li>
+			</tags>
+		</apparel>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.5</MoveSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
 
-  <!-- Cinder_Apparel_LowVisibilityDress -->
-  <ThingDef
-    ParentName="Cinder_ApparelArmorBase">
-    <defName>Cinder_Apparel_LowVisibilityDress</defName>
-    <label>low visibility dress</label>
-    <description>A piece of armor equipment using amorphous polymer as a bulletproof material, providing effective defense while protecting the user from psycast interference.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/LowVisibilityDress/Icon</texPath>
-    </graphicData>
-	<recipeMaker>
-	 <researchPrerequisites>
-	  <li>FlakArmor</li>
-	  <li>Cinder_HeavyArmor</li>
-    </researchPrerequisites>
+	<!-- Cinder_Apparel_LowVisibilityDress -->
+	<ThingDef
+	  ParentName="Cinder_ApparelArmorBase">
+		<defName>Cinder_Apparel_LowVisibilityDress</defName>
+		<label>low visibility dress</label>
+		<description>A piece of armor equipment using amorphous polymer as a bulletproof material, providing effective defense while protecting the user from psycast interference.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/LowVisibilityDress/Icon</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>FlakArmor</li>
+				<li>Cinder_HeavyArmor</li>
+			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-	    <costList>
+		<costList>
 			<Cloth>80</Cloth>
 			<ComponentIndustrial>6</ComponentIndustrial>
 			<Cinder_AmorphousPolymer>125</Cinder_AmorphousPolymer>
 		</costList>
-    <statBases>
-      <MaxHitPoints>600</MaxHitPoints>
-      <WorkToMake>25000</WorkToMake>
-      <Mass>7.5</Mass>
-      <ArmorRating_Sharp>1.02</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.5</ArmorRating_Heat>
-      <EquipDelay>13</EquipDelay>
-    </statBases>
-    <apparel>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/LowVisibilityDress/LowVisibilityDress</wornGraphicPath>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-        <li>Legs</li>
-		<li>Hands</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Middle</li>
-		 <li>Shell</li>
-      </layers>
-      <tags Inherit="false">
-        <li>Cinder_Military_Heavy</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Worker</li>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-	  <drawData>
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>7.5</Mass>
+			<ArmorRating_Sharp>1.02</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<EquipDelay>13</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/LowVisibilityDress/LowVisibilityDress</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags Inherit="false">
+				<li>Cinder_Military_Heavy</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<drawData>
 				<dataNorth>
 					<layer>51</layer>
 				</dataNorth>
-	  </drawData>
-    </apparel>
-	    <equippedStatOffsets>
-		    <PsychicSensitivity>-9999</PsychicSensitivity>
-            <PainShockThreshold>0.20</PainShockThreshold>
-        </equippedStatOffsets>
-  </ThingDef>
+			</drawData>
+		</apparel>
+		<equippedStatOffsets>
+			<PsychicSensitivity>-9999</PsychicSensitivity>
+			<PainShockThreshold>0.20</PainShockThreshold>
+		</equippedStatOffsets>
+	</ThingDef>
 </Defs>
