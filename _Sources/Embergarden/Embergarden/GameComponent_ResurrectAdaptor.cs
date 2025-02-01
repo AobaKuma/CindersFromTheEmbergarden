@@ -15,10 +15,10 @@ namespace Embergarden
         {
             if (hediffs.Count > 0)
             {
-                IReadOnlyCollection<HediffComp_LimitedResurrect> ro = hediffs;
+                var ro = hediffs.ToArray();
                 foreach (var resurrect in ro)
                 {
-                    Log.Message(Find.TickManager.TicksGame);
+                    resurrect.Resurrect();
                     hediffs.Remove(resurrect);
                 }
             }

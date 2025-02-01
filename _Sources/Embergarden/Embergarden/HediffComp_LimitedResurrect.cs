@@ -30,7 +30,6 @@ namespace Embergarden
 
         public override void Notify_PawnDied(DamageInfo? dinfo, Hediff culprit = null)
         {
-            Log.Message(Find.TickManager.TicksGame);
             this.culprit = culprit;
             this.dinfo = dinfo;
             Current.Game.GetComponent<GameComponent_ResurrectAdaptor>().hediffs.Add(this);
@@ -109,6 +108,8 @@ namespace Embergarden
                     Messages.Message(Props.notificationGeneral.Formatted(Pawn.Named("PAWN")), Pawn, MessageTypeDefOf.NegativeHealthEvent);
                 }
             }
+            dinfo = null;
+            culprit = null;
         }
 
         void HediffPurge(Pawn pawn)
