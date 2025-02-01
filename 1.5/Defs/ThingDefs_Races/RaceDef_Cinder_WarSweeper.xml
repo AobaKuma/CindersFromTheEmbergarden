@@ -114,7 +114,7 @@
 			</detritusLeavings>
 		</race>
 		<statBases>
-			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">5</BandwidthCost>
+			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">6</BandwidthCost>
 		</statBases>
 		<comps>
 			<li Class="Embergarden.CompProperties_VehicleWeapon">

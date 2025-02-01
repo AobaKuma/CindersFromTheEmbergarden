@@ -84,6 +84,21 @@
 			<ChunkSlagSteel>4~5</ChunkSlagSteel>
 		</killedLeavingsRanges>
 		<designationCategory MayRequire="Ludeon.RimWorld.Biotech">Biotech</designationCategory>
+		<comps>
+		<li Class="CompProperties_Usable" MayRequire="Ludeon.RimWorld.Biotech">
+        <useJob>TriggerObject</useJob>
+        <useLabel>Activate the unit</useLabel>
+        </li>
+        <li Class="Embergarden.CompProperties_UseEffect_ActivateMech" MayRequire="Ludeon.RimWorld.Biotech">
+        <compClass>Embergarden.CompUseEffect_ActivateMech</compClass>
+		<pawnKindDef>Cinder_Mech_ErodedEXO</pawnKindDef>
+		<requireMechanitor>true</requireMechanitor>
+        </li>
+		<li Class="CompProperties_UseEffectDestroySelf" MayRequire="Ludeon.RimWorld.Biotech">
+        <delayTicks>120</delayTicks>
+        <spawnKilledLeavings>false</spawnKilledLeavings>
+        </li>
+        </comps>
 	</ThingDef>
 	
 	<ThingDef ParentName="Cinder_NonfunctionalBuilding_Impassable">
@@ -118,6 +133,20 @@
 			<ChunkSlagSteel>4~6</ChunkSlagSteel>
 		</killedLeavingsRanges>
 		<designationCategory MayRequire="Ludeon.RimWorld.Biotech">Biotech</designationCategory>
+		<comps>
+		<li Class="CompProperties_Usable" MayRequire="Ludeon.RimWorld.Biotech">
+        <useJob>TriggerObject</useJob>
+        <useLabel>Activate the unit</useLabel>
+        </li>
+        <li Class="Embergarden.CompProperties_UseEffect_ActivateMech" MayRequire="Ludeon.RimWorld.Biotech">
+        <compClass>Embergarden.CompUseEffect_ActivateMech</compClass>
+		<pawnKindDef>Cinder_Mech_WarAttacker</pawnKindDef>
+        </li>
+		<li Class="CompProperties_UseEffectDestroySelf" MayRequire="Ludeon.RimWorld.Biotech">
+        <delayTicks>120</delayTicks>
+        <spawnKilledLeavings>false</spawnKilledLeavings>
+        </li>
+        </comps>
 	</ThingDef>
 	
 	<ThingDef ParentName="Cinder_NonfunctionalBuilding_Impassable">
@@ -152,6 +181,20 @@
 			<ChunkSlagSteel>4~6</ChunkSlagSteel>
 		</killedLeavingsRanges>
 		<designationCategory MayRequire="Ludeon.RimWorld.Biotech">Biotech</designationCategory>
+		<comps>
+		<li Class="CompProperties_Usable" MayRequire="Ludeon.RimWorld.Biotech">
+        <useJob>TriggerObject</useJob>
+        <useLabel>Activate the unit</useLabel>
+        </li>
+        <li Class="Embergarden.CompProperties_UseEffect_ActivateMech" MayRequire="Ludeon.RimWorld.Biotech">
+        <compClass>Embergarden.CompUseEffect_ActivateMech</compClass>
+		<pawnKindDef>Cinder_Mech_WarSweeper</pawnKindDef>
+        </li>
+		<li Class="CompProperties_UseEffectDestroySelf" MayRequire="Ludeon.RimWorld.Biotech">
+        <delayTicks>120</delayTicks>
+        <spawnKilledLeavings>false</spawnKilledLeavings>
+        </li>
+        </comps>
 	</ThingDef>
 	
     <ThingDef Name="Cinder_TrapIEDBase" ParentName="BuildingBase" Abstract="True">
