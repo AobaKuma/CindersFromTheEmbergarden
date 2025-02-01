@@ -43,14 +43,32 @@ namespace Embergarden
             Log.Message("DamagePart");
         }
     }
+    [StaticConstructorOnStartup]
+    [HarmonyPatch(typeof(Pawn), "PreApplyDamage")]
+    public static class TestE
+    {
+        public static void Prefix()
+        {
+            Log.Message("PawnPreApplyDamage");
+        }
+    }
+    [StaticConstructorOnStartup]
+    [HarmonyPatch(typeof(Pawn), "PostApplyDamage")]
+    public static class TestF
+    {
+        public static void Prefix()
+        {
+            Log.Message("PawnPostApplyDamage");
+        }
+    }
 
     [StaticConstructorOnStartup]
     [HarmonyPatch(typeof(Thing), "TakeDamage")]
     public static class TestB
     {
-        public static void Prefix()
+        public static void Prefix(Thing __instance, DamageInfo dinfo)
         {
-            Log.Message("TakeDamage");
+            Log.Message($"{__instance} TakeDamage {dinfo}");
         }
     }
 
