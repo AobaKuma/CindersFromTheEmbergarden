@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using RimWorld;
 using System.Security.Cryptography;
 using Verse.AI;
+using static Verse.DamageWorker;
 
 namespace Embergarden
 {
@@ -35,60 +36,50 @@ namespace Embergarden
     }
 
     [StaticConstructorOnStartup]
-    [HarmonyPatch(typeof(Recipe_RemoveBodyPart), "DamagePart")]
+    [HarmonyPatch(typeof(DamageWorker_AddInjury), "ApplyToPawn")]
     public static class TestA
     {
         public static void Prefix()
         {
-            Log.Message("DamagePart");
+            Log.Message("ApplyToPawn");
         }
     }
     [StaticConstructorOnStartup]
-    [HarmonyPatch(typeof(Pawn), "PreApplyDamage")]
+    [HarmonyPatch(typeof(DamageWorker_AddInjury), "ApplyDamageToPart")]
     public static class TestE
     {
-        public static void Prefix()
+        public static void Prefix(DamageInfo dinfo)
         {
-            Log.Message("PawnPreApplyDamage");
+            Log.Message($"ApplyDamageToPart {dinfo}");
         }
     }
     [StaticConstructorOnStartup]
-    [HarmonyPatch(typeof(Pawn), "PostApplyDamage")]
+    [HarmonyPatch(typeof(DamageWorker_AddInjury), "ApplySmallPawnDamagePropagation")]
     public static class TestF
     {
         public static void Prefix()
         {
-            Log.Message("PawnPostApplyDamage");
+            Log.Message("ApplySmallPawnDamagePropagation");
         }
     }
 
     [StaticConstructorOnStartup]
-    [HarmonyPatch(typeof(Thing), "TakeDamage")]
+    [HarmonyPatch(typeof(DamageWorker_AddInjury), "FinalizeAndAddInjury", [typeof(Pawn), typeof(Hediff_Injury), typeof(DamageInfo), typeof(DamageResult)])]
     public static class TestB
     {
-        public static void Prefix(Thing __instance, DamageInfo dinfo)
+        public static void Prefix()
         {
-            Log.Message($"{__instance} TakeDamage {dinfo}");
+            Log.Message("FinalizeAndAddInjury Hediff_Injury");
         }
     }
 
     [StaticConstructorOnStartup]
-    [HarmonyPatch(typeof(Pawn_HealthTracker), "PreApplyDamage")]
+    [HarmonyPatch(typeof(DamageWorker_AddInjury), "FinalizeAndAddInjury", [typeof(Pawn), typeof(float), typeof(DamageInfo), typeof(DamageResult)])]
     public static class TestC
     {
         public static void Prefix()
         {
-            Log.Message("PreApplyDamage");
-        }
-    }
-
-    [StaticConstructorOnStartup]
-    [HarmonyPatch(typeof(Pawn_HealthTracker), "PostApplyDamage")]
-    public static class TestD
-    {
-        public static void Prefix()
-        {
-            Log.Message("PostApplyDamage");
+            Log.Message("FinalizeAndAddInjury float");
         }
     }
 }
