@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GenStepDef>
+		<defName>Cinder_GenGarbage</defName>
+		<order>114514</order>
+		<genStep Class="GenStep_ScatterGroup">
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<minSpacing>80</minSpacing>
+			<countPer10kCellsRange>0.2~0.4</countPer10kCellsRange>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<allowRoofed>false</allowRoofed>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>5</radius>
+					<affordance>Heavy</affordance>
+				</li>
+			</validators>
+			<groups>
+				<li>
+					<things>
+						<AncientWheel>0.5</AncientWheel>
+						<AncientGiantWheel>1</AncientGiantWheel>
+					</things>
+					<indoorRuin>false</indoorRuin>
+					<coveredCellsPer10Cells>0.25~0.5</coveredCellsPer10Cells>
+					<filthDef>Filth_MachineBits</filthDef>
+					<filthExpandBy>1</filthExpandBy>
+					<filthChance>0.2</filthChance>
+					<clusterRectRadius>12~16</clusterRectRadius>
+				</li>
+			</groups>
+		</genStep>
+	</GenStepDef>
+</Defs>
