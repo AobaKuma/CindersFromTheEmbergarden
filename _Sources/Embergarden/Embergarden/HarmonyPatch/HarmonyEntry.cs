@@ -18,6 +18,5 @@ namespace Embergarden
             Harmony entry = new Harmony("AOBA.Embergarden");
             entry.PatchAll();
         }
-
     }
 }

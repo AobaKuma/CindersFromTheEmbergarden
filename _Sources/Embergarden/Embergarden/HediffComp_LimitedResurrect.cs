@@ -10,6 +10,9 @@ namespace Embergarden
     {
         public bool CanResurrect = true;
 
+        DamageInfo? dinfo;
+        Hediff culprit = null;
+
 
         HediffCompProperties_Resurrect Props => base.props as HediffCompProperties_Resurrect;
 
@@ -27,9 +30,15 @@ namespace Embergarden
 
         public override void Notify_PawnDied(DamageInfo? dinfo, Hediff culprit = null)
         {
-            Log.Message("died");
-            Log.Message(Pawn.health.hediffSet.hediffs.ToStringSafeEnumerable());
-            //* if (!CanResurrect) return;
+            Log.Message(Find.TickManager.TicksGame);
+            this.culprit = culprit;
+            this.dinfo = dinfo;
+            Current.Game.GetComponent<GameComponent_ResurrectAdaptor>().hediffs.Add(this);
+        }
+
+        public void Resurrect()
+        {
+            if (!CanResurrect) return;
             CanResurrect = false;
 
             if (ModLister.AnomalyInstalled)
@@ -43,7 +52,6 @@ namespace Embergarden
 
             ResurrectionUtility.TryResurrect(Pawn, null);
             HediffPurge(Pawn);
-            Log.Message(Pawn.health.hediffSet.hediffs.ToStringSafeEnumerable());
             Props.effecter?.Spawn(Pawn.PositionHeld, Pawn.MapHeld);
             if (Props.afterEffectHediff != null)
             {
@@ -101,7 +109,6 @@ namespace Embergarden
                     Messages.Message(Props.notificationGeneral.Formatted(Pawn.Named("PAWN")), Pawn, MessageTypeDefOf.NegativeHealthEvent);
                 }
             }
-            Log.Message(Pawn.health.hediffSet.hediffs.ToStringSafeEnumerable());
         }
 
         void HediffPurge(Pawn pawn)
