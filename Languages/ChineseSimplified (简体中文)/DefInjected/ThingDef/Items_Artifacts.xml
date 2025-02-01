@@ -46,7 +46,7 @@
   <!-- EN: Can be analyzed by a colonist. -->
   <Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.inspectString>可以被殖民者研究</Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.inspectString>
   <!-- EN: analyze extra armour plate -->
-  <Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.jobString>分析空药剂瓶</Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.jobString>
+  <Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.jobString>分析附加装甲板</Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.jobString>
   
   <!-- EN: regenerated enhanced serum -->
   <Cinder_RegeneratedEnhancedSerum.label>再生强化血清</Cinder_RegeneratedEnhancedSerum.label>

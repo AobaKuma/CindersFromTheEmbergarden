@@ -340,6 +340,7 @@
         <kindDef>Combat</kindDef>
         <commonality>50</commonality>
         <options>
+		  <Cinder_EliteGhoul>10</Cinder_EliteGhoul>
 		  <Cinder_HeavySoliderUnit>10</Cinder_HeavySoliderUnit>
 		  <Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
           <Cinder_Mech_ErodedEXO>10</Cinder_Mech_ErodedEXO>
@@ -351,7 +352,7 @@
         <kindDef>Combat</kindDef>
         <commonality>50</commonality>
         <options>
-		 <Cinder_Ghoul>4</Cinder_Ghoul>
+		  <Cinder_EliteGhoul>10</Cinder_EliteGhoul>
 		  <Cinder_HeavySoliderUnit>5</Cinder_HeavySoliderUnit>
 		  <Cinder_Mech_MiniTurretWalker>5</Cinder_Mech_MiniTurretWalker>
 		  <Cinder_Mech_ErodedEXO>5</Cinder_Mech_ErodedEXO>

@@ -51,7 +51,7 @@
 				<!-- 3 -->
 				<bossCount>1</bossCount>
 				<escorts>
-					<Cinder_SoliderUnit>4</Cinder_SoliderUnit>
+					<Cinder_SoliderUnit>3</Cinder_SoliderUnit>
 					<Cinder_HeavySoliderUnit>1</Cinder_HeavySoliderUnit>
 					<Cinder_Mech_MiniTurretWalker>8</Cinder_Mech_MiniTurretWalker>
 				</escorts>
@@ -60,7 +60,7 @@
 				<!-- 4 -->
 				<bossCount>1</bossCount>
 				<escorts>
-					<Cinder_SoliderUnit>4</Cinder_SoliderUnit>
+					<Cinder_SoliderUnit>3</Cinder_SoliderUnit>
 					<Cinder_HeavySoliderUnit>2</Cinder_HeavySoliderUnit>
 					<Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
 					<Cinder_Mech_WalkerAutoCannon>2</Cinder_Mech_WalkerAutoCannon>
@@ -70,7 +70,7 @@
 				<!-- 5 -->
 				<bossCount>2</bossCount>
 				<escorts>
-					<Cinder_SoliderUnit>6</Cinder_SoliderUnit>
+					<Cinder_SoliderUnit>3</Cinder_SoliderUnit>
 					<Cinder_HeavySoliderUnit>2</Cinder_HeavySoliderUnit>
 					<Cinder_Mech_MiniTurretWalker>12</Cinder_Mech_MiniTurretWalker>
 					<Cinder_Mech_WalkerAutoCannon>4</Cinder_Mech_WalkerAutoCannon>
@@ -79,29 +79,31 @@
 			</li>
 			<li>
 				<!-- 6 -->
-				<bossCount>3</bossCount>
+				<bossCount>2</bossCount>
 				<escorts>
-					<Cinder_SoliderUnit>6</Cinder_SoliderUnit>
+					<Cinder_SoliderUnit>3</Cinder_SoliderUnit>
 					<Cinder_Mech_ErodedEXO>1</Cinder_Mech_ErodedEXO>
-					<Cinder_HeavySoliderUnit>2</Cinder_HeavySoliderUnit>
+					<Cinder_HeavySoliderUnit>1</Cinder_HeavySoliderUnit>
+					<Cinder_Mech_WalkerAutoCannon>2</Cinder_Mech_WalkerAutoCannon>
 					<Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
 				</escorts>
 			</li>
 			<li>
 				<!-- 7 -->
-				<bossCount>4</bossCount>
+				<bossCount>2</bossCount>
 				<escorts>
-					<Cinder_SoliderUnit>4</Cinder_SoliderUnit>
+					<Cinder_SoliderUnit>3</Cinder_SoliderUnit>
 					<Cinder_Mech_ErodedEXO>2</Cinder_Mech_ErodedEXO>
-					<Cinder_HeavySoliderUnit>4</Cinder_HeavySoliderUnit>
+					<Cinder_HeavySoliderUnit>2</Cinder_HeavySoliderUnit>
+					<Cinder_Mech_WalkerAutoCannon>2</Cinder_Mech_WalkerAutoCannon>
 					<Cinder_Mech_MiniTurretWalker>12</Cinder_Mech_MiniTurretWalker>
 				</escorts>
 			</li>
 			<li>
 				<!-- 8 -->
-				<bossCount>4</bossCount>
+				<bossCount>2</bossCount>
 				<escorts>
-					<Cinder_SoliderUnit>6</Cinder_SoliderUnit>
+					<Cinder_SoliderUnit>3</Cinder_SoliderUnit>
 					<Cinder_Mech_ErodedEXO>2</Cinder_Mech_ErodedEXO>
 					<Cinder_Mech_WarSweeper>1</Cinder_Mech_WarSweeper>
 					<Cinder_HeavySoliderUnit>4</Cinder_HeavySoliderUnit>
@@ -110,23 +112,26 @@
 			</li>
 			<li>
 				<!-- 9 -->
-				<bossCount>4</bossCount>
+				<bossCount>2</bossCount>
 				<escorts>
-					<Cinder_SoliderUnit>10</Cinder_SoliderUnit>
+					<Cinder_SoliderUnit>4</Cinder_SoliderUnit>
 					<Cinder_Mech_ErodedEXO>2</Cinder_Mech_ErodedEXO>
 					<Cinder_Mech_WarSweeper>2</Cinder_Mech_WarSweeper>
-					<Cinder_HeavySoliderUnit>4</Cinder_HeavySoliderUnit>
+					<Cinder_HeavySoliderUnit>2</Cinder_HeavySoliderUnit>
+					<Cinder_Mech_WalkerAutoCannon>2</Cinder_Mech_WalkerAutoCannon>
 					<Cinder_Mech_MiniTurretWalker>12</Cinder_Mech_MiniTurretWalker>
 				</escorts>
 			</li>
 			<li>
 				<!-- 10 -->
-				<bossCount>4</bossCount>
+				<bossCount>2</bossCount>
 				<escorts>
-					<Cinder_SoliderUnit>10</Cinder_SoliderUnit>
+					<Cinder_SoliderUnit>4</Cinder_SoliderUnit>
 					<Cinder_Mech_ErodedEXO>2</Cinder_Mech_ErodedEXO>
 					<Cinder_Mech_WarAttacker>2</Cinder_Mech_WarAttacker>
-					<Cinder_HeavySoliderUnit>4</Cinder_HeavySoliderUnit>
+					<Cinder_Mech_WarSweeper>2</Cinder_Mech_WarSweeper>
+					<Cinder_HeavySoliderUnit>2</Cinder_HeavySoliderUnit>
+					<Cinder_Mech_WalkerAutoCannon>2</Cinder_Mech_WalkerAutoCannon>
 					<Cinder_Mech_MiniTurretWalker>12</Cinder_Mech_MiniTurretWalker>
 				</escorts>
 			</li>
