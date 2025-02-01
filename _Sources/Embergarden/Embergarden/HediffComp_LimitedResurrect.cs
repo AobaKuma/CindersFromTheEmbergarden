@@ -27,6 +27,7 @@ namespace Embergarden
 
         public override void Notify_PawnDied(DamageInfo? dinfo, Hediff culprit = null)
         {
+            Log.Message("died");
             if (!CanResurrect) return;
             CanResurrect = false;
 
@@ -106,6 +107,7 @@ namespace Embergarden
             {
                 if (pawn.health.hediffSet.hediffs[i - 1].def.isBad)
                 {
+                    Log.Message(pawn.health.hediffSet.hediffs[i - 1]);
                     pawn.health.RemoveHediff(pawn.health.hediffSet.hediffs[i - 1]);
                 }
             }
