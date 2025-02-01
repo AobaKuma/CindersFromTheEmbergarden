@@ -29,6 +29,7 @@ namespace Embergarden
         {
             Log.Message("died");
             Log.Message(Pawn.health.hediffSet.hediffs.ToStringSafeEnumerable());
+            //* if (!CanResurrect) return;
             CanResurrect = false;
 
             if (ModLister.AnomalyInstalled)

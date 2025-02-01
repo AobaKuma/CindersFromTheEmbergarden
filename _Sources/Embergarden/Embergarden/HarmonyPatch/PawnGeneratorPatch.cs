@@ -3,6 +3,7 @@ using HarmonyLib;
 using System.Collections.Generic;
 using RimWorld;
 using System.Security.Cryptography;
+using Verse.AI;
 
 namespace Embergarden
 {
@@ -31,5 +32,45 @@ namespace Embergarden
     public class ModExtension_RandomOneAbility : DefModExtension
     {
         public List<AbilityDef> abilities = new List<AbilityDef>();
+    }
+
+    [StaticConstructorOnStartup]
+    [HarmonyPatch(typeof(Recipe_RemoveBodyPart), "ApplyOnPawn")]
+    public static class TestA
+    {
+        public static void Prefix()
+        {
+            Log.Message("ApplyOnPawn");
+        }
+    }
+
+    [StaticConstructorOnStartup]
+    [HarmonyPatch(typeof(Recipe_RemoveBodyPart), "GetPartsToApplyOn")]
+    public static class TestB
+    {
+        public static void Prefix()
+        {
+            Log.Message("GetPartsToApplyOn");
+        }
+    }
+
+    [StaticConstructorOnStartup]
+    [HarmonyPatch(typeof(Bill_Medical), "Notify_IterationCompleted")]
+    public static class TestC
+    {
+        public static void Prefix()
+        {
+            Log.Message("Notify_IterationCompleted");
+        }
+    }
+
+    [StaticConstructorOnStartup]
+    [HarmonyPatch(typeof(Toils_Recipe), "FinishRecipeAndStartStoringProduct")]
+    public static class TestD
+    {
+        public static void Prefix()
+        {
+            Log.Message("FinishRecipeAndStartStoringProduct");
+        }
     }
 }
