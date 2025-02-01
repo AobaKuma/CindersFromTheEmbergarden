@@ -50,11 +50,9 @@ namespace Embergarden
     {
         protected override Job TryGiveJob(Pawn pawn)
         {
-            Log.Message("1");
             ability = ThinkNode_HasCompAndConditionalEnemyInRange.GetAbility(pawn).def;
             if (ability != null)
             {
-                Log.Message("2");
                 return base.TryGiveJob(pawn);
             }
             return null;

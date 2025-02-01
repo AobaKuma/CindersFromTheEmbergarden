@@ -60,7 +60,6 @@ namespace Embergarden
             {
                 return;
             }
-            D.Message($"Ticked, Target is {CurrentTarget}, next Transformation Tick is {lastHaveTargetTick + Props.idleSeconds.SecondsToTicks()}");
             if (CurrentTarget.IsValid)
             {
                 if (lastHaveTargetTick > 0)
@@ -142,10 +141,8 @@ namespace Embergarden
         }
         private void UpdateHP()
         {
-            Log.Message("Update HP");
             if (InnerPawn == null || InnerPawn.Dead)
             {
-                Log.Message("kill");
                 pawnOwner.TryDropAll(parent.Position, parent.Map, ThingPlaceMode.Near);
                 parent.Kill(null);
                 return;
@@ -180,7 +177,6 @@ namespace Embergarden
 
         public Pawn NewPawn()
         {
-            Log.Message("remake pawn");
             if (pawnOwner.Any)
             {
                 while (pawnOwner.Count > 1)

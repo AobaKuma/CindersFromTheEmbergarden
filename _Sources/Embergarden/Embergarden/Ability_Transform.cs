@@ -54,7 +54,6 @@ namespace Embergarden
             {
                 if (Turret == null)
                 {
-                    Log.Message("remake turret");
                     Building t = (Building)ThingMaker.MakeThing(Prop.buildingDef);
                     t.SetFaction(parent.pawn.Faction);
                     turretOwner.TryAdd(t);
