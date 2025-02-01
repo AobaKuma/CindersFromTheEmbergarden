@@ -105,10 +105,11 @@ namespace Embergarden
         {
             for (int i = pawn.health.hediffSet.hediffs.Count; i > 0; i--)
             {
-                if (pawn.health.hediffSet.hediffs[i - 1].def.isBad)
+                var hediff = pawn.health.hediffSet.hediffs[i - 1];
+                Log.Message($"{hediff} {hediff.GetType()} {hediff.def.isBad}");
+                if (hediff.def.isBad)
                 {
-                    Log.Message(pawn.health.hediffSet.hediffs[i - 1]);
-                    pawn.health.RemoveHediff(pawn.health.hediffSet.hediffs[i - 1]);
+                    pawn.health.RemoveHediff(hediff);
                 }
             }
         }
