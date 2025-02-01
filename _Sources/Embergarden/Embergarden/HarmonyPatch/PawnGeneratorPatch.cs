@@ -35,42 +35,42 @@ namespace Embergarden
     }
 
     [StaticConstructorOnStartup]
-    [HarmonyPatch(typeof(Recipe_RemoveBodyPart), "ApplyOnPawn")]
+    [HarmonyPatch(typeof(Recipe_RemoveBodyPart), "DamagePart")]
     public static class TestA
     {
         public static void Prefix()
         {
-            Log.Message("ApplyOnPawn");
+            Log.Message("DamagePart");
         }
     }
 
     [StaticConstructorOnStartup]
-    [HarmonyPatch(typeof(Recipe_RemoveBodyPart), "GetPartsToApplyOn")]
+    [HarmonyPatch(typeof(Thing), "TakeDamage")]
     public static class TestB
     {
         public static void Prefix()
         {
-            Log.Message("GetPartsToApplyOn");
+            Log.Message("TakeDamage");
         }
     }
 
     [StaticConstructorOnStartup]
-    [HarmonyPatch(typeof(Bill_Medical), "Notify_IterationCompleted")]
+    [HarmonyPatch(typeof(Pawn_HealthTracker), "PreApplyDamage")]
     public static class TestC
     {
         public static void Prefix()
         {
-            Log.Message("Notify_IterationCompleted");
+            Log.Message("PreApplyDamage");
         }
     }
 
     [StaticConstructorOnStartup]
-    [HarmonyPatch(typeof(Toils_Recipe), "FinishRecipeAndStartStoringProduct")]
+    [HarmonyPatch(typeof(Pawn_HealthTracker), "PostApplyDamage")]
     public static class TestD
     {
         public static void Prefix()
         {
-            Log.Message("FinishRecipeAndStartStoringProduct");
+            Log.Message("PostApplyDamage");
         }
     }
 }
