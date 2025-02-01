@@ -28,6 +28,7 @@ namespace Embergarden
         public override void Notify_PawnDied(DamageInfo? dinfo, Hediff culprit = null)
         {
             Log.Message("died");
+            Log.Message(Pawn.health.hediffSet.hediffs.ToStringSafeEnumerable());
             if (!CanResurrect) return;
             CanResurrect = false;
 
@@ -42,6 +43,7 @@ namespace Embergarden
 
             ResurrectionUtility.TryResurrect(Pawn, null);
             HediffPurge(Pawn);
+            Log.Message(Pawn.health.hediffSet.hediffs.ToStringSafeEnumerable());
             Props.effecter?.Spawn(Pawn.PositionHeld, Pawn.MapHeld);
             if (Props.afterEffectHediff != null)
             {
@@ -99,16 +101,14 @@ namespace Embergarden
                     Messages.Message(Props.notificationGeneral.Formatted(Pawn.Named("PAWN")), Pawn, MessageTypeDefOf.NegativeHealthEvent);
                 }
             }
+            Log.Message(Pawn.health.hediffSet.hediffs.ToStringSafeEnumerable());
         }
 
         void HediffPurge(Pawn pawn)
         {
-            Log.Message(pawn.health.hediffSet.hediffs.ToStringSafeEnumerable());
-            Log.Message(pawn.health.hediffSet.GetMissingPartsCommonAncestors().ToStringSafeEnumerable());
             for (int i = pawn.health.hediffSet.hediffs.Count; i > 0; i--)
             {
                 var hediff = pawn.health.hediffSet.hediffs[i - 1];
-                Log.Message($"{hediff} {hediff.GetType()} {hediff.def.isBad}");
                 if (hediff.def.isBad)
                 {
                     pawn.health.RemoveHediff(hediff);
