@@ -103,6 +103,8 @@ namespace Embergarden
 
         void HediffPurge(Pawn pawn)
         {
+            Log.Message(pawn.health.hediffSet.hediffs.ToStringSafeEnumerable());
+            Log.Message(pawn.health.hediffSet.GetMissingPartsCommonAncestors().ToStringSafeEnumerable());
             for (int i = pawn.health.hediffSet.hediffs.Count; i > 0; i--)
             {
                 var hediff = pawn.health.hediffSet.hediffs[i - 1];
