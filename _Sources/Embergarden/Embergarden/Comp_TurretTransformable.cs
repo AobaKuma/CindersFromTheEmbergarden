@@ -125,6 +125,7 @@ namespace Embergarden
                 var comp = parent.GetComp<CompExplosive>();
                 if (comp != null)
                 {
+                    Log.Message("detonate");
                     typeof(CompExplosive).GetMethod("Detonate", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(comp, [previousMap, false]);
                 }
             }
