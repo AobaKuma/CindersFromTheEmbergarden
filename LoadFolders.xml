@@ -6,7 +6,7 @@
 		<li>1.5</li>
 
 		<li IfModActive="Ludeon.RimWorld.Biotech">1.5/Biotech</li>
-
+        <li IfModActive="erdelf.HumanoidAlienRaces">1.5/HAR</li>
 		<li IfModActive="CETeam.CombatExtended,CETeam.CombatExtended_steam">1.5/CE</li>
 		<li IfModActive="nals.facialanimation">1.5/Mod/FacialAnimation</li>
 	</v1.5>

@@ -186,6 +186,9 @@
 	  <li>Cinder_TentacleWalkingMechanism</li>
 	  <li>Cinder_HellfireMissile</li>
     </prerequisites>
+	<requiredAnalyzed>
+      <li>Cinder_ErodedMechComponent</li>
+    </requiredAnalyzed>
     <researchViewX>3.00</researchViewX>
     <researchViewY>2.70</researchViewY>
   </ResearchProjectDef>

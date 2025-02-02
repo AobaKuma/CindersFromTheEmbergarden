@@ -70,7 +70,8 @@
            <Steel>240</Steel>
 		   <Cinder_AmorphousPolymer>200</Cinder_AmorphousPolymer>
 		   <Uranium>60</Uranium>
-           <ComponentSpacer>8</ComponentSpacer>
+           <ComponentSpacer>4</ComponentSpacer>
+		   <Cinder_ErodedMechComponent>1</Cinder_ErodedMechComponent>
         </costList>
 		<researchPrerequisites>
           <li>Cinder_WarMachinery</li>
@@ -81,7 +82,8 @@
 			<Mass>100</Mass>
 		</statBases>
 		<killedLeavingsRanges>
-			<ChunkSlagSteel>4~5</ChunkSlagSteel>
+			<Cinder_ChunkSlag>1~3</Cinder_ChunkSlag>
+			<Cinder_ErodedMechComponent>1</Cinder_ErodedMechComponent>
 		</killedLeavingsRanges>
 		<designationCategory MayRequire="Ludeon.RimWorld.Biotech">Biotech</designationCategory>
 		<comps>
@@ -119,7 +121,8 @@
            <Steel>340</Steel>
 		   <Cinder_AmorphousPolymer>400</Cinder_AmorphousPolymer>
 		   <Uranium>120</Uranium>
-           <ComponentSpacer>12</ComponentSpacer>
+           <ComponentSpacer>8</ComponentSpacer>
+		   <Cinder_ErodedMechComponent>2</Cinder_ErodedMechComponent>
         </costList>
 		<researchPrerequisites>
           <li>Cinder_WarAttacker</li>
@@ -130,7 +133,8 @@
 			<Mass>100</Mass>
 		</statBases>
 		<killedLeavingsRanges>
-			<ChunkSlagSteel>4~6</ChunkSlagSteel>
+			<Cinder_ChunkSlag>2~4</Cinder_ChunkSlag>
+			<Cinder_ErodedMechComponent>1</Cinder_ErodedMechComponent>
 		</killedLeavingsRanges>
 		<designationCategory MayRequire="Ludeon.RimWorld.Biotech">Biotech</designationCategory>
 		<comps>
@@ -167,7 +171,8 @@
            <Steel>240</Steel>
 		   <Cinder_AmorphousPolymer>300</Cinder_AmorphousPolymer>
 		   <Uranium>90</Uranium>
-           <ComponentSpacer>12</ComponentSpacer>
+           <ComponentSpacer>8</ComponentSpacer>
+		   <Cinder_ErodedMechComponent>2</Cinder_ErodedMechComponent>
         </costList>
 		<researchPrerequisites>
           <li>Cinder_WarAttacker</li>
@@ -178,7 +183,8 @@
 			<Mass>100</Mass>
 		</statBases>
 		<killedLeavingsRanges>
-			<ChunkSlagSteel>4~6</ChunkSlagSteel>
+			<Cinder_ChunkSlag>2~4</Cinder_ChunkSlag>
+			<Cinder_ErodedMechComponent>1</Cinder_ErodedMechComponent>
 		</killedLeavingsRanges>
 		<designationCategory MayRequire="Ludeon.RimWorld.Biotech">Biotech</designationCategory>
 		<comps>

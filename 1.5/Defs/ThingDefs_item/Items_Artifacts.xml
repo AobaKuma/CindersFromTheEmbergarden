@@ -157,6 +157,64 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>Cinder_ErodedMechComponent</defName>
+		<label>eroded mech component</label>
+		<description>A special mechanical component, which may be some kind of photoelectric sensor or advanced chip, a signal transmission and reception device connected to DI. The technology for manufacturing it has not been mastered and can only be obtained by defeating combat units or from ancient ruins.</description>
+		<possessionCount>2</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/ErodedMechComponent/ErodedMechComponent</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<techLevel>Archotech</techLevel>
+		<thingCategories>
+			<li>Artifacts</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>500</MarketValue>
+			<Mass>1.5</Mass>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<allowedArchonexusCount>5</allowedArchonexusCount>
+		<comps>
+			<li Class="CompProperties_CompAnalyzableUnlockResearch">
+		<analysisID>122249069</analysisID>
+
+        <!-- Analyzable -->
+
+        <analysisDurationHours>0.25</analysisDurationHours>
+        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+        <completedLetterLabel>Eroded mech component studied: {RESEARCH} unlocked</completedLetterLabel>
+        <completedLetter>By studying the eroded mech component, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+        <completedLetterDef>PositiveEvent</completedLetterDef>
+
+        <!-- Interactable -->
+
+        <activateTexPath>UI/Icons/Study</activateTexPath>
+
+        <activateLabelString>Analyze...</activateLabelString>
+        <activateDescString>Analyze the eroded mech component.</activateDescString>
+        <jobString>analyze eroded mech component</jobString>
+        <guiLabelString>Choose who should analyze this</guiLabelString>
+        <inspectString>Can be analyzed by a colonist.</inspectString>
+
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+			</li>
+		</comps>
+	</ThingDef>
 
 	<RecipeDef>
 		<defName>Make_Cinder_ErosionAgent</defName>

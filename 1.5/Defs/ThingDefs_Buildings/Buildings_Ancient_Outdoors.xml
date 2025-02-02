@@ -6,15 +6,15 @@
         </graphicData>
         <rotatable>true</rotatable>
         <randomizeRotationOnSpawn>true</randomizeRotationOnSpawn>
-        <pathCost>200</pathCost>
-        <passability>PassThroughOnly</passability>
-        <filthLeaving>ChunkSlagSteel</filthLeaving>
+        <passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
     </ThingDef>
 
     <ThingDef ParentName="Cinder_AncientBuildingBase">
         <defName>Cinder_AncientRustedChunk_A</defName>
-        <label>ancient chunk</label>
-        <description>An ancient, broken chunk. Everything useful either rusted away or was looted long ago.</description>
+        <label>ancient automatic truck</label>
+        <description>An ancient, broken chunk.There seems to be some useful things inside.</description>
         <graphicData>
             <texPath>Things/Building/AncientAutomaticTruck/building</texPath>
             <drawSize>(4,8)</drawSize>
@@ -29,14 +29,17 @@
         </statBases>
         <killedLeavings>
             <ChunkSlagSteel>6</ChunkSlagSteel>
-            <Cinder_ChunkSlag>2</Cinder_ChunkSlag>
+            <MedicineIndustrial>2</MedicineIndustrial>
+			<MealSurvivalPack>5</MealSurvivalPack>
         </killedLeavings>
     </ThingDef>
+	
+	
 
     <ThingDef ParentName="Cinder_AncientBuildingBase">
         <defName>Cinder_AncientRustedChunk_B</defName>
-        <label>ancient war striker chunk</label>
-        <description>An ancient, broken chunk. Everything useful either rusted away or was looted long ago.</description>
+        <label>ancient war striker torso</label>
+        <description>An ancient, broken chunk.It seems to contain an advanced component that cannot be manufactured.</description>
         <graphicData>
             <texPath>Things/Building/AncientWarStriker/Torso</texPath>
             <drawSize>(4,4)</drawSize>
@@ -44,21 +47,23 @@
                 <volume>(2, 1.5, 2)</volume>
             </shadowData>
         </graphicData>
+		<randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
         <size>(3,3)</size>
         <fillPercent>0.9</fillPercent>
         <statBases>
-            <MaxHitPoints>540</MaxHitPoints>
+            <MaxHitPoints>4000</MaxHitPoints>
         </statBases>
         <killedLeavings>
-            <ChunkSlagSteel>3</ChunkSlagSteel>
+            <Cinder_ErodedMechComponent>1</Cinder_ErodedMechComponent>
+			<ChunkSlagSteel>6</ChunkSlagSteel>
             <Cinder_ChunkSlag>3</Cinder_ChunkSlag>
         </killedLeavings>
     </ThingDef>
 
     <ThingDef ParentName="Cinder_AncientBuildingBase">
         <defName>Cinder_AncientRustedChunk_C</defName>
-        <label>ancient war striker chunk</label>
-        <description>An ancient, broken chunk. Everything useful either rusted away or was looted long ago.</description>
+        <label>ancient war striker shoulder</label>
+        <description>An ancient, broken chunk.There seems to be some useful things inside.</description>
         <graphicData>
             <texPath>Things/Building/AncientWarStriker/Shoulder_L</texPath>
             <drawSize>(4,4)</drawSize>
@@ -66,10 +71,11 @@
                 <volume>(2, 1.5, 2)</volume>
             </shadowData>
         </graphicData>
+		<randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
         <size>(3,3)</size>
         <fillPercent>0.9</fillPercent>
         <statBases>
-            <MaxHitPoints>540</MaxHitPoints>
+            <MaxHitPoints>2500</MaxHitPoints>
         </statBases>
         <killedLeavings>
             <ChunkSlagSteel>3</ChunkSlagSteel>
@@ -79,8 +85,8 @@
 
     <ThingDef ParentName="Cinder_AncientBuildingBase">
         <defName>Cinder_AncientRustedChunk_D</defName>
-        <label>ancient war striker chunk</label>
-        <description>An ancient, broken chunk. Everything useful either rusted away or was looted long ago.</description>
+        <label>ancient war striker shoulder</label>
+        <description>An ancient, broken chunk.There seems to be some useful things inside.</description>
         <graphicData>
             <texPath>Things/Building/AncientWarStriker/Shoulder_R</texPath>
             <drawSize>(4,4)</drawSize>
@@ -88,10 +94,11 @@
                 <volume>(2, 1.5, 2)</volume>
             </shadowData>
         </graphicData>
+		<randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
         <size>(3,3)</size>
         <fillPercent>0.9</fillPercent>
         <statBases>
-            <MaxHitPoints>540</MaxHitPoints>
+            <MaxHitPoints>2500</MaxHitPoints>
         </statBases>
         <killedLeavings>
             <ChunkSlagSteel>3</ChunkSlagSteel>
@@ -101,8 +108,8 @@
 
     <ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
         <defName>Cinder_AncientBaseVehicle</defName>
-        <label>ancient chunk</label>
-        <description>An ancient, broken chunk. Everything useful either rusted away or was looted long ago.</description>
+        <label>ancient base vehicle</label>
+        <description>An ancient, giant armored base vehicles.There seems to be some useful things inside.</description>
         <graphicData>
             <texPath>Things/Building/AncientBaseVehicle/AncientBaseVehicle_east</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -111,6 +118,8 @@
                 <volume>(8, 5, 5)</volume>
             </shadowData>
         </graphicData>
+		<rotatable>false</rotatable>
+        <randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
         <size>(8,5)</size>
         <fillPercent>1</fillPercent>
         <statBases>
@@ -119,13 +128,16 @@
         <killedLeavings>
             <ChunkSlagSteel>8</ChunkSlagSteel>
             <Cinder_ChunkSlag>5</Cinder_ChunkSlag>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<MedicineIndustrial>3</MedicineIndustrial>
+			<MealSurvivalPack>9</MealSurvivalPack>
         </killedLeavings>
     </ThingDef>
 
     <ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
         <defName>Cinder_AncientWheeledTank</defName>
-        <label>ancient chunk</label>
-        <description>An ancient, broken chunk. Everything useful either rusted away or was looted long ago.</description>
+        <label>ancient wheeled tank</label>
+        <description>An ancient, broken chunk.There seems to be some useful things inside.</description>
         <graphicData>
             <texPath>Things/Building/AncientWheeledTank/AncientWheeledTank_east</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -134,6 +146,8 @@
                 <volume>(5, 4, 2.5)</volume>
             </shadowData>
         </graphicData>
+		<rotatable>false</rotatable>
+        <randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
         <size>(5,3)</size>
         <fillPercent>1</fillPercent>
         <statBases>
@@ -141,14 +155,15 @@
         </statBases>
         <killedLeavings>
             <ChunkSlagSteel>5</ChunkSlagSteel>
-            <Cinder_ChunkSlag>3</Cinder_ChunkSlag>
+			<ComponentIndustrial>3</ComponentIndustrial>
+            <Cinder_AmorphousPolymer>50</Cinder_AmorphousPolymer>
         </killedLeavings>
     </ThingDef>
 
     <ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
         <defName>Cinder_AncientFastArmoredVehicle</defName>
-        <label>ancient chunk</label>
-        <description>An ancient, broken chunk. Everything useful either rusted away or was looted long ago.</description>
+        <label>ancient fast armored vehicle</label>
+        <description>An ancient, broken chunk.There seems to be some useful things inside.</description>
         <graphicData>
             <texPath>Things/Building/AncientFastArmoredVehicle/AncientFastArmoredVehicle_east</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -157,6 +172,8 @@
                 <volume>(4, 3, 2)</volume>
             </shadowData>
         </graphicData>
+		<rotatable>false</rotatable>
+        <randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
         <size>(4,2)</size>
         <fillPercent>1</fillPercent>
         <statBases>
@@ -164,23 +181,26 @@
         </statBases>
         <killedLeavings>
             <ChunkSlagSteel>4</ChunkSlagSteel>
-            <Cinder_ChunkSlag>2</Cinder_ChunkSlag>
+			<ComponentIndustrial>2</ComponentIndustrial>
+            <Cinder_AmorphousPolymer>30</Cinder_AmorphousPolymer>
         </killedLeavings>
     </ThingDef>
 
     <ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
         <defName>Cinder_AncientGiantCargo</defName>
-        <label>ancient chunk</label>
-        <description>An ancient, broken chunk. Everything useful either rusted away or was looted long ago.</description>
+        <label>ancient giant cargo</label>
+        <description>An ancient, broken chunk.There seems to be some useful things inside.</description>
         <graphicData>
             <texPath>Things/Building/AncientGiantCargo/AncientGiantCargo_north</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(11,7)</drawSize>
+            <drawSize>(12.1,7.7)</drawSize>
             <shadowData>
-                <volume>(9, 5, 5)</volume>
+                <volume>(10, 5, 5)</volume>
             </shadowData>
         </graphicData>
-        <size>(9,5)</size>
+		<rotatable>false</rotatable>
+        <randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
+        <size>(10,5)</size>
         <fillPercent>1</fillPercent>
         <statBases>
             <MaxHitPoints>2700</MaxHitPoints>
@@ -188,14 +208,17 @@
         <killedLeavings>
             <ChunkSlagSteel>9</ChunkSlagSteel>
             <Cinder_ChunkSlag>5</Cinder_ChunkSlag>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<MedicineIndustrial>10</MedicineIndustrial>
+			<MealSurvivalPack>25</MealSurvivalPack>
         </killedLeavings>
     </ThingDef>
 
 
     <ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
         <defName>Cinder_AncientGiantTruck</defName>
-        <label>ancient chunk</label>
-        <description>An ancient, broken chunk. Everything useful either rusted away or was looted long ago.</description>
+        <label>ancient giant truck</label>
+        <description>An ancient, broken chunk.There seems to be some useful things inside.</description>
         <graphicData>
             <texPath>Things/Building/AncientGiantTruck/AncientGiantTruck_east</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -204,12 +227,15 @@
                 <volume>(9, 5, 5)</volume>
             </shadowData>
         </graphicData>
+		<rotatable>false</rotatable>
+        <randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
         <size>(9,5)</size>
         <fillPercent>1</fillPercent>
         <statBases>
             <MaxHitPoints>2700</MaxHitPoints>
         </statBases>
         <killedLeavings>
+		    <ComponentIndustrial>5</ComponentIndustrial>
             <ChunkSlagSteel>9</ChunkSlagSteel>
             <Cinder_ChunkSlag>5</Cinder_ChunkSlag>
         </killedLeavings>

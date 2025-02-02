@@ -92,12 +92,6 @@
 			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		<comps>
-			<li Class="CompProperties_Explosive">
-				<wickTicks>240</wickTicks>
-				<explosiveRadius>5.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
-			</li>
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Refuelable">
@@ -121,13 +115,19 @@
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
 			</li>
-			<li Class="Embergarden.CompProperties_Transformable">
-				<compClass>Embergarden.Comp_TurretTransformable</compClass>
-				<pawnKind>Cinder_Mech_WalkerAutoCannon</pawnKind>
-				<idleSeconds>2</idleSeconds>
-				<defaultLabel>Change to walking mode</defaultLabel>
-				<defaultDesc>Order the turret to "stand up" and relocate.</defaultDesc>
-				<icon>Things/Building/WalkerAutoCannon/WalkerAutoCannon_MenuIcon</icon>
+            <li Class="Embergarden.CompProperties_Transformable">
+                <compClass>Embergarden.Comp_TurretTransformable</compClass>
+                <pawnKind>Cinder_Mech_WalkerAutoCannon</pawnKind>
+                <idleSeconds>2</idleSeconds>
+                <defaultLabel>Change to walking mode</defaultLabel>
+                <defaultDesc>Order the turret to "stand up" and relocate.</defaultDesc>
+                <icon>Things/Building/WalkerAutoCannon/WalkerAutoCannon_MenuIcon</icon>
+            </li>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>240</wickTicks>
+				<explosiveRadius>5.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
 			</li>
 		</comps>
 		<building>
@@ -208,12 +208,6 @@
 			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		<comps>
-			<li Class="CompProperties_Explosive">
-				<wickTicks>240</wickTicks>
-				<explosiveRadius>5.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
-			</li>
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Refuelable">
@@ -244,6 +238,12 @@
 				<defaultLabel>Change to walking mode</defaultLabel>
 				<defaultDesc>Order the turret to "stand up" and relocate.</defaultDesc>
 				<icon>Things/Building/WalkerSniper/WalkerSniper_MenuIcon</icon>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>240</wickTicks>
+				<explosiveRadius>5.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
 			</li>
 		</comps>
 		<building>
@@ -327,12 +327,6 @@
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="CompProperties_Explosive">
-				<wickTicks>240</wickTicks>
-				<explosiveRadius>6.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-				<chanceNeverExplodeFromDamage>0.8</chanceNeverExplodeFromDamage>
-			</li>
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
@@ -387,6 +381,12 @@
 				<defaultLabel>Change to walking mode</defaultLabel>
 				<defaultDesc>Order the turret to "stand up" and relocate.</defaultDesc>
 				<icon>Things/Building/WalkerRocket/WalkerRocket_MenuIcon</icon>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>240</wickTicks>
+				<explosiveRadius>6.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.8</chanceNeverExplodeFromDamage>
 			</li>
 		</comps>
 		<passability>PassThroughOnly</passability>
@@ -507,13 +507,6 @@
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="CompProperties_Explosive">
-				<compClass>CompExplosivePowered</compClass>
-				<wickTicks>240</wickTicks>
-				<explosiveRadius>3.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
-			</li>
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Stunnable">
@@ -553,6 +546,13 @@
 				<defaultLabel>Change to walking mode</defaultLabel>
 				<defaultDesc>Order the turret to "stand up" and relocate.</defaultDesc>
 				<icon>Things/Building/WalkerTacticalTurret/WalkerTacticalTurret_MenuIcon</icon>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<compClass>CompExplosivePowered</compClass>
+				<wickTicks>240</wickTicks>
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
 			</li>
 		</comps>
 		<passability>PassThroughOnly</passability>

@@ -21,28 +21,6 @@
 	        <Beauty>-2</Beauty>
 		</disallowedTraits>
 	</BackstoryDef>
-
-	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 幼年背景佔位符 -->
-		<defName>Cinder_PlaceHolder</defName>
-		<title>placeHolder</title>
-		<titleShort>placeHolder</titleShort>
-		<description>[PAWN_nameDef]</description>
-		<slot>Childhood</slot>
-		<spawnCategories>
-			<li>CinderStory</li>
-		</spawnCategories>
-	</BackstoryDef>
-
-	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 成年背景佔位符 -->
-		<defName>Cinder_PlaceHolderAdult</defName>
-		<title>placeHolder</title>
-		<titleShort>placeHolder</titleShort>
-		<description>[PAWN_nameDef]</description>
-		<slot>Adulthood</slot>
-		<spawnCategories>
-			<li>CinderStory</li>
-		</spawnCategories>
-	</BackstoryDef>
 	
 	
 	<!-- 难民 -->

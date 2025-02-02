@@ -6,6 +6,10 @@
 		<xpath>Defs/MapGeneratorDef[@Name = "MapCommonBase"]/genSteps</xpath>
 		<value>
 			<li>Cinder_GenGarbage</li>
+			<li>Cinder_GenGarbageA</li>
+			<li>Cinder_GenGarbageB</li>
+			<li>Cinder_GenGarbageC</li>
+			<li>Cinder_AncientWarStrikerRemains</li>
 		</value>
 	</Operation>
 </Patch>

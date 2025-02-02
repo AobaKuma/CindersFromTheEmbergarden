@@ -680,7 +680,7 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_OutlanderElite</defName>
 		<label>shock troops</label>
-		<combatPower>250</combatPower>
+		<combatPower>280</combatPower>
 		<maxPerGroup>3</maxPerGroup>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
@@ -921,7 +921,7 @@
     <PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_BreakUnit</defName>
 		<label>break through unit</label>
-		<combatPower>280</combatPower>
+		<combatPower>320</combatPower>
 		<maxPerGroup>4</maxPerGroup>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
 		<isFighter>true</isFighter>
@@ -1010,7 +1010,7 @@
 	 <PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_HeavySoliderUnit</defName>
 		<label>Bombing unit</label>
-		<combatPower>280</combatPower>
+		<combatPower>380</combatPower>
 		<maxPerGroup>4</maxPerGroup>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
 		<isFighter>true</isFighter>

@@ -303,8 +303,8 @@
     <raidLootMaker>Cinder_OutlanderRaidLootMaker</raidLootMaker>
     <maxPawnCostPerTotalPointsCurve>
       <points>
-        <li>(400,200)</li>
-        <li>(900,300)</li>
+        <li>(900,200)</li>
+        <li>(3000,300)</li>
         <li>(100000,10000)</li>
       </points>
     </maxPawnCostPerTotalPointsCurve>

@@ -209,6 +209,10 @@
 				</subTurrets>
 			</li>
 		</comps>
+		 <killedLeavings>
+            <Cinder_ChunkSlag>2</Cinder_ChunkSlag>
+			<Cinder_ErodedMechComponent>1</Cinder_ErodedMechComponent>
+        </killedLeavings>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BaseMechanoidKind">
