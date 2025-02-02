@@ -23,7 +23,8 @@
 			<fleshType>Mechanoid</fleshType>
 			<needsRest>false</needsRest>
 			<hasGenders>false</hasGenders>
-			<foodType>None</foodType>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<baseHungerRate>0</baseHungerRate>
 			<lifeExpectancy>2500</lifeExpectancy>
 			<bloodDef>Filth_MachineBits</bloodDef>
 			<soundCallIntervalRange>1000~2000</soundCallIntervalRange>

@@ -3,7 +3,7 @@
   
   <!-- EN: Tactical turret walker -->
   <Cinder_Mech_MiniTurretWalker.label>战术炮塔步行者</Cinder_Mech_MiniTurretWalker.label>
-  <!-- EN: TODO -->
+  <!-- EN: A small walking turret that can share some of the infantry's workload and attract firepower -->
   <Cinder_Mech_MiniTurretWalker.description>一种小型步行炮塔，可以分担一部分步兵的工作并吸引火力</Cinder_Mech_MiniTurretWalker.description>
   <!-- EN: Left tentacle -->
   <Cinder_Mech_MiniTurretWalker.tools.Left_tentacle.label>左触手</Cinder_Mech_MiniTurretWalker.tools.Left_tentacle.label>

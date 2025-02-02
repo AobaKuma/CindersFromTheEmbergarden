@@ -32,13 +32,11 @@
     <li>subject_gerund->separat amorphous polymer</li>
   -->
   <Cinder_Separation.generalRules.rulesStrings>
-  
-     <li>subject->分离</li>
+    <li>subject->分离</li>
     <li>subject_story->从奇怪的扭曲混合物质中分离出装甲板</li>
     <li>subject_story->从无定形聚合物中分离出一些有烧焦气味的肉</li>
     <li>subject_story->探索无定形聚合物的应用</li>
     <li>subject_gerund->分无定形聚合物</li>
-  
   </Cinder_Separation.generalRules.rulesStrings>
   
   <!-- EN: Shaped charges -->
@@ -53,13 +51,11 @@
     <li>subject_gerund->manufacturing Shaped Charges</li>
   -->
   <Cinder_ShapedCharges.generalRules.rulesStrings>
-  
     <li>subject->聚能装药</li>
     <li>subject->破甲弹头</li>
     <li>subject_story->门罗效应原理分析</li>
     <li>subject_story->制造威力强大的HEAT穿甲弹</li>
     <li>subject_gerund->制造聚能装药炸弹</li>
-  
   </Cinder_ShapedCharges.generalRules.rulesStrings>
   
   <!-- EN: Tentacle mechanism application -->
@@ -79,14 +75,12 @@
     <li>subject_gerund->make some immovable buildings move automatically</li>
   -->
   <Cinder_TentacleMechanism.generalRules.rulesStrings>
-  
-  <li>subject->触手机构</li>
+    <li>subject->触手机构</li>
     <li>subject->行走机构</li>
     <li>subject->军事触手应用</li>
     <li>subject_story->修改一些不能移动的炮塔，使其能够自行改变部署位置，以便炮塔能够配合部队的攻击</li>
     <li>subject_story->与轮式、履带式和机械行走完全不同的运动方式，噪音低，通行能力强</li>
     <li>subject_gerund->使一些不可移动的建筑物自动移动</li>
-	
   </Cinder_TentacleMechanism.generalRules.rulesStrings>
   
   <!-- EN: Large walking mechanism -->
@@ -107,14 +101,12 @@
     <li>subject_gerund->Can manufacture erosion and regeneration agents with unstable effects</li>
   -->
   <Cinder_TwistedPharmacology.generalRules.rulesStrings>
-  
-  <li>subject->扭曲药剂学</li>
+    <li>subject->扭曲药剂学</li>
     <li>subject->侵蚀药剂</li>
     <li>subject_story->不同物料配比对药物疗效的影响研究</li>
     <li>subject_story->探究施法者的技能来源</li>
     <li>subject_story->寻找提高无定形聚合物再生能力的方法</li>
     <li>subject_gerund->可以制造效果不稳定的侵蚀剂和再生剂</li>
-  
   </Cinder_TwistedPharmacology.generalRules.rulesStrings>
   
   <!-- EN: War attacker -->

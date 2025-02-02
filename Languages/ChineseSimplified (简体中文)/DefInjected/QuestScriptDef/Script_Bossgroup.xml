@@ -10,23 +10,25 @@
     <li>study->\n\nYou can unlock subsequent technologies by studying [reward_label].</li>
   -->
   <Cinder_Boss.questContentRules.rulesStrings>
-  
-  <li>bossDefeatedLetterLabel->[escortees0_label]已被击败</li>
+    <li>bossDefeatedLetterLabel->[escortees0_label]已被击败</li>
     <li>bossDefeatedStudyChipLetterText->[defeated][study][manufacture]</li>
     <li>bossDefeatedLetterText->[defeated][manufacture]</li>
     <li>defeated->The hostile [escortees0_label]已被击败并且掉落了[reward_label]!</li>
     <li>manufacture->\n\n这个装甲版可以被任何人使用，能够抵挡子弹.</li>
     <li>study->\n\n你可以通过研究[reward_label]解锁科技.</li>
-  
   </Cinder_Boss.questContentRules.rulesStrings>
   <!-- EN:
     <li>questDescription->bossgroup</li>
   -->
-  <Cinder_Boss.questDescriptionRules.rulesStrings><li>questDescription->boss波次</li></Cinder_Boss.questDescriptionRules.rulesStrings>
+  <Cinder_Boss.questDescriptionRules.rulesStrings>
+    <li>questDescription->boss波次</li>
+  </Cinder_Boss.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->bossgroup</li>
   -->
-  <Cinder_Boss.questNameRules.rulesStrings><li>questDescription->boss波次</li></Cinder_Boss.questNameRules.rulesStrings>
+  <Cinder_Boss.questNameRules.rulesStrings>
+    <li>questDescription->boss波次</li>
+  </Cinder_Boss.questNameRules.rulesStrings>
   <!-- EN: Combat unit is approaching. -->
   <Cinder_Boss.root.AlertBossgroupIncoming>战斗单位正在接近</Cinder_Boss.root.AlertBossgroupIncoming>
   <!-- EN: Combat unit is approaching. -->

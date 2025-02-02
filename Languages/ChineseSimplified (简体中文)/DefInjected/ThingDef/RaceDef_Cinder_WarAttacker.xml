@@ -3,7 +3,7 @@
   
   <!-- EN: war attacker -->
   <Cinder_Mech_WarAttacker.label>战争打击者</Cinder_Mech_WarAttacker.label>
-  <!-- EN: TODO -->
+  <!-- EN: A three meter high heavy armored assault walking machine with astonishing ammunition carrying capacity, like a walking armed helicopter, capable of leveling enemy positions with eight Hellfire missiles. -->
   <Cinder_Mech_WarAttacker.description>一种三米高量级的重装甲突击步行机器，拥有惊人的弹药携带量，就像是一个步行的武装直升机，能够用八发地狱火导弹将敌人的阵地夷为平地。</Cinder_Mech_WarAttacker.description>
   <!-- EN: exo minigun -->
   <Cinder_Mech_WarAttacker.comps.CompMultipleTurretGun.subTurrets.0.renderNodeProperties.0.debugLabel>速射机枪</Cinder_Mech_WarAttacker.comps.CompMultipleTurretGun.subTurrets.0.renderNodeProperties.0.debugLabel>

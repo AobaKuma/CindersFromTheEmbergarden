@@ -3,9 +3,8 @@
   
   <!-- EN: Cinder -->
   <Alien_Cinder.label>烟烬</Alien_Cinder.label>
-  <!-- EN: "佔位符" -->
-  <Alien_Cinder.description>“然而盛极必衰，这样的文明也没有逃过覆灭的命运”
-修昔底德陷阱令这个星球上的两个极权爆发了大战，这场战争的结果早己没于历史，但其造成的最直接的一个后果是：其中一个极权“欧亚共同防御协议联盟”位于西伯利亚地区的核电站群发生了连环爆炸，爆炸产生的巨量能量与放射性物质意外唤醒了在这个星球内部休眠的某个古神化身（附注：待考证）苏醒的古神化身又连锁反应的产生了两个后果：一是整个西伯利亚加半中亚化作了难以从外界进入，并无法从外界观测的遮蔽区，二是那些被困在遮蔽区内的，饶幸没有在战火和“唤醒”中死去的人类，身体发生了非人的异变，现代科学界一致认为，这些异变的人类就是最初的“烟烬”</Alien_Cinder.description>
+  <!-- EN: “However, as prosperity inevitably leads to decline, this civilization did not escape the fate of destruction.” The Thucydides Trap led to a great war between two totalitarian regimes on this planet. The outcome of this war has long been lost to history, but one of its most direct consequences was a series of explosions at a nuclear power plant cluster in Siberia, part of the 'Eurasian Common Defense Agreement Alliance.' The massive energy and radioactive materials released from the explosions accidentally awakened a dormant avatar of an ancient god deep within the planet (note: to be verified). The awakening of this ancient god resulted in two chain reactions: first, the entire Siberian region and parts of Central Asia transformed into shadow zones, making them inaccessible and unobservable from the outside; second, those who were trapped inside the shadow zones, fortunate enough to have survived the war and the 'awakening,' underwent inhuman mutations. The modern scientific community unanimously agrees that these mutated humans are the original 'cinders.' -->
+  <Alien_Cinder.description>“然而盛极必衰，这样的文明也没有逃过覆灭的命运”\n修昔底德陷阱令这个星球上的两个极权爆发了大战，这场战争的结果早己没于历史，但其造成的最直接的一个后果是：其中一个极权“欧亚共同防御协议联盟”位于西伯利亚地区的核电站群发生了连环爆炸，爆炸产生的巨量能量与放射性物质意外唤醒了在这个星球内部休眠的某个古神化身（附注：待考证）苏醒的古神化身又连锁反应的产生了两个后果：一是整个西伯利亚加半中亚化作了难以从外界进入，并无法从外界观测的遮蔽区，二是那些被困在遮蔽区内的，饶幸没有在战火和“唤醒”中死去的人类，身体发生了非人的异变，现代科学界一致认为，这些异变的人类就是最初的“烟烬”</Alien_Cinder.description>
   <!-- EN: left fist -->
   <Alien_Cinder.tools.left_fist.label>左拳</Alien_Cinder.tools.left_fist.label>
   <!-- EN: right fist -->

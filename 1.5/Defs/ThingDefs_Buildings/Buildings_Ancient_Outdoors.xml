@@ -23,7 +23,9 @@
             </shadowData>
         </graphicData>
         <size>(2,6)</size>
-        <fillPercent>0.9</fillPercent>
+		<pathCost>50</pathCost>
+		<passability>PassThroughOnly</passability>
+        <fillPercent>1</fillPercent>
         <statBases>
             <MaxHitPoints>720</MaxHitPoints>
         </statBases>
@@ -118,7 +120,10 @@
                 <volume>(8, 5, 5)</volume>
             </shadowData>
         </graphicData>
+		<passability>Impassable</passability>
+		<pathCost>50</pathCost>
 		<rotatable>false</rotatable>
+		<blockLight>false</blockLight>
         <randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
         <size>(8,5)</size>
         <fillPercent>1</fillPercent>

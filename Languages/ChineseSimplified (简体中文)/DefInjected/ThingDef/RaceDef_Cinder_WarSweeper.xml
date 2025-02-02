@@ -3,7 +3,7 @@
   
   <!-- EN: war sweeper -->
   <Cinder_Mech_WarSweeper.label>战争清扫者</Cinder_Mech_WarSweeper.label>
-  <!-- EN: TODO -->
+  <!-- EN: A heavy armored anti-aircraft walking machine on the order of three meters high, equipped with anti-aircraft firepower of different calibers and abundant ammunition to accompany infantry in anti-aircraft operations. -->
   <Cinder_Mech_WarSweeper.description>一种三米高量级的重装甲防空步行机器，拥有不同口径的防空火力武装，充沛的弹药量能够伴随步兵进行防空作业。</Cinder_Mech_WarSweeper.description>
   <!-- EN: exo minigun -->
   <Cinder_Mech_WarSweeper.comps.CompMultipleTurretGun.subTurrets.0.renderNodeProperties.0.debugLabel>速射机枪</Cinder_Mech_WarSweeper.comps.CompMultipleTurretGun.subTurrets.0.renderNodeProperties.0.debugLabel>

@@ -20,9 +20,33 @@
 		    <Beauty>-1</Beauty>
 	        <Beauty>-2</Beauty>
 		</disallowedTraits>
+		<spawnCategories>
+			<li>CinderStory</li>
+		</spawnCategories>
 	</BackstoryDef>
 	
 	
+	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 殖民者 -->
+		<defName>Cinder_DustColonist</defName>
+		<title>colonist</title>
+		<titleShort>colonist</titleShort>
+		<description>[PAWN_nameDef] is a colonist, and [PAWN_possessive] story is yet to unfold</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>CinderStory</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 殖民者 -->
+		<defName>Cinder_AdultColonist</defName>
+		<title>colonist</title>
+		<titleShort>colonist</titleShort>
+		<description>[PAWN_nameDef] is a colonist, and [PAWN_possessive] story is yet to unfold</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CinderStory</li>
+		</spawnCategories>
+	</BackstoryDef>
 	<!-- 难民 -->
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 尘雾难民 -->
 		<defName>Cinder_DustFogRefugee</defName>
@@ -60,7 +84,7 @@
     <skillGains>
       <Intellectual>-5</Intellectual>
     </skillGains>
-	<workDisables>Social, Cooking</workDisables>
+	<workDisables>Social</workDisables>
 	 <forcedTraits>
       <Cannibal>0</Cannibal>
 	  <NaturalMood>-1</NaturalMood>
@@ -115,7 +139,7 @@
 	<skillGains>
       <Intellectual>-5</Intellectual>
     </skillGains>
-	<workDisables>Artistic, Social, Cooking</workDisables>
+	<workDisables>Artistic, Social</workDisables>
 	</BackstoryDef>
 	
 	 <BackstoryDef ParentName="BaseCinderBackStory">	<!-- 落魄子弟 -->
@@ -206,7 +230,6 @@
 	  <Cooking>4</Cooking>
 	  <Social>2</Social>
     </skillGains>
-	<workDisables>Intellectual</workDisables>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 童工 -->
@@ -480,7 +503,6 @@
        <Social>4</Social>
        <Shooting>2</Shooting>
     </skillGains>
-	<workDisables>Intellectual</workDisables>
 	<forcedTraits>
 	  <Bloodlust>0</Bloodlust>
 	  <Tough>0</Tough>
@@ -872,7 +894,6 @@ However, in reality, there are no bodies that need mending.When [PAWN_pronoun] a
       <Melee>4</Melee>
       <Medicine>4</Medicine>
     </skillGains>
-	 <workDisables>Cooking</workDisables>
 	</BackstoryDef>
 	
 	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- “女仆” -->

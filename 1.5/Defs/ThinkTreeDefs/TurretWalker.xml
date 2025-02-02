@@ -54,7 +54,11 @@
 						</li>
 					</subNodes>
 				</li>
-
+				
+                <li Class="ThinkNode_Subtree">
+                <treeDef>SatisfyBasicNeeds</treeDef>
+                </li>
+				
 				<li Class="Embergarden.ThinkNode_HasCompAndConditionalEnemyInRange">
 					<subNodes>
 						<li Class="Embergarden.JobGiver_TurretWalkerTransform"/>

@@ -12,4 +12,15 @@
   <!-- EN: Colonist -->
   <Cinder_PlayerFaction.pawnsPlural>殖民者</Cinder_PlayerFaction.pawnsPlural>
   
+  <!-- EN: new site -->
+  <Cinder_PlayerFactionB.label>新站点</Cinder_PlayerFactionB.label>
+  <!-- EN: An attacked convoy. -->
+  <Cinder_PlayerFactionB.description>一个被袭击的补给车队</Cinder_PlayerFactionB.description>
+  <!-- EN: leader -->
+  <Cinder_PlayerFactionB.leaderTitle>领袖</Cinder_PlayerFactionB.leaderTitle>
+  <!-- EN: Colonist -->
+  <Cinder_PlayerFactionB.pawnSingular>殖民者</Cinder_PlayerFactionB.pawnSingular>
+  <!-- EN: Colonist -->
+  <Cinder_PlayerFactionB.pawnsPlural>殖民者</Cinder_PlayerFactionB.pawnsPlural>
+  
 </LanguageData>

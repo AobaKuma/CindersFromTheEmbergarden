@@ -21,7 +21,7 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_Colonist</defName>
 		<label>colonist</label>
-		<defaultFactionType>Cinder_PlayerFaction</defaultFactionType>
+		<defaultFactionType>PlayerColony</defaultFactionType>
 		<itemQuality>Poor</itemQuality>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<isFighter>false</isFighter>
@@ -62,6 +62,7 @@
 		<requiredTag>Cinder_Civilan</requiredTag>
 		<stuff>Synthread</stuff>
 		<apparelLayer>Middle</apparelLayer>
+		<color>(186, 181, 171)</color>
       </li>
       <li>
         <bodyPartGroup>Legs</bodyPartGroup>

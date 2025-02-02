@@ -11,15 +11,13 @@
     <li>BrigadeType->Tranquil</li>
   -->
   <Cinder_Cradle.rulePack.rulesStrings>
-  
-   <li>r_name->[BrigadeType][complex]</li>
+    <li>r_name->[BrigadeType][complex]</li>
     <li>complex->摇篮</li>
     <li>complex->花园</li>
     <li>BrigadeType->凋零</li>
     <li>BrigadeType->灰烬</li>
     <li>BrigadeType->余烬</li>
     <li>BrigadeType->静谧</li>
-  
   </Cinder_Cradle.rulePack.rulesStrings>
   
   <!-- EN:
@@ -62,8 +60,7 @@
     <li>BrigadeNum2->9th</li>
   -->
   <Cinder_LanternFleet.rulePack.rulesStrings>
-  
-  <li>r_name-> [BrigadeNum0][BrigadeNum1][BrigadeNum2][BrigadeType][complex]</li>
+    <li>r_name-> [BrigadeNum0][BrigadeNum1][BrigadeNum2][BrigadeType][complex]</li>
     <li>complex->战斗群</li>
     <li>complex->船团</li>
     <li>complex->舰队</li>
@@ -100,7 +97,6 @@
     <li>BrigadeNum2->7</li>
     <li>BrigadeNum2->8</li>
     <li>BrigadeNum2->9</li>
-  
   </Cinder_LanternFleet.rulePack.rulesStrings>
   
   <!-- EN:
@@ -133,7 +129,6 @@
     <li>Number->8</li>
   -->
   <Cinder_LanternFleetBase.rulePack.rulesStrings>
-  
     <li>r_name->[Number][Number][complexAdj][Type]</li>
     <li>Type->突击舰</li>
     <li>Type->侦察舰</li>
@@ -161,7 +156,58 @@
     <li>Number->6</li>
     <li>Number->7</li>
     <li>Number->8</li>
-  
   </Cinder_LanternFleetBase.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>r_ideoName->[CinderIdeoFirst]</li>
+    <li>CinderIdeoFirst->lights</li>
+    <li>CinderIdeoFirst->Redemption</li>
+    <li>CinderIdeoFirst->Afterglow</li>
+    <li>CinderIdeoFirst->Ember</li>
+    <li>CinderIdeoFirst->Starlight</li>
+    <li>CinderIdeoFirst->Spark</li>
+    <li>CinderIdeoFirst->Charcoal fire</li>
+    <li>CinderIdeoFirst->Glow</li>
+    <li>CinderIdeoFirst->Shimmer</li>
+    <li>r_ideoAdjective->[CinderIdeoFirst]ic</li>
+    <li>hyphenPrefix->Depleted</li>
+    <li>r_memberName->Follower</li>
+    <li>r_memberName->Believer</li>
+  -->
+  <Cinder_NamerIdeo.rulePack.rulesStrings>
+    <li>r_ideoName->[CinderIdeoFirst]</li>
+    <li>CinderIdeoFirst->灯火</li>
+    <li>CinderIdeoFirst->救赎</li>
+    <li>CinderIdeoFirst->余辉</li>
+    <li>CinderIdeoFirst->余火</li>
+    <li>CinderIdeoFirst->星光</li>
+    <li>CinderIdeoFirst->火种</li>
+    <li>CinderIdeoFirst->炭火</li>
+    <li>CinderIdeoFirst->辉光</li>
+    <li>CinderIdeoFirst->微光</li>
+    <li>r_ideoAdjective->[CinderIdeoFirst]</li>
+    <li>hyphenPrefix->绝望的</li>
+    <li>r_memberName->追随者</li>
+    <li>r_memberName->信徒</li>
+  </Cinder_NamerIdeo.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>r_leaderTitle->[CinderLeader]</li>
+    <li>CinderLeader->Instigator</li>
+    <li>CinderLeader->Lantern Bearer</li>
+    <li>CinderLeader->Navigator</li>
+    <li>CinderLeader->Fire Keeper</li>
+    <li>CinderLeader->Torchbearer</li>
+    <li>CinderLeader->Redeemer</li>
+  -->
+  <Cinder_NamerLeader.rulePack.rulesStrings>
+    <li>r_leaderTitle->[CinderLeader]</li>
+    <li>CinderLeader->煽动者</li>
+    <li>CinderLeader->提灯人</li>
+    <li>CinderLeader->指引者</li>
+    <li>CinderLeader->系火者</li>
+    <li>CinderLeader->火炬手</li>
+    <li>CinderLeader->救赎</li>
+  </Cinder_NamerLeader.rulePack.rulesStrings>
   
 </LanguageData>

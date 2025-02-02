@@ -18,6 +18,9 @@
 			<tags>
 				<li>Cinder_Civilan</li>
 			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		    <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
 		</apparel>
 		<recipeMaker>
 		     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>

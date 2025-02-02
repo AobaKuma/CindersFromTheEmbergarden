@@ -4,10 +4,10 @@
     <defName>Cinder_Culture</defName>
     <label>Firewood</label>
     <description>On the home planet of Cinder, Earth, this ancient planet, there are harsh environments, scarce resources, recurring hatred, and endless wars. All of this has shaped their ideology today.</description>
-    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoAstropolitan</ideoNameMaker>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">Cinder_NamerIdeo</ideoNameMaker>
     <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityAstropolitan</deityNameMaker>
     <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerAstropolitan</deityTypeMaker>
-    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Astropolitan</leaderTitleMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">Cinder_NamerLeader</leaderTitleMaker>
     <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
     <allowedPlaceTags>
       <li>OriginSpacer</li>

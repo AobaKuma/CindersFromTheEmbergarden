@@ -48,10 +48,8 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
     </disallowedPrecepts>
     <structureMemeWeights>
-      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_TheistAbstract>
       <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_Ideological>
-      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_Archist>
-      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_OriginChristian>
+	   <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">0.3</Structure_OriginChristian>
     </structureMemeWeights>
     <xenotypeSet>
       <xenotypeChances>
@@ -75,10 +73,9 @@
 		  </li>
     </backstoryFilters>
     <caravanTraderKinds>
-      <li>Caravan_Outlander_BulkGoods</li>
       <li>Caravan_Outlander_CombatSupplier</li>
       <li>Caravan_Outlander_Exotic</li>
-      <li>Caravan_Outlander_PirateMerchant</li>
+      <li>Cinder_LogisticsTransportationUnit</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
       <li>Visitor_Outlander_Standard</li>
@@ -170,16 +167,16 @@
       <li>
         <kindDef>Settlement</kindDef>
         <options>
-          <Cinder_OutlanderCivilan>10</Cinder_OutlanderCivilan>
-          <Cinder_Outlander>10</Cinder_Outlander>
-		   <Cinder_OutlanderSecond>10</Cinder_OutlanderSecond>
+          <Cinder_OutlanderCivilan>5</Cinder_OutlanderCivilan>
+          <Cinder_Outlander>5</Cinder_Outlander>
+		   <Cinder_OutlanderSecond>5</Cinder_OutlanderSecond>
           <Cinder_Grenadier>1.5</Cinder_Grenadier>
           <Cinder_OutlanderElite>3</Cinder_OutlanderElite>
 		  <Cinder_EliteCult>3</Cinder_EliteCult>
-          <Cinder_Mech_WalkerAutoCannon>3</Cinder_Mech_WalkerAutoCannon>
+		  <Cinder_Leader>1</Cinder_Leader>
+		  <Cinder_Mech_WalkerAutoCannon>2</Cinder_Mech_WalkerAutoCannon>
           <Cinder_Mech_MiniTurretWalker>8</Cinder_Mech_MiniTurretWalker>
-          <Cinder_Mech_WalkerSniper>1.5</Cinder_Mech_WalkerSniper>
-		  <Cinder_Leader>10</Cinder_Leader>
+          <Cinder_Mech_WalkerSniper>2</Cinder_Mech_WalkerSniper>
         </options>
       </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">
@@ -187,6 +184,7 @@
         <commonality>1</commonality>
         <options>
           <Cinder_OutlanderCivilan>1</Cinder_OutlanderCivilan>
+		   <Cinder_OutlanderSecond>0.5</Cinder_OutlanderSecond>
         </options>
       </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">
@@ -201,6 +199,7 @@
         <commonality>1</commonality>
         <options>
           <Cinder_OutlanderCivilan>1</Cinder_OutlanderCivilan>
+		   <Cinder_OutlanderSecond>0.5</Cinder_OutlanderSecond>
         </options>
       </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">
@@ -208,6 +207,7 @@
         <commonality>1</commonality>
         <options>
           <Cinder_OutlanderCivilan>1</Cinder_OutlanderCivilan>
+		   <Cinder_OutlanderSecond>0.5</Cinder_OutlanderSecond>
         </options>
       </li>
     </pawnGroupMakers>
@@ -278,10 +278,8 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
     </disallowedPrecepts>
     <structureMemeWeights>
-      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_TheistAbstract>
       <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_Ideological>
-      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_Archist>
-      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_OriginChristian>
+      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">0.3</Structure_OriginChristian>
     </structureMemeWeights>
     <xenotypeSet>
       <xenotypeChances>

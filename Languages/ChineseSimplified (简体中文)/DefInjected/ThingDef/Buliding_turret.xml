@@ -76,7 +76,7 @@
   
   <!-- EN: walker tactical turret -->
   <Cinder_TacticalTurret.label>步行者战术炮塔</Cinder_TacticalTurret.label>
-  <!-- EN: A movable short-range turret. It will stop functioning once its battery runs out. If damaged sufficiently, it may explode. -->
+  <!-- EN: A movable short-range turret, If damaged sufficiently, it may explode. -->
   <Cinder_TacticalTurret.description>一种可移动的短程炮塔，如果损坏严重，可能会爆炸。</Cinder_TacticalTurret.description>
   <!-- EN: Barrel durability -->
   <Cinder_TacticalTurret.comps.CompRefuelable.fuelGizmoLabel>炮管耐久</Cinder_TacticalTurret.comps.CompRefuelable.fuelGizmoLabel>

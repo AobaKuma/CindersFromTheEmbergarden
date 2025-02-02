@@ -91,7 +91,6 @@
     <stackLimit>75</stackLimit>
     <alwaysHaulable>true</alwaysHaulable>
     <socialPropernessMatters>true</socialPropernessMatters>
-    <tradeability>Sellable</tradeability>
     <pathCost>14</pathCost>
     <statBases>
       <MaxHitPoints>120</MaxHitPoints>

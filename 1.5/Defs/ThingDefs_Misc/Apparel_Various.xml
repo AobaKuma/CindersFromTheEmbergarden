@@ -40,6 +40,9 @@
 			</li>
 		</comps>
 		<apparel>
+		<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+		<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
 			<tags>
 				<li>Cinder_Civilan</li>
 			</tags>

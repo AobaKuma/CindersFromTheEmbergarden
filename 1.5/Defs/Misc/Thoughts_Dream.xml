@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef>
+    <defName>Cinder_LongDreamStageA</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Cinder_LongDream</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>Long Dream</label>
+        <description>No more pain...</description>
+        <baseMoodEffect>30</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>Cinder_LongDreamStageB</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Cinder_DeepSleep</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>Long Dream</label>
+        <description>relaxed...</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

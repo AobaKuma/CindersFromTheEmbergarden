@@ -125,7 +125,7 @@
 		<stages>
 			<li>
 				<totalBleedFactor>0</totalBleedFactor>
-				<hungerRateFactor>0</hungerRateFactor>
+				<hungerRateFactor>0.01</hungerRateFactor>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
@@ -138,7 +138,7 @@
 				</capMods>
 				<statFactors>
 					<IncomingDamageFactor>0.01</IncomingDamageFactor>
-					<RestFallRateFactor>0</RestFallRateFactor>
+					<RestFallRateFactor>0.01</RestFallRateFactor>
 				</statFactors>
 				<damageFactors>
 				 <Flame>0</Flame>
@@ -205,7 +205,6 @@
 			<li>Rest</li>
 			<li>Comfort</li>
 			<li>Joy</li>
-			<li>Mood</li>
 			<li>RoomSize</li>
 		</disablesNeeds>
 		<stages>
@@ -250,7 +249,6 @@
 			<li>Outdoors</li>
 			<li>Rest</li>
 			<li>Joy</li>
-			<li>Mood</li>
 			<li>RoomSize</li>
 		</disablesNeeds>
 		<stages>

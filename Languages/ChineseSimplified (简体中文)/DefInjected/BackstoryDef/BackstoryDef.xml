@@ -1,6 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: [PAWN_nameDef] is a colonist, and [PAWN_possessive] story is yet to unfold -->
+  <Cinder_AdultColonist.description>TODO</Cinder_AdultColonist.description>
+  <!-- EN: colonist -->
+  <Cinder_AdultColonist.title>TODO</Cinder_AdultColonist.title>
+  <!-- EN: colonist -->
+  <Cinder_AdultColonist.titleShort>TODO</Cinder_AdultColonist.titleShort>
+  
   <!-- EN: [PAWN_nameDef] is responsible for guarding documents in a library within a bunker of the Defense Council. This job should be performed by adults, but all the adults in the shelter have been sent to war as soldiers. In principle, [PAWN_pronoun] shouldn't look at the contents, but [PAWN_possessive] curiosity led [PAWN_objective] to make a mistake.\n [PAWN_pronoun] came across criticisms of totalitarian states from before the disaster, and even the most terrifying regimes in history seemed to [PAWN_objective] like an ideal state. This prompted [PAWN_objective] to start contemplating the definition of what is right. -->
   <Cinder_ArchiveGuard.description>[PAWN_nameDef]在国防委员会一个地堡资料馆里负责看管资料，这份工作本应由成年人担任，但该避难所的成年人都已作为士兵投入战争，原则上[PAWN_pronoun]不能看里面的东西，但是[PAWN_possessive]好奇心让[PAWN_pronoun]犯下了错误，[PAWN_pronoun]看到了灾难前一些针对极权国家的批判，但哪怕历史中最恐怖的统治，在[PAWN_pronoun]看来都像是理想国。这让[PAWN_pronoun]开始思考正确的定义。</Cinder_ArchiveGuard.description>
   <!-- EN: archive guard -->
@@ -91,6 +98,13 @@
   <Cinder_DataUnit.title>数据处理单位</Cinder_DataUnit.title>
   <!-- EN: "bureaucrat" -->
   <Cinder_DataUnit.titleShort>“官僚”</Cinder_DataUnit.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is a colonist, and [PAWN_possessive] story is yet to unfold -->
+  <Cinder_DustColonist.description>TODO</Cinder_DustColonist.description>
+  <!-- EN: colonist -->
+  <Cinder_DustColonist.title>TODO</Cinder_DustColonist.title>
+  <!-- EN: colonist -->
+  <Cinder_DustColonist.titleShort>TODO</Cinder_DustColonist.titleShort>
   
   <!-- EN: [PAWN_nameDef] is a refugee child struggling to survive in the continuous dust fog climate disasters.\n The adults who were protecting the refugees have all been killed by the ghouls that emerged from the dust fog.\n [PAWN_pronoun] can only hide in an abandoned underground facility, barely surviving by eating wild mushrooms. -->
   <Cinder_DustFogRefugee.description>[PAWN_nameDef]是在接连不断的尘雾气候灾难中艰难求生的难民小孩，保护难民的成年人们都被尘雾中跑出来的尸鬼杀死了，[PAWN_pronoun]只能躲在没人的地下设施内苟延残喘，靠着吃野生菌菇活下去。</Cinder_DustFogRefugee.description>

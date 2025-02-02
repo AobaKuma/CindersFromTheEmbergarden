@@ -86,7 +86,7 @@
   <!-- EN: coma caused by suffocation. -->
   <Cinder_Suffocation.description>因为窒息导致的昏迷</Cinder_Suffocation.description>
   
-  <!-- EN: UncontrollableTentacles -->
+  <!-- EN: Uncontrollable tentacles -->
   <Cinder_UncontrollableTentacles.label>不可控触手</Cinder_UncontrollableTentacles.label>
   <!-- EN: This tentacle will randomly hinder or assist in manipulation. -->
   <Cinder_UncontrollableTentacles.description>这种不能主动控制的触手有时候会帮助使用者，有时候又会造成阻碍</Cinder_UncontrollableTentacles.description>

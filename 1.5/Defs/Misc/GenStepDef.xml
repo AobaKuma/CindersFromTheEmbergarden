@@ -2,16 +2,16 @@
 <Defs>
 	<GenStepDef>
 		<defName>Cinder_GenGarbage</defName>
-		<order>400</order>
+		<order>520</order>
 		<genStep Class="GenStep_ScatterGroup">
 			<allowInWaterBiome>false</allowInWaterBiome>
 			<minSpacing>80</minSpacing>
-			<countPer10kCellsRange>0.5~1</countPer10kCellsRange>
+			<countPer10kCellsRange>0.2~0.35</countPer10kCellsRange>
 			<spotMustBeStandable>true</spotMustBeStandable>
 			<allowRoofed>false</allowRoofed>
 			<validators>
 				<li Class="ScattererValidator_Buildable">
-					<radius>15</radius>
+					<radius>7</radius>
 					<affordance>Heavy</affordance>
 				</li>
 			</validators>
@@ -20,11 +20,11 @@
 					<things>
 						<AncientWheel>0.5</AncientWheel>
 						<AncientGiantWheel>1</AncientGiantWheel>
-						<Cinder_AncientGiantTruck>2</Cinder_AncientGiantTruck>
-						<Cinder_AncientGiantCargo>2</Cinder_AncientGiantCargo>
+						<Cinder_AncientGiantTruck>1</Cinder_AncientGiantTruck>
+						<Cinder_AncientGiantCargo>1</Cinder_AncientGiantCargo>
 					</things>
 					<indoorRuin>false</indoorRuin>
-					<coveredCellsPer10Cells>0.5~1</coveredCellsPer10Cells>
+					<coveredCellsPer10Cells>0.25~0.5</coveredCellsPer10Cells>
 					<filthDef>Filth_MachineBits</filthDef>
 					<filthExpandBy>1</filthExpandBy>
 					<filthChance>0.2</filthChance>
@@ -36,11 +36,11 @@
 	
 	<GenStepDef>
 		<defName>Cinder_GenGarbageA</defName>
-		<order>430</order>
+		<order>530</order>
 		<genStep Class="GenStep_ScatterGroup">
 			<allowInWaterBiome>false</allowInWaterBiome>
 			<minSpacing>80</minSpacing>
-			<countPer10kCellsRange>0.2~0.4</countPer10kCellsRange>
+			<countPer10kCellsRange>0.2~0.35</countPer10kCellsRange>
 			<spotMustBeStandable>true</spotMustBeStandable>
 			<allowRoofed>false</allowRoofed>
 			<validators>
@@ -67,13 +67,13 @@
 		</genStep>
 	</GenStepDef>
 	
-		<GenStepDef>
+    <GenStepDef>
 		<defName>Cinder_GenGarbageB</defName>
-		<order>420</order>
+		<order>540</order>
 		<genStep Class="GenStep_ScatterGroup">
 			<allowInWaterBiome>false</allowInWaterBiome>
 			<minSpacing>80</minSpacing>
-			<countPer10kCellsRange>0.2~0.4</countPer10kCellsRange>
+			<countPer10kCellsRange>0.2~0.35</countPer10kCellsRange>
 			<spotMustBeStandable>true</spotMustBeStandable>
 			<allowRoofed>false</allowRoofed>
 			<validators>
@@ -86,40 +86,8 @@
 				<li>
 					<things>
 						<AncientWheel>2</AncientWheel>
-						<AncientGiantWheel>1</AncientGiantWheel>
-						<Cinder_AncientBaseVehicle>1</Cinder_AncientBaseVehicle>
-					</things>
-					<indoorRuin>false</indoorRuin>
-					<coveredCellsPer10Cells>0.25~0.5</coveredCellsPer10Cells>
-					<filthDef>Filth_MachineBits</filthDef>
-					<filthExpandBy>1</filthExpandBy>
-					<filthChance>0.2</filthChance>
-					<clusterRectRadius>12~16</clusterRectRadius>
-				</li>
-			</groups>
-		</genStep>
-	</GenStepDef>
-	
-	<GenStepDef>
-		<defName>Cinder_GenGarbageC</defName>
-		<order>410</order>
-		<genStep Class="GenStep_ScatterGroup">
-			<allowInWaterBiome>false</allowInWaterBiome>
-			<minSpacing>80</minSpacing>
-			<countPer10kCellsRange>0.2~0.4</countPer10kCellsRange>
-			<spotMustBeStandable>true</spotMustBeStandable>
-			<allowRoofed>false</allowRoofed>
-			<validators>
-				<li Class="ScattererValidator_Buildable">
-					<radius>15</radius>
-					<affordance>Heavy</affordance>
-				</li>
-			</validators>
-			<groups>
-				<li>
-					<things>
-						<AncientWheel>2</AncientWheel>
 						<Cinder_AncientFastArmoredVehicle>1</Cinder_AncientFastArmoredVehicle>
+						<Cinder_AncientWheeledTank>1</Cinder_AncientWheeledTank>
 					</things>
 					<indoorRuin>false</indoorRuin>
 					<coveredCellsPer10Cells>0.25~0.5</coveredCellsPer10Cells>
@@ -130,7 +98,7 @@
 				</li>
 				<li>
 					<things>
-						<AncientWheel>3</AncientWheel>
+						<AncientWheel>1</AncientWheel>
 						<Cinder_AncientWheeledTank>1</Cinder_AncientWheeledTank>
 					</things>
 					<indoorRuin>false</indoorRuin>
@@ -188,6 +156,47 @@
           <offset>(-1, 0, -2)</offset>
           <filthDef>Filth_MachineBits</filthDef>
 		   <rotation>East</rotation>
+          <filthExpandBy>1</filthExpandBy>
+        </li>
+      </layout>
+    </genStep>
+  </GenStepDef>
+  
+  <GenStepDef>
+    <defName>Cinder_GenGarbageC</defName>
+    <order>1620</order><!-- after fogged -->
+    <genStep Class="GenStep_ScatterLayout">
+      <count>1</count>
+      <allowMechanoidDatacoreReadOrLost>false</allowMechanoidDatacoreReadOrLost>
+      <validators>
+        <li Class="ScattererValidator_Buildable">
+          <radius>5</radius>
+          <affordance>Heavy</affordance>
+        </li>
+        <li Class="ScattererValidator_AvoidSpecialThings" />
+      </validators>
+      <fallbackValidators>
+        <li Class="ScattererValidator_Buildable">
+          <radius>5</radius>
+          <affordance>Heavy</affordance>
+        </li>
+      </fallbackValidators>
+      <allowRoofed>false</allowRoofed>
+      <minEdgeDistPct>0.166667</minEdgeDistPct>
+      <minDistToPlayerStartPct>0.333</minDistToPlayerStartPct>
+      <allowFoggedPositions>false</allowFoggedPositions>
+      <onlyOnStartingMap>true</onlyOnStartingMap>
+      <layout>
+        <li>
+          <thing>Cinder_AncientBaseVehicle</thing>
+          <offset>(-2, 0, 0)</offset>
+          <filthDef>Filth_MachineBits</filthDef>
+          <filthExpandBy>1</filthExpandBy>
+        </li>
+		<li>
+          <thing>AncientGiantWheel</thing>
+          <offset>(4, 0, -1)</offset>
+          <filthDef>Filth_MachineBits</filthDef>
           <filthExpandBy>1</filthExpandBy>
         </li>
       </layout>

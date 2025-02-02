@@ -1,49 +1,49 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: ancient chunk -->
-  <Cinder_AncientBaseVehicle.label>远古残骸</Cinder_AncientBaseVehicle.label>
-  <!-- EN: An ancient, broken chunk. Everything useful either rusted away or was looted long ago. -->
-  <Cinder_AncientBaseVehicle.description>一块古老的残骸。所有有用的东西要么早已生锈，要么早已被洗劫一空。</Cinder_AncientBaseVehicle.description>
+  <!-- EN: ancient base vehicle -->
+  <Cinder_AncientBaseVehicle.label>远古基地车</Cinder_AncientBaseVehicle.label>
+  <!-- EN: An ancient, giant armored base vehicles.There seems to be some useful things inside. -->
+  <Cinder_AncientBaseVehicle.description>一个古老的基地车残骸。里面似乎有一些有用的东西。</Cinder_AncientBaseVehicle.description>
   
-  <!-- EN: ancient chunk -->
-  <Cinder_AncientFastArmoredVehicle.label>远古残骸</Cinder_AncientFastArmoredVehicle.label>
-  <!-- EN: An ancient, broken chunk. Everything useful either rusted away or was looted long ago. -->
-  <Cinder_AncientFastArmoredVehicle.description>一块古老的残骸。所有有用的东西要么早已生锈，要么早已被洗劫一空。</Cinder_AncientFastArmoredVehicle.description>
+  <!-- EN: ancient fast armored vehicle -->
+  <Cinder_AncientFastArmoredVehicle.label>远古快速装甲车</Cinder_AncientFastArmoredVehicle.label>
+  <!-- EN: An ancient, broken chunk.There seems to be some useful things inside. -->
+  <Cinder_AncientFastArmoredVehicle.description>一个古老的快速装甲车残骸。里面似乎有一些有用的东西。</Cinder_AncientFastArmoredVehicle.description>
   
-  <!-- EN: ancient chunk -->
-  <Cinder_AncientGiantCargo.label>远古残骸</Cinder_AncientGiantCargo.label>
-  <!-- EN: An ancient, broken chunk. Everything useful either rusted away or was looted long ago. -->
-  <Cinder_AncientGiantCargo.description>一块古老的残骸。所有有用的东西要么早已生锈，要么早已被洗劫一空。</Cinder_AncientGiantCargo.description>
+  <!-- EN: ancient giant cargo -->
+  <Cinder_AncientGiantCargo.label>远古巨型货箱</Cinder_AncientGiantCargo.label>
+  <!-- EN: An ancient, broken chunk.There seems to be some useful things inside. -->
+  <Cinder_AncientGiantCargo.description>一个古老的巨型货箱残骸。里面似乎有一些有用的东西。</Cinder_AncientGiantCargo.description>
   
-  <!-- EN: ancient chunk -->
-  <Cinder_AncientGiantTruck.label>远古残骸</Cinder_AncientGiantTruck.label>
-  <!-- EN: An ancient, broken chunk. Everything useful either rusted away or was looted long ago. -->
-  <Cinder_AncientGiantTruck.description>一块古老的残骸。所有有用的东西要么早已生锈，要么早已被洗劫一空。</Cinder_AncientGiantTruck.description>
+  <!-- EN: ancient giant truck -->
+  <Cinder_AncientGiantTruck.label>远古巨型卡车</Cinder_AncientGiantTruck.label>
+  <!-- EN: An ancient, broken chunk.There seems to be some useful things inside. -->
+  <Cinder_AncientGiantTruck.description>一个古老的巨型卡车残骸。里面似乎有一些有用的东西。</Cinder_AncientGiantTruck.description>
   
-  <!-- EN: ancient chunk -->
-  <Cinder_AncientRustedChunk_A.label>远古残骸</Cinder_AncientRustedChunk_A.label>
-  <!-- EN: An ancient, broken chunk. Everything useful either rusted away or was looted long ago. -->
-  <Cinder_AncientRustedChunk_A.description>一块古老的残骸。所有有用的东西要么早已生锈，要么早已被洗劫一空。</Cinder_AncientRustedChunk_A.description>
+  <!-- EN: ancient automatic truck -->
+  <Cinder_AncientRustedChunk_A.label>远古自动卡车</Cinder_AncientRustedChunk_A.label>
+  <!-- EN: An ancient, broken chunk.There seems to be some useful things inside. -->
+  <Cinder_AncientRustedChunk_A.description>一个古老的自动卡车残骸。里面似乎有一些有用的东西。</Cinder_AncientRustedChunk_A.description>
   
-  <!-- EN: ancient war striker chunk -->
-  <Cinder_AncientRustedChunk_B.label>远古战争袭击者残骸</Cinder_AncientRustedChunk_B.label>
-  <!-- EN: An ancient, broken chunk. Everything useful either rusted away or was looted long ago. -->
-  <Cinder_AncientRustedChunk_B.description>一块古老的残骸。所有有用的东西要么早已生锈，要么早已被洗劫一空。</Cinder_AncientRustedChunk_B.description>
+  <!-- EN: ancient war striker torso -->
+  <Cinder_AncientRustedChunk_B.label>远古战争袭击者躯干</Cinder_AncientRustedChunk_B.label>
+  <!-- EN: An ancient, broken chunk.It seems to contain an advanced component that cannot be manufactured. -->
+  <Cinder_AncientRustedChunk_B.description>一个古老的战争袭击者躯干。里面似乎有一些无法制造的先进零件，摧毁它来获得。</Cinder_AncientRustedChunk_B.description>
   
-  <!-- EN: ancient war striker chunk -->
-  <Cinder_AncientRustedChunk_C.label>远古战争袭击者残骸</Cinder_AncientRustedChunk_C.label>
-  <!-- EN: An ancient, broken chunk. Everything useful either rusted away or was looted long ago. -->
-  <Cinder_AncientRustedChunk_C.description>一块古老的残骸。所有有用的东西要么早已生锈，要么早已被洗劫一空。</Cinder_AncientRustedChunk_C.description>
+  <!-- EN: ancient war striker shoulder -->
+  <Cinder_AncientRustedChunk_C.label>远古战争袭击者肩部</Cinder_AncientRustedChunk_C.label>
+  <!-- EN: An ancient, broken chunk.There seems to be some useful things inside. -->
+  <Cinder_AncientRustedChunk_C.description>一个古老的战争袭击者肩部。里面似乎有一些有用的东西。</Cinder_AncientRustedChunk_C.description>
   
-  <!-- EN: ancient war striker chunk -->
-  <Cinder_AncientRustedChunk_D.label>远古战争袭击者残骸</Cinder_AncientRustedChunk_D.label>
-  <!-- EN: An ancient, broken chunk. Everything useful either rusted away or was looted long ago. -->
-  <Cinder_AncientRustedChunk_D.description>一块古老的残骸。所有有用的东西要么早已生锈，要么早已被洗劫一空。</Cinder_AncientRustedChunk_D.description>
+  <!-- EN: ancient war striker shoulder -->
+  <Cinder_AncientRustedChunk_D.label>远古战争袭击者肩部</Cinder_AncientRustedChunk_D.label>
+  <!-- EN: An ancient, broken chunk.There seems to be some useful things inside. -->
+  <Cinder_AncientRustedChunk_D.description>一个古老的战争袭击者肩部。里面似乎有一些有用的东西。</Cinder_AncientRustedChunk_D.description>
   
-  <!-- EN: ancient chunk -->
-  <Cinder_AncientWheeledTank.label>远古战争袭击者残骸</Cinder_AncientWheeledTank.label>
-  <!-- EN: An ancient, broken chunk. Everything useful either rusted away or was looted long ago. -->
-  <Cinder_AncientWheeledTank.description>一块古老的残骸。所有有用的东西要么早已生锈，要么早已被洗劫一空。</Cinder_AncientWheeledTank.description>
+  <!-- EN: ancient wheeled tank -->
+  <Cinder_AncientWheeledTank.label>远古轮式坦克</Cinder_AncientWheeledTank.label>
+  <!-- EN: An ancient, broken chunk.There seems to be some useful things inside. -->
+  <Cinder_AncientWheeledTank.description>一个古老的轮式坦克残骸。里面似乎有一些有用的东西。</Cinder_AncientWheeledTank.description>
   
 </LanguageData>

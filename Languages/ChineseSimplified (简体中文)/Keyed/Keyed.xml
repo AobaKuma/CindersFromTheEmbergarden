@@ -1,10 +1,16 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
+  <!-- EN: amorphous ember -->
   <Cinder_Setting>无定形余烬</Cinder_Setting>
 	<!-- EN: {0} has appeared! -->
+  <!-- EN: Vanilla style face -->
   <Cinder_CommaEyesLabel>原版脸</Cinder_CommaEyesLabel>
+  <!-- EN: Replace face and body with vanilla style comma face and vanilla body -->
   <Cinder_CommaEyesDesc>将脸部与身体替换为原版风格的逗号脸与原版身体</Cinder_CommaEyesDesc>
+  <!-- EN: People with amorphous regeneration ability are required to use it -->
   <Cinder_NeedResurrectOrRegen>需要具有无定形再生能力的人使用</Cinder_NeedResurrectOrRegen>
+  <!-- EN: Already acquired all abilities -->
   <Cinder_AllAbilityGained>已经获得所有能力了</Cinder_AllAbilityGained>
+  <!-- EN: The armor plate on {0}'s body has been completely damaged -->
   <Embergarden_PlatingTooltip>{0}身上的装甲板已经完全损坏</Embergarden_PlatingTooltip>
 </LanguageData>

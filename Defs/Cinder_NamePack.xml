@@ -108,5 +108,51 @@
       </rulesStrings>
     </rulePack>
   </RulePackDef>
+  
+  <RulePackDef><!-- 文化命名 -->
+    <defName>Cinder_NamerIdeo</defName>
+	<include>
+      <li>GlobalUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_ideoName->[CinderIdeoFirst]</li>
+		
+        <li>CinderIdeoFirst->lights</li>
+        <li>CinderIdeoFirst->Redemption</li>
+        <li>CinderIdeoFirst->Afterglow</li>
+        <li>CinderIdeoFirst->Ember</li>
+        <li>CinderIdeoFirst->Starlight</li>
+        <li>CinderIdeoFirst->Spark</li>
+        <li>CinderIdeoFirst->Charcoal fire</li>
+		<li>CinderIdeoFirst->Glow</li>
+		<li>CinderIdeoFirst->Shimmer</li>
 
+
+        <li>r_ideoAdjective->[CinderIdeoFirst]ic</li>
+        <li>hyphenPrefix->Depleted</li>
+        <li>r_memberName->Follower</li>
+        <li>r_memberName->Believer</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <!--领袖名称-->
+  <RulePackDef>
+    <defName>Cinder_NamerLeader</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_leaderTitle->[CinderLeader]</li>
+		<li>CinderLeader->Instigator</li>
+		<li>CinderLeader->Lantern Bearer</li>
+		<li>CinderLeader->Navigator</li>
+		<li>CinderLeader->Fire Keeper</li>
+		<li>CinderLeader->Torchbearer</li>
+		<li>CinderLeader->Redeemer</li>
+		
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+ 
 </Defs>

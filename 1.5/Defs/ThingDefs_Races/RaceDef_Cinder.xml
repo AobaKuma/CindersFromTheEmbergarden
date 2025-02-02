@@ -224,20 +224,6 @@
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
-				<adultBackstoryFilter>
-					<li>
-						<categories>
-							<li>CinderStory</li>
-						</categories>
-					</li>
-				</adultBackstoryFilter>
-				<childBackstoryFilter>
-					<li>
-						<categories>
-							<li>CinderStory</li>
-						</categories>
-					</li>
-				</childBackstoryFilter>
 			</generalSettings>
 			<graphicPaths>
 				<head>

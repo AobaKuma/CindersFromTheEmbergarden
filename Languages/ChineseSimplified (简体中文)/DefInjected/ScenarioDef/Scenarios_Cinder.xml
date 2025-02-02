@@ -1,15 +1,30 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: Cinder Scenario -->
-  <Cinder_Scenario.label>TODO</Cinder_Scenario.label>
-  <!-- EN: "佔位符" -->
-  <Cinder_Scenario.description>TODO</Cinder_Scenario.description>
-  <!-- EN: "佔位符" -->
-  <Cinder_Scenario.scenario.description>TODO</Cinder_Scenario.scenario.description>
-  <!-- EN: Cinder Scenario -->
-  <Cinder_Scenario.scenario.name>TODO</Cinder_Scenario.scenario.name>
-  <!-- EN: "佔位符" -->
-  <Cinder_Scenario.scenario.summary>TODO</Cinder_Scenario.scenario.summary>
+  <!-- EN: Logistics Supply Station -->
+  <Cinder_Scenario.label>后勤补给站</Cinder_Scenario.label>
+  <!-- EN: The Lantern Fleet conducted an assessment of the region on the planet. Due to repeated attacks on transport convoys in this area, it is necessary to establish a new militarized supply station to control the region. You have been assigned to carry out this task, and once established, full command of the area will be yours.Unfortunately, the vehicle you were driving was damaged due to its old age. -->
+  <Cinder_Scenario.description>提灯舰队考察分析了星球上的这一带地区，由于运输车队屡次在该地区受袭，所以需要在此地点建立新的军事化补给站以控制区域，你们被派出执行任务，在补给站建立之后，该地区的指挥权完全归你所有。</Cinder_Scenario.description>
+  <!-- EN: The Lantern Fleet conducted an assessment of the region on the planet. Due to repeated attacks on transport convoys in this area, it is necessary to establish a new militarized supply station to control the region. You have been assigned to carry out this task, and once established, full command of the area will be yours.Unfortunately, the vehicle you were driving was damaged due to its old age. -->
+  <Cinder_Scenario.scenario.description>提灯舰队考察分析了星球上的这一带地区，由于运输车队屡次在该地区受袭，所以需要在此地点建立新的军事化补给站以控制区域，你们被派出执行任务，在补给站建立之后，该地区的指挥权完全归你所有。</Cinder_Scenario.scenario.description>
+  <!-- EN: Logistics Supply Station -->
+  <Cinder_Scenario.scenario.name>后勤补给站</Cinder_Scenario.scenario.name>
+  <!-- EN: The vehicle you were driving was too old and lost a tire. Fortunately, when you opened the map to confirm, you found that your deviation from the designated area was less than one hundred meters. You decided to establish the supply station on the spot, with the primary goal now being to establish communication with the fleet. -->
+  <Cinder_Scenario.scenario.parts.GameStartDialog.text>你们的驾驶的车辆太过老旧，丢失了一个轮胎，好在当你们打开地图确认时，你们距离预定区域的偏差不到一百米，你们决定就地建立补给站，现在的首要目标是与舰队建立通讯。</Cinder_Scenario.scenario.parts.GameStartDialog.text>
+  <!-- EN: Two staff members who were ordered to establish a new supply station on the planet. -->
+  <Cinder_Scenario.scenario.summary>收到命令在星球上新建立补给站的工作人员。</Cinder_Scenario.scenario.summary>
+  
+  <!-- EN: Long dream gradually awakens -->
+  <Cinder_ScenarioB.label>长梦渐醒</Cinder_ScenarioB.label>
+  <!-- EN: The intense sense of dissonance caused a crack in the dream. You didn’t know what was happening as the serene everyday imagery suddenly intertwined and collapsed with reality, until that gentle long dream completely vanished... You opened your eyes to an unfamiliar scene, with destroyed transport vehicles and scattered supplies around you. You looked at your hands; this was caused by you. -->
+  <Cinder_ScenarioB.description>强烈的违和感让梦境出现了裂缝，你不知道发生了什么，宁静的日常画面在一瞬间与现实交织崩解，直到那温柔的长梦彻底消失..........你睁开双眼，眼前是陌生的场景，被摧毁的运输车辆与散落的物资，你看了看自己的双手，这是你造成的。</Cinder_ScenarioB.description>
+  <!-- EN: The intense sense of dissonance caused a crack in the dream. You didn’t know what was happening as the serene everyday imagery suddenly intertwined and collapsed with reality, until that gentle long dream completely vanished... You opened your eyes to an unfamiliar scene, with destroyed transport vehicles and scattered supplies around you. You looked at your hands; this was caused by you. -->
+  <Cinder_ScenarioB.scenario.description>强烈的违和感让梦境出现了裂缝，你不知道发生了什么，宁静的日常画面在一瞬间与现实交织崩解，直到那温柔的长梦彻底消失..........你睁开双眼，眼前是陌生的场景，被摧毁的运输车辆与散落的物资，你看了看自己的双手，这是你造成的。</Cinder_ScenarioB.scenario.description>
+  <!-- EN: Long dream gradually awakens -->
+  <Cinder_ScenarioB.scenario.name>长梦渐醒</Cinder_ScenarioB.scenario.name>
+  <!-- EN: The survivors of the convoy seemed to have fled, leaving you with a deep sense of confusion. Having departed from the familiar dream, what else could you do? -->
+  <Cinder_ScenarioB.scenario.parts.GameStartDialog.text>车队的幸存者似乎已经逃跑，而你只有深深的迷茫，离开了熟悉的梦境，你还能做什么？</Cinder_ScenarioB.scenario.parts.GameStartDialog.text>
+  <!-- EN: A ghoul unit that unexpectedly woke up from a long dream. -->
+  <Cinder_ScenarioB.scenario.summary>一个被意外从长梦中唤醒的尸鬼单位</Cinder_ScenarioB.scenario.summary>
   
 </LanguageData>
