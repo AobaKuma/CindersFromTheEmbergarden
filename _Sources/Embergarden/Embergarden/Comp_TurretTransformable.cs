@@ -1,8 +1,10 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 using Verse;
 using Verse.AI.Group;
+using static Unity.Burst.Intrinsics.X86.Avx;
 
 namespace Embergarden
 {
@@ -117,6 +119,11 @@ namespace Embergarden
                 Pawn p = InnerPawn;
                 pawnOwner.TryDropAll(parent.Position, previousMap, ThingPlaceMode.Near);
                 p.Kill(null);
+                var comp = parent.GetComp<CompExplosive>();
+                if (comp != null)
+                {
+                    typeof(CompExplosive).GetMethod("Detonate", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(comp, [previousMap, false]);
+                }
             }
         }
 
