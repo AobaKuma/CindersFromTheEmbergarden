@@ -114,11 +114,14 @@ namespace Embergarden
         public override void PostDestroy(DestroyMode mode, Map previousMap)
         {
             base.PostDestroy(mode, previousMap);
-            if (mode == DestroyMode.KillFinalize && InnerPawn != null && !InnerPawn.Dead)
+            if (mode == DestroyMode.KillFinalize)
             {
-                Pawn p = InnerPawn;
-                pawnOwner.TryDropAll(parent.Position, previousMap, ThingPlaceMode.Near);
-                p.Kill(null);
+                if (InnerPawn != null && !InnerPawn.Dead)
+                {
+                    Pawn p = InnerPawn;
+                    pawnOwner.TryDropAll(parent.Position, previousMap, ThingPlaceMode.Near);
+                    p.Kill(null);
+                }
                 var comp = parent.GetComp<CompExplosive>();
                 if (comp != null)
                 {
