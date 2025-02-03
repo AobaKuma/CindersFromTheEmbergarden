@@ -24,6 +24,7 @@
     <description>Carriers of this gene have deeply erosion eyes.</description>
     <iconPath>UI/Gene/ErosionEyes</iconPath>
     <displayOrderInCategory>0</displayOrderInCategory>
+	<minAgeActive>0</minAgeActive>
     <renderNodeProperties>
 			<li Class="PawnRenderNodeProperties_Eye">
 				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
@@ -89,6 +90,7 @@
     <iconPath>UI/Gene/Revive</iconPath>
     <displayOrderInCategory>0</displayOrderInCategory>
 	 <biostatMet>-2</biostatMet>
+	 <minAgeActive>0</minAgeActive>
 	<modExtensions>
 			<li Class="Embergarden.ModExtension_GeneAddHediff">
 				<HediffDef>Cinder_Resurrect</HediffDef>
@@ -105,6 +107,7 @@
     <iconPath>UI/Gene/AmorphousRegeneration</iconPath>
     <displayOrderInCategory>0</displayOrderInCategory>
 	 <biostatMet>-2</biostatMet>
+	 <minAgeActive>0</minAgeActive>
 	<modExtensions>
 			<li Class="Embergarden.ModExtension_GeneAddHediff">
 				<HediffDef>Cinder_Regen</HediffDef>
@@ -124,6 +127,7 @@
     <iconPath>UI/Gene/Fin</iconPath>
 	<selectionWeight>1.5</selectionWeight>
     <displayOrderInCategory>0</displayOrderInCategory>
+	<minAgeActive>0</minAgeActive>
 	 <exclusionTags>
       <li>CinderFin</li>
     </exclusionTags>
@@ -197,6 +201,7 @@
         </drawData>
       </li>
     </renderNodeProperties>
+	<minAgeActive>0</minAgeActive>
 	<modExtensions>
 			<li Class="Embergarden.ModExtension_GeneAddHediff">
 				<HediffDef>Cinder_UncontrollableTentacles</HediffDef>

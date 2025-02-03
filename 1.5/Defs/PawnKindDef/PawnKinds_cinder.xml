@@ -1158,6 +1158,7 @@
 		<label>ghoul unit</label>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
 		<combatPower>200</combatPower>
+		<maxPerGroup>8</maxPerGroup>
 		<itemQuality>Poor</itemQuality>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<isFighter>true</isFighter>
