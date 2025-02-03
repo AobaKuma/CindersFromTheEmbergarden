@@ -82,7 +82,7 @@
 			<recoilAmount>2.72</recoilAmount>
 			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>Bullet_10Gauge_Buck</defaultProjectile>
+			<defaultProjectile>Bullet_23x75mmR_Buck</defaultProjectile>
 			<warmupTime>0.6</warmupTime>
 			<range>16</range>
 			<soundCast>Shot_Shotgun</soundCast>
@@ -93,7 +93,7 @@
 			<magazineSize>5</magazineSize>
 			<reloadOneAtATime>true</reloadOneAtATime>
 			<reloadTime>0.85</reloadTime>
-			<ammoSet>AmmoSet_10Gauge</ammoSet>
+			<ammoSet>AmmoSet_23x75mmR</ammoSet>
 		</AmmoUser>
 		<FireModes>
 			<aiAimMode>Snapshot</aiAimMode>
