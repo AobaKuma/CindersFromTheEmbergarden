@@ -832,6 +832,9 @@
 	<li>CinderSimpleGuns</li>
     </weaponTags>
     <weaponMoney>400~600</weaponMoney>
+	<fixedInventory>
+	        <Cinder_ExtraArmour>1</Cinder_ExtraArmour>
+	</fixedInventory>
 	<modExtensions>
 			<li Class="Embergarden.ModExtension_RandomOneAbility">
 				<abilities>
