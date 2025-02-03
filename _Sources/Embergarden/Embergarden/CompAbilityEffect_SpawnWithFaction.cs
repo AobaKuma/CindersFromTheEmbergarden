@@ -14,8 +14,8 @@ namespace Embergarden
         {
             base.Apply(target, dest);
             spawnedThing = ThingMaker.MakeThing(Props.thingDef);
-            GenPlace.TryPlaceThing(spawnedThing, target.Cell, parent.pawn.Map, ThingPlaceMode.Near);
             spawnedThing.SetFactionDirect(parent.ConstantCaster.Faction);
+            GenPlace.TryPlaceThing(spawnedThing, target.Cell, parent.pawn.Map, ThingPlaceMode.Near);
             if (Props.sendSkipSignal)
             {
                 CompAbilityEffect_Teleport.SendSkipUsedSignal(target, parent.pawn);
