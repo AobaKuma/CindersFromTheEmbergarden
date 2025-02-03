@@ -4,6 +4,7 @@
 					<xpath>/Defs/FactionDef[defName = "Empire"]/permanentEnemyToEveryoneExcept</xpath>
 					<value>
 						<li>Cinder_PlayerFaction</li>
+						<li>Cinder_PlayerFactionB</li>
 					</value>
 	</Operation>
 </Patch>
