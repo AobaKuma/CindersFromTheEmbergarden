@@ -3,7 +3,7 @@
   <XenotypeDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>Cinder_Xenotype</defName>
     <label>Cinder</label>
-    <description>A pure blooded human that has never undergone genetic modification, but has foreign non biological components on its body.</description>
+    <description>A pure blooded human that has never undergone genetic modification, but has foreign non biological components on their body.</description>
     <descriptionShort>A semi biological and semi non biological variant produced by humans, unable to determine whether it is a gene or some strange creation on this person's body.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
     <!--可继承-->

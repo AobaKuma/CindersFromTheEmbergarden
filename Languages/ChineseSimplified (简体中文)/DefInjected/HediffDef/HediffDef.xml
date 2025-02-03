@@ -67,7 +67,7 @@
   <!-- EN: Amorphous polymer is used to repair this person's body -->
   <Cinder_Regen.description>无定形聚合物正在修复此人的身体</Cinder_Regen.description>
   <!-- EN: unlocked -->
-  <Cinder_Regen.comps.HediffComp_Regen.unlockedString>锁定</Cinder_Regen.comps.HediffComp_Regen.unlockedString>
+  <Cinder_Regen.comps.HediffComp_Regen.unlockedString>已解锁</Cinder_Regen.comps.HediffComp_Regen.unlockedString>
   
   <!-- EN: resurrect -->
   <Cinder_Resurrect.label>复活</Cinder_Resurrect.label>

@@ -17,7 +17,8 @@
     <settlementGenerationWeight>1</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <canSiege>false</canSiege>
-    <canStageAttacks>false</canStageAttacks>
+    <canStageAttacks>true</canStageAttacks>
+	<canUseAvoidGrid>true</canUseAvoidGrid>
 	<autoFlee>false</autoFlee>
 	
     <leaderTitle>Lantern Bearer</leaderTitle>
@@ -250,7 +251,8 @@
     <hidden>true</hidden>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <canSiege>false</canSiege>
-    <canStageAttacks>false</canStageAttacks>
+    <canStageAttacks>true</canStageAttacks>
+	<canUseAvoidGrid>true</canUseAvoidGrid>
 	<autoFlee>false</autoFlee>
 	
     <factionIconPath>UI/Icon/fleetIcon</factionIconPath>
@@ -301,7 +303,7 @@
     <raidLootMaker>Cinder_OutlanderRaidLootMaker</raidLootMaker>
     <maxPawnCostPerTotalPointsCurve>
       <points>
-        <li>(900,200)</li>
+        <li>(900,250)</li>
         <li>(3000,300)</li>
         <li>(100000,10000)</li>
       </points>

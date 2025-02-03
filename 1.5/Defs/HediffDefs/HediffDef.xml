@@ -4,7 +4,7 @@
 		<modExtensions>
 			<li Class="Embergarden.RandomCapacityModifier">
 				<capacity>Manipulation</capacity>
-				<range>0.90~1.10</range>
+				<range>0.90~1.05</range>
 				<offset>false</offset>
 			</li>
 		</modExtensions>

@@ -89,6 +89,7 @@
     <description>Carriers of this gene will resurrect upon death.</description>
     <iconPath>UI/Gene/Revive</iconPath>
     <displayOrderInCategory>0</displayOrderInCategory>
+	 <biostatCpx>4</biostatCpx>
 	 <biostatMet>-2</biostatMet>
 	 <minAgeActive>0</minAgeActive>
 	<modExtensions>
@@ -106,6 +107,7 @@
     <description>Carriers of this gene when injured,will regenerate according to its original body structure.</description>
     <iconPath>UI/Gene/AmorphousRegeneration</iconPath>
     <displayOrderInCategory>0</displayOrderInCategory>
+	 <biostatCpx>4</biostatCpx>
 	 <biostatMet>-2</biostatMet>
 	 <minAgeActive>0</minAgeActive>
 	<modExtensions>
@@ -163,7 +165,7 @@
     <iconPath>UI/Gene/UncontrollableTentacle</iconPath>
 	<selectionWeight>1.5</selectionWeight>
     <displayOrderInCategory>0</displayOrderInCategory>
-    <biostatCpx>1</biostatCpx>
+    <biostatCpx>4</biostatCpx>
     <biostatMet>4</biostatMet>
 	 <exclusionTags>
       <li>CinderTentacle</li>

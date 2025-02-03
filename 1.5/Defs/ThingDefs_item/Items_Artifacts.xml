@@ -68,7 +68,7 @@
 
 	<ThingDef ParentName="Cinder_ArtifactBase">
 		<defName>Cinder_RegeneratedEnhancedSerum</defName>
-		<label>regenerated enhanced serum</label>
+		<label>regeneration enhanced serum</label>
 		<description>A type of eroded golden serum, injected into the human body, enhances the regeneration ability of amorphous polymers and gives the user the ability to come back to life after death.</description>
 		<tradeability>None</tradeability>
 		<graphicData>

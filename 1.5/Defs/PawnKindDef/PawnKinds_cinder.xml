@@ -852,7 +852,7 @@
     <PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_SoliderUnit</defName>
 		<label>solider unit</label>
-		<combatPower>180</combatPower>
+		<combatPower>220</combatPower>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
 		<isFighter>true</isFighter>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
@@ -883,7 +883,6 @@
 		</backstoryFiltersOverride>
 		<apparelTags>
 			<li>Cinder_Military_Heavy</li>
-			<li>BeltDefensePop</li>
 		</apparelTags>
 	<specificApparelRequirements>
       <li>
@@ -904,6 +903,7 @@
 	<apparelRequired>
       <li>Cinder_Apparel_LowVisibilityDress</li>
 	  <li>Cinder_HeadGear_FullyEnclosedMask</li>
+	  <li>Apparel_SmokepopBelt</li>
     </apparelRequired>
 		<apparelMoney>
 			<min>5500</min>
@@ -925,7 +925,7 @@
     <PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_BreakUnit</defName>
 		<label>break through unit</label>
-		<combatPower>320</combatPower>
+		<combatPower>350</combatPower>
 		<maxPerGroup>4</maxPerGroup>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
 		<isFighter>true</isFighter>
@@ -1014,7 +1014,7 @@
 	 <PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_HeavySoliderUnit</defName>
 		<label>Bombing unit</label>
-		<combatPower>380</combatPower>
+		<combatPower>420</combatPower>
 		<maxPerGroup>4</maxPerGroup>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
 		<isFighter>true</isFighter>
@@ -1107,7 +1107,7 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_Ghoul</defName>
 		<label>ghoul unit</label>
-		<combatPower>100</combatPower>
+		<combatPower>150</combatPower>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
 		<itemQuality>Poor</itemQuality>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
@@ -1157,7 +1157,7 @@
 		<defName>Cinder_EliteGhoul</defName>
 		<label>ghoul unit</label>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
-		<combatPower>200</combatPower>
+		<combatPower>250</combatPower>
 		<maxPerGroup>8</maxPerGroup>
 		<itemQuality>Poor</itemQuality>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
