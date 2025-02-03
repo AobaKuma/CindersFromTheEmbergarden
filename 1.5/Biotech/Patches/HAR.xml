@@ -19,20 +19,7 @@
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/GeneDef[defName="Cinder_ErosionEyes"]/renderNodeProperties</xpath>
 				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/alienRace/raceRestriction/blackEndoCategories</xpath>
-					<value>
-                      <blackEndoCategories>
-                         <li>Melanin</li>
-                         <li>BodyType</li>
-                         <li>Nose</li>
-                         <li>Voice</li>
-                         <li>Headbone</li>
-                         <li>Head</li>
-                         <li>Jaw</li>
-                      </blackEndoCategories>
-					</value>
-				</li>
+
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/alienRace/raceRestriction/blackGeneTags</xpath>
 					<value>

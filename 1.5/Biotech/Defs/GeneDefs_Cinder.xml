@@ -112,11 +112,15 @@
 	</modExtensions>
   </GeneDef>
 
-  <GeneDef ParentName="GeneEarsBase">
+  <GeneDef>
     <defName>Cinder_Fin</defName>
     <label>fin</label>
     <labelShortAdj>fin</labelShortAdj>
     <description>Carriers of this gene will grow head fins.</description>
+	 <biostatCpx>0</biostatCpx>
+    <displayCategory>Cosmetic</displayCategory>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <randomChosen>true</randomChosen>
     <iconPath>UI/Gene/Fin</iconPath>
 	<selectionWeight>1.5</selectionWeight>
     <displayOrderInCategory>0</displayOrderInCategory>
@@ -145,10 +149,12 @@
   </GeneDef>
   
   
-  <GeneDef ParentName="GeneTailBase">
+  <GeneDef>
     <defName>Cinder_UncontrollableTentacle</defName>
     <label>uncontrollable tentacle</label>
     <description>Carriers of this gene will grow uncontrollable tentacle.</description>
+	 <displayCategory>Miscellaneous</displayCategory>
+    <randomChosen>true</randomChosen>
 	<geneClass>Embergarden.Gene_AddHediff</geneClass>
     <iconPath>UI/Gene/UncontrollableTentacle</iconPath>
 	<selectionWeight>1.5</selectionWeight>
