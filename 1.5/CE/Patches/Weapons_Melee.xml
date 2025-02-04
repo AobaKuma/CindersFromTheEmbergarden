@@ -11,7 +11,7 @@
 					</capacities>
 					<power>20</power>
 					<cooldownTime>2</cooldownTime>
-					<armorPenetrationBlunt>50</armorPenetrationBlunt>
+					<armorPenetrationBlunt>100</armorPenetrationBlunt>
 					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
 				</li>
 			</tools>
@@ -66,8 +66,8 @@
 					</capacities>
 					<power>16</power>
 					<cooldownTime>1.5</cooldownTime>
-					<armorPenetrationBlunt>1</armorPenetrationBlunt>
-					<armorPenetrationSharp>1.2</armorPenetrationSharp>
+					<armorPenetrationBlunt>40</armorPenetrationBlunt>
+					<armorPenetrationSharp>15</armorPenetrationSharp>
 					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 				</li>
 			</tools>
