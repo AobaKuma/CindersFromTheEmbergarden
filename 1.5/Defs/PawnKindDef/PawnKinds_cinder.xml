@@ -655,7 +655,7 @@
     <li>MedievalMeleeBasic</li>
 	<li>MedievalMeleeAdvanced</li>
     </weaponTags>
-    <weaponMoney>400~600</weaponMoney>
+    <weaponMoney>600~700</weaponMoney>
 	<modExtensions>
 			<li Class="Embergarden.ModExtension_RandomOneAbility">
 				<abilities>
@@ -1213,7 +1213,7 @@
 	<weaponTags>
     <li>Cinder_IndustrialMelee</li>
     </weaponTags>
-    <weaponMoney>465~500</weaponMoney>
+    <weaponMoney>600~700</weaponMoney>
 	</PawnKindDef>
 
 </Defs>

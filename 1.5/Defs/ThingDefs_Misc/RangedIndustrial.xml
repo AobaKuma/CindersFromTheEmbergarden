@@ -487,6 +487,7 @@
 			<researchPrerequisite Inherit="False"/>
 			<researchPrerequisites Inherit="False">
 				<li>PrecisionRifling</li>
+				<li>Cinder_MultipleWarheads</li>
 			</researchPrerequisites>
 		</recipeMaker>
 		<verbs>

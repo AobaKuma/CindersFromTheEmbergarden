@@ -5,9 +5,9 @@
 		<value>
 			<tools>
 				<li Class="CombatExtended.ToolCE">
-					<label>handle</label>
+					<label>head</label>
 					<capacities>
-						<li>Blunt</li>
+						<li>Demolish</li>
 					</capacities>
 					<power>20</power>
 					<cooldownTime>2</cooldownTime>
