@@ -171,21 +171,21 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Cinder_Mech_WarSweeper"]/statBases</xpath>
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_WarAttacker"]/statBases</xpath>
 		<value>
 			<ArmorRating_Blunt>85</ArmorRating_Blunt>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Cinder_Mech_WarSweeper"]/statBases</xpath>
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_WarAttacker"]/statBases</xpath>
 		<value>
 			<ArmorRating_Sharp>32</ArmorRating_Sharp>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Cinder_Mech_WarSweeper"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_WarAttacker"]/comps</xpath>
 		<value>
 			<li Class="CombatExtended.CompProperties_ArmorDurability">
 				<Durability>1160</Durability>
@@ -210,7 +210,7 @@
 
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_Mech_ErodedEXO"]/tools</xpath>
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_WarSweeper"]/tools</xpath>
 		<value>
 			<tools>
 				<li Class="CombatExtended.ToolCE">
@@ -254,21 +254,21 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_Mech_ErodedEXO"]/statBases/ArmorRating_Blunt</xpath>
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_WarSweeper"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
 			<ArmorRating_Blunt>45</ArmorRating_Blunt>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_Mech_ErodedEXO"]/statBases/ArmorRating_Sharp</xpath>
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_WarSweeper"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
 			<ArmorRating_Sharp>20</ArmorRating_Sharp>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Cinder_Mech_ErodedEXO"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_WarSweeper"]/comps</xpath>
 		<value>
 			<li Class="CombatExtended.CompProperties_ArmorDurability">
 				<Durability>1160</Durability>
