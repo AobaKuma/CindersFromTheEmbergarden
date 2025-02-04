@@ -18,7 +18,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[@Name="Cinder_BaseTurretWalker"]/statBases/ArmorRating_Heat</xpath>
 		<value>
-			<ArmorRating_Heat>0.00</ArmorRating_Heat>
+			<ArmorRating_Heat>1.00</ArmorRating_Heat>
 		</value>
 	</Operation>
 
@@ -65,7 +65,7 @@
 				<RepairValue>200</RepairValue>
 				<CanOverHeal>true</CanOverHeal>
 				<MaxOverHeal>116</MaxOverHeal>
-				<MinArmorPct>0.5</MinArmorPct>
+				<MinArmorPct>0.8</MinArmorPct>
 			</li>
 		</value>
 	</Operation>
@@ -192,7 +192,7 @@
 				<RepairValue>200</RepairValue>
 				<CanOverHeal>true</CanOverHeal>
 				<MaxOverHeal>116</MaxOverHeal>
-				<MinArmorPct>0.5</MinArmorPct>
+				<MinArmorPct>0.8</MinArmorPct>
 			</li>
 		</value>
 	</Operation>

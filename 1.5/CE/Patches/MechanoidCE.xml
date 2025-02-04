@@ -97,7 +97,8 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Cinder_Mech_ErodedEXO"]/statBases</xpath>
 		<value>
-			<ArmorRating_Sharp>42</ArmorRating_Sharp>
+			<ArmorRating_Sharp>30</ArmorRating_Sharp>
+			<ArmorRating_Heat>2.00</ArmorRating_Heat>
 		</value>
 	</Operation>
 
@@ -118,7 +119,7 @@
 				<RepairValue>200</RepairValue>
 				<CanOverHeal>true</CanOverHeal>
 				<MaxOverHeal>116</MaxOverHeal>
-				<MinArmorPct>0.5</MinArmorPct>
+				<MinArmorPct>0.8</MinArmorPct>
 			</li>
 		</value>
 	</Operation>
@@ -173,14 +174,15 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Cinder_Mech_WarAttacker"]/statBases</xpath>
 		<value>
-			<ArmorRating_Blunt>85</ArmorRating_Blunt>
+			<ArmorRating_Blunt>485</ArmorRating_Blunt>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Cinder_Mech_WarAttacker"]/statBases</xpath>
 		<value>
-			<ArmorRating_Sharp>32</ArmorRating_Sharp>
+			<ArmorRating_Sharp>45</ArmorRating_Sharp>
+			<ArmorRating_Heat>2.00</ArmorRating_Heat>
 		</value>
 	</Operation>
 
@@ -201,7 +203,7 @@
 				<RepairValue>200</RepairValue>
 				<CanOverHeal>true</CanOverHeal>
 				<MaxOverHeal>116</MaxOverHeal>
-				<MinArmorPct>0.5</MinArmorPct>
+				<MinArmorPct>0.8</MinArmorPct>
 			</li>
 		</value>
 	</Operation>
@@ -253,17 +255,18 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_Mech_WarSweeper"]/statBases/ArmorRating_Blunt</xpath>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_WarSweeper"]/statBases</xpath>
 		<value>
-			<ArmorRating_Blunt>45</ArmorRating_Blunt>
+			<ArmorRating_Blunt>445</ArmorRating_Blunt>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_Mech_WarSweeper"]/statBases/ArmorRating_Sharp</xpath>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_WarSweeper"]/statBases</xpath>
 		<value>
-			<ArmorRating_Sharp>20</ArmorRating_Sharp>
+			<ArmorRating_Sharp>40</ArmorRating_Sharp>
+			<ArmorRating_Heat>2.00</ArmorRating_Heat>
 		</value>
 	</Operation>
 
@@ -284,7 +287,7 @@
 				<RepairValue>200</RepairValue>
 				<CanOverHeal>true</CanOverHeal>
 				<MaxOverHeal>116</MaxOverHeal>
-				<MinArmorPct>0.5</MinArmorPct>
+				<MinArmorPct>0.8</MinArmorPct>
 			</li>
 		</value>
 	</Operation>
