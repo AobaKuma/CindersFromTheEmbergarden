@@ -142,13 +142,14 @@
     <PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_OutlanderCivilan</defName>
 		<label>Civilan</label>
+		<combatPower>45</combatPower>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<itemQuality>Poor</itemQuality>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<isFighter>false</isFighter>
 		<initialWillRange>10~30</initialWillRange>
 		<invNutrition>1</invNutrition>
-		<apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<maxGenerationAge>45</maxGenerationAge>
         <minGenerationAge>13</minGenerationAge>
 		<backstoryFiltersOverride>
@@ -195,9 +196,8 @@
 	<weaponTags>
     <li>CinderSimpleGuns</li>
 	<li>SimpleGun</li>
-	<li>MedievalMeleeBasic</li>
     </weaponTags>
-    <weaponMoney>65~400</weaponMoney>
+    <weaponMoney>200~400</weaponMoney>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="Cinder_BasePawn">
@@ -852,7 +852,8 @@
     <PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_SoliderUnit</defName>
 		<label>solider unit</label>
-		<combatPower>220</combatPower>
+		<combatPower>180</combatPower>
+		<maxPerGroup>20</maxPerGroup>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
 		<isFighter>true</isFighter>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
@@ -926,7 +927,7 @@
 		<defName>Cinder_BreakUnit</defName>
 		<label>break through unit</label>
 		<combatPower>350</combatPower>
-		<maxPerGroup>4</maxPerGroup>
+		<maxPerGroup>6</maxPerGroup>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
 		<isFighter>true</isFighter>
 		<itemQuality>Excellent</itemQuality>
@@ -1107,7 +1108,8 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_Ghoul</defName>
 		<label>ghoul unit</label>
-		<combatPower>150</combatPower>
+		<combatPower>90</combatPower>
+		<maxPerGroup>35</maxPerGroup>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
 		<itemQuality>Poor</itemQuality>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
@@ -1161,8 +1163,8 @@
 		<defName>Cinder_EliteGhoul</defName>
 		<label>ghoul unit</label>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
-		<combatPower>250</combatPower>
-		<maxPerGroup>8</maxPerGroup>
+		<combatPower>205</combatPower>
+		<maxPerGroup>10</maxPerGroup>
 		<itemQuality>Poor</itemQuality>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<isFighter>true</isFighter>
