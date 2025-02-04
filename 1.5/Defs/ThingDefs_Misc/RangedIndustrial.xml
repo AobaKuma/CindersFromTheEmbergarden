@@ -84,8 +84,14 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>20</damageAmountBase>
 			<stoppingPower>5</stoppingPower>
-			<armorPenetrationBase>0.32</armorPenetrationBase>
+			<armorPenetrationBase>0.52</armorPenetrationBase>
 			<speed>65</speed>
+			<extraDamages>
+				<li>
+					<def>Cinder_ExtraBullet</def>
+					<amount>15</amount>
+				</li>
+			</extraDamages>
 		</projectile>
 	</ThingDef>
 
@@ -315,6 +321,7 @@
 		</verbs>
 		<weaponTags>
 			<li>CinderRifles</li>
+			<li>CinderPDW</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -449,7 +456,7 @@
 			<AccuracyShort>0.75</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.55</AccuracyLong>
-			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
 		</statBases>
 
 		<randomStyleChance>1</randomStyleChance>
@@ -488,10 +495,10 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Cinder_Bullet_50APE</defaultProjectile>
 				<warmupTime>1</warmupTime>
-				<range>28.9</range>
-				<burstShotCount>3</burstShotCount>
+				<range>29.9</range>
+				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-				<soundCast>Shot_Autocannon</soundCast>
+				<soundCast>Shot_TurretSniper</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>

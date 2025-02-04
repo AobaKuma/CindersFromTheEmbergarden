@@ -1152,7 +1152,6 @@
         </requiredWorkTags>
 		<weaponTags>
     <li>MedievalMeleeBasic</li>
-	<li>MedievalMeleeDecent</li>
     </weaponTags>
     <weaponMoney>200~400</weaponMoney>
 	</PawnKindDef>
