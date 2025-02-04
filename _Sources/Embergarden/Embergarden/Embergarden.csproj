@@ -85,6 +85,7 @@
     <Compile Include="HarmonyPatch\HarmonyEntry.cs" />
     <Compile Include="HarmonyPatch\Patch_DrawVehicleTurret.cs" />
     <Compile Include="HarmonyPatch\PawnGeneratorPatch.cs" />
+    <Compile Include="HarmonyPatch\IncidentWorker_RaidPatch.cs" />
     <Compile Include="HarmonyPatch\PawnGizmoPatch.cs" />
     <Compile Include="HarmonyPatch\Pawn_DraftController_Postfix.cs" />
     <Compile Include="HediffComp_CustomRegeneration.cs" />
