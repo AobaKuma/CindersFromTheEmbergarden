@@ -13,7 +13,7 @@
 		<xpath>Defs/ThingDef[@Name="Cinder_BaseMechaWalker"]/statBases</xpath>
 		<value>
 			<CarryWeight>50</CarryWeight>
-			<CarryBulk>20</CarryBulk>
+			<CarryBulk>30</CarryBulk>
 			<AimingAccuracy>1.7</AimingAccuracy>
 			<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
 			<MeleeDodgeChance>0.13</MeleeDodgeChance>

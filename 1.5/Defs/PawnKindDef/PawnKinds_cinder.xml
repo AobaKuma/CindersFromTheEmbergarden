@@ -910,10 +910,10 @@
 			<max>5900</max>
 		</apparelMoney>
 	<weaponTags>
-	<li>CinderRifles</li>
+	<li>CinderElite</li>
 	<li>GunHeavy</li>
     </weaponTags>
-    <weaponMoney>700~1900</weaponMoney>
+    <weaponMoney>900~1900</weaponMoney>
 	 <skills>
 	  <li>
         <skill>Shooting</skill>
@@ -1150,6 +1150,11 @@
 		<requiredWorkTags>
         <li>Violent</li>
         </requiredWorkTags>
+		<weaponTags>
+    <li>MedievalMeleeBasic</li>
+	<li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <weaponMoney>200~400</weaponMoney>
 	</PawnKindDef>
 	
 	
