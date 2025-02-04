@@ -48,6 +48,14 @@
 			<Mass>4</Mass>
 		</value>
 	</Operation>
+	
+	<Operation Class="Embergarden.PatchOperationAddSafe">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_ScavHeavyCoat"]</xpath>
+		<testName>equippedStatOffsets</testName>
+		<value>
+			<CarryBulk>15</CarryBulk>
+		</value>
+	</Operation>
 
 
 
@@ -105,6 +113,14 @@
 		<value>
 			<Bulk>5</Bulk>
 			<WornBulk>2.5</WornBulk>
+		</value>
+	</Operation>
+	
+	<Operation Class="Embergarden.PatchOperationAddSafe">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_WorkwearJacket"]</xpath>
+		<testName>equippedStatOffsets</testName>
+		<value>
+			<CarryBulk>10</CarryBulk>
 		</value>
 	</Operation>
 
@@ -276,6 +292,14 @@
 			<WornBulk>2</WornBulk>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_HeavyArmorDress"]/equippedStatOffsets</xpath>
+		<value>
+			<CarryBulk>20</CarryBulk>
+			<Suppressability>-1</Suppressability>
+		</value>
+	</Operation>
 
 
 
@@ -298,6 +322,14 @@
 		<value>
 			<Bulk>15</Bulk>
 			<WornBulk>2</WornBulk>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_LowVisibilityDress"]/equippedStatOffsets</xpath>
+		<value>
+			<CarryBulk>15</CarryBulk>
+			<Suppressability>-1</Suppressability>
 		</value>
 	</Operation>
 </Patch>
