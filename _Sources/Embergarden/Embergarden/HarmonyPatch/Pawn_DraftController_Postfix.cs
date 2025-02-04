@@ -43,7 +43,7 @@ namespace Embergarden
             }
         }
     }
-
+    /*
     [StaticConstructorOnStartup]
     [HarmonyPatch]
     static class Pawn_IsColonyMechPlayerControlled_Postfix
@@ -76,7 +76,7 @@ namespace Embergarden
             }
         }
     }
-
+    */
     [StaticConstructorOnStartup]
     [HarmonyPatch(typeof(MechanitorUtility), "InMechanitorCommandRange")]
     static class InMechanitorCommandRange_Postfix
