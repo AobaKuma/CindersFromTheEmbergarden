@@ -13,7 +13,7 @@ namespace Embergarden
     {
         public static void Prefix(ref IncidentParms parms)
         {
-            if (parms.faction.def.GetModExtension<ModExtension_FactionBehavior>() is ModExtension_FactionBehavior modExtension)
+            if (parms.faction?.def.GetModExtension<ModExtension_FactionBehavior>() is ModExtension_FactionBehavior modExtension)
             {
                 parms.canSteal = modExtension.steal;
                 parms.canKidnap = modExtension.canKidnap;
