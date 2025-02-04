@@ -135,7 +135,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Cinder_Apparel_BulletproofEquipment"]/statBases/StuffEffectMultiplierArmor</xpath>
 		<value>
-			<StuffEffectMultiplierArmor>8</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>10</StuffEffectMultiplierArmor>
 		</value>
 	</Operation>
 

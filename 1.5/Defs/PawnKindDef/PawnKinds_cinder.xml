@@ -648,14 +648,14 @@
       <li>Apparel_ShieldBelt</li>
     </apparelRequired>
 		<apparelMoney>
-			<min>1100</min>
-			<max>1900</max>
+			<min>1700</min>
+			<max>2100</max>
 		</apparelMoney>
 	<weaponTags>
     <li>MedievalMeleeBasic</li>
 	<li>MedievalMeleeAdvanced</li>
     </weaponTags>
-    <weaponMoney>300~500</weaponMoney>
+    <weaponMoney>400~600</weaponMoney>
 	<modExtensions>
 			<li Class="Embergarden.ModExtension_RandomOneAbility">
 				<abilities>

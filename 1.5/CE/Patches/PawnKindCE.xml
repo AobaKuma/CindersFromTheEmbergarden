@@ -42,4 +42,176 @@
 			</li>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_SoliderUnit"]/combatPower</xpath>
+		<value>
+			<combatPower>140</combatPower>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_HeavySoliderUnit" or defName="Cinder_BreakUnit"]/combatPower</xpath>
+		<value>
+			<combatPower>240</combatPower>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_Ghoul" or defName="Cinder_EliteGhoul"]/combatPower</xpath>
+		<value>
+			<combatPower>90</combatPower>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_Outlander" or defName="Cinder_EliteCult"]/combatPower</xpath>
+		<value>
+			<combatPower>100</combatPower>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_Outlander"]/weaponTags</xpath>
+		<value>
+	<weaponTags>
+	<li>CinderElite</li>
+    </weaponTags>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_Outlander"]/weaponMoney</xpath>
+		<value>
+          <weaponMoney>900~1900</weaponMoney>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_Outlander"]/specificApparelRequirements</xpath>
+		<value>
+          <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(66, 61, 51)</color>
+      </li>
+	  <li>
+		<requiredTag>Cinder_MilitaryMedium</requiredTag>
+		<apparelLayer>Overhead</apparelLayer>
+      </li>
+	  <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+		<requiredTag>Cinder_Bulletproof</requiredTag>
+		<stuff>Hyperweave</stuff>
+		<apparelLayer>Middle</apparelLayer>
+      </li>
+	  <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+		<requiredTag>Cinder_Outlands</requiredTag>
+		<apparelLayer>Shell</apparelLayer>
+      </li>
+      <li>
+        <bodyPartGroup>Legs</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(66, 61, 51)</color>
+      </li>
+    </specificApparelRequirements>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_Cult"]/specificApparelRequirements</xpath>
+		<value>
+       <specificApparelRequirements>
+	  <li>
+        <bodyPartGroup>FullHead</bodyPartGroup>
+        <requiredTag>Cinder_Cult</requiredTag>
+        <useRandomStyleDef>true</useRandomStyleDef>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(85, 85, 85)</color>
+      </li>
+	  <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+		<requiredTag>Cinder_Bulletproof</requiredTag>
+		<stuff>Synthread</stuff>
+		<apparelLayer>Middle</apparelLayer>
+      </li>
+	  <li>
+        <apparelLayer>Shell</apparelLayer>
+        <color>(85, 85, 85)</color>
+		<stuff>Synthread</stuff>
+        <alternateTagChoices>
+          <li>
+            <tag>Robe</tag>
+            <chance>1</chance>
+          </li>
+        </alternateTagChoices>
+      </li>
+      <li>
+        <bodyPartGroup>Legs</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(85, 85, 85)</color>
+      </li>
+    </specificApparelRequirements>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_EliteCult"]/specificApparelRequirements</xpath>
+		<value>
+       <specificApparelRequirements>
+	   <li>
+        <bodyPartGroup>FullHead</bodyPartGroup>
+        <requiredTag>Cinder_Cult</requiredTag>
+        <useRandomStyleDef>true</useRandomStyleDef>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(85, 85, 85)</color>
+      </li>
+	 <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+		<requiredTag>Cinder_Bulletproof</requiredTag>
+		<stuff>Hyperweave</stuff>
+		<apparelLayer>Middle</apparelLayer>
+      </li>
+	  <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+		<requiredTag>Cinder_Outlands</requiredTag>
+		<apparelLayer>Shell</apparelLayer>
+      </li>
+      <li>
+        <bodyPartGroup>Legs</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(85, 85, 85)</color>
+      </li>
+    </specificApparelRequirements>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_EliteCult"]/weaponTags</xpath>
+		<value>
+      <weaponTags>
+    <li>Cinder_IndustrialMelee</li>
+    </weaponTags>
+		</value>
+	</Operation>
 </Patch>
