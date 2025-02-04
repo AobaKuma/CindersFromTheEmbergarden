@@ -246,6 +246,9 @@
       <texPath>Things/Building/AmorphousIED</texPath>
     </graphicData>
     <designationHotKey>Misc7</designationHotKey>
+	 <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+    </statBases>
     <comps>
       <li Class="CompProperties_Explosive">
         <explosiveRadius>3.9</explosiveRadius>

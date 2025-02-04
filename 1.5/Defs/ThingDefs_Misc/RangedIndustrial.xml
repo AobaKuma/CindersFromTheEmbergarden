@@ -77,8 +77,9 @@
 		<defName>Cinder_Bullet_50APE</defName>
 		<label>.50 bullet</label>
 		<graphicData>
-			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<texPath>Things/Weapons/Bullet_clustered</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.4, 1.4)</drawSize>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>

@@ -373,5 +373,12 @@
       </li>
     </pawnGroupMakers>
     <settlementTexturePath>UI/Icon/CinderSettlement</settlementTexturePath>
+	<modExtensions>
+			<li Class="Embergarden.ModExtension_FactionBehavior">
+				<steal>false</steal>
+				<canKidnap>false</canKidnap>
+				<timeoutFlee>false</timeoutFlee>
+			</li>
+		</modExtensions>
   </FactionDef>
 </Defs>
