@@ -2,7 +2,7 @@
 <Patch>
 	
     <Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="Cinder_Grenadier" or defName="Cinder_OutlanderElite" or defName="Cinder_BreakUnit" or defName="Cinder_HeavySoliderUnit"]</xpath>
+		<xpath>Defs/PawnKindDef[defName="Cinder_Grenadier" or defName="Cinder_OutlanderElite" or defName="Cinder_BreakUnit" or defName="Cinder_HeavySoliderUnit" or defName="Cinder_SoliderUnit"]</xpath>
 		<value>
 		    <li Class="CombatExtended.LoadoutPropertiesExtension">
 			    <primaryMagazineCount>
@@ -32,7 +32,7 @@
 	
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/PawnKindDef[defName="Cinder_Colonist" or defName="Cinder_Leader" or defName="Cinder_OutlanderCivilan" or defName="Cinder_SupplyOfficer" or defName="Cinder_OutlanderSecond" or defName="Cinder_Outlander"
-		  or defName="Cinder_Outlander" or defName="Cinder_CasterUnit"  or defName="Cinder_SoliderUnit"]</xpath>
+		  or defName="Cinder_Outlander" or defName="Cinder_CasterUnit"]</xpath>
 		<value>
 		    <li Class="CombatExtended.LoadoutPropertiesExtension">
 			    <primaryMagazineCount>
