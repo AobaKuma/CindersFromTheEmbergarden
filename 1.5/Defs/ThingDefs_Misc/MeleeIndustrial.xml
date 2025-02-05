@@ -20,7 +20,9 @@
     </statBases>
 	<equippedAngleOffset>-25</equippedAngleOffset>
     <recipeMaker Inherit="false">
-      <researchPrerequisite>Smithing</researchPrerequisite>
+      <researchPrerequisites>
+				<li>Cinder_WarMachinery</li>
+	</researchPrerequisites>
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>
@@ -30,7 +32,7 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentIndustrial>10</ComponentIndustrial>
 			<Steel>40</Steel>
             <Cinder_AmorphousPolymer>40</Cinder_AmorphousPolymer>
 	</costList>
@@ -45,10 +47,11 @@
         <label>head</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>
-          <li>Blunt</li>
+          <li>Demolish</li>
         </capacities>
         <power>20</power>
         <cooldownTime>2</cooldownTime>
+		<armorPenetration>0.7</armorPenetration>
       </li>
     </tools>
 	<equippedStatOffsets>
@@ -79,7 +82,9 @@
     </statBases>
     <equippedAngleOffset>-65</equippedAngleOffset>
    <recipeMaker Inherit="false">
-      <researchPrerequisite>Smithing</researchPrerequisite>
+     <researchPrerequisites>
+				<li>Cinder_WarMachinery</li>
+	</researchPrerequisites>
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>
@@ -89,7 +94,7 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentIndustrial>10</ComponentIndustrial>
 			<Steel>40</Steel>
             <Cinder_AmorphousPolymer>40</Cinder_AmorphousPolymer>
 	</costList>
@@ -101,6 +106,7 @@
         </capacities>
         <power>16</power>
         <cooldownTime>1.5</cooldownTime>
+		 <armorPenetration>0.7</armorPenetration>
       </li>
       <li>
         <label>edge</label>
@@ -109,6 +115,7 @@
         </capacities>
         <power>16</power>
         <cooldownTime>1.5</cooldownTime>
+		 <armorPenetration>0.7</armorPenetration>
       </li>
     </tools>
 	<equippedStatOffsets>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_AmorphousPolymer"]/statBases</xpath>
+		<value>
+    <statBases>
+      <MarketValue>0.75</MarketValue>
+      <Mass>0.25</Mass>
+      <StuffPower_Armor_Sharp>1.8</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>2.7</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.7</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>2.5</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.1</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+		</value>
+	</Operation>
+</Patch>

@@ -17,6 +17,27 @@
 		</value>
 	</Operation>
 	
+		<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="Cinder_Regen"]/stages</xpath>
+		<value>
+		   <stages>
+			<li>
+				<painOffset>-0.3</painOffset>
+				<damageFactors>
+					<Flame>0.1</Flame>
+					<Burn>0.1</Burn>
+					<Flame>0</Flame>
+				  <Burn>0</Burn>
+				</damageFactors>
+				<totalBleedFactor>0.9</totalBleedFactor>
+				<statFactors>
+					<Suppressability>0.25</Suppressability>
+			</statFactors>
+			</li>
+		  </stages>
+		</value>
+	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/HediffDef[defName="Cinder_LongDream"]/stages/li[1]/statOffsets</xpath>
 		<value>

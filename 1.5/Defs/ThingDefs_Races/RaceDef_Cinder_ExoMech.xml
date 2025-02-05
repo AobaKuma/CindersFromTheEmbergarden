@@ -227,7 +227,7 @@
 		<defName>Cinder_Mech_ErodedEXO</defName>
 		<label>eroded exoskeleton</label>
 		<race>Cinder_Mech_ErodedEXO</race>
-		<combatPower>700</combatPower>
+		<combatPower>800</combatPower>
          <maxPerGroup>2</maxPerGroup>
 		 <allowInMechClusters>false</allowInMechClusters>
          <isBoss>true</isBoss>

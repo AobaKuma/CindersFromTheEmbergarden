@@ -188,7 +188,7 @@
 	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
 		<defName>Cinder_MP12A</defName>
 		<statBases>
-			<Mass>2.50</Mass>
+			<Mass>1.80</Mass>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 			<SightsEfficiency>1.00</SightsEfficiency>
 			<ShotSpread>0.14</ShotSpread>

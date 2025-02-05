@@ -100,14 +100,14 @@
         <kindDef>Combat</kindDef>
 		<commonality>100</commonality>
         <options>
-		  <Cinder_OutlanderCivilan>2</Cinder_OutlanderCivilan>
-          <Cinder_Cult>2.5</Cinder_Cult>
-		  <Cinder_OutlanderSecond>13</Cinder_OutlanderSecond>
+		  <Cinder_Cult>3</Cinder_Cult>
+		  <Cinder_OutlanderCivilan>3</Cinder_OutlanderCivilan>
+		  <Cinder_OutlanderSecond>12</Cinder_OutlanderSecond>
+		  <Cinder_Mech_MiniTurretWalker>5</Cinder_Mech_MiniTurretWalker>
           <Cinder_Outlander>15</Cinder_Outlander>
           <Cinder_Mech_WalkerAutoCannon>1.5</Cinder_Mech_WalkerAutoCannon>
           <Cinder_EliteCult>2</Cinder_EliteCult>
           <Cinder_OutlanderElite>1</Cinder_OutlanderElite>
-          <Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
           <Cinder_Mech_WalkerSniper>0.7</Cinder_Mech_WalkerSniper>
         </options>
       </li>
@@ -237,7 +237,7 @@
    <FactionDef ParentName="FactionBase">
 	 <defName>Cinder_ESDSP</defName>
     <label>cradle</label>
-    <description>Driven to a dead end by the war, the cinders entrusted everything they had, including their own bodies, to DI in an attempt to end the conflict. However, the underlying logic of DI is chaotic, stemming from the ancient god's blood and flesh remnants, rendering it incapable of making a correct judgment on whether the war has ended. Even thousands of years later, after the shadow zones dissipated and the so-called enemies were overthrown and disintegrated, it still cannot determine that the war is over. Instead, it gazes into the boundless starry sky and begins an endless war against any armed threat that has yet to surrender..</description>
+    <description>Driven to a dead end by the war, the cinders entrusted everything they had, including their own bodies, to DI in an attempt to end the conflict. However, the underlying logic of DI is chaotic, stemming from the Other god's blood and flesh remnants, rendering it incapable of making a correct judgment on whether the war has ended. Even thousands of years later, after the enclosed area dissipated and the so-called enemies were overthrown and disintegrated, it still cannot determine that the war is over. Instead, it gazes into the boundless starry sky and begins an endless war against any armed threat that has yet to surrender.</description>
     <colorSpectrum>
       <li>(1, 1, 1)</li>
     </colorSpectrum>
@@ -303,8 +303,10 @@
     <raidLootMaker>Cinder_OutlanderRaidLootMaker</raidLootMaker>
     <maxPawnCostPerTotalPointsCurve>
       <points>
-        <li>(900,250)</li>
-        <li>(3000,300)</li>
+        <li>(1000,200)</li>
+        <li>(2000,300)</li>
+		<li>(4000,1200)</li>
+		<li>(6000,3000)</li>
         <li>(100000,10000)</li>
       </points>
     </maxPawnCostPerTotalPointsCurve>
@@ -312,13 +314,13 @@
       <li>
         <!-- 常规战斗单位 -->
         <kindDef>Combat</kindDef>
-		<commonality>50</commonality>
+		<commonality>100</commonality>
         <options>
-		  <Cinder_Ghoul>2</Cinder_Ghoul>
+		  <Cinder_Ghoul>3</Cinder_Ghoul>
+		  <Cinder_SoliderUnit>3</Cinder_SoliderUnit>
+		   <Cinder_Mech_MiniTurretWalker>5</Cinder_Mech_MiniTurretWalker>
 		  <Cinder_EliteGhoul>2</Cinder_EliteGhoul>
-		  <Cinder_SoliderUnit>13</Cinder_SoliderUnit>
-		  <Cinder_HeavySoliderUnit>2</Cinder_HeavySoliderUnit>
-          <Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
+		  <Cinder_HeavySoliderUnit>10</Cinder_HeavySoliderUnit>
 		  <Cinder_Mech_WalkerAutoCannon>1.5</Cinder_Mech_WalkerAutoCannon>
           <Cinder_Mech_WalkerSniper>0.7</Cinder_Mech_WalkerSniper>
         </options>
@@ -326,7 +328,7 @@
 	   <li>
         <!-- 尸鬼单位 -->
         <kindDef>Combat</kindDef>
-        <commonality>50</commonality>
+        <commonality>10</commonality>
         <options>
 		  <Cinder_Ghoul>10</Cinder_Ghoul>
 		  <Cinder_EliteGhoul>10</Cinder_EliteGhoul>
@@ -341,10 +343,12 @@
         <commonality>50</commonality>
         <options>
 		  <Cinder_EliteGhoul>4</Cinder_EliteGhoul>
+		  <Cinder_Ghoul>0.1</Cinder_Ghoul>
+		   <Cinder_SoliderUnit>0.1</Cinder_SoliderUnit>
 		  <Cinder_HeavySoliderUnit>10</Cinder_HeavySoliderUnit>
 		  <Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
-          <Cinder_Mech_ErodedEXO>15</Cinder_Mech_ErodedEXO>
-		  <Cinder_Mech_WarSweeper>15</Cinder_Mech_WarSweeper>
+          <Cinder_Mech_ErodedEXO>30</Cinder_Mech_ErodedEXO>
+		  <Cinder_Mech_WarSweeper>30</Cinder_Mech_WarSweeper>
         </options>
       </li>		
 	  <li>
@@ -353,25 +357,35 @@
         <commonality>50</commonality>
         <options>
 		  <Cinder_EliteGhoul>2</Cinder_EliteGhoul>
+		   <Cinder_Ghoul>0.1</Cinder_Ghoul>
+		   <Cinder_SoliderUnit>0.1</Cinder_SoliderUnit>
 		  <Cinder_HeavySoliderUnit>5</Cinder_HeavySoliderUnit>
 		  <Cinder_Mech_MiniTurretWalker>5</Cinder_Mech_MiniTurretWalker>
-		  <Cinder_Mech_ErodedEXO>5</Cinder_Mech_ErodedEXO>
-		  <Cinder_Mech_WarAttacker>10</Cinder_Mech_WarAttacker>
+		  <Cinder_Mech_ErodedEXO>30</Cinder_Mech_ErodedEXO>
+		  <Cinder_Mech_WarAttacker>30</Cinder_Mech_WarAttacker>
         </options>
       </li>
 	  <li>
         <!-- 破墙单位 -->
         <kindDef>Combat</kindDef>
-        <commonality>50</commonality>
+        <commonality>10</commonality>
         <options>
 		  <Cinder_BreakUnit>5</Cinder_BreakUnit>
-		  <Cinder_SoliderUnit>10</Cinder_SoliderUnit>
+		   <Cinder_Ghoul>0.1</Cinder_Ghoul>
+		  <Cinder_SoliderUnit>5</Cinder_SoliderUnit>
 		  <Cinder_HeavySoliderUnit>5</Cinder_HeavySoliderUnit>
 		  <Cinder_Mech_MiniTurretWalker>5</Cinder_Mech_MiniTurretWalker>
-		  <Cinder_Mech_ErodedEXO>5</Cinder_Mech_ErodedEXO>
+		  <Cinder_Mech_ErodedEXO>25</Cinder_Mech_ErodedEXO>
         </options>
       </li>
     </pawnGroupMakers>
     <settlementTexturePath>UI/Icon/CinderSettlement</settlementTexturePath>
+	<modExtensions>
+			<li Class="Embergarden.ModExtension_FactionBehavior">
+				<steal>false</steal>
+				<canKidnap>false</canKidnap>
+				<timeoutFlee>false</timeoutFlee>
+			</li>
+		</modExtensions>
   </FactionDef>
 </Defs>
