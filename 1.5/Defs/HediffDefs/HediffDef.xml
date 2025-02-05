@@ -48,7 +48,7 @@
 					<Flame>0.1</Flame>
 					<Burn>0.1</Burn>
 					<Flame>0</Flame>
-				  <Burn>0</Burn>
+					<Burn>0</Burn>
 				</damageFactors>
 				<totalBleedFactor>0.9</totalBleedFactor>
 			</li>
@@ -141,14 +141,14 @@
 					<RestFallRateFactor>0.01</RestFallRateFactor>
 				</statFactors>
 				<damageFactors>
-				 <Flame>0</Flame>
-				 <Burn>0</Burn>
-				  <Cinder_Bomb>0</Cinder_Bomb>
-				  <Cinder_BombB>0</Cinder_BombB>
-				  <Vaporize>0</Vaporize>
-				  <Cinder_BombC>0</Cinder_BombC>
-				  <Bullet>0.6</Bullet>
-                </damageFactors>
+					<Flame>0</Flame>
+					<Burn>0</Burn>
+					<Cinder_Bomb>0</Cinder_Bomb>
+					<Cinder_BombB>0</Cinder_BombB>
+					<Vaporize>0</Vaporize>
+					<Cinder_BombC>0</Cinder_BombC>
+					<Bullet>0.6</Bullet>
+				</damageFactors>
 			</li>
 		</stages>
 	</HediffDef>
@@ -443,7 +443,7 @@
 			</li>
 		</stages>
 	</HediffDef>
-	
+
 	<HediffDef>
 		<defName>Cinder_ExtraArmourPlateII</defName>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -471,5 +471,26 @@
 				</statOffsets>
 			</li>
 		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Cinder_MusicStopper</defName>
+		<label>stop music when downed</label>
+		<description>Hidden hediff that stops current boss music when downed or dead. Should be invisible and remove on activation.</description>
+		<hediffClass>Embergarden.HediffComp_StopMusicIfDowned</hediffClass>
+		<defaultLabelColor>(0, 0, 0)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="Embergarden.CompProperties_HediffStopMusicIfDowned">
+				<songDef>Cinder_SongA</songDef>
+			</li>
+		</comps>
 	</HediffDef>
 </Defs>

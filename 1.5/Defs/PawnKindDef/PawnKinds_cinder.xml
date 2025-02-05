@@ -12,10 +12,10 @@
 		<initialWillRange>10~20</initialWillRange>
 		<initialResistanceRange>10~40</initialResistanceRange>
 		<xenotypeSet Inherit="False">
-          <xenotypeChances>
-           <Cinder_Xenotype MayRequire="Ludeon.RimWorld.Biotech">1</Cinder_Xenotype>
-           </xenotypeChances>
-         </xenotypeSet>
+			<xenotypeChances>
+				<Cinder_Xenotype MayRequire="Ludeon.RimWorld.Biotech">1</Cinder_Xenotype>
+			</xenotypeChances>
+		</xenotypeSet>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Cinder_BasePawn">
@@ -29,7 +29,7 @@
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
 		<maxGenerationAge>55</maxGenerationAge>
-        <minGenerationAge>13</minGenerationAge>
+		<minGenerationAge>13</minGenerationAge>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
@@ -50,30 +50,30 @@
 			<min>200</min>
 			<max>600</max>
 		</apparelMoney>
-	<specificApparelRequirements>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-      </li>
-	  <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-		<requiredTag>Cinder_Civilan</requiredTag>
-		<stuff>Synthread</stuff>
-		<apparelLayer>Middle</apparelLayer>
-		<color>(186, 181, 171)</color>
-      </li>
-      <li>
-        <bodyPartGroup>Legs</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-      </li>
-    </specificApparelRequirements>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<requiredTag>Cinder_Civilan</requiredTag>
+				<stuff>Synthread</stuff>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(186, 181, 171)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+			</li>
+		</specificApparelRequirements>
 	</PawnKindDef>
-	
-	
+
+
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_Leader</defName>
 		<label>Lantern Bearer</label>
@@ -84,17 +84,17 @@
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>45</maxGenerationAge>
-        <minGenerationAge>25</minGenerationAge>
+		<minGenerationAge>25</minGenerationAge>
 		<startingHediffs>
-		  <li>
-          <def>Cinder_ExtraArmourPlateII</def>
-          <chance>1</chance>
-          </li>
-        </startingHediffs>
+			<li>
+				<def>Cinder_ExtraArmourPlateII</def>
+				<chance>1</chance>
+			</li>
+		</startingHediffs>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-				    <li>CinderStory_Agitator_Child</li>
+					<li>CinderStory_Agitator_Child</li>
 					<li>CinderStory_Agitator</li>
 				</categories>
 			</li>
@@ -103,43 +103,43 @@
 			<li>Cinder_Military</li>
 			<li>Cinder_Civilan</li>
 		</apparelTags>
-	<specificApparelRequirements>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(66, 61, 51)</color>
-      </li>
-	  <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-		<requiredTag>Cinder_Outlands</requiredTag>
-		<apparelLayer>Shell</apparelLayer>
-      </li>
-      <li>
-        <bodyPartGroup>Legs</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(66, 61, 51)</color>
-      </li>
-    </specificApparelRequirements>
-	<apparelRequired>
-      <li>Cinder_Apparel_BulletproofEquipment</li>
-    </apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<requiredTag>Cinder_Outlands</requiredTag>
+				<apparelLayer>Shell</apparelLayer>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+		</specificApparelRequirements>
+		<apparelRequired>
+			<li>Cinder_Apparel_BulletproofEquipment</li>
+		</apparelRequired>
 		<apparelMoney>
 			<min>700</min>
 			<max>1200</max>
 		</apparelMoney>
-	<weaponTags>
-    <li>CinderSimpleGuns</li>
-	<li>CinderRifles</li>
-    </weaponTags>
-    <weaponMoney>400~450</weaponMoney>
+		<weaponTags>
+			<li>CinderSimpleGuns</li>
+			<li>CinderRifles</li>
+		</weaponTags>
+		<weaponMoney>400~450</weaponMoney>
 	</PawnKindDef>
 
 
-    <PawnKindDef ParentName="Cinder_BasePawn">
+	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_OutlanderCivilan</defName>
 		<label>Civilan</label>
 		<combatPower>45</combatPower>
@@ -151,7 +151,7 @@
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<maxGenerationAge>45</maxGenerationAge>
-        <minGenerationAge>13</minGenerationAge>
+		<minGenerationAge>13</minGenerationAge>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
@@ -173,33 +173,33 @@
 			<min>200</min>
 			<max>600</max>
 		</apparelMoney>
-	<specificApparelRequirements>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-      </li>
-	  <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-		<requiredTag>Cinder_Civilan</requiredTag>
-		<stuff>Synthread</stuff>
-		<apparelLayer>Middle</apparelLayer>
-      </li>
-      <li>
-        <bodyPartGroup>Legs</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-      </li>
-    </specificApparelRequirements>
-	<weaponTags>
-    <li>CinderSimpleGuns</li>
-	<li>SimpleGun</li>
-    </weaponTags>
-    <weaponMoney>200~400</weaponMoney>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<requiredTag>Cinder_Civilan</requiredTag>
+				<stuff>Synthread</stuff>
+				<apparelLayer>Middle</apparelLayer>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+			</li>
+		</specificApparelRequirements>
+		<weaponTags>
+			<li>CinderSimpleGuns</li>
+			<li>SimpleGun</li>
+		</weaponTags>
+		<weaponMoney>200~400</weaponMoney>
 	</PawnKindDef>
-	
+
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_SupplyOfficer</defName>
 		<label>supply officer</label>
@@ -210,13 +210,13 @@
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>45</maxGenerationAge>
-        <minGenerationAge>19</minGenerationAge>
+		<minGenerationAge>19</minGenerationAge>
 		<startingHediffs>
-		  <li>
-          <def>Cinder_ExtraArmourPlateII</def>
-          <chance>1</chance>
-          </li>
-        </startingHediffs>
+			<li>
+				<def>Cinder_ExtraArmourPlateII</def>
+				<chance>1</chance>
+			</li>
+		</startingHediffs>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
@@ -231,43 +231,43 @@
 		<apparelTags>
 			<li>Cinder_Military</li>
 			<li>Cinder_Civilan</li>
-			  <li>BeltDefensePop</li>
+			<li>BeltDefensePop</li>
 		</apparelTags>
-	<specificApparelRequirements>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(66, 61, 51)</color>
-      </li>
-	  <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-		<requiredTag>Cinder_Outlands</requiredTag>
-		<apparelLayer>Shell</apparelLayer>
-      </li>
-      <li>
-        <bodyPartGroup>Legs</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(66, 61, 51)</color>
-      </li>
-    </specificApparelRequirements>
-	<apparelRequired>
-      <li>Cinder_Apparel_BulletproofEquipment</li>
-    </apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<requiredTag>Cinder_Outlands</requiredTag>
+				<apparelLayer>Shell</apparelLayer>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+		</specificApparelRequirements>
+		<apparelRequired>
+			<li>Cinder_Apparel_BulletproofEquipment</li>
+		</apparelRequired>
 		<apparelMoney>
 			<min>700</min>
 			<max>1200</max>
 		</apparelMoney>
-	<weaponTags>
-    <li>CinderSimpleGuns</li>
-	<li>CinderRifles</li>
-    </weaponTags>
-    <weaponMoney>400~450</weaponMoney>
+		<weaponTags>
+			<li>CinderSimpleGuns</li>
+			<li>CinderRifles</li>
+		</weaponTags>
+		<weaponMoney>400~450</weaponMoney>
 	</PawnKindDef>
-	
+
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_OutlanderSecond</defName>
 		<label>Logistics troops</label>
@@ -278,13 +278,13 @@
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>45</maxGenerationAge>
-        <minGenerationAge>19</minGenerationAge>
+		<minGenerationAge>19</minGenerationAge>
 		<startingHediffs>
-		  <li>
-          <def>Cinder_ExtraArmourPlate</def>
-          <chance>0.15</chance>
-          </li>
-        </startingHediffs>
+			<li>
+				<def>Cinder_ExtraArmourPlate</def>
+				<chance>0.15</chance>
+			</li>
+		</startingHediffs>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
@@ -300,42 +300,42 @@
 			<li>Cinder_Military</li>
 			<li>Cinder_Civilan</li>
 		</apparelTags>
-	<specificApparelRequirements>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(66, 61, 51)</color>
-      </li>
-	  <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-		<requiredTag>Cinder_CivilanC</requiredTag>
-		<stuff>Synthread</stuff>
-		<apparelLayer>Middle</apparelLayer>
-      </li>
-	  <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-		<requiredTag>Cinder_Outlands</requiredTag>
-		<apparelLayer>Shell</apparelLayer>
-      </li>
-      <li>
-        <bodyPartGroup>Legs</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(66, 61, 51)</color>
-      </li>
-    </specificApparelRequirements>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<requiredTag>Cinder_CivilanC</requiredTag>
+				<stuff>Synthread</stuff>
+				<apparelLayer>Middle</apparelLayer>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<requiredTag>Cinder_Outlands</requiredTag>
+				<apparelLayer>Shell</apparelLayer>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+		</specificApparelRequirements>
 		<apparelMoney>
 			<min>600</min>
 			<max>1000</max>
 		</apparelMoney>
-	<weaponTags>
-    <li>CinderSimpleGuns</li>
-	<li>CinderRifles</li>
-    </weaponTags>
-    <weaponMoney>285~420</weaponMoney>
+		<weaponTags>
+			<li>CinderSimpleGuns</li>
+			<li>CinderRifles</li>
+		</weaponTags>
+		<weaponMoney>285~420</weaponMoney>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Cinder_BasePawn">
@@ -348,13 +348,13 @@
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>45</maxGenerationAge>
-        <minGenerationAge>19</minGenerationAge>
+		<minGenerationAge>19</minGenerationAge>
 		<startingHediffs>
-		  <li>
-          <def>Cinder_ExtraArmourPlate</def>
-          <chance>0.35</chance>
-          </li>
-        </startingHediffs>
+			<li>
+				<def>Cinder_ExtraArmourPlate</def>
+				<chance>0.35</chance>
+			</li>
+		</startingHediffs>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
@@ -369,48 +369,48 @@
 		<apparelTags>
 			<li>Cinder_Military</li>
 			<li>Cinder_Civilan</li>
-			  <li>BeltDefensePop</li>
+			<li>BeltDefensePop</li>
 		</apparelTags>
-	<specificApparelRequirements>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(66, 61, 51)</color>
-      </li>
-	  <li>
-		<requiredTag>Cinder_MilitaryMedium</requiredTag>
-		<apparelLayer>Overhead</apparelLayer>
-      </li>
-	  <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-		<requiredTag>Cinder_Military</requiredTag>
-		<apparelLayer>Middle</apparelLayer>
-      </li>
-	  <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-		<requiredTag>Cinder_Outlands</requiredTag>
-		<apparelLayer>Shell</apparelLayer>
-      </li>
-      <li>
-        <bodyPartGroup>Legs</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(66, 61, 51)</color>
-      </li>
-    </specificApparelRequirements>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+			<li>
+				<requiredTag>Cinder_MilitaryMedium</requiredTag>
+				<apparelLayer>Overhead</apparelLayer>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<requiredTag>Cinder_Military</requiredTag>
+				<apparelLayer>Middle</apparelLayer>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<requiredTag>Cinder_Outlands</requiredTag>
+				<apparelLayer>Shell</apparelLayer>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+		</specificApparelRequirements>
 		<apparelMoney>
 			<min>800</min>
 			<max>1500</max>
 		</apparelMoney>
-	<weaponTags>
-	<li>CinderRifles</li>
-    </weaponTags>
-    <weaponMoney>385~868</weaponMoney>
+		<weaponTags>
+			<li>CinderRifles</li>
+		</weaponTags>
+		<weaponMoney>385~868</weaponMoney>
 	</PawnKindDef>
-	
+
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_Grenadier</defName>
 		<label>grenadier</label>
@@ -421,15 +421,15 @@
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<canBeSapper>true</canBeSapper>
-        <isGoodBreacher>true</isGoodBreacher>
+		<isGoodBreacher>true</isGoodBreacher>
 		<maxGenerationAge>45</maxGenerationAge>
-        <minGenerationAge>19</minGenerationAge>
+		<minGenerationAge>19</minGenerationAge>
 		<startingHediffs>
-		  <li>
-          <def>Cinder_ExtraArmourPlateII</def>
-          <chance>1</chance>
-          </li>
-        </startingHediffs>
+			<li>
+				<def>Cinder_ExtraArmourPlateII</def>
+				<chance>1</chance>
+			</li>
+		</startingHediffs>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
@@ -445,53 +445,53 @@
 			<li>Cinder_Civilan</li>
 			<li>Cinder_MilitaryMedium</li>
 		</apparelTags>
-	<specificApparelRequirements>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(66, 61, 51)</color>
-      </li>
-	  <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-		<requiredTag>Cinder_Military</requiredTag>
-		<apparelLayer>Middle</apparelLayer>
-      </li>
-	  <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-		<requiredTag>Cinder_Outlands</requiredTag>
-		<apparelLayer>Shell</apparelLayer>
-      </li>
-      <li>
-        <bodyPartGroup>Legs</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(66, 61, 51)</color>
-      </li>
-    </specificApparelRequirements>
-	<apparelRequired>
-	  <li>Cinder_HeadGear_FullyEnclosedMask</li>
-    </apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<requiredTag>Cinder_Military</requiredTag>
+				<apparelLayer>Middle</apparelLayer>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<requiredTag>Cinder_Outlands</requiredTag>
+				<apparelLayer>Shell</apparelLayer>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+		</specificApparelRequirements>
+		<apparelRequired>
+			<li>Cinder_HeadGear_FullyEnclosedMask</li>
+		</apparelRequired>
 		<apparelMoney>
 			<min>1100</min>
 			<max>2200</max>
 		</apparelMoney>
-	<weaponTags>
-    <li>EmpireGrenadeDestructive</li>
-    </weaponTags>
-    <weaponMoney>300~1000</weaponMoney>
-	<modExtensions>
+		<weaponTags>
+			<li>EmpireGrenadeDestructive</li>
+		</weaponTags>
+		<weaponMoney>300~1000</weaponMoney>
+		<modExtensions>
 			<li Class="Embergarden.ModExtension_RandomOneAbility">
 				<abilities>
 					<li>Cinder_AmorphousIED</li>
 					<li>Cinder_ErodedBomb</li>
 				</abilities>
 			</li>
-	</modExtensions>
+		</modExtensions>
 	</PawnKindDef>
-	
+
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_Cult</defName>
 		<label>cult follower</label>
@@ -502,13 +502,13 @@
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>45</maxGenerationAge>
-        <minGenerationAge>19</minGenerationAge>
+		<minGenerationAge>19</minGenerationAge>
 		<startingHediffs>
-		  <li>
-          <def>Cinder_ExtraArmourPlate</def>
-          <chance>0.15</chance>
-          </li>
-        </startingHediffs>
+			<li>
+				<def>Cinder_ExtraArmourPlate</def>
+				<chance>0.15</chance>
+			</li>
+		</startingHediffs>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
@@ -521,67 +521,67 @@
 		<apparelTags>
 			<li>Cinder_Civilan</li>
 		</apparelTags>
-	<specificApparelRequirements>
-	  <li>
-        <bodyPartGroup>FullHead</bodyPartGroup>
-        <requiredTag>Cinder_Cult</requiredTag>
-        <useRandomStyleDef>true</useRandomStyleDef>
-      </li>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(85, 85, 85)</color>
-      </li>
-	   <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-		<requiredTag>Cinder_CivilanC</requiredTag>
-		<stuff>Synthread</stuff>
-		<apparelLayer>Middle</apparelLayer>
-      </li>
-	  <li>
-        <apparelLayer>Shell</apparelLayer>
-        <color>(85, 85, 85)</color>
-		<stuff>Synthread</stuff>
-        <alternateTagChoices>
-          <li>
-            <tag>Robe</tag>
-            <chance>1</chance>
-          </li>
-        </alternateTagChoices>
-      </li>
-      <li>
-        <bodyPartGroup>Legs</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(85, 85, 85)</color>
-      </li>
-    </specificApparelRequirements>
-	 <apparelRequired>
-      <li>Apparel_ShieldBelt</li>
-    </apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>FullHead</bodyPartGroup>
+				<requiredTag>Cinder_Cult</requiredTag>
+				<useRandomStyleDef>true</useRandomStyleDef>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(85, 85, 85)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<requiredTag>Cinder_CivilanC</requiredTag>
+				<stuff>Synthread</stuff>
+				<apparelLayer>Middle</apparelLayer>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(85, 85, 85)</color>
+				<stuff>Synthread</stuff>
+				<alternateTagChoices>
+					<li>
+						<tag>Robe</tag>
+						<chance>1</chance>
+					</li>
+				</alternateTagChoices>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(85, 85, 85)</color>
+			</li>
+		</specificApparelRequirements>
+		<apparelRequired>
+			<li>Apparel_ShieldBelt</li>
+		</apparelRequired>
 		<apparelMoney>
 			<min>300</min>
 			<max>400</max>
 		</apparelMoney>
-	<weaponTags>
-    <li>MedievalMeleeBasic</li>
-	<li>MedievalMeleeDecent</li>
-    </weaponTags>
-    <weaponMoney>200~400</weaponMoney>
-	<modExtensions>
+		<weaponTags>
+			<li>MedievalMeleeBasic</li>
+			<li>MedievalMeleeDecent</li>
+		</weaponTags>
+		<weaponMoney>200~400</weaponMoney>
+		<modExtensions>
 			<li Class="Embergarden.ModExtension_RandomOneAbility">
 				<abilities>
-                    <li>Cinder_SuffocatingWhispers</li>
+					<li>Cinder_SuffocatingWhispers</li>
 					<li>Cinder_EternalFearAbility</li>
 					<li>Cinder_FearPulse</li>
 				</abilities>
 			</li>
-	</modExtensions>
+		</modExtensions>
 	</PawnKindDef>
-	
+
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_EliteCult</defName>
 		<label>cult guard</label>
@@ -593,13 +593,13 @@
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>45</maxGenerationAge>
-        <minGenerationAge>19</minGenerationAge>
+		<minGenerationAge>19</minGenerationAge>
 		<startingHediffs>
-		  <li>
-          <def>Cinder_ExtraArmourPlate</def>
-          <chance>1</chance>
-          </li>
-        </startingHediffs>
+			<li>
+				<def>Cinder_ExtraArmourPlate</def>
+				<chance>1</chance>
+			</li>
+		</startingHediffs>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
@@ -613,50 +613,50 @@
 			<li>Cinder_Military</li>
 			<li>Cinder_Civilan</li>
 		</apparelTags>
-	<specificApparelRequirements>
-	   <li>
-        <bodyPartGroup>FullHead</bodyPartGroup>
-        <requiredTag>Cinder_Cult</requiredTag>
-        <useRandomStyleDef>true</useRandomStyleDef>
-      </li>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(85, 85, 85)</color>
-      </li>
-	  <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-		<requiredTag>Cinder_Military</requiredTag>
-		<apparelLayer>Middle</apparelLayer>
-      </li>
-	  <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-		<requiredTag>Cinder_Outlands</requiredTag>
-		<apparelLayer>Shell</apparelLayer>
-      </li>
-      <li>
-        <bodyPartGroup>Legs</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(85, 85, 85)</color>
-      </li>
-    </specificApparelRequirements>
-	 <apparelRequired>
-      <li>Apparel_ShieldBelt</li>
-    </apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>FullHead</bodyPartGroup>
+				<requiredTag>Cinder_Cult</requiredTag>
+				<useRandomStyleDef>true</useRandomStyleDef>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(85, 85, 85)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<requiredTag>Cinder_Military</requiredTag>
+				<apparelLayer>Middle</apparelLayer>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<requiredTag>Cinder_Outlands</requiredTag>
+				<apparelLayer>Shell</apparelLayer>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(85, 85, 85)</color>
+			</li>
+		</specificApparelRequirements>
+		<apparelRequired>
+			<li>Apparel_ShieldBelt</li>
+		</apparelRequired>
 		<apparelMoney>
 			<min>1700</min>
 			<max>2100</max>
 		</apparelMoney>
-	<weaponTags>
-    <li>MedievalMeleeBasic</li>
-	<li>MedievalMeleeAdvanced</li>
-    </weaponTags>
-    <weaponMoney>600~700</weaponMoney>
-	<modExtensions>
+		<weaponTags>
+			<li>MedievalMeleeBasic</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<weaponMoney>600~700</weaponMoney>
+		<modExtensions>
 			<li Class="Embergarden.ModExtension_RandomOneAbility">
 				<abilities>
 					<li>Cinder_SuffocatingWhispers</li>
@@ -666,18 +666,18 @@
 					<li>Cinder_ErodedBomb</li>
 				</abilities>
 			</li>
-	</modExtensions>
-	<fixedInventory>
-	         <Cinder_EmptyAgentBottle>1</Cinder_EmptyAgentBottle>
-	</fixedInventory>
-	<skills>
-      <li>
-        <skill>Melee</skill>
-        <range>7~10</range>
-      </li>
-    </skills>
+		</modExtensions>
+		<fixedInventory>
+			<Cinder_EmptyAgentBottle>1</Cinder_EmptyAgentBottle>
+		</fixedInventory>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>7~10</range>
+			</li>
+		</skills>
 	</PawnKindDef>
-	
+
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_OutlanderElite</defName>
 		<label>shock troops</label>
@@ -685,18 +685,18 @@
 		<maxPerGroup>3</maxPerGroup>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
-		 <itemQuality>Excellent</itemQuality>
+		<itemQuality>Excellent</itemQuality>
 		<initialWillRange>10~30</initialWillRange>
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>35</maxGenerationAge>
-        <minGenerationAge>19</minGenerationAge>
+		<minGenerationAge>19</minGenerationAge>
 		<startingHediffs>
-		  <li>
-          <def>Cinder_ExtraArmourPlateII</def>
-          <chance>1</chance>
-          </li>
-        </startingHediffs>
+			<li>
+				<def>Cinder_ExtraArmourPlateII</def>
+				<chance>1</chance>
+			</li>
+		</startingHediffs>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
@@ -712,61 +712,61 @@
 			<li>Cinder_Military_Heavy</li>
 			<li>BeltDefensePop</li>
 		</apparelTags>
-	<specificApparelRequirements>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(66, 61, 51)</color>
-      </li>
-      <li>
-        <bodyPartGroup>Legs</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(66, 61, 51)</color>
-      </li>
-    </specificApparelRequirements>
-	<apparelRequired>
-      <li>Cinder_Apparel_HeavyArmorDress</li>
-    </apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+		</specificApparelRequirements>
+		<apparelRequired>
+			<li>Cinder_Apparel_HeavyArmorDress</li>
+		</apparelRequired>
 		<apparelMoney>
 			<min>12500</min>
 			<max>12900</max>
 		</apparelMoney>
-	<weaponTags>
-	<li>CinderHeavy</li>
-	<li>GunSingleUse</li>
-    </weaponTags>
-    <weaponMoney>2400~2900</weaponMoney>
-	<modExtensions>
+		<weaponTags>
+			<li>CinderHeavy</li>
+			<li>GunSingleUse</li>
+		</weaponTags>
+		<weaponMoney>2400~2900</weaponMoney>
+		<modExtensions>
 			<li Class="Embergarden.ModExtension_RandomOneAbility">
 				<abilities>
-				    <li>Cinder_BurnHemostasis</li>
+					<li>Cinder_BurnHemostasis</li>
 					<li>Cinder_AmorphousIED</li>
 					<li>Cinder_ErodedBomb</li>
 				</abilities>
 			</li>
-	</modExtensions>
-	 <skills>
-      <li>
-        <skill>Melee</skill>
-        <range>5~6</range>
-      </li>
-	  <li>
-        <skill>Shooting</skill>
-        <range>4~6</range>
-      </li>
-    </skills>
+		</modExtensions>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>5~6</range>
+			</li>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~6</range>
+			</li>
+		</skills>
 	</PawnKindDef>
-	
+
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_CasterUnit</defName>
 		<label>Caster unit</label>
 		<combatPower>180</combatPower>
 		<maxPerGroup>4</maxPerGroup>
-         <isBoss>true</isBoss>
+		<isBoss>true</isBoss>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
 		<isFighter>true</isFighter>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
@@ -775,21 +775,25 @@
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>35</maxGenerationAge>
-        <minGenerationAge>19</minGenerationAge>
+		<minGenerationAge>19</minGenerationAge>
 		<startingHediffs>
-		  <li>
-          <def>Cinder_LongDream</def>
-		   <chance>1</chance>
-          </li>
-		  <li>
-          <def>Cinder_ExtraArmourPlate</def>
-          <chance>0.25</chance>
-          </li>
-        </startingHediffs>
+			<li>
+				<def>Cinder_LongDream</def>
+				<chance>1</chance>
+			</li>
+			<li>
+				<def>Cinder_ExtraArmourPlate</def>
+				<chance>0.25</chance>
+			</li>
+			<li>
+				<def>Cinder_MusicStopper</def>
+				<chance>1</chance>
+			</li>
+		</startingHediffs>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-				    <li>CinderStory_DefenseCouncil_CultChild</li>
+					<li>CinderStory_DefenseCouncil_CultChild</li>
 					<li>CinderStory_Refugee_Child</li>
 					<li>CinderStory_ESDSP_Child</li>
 					<li>CinderStory_ESDSP_Soldier</li>
@@ -799,46 +803,46 @@
 		<apparelTags>
 			<li>Cinder_Military_Heavy</li>
 		</apparelTags>
-	<specificApparelRequirements>
-	 <li>
-        <bodyPartGroup>FullHead</bodyPartGroup>
-        <requiredTag>Cinder_Cult</requiredTag>
-        <useRandomStyleDef>true</useRandomStyleDef>
-      </li>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(66, 61, 51)</color>
-      </li>
-      <li>
-        <bodyPartGroup>Legs</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(66, 61, 51)</color>
-      </li>
-    </specificApparelRequirements>
-	<apparelRequired>
-      <li>Cinder_Apparel_BulletproofEquipment</li>
-    </apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>FullHead</bodyPartGroup>
+				<requiredTag>Cinder_Cult</requiredTag>
+				<useRandomStyleDef>true</useRandomStyleDef>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+		</specificApparelRequirements>
+		<apparelRequired>
+			<li>Cinder_Apparel_BulletproofEquipment</li>
+		</apparelRequired>
 		<apparelMoney>
 			<min>500</min>
 			<max>900</max>
 		</apparelMoney>
-	<weaponTags>
-	<li>CinderRifles</li>
-	<li>CinderSimpleGuns</li>
-    </weaponTags>
-    <weaponMoney>400~600</weaponMoney>
-	<fixedInventory>
-	        <Cinder_ExtraArmour>1</Cinder_ExtraArmour>
-	</fixedInventory>
-	<modExtensions>
+		<weaponTags>
+			<li>CinderRifles</li>
+			<li>CinderSimpleGuns</li>
+		</weaponTags>
+		<weaponMoney>400~600</weaponMoney>
+		<fixedInventory>
+			<Cinder_ExtraArmour>1</Cinder_ExtraArmour>
+		</fixedInventory>
+		<modExtensions>
 			<li Class="Embergarden.ModExtension_RandomOneAbility">
 				<abilities>
-				    <li>Cinder_BurnHemostasis</li>
+					<li>Cinder_BurnHemostasis</li>
 					<li>Cinder_SuffocatingWhispers</li>
 					<li>Cinder_EternalFearAbility</li>
 					<li>Cinder_FearPulse</li>
@@ -846,10 +850,10 @@
 					<li>Cinder_ErodedBomb</li>
 				</abilities>
 			</li>
-	</modExtensions>
+		</modExtensions>
 	</PawnKindDef>
 
-    <PawnKindDef ParentName="Cinder_BasePawn">
+	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_SoliderUnit</defName>
 		<label>solider unit</label>
 		<combatPower>180</combatPower>
@@ -862,17 +866,17 @@
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>35</maxGenerationAge>
-        <minGenerationAge>19</minGenerationAge>
+		<minGenerationAge>19</minGenerationAge>
 		<startingHediffs>
-		  <li>
-          <def>Cinder_LongDream</def>
-		   <chance>1</chance>
-          </li>
-		  <li>
-          <def>Cinder_ExtraArmourPlate</def>
-          <chance>1</chance>
-          </li>
-        </startingHediffs>
+			<li>
+				<def>Cinder_LongDream</def>
+				<chance>1</chance>
+			</li>
+			<li>
+				<def>Cinder_ExtraArmourPlate</def>
+				<chance>1</chance>
+			</li>
+		</startingHediffs>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
@@ -885,45 +889,45 @@
 		<apparelTags>
 			<li>Cinder_Military_Heavy</li>
 		</apparelTags>
-	<specificApparelRequirements>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(66, 61, 51)</color>
-      </li>
-      <li>
-        <bodyPartGroup>Legs</bodyPartGroup>
-        <stuff>Synthread</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(66, 61, 51)</color>
-      </li>
-    </specificApparelRequirements>
-	<apparelRequired>
-      <li>Cinder_Apparel_LowVisibilityDress</li>
-	  <li>Cinder_HeadGear_FullyEnclosedMask</li>
-	  <li>Apparel_SmokepopBelt</li>
-    </apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+		</specificApparelRequirements>
+		<apparelRequired>
+			<li>Cinder_Apparel_LowVisibilityDress</li>
+			<li>Cinder_HeadGear_FullyEnclosedMask</li>
+			<li>Apparel_SmokepopBelt</li>
+		</apparelRequired>
 		<apparelMoney>
 			<min>5500</min>
 			<max>5900</max>
 		</apparelMoney>
-	<weaponTags>
-	<li>CinderElite</li>
-	<li>GunHeavy</li>
-    </weaponTags>
-    <weaponMoney>900~1900</weaponMoney>
-	 <skills>
-	  <li>
-        <skill>Shooting</skill>
-        <range>4~6</range>
-      </li>
-    </skills>
+		<weaponTags>
+			<li>CinderElite</li>
+			<li>GunHeavy</li>
+		</weaponTags>
+		<weaponMoney>900~1900</weaponMoney>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~6</range>
+			</li>
+		</skills>
 	</PawnKindDef>
-	
-    <PawnKindDef ParentName="Cinder_BasePawn">
+
+	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_BreakUnit</defName>
 		<label>break through unit</label>
 		<combatPower>350</combatPower>
@@ -934,20 +938,20 @@
 		<biocodeWeaponChance>0.7</biocodeWeaponChance>
 		<initialWillRange>10~30</initialWillRange>
 		<canBeSapper>true</canBeSapper>
-        <isGoodBreacher>true</isGoodBreacher>
+		<isGoodBreacher>true</isGoodBreacher>
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>35</maxGenerationAge>
-        <minGenerationAge>21</minGenerationAge>
+		<minGenerationAge>21</minGenerationAge>
 		<startingHediffs>
-		  <li>
-          <def>Cinder_LongDream</def>
-          </li>
-		  <li>
-          <def>Cinder_ExtraArmourPlateII</def>
-          <chance>1</chance>
-          </li>
-        </startingHediffs>
+			<li>
+				<def>Cinder_LongDream</def>
+			</li>
+			<li>
+				<def>Cinder_ExtraArmourPlateII</def>
+				<chance>1</chance>
+			</li>
+		</startingHediffs>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
@@ -961,58 +965,58 @@
 			<li>Cinder_Military_Heavy</li>
 			<li>BeltDefensePop</li>
 		</apparelTags>
-	<specificApparelRequirements>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <stuff>Hyperweave</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(66, 61, 51)</color>
-      </li>
-      <li>
-        <bodyPartGroup>Legs</bodyPartGroup>
-        <stuff>Hyperweave</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(66, 61, 51)</color>
-      </li>
-    </specificApparelRequirements>
-	<apparelRequired>
-      <li>Cinder_Apparel_HeavyArmorDress</li>
-	  <li>Cinder_HeadGear_FullyEnclosedMask</li>
-    </apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<stuff>Hyperweave</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<stuff>Hyperweave</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+		</specificApparelRequirements>
+		<apparelRequired>
+			<li>Cinder_Apparel_HeavyArmorDress</li>
+			<li>Cinder_HeadGear_FullyEnclosedMask</li>
+		</apparelRequired>
 		<apparelMoney>
 			<min>15500</min>
 			<max>15900</max>
 		</apparelMoney>
-	<weaponTags>
-	  <li>CinderHeavy</li>
-	  <li>EmpireGrenadeDestructive</li>
-    </weaponTags>
-    <weaponMoney>3500~3900</weaponMoney>
-	<modExtensions>
+		<weaponTags>
+			<li>CinderHeavy</li>
+			<li>EmpireGrenadeDestructive</li>
+		</weaponTags>
+		<weaponMoney>3500~3900</weaponMoney>
+		<modExtensions>
 			<li Class="Embergarden.ModExtension_RandomOneAbility">
 				<abilities>
 					<li>Cinder_ErodedBomb</li>
 				</abilities>
 			</li>
-	</modExtensions>
-	<fixedInventory>
-	        <Cinder_EmptyAgentBottle>1</Cinder_EmptyAgentBottle>
-	</fixedInventory>
-	  <skills>
-      <li>
-        <skill>Melee</skill>
-        <range>5~7</range>
-      </li>
-	  <li>
-        <skill>Shooting</skill>
-        <range>4~8</range>
-      </li>
-    </skills>
+		</modExtensions>
+		<fixedInventory>
+			<Cinder_EmptyAgentBottle>1</Cinder_EmptyAgentBottle>
+		</fixedInventory>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>5~7</range>
+			</li>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~8</range>
+			</li>
+		</skills>
 	</PawnKindDef>
-	
-	 <PawnKindDef ParentName="Cinder_BasePawn">
+
+	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_HeavySoliderUnit</defName>
 		<label>Bombing unit</label>
 		<combatPower>420</combatPower>
@@ -1025,16 +1029,16 @@
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>35</maxGenerationAge>
-        <minGenerationAge>21</minGenerationAge>
+		<minGenerationAge>21</minGenerationAge>
 		<startingHediffs>
-		  <li>
-          <def>Cinder_LongDream</def>
-          </li>
-		  <li>
-          <def>Cinder_ExtraArmourPlateII</def>
-          <chance>1</chance>
-          </li>
-        </startingHediffs>
+			<li>
+				<def>Cinder_LongDream</def>
+			</li>
+			<li>
+				<def>Cinder_ExtraArmourPlateII</def>
+				<chance>1</chance>
+			</li>
+		</startingHediffs>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
@@ -1048,39 +1052,39 @@
 			<li>Cinder_Military_Heavy</li>
 			<li>BeltDefensePop</li>
 		</apparelTags>
-	<specificApparelRequirements>
-      <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
-        <stuff>Hyperweave</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(66, 61, 51)</color>
-      </li>
-      <li>
-        <bodyPartGroup>Legs</bodyPartGroup>
-        <stuff>Hyperweave</stuff>
-		<requiredTag>IndustrialBasic</requiredTag>
-		<apparelLayer>OnSkin</apparelLayer>
-		 <color>(66, 61, 51)</color>
-      </li>
-    </specificApparelRequirements>
-	<apparelRequired>
-      <li>Cinder_Apparel_HeavyArmorDress</li>
-	  <li>Cinder_HeadGear_FullyEnclosedMask</li>
-    </apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<stuff>Hyperweave</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<stuff>Hyperweave</stuff>
+				<requiredTag>IndustrialBasic</requiredTag>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+		</specificApparelRequirements>
+		<apparelRequired>
+			<li>Cinder_Apparel_HeavyArmorDress</li>
+			<li>Cinder_HeadGear_FullyEnclosedMask</li>
+		</apparelRequired>
 		<apparelMoney>
 			<min>15500</min>
 			<max>15900</max>
 		</apparelMoney>
-	<weaponTags>
-	  <li>CinderHeavy</li>
-	  <li>GunSingleUse</li>
-    </weaponTags>
-    <weaponMoney>3500~3900</weaponMoney>
-	<modExtensions>
+		<weaponTags>
+			<li>CinderHeavy</li>
+			<li>GunSingleUse</li>
+		</weaponTags>
+		<weaponMoney>3500~3900</weaponMoney>
+		<modExtensions>
 			<li Class="Embergarden.ModExtension_RandomOneAbility">
 				<abilities>
-				    <li>Cinder_BurnHemostasis</li>
+					<li>Cinder_BurnHemostasis</li>
 					<li>Cinder_SuffocatingWhispers</li>
 					<li>Cinder_EternalFearAbility</li>
 					<li>Cinder_FearPulse</li>
@@ -1089,20 +1093,20 @@
 					<li>Cinder_ErodedBomb</li>
 				</abilities>
 			</li>
-	</modExtensions>
-	<fixedInventory>
-	        <Cinder_EmptyAgentBottle>1</Cinder_EmptyAgentBottle>
-	</fixedInventory>
-	  <skills>
-      <li>
-        <skill>Melee</skill>
-        <range>5~7</range>
-      </li>
-	  <li>
-        <skill>Shooting</skill>
-        <range>4~8</range>
-      </li>
-    </skills>
+		</modExtensions>
+		<fixedInventory>
+			<Cinder_EmptyAgentBottle>1</Cinder_EmptyAgentBottle>
+		</fixedInventory>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>5~7</range>
+			</li>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~8</range>
+			</li>
+		</skills>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Cinder_BasePawn">
@@ -1117,48 +1121,48 @@
 		<initialWillRange>10</initialWillRange>
 		<initialResistanceRange>0</initialResistanceRange>
 		<maxGenerationAge>30</maxGenerationAge>
-        <minGenerationAge>19</minGenerationAge>
+		<minGenerationAge>19</minGenerationAge>
 		<startingHediffs>
-          <li>
-          <def>Cinder_LongDream</def>
-          </li>
-		  <li>
-          <def>Cinder_ExtraArmourPlate</def>
-          <chance>0.5</chance>
-          </li>
-        </startingHediffs>
+			<li>
+				<def>Cinder_LongDream</def>
+			</li>
+			<li>
+				<def>Cinder_ExtraArmourPlate</def>
+				<chance>0.5</chance>
+			</li>
+		</startingHediffs>
 		<backstoryFiltersOverride>
-        <li>
-        <categories>
-		  <li>CinderStory_Refugee_Child</li>
-		  <li>CinderStory_ESDSP_Child</li>
-          <li>CinderStory_ESDSP_Ghoul</li>
-        </categories>
-        </li>
-       </backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>CinderStory_Refugee_Child</li>
+					<li>CinderStory_ESDSP_Child</li>
+					<li>CinderStory_ESDSP_Ghoul</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>Cinder_Ghoul</li>
 		</apparelTags>
 		<apparelRequired>
-         <li>Cinder_HeadGear_GhoulUnitHelmet</li>
-		 <li>Cinder_Apparel_BrokenGhoulUnitGear</li>
-       </apparelRequired>
+			<li>Cinder_HeadGear_GhoulUnitHelmet</li>
+			<li>Cinder_Apparel_BrokenGhoulUnitGear</li>
+		</apparelRequired>
 		<apparelMoney>
 			<min>1200</min>
 			<max>1300</max>
 		</apparelMoney>
 		<requiredWorkTags>
-        <li>Violent</li>
-        </requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
 		<weaponTags>
-    <li>MedievalMeleeBasic</li>
-    </weaponTags>
-    <weaponMoney>200~400</weaponMoney>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+		<weaponMoney>200~400</weaponMoney>
 	</PawnKindDef>
-	
-	
+
+
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_EliteGhoul</defName>
 		<label>ghoul unit</label>
@@ -1171,51 +1175,51 @@
 		<initialWillRange>10</initialWillRange>
 		<initialResistanceRange>0</initialResistanceRange>
 		<maxGenerationAge>30</maxGenerationAge>
-        <minGenerationAge>19</minGenerationAge>
+		<minGenerationAge>19</minGenerationAge>
 		<startingHediffs>
-          <li>
-          <def>Cinder_LongDream</def>
-          </li>
-		  <li>
-          <def>Cinder_ExtraArmourPlate</def>
-          <chance>1</chance>
-          </li>
-        </startingHediffs>
+			<li>
+				<def>Cinder_LongDream</def>
+			</li>
+			<li>
+				<def>Cinder_ExtraArmourPlate</def>
+				<chance>1</chance>
+			</li>
+		</startingHediffs>
 		<backstoryFiltersOverride>
-        <li>
-        <categories>
-		  <li>CinderStory_Refugee_Child</li>
-		  <li>CinderStory_ESDSP_Child</li>
-          <li>CinderStory_ESDSP_Ghoul</li>
-        </categories>
-        </li>
-       </backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>CinderStory_Refugee_Child</li>
+					<li>CinderStory_ESDSP_Child</li>
+					<li>CinderStory_ESDSP_Ghoul</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
 			<li>Cinder_Ghoul</li>
 		</apparelTags>
 		<apparelRequired>
-         <li>Cinder_HeadGear_GhoulUnitHelmet</li>
-		 <li>Cinder_Apparel_GhoulUnitGear</li>
-       </apparelRequired>
+			<li>Cinder_HeadGear_GhoulUnitHelmet</li>
+			<li>Cinder_Apparel_GhoulUnitGear</li>
+		</apparelRequired>
 		<apparelMoney>
 			<min>2200</min>
 			<max>3200</max>
 		</apparelMoney>
 		<requiredWorkTags>
-        <li>Violent</li>
-        </requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
 		<skills>
-      <li>
-        <skill>Melee</skill>
-        <range>7~10</range>
-      </li>
-    </skills>
-	<weaponTags>
-    <li>Cinder_IndustrialMelee</li>
-    </weaponTags>
-    <weaponMoney>600~700</weaponMoney>
+			<li>
+				<skill>Melee</skill>
+				<range>7~10</range>
+			</li>
+		</skills>
+		<weaponTags>
+			<li>Cinder_IndustrialMelee</li>
+		</weaponTags>
+		<weaponMoney>600~700</weaponMoney>
 	</PawnKindDef>
 
 </Defs>

@@ -92,6 +92,8 @@
     <Compile Include="HediffComp_LimitedResurrect.cs" />
     <Compile Include="HediffComp_NewHediffAfterDisappear.cs" />
     <Compile Include="HediffComp_ProtectiveShield.cs" />
+    <Compile Include="HediffComp_StopMusicIfDowned.cs" />
+    <Compile Include="Hediff_DownedAction.cs" />
     <Compile Include="Hediff_DynamicCap.cs" />
     <Compile Include="PatchOperationAddSafe.cs" />
     <Compile Include="PatchOperationConditionalSettings.cs" />
