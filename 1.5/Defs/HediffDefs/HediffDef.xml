@@ -477,7 +477,7 @@
 		<defName>Cinder_MusicStopper</defName>
 		<label>stop music when downed</label>
 		<description>Hidden hediff that stops current boss music when downed or dead. Should be invisible and remove on activation.</description>
-		<hediffClass>Embergarden.HediffComp_StopMusicIfDowned</hediffClass>
+		<hediffClass>Embergarden.Hediff_DownedAction</hediffClass>
 		<defaultLabelColor>(0, 0, 0)</defaultLabelColor>
 		<initialSeverity>1</initialSeverity>
 		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
