@@ -4,7 +4,7 @@
  <ThingDef ParentName="BuildingBase">
     <defName>Cinder_SignalGenerator</defName>
     <label>Fake signal generator</label>
-    <description>A signal generator that sends false signals to attract ESDSP combat units to attack, with some intimidating tentacles inexplicably growing on it,this building can only be used once.</description>
+    <description>A signal generator that sends false signals to attract Cradle combat units to attack, with some intimidating tentacles inexplicably growing on it,this building can only be used once.</description>
     <graphicData>
       <texPath>Things/Building/FakeSignalTransmitter</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
