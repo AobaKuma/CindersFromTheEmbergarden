@@ -257,7 +257,7 @@
 	
     <factionIconPath>UI/Icon/fleetIcon</factionIconPath>
     <techLevel>Ultra</techLevel>
-	<earliestRaidDays>45</earliestRaidDays>
+	<earliestRaidDays>0</earliestRaidDays>
     <permanentEnemy>true</permanentEnemy>
     <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
 	
