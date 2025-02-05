@@ -68,7 +68,7 @@
 			</li>
 			<li>
 				<!-- 5 -->
-				<bossCount>2</bossCount>
+				<bossCount>1</bossCount>
 				<escorts>
 					<Cinder_SoliderUnit>3</Cinder_SoliderUnit>
 					<Cinder_HeavySoliderUnit>2</Cinder_HeavySoliderUnit>
