@@ -1,4 +1,5 @@
-﻿using Verse;
+﻿using System.Collections.Generic;
+using Verse;
 
 namespace Embergarden
 {
@@ -7,15 +8,18 @@ namespace Embergarden
         CompProperties_HediffStopMusicIfDowned Props => props as CompProperties_HediffStopMusicIfDowned;
         public override void Notify_Downed()
         {
-            var music = Find.MusicManagerPlay;
-            if (music.CurrentSong == Props.songDef) music.ForceTriggerNextSongOrSequence();
-            Pawn.health.RemoveHediff(parent);
+            DoSomething();
         }
 
         public override void Notify_PawnDied(DamageInfo? dinfo, Hediff culprit = null)
         {
+            DoSomething();
+        }
+
+        public void DoSomething()
+        {
             var music = Find.MusicManagerPlay;
-            if (music.CurrentSong == Props.songDef) music.ForceTriggerNextSongOrSequence();
+            if (Props.songDefs.Contains(music.CurrentSong)) music.ForceTriggerNextSongOrSequence();
             Pawn.health.RemoveHediff(parent);
         }
     }
@@ -27,6 +31,6 @@ namespace Embergarden
             compClass = typeof(HediffComp_StopMusicIfDowned);
         }
 
-        public SongDef songDef;
+        public List<SongDef> songDefs;
     }
 }

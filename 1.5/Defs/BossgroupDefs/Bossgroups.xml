@@ -140,7 +140,10 @@
 		<rewardDef>Cinder_ExtraArmour</rewardDef>
 		<modExtensions>
 			<li Class="Embergarden.ModExtension_BossSong">
-				<songDef>Cinder_SongA</songDef>
+				<songDefs>
+					<li>Cinder_SongA</li>
+					<li>Cinder_SongB</li>
+				</songDefs>
 			</li>
 		</modExtensions>
 	</BossgroupDef>

@@ -85,7 +85,7 @@ namespace Embergarden
                 minDelay = MinDelayTicksRange.RandomInRange,
                 maxDelay = MaxDelayTicksRange.RandomInRange,
                 inSignalEnable = QuestGen.slate.Get<string>("inSignal"),
-                song = bossgroupDef.GetModExtension<ModExtension_BossSong>()?.songDef,
+                song = bossgroupDef.GetModExtension<ModExtension_BossSong>()?.GetSong(),
             };
             questPart_BossgroupArrives.outSignalsCompleted.Add(text);
             quest.AddPart(questPart_BossgroupArrives);
@@ -160,6 +160,11 @@ namespace Embergarden
 
     public class ModExtension_BossSong : DefModExtension
     {
-        public SongDef songDef;
+        public List<SongDef> songDefs = new List<SongDef>();
+
+        public SongDef GetSong()
+        {
+            return songDefs.RandomElement();
+        }
     }
 }

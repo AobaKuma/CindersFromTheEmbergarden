@@ -489,8 +489,10 @@
 		</stages>
 		<comps>
 			<li Class="Embergarden.CompProperties_HediffStopMusicIfDowned">
-				<songDef>Cinder_SongA</songDef>
-				<songDef>Cinder_SongB</songDef>
+				<songDefs>
+					<li>Cinder_SongA</li>
+					<li>Cinder_SongB</li>
+				</songDefs>
 			</li>
 		</comps>
 	</HediffDef>
