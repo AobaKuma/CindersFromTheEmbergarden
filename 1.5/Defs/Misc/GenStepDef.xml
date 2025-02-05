@@ -18,8 +18,8 @@
 			<groups>
 				<li>
 					<things>
-						<AncientWheel>0.5</AncientWheel>
-						<AncientGiantWheel>1</AncientGiantWheel>
+						<AncientWheel MayRequire="Ludeon.RimWorld.Ideology">0.5</AncientWheel>
+						<AncientGiantWheel MayRequire="Ludeon.RimWorld.Ideology">1</AncientGiantWheel>
 						<Cinder_AncientGiantTruck>1</Cinder_AncientGiantTruck>
 						<Cinder_AncientGiantCargo>1</Cinder_AncientGiantCargo>
 					</things>
@@ -52,8 +52,8 @@
 			<groups>
 				<li>
 					<things>
-						<AncientWheel>2</AncientWheel>
-						<AncientGiantWheel>1</AncientGiantWheel>
+						<AncientWheel MayRequire="Ludeon.RimWorld.Ideology">2</AncientWheel>
+						<AncientGiantWheel MayRequire="Ludeon.RimWorld.Ideology">1</AncientGiantWheel>
 						<Cinder_AncientRustedChunk_A>2</Cinder_AncientRustedChunk_A>
 					</things>
 					<indoorRuin>false</indoorRuin>
@@ -85,7 +85,7 @@
 			<groups>
 				<li>
 					<things>
-						<AncientWheel>2</AncientWheel>
+						<AncientWheel MayRequire="Ludeon.RimWorld.Ideology">2</AncientWheel>
 						<Cinder_AncientFastArmoredVehicle>1</Cinder_AncientFastArmoredVehicle>
 						<Cinder_AncientWheeledTank>1</Cinder_AncientWheeledTank>
 					</things>
@@ -98,7 +98,7 @@
 				</li>
 				<li>
 					<things>
-						<AncientWheel>1</AncientWheel>
+						<AncientWheel MayRequire="Ludeon.RimWorld.Ideology">1</AncientWheel>
 						<Cinder_AncientWheeledTank>1</Cinder_AncientWheeledTank>
 					</things>
 					<indoorRuin>false</indoorRuin>
@@ -193,7 +193,7 @@
           <filthDef>Filth_MachineBits</filthDef>
           <filthExpandBy>1</filthExpandBy>
         </li>
-		<li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">
           <thing>AncientGiantWheel</thing>
           <offset>(4, 0, -1)</offset>
           <filthDef>Filth_MachineBits</filthDef>
