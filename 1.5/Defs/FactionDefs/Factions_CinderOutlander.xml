@@ -82,7 +82,7 @@
       <li>Visitor_Outlander_Standard</li>
     </visitorTraderKinds>
     <baseTraderKinds>
-      <li>Base_Outlander_Standard</li>
+      <li>CinderBase_Outlander_Standard</li>
     </baseTraderKinds>
     <allowedArrivalTemperatureRange>-60~65</allowedArrivalTemperatureRange>
     <raidLootMaker>Cinder_OutlanderRaidLootMaker</raidLootMaker>
