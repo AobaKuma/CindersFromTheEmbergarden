@@ -203,42 +203,42 @@
 		</comps>
 	</ThingDef>
 
-  <ThingDef ParentName="Cinder_TrapIEDBase">
-    <defName>Cinder_TrapIED_HighExplosive</defName>
-    <label>Amorphous trap</label>
-    <description>A pair of high-explosive shells connected to a trigger which detonates on touch or bullet impact. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
-    <graphicData>
-      <texPath>Things/Building/AmorphousIED</texPath>
-    </graphicData>
-    <designationHotKey>Misc7</designationHotKey>
-	 <statBases>
-      <MaxHitPoints>40</MaxHitPoints>
-    </statBases>
-    <comps>
-      <li Class="CompProperties_Explosive">
-        <explosiveRadius>3.9</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
-        <wickTicks>15</wickTicks>
-        <startWickOnDamageTaken>
-          <li>Bullet</li>
-          <li>Arrow</li>
-          <li>ArrowHighVelocity</li>
-        </startWickOnDamageTaken>
-		<destroyThingOnExplosionSize>9999</destroyThingOnExplosionSize>
-      </li>
-    </comps>
-    <specialDisplayRadius>3.9</specialDisplayRadius>
-  </ThingDef>
-  
-    <ThingDef ParentName="EtherealThingBase">
-    <defName>Cinder_BlackTentacle</defName>
-    <label>tentacle</label>
-    <drawerType>MapMeshOnly</drawerType>
-    <tickerType>Normal</tickerType>
-	<thingClass>building</thingClass>
-	<category>Building</category>
-	<altitudeLayer>BuildingOnTop</altitudeLayer>
+	<ThingDef ParentName="Cinder_TrapIEDBase">
+		<defName>Cinder_TrapIED_HighExplosive</defName>
+		<label>Amorphous trap</label>
+		<description>A pair of high-explosive shells connected to a trigger which detonates on touch or bullet impact. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+		<graphicData>
+			<texPath>Things/Building/AmorphousIED</texPath>
+		</graphicData>
+		<designationHotKey>Misc7</designationHotKey>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+				<wickTicks>15</wickTicks>
+				<startWickOnDamageTaken>
+					<li>Bullet</li>
+					<li>Arrow</li>
+					<li>ArrowHighVelocity</li>
+				</startWickOnDamageTaken>
+				<destroyThingOnExplosionSize>9999</destroyThingOnExplosionSize>
+			</li>
+		</comps>
+		<specialDisplayRadius>3.9</specialDisplayRadius>
+	</ThingDef>
+
+	<ThingDef ParentName="EtherealThingBase">
+		<defName>Cinder_BlackTentacle</defName>
+		<label>tentacle</label>
+		<drawerType>MapMeshOnly</drawerType>
+		<tickerType>Normal</tickerType>
+		<thingClass>building</thingClass>
+		<category>Building</category>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<blocksAltitudes>
 			<li>BuildingOnTop</li>
 		</blocksAltitudes>
@@ -271,6 +271,7 @@
 			<li>BuildingBelowTop</li>
 		</blocksAltitudes>
 		<building>
+			<isTrap>false</isTrap>
 			<isEdifice>false</isEdifice>
 		</building>
 		<graphicData>
