@@ -16,6 +16,9 @@
            <Cinder_Xenotype MayRequire="Ludeon.RimWorld.Biotech">1</Cinder_Xenotype>
            </xenotypeChances>
          </xenotypeSet>
+		 <modExtensions>
+			<li Class="Embergarden.ModExtension_NoIdeoApparel" />
+		</modExtensions>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Cinder_BasePawn">
