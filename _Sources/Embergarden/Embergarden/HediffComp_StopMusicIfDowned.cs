@@ -19,7 +19,7 @@ namespace Embergarden
         public void DoSomething()
         {
             var music = Find.MusicManagerPlay;
-            if (Props.songDefs.Contains(music.CurrentSong)) music.ForceTriggerNextSongOrSequence();
+            if (Props.songDefs.Contains(music.CurrentSong)) music.ForceFadeoutAndSilenceFor(Props.pauseSecRange.RandomInRange);
             Pawn.health.RemoveHediff(parent);
         }
     }
@@ -32,5 +32,7 @@ namespace Embergarden
         }
 
         public List<SongDef> songDefs;
+
+        public FloatRange pauseSecRange = new(15, 60);
     }
 }
