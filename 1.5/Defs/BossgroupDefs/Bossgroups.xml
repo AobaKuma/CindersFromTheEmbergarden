@@ -138,6 +138,11 @@
 		</waves>
 		<leaderDescription>Standard combat unit group, units with consciousness taken over by DI will independently assess threats and engage in combat.</leaderDescription>
 		<rewardDef>Cinder_ExtraArmour</rewardDef>
+		<modExtensions>
+			<li Class="Embergarden.ModExtension_BossSong">
+				<songDef>Cinder_SongA</songDef>
+			</li>
+		</modExtensions>
 	</BossgroupDef>
 
 </Defs>

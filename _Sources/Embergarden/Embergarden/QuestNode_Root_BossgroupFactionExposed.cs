@@ -14,7 +14,6 @@ namespace Embergarden
 
         private static readonly IntRange MinDelayTicksRange = new IntRange(2500, 5000);
         private readonly FactionDef factionDef;
-        private readonly SongDef songDef;
         [MustTranslate]
         private readonly string LetterLabelBossgroupSummoned, LetterLabelBossgroupArrived, LetterBossgroupSummoned, LetterBossgroupArrived, AlertBossgroupIncoming, AlertBossgroupIncomingDesc;
         protected override void RunInt()
@@ -86,7 +85,7 @@ namespace Embergarden
                 minDelay = MinDelayTicksRange.RandomInRange,
                 maxDelay = MaxDelayTicksRange.RandomInRange,
                 inSignalEnable = QuestGen.slate.Get<string>("inSignal"),
-                song = songDef
+                song = bossgroupDef.GetModExtension<ModExtension_BossSong>()?.songDef,
             };
             questPart_BossgroupArrives.outSignalsCompleted.Add(text);
             quest.AddPart(questPart_BossgroupArrives);
@@ -149,7 +148,7 @@ namespace Embergarden
         protected override void Complete(SignalArgs signalArgs)
         {
             base.Complete(signalArgs);
-            Find.MusicManagerPlay.ForcePlaySong(song, false);
+            if (song != null) Find.MusicManagerPlay.ForcePlaySong(song, false);
         }
 
         public override void ExposeData()
@@ -157,5 +156,10 @@ namespace Embergarden
             base.ExposeData();
             Scribe_Defs.Look(ref song, "song");
         }
+    }
+
+    public class ModExtension_BossSong : DefModExtension
+    {
+        public SongDef songDef;
     }
 }
