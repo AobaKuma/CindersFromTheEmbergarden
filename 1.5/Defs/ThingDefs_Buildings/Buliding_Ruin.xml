@@ -27,7 +27,7 @@
 		</building>
 	</ThingDef>
 
-	
+
 
 	<ThingDef ParentName="Cinder_NonfunctionalBuilding_Impassable">
 		<defName>Cinder_AmorphousWall</defName>
@@ -38,9 +38,9 @@
 			<texPath>Things/Building/AmorphousWall</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(3,3)</drawSize>
-			 <shadowData>
-                <volume>(2.7,0.1, 2.7)</volume>
-            </shadowData>
+			<shadowData>
+				<volume>(2.7,0.1, 2.7)</volume>
+			</shadowData>
 		</graphicData>
 		<size>(3,3)</size>
 		<statBases>
@@ -51,7 +51,7 @@
 			<ChunkSlagSteel>2~4</ChunkSlagSteel>
 		</killedLeavingsRanges>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="Cinder_NonfunctionalBuilding_Impassable">
 		<defName>Cinder_ErodedEXOBuliding</defName>
 		<label>eroded EXO(Not Started)</label>
@@ -61,23 +61,23 @@
 			<texPath>Things/Pawn/Mech/EXObuliding/ErodedEXO</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>3</drawSize>
-			 <shadowData>
-                <volume>(1.1, 1.0, 1.1)</volume>
-            </shadowData>
+			<shadowData>
+				<volume>(1.1, 1.0, 1.1)</volume>
+			</shadowData>
 		</graphicData>
 		<size>(2,2)</size>
 		<costList>
-           <Steel>240</Steel>
-		   <Cinder_AmorphousPolymer>200</Cinder_AmorphousPolymer>
-		   <Uranium>60</Uranium>
-           <ComponentSpacer>4</ComponentSpacer>
-		   <Cinder_ErodedMechComponent>1</Cinder_ErodedMechComponent>
-        </costList>
+			<Steel>240</Steel>
+			<Cinder_AmorphousPolymer>200</Cinder_AmorphousPolymer>
+			<Uranium>60</Uranium>
+			<ComponentSpacer>4</ComponentSpacer>
+			<Cinder_ErodedMechComponent>1</Cinder_ErodedMechComponent>
+		</costList>
 		<researchPrerequisites>
-          <li>Cinder_WarMachinery</li>
-        </researchPrerequisites>
+			<li>Cinder_WarMachinery</li>
+		</researchPrerequisites>
 		<statBases>
-		    <WorkToBuild>150000</WorkToBuild>
+			<WorkToBuild>150000</WorkToBuild>
 			<MaxHitPoints>1500</MaxHitPoints>
 			<Mass>100</Mass>
 		</statBases>
@@ -87,22 +87,22 @@
 		</killedLeavingsRanges>
 		<designationCategory MayRequire="Ludeon.RimWorld.Biotech">Biotech</designationCategory>
 		<comps>
-		<li Class="CompProperties_Usable" MayRequire="Ludeon.RimWorld.Biotech">
-        <useJob>TriggerObject</useJob>
-        <useLabel>Activate the unit</useLabel>
-        </li>
-        <li Class="Embergarden.CompProperties_UseEffect_ActivateMech" MayRequire="Ludeon.RimWorld.Biotech">
-        <compClass>Embergarden.CompUseEffect_ActivateMech</compClass>
-		<pawnKindDef>Cinder_Mech_ErodedEXO</pawnKindDef>
-		<requireMechanitor>true</requireMechanitor>
-        </li>
-		<li Class="CompProperties_UseEffectDestroySelf" MayRequire="Ludeon.RimWorld.Biotech">
-        <delayTicks>120</delayTicks>
-        <spawnKilledLeavings>false</spawnKilledLeavings>
-        </li>
-        </comps>
+			<li Class="CompProperties_Usable" MayRequire="Ludeon.RimWorld.Biotech">
+				<useJob>TriggerObject</useJob>
+				<useLabel>Activate the unit</useLabel>
+			</li>
+			<li Class="Embergarden.CompProperties_UseEffect_ActivateMech" MayRequire="Ludeon.RimWorld.Biotech">
+				<compClass>Embergarden.CompUseEffect_ActivateMech</compClass>
+				<pawnKindDef>Cinder_Mech_ErodedEXO</pawnKindDef>
+				<requireMechanitor>true</requireMechanitor>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf" MayRequire="Ludeon.RimWorld.Biotech">
+				<delayTicks>120</delayTicks>
+				<spawnKilledLeavings>false</spawnKilledLeavings>
+			</li>
+		</comps>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="Cinder_NonfunctionalBuilding_Impassable">
 		<defName>Cinder_WarAttackerBuliding</defName>
 		<label>war attacker(Not Started)</label>
@@ -112,23 +112,23 @@
 			<texPath>Things/Pawn/Mech/WarAttacker</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>3.6</drawSize>
-			 <shadowData>
-                <volume>(1.1, 1.0, 1.1)</volume>
-            </shadowData>
+			<shadowData>
+				<volume>(1.1, 1.0, 1.1)</volume>
+			</shadowData>
 		</graphicData>
 		<size>(2,2)</size>
 		<costList>
-           <Steel>340</Steel>
-		   <Cinder_AmorphousPolymer>400</Cinder_AmorphousPolymer>
-		   <Uranium>120</Uranium>
-           <ComponentSpacer>8</ComponentSpacer>
-		   <Cinder_ErodedMechComponent>2</Cinder_ErodedMechComponent>
-        </costList>
+			<Steel>340</Steel>
+			<Cinder_AmorphousPolymer>400</Cinder_AmorphousPolymer>
+			<Uranium>120</Uranium>
+			<ComponentSpacer>8</ComponentSpacer>
+			<Cinder_ErodedMechComponent>2</Cinder_ErodedMechComponent>
+		</costList>
 		<researchPrerequisites>
-          <li>Cinder_WarAttacker</li>
-        </researchPrerequisites>
+			<li>Cinder_WarAttacker</li>
+		</researchPrerequisites>
 		<statBases>
-		    <WorkToBuild>180000</WorkToBuild>
+			<WorkToBuild>180000</WorkToBuild>
 			<MaxHitPoints>1500</MaxHitPoints>
 			<Mass>100</Mass>
 		</statBases>
@@ -138,21 +138,21 @@
 		</killedLeavingsRanges>
 		<designationCategory MayRequire="Ludeon.RimWorld.Biotech">Biotech</designationCategory>
 		<comps>
-		<li Class="CompProperties_Usable" MayRequire="Ludeon.RimWorld.Biotech">
-        <useJob>TriggerObject</useJob>
-        <useLabel>Activate the unit</useLabel>
-        </li>
-        <li Class="Embergarden.CompProperties_UseEffect_ActivateMech" MayRequire="Ludeon.RimWorld.Biotech">
-        <compClass>Embergarden.CompUseEffect_ActivateMech</compClass>
-		<pawnKindDef>Cinder_Mech_WarAttacker</pawnKindDef>
-        </li>
-		<li Class="CompProperties_UseEffectDestroySelf" MayRequire="Ludeon.RimWorld.Biotech">
-        <delayTicks>120</delayTicks>
-        <spawnKilledLeavings>false</spawnKilledLeavings>
-        </li>
-        </comps>
+			<li Class="CompProperties_Usable" MayRequire="Ludeon.RimWorld.Biotech">
+				<useJob>TriggerObject</useJob>
+				<useLabel>Activate the unit</useLabel>
+			</li>
+			<li Class="Embergarden.CompProperties_UseEffect_ActivateMech" MayRequire="Ludeon.RimWorld.Biotech">
+				<compClass>Embergarden.CompUseEffect_ActivateMech</compClass>
+				<pawnKindDef>Cinder_Mech_WarAttacker</pawnKindDef>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf" MayRequire="Ludeon.RimWorld.Biotech">
+				<delayTicks>120</delayTicks>
+				<spawnKilledLeavings>false</spawnKilledLeavings>
+			</li>
+		</comps>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="Cinder_NonfunctionalBuilding_Impassable">
 		<defName>Cinder_WarSweeperBuliding</defName>
 		<label>war sweeper(Not Started)</label>
@@ -162,23 +162,23 @@
 			<texPath>Things/Pawn/Mech/WarSweeper</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>3.6</drawSize>
-			 <shadowData>
-                <volume>(1.1, 1.0, 1.1)</volume>
-            </shadowData>
+			<shadowData>
+				<volume>(1.1, 1.0, 1.1)</volume>
+			</shadowData>
 		</graphicData>
 		<size>(2,2)</size>
 		<costList>
-           <Steel>240</Steel>
-		   <Cinder_AmorphousPolymer>300</Cinder_AmorphousPolymer>
-		   <Uranium>90</Uranium>
-           <ComponentSpacer>8</ComponentSpacer>
-		   <Cinder_ErodedMechComponent>2</Cinder_ErodedMechComponent>
-        </costList>
+			<Steel>240</Steel>
+			<Cinder_AmorphousPolymer>300</Cinder_AmorphousPolymer>
+			<Uranium>90</Uranium>
+			<ComponentSpacer>8</ComponentSpacer>
+			<Cinder_ErodedMechComponent>2</Cinder_ErodedMechComponent>
+		</costList>
 		<researchPrerequisites>
-          <li>Cinder_WarAttacker</li>
-        </researchPrerequisites>
+			<li>Cinder_WarAttacker</li>
+		</researchPrerequisites>
 		<statBases>
-		    <WorkToBuild>170000</WorkToBuild>
+			<WorkToBuild>170000</WorkToBuild>
 			<MaxHitPoints>1500</MaxHitPoints>
 			<Mass>100</Mass>
 		</statBases>
@@ -188,175 +188,182 @@
 		</killedLeavingsRanges>
 		<designationCategory MayRequire="Ludeon.RimWorld.Biotech">Biotech</designationCategory>
 		<comps>
-		<li Class="CompProperties_Usable" MayRequire="Ludeon.RimWorld.Biotech">
-        <useJob>TriggerObject</useJob>
-        <useLabel>Activate the unit</useLabel>
-        </li>
-        <li Class="Embergarden.CompProperties_UseEffect_ActivateMech" MayRequire="Ludeon.RimWorld.Biotech">
-        <compClass>Embergarden.CompUseEffect_ActivateMech</compClass>
-		<pawnKindDef>Cinder_Mech_WarSweeper</pawnKindDef>
-        </li>
-		<li Class="CompProperties_UseEffectDestroySelf" MayRequire="Ludeon.RimWorld.Biotech">
-        <delayTicks>120</delayTicks>
-        <spawnKilledLeavings>false</spawnKilledLeavings>
-        </li>
-        </comps>
+			<li Class="CompProperties_Usable" MayRequire="Ludeon.RimWorld.Biotech">
+				<useJob>TriggerObject</useJob>
+				<useLabel>Activate the unit</useLabel>
+			</li>
+			<li Class="Embergarden.CompProperties_UseEffect_ActivateMech" MayRequire="Ludeon.RimWorld.Biotech">
+				<compClass>Embergarden.CompUseEffect_ActivateMech</compClass>
+				<pawnKindDef>Cinder_Mech_WarSweeper</pawnKindDef>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf" MayRequire="Ludeon.RimWorld.Biotech">
+				<delayTicks>120</delayTicks>
+				<spawnKilledLeavings>false</spawnKilledLeavings>
+			</li>
+		</comps>
 	</ThingDef>
-	
-    <ThingDef Name="Cinder_TrapIEDBase" ParentName="BuildingBase" Abstract="True">
-    <thingClass>Embergarden.Building_TrapExplosive_Rechargeable</thingClass>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-      <damageData>
-        <rect>(0.1,0,0.8,0.3)</rect>
-      </damageData>
-    </graphicData>
-    <uiIconOffset>(0,-0.14)</uiIconOffset>
-    <altitudeLayer>Building</altitudeLayer>
-    <rotatable>false</rotatable>
-    <tickerType>Normal</tickerType>
-    <stealable>false</stealable>
-    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <uiOrder>40</uiOrder>
-    <statBases>
-      <Mass>2</Mass>
-      <MaxHitPoints>120</MaxHitPoints>
-      <WorkToBuild>1400</WorkToBuild>
-      <Flammability>1</Flammability>
-      <Beauty>-4</Beauty>
-      <TrapSpringChance>1.0</TrapSpringChance>
-    </statBases>
-    <building>
-      <isTrap>true</isTrap>
-      <trapPeacefulWildAnimalsSpringChanceFactor>0.25</trapPeacefulWildAnimalsSpringChanceFactor>
-      <expandHomeArea>false</expandHomeArea>
-      <ai_chillDestination>false</ai_chillDestination>
-	  <turretBurstCooldownTime>60</turretBurstCooldownTime>
-    </building>
-    <placeWorkers>
-      <li>PlaceWorker_NeverAdjacentTrap</li>
-    </placeWorkers>
-  </ThingDef>
 
-  <ThingDef ParentName="Cinder_TrapIEDBase">
-    <defName>Cinder_TrapIED_HighExplosive</defName>
-    <label>Amorphous trap</label>
-    <description>A pair of high-explosive shells connected to a trigger which detonates on touch or bullet impact. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
-    <graphicData>
-      <texPath>Things/Building/AmorphousIED</texPath>
-    </graphicData>
-    <designationHotKey>Misc7</designationHotKey>
-    <comps>
-      <li Class="CompProperties_Explosive">
-        <explosiveRadius>3.9</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
-        <wickTicks>15</wickTicks>
-        <startWickOnDamageTaken>
-          <li>Bullet</li>
-          <li>Arrow</li>
-          <li>ArrowHighVelocity</li>
-        </startWickOnDamageTaken>
-		<destroyThingOnExplosionSize>9999</destroyThingOnExplosionSize>
-      </li>
-    </comps>
-    <specialDisplayRadius>3.9</specialDisplayRadius>
-  </ThingDef>
-  
-    <ThingDef ParentName="EtherealThingBase">
-    <defName>Cinder_BlackTentacle</defName>
-    <label>tentacle</label>
-    <drawerType>MapMeshOnly</drawerType>
-    <tickerType>Normal</tickerType>
-	<thingClass>building</thingClass>
-	<category>Building</category>
-	<altitudeLayer>BuildingOnTop</altitudeLayer>
+	<ThingDef Name="Cinder_TrapIEDBase" ParentName="BuildingBase" Abstract="True">
+		<thingClass>Embergarden.Building_TrapExplosive_Rechargeable</thingClass>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<rect>(0.1,0,0.8,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<uiIconOffset>(0,-0.14)</uiIconOffset>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<stealable>false</stealable>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<uiOrder>40</uiOrder>
+		<statBases>
+			<Mass>2</Mass>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>1400</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Beauty>-4</Beauty>
+			<TrapSpringChance>1.0</TrapSpringChance>
+		</statBases>
+		<building>
+			<isTrap>true</isTrap>
+			<trapPeacefulWildAnimalsSpringChanceFactor>0.25</trapPeacefulWildAnimalsSpringChanceFactor>
+			<expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+			<turretBurstCooldownTime>60</turretBurstCooldownTime>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_NeverAdjacentTrap</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="Cinder_TrapIEDBase">
+		<defName>Cinder_TrapIED_HighExplosive</defName>
+		<label>Amorphous trap</label>
+		<description>A pair of high-explosive shells connected to a trigger which detonates on touch or bullet impact. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+		<graphicData>
+			<texPath>Things/Building/AmorphousIED</texPath>
+		</graphicData>
+		<designationHotKey>Misc7</designationHotKey>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+				<wickTicks>15</wickTicks>
+				<startWickOnDamageTaken>
+					<li>Bullet</li>
+					<li>Arrow</li>
+					<li>ArrowHighVelocity</li>
+				</startWickOnDamageTaken>
+				<destroyThingOnExplosionSize>9999</destroyThingOnExplosionSize>
+			</li>
+		</comps>
+		<specialDisplayRadius>3.9</specialDisplayRadius>
+	</ThingDef>
+
+	<ThingDef ParentName="EtherealThingBase">
+		<defName>Cinder_BlackTentacle</defName>
+		<label>tentacle</label>
+		<drawerType>MapMeshOnly</drawerType>
+		<tickerType>Normal</tickerType>
+		<thingClass>building</thingClass>
+		<category>Building</category>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<blocksAltitudes>
 			<li>BuildingOnTop</li>
 		</blocksAltitudes>
 		<building>
 			<isEdifice>false</isEdifice>
 		</building>
-    <graphicData>
-      <texPath>Things/Building/AmorphousStructureA</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPlant</shaderType>
-	  <drawSize>(2,2)</drawSize>
-    </graphicData>
-	<comps>
-      <li Class="Embergarden.CompProperties_TentacleSpreader">
-        <maxRadius>7.9</maxRadius>
-		<effecterDef>CinderMote_Tentacle</effecterDef>
-		<spreadedThingDef>Cinder_TentacleTrap</spreadedThingDef>
-		<durationTicks>120</durationTicks>
-      </li>
-    </comps>
-  </ThingDef>
-  
-   <ThingDef ParentName="Cinder_TrapIEDBase">
-    <defName>Cinder_TentacleTrap</defName>
-    <label>Tentacle trap</label>
-	 <thingClass>Embergarden.Building_TrapTentacle</thingClass>
-    <description>/</description>
-    <graphicData>
-      <texPath>Things/Building/Black</texPath>
-	  <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <designationHotKey>Misc7</designationHotKey>
-	 <modExtensions>
-			<li Class="Embergarden.ModExtension_TentacleTrap">
-			<terrainDef>Cinder_TentacleTerrain</terrainDef>	
-			<hediffDef>Cinder_Blindness</hediffDef>
-			<durationSec>30</durationSec>
-			<soundDef>Cinder_Transform</soundDef>
+		<graphicData>
+			<texPath>Things/Building/AmorphousStructureA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPlant</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="Embergarden.CompProperties_TentacleSpreader">
+				<maxRadius>7.9</maxRadius>
+				<effecterDef>CinderMote_Tentacle</effecterDef>
+				<spreadedThingDef>Cinder_TentacleTrap</spreadedThingDef>
+				<durationTicks>120</durationTicks>
 			</li>
-	</modExtensions>
-	<comps>
-      <li Class="CompProperties_DestroyAfterDelay">
-        <delayTicks>7500</delayTicks>
-		<destroyMode>Vanish</destroyMode>
-      </li>
-    </comps>
-  </ThingDef>
-  
+		</comps>
+	</ThingDef>
 
-  
-  <TerrainDef Name="Cinder_FloorBase" Abstract="True">
-    <layerable>true</layerable>
-    <affordances>
-      <li>Light</li>
-      <li>Medium</li>
-      <li>Heavy</li>
-    </affordances>
-    <tags>
-      <li>Floor</li>
-    </tags>
-    <fertility>0</fertility>
-    <constructEffect>ConstructDirt</constructEffect>
-    <terrainAffordanceNeeded>
-      <li>Light</li>
-    </terrainAffordanceNeeded>
-    <edgeType>FadeRough</edgeType>
-    <renderPrecedence>70</renderPrecedence>
-    <isPaintable>false</isPaintable>
-	<pathCost>14</pathCost>
-    <statBases>
-      <Beauty>-2</Beauty>
-      <WorkToBuild>100</WorkToBuild>
-      <CleaningTimeFactor>3.6</CleaningTimeFactor>
-	  <ContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">7</ContainmentStrength>
-    </statBases>
-    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearBurn</pollutionShaderType>
-    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
-    <pollutionColor>(1, 1, 1, 0.8)</pollutionColor>
-    <pollutionOverlayScale>(0.75, 0.75)</pollutionOverlayScale>
-  </TerrainDef>
+	<ThingDef ParentName="Cinder_TrapIEDBase">
+		<defName>Cinder_TentacleTrap</defName>
+		<label>Tentacle trap</label>
+		<thingClass>Embergarden.Building_TrapTentacle</thingClass>
+		<description>/</description>
+		<altitudeLayer>BuildingBelowTop</altitudeLayer>
+		<blocksAltitudes>
+			<li>BuildingBelowTop</li>
+		</blocksAltitudes>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<graphicData>
+			<texPath>Things/Building/Black</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<designationHotKey>Misc7</designationHotKey>
+		<modExtensions>
+			<li Class="Embergarden.ModExtension_TentacleTrap">
+				<terrainDef>Cinder_TentacleTerrain</terrainDef>
+				<hediffDef>Cinder_Blindness</hediffDef>
+				<durationSec>30</durationSec>
+				<soundDef>Cinder_Transform</soundDef>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_DestroyAfterDelay">
+				<delayTicks>7500</delayTicks>
+				<destroyMode>Vanish</destroyMode>
+			</li>
+		</comps>
+	</ThingDef>
 
-  <TerrainDef ParentName="Cinder_FloorBase">
-    <defName>Cinder_TentacleTerrain</defName>
-    <label>black tentacle</label>
-    <description>black tentacle ground.</description>
-    <texturePath>Things/Building/AmorphousTentacle</texturePath>
-    <uiIconPath>Things/Building/AmorphousTentacle</uiIconPath>
-  </TerrainDef>
+
+
+	<TerrainDef Name="Cinder_FloorBase" Abstract="True">
+		<layerable>true</layerable>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+		</affordances>
+		<tags>
+			<li>Floor</li>
+		</tags>
+		<fertility>0</fertility>
+		<constructEffect>ConstructDirt</constructEffect>
+		<terrainAffordanceNeeded>
+			<li>Light</li>
+		</terrainAffordanceNeeded>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>70</renderPrecedence>
+		<isPaintable>false</isPaintable>
+		<pathCost>14</pathCost>
+		<statBases>
+			<Beauty>-2</Beauty>
+			<WorkToBuild>100</WorkToBuild>
+			<CleaningTimeFactor>3.6</CleaningTimeFactor>
+			<ContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">7</ContainmentStrength>
+		</statBases>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearBurn</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<pollutionColor>(1, 1, 1, 0.8)</pollutionColor>
+		<pollutionOverlayScale>(0.75, 0.75)</pollutionOverlayScale>
+	</TerrainDef>
+
+	<TerrainDef ParentName="Cinder_FloorBase">
+		<defName>Cinder_TentacleTerrain</defName>
+		<label>black tentacle</label>
+		<description>black tentacle ground.</description>
+		<texturePath>Things/Building/AmorphousTentacle</texturePath>
+		<uiIconPath>Things/Building/AmorphousTentacle</uiIconPath>
+	</TerrainDef>
 </Defs>

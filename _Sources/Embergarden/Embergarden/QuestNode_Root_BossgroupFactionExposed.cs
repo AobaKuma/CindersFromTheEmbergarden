@@ -14,6 +14,7 @@ namespace Embergarden
 
         private static readonly IntRange MinDelayTicksRange = new IntRange(2500, 5000);
         private readonly FactionDef factionDef;
+        private readonly SongDef songDef;
         [MustTranslate]
         private readonly string LetterLabelBossgroupSummoned, LetterLabelBossgroupArrived, LetterBossgroupSummoned, LetterBossgroupArrived, AlertBossgroupIncoming, AlertBossgroupIncomingDesc;
         protected override void RunInt()
@@ -78,13 +79,14 @@ namespace Embergarden
                 map.attackTargetsCache.UpdateTarget(item2);
             }
             string text = QuestGen.GenerateNewSignal("BossgroupArrives");
-            QuestPart_BossgroupArrives questPart_BossgroupArrives = new()
+            QuestPart_BossgroupArrivesWithMusic questPart_BossgroupArrives = new()
             {
                 mapParent = map.Parent,
                 bossgroupDef = bossgroupDef,
                 minDelay = MinDelayTicksRange.RandomInRange,
                 maxDelay = MaxDelayTicksRange.RandomInRange,
-                inSignalEnable = QuestGen.slate.Get<string>("inSignal")
+                inSignalEnable = QuestGen.slate.Get<string>("inSignal"),
+                song = songDef
             };
             questPart_BossgroupArrives.outSignalsCompleted.Add(text);
             quest.AddPart(questPart_BossgroupArrives);
@@ -138,6 +140,22 @@ namespace Embergarden
                 return slate.Exists("reward");
             }
             return false;
+        }
+    }
+
+    public class QuestPart_BossgroupArrivesWithMusic : QuestPart_BossgroupArrives
+    {
+        public SongDef song;
+        protected override void Complete(SignalArgs signalArgs)
+        {
+            base.Complete(signalArgs);
+            Find.MusicManagerPlay.ForcePlaySong(song, false);
+        }
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Defs.Look(ref song, "song");
         }
     }
 }
