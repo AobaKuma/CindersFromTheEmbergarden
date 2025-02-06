@@ -139,6 +139,9 @@
 				<statFactors>
 					<IncomingDamageFactor>0.01</IncomingDamageFactor>
 					<RestFallRateFactor>0.01</RestFallRateFactor>
+					<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+					<NecrotionResistance MayRequire="BlackMarket420.TAOFC">2.0</NecrotionResistance>
+	                <NecrotionEnvironmentResistance MayRequire="BlackMarket420.TAOFC">2.0</NecrotionEnvironmentResistance>
 				</statFactors>
 				<damageFactors>
 					<Flame>0</Flame>
