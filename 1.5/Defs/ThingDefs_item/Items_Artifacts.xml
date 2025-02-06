@@ -28,7 +28,7 @@
 	<ThingDef ParentName="Cinder_ArtifactBase">
 		<defName>Cinder_ErosionAgent</defName>
 		<label>erosion agent</label>
-		<description>A drug containing a large amount of amorphous polymer, which can obtain some special abilities after injection.</description>
+		<description>A drug containing large amount of amorphous polymer, which imparts special abilities after injection.</description>
 		<tradeability>None</tradeability>
 		<graphicData>
 			<texPath>Things/Item/ErosionAgent</texPath>
