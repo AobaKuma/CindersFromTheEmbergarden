@@ -31,6 +31,7 @@ namespace Embergarden
 
         public override void CompTick()
         {
+            if (!parent.Spawned) return;
             base.CompTick();
             if (needUpdateHP && InnerPawn == null)
             {
