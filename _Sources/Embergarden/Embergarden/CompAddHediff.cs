@@ -23,6 +23,7 @@ namespace Embergarden
         {
             if (parent is Pawn p)
             {
+                if (Props.skipPawnKindDefs.Any() && Props.skipPawnKindDefs.Contains(p.kindDef)) return;
                 foreach (var def in Props.hediffDefs)
                 {
                     if (!p.health?.hediffSet.HasHediff(def) ?? false)
@@ -42,5 +43,7 @@ namespace Embergarden
         }
 
         public List<HediffDef> hediffDefs = new List<HediffDef>();
+
+        public List<PawnKindDef> skipPawnKindDefs = new List<PawnKindDef>();
     }
 }
