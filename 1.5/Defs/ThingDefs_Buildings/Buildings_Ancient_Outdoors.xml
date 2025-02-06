@@ -25,7 +25,7 @@
         <size>(2,6)</size>
 		<pathCost>50</pathCost>
 		<passability>PassThroughOnly</passability>
-        <fillPercent>1</fillPercent>
+        <fillPercent>0.9</fillPercent>
         <statBases>
             <MaxHitPoints>720</MaxHitPoints>
         </statBases>
@@ -126,7 +126,7 @@
 		<blockLight>false</blockLight>
         <randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
         <size>(8,5)</size>
-        <fillPercent>1</fillPercent>
+        <fillPercent>0.9</fillPercent>
         <statBases>
             <MaxHitPoints>2400</MaxHitPoints>
         </statBases>
@@ -154,7 +154,7 @@
 		<rotatable>false</rotatable>
         <randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
         <size>(5,3)</size>
-        <fillPercent>1</fillPercent>
+        <fillPercent>0.9</fillPercent>
         <statBases>
             <MaxHitPoints>900</MaxHitPoints>
         </statBases>
@@ -180,7 +180,7 @@
 		<rotatable>false</rotatable>
         <randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
         <size>(4,2)</size>
-        <fillPercent>1</fillPercent>
+        <fillPercent>0.9</fillPercent>
         <statBases>
             <MaxHitPoints>480</MaxHitPoints>
         </statBases>
@@ -206,7 +206,7 @@
 		<rotatable>false</rotatable>
         <randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
         <size>(10,5)</size>
-        <fillPercent>1</fillPercent>
+        <fillPercent>0.9</fillPercent>
         <statBases>
             <MaxHitPoints>2700</MaxHitPoints>
         </statBases>
@@ -235,7 +235,7 @@
 		<rotatable>false</rotatable>
         <randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
         <size>(9,5)</size>
-        <fillPercent>1</fillPercent>
+        <fillPercent>0.9</fillPercent>
         <statBases>
             <MaxHitPoints>2700</MaxHitPoints>
         </statBases>

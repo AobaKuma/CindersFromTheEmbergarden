@@ -8,6 +8,11 @@
 		<tradeTags Inherit="False">
 			<li>Cinder_Gun</li>
 		</tradeTags>
+		<recipeMaker>
+		    <recipeUsers Inherit="false">
+				<li>Cinder_AncientWorkstation</li>
+			</recipeUsers>
+		</recipeMaker>
 	</ThingDef>
 
 

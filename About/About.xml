@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>Cinders of the Embergarden</name>
-	<author>BreadAOBA</author>
+	<author>BreadMoAOBA</author>
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
@@ -26,4 +26,7 @@
 		<li>erdelf.HumanoidAlienRaces</li>
 		<li>ceteam.combatextended</li>
 	</loadAfter>
+	 <loadBefore>
+         <li>Aoba.DeadManSwitch.Core</li>
+     </loadBefore>
 </ModMetaData>

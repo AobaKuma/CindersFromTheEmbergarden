@@ -82,7 +82,7 @@
       <li>Visitor_Outlander_Standard</li>
     </visitorTraderKinds>
     <baseTraderKinds>
-      <li>Base_Outlander_Standard</li>
+      <li>CinderBase_Outlander_Standard</li>
     </baseTraderKinds>
     <allowedArrivalTemperatureRange>-60~65</allowedArrivalTemperatureRange>
     <raidLootMaker>Cinder_OutlanderRaidLootMaker</raidLootMaker>
@@ -257,7 +257,7 @@
 	
     <factionIconPath>UI/Icon/fleetIcon</factionIconPath>
     <techLevel>Ultra</techLevel>
-	<earliestRaidDays>45</earliestRaidDays>
+	<earliestRaidDays>0</earliestRaidDays>
     <permanentEnemy>true</permanentEnemy>
     <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
 	
