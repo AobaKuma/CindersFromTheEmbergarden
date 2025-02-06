@@ -5,6 +5,7 @@ using UnityEngine;
 using Verse;
 using Verse.AI.Group;
 using static Unity.Burst.Intrinsics.X86.Avx;
+using static UnityEngine.GraphicsBuffer;
 
 namespace Embergarden
 {
@@ -167,7 +168,21 @@ namespace Embergarden
         {
             if (InnerPawn == null) NewPawn();
             Pawn p = InnerPawn;
-            p.SetFactionDirect(parent.Faction);
+            var f = parent.Faction;
+            p.SetFactionDirect(f);
+
+            if (f != null && !f.IsPlayer && p.GetLord() == null)
+            {
+                if (f.HostileTo(Faction.OfPlayer))
+                {
+                    LordMaker.MakeNewLord(f, new LordJob_AssaultColony(), parent.MapHeld, [p]);
+                }
+                else
+                {
+                    LordMaker.MakeNewLord(f, new LordJob_DefendPoint(parent.Position), parent.MapHeld, [p]);
+                }
+            }
+
             pawnOwner.TryDropAll(parent.Position, parent.Map, ThingPlaceMode.Direct);
             bool flag = Find.Selector.SelectedObjectsListForReading.Contains(parent);
             parent.DeSpawn(DestroyMode.WillReplace);
