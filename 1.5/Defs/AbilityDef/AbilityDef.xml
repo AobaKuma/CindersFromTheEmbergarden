@@ -241,7 +241,7 @@
   <AbilityDef ParentName="AbilityTouchBase">
     <defName>Cinder_SuffocatingWhispers</defName>
     <label>suffocating whispers</label>
-    <description>Entangled the target with tentacles, causing temporary suffocation and coma.</description>
+    <description>Entangles the target with tentacles, causing temporary suffocation and coma.</description>
     <iconPath>UI/Abilities/SuffocatingWhispers</iconPath>
     <cooldownTicksRange>27500</cooldownTicksRange> <!-- 3 hours -->
      <stunTargetWhileCasting>true</stunTargetWhileCasting>
@@ -288,7 +288,7 @@
 	<AbilityDef>
     <defName>Cinder_EternalFearAbility</defName>
     <label>eternal fear</label>
-    <description>Erosion the spirit of the target, detach it from the protection of reason, and make them fall into a state of fear.</description>
+    <description>Erodes the spirit of the target, detach it from the protection of reason, and make them fall into the state of fear.</description>
     <iconPath>UI/Abilities/EternalFear</iconPath>
     <cooldownTicksRange>7500</cooldownTicksRange> <!-- 3 hours -->
     <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
@@ -332,7 +332,7 @@
    <AbilityDef>
     <defName>Cinder_FearPulse</defName>
 	<label>fear pulse</label>
-    <description>Erosion the spirits of nearby animals, causing them to fall into a state of fear.</description>
+    <description>Erodes the spirit of nearby animals, causing them to fall into the state of fear.</description>
     <iconPath>UI/Abilities/FearPulse</iconPath>
     <cooldownTicksRange>20000</cooldownTicksRange> <!-- 3 hours -->
     <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
