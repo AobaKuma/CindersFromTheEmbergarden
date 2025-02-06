@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using RimWorld;
+using System.Collections.Generic;
 using Verse;
 
 namespace Embergarden
@@ -21,6 +22,16 @@ namespace Embergarden
                     resurrect.Resurrect();
                     hediffs.Remove(resurrect);
                 }
+            }
+        }
+
+        public override void LoadedGame()
+        {
+            var def = DefDatabase<FactionDef>.GetNamed("Cinder_ESDSP", false);
+            if (def != null && Find.FactionManager.FirstFactionOfDef(def) == null)
+            {
+                Log.Warning("[Cinder from the Embergarden] Cradle faction missing. Recreating");
+                FactionGenerator.GenerateFactionsIntoWorld([def]);
             }
         }
     }
