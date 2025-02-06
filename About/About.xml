@@ -23,6 +23,7 @@
 	<loadAfter>
 		<li>brrainz.harmony</li>
 		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Biotech</li>
 		<li>erdelf.HumanoidAlienRaces</li>
 		<li>ceteam.combatextended</li>
 	</loadAfter>
