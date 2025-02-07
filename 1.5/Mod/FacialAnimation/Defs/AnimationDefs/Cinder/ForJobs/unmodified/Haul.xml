@@ -6,7 +6,7 @@
 	<raceName>Alien_Cinder</raceName>
     <animationFrames>
       <li>
-        <faceAnimationDef>HaulSub</faceAnimationDef>
+        <faceAnimationDef>HaulSub_Cinder</faceAnimationDef>
       </li>
     </animationFrames>
     <roopIntervalMin>0</roopIntervalMin>
@@ -37,7 +37,7 @@
 	<raceName>Alien_Cinder</raceName>
     <animationFrames>
       <li>
-        <faceAnimationDef>HaulSub2</faceAnimationDef>
+        <faceAnimationDef>HaulSub2_Cinder</faceAnimationDef>
       </li>
     </animationFrames>
     <roopIntervalMin>300</roopIntervalMin>

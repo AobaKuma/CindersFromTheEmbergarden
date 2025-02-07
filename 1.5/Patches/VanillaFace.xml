@@ -31,12 +31,22 @@
 									Things/Pawn/Humanlike/Body/GhoulNaked_Child</Hediff>
 							</extendedGraphics>
 						</Age>
-						 <Age For="HumanlikeAdult">
-                            <path>Things/Pawn/Humanlike/Bodies/Naked_Female</path>
-                            <extendedGraphics>
-                                       <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Things/Pawn/Ghoul/Bodies/Ghoulskin_Female</Hediff>
-                            </extendedGraphics>
-                        </Age>
+						<Age For="HumanlikeAdult">
+							<path>Things/Pawn/Humanlike/Bodies/Naked_Female</path>
+							<extendedGraphics>
+								<Gender For="Female">
+									<extendedGraphics>
+										<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Things/Pawn/Ghoul/Bodies/Ghoulskin_Female</Hediff>
+									</extendedGraphics>
+								</Gender>
+								<Gender For="Male">
+									<path>Things/Pawn/Humanlike/Bodies/Naked_Female</path>
+									<extendedGraphics>
+										<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Things/Pawn/Ghoul/Bodies/Ghoulskin_Female</Hediff>
+									</extendedGraphics>
+								</Gender>
+							</extendedGraphics>
+						</Age>
 					</extendedGraphics>
 				</body>
 					</value>

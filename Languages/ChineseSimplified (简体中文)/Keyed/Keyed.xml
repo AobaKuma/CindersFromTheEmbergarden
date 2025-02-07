@@ -5,7 +5,7 @@
 	<!-- EN: {0} has appeared! -->
   <!-- EN: Vanilla style face -->
   <Cinder_CommaEyesLabel>原版脸</Cinder_CommaEyesLabel>
-  <!-- EN: Replace face and body with vanilla style comma face and vanilla body -->
+  <!-- EN: Replace face and body with vanilla style comma face and vanilla body(Need to restart game) -->
   <Cinder_CommaEyesDesc>将脸部与身体替换为原版风格的逗号脸与原版身体（需要重启游戏）</Cinder_CommaEyesDesc>
   <!-- EN: People with amorphous regeneration ability are required to use it -->
   <Cinder_NeedResurrectOrRegen>需要具有无定形再生能力的人使用</Cinder_NeedResurrectOrRegen>

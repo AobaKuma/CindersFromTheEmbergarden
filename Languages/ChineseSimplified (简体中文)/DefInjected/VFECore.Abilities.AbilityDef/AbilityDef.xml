@@ -48,12 +48,12 @@
   
   <!-- EN: eternal fear -->
   <Cinder_EternalFearAbility.label>永恒恐惧</Cinder_EternalFearAbility.label>
-  <!-- EN: Erosion the spirit of the target, detach it from the protection of reason, and make them fall into a state of fear. -->
+  <!-- EN: Erodes the spirit of the target, detach it from the protection of reason, and make them fall into the state of fear. -->
   <Cinder_EternalFearAbility.description>侵蚀目标的精神，使其看到超越现实的景象而陷入巨大的恐惧之中。</Cinder_EternalFearAbility.description>
   
   <!-- EN: fear pulse -->
   <Cinder_FearPulse.label>恐惧脉冲</Cinder_FearPulse.label>
-  <!-- EN: Erosion the spirits of nearby animals, causing them to fall into a state of fear. -->
+  <!-- EN: Erodes the spirit of nearby animals, causing them to fall into the state of fear. -->
   <Cinder_FearPulse.description>侵蚀周围动物的精神，使它们疯狂逃跑。</Cinder_FearPulse.description>
   
   <!-- EN: Hellfire Missile -->
@@ -68,7 +68,7 @@
   
   <!-- EN: suffocating whispers -->
   <Cinder_SuffocatingWhispers.label>窒息缠绕</Cinder_SuffocatingWhispers.label>
-  <!-- EN: Entangled the target with tentacles, causing temporary suffocation and coma. -->
+  <!-- EN: Entangles the target with tentacles, causing temporary suffocation and coma. -->
   <Cinder_SuffocatingWhispers.description>使用触手缠绕附近的一个目标，剥夺它的移动能力而使其暂时性的陷入昏迷。</Cinder_SuffocatingWhispers.description>
   
 </LanguageData>

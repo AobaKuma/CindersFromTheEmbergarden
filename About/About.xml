@@ -6,7 +6,7 @@
 		<li>1.5</li>
 	</supportedVersions>
 	<packageId>BreadMo.Cinders</packageId>
-	<description></description>
+	<description>This mod adds genes, items, abilities, factions, and unique mechanisms related to the Cinder race, and is compatible with CE and FA facial animations</description>
 	<modDependencies>
 		<li>
 			<packageId>erdelf.HumanoidAlienRaces</packageId>

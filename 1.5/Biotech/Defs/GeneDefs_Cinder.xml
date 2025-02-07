@@ -211,4 +211,21 @@
 	</modExtensions>
   </GeneDef>
   
+  <GeneDef ParentName="GeneJawBase">
+    <defName>CinderHead_Female</defName>
+    <label>cinder head</label>
+    <description>Carriers of this gene have a cinder appearance in their face and head.</description>
+    <iconPath>UI/Gene/CinderHead</iconPath>
+    <forcedHeadTypes>
+      <li>CinderHead_AverageNormal</li>
+    </forcedHeadTypes>
+    <displayOrderInCategory>97</displayOrderInCategory>
+  </GeneDef>
+  
+  
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>CinderHead_AverageNormal</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Female/Female_Average_Normal</graphicPath>
+    <eyeOffsetEastWest>(0.13, 0, 0.17)</eyeOffsetEastWest>
+  </HeadTypeDef>
 </Defs>

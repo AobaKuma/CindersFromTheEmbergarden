@@ -61,4 +61,9 @@
   <!-- EN: Carriers of this gene have a particular hair color. With multiple hair color genes, one is randomly selected. -->
   <Cinder_WhiteHair.description>携带者会长出特定颜色的头发</Cinder_WhiteHair.description>
   
+  <!-- EN: cinder head -->
+  <CinderHead_Female.label>烟烬头部</CinderHead_Female.label>
+  <!-- EN: Carriers of this gene have a cinder appearance in their face and head. -->
+  <CinderHead_Female.description>携带者的脸部会长得像某个人</CinderHead_Female.description>
+  
 </LanguageData>

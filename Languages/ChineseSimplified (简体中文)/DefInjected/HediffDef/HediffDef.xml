@@ -62,6 +62,11 @@
   <!-- EN: long dream -->
   <Cinder_LongDream.stages.long_dream.label>长梦</Cinder_LongDream.stages.long_dream.label>
   
+  <!-- EN: stop music when downed -->
+  <Cinder_MusicStopper.label>TODO</Cinder_MusicStopper.label>
+  <!-- EN: Hidden hediff that stops current boss music when downed or dead. Should be invisible and remove on activation. -->
+  <Cinder_MusicStopper.description>TODO</Cinder_MusicStopper.description>
+  
   <!-- EN: regeneration -->
   <Cinder_Regen.label>再生</Cinder_Regen.label>
   <!-- EN: Amorphous polymer is used to repair this person's body -->
