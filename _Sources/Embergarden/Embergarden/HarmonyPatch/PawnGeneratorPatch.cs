@@ -18,6 +18,10 @@ namespace Embergarden
             {
                 __result.abilities.GainAbility(ext.abilities.RandomElement());
             }
+            if (__result.kindDef.GetModExtension<ModExtension_HeadOverride>() is ModExtension_HeadOverride ext2 && ext2.heads.Any())
+            {
+                __result.story.headType = ext2.heads.RandomElement();
+            }
             var w = __result.equipment?.Primary;
             if (w != null)
             {
@@ -33,5 +37,10 @@ namespace Embergarden
     public class ModExtension_RandomOneAbility : DefModExtension
     {
         public List<AbilityDef> abilities = new List<AbilityDef>();
+    }
+
+    public class ModExtension_HeadOverride : DefModExtension
+    {
+        public List<HeadTypeDef> heads = new List<HeadTypeDef>();
     }
 }
