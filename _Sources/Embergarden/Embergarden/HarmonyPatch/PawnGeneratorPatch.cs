@@ -21,6 +21,10 @@ namespace Embergarden
             if (__result.kindDef.GetModExtension<ModExtension_HeadOverride>() is ModExtension_HeadOverride ext2 && ext2.heads.Any())
             {
                 __result.story.headType = ext2.heads.RandomElement();
+                if (ext2.noBeards)
+                {
+                    __result.style.beardDef = BeardDefOf.NoBeard;
+                }
             }
             var w = __result.equipment?.Primary;
             if (w != null)
@@ -42,5 +46,7 @@ namespace Embergarden
     public class ModExtension_HeadOverride : DefModExtension
     {
         public List<HeadTypeDef> heads = new List<HeadTypeDef>();
+
+        public bool noBeards = true;
     }
 }
