@@ -9,14 +9,13 @@
   <MentalStateDef ParentName="BaseCinderMentalState">
     <defName>Cinder_EternalFear</defName>
     <label>eternal fear</label>
-    <stateClass>MentalState_InhumanRambling</stateClass>
+    <stateClass>MentalState_WanderSad</stateClass>
     <minTicksBeforeRecovery>40000</minTicksBeforeRecovery>
     <maxTicksBeforeRecovery>60000</maxTicksBeforeRecovery>
     <recoveryMtbDays>0.166</recoveryMtbDays>
     <recoverFromSleep>true</recoverFromSleep>
     <blockNormalThoughts>true</blockNormalThoughts>
     <nameColor>(254, 216, 130)</nameColor>
-    <ticksBetweenRamblingRange>600~1800</ticksBetweenRamblingRange> <!-- 10~30 seconds -->
     <recoveryMessage>{0} is no longer escaping.</recoveryMessage>
     <beginLetterLabel>escaping</beginLetterLabel>
     <beginLetter>{0} seeing the true essence through the surface of the world, {PAWN_pronoun} spirit has been greatly impacted， {PAWN_pronoun} began to run away in panic.</beginLetter>
