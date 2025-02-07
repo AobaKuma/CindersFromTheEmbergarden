@@ -11,7 +11,7 @@
 		<techLevel>Industrial</techLevel>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
-		<allowedCultures><li>Astropolitan</li></allowedCultures>
+		<allowedCultures><li>Astropolitan</li><li>Cinder_Culture</li></allowedCultures>
 		<backstoryFilters>
 		  <li>
 			<categories>
@@ -51,7 +51,7 @@
 		<techLevel>Industrial</techLevel>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
-		<allowedCultures><li>Astropolitan</li></allowedCultures>
+		<allowedCultures><li>Astropolitan</li><li>Cinder_Culture</li></allowedCultures>
 		<backstoryFilters>
 		  <li>
 		<categories>

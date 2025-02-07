@@ -500,7 +500,7 @@
 		<defName>Cinder_Cult</defName>
 		<label>cult follower</label>
 		<combatPower>100</combatPower>
-		<defaultFactionType>OutlanderCivil</defaultFactionType>
+		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<initialWillRange>10~30</initialWillRange>
 		<invNutrition>1</invNutrition>
