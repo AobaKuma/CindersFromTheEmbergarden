@@ -566,10 +566,10 @@
 			</li>
 			<li Class="CompProperties_Spawner">
 				<thingToSpawn>Cinder_AmorphousPolymer</thingToSpawn>
-				<spawnCount>10</spawnCount>
+				<spawnCount>5</spawnCount>
 				<spawnIntervalRange>
-					<min>240000</min>
-					<max>240000</max>
+					<min>300000</min>
+					<max>300000</max>
 				</spawnIntervalRange>
 				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
 				<showMessageIfOwned>true</showMessageIfOwned>
