@@ -8,11 +8,7 @@
 	<packageId>BreadMo.Cinders</packageId>
 	<description>This mod adds genes, items, abilities, factions, and unique mechanisms related to the Cinder race, and is compatible with CE and FA facial animations</description>
 	<modDependencies>
-		<li>
-			<packageId>erdelf.HumanoidAlienRaces</packageId>
-			<displayName>Humanoid Alien Races 2.0</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
-		</li>
+		
 		<li>
 			<packageId>brrainz.harmony</packageId>
 			<displayName>Harmony</displayName>

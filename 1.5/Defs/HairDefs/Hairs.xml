@@ -3,7 +3,10 @@
 	<HairDef Abstract="True" Name="BaseCinderHair">
 		<styleTags>
 			<li>Cinder_Hair</li>
+			<li>Urban</li>
+			<li>HairLong</li>
 		</styleTags>
+		<category>CinderHair</category>
 	</HairDef>
 
 	<HairDef ParentName="BaseCinderHair">

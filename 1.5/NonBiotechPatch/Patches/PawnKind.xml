@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Humanoid Alien Races</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[@Name="Cinder_BasePawn"]/startingHediffs</xpath>
+					<value>
+                        <startingHediffs>
+				 		  <li>
+				              <def>Cinder_UncontrollableTentacles</def>
+				              <chance>1</chance>
+			              </li>
+						   <li>
+				              <def>Cinder_Regen</def>
+				              <chance>1</chance>
+			              </li>
+						  <li>
+				              <def>Cinder_EyeHediff</def>
+				              <chance>1</chance>
+			              </li>
+						  <li>
+				              <def>Cinder_Resurrect</def>
+				              <chance>1</chance>
+			              </li>
+						</startingHediffs>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_Regen"]/renderNodeProperties</xpath>
+					<value>
+      <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+		<li>Things/Pawn/Humanlike/Body/CinderFin/CinderFin</li>
+		<li>Things/Pawn/Humanlike/Body/Biotech/CinderFinA</li>
+		</texPaths>
+        <colorType>Hair</colorType>
+        <parentTagDef>Head</parentTagDef>
+        <useSkinShader>false</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <drawData>
+          <defaultData>
+            <layer>70</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_UncontrollableTentacles"]/renderNodeProperties</xpath>
+					<value>
+      <renderNodeProperties>
+      <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPaths>
+		<li>Things/Pawn/Humanlike/Body/CinderTentacle/CinderTentacle</li>
+		<li>Things/Pawn/Humanlike/Body/Biotech/CinderTentacleA</li>
+		<li>Things/Pawn/Humanlike/Body/Biotech/CinderTentacleB</li>
+		</texPaths>
+        <colorType>Skin</colorType>
+        <overrideMeshSize>(1.5, 1.5)</overrideMeshSize>
+        <parentTagDef>Body</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <defaultData>
+            <layer>90</layer>
+          </defaultData>
+          <dataNorth>
+            <offset>(0, 0, 0)</offset>
+            <layer>90</layer>
+          </dataNorth>
+          <dataSouth>
+           <offset>(0, 0, 0)</offset>
+          </dataSouth>
+          <dataEast>
+             <offset>(0, 0,0.05)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0, 0,0.05)</offset>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
+	</Operation>
+</Patch>

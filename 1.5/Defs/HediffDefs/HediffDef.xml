@@ -30,6 +30,7 @@
 				</statOffsets>
 			</li>
 		</stages>
+		<renderNodeProperties />
 	</HediffDef>
 
 	<HediffDef>
@@ -62,6 +63,7 @@
 				<unlockedString>unlocked</unlockedString>
 			</li>
 		</comps>
+		<renderNodeProperties />
 	</HediffDef>
 
 	<HediffDef>
@@ -106,6 +108,7 @@
 				</capMods>
 			</li>
 		</stages>
+		<renderNodeProperties />
 	</HediffDef>
 
 	<HediffDef>

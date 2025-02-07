@@ -15,10 +15,6 @@
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/comps/li[@Class="Embergarden.CompProperties_AddHediff"]</xpath>
 				</li>
-				
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/GeneDef[defName="Cinder_ErosionEyes"]/renderNodeProperties</xpath>
-				</li>
 
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/alienRace/raceRestriction/blackGeneTags</xpath>
@@ -32,5 +28,6 @@
 			</operations>
 		</match>
 	</Operation>
+	
 
 </Patch>

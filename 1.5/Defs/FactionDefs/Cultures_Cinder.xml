@@ -22,20 +22,30 @@
     </thingStyleCategories>
     <styleItemTags>
       <li>
-        <tag>Cinder_hair</tag>
-        <baseWeight>1</baseWeight>
+        <tag>Cinder_Hair</tag>
+         <baseWeight>10</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+	  <li>
+        <tag>Urban</tag>
+        <baseWeight>5</baseWeight>
         <weightFactor>1</weightFactor>
       </li>
       <li>
         <tag>NoBeard</tag>
-        <baseWeight>1</baseWeight>
+        <baseWeight>10</baseWeight>
         <weightFactor>1</weightFactor>
       </li>
       <li>
         <tag>NoTattoo</tag>
-        <baseWeight>1</baseWeight>
+        <baseWeight>10</baseWeight>
         <weightFactor>1</weightFactor>
       </li>
     </styleItemTags>
   </CultureDef>
+  
+   <StyleItemCategoryDef>
+    <defName>CinderHair</defName>
+    <label>cinder</label>
+  </StyleItemCategoryDef>
 </Defs>

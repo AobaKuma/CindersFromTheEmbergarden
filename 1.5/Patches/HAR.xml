@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Humanoid Alien Races</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_EyeHediff"]/renderNodeProperties</xpath>
+					<value>
+            <renderNodeProperties>
+			               <li Class="PawnRenderNodeProperties_Eye">
+				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+				<texPath>UI/Gene/Eyes/Bread_Eye</texPath>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>1</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>56</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+					<dataWest>
+						<flip>true</flip>
+					</dataWest>
+				          </drawData>
+			            </li>
+	        </renderNodeProperties>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Cinder_Ghoul" or defName="Cinder_EliteGhoul"]/apparelRequired</xpath>
+					<value>
+                    <apparelRequired>
+			              <li>Cinder_HeadGear_GhoulUnitHelmet</li>
+			              <li>Cinder_Apparel_BulletproofEquipment</li>
+		            </apparelRequired>
+				</value>
+			</li>
+			</operations>
+		</nomatch>
+	</Operation>
+	
+
+</Patch>
