@@ -92,6 +92,17 @@
     </renderNodeProperties>
 					</value>
 				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/PawnKindDef[@Name="Cinder_BasePawn"]</xpath>
+					<value>
+                    <li Class="Embergarden.ModExtension_HeadOverride">
+					<heads>
+                    <li>Female_AverageNormal</li>
+                    </heads>
+					</li>
+					</value>
+				</li>
 			</operations>
 		</nomatch>
 	</Operation>
