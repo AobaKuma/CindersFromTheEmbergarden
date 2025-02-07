@@ -55,7 +55,7 @@
 				<subNodes>
 					<li Class="ThinkNode_Priority">
 						<subNodes>
-							<li Class="JobGiver_FleeAllPawnsUnfucked" />
+							<li Class="Embergarden.JobGiver_FleeAllPawnsUnfucked" />
 							<li Class="ThinkNode_PrioritySorter">
 								<subNodes>
 									<li Class="JobGiver_GetFood">
