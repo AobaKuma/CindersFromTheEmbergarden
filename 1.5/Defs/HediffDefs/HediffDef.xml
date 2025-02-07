@@ -108,7 +108,23 @@
 				</capMods>
 			</li>
 		</stages>
-		<renderNodeProperties />
+		<renderNodeProperties>
+			               <li Class="PawnRenderNodeProperties_Eye">
+				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+				<texPath>UI/Gene/Eyes/Bread_Eye</texPath>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>1</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>56</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+					<dataWest>
+						<flip>true</flip>
+					</dataWest>
+				          </drawData>
+			            </li>
+	  </renderNodeProperties>
 	</HediffDef>
 
 	<HediffDef>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Humanoid Alien Races</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/alienRace/generalSettings/alienPartGenerator/offsetDefaults</xpath>
+				</li>
+                <li Class="PatchOperationRemove">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/comps/li[@Class="Embergarden.CompProperties_AddHediff"]</xpath>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/alienRace/raceRestriction/blackGeneTags</xpath>
+					<value>
+                     <blackGeneTags>
+                      <li>BeardStyle</li>
+                      <li>Fur</li>
+                     </blackGeneTags>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Humanoid Alien Races</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>	
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/PawnKindDef[@Name="Cinder_BasePawn"]</xpath>
+					<value>
+                    <li Class="Embergarden.ModExtension_HeadOverride">
+					<heads>
+                    <li>Female_AverageNormal</li>
+                    </heads>
+					</li>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ScenarioDef[defName="Cinder_Scenario"]/scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"]</xpath>
+		<value>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+          <def>ConfigurePawnsXenotypes</def>
+          <pawnChoiceCount>3</pawnChoiceCount>
+          <customSummary>Start with three cinders.</customSummary>
+          <overrideKinds>
+            <li>
+              <xenotype>Cinder_Xenotype</xenotype>
+              <pawnKind>Cinder_Colonist</pawnKind>
+            </li>
+          </overrideKinds>
+          <xenotypeCounts>
+            <li>
+              <xenotype>Cinder_Xenotype</xenotype>
+              <count>3</count>
+              <description>non-baby Cinder</description>
+              <requiredAtStart>true</requiredAtStart>
+              <allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
+            </li>
+          </xenotypeCounts>
+        </li>
+		</value>
+	</Operation>
+
+
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ScenarioDef[defName="Cinder_ScenarioB"]/scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"]</xpath>
+		<value>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+          <def>ConfigurePawnsXenotypes</def>
+          <pawnChoiceCount>1</pawnChoiceCount>
+          <customSummary>Start with one cinders.</customSummary>
+          <overrideKinds>
+            <li>
+              <xenotype>Cinder_Xenotype</xenotype>
+              <pawnKind>Cinder_Ghoul</pawnKind>
+            </li>
+          </overrideKinds>
+          <xenotypeCounts>
+            <li>
+              <xenotype>Cinder_Xenotype</xenotype>
+              <count>1</count>
+              <description>non-baby Cinder</description>
+              <requiredAtStart>true</requiredAtStart>
+              <allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
+            </li>
+          </xenotypeCounts>
+        </li>
+		</value>
+	</Operation>
+</Patch>

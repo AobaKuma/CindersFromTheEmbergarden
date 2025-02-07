@@ -6,4 +6,11 @@
 			<race>Alien_Cinder</race>
 		</value>
 	</Operation>
+				
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="Cinder_EyeHediff"]/renderNodeProperties</xpath>
+		<value>
+			 <renderNodeProperties />
+		</value>
+	</Operation>			
 </Patch>
