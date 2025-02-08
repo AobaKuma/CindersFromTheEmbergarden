@@ -53,7 +53,7 @@
 		<xpath>Defs/ThingDef[defName="Cinder_Apparel_ScavHeavyCoat"]</xpath>
 		<testName>equippedStatOffsets</testName>
 		<value>
-			<CarryBulk>15</CarryBulk>
+			<CarryBulk>20</CarryBulk>
 		</value>
 	</Operation>
 
@@ -120,7 +120,7 @@
 		<xpath>Defs/ThingDef[defName="Cinder_Apparel_WorkwearJacket"]</xpath>
 		<testName>equippedStatOffsets</testName>
 		<value>
-			<CarryBulk>10</CarryBulk>
+			<CarryBulk>15</CarryBulk>
 		</value>
 	</Operation>
 
@@ -158,6 +158,14 @@
 		<value>
 			<Bulk>10</Bulk>
 			<WornBulk>1</WornBulk>
+		</value>
+	</Operation>
+	
+	<Operation Class="Embergarden.PatchOperationAddSafe">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_BulletproofEquipment"]</xpath>
+		<testName>equippedStatOffsets</testName>
+		<value>
+			<CarryBulk>10</CarryBulk>
 		</value>
 	</Operation>
 
