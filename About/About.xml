@@ -23,6 +23,8 @@
 		<li>erdelf.HumanoidAlienRaces</li>
 		<li>nals.facialanimation</li>
 		<li>ceteam.combatextended</li>
+		<li>Dubwise.DubsBadHygiene</li>
+		<li>Dubwise.DubsBadHygiene.Lite</li>
 	</loadAfter>
 	 <loadBefore>
          <li>Aoba.DeadManSwitch.Core</li>
