@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Amorphous polymer -->
+  <Cinder_AmorphousPolymer.label>无定形聚合物</Cinder_AmorphousPolymer.label>
+  <!-- EN: A hard material with a strange burnt smell and rough biological tentacle tissue attached, resembling coke but completely non flammable.This material almost completely blocks psychic flows unless processed in a special way. -->
+  <Cinder_AmorphousPolymer.description>一种坚硬的材料，有奇怪的焦味，附着着粗糙的生物触手组织，类似于焦炭但完全不易燃。除非以特殊方式处理，否则这种材料几乎完全阻断了灵能流。</Cinder_AmorphousPolymer.description>
+  
+  <!-- EN: Burnt strange meat -->
+  <Cinder_BurntStrangeMeat.label>烧焦怪肉</Cinder_BurntStrangeMeat.label>
+  <!-- EN: A burnt tentacle meat separated from amorphous polymer, edible and without strange taste, but usually used as a material for some serum. -->
+  <Cinder_BurntStrangeMeat.description>一种从无定形聚合物中分离出来的烧焦的触手肉，可食用，没有奇怪的味道，通常用作某些血清的原料。</Cinder_BurntStrangeMeat.description>
+  <!-- EN: Analyze the burnt strange meat. -->
+  <Cinder_BurntStrangeMeat.comps.CompAnalyzableUnlockResearch.activateDescString>分析烧焦怪肉</Cinder_BurntStrangeMeat.comps.CompAnalyzableUnlockResearch.activateDescString>
+  <!-- EN: Analyze... -->
+  <Cinder_BurntStrangeMeat.comps.CompAnalyzableUnlockResearch.activateLabelString>分析中..</Cinder_BurntStrangeMeat.comps.CompAnalyzableUnlockResearch.activateLabelString>
+  <!-- EN: By studying the burnt strange meat, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology. -->
+  <Cinder_BurntStrangeMeat.comps.CompAnalyzableUnlockResearch.completedLetter>通过分析烧焦怪肉，{PAWN_labelShort}已经完全掌握了研究{RESEARCH}的所需知识。</Cinder_BurntStrangeMeat.comps.CompAnalyzableUnlockResearch.completedLetter>
+  <!-- EN: Burnt strange meat studied: {RESEARCH} unlocked -->
+  <Cinder_BurntStrangeMeat.comps.CompAnalyzableUnlockResearch.completedLetterLabel>烧焦怪肉已调查:{RESEARCH}解锁</Cinder_BurntStrangeMeat.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+  <!-- EN: Choose who should analyze this -->
+  <Cinder_BurntStrangeMeat.comps.CompAnalyzableUnlockResearch.guiLabelString>选择谁来研究</Cinder_BurntStrangeMeat.comps.CompAnalyzableUnlockResearch.guiLabelString>
+  <!-- EN: Can be analyzed by a colonist. -->
+  <Cinder_BurntStrangeMeat.comps.CompAnalyzableUnlockResearch.inspectString>可以被殖民者研究</Cinder_BurntStrangeMeat.comps.CompAnalyzableUnlockResearch.inspectString>
+  <!-- EN: analyze burnt strange meat -->
+  <Cinder_BurntStrangeMeat.comps.CompAnalyzableUnlockResearch.jobString>分析烧焦怪肉</Cinder_BurntStrangeMeat.comps.CompAnalyzableUnlockResearch.jobString>
+  
+</LanguageData>

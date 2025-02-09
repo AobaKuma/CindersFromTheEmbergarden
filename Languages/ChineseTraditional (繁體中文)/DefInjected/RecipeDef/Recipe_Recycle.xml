@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: smelt metal eroded walker debris -->
+  <Cinder_ExtractMetalFromSlag.label>从被侵蚀的步行机残骸中熔炼金属</Cinder_ExtractMetalFromSlag.label>
+  <!-- EN: Use heat and strong electromagnets to extract useful metal from eroded walker debris. -->
+  <Cinder_ExtractMetalFromSlag.description>从被侵蚀的步行机残骸中熔炼金属</Cinder_ExtractMetalFromSlag.description>
+  <!-- EN: Smelting metal from eroded walker debris. -->
+  <Cinder_ExtractMetalFromSlag.jobString>正在从被侵蚀的步行机残骸中熔炼金属</Cinder_ExtractMetalFromSlag.jobString>
+  
+  <!-- EN: disassemble eroded walker debris -->
+  <DMS_ExtractCompFromSlag.label>分解步行机残骸</DMS_ExtractCompFromSlag.label>
+  <!-- EN: Disassemble eroded walker debris to extract useful component. -->
+  <DMS_ExtractCompFromSlag.description>分解步行机残骸</DMS_ExtractCompFromSlag.description>
+  <!-- EN: disassembling eroded walker debris. -->
+  <DMS_ExtractCompFromSlag.jobString>正在分解步行机残骸</DMS_ExtractCompFromSlag.jobString>
+  
+</LanguageData>

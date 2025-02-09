@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: electric scythe -->
+  <Cinder_ElectricScythe.label>高周波镰刀</Cinder_ElectricScythe.label>
+  <!-- EN: An electric ultrasonic sickle used for rapid cutting of flesh and blood, and can also be used for harvesting crops. -->
+  <Cinder_ElectricScythe.description>一种用于快速切割血肉的电超声镰刀，也可用于收割作物。</Cinder_ElectricScythe.description>
+  <!-- EN: point -->
+  <Cinder_ElectricScythe.tools.point.label>尖端</Cinder_ElectricScythe.tools.point.label>
+  <!-- EN: edge -->
+  <Cinder_ElectricScythe.tools.edge.label>刀刃</Cinder_ElectricScythe.tools.edge.label>
+  
+  <!-- EN: impact breaker -->
+  <Cinder_ImpactBreaker.label>冲击锤</Cinder_ImpactBreaker.label>
+  <!-- EN: A breaking hammer used for heavy armored targets and can also be used to smash stones. -->
+  <Cinder_ImpactBreaker.description>用于重型装甲目标的破碎锤，也可用于粉碎石头。</Cinder_ImpactBreaker.description>
+  <!-- EN: head -->
+  <Cinder_ImpactBreaker.tools.head.label>头</Cinder_ImpactBreaker.tools.head.label>
+  
+</LanguageData>

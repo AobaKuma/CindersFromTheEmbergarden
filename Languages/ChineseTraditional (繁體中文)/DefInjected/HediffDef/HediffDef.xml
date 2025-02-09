@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: entanglement of tentacles -->
+  <Cinder_Blindness.label>触手缠绕</Cinder_Blindness.label>
+  <!-- EN: Entangled by tentacles on the ground, affecting vision and mobility. -->
+  <Cinder_Blindness.description>被地上的触手缠绕，影响了视力与移动能力。</Cinder_Blindness.description>
+  
+  <!-- EN: deep sleep -->
+  <Cinder_DeepSleep.label>沉眠</Cinder_DeepSleep.label>
+  <!-- EN: Being taken over consciousness, still sleeping soundly. -->
+  <Cinder_DeepSleep.description>被接管了意识，仍然在沉眠。</Cinder_DeepSleep.description>
+  <!-- EN: deep sleep -->
+  <Cinder_DeepSleep.labelNoun>沉眠</Cinder_DeepSleep.labelNoun>
+  <!-- EN: deep sleep -->
+  <Cinder_DeepSleep.stages.deep_sleep.label>沉眠</Cinder_DeepSleep.stages.deep_sleep.label>
+  
+  <!-- EN: erosion -->
+  <Cinder_Erosion.label>侵蚀</Cinder_Erosion.label>
+  <!-- EN: The armor on this person's body has been eroded. -->
+  <Cinder_Erosion.description>这个单位的装甲被侵蚀了。</Cinder_Erosion.description>
+  
+  <!-- EN: armour Plates -->
+  <Cinder_ExtraArmourPlate.label>装甲板</Cinder_ExtraArmourPlate.label>
+  <!-- EN: Installed additional amorphous polymer armor plates to protect users from injury.\n\nAlthough it is an excellent protective armor, it must be completely replaced once damaged. -->
+  <Cinder_ExtraArmourPlate.description>安装了额外的无定形聚合物装甲板，以保护使用者免受伤害。\n\n虽然它是一种出色的防护装甲，但一旦损坏，必须完全更换。</Cinder_ExtraArmourPlate.description>
+  
+  <!-- EN: heavy armour Plates -->
+  <Cinder_ExtraArmourPlateII.label>重型装甲板</Cinder_ExtraArmourPlateII.label>
+  <!-- EN: Installed additional amorphous polymer armor plates to protect users from injury.\n\nAlthough it is an excellent protective armor, it must be completely replaced once damaged. -->
+  <Cinder_ExtraArmourPlateII.description>安装了额外的无定形聚合物装甲板，以保护使用者免受伤害。\n\n虽然它是一种出色的防护装甲，但一旦损坏，必须完全更换。</Cinder_ExtraArmourPlateII.description>
+  
+  <!-- EN: eroded eyes -->
+  <Cinder_EyeHediff.label>侵蚀眼</Cinder_EyeHediff.label>
+  <!-- EN: Eyes blessed by unknown -->
+  <Cinder_EyeHediff.description>被未知存在保护</Cinder_EyeHediff.description>
+  
+  <!-- EN: gradually awakening -->
+  <Cinder_GraduallyAwakening.label>渐醒</Cinder_GraduallyAwakening.label>
+  <!-- EN: The dream scene is almost no longer visible, gradually waking up to face reality. -->
+  <Cinder_GraduallyAwakening.description>梦中的场景模糊不清，就快要醒来，面对现实。</Cinder_GraduallyAwakening.description>
+  <!-- EN: gradually awakening -->
+  <Cinder_GraduallyAwakening.labelNoun>渐醒</Cinder_GraduallyAwakening.labelNoun>
+  <!-- EN: gradually awakening -->
+  <Cinder_GraduallyAwakening.stages.gradually_awakening.label>渐醒</Cinder_GraduallyAwakening.stages.gradually_awakening.label>
+  
+  <!-- EN: light sleep -->
+  <Cinder_LightSleep.label>浅睡</Cinder_LightSleep.label>
+  <!-- EN: Consciousness gradually recovers, blurring the gap between reality and dreams. -->
+  <Cinder_LightSleep.description>意识逐渐恢复，模糊了现实和梦之间的差距。</Cinder_LightSleep.description>
+  <!-- EN: light sleep -->
+  <Cinder_LightSleep.labelNoun>浅睡</Cinder_LightSleep.labelNoun>
+  <!-- EN: light sleep -->
+  <Cinder_LightSleep.stages.light_sleep.label>浅睡</Cinder_LightSleep.stages.light_sleep.label>
+  
+  <!-- EN: long dream -->
+  <Cinder_LongDream.label>长梦</Cinder_LongDream.label>
+  <!-- EN: A gentle long dream, the consciousness of this unit has been taken over and there will be no pain or sadness. -->
+  <Cinder_LongDream.description>一个温柔的长梦，这个单位的意识已经被接管，不再有痛苦与悲伤。</Cinder_LongDream.description>
+  <!-- EN: long dream -->
+  <Cinder_LongDream.labelNoun>长梦</Cinder_LongDream.labelNoun>
+  <!-- EN: long dream -->
+  <Cinder_LongDream.stages.long_dream.label>长梦</Cinder_LongDream.stages.long_dream.label>
+  
+  <!-- EN: stop music when downed -->
+  <Cinder_MusicStopper.label>TODO</Cinder_MusicStopper.label>
+  <!-- EN: Hidden hediff that stops current boss music when downed or dead. Should be invisible and remove on activation. -->
+  <Cinder_MusicStopper.description>TODO</Cinder_MusicStopper.description>
+  
+  <!-- EN: regeneration -->
+  <Cinder_Regen.label>再生</Cinder_Regen.label>
+  <!-- EN: Amorphous polymer is used to repair this person's body -->
+  <Cinder_Regen.description>无定形聚合物正在修复此人的身体</Cinder_Regen.description>
+  <!-- EN: unlocked -->
+  <Cinder_Regen.comps.HediffComp_Regen.unlockedString>已解锁</Cinder_Regen.comps.HediffComp_Regen.unlockedString>
+  
+  <!-- EN: resurrect -->
+  <Cinder_Resurrect.label>复活</Cinder_Resurrect.label>
+  <!-- EN: When dealing fatal injuries, the amorphous polymer in the body quickly generates missing organs, reviving the carrier -->
+  <Cinder_Resurrect.description>在受到致命伤害时，体内的无定形聚合物会迅速产生缺失的器官，使携带者复活。</Cinder_Resurrect.description>
+  <!-- EN: lose efficacy -->
+  <Cinder_Resurrect.comps.HediffComp_LimitedResurrect.disabledString>已失效</Cinder_Resurrect.comps.HediffComp_LimitedResurrect.disabledString>
+  
+  <!-- EN: resurrect coma -->
+  <Cinder_ResurrectComa.label>复活昏迷</Cinder_ResurrectComa.label>
+  <!-- EN: Resurrection coma caused by resurrection. -->
+  <Cinder_ResurrectComa.description>因为复活导致的昏迷</Cinder_ResurrectComa.description>
+  
+  <!-- EN: suffocation coma -->
+  <Cinder_Suffocation.label>窒息昏迷</Cinder_Suffocation.label>
+  <!-- EN: coma caused by suffocation. -->
+  <Cinder_Suffocation.description>因为窒息导致的昏迷</Cinder_Suffocation.description>
+  
+  <!-- EN: Uncontrollable tentacles -->
+  <Cinder_UncontrollableTentacles.label>不可控触手</Cinder_UncontrollableTentacles.label>
+  <!-- EN: This tentacle will randomly hinder or assist in manipulation. -->
+  <Cinder_UncontrollableTentacles.description>这种不能主动控制的触手有时候会帮助使用者，有时候又会造成阻碍</Cinder_UncontrollableTentacles.description>
+  <!-- EN: active -->
+  <Cinder_UncontrollableTentacles.stages.active.label>活动</Cinder_UncontrollableTentacles.stages.active.label>
+  
+</LanguageData>

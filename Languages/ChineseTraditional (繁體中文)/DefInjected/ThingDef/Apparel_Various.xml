@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: bulletproof equipment -->
+  <Cinder_Apparel_BulletproofEquipment.label>防弹套装</Cinder_Apparel_BulletproofEquipment.label>
+  <!-- EN: A lightweight bulletproof suit consisting of a bulletproof vest and a sturdy fabric outer garment, which will not affect daily work and movement, and can defend the whole body, but the armor is generally not as good as a flak vest. -->
+  <Cinder_Apparel_BulletproofEquipment.description>由防弹背心和坚固的织物外衣组成的轻便防弹服，不会影响日常工作和运动，可以保护全身，但防御力通常不如防弹背心好。</Cinder_Apparel_BulletproofEquipment.description>
+  
+  <!-- EN: heavy armor dress -->
+  <Cinder_Apparel_HeavyArmorDress.label>重型装甲套装</Cinder_Apparel_HeavyArmorDress.label>
+  <!-- EN: Heavy armored equipment with additional plasteel chest armor and servo motor power frame, with astonishing defensive power and acceptable weight. -->
+  <Cinder_Apparel_HeavyArmorDress.description>重型装甲装备，配有额外的玻璃钢胸甲和伺服电机动力架，具有惊人的防御能力和可接受的重量。</Cinder_Apparel_HeavyArmorDress.description>
+  
+  <!-- EN: low visibility dress -->
+  <Cinder_Apparel_LowVisibilityDress.label>低可视套装</Cinder_Apparel_LowVisibilityDress.label>
+  <!-- EN: A piece of armor equipment using amorphous polymer as a bulletproof material, providing effective defense while protecting the user from psycast interference. -->
+  <Cinder_Apparel_LowVisibilityDress.description>一种使用无定形聚合物作为防弹材料的装甲套装，在保护使用者免受灵能干扰的同时提供有效的防御。</Cinder_Apparel_LowVisibilityDress.description>
+  
+  <!-- EN: scav heavy coat -->
+  <Cinder_Apparel_ScavHeavyCoat.label>拾荒者重大衣</Cinder_Apparel_ScavHeavyCoat.label>
+  <!-- EN: A tattered scavenger coat made of a blend of metal plates and fabric, much more durable than it looks. -->
+  <Cinder_Apparel_ScavHeavyCoat.description>一件破旧的拾荒者外套，由金属板和织物混合而成，比看起来耐用得多。</Cinder_Apparel_ScavHeavyCoat.description>
+  
+  <!-- EN: workwear jacket -->
+  <Cinder_Apparel_WorkwearJacket.label>工装外套</Cinder_Apparel_WorkwearJacket.label>
+  <!-- EN: A sturdy jacket with embedded metal plates to prevent accidental injuries. -->
+  <Cinder_Apparel_WorkwearJacket.description>带有嵌入式金属板的坚固夹克，可防止意外伤害。</Cinder_Apparel_WorkwearJacket.description>
+  
+</LanguageData>

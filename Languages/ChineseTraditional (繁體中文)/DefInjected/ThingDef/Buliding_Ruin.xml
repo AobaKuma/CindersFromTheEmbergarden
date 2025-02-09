@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Amorphous wall -->
+  <Cinder_AmorphousWall.label>无定形墙体</Cinder_AmorphousWall.label>
+  <!-- EN: An indescribable amorphous tentacle mixed with a lump of metal, emitting a burnt odor. -->
+  <Cinder_AmorphousWall.description>一种难以名状的无定形触手，混有一块金属，散发出烧焦的气味。</Cinder_AmorphousWall.description>
+  
+  <!-- EN: tentacle -->
+  <Cinder_BlackTentacle.label>触手</Cinder_BlackTentacle.label>
+  
+  <!-- EN: eroded EXO(Not Started) -->
+  <Cinder_ErodedEXOBuliding.label>被侵蚀的外骨骼（未启动）</Cinder_ErodedEXOBuliding.label>
+  <!-- EN: A three meter high mass-produced main attack armored mecha, used to fill the gap between infantry and tanks, carrying many weapons and anti tank missiles, and is a component of the armored torrent.\n\nNeed a Mechanitor to activate it. -->
+  <Cinder_ErodedEXOBuliding.description>一种三米高的量产型主力攻击装甲机甲，用于填补步兵和坦克之间的空缺，携带有许多武器与反坦克导弹，是装甲洪流的组成部分。\n\n需要机械师来启动</Cinder_ErodedEXOBuliding.description>
+  <!-- EN: Activate the unit -->
+  <Cinder_ErodedEXOBuliding.comps.CompUsable.useLabel>启动该单位</Cinder_ErodedEXOBuliding.comps.CompUsable.useLabel>
+  
+  <!-- EN: Tentacle trap -->
+  <Cinder_TentacleTrap.label>触手陷阱</Cinder_TentacleTrap.label>
+  <!-- EN: / -->
+  <Cinder_TentacleTrap.description>缠绕在地板上的触手</Cinder_TentacleTrap.description>
+  
+  <!-- EN: Amorphous trap -->
+  <Cinder_TrapIED_HighExplosive.label>无形陷阱</Cinder_TrapIED_HighExplosive.label>
+  <!-- EN: A pair of high-explosive shells connected to a trigger which detonates on touch or bullet impact. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm. -->
+  <Cinder_TrapIED_HighExplosive.description>小型触手炸弹陷阱，它会像地雷一样爆炸，然后会在数小时后填装完毕。</Cinder_TrapIED_HighExplosive.description>
+  
+  <!-- EN: war attacker(Not Started) -->
+  <Cinder_WarAttackerBuliding.label>战争打击者（未启动）</Cinder_WarAttackerBuliding.label>
+  <!-- EN: A three meter high heavy armored assault walking machine with astonishing ammunition carrying capacity, like a walking armed helicopter, capable of leveling enemy positions with eight Hellfire missiles.\n\nNeed a Mechanitor to activate it. -->
+  <Cinder_WarAttackerBuliding.description>一种三米高量级的重装甲突击步行机器，拥有惊人的弹药携带量，就像是一个步行的武装直升机，能够用八发地狱火导弹将敌人的阵地夷为平地。\n\n需要机械师来启动</Cinder_WarAttackerBuliding.description>
+  <!-- EN: Activate the unit -->
+  <Cinder_WarAttackerBuliding.comps.CompUsable.useLabel>启动该单位</Cinder_WarAttackerBuliding.comps.CompUsable.useLabel>
+  
+  <!-- EN: war sweeper(Not Started) -->
+  <Cinder_WarSweeperBuliding.label>战争清扫者（未启动）</Cinder_WarSweeperBuliding.label>
+  <!-- EN: A heavy armored anti-aircraft walking machine on the order of three meters high, equipped with anti-aircraft firepower of different calibers and abundant ammunition to accompany infantry in anti-aircraft operations.\n\nNeed a Mechanitor to activate it. -->
+  <Cinder_WarSweeperBuliding.description>一种三米高量级的重装甲防空步行机器，拥有不同口径的防空火力武装，充沛的弹药量能够伴随步兵进行防空作业。\n\n需要机械师来启动</Cinder_WarSweeperBuliding.description>
+  <!-- EN: Activate the unit -->
+  <Cinder_WarSweeperBuliding.comps.CompUsable.useLabel>启动该单位</Cinder_WarSweeperBuliding.comps.CompUsable.useLabel>
+  
+</LanguageData>

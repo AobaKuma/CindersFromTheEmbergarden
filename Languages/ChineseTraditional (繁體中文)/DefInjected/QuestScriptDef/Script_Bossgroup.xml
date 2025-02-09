@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>bossDefeatedLetterLabel->[escortees0_label] defeated</li>
+    <li>bossDefeatedStudyChipLetterText->[defeated][study][manufacture]</li>
+    <li>bossDefeatedLetterText->[defeated][manufacture]</li>
+    <li>defeated->The hostile [escortees0_label] has been defeated and has dropped a [reward_label]!</li>
+    <li>manufacture->\n\nThis armor plate can be worn by anyone, providing defense against bullets.</li>
+    <li>study->\n\nYou can unlock subsequent technologies by studying [reward_label].</li>
+  -->
+  <Cinder_Boss.questContentRules.rulesStrings>
+    <li>bossDefeatedLetterLabel->[escortees0_label]已被击败</li>
+    <li>bossDefeatedStudyChipLetterText->[defeated][study][manufacture]</li>
+    <li>bossDefeatedLetterText->[defeated][manufacture]</li>
+    <li>defeated->The hostile [escortees0_label]已被击败并且掉落了[reward_label]!</li>
+    <li>manufacture->\n\n这个装甲版可以被任何人使用，能够抵挡子弹.</li>
+    <li>study->\n\n你可以通过研究[reward_label]解锁科技.</li>
+  </Cinder_Boss.questContentRules.rulesStrings>
+  <!-- EN:
+    <li>questDescription->bossgroup</li>
+  -->
+  <Cinder_Boss.questDescriptionRules.rulesStrings>
+    <li>questDescription->boss波次</li>
+  </Cinder_Boss.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName->bossgroup</li>
+  -->
+  <Cinder_Boss.questNameRules.rulesStrings>
+    <li>questDescription->boss波次</li>
+  </Cinder_Boss.questNameRules.rulesStrings>
+  <!-- EN: Combat unit is approaching. -->
+  <Cinder_Boss.root.AlertBossgroupIncoming>战斗单位正在接近</Cinder_Boss.root.AlertBossgroupIncoming>
+  <!-- EN: Combat unit is approaching. -->
+  <Cinder_Boss.root.AlertBossgroupIncomingDesc>战斗单位正在接近</Cinder_Boss.root.AlertBossgroupIncomingDesc>
+  <!-- EN: combat unit arrived！ -->
+  <Cinder_Boss.root.LetterBossgroupArrived>战斗单位已经抵达！</Cinder_Boss.root.LetterBossgroupArrived>
+  <!-- EN: Your forged signal has been sent out, and the combat unit is about to arrive,please prepare for battle. -->
+  <Cinder_Boss.root.LetterBossgroupSummoned>你的伪造信号已经发射，战斗单位正在接近，请做好战斗准备</Cinder_Boss.root.LetterBossgroupSummoned>
+  <!-- EN: combat unit arrived. -->
+  <Cinder_Boss.root.LetterLabelBossgroupArrived>战斗单位已经抵达。</Cinder_Boss.root.LetterLabelBossgroupArrived>
+  <!-- EN: The combat unit has been summoned -->
+  <Cinder_Boss.root.LetterLabelBossgroupSummoned>战斗单位已被召唤。</Cinder_Boss.root.LetterLabelBossgroupSummoned>
+  
+</LanguageData>

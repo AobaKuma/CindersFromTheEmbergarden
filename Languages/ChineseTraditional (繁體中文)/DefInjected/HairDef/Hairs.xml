@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: bread -->
+  <Cinder_HairA.label>面包</Cinder_HairA.label>
+  
+  <!-- EN: bun -->
+  <Cinder_HairB.label>小圆饼</Cinder_HairB.label>
+  
+  <!-- EN: chiffon -->
+  <Cinder_HairC.label>戚风</Cinder_HairC.label>
+  
+  <!-- EN: cinnamon -->
+  <Cinder_HairD.label>肉桂卷</Cinder_HairD.label>
+  
+  <!-- EN: cookies -->
+  <Cinder_HairE.label>曲奇</Cinder_HairE.label>
+  
+  <!-- EN: croissant -->
+  <Cinder_HairF.label>可颂</Cinder_HairF.label>
+  
+  <!-- EN: laurel -->
+  <Cinder_HairG.label>月桂</Cinder_HairG.label>
+  
+  <!-- EN: licorice -->
+  <Cinder_HairH.label>甘草</Cinder_HairH.label>
+  
+  <!-- EN: loaf -->
+  <Cinder_HairI.label>长面包</Cinder_HairI.label>
+  
+  <!-- EN: lowDoublePony -->
+  <Cinder_HairJ.label>低双马尾</Cinder_HairJ.label>
+  
+  <!-- EN: midPony -->
+  <Cinder_HairK.label>中马尾</Cinder_HairK.label>
+  
+  <!-- EN: muse -->
+  <Cinder_HairL.label>慕斯</Cinder_HairL.label>
+  
+  <!-- EN: rumple -->
+  <Cinder_HairM.label>凌乱</Cinder_HairM.label>
+  
+  <!-- EN: sideTail -->
+  <Cinder_HairN.label>侧马尾</Cinder_HairN.label>
+  
+  <!-- EN: solemn -->
+  <Cinder_HairO.label>庄重</Cinder_HairO.label>
+  
+  <!-- EN: wheat -->
+  <Cinder_HairP.label>稻穗</Cinder_HairP.label>
+  
+</LanguageData>

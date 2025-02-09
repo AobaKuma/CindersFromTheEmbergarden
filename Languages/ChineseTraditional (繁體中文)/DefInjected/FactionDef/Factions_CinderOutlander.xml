@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: cradle -->
+  <Cinder_ESDSP.label>摇篮</Cinder_ESDSP.label>
+  <!-- EN: Driven to a dead end by the war, the cinders entrusted everything they had, including their own bodies, to DI in an attempt to end the conflict. However, the underlying logic of DI is chaotic, stemming from the Other god's blood and flesh remnants, rendering it incapable of making a correct judgment on whether the war has ended. Even thousands of years later, after the enclosed area dissipated and the so-called enemies were overthrown and disintegrated, it still cannot determine that the war is over. Instead, it gazes into the boundless starry sky and begins an endless war against any armed threat that has yet to surrender. -->
+  <Cinder_ESDSP.description>被战争逼到绝路的烟烬们，将自己的一切，乃至于自己的身体托管给DI，试图结束战争，但DI的底层逻辑是混乱的，来源于古神血肉湿件的它无法对战争是否结束做出正确判断，在数千年后遮蔽区散去，所谓的敌人被推翻解体后，它仍然无法判断战争已结束，而是对着无垠的星空，对任何未投降的武装威胁势力开始永不结束的战争。</Cinder_ESDSP.description>
+  <!-- EN: leader -->
+  <Cinder_ESDSP.leaderTitle>DI</Cinder_ESDSP.leaderTitle>
+  <!-- EN: combat unit -->
+  <Cinder_ESDSP.pawnSingular>战斗单位</Cinder_ESDSP.pawnSingular>
+  <!-- EN: combat units -->
+  <Cinder_ESDSP.pawnsPlural>战斗单位们</Cinder_ESDSP.pawnsPlural>
+  
+  <!-- EN: lantern fleet -->
+  <Cinder_OutlanderCivil.label>提灯舰队</Cinder_OutlanderCivil.label>
+  <!-- EN: These people are fleets fleeing from ancient Earth in all directions of the universe. Their assault landing ship encountered fierce combat near the orbit of this planet, so they made an emergency landing on the planet and re established themselves here. -->
+  <Cinder_OutlanderCivil.description>这些人是从古代地球向宇宙各个方向逃离的舰队。他们的强袭登陆舰在这个星球的轨道附近遇到了激烈的战斗，所以他们紧急迫降在这个星球上，并在这里重新扎根。</Cinder_OutlanderCivil.description>
+  <!-- EN: Lantern Bearer -->
+  <Cinder_OutlanderCivil.leaderTitle>提灯人</Cinder_OutlanderCivil.leaderTitle>
+  <!-- EN: crew -->
+  <Cinder_OutlanderCivil.pawnSingular>机组成员</Cinder_OutlanderCivil.pawnSingular>
+  <!-- EN: crews -->
+  <Cinder_OutlanderCivil.pawnsPlural>机组成员</Cinder_OutlanderCivil.pawnsPlural>
+  
+</LanguageData>

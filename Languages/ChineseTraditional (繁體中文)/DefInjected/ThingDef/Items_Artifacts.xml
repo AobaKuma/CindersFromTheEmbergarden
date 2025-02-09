@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: empty agent bottle -->
+  <Cinder_EmptyAgentBottle.label>空药剂瓶</Cinder_EmptyAgentBottle.label>
+  <!-- EN: An empty agent bottle with a mysterious structure, when filled with corresponding materials, will automatically mix and release nanomechanics to transform the contents into corresponding drugs. -->
+  <Cinder_EmptyAgentBottle.description>一个具有神秘结构的空试剂瓶，当装满相应的材料时，会自动混合并释放纳米机械，将内容物转化为相应的药物。</Cinder_EmptyAgentBottle.description>
+  <!-- EN: Analyze the empty agent bottle. -->
+  <Cinder_EmptyAgentBottle.comps.CompAnalyzableUnlockResearch.activateDescString>分析空药剂瓶</Cinder_EmptyAgentBottle.comps.CompAnalyzableUnlockResearch.activateDescString>
+  <!-- EN: Analyze... -->
+  <Cinder_EmptyAgentBottle.comps.CompAnalyzableUnlockResearch.activateLabelString>分析中..</Cinder_EmptyAgentBottle.comps.CompAnalyzableUnlockResearch.activateLabelString>
+  <!-- EN: By studying the empty agent bottle, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology. -->
+  <Cinder_EmptyAgentBottle.comps.CompAnalyzableUnlockResearch.completedLetter>通过研究空药剂瓶，{PAWN_labelShort}已经完全掌握了研究{RESEARCH}的所需知识。</Cinder_EmptyAgentBottle.comps.CompAnalyzableUnlockResearch.completedLetter>
+  <!-- EN: Empty agent bottle studied: {RESEARCH} unlocked -->
+  <Cinder_EmptyAgentBottle.comps.CompAnalyzableUnlockResearch.completedLetterLabel>空药剂瓶已调查:{RESEARCH}解锁</Cinder_EmptyAgentBottle.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+  <!-- EN: Choose who should analyze this -->
+  <Cinder_EmptyAgentBottle.comps.CompAnalyzableUnlockResearch.guiLabelString>选择谁来研究</Cinder_EmptyAgentBottle.comps.CompAnalyzableUnlockResearch.guiLabelString>
+  <!-- EN: Can be analyzed by a colonist. -->
+  <Cinder_EmptyAgentBottle.comps.CompAnalyzableUnlockResearch.inspectString>可以被殖民者研究</Cinder_EmptyAgentBottle.comps.CompAnalyzableUnlockResearch.inspectString>
+  <!-- EN: analyze empty agent bottle -->
+  <Cinder_EmptyAgentBottle.comps.CompAnalyzableUnlockResearch.jobString>分析空药剂瓶</Cinder_EmptyAgentBottle.comps.CompAnalyzableUnlockResearch.jobString>
+  
+  <!-- EN: eroded mech component -->
+  <Cinder_ErodedMechComponent.label>被侵蚀的机械零件</Cinder_ErodedMechComponent.label>
+  <!-- EN: A special mechanical component, which may be some kind of photoelectric sensor or advanced chip, a signal transmission and reception device connected to DI. The technology for manufacturing it has not been mastered and can only be obtained by defeating combat units or from ancient ruins. -->
+  <Cinder_ErodedMechComponent.description>一种特殊的零件，似乎包含了光电传感器或者某种先进芯片与沟通DI的信号发射器，制造这种芯片的技术完全无法掌握，所以只能从特殊手段获取它，或者击败战争步行机器掉落。</Cinder_ErodedMechComponent.description>
+  <!-- EN: Analyze the eroded mech component. -->
+  <Cinder_ErodedMechComponent.comps.CompAnalyzableUnlockResearch.activateDescString>分析被侵蚀的机械零件</Cinder_ErodedMechComponent.comps.CompAnalyzableUnlockResearch.activateDescString>
+  <!-- EN: Analyze... -->
+  <Cinder_ErodedMechComponent.comps.CompAnalyzableUnlockResearch.activateLabelString>分析中..</Cinder_ErodedMechComponent.comps.CompAnalyzableUnlockResearch.activateLabelString>
+  <!-- EN: By studying the eroded mech component, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology. -->
+  <Cinder_ErodedMechComponent.comps.CompAnalyzableUnlockResearch.completedLetter>通过研究被侵蚀的机械零件，{PAWN_labelShort}已经完全掌握了研究{RESEARCH}的所需知识。</Cinder_ErodedMechComponent.comps.CompAnalyzableUnlockResearch.completedLetter>
+  <!-- EN: Eroded mech component studied: {RESEARCH} unlocked -->
+  <Cinder_ErodedMechComponent.comps.CompAnalyzableUnlockResearch.completedLetterLabel>被侵蚀的机械零件已调查:{RESEARCH}解锁</Cinder_ErodedMechComponent.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+  <!-- EN: Choose who should analyze this -->
+  <Cinder_ErodedMechComponent.comps.CompAnalyzableUnlockResearch.guiLabelString>选择谁来研究</Cinder_ErodedMechComponent.comps.CompAnalyzableUnlockResearch.guiLabelString>
+  <!-- EN: Can be analyzed by a colonist. -->
+  <Cinder_ErodedMechComponent.comps.CompAnalyzableUnlockResearch.inspectString>可以被殖民者研究</Cinder_ErodedMechComponent.comps.CompAnalyzableUnlockResearch.inspectString>
+  <!-- EN: analyze eroded mech component -->
+  <Cinder_ErodedMechComponent.comps.CompAnalyzableUnlockResearch.jobString>分析被侵蚀的机械零件</Cinder_ErodedMechComponent.comps.CompAnalyzableUnlockResearch.jobString>
+  
+  <!-- EN: erosion agent -->
+  <Cinder_ErosionAgent.label>侵蚀剂</Cinder_ErosionAgent.label>
+  <!-- EN: A drug containing large amount of amorphous polymer, which imparts special abilities after injection. -->
+  <Cinder_ErosionAgent.description>一种含有大量无定形聚合物的药物，注射后可以获得一些特殊能力。</Cinder_ErosionAgent.description>
+  <!-- EN: Consume {0_label} -->
+  <Cinder_ErosionAgent.comps.CompUsable.useLabel>注射{0_label}</Cinder_ErosionAgent.comps.CompUsable.useLabel>
+  
+  <!-- EN: extra armour plates -->
+  <Cinder_ExtraArmour.label>附加装甲板</Cinder_ExtraArmour.label>
+  <!-- EN: A sturdy metal plate separated from amorphous polymer. Once damaged, the armor plating must be completely replaced. -->
+  <Cinder_ExtraArmour.description>与无定形聚合物分离的坚固金属板，可以被任何人使用，一旦损坏，必须完全更换装甲板。</Cinder_ExtraArmour.description>
+  <!-- EN: Use {0_label} -->
+  <Cinder_ExtraArmour.comps.CompUsable.useLabel>使用{0_label}</Cinder_ExtraArmour.comps.CompUsable.useLabel>
+  <!-- EN: Analyze the extra armour plate. -->
+  <Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.activateDescString>分析附加装甲板</Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.activateDescString>
+  <!-- EN: Analyze... -->
+  <Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.activateLabelString>分析中..</Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.activateLabelString>
+  <!-- EN: By studying the extra armour plate, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology. -->
+  <Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.completedLetter>通过研究附加装甲板，{PAWN_labelShort}已经完全掌握了研究{RESEARCH}的所需知识。</Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.completedLetter>
+  <!-- EN: Extra armour plate studied: {RESEARCH} unlocked -->
+  <Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.completedLetterLabel>附加装甲板已调查:{RESEARCH}解锁</Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+  <!-- EN: Choose who should analyze this -->
+  <Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.guiLabelString>选择谁来研究</Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.guiLabelString>
+  <!-- EN: Can be analyzed by a colonist. -->
+  <Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.inspectString>可以被殖民者研究</Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.inspectString>
+  <!-- EN: analyze extra armour plate -->
+  <Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.jobString>分析附加装甲板</Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.jobString>
+  
+  <!-- EN: regeneration enhanced serum -->
+  <Cinder_RegeneratedEnhancedSerum.label>再生强化血清</Cinder_RegeneratedEnhancedSerum.label>
+  <!-- EN: A type of eroded golden serum, injected into the human body, enhances the regeneration ability of amorphous polymers and gives the user the ability to come back to life after death. -->
+  <Cinder_RegeneratedEnhancedSerum.description>一种被侵蚀的金色血清，注射它的人体内的无定形聚合物再生能力会被增强，并且会让使用者拥有一次死而复生的能力。</Cinder_RegeneratedEnhancedSerum.description>
+  <!-- EN: Consume {0_label} -->
+  <Cinder_RegeneratedEnhancedSerum.comps.CompUsable.useLabel>注射{0_label}</Cinder_RegeneratedEnhancedSerum.comps.CompUsable.useLabel>
+  
+</LanguageData>

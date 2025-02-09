@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: coke -->
+  <Cinder_Coke.degreeDatas.coke.label>焦炭</Cinder_Coke.degreeDatas.coke.label>
+  <!-- EN: {PAWN_nameDef} is a part of an unknown consciousness. when others approach, they will feel a burning sensation -->
+  <Cinder_Coke.degreeDatas.coke.description>{PAWN_nameDef}是未知意识的一部分。当其他人靠近时，他们会感到一种灼热感</Cinder_Coke.degreeDatas.coke.description>
+  
+</LanguageData>

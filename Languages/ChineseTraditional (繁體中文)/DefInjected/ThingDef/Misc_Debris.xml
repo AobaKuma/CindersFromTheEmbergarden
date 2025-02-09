@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: eroded walker debris -->
+  <Cinder_ChunkSlag.label>被侵蚀的步行者残骸</Cinder_ChunkSlag.label>
+  <!-- EN: The remains of a destoryed eroded walker. While useless in its current form, it can be smelted to recover resources. -->
+  <Cinder_ChunkSlag.description>一个被毁坏的、被侵蚀的步行者残骸。虽然目前的形式毫无用处，但可以熔炼以回收资源。</Cinder_ChunkSlag.description>
+  
+</LanguageData>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: exoskeleton gun -->
+  <Cinder_MechGun_EXOGun.label>轻型自动炮</Cinder_MechGun_EXOGun.label>
+  <!-- EN: TODO -->
+  <Cinder_MechGun_EXOGun.description>一种轻型大口径自动炮，用于对付轻装甲目标。</Cinder_MechGun_EXOGun.description>
+  <!-- EN: exoskeleton gun -->
+  <Cinder_MechGun_EXOGun.verbs.Verb_Shoot.label>轻型自动炮</Cinder_MechGun_EXOGun.verbs.Verb_Shoot.label>
+  
+  <!-- EN: giant HEAT rifle -->
+  <Cinder_MechGun_GiantHEATRifle.label>巨型破甲弹步枪</Cinder_MechGun_GiantHEATRifle.label>
+  <!-- EN: TODO -->
+  <Cinder_MechGun_GiantHEATRifle.description>一种可以连发的巨型破甲弹发射器，被用于装在战争打击者上。</Cinder_MechGun_GiantHEATRifle.description>
+  <!-- EN: giant HEAT rifle -->
+  <Cinder_MechGun_GiantHEATRifle.verbs.Verb_Shoot.label>巨型破甲弹步枪</Cinder_MechGun_GiantHEATRifle.verbs.Verb_Shoot.label>
+  
+  <!-- EN: giant minigun -->
+  <Cinder_MechGun_GiantMiniGun.label>速射机炮</Cinder_MechGun_GiantMiniGun.label>
+  <!-- EN: TODO -->
+  <Cinder_MechGun_GiantMiniGun.description>一种用于防空/拦截火力的自动转管机炮。</Cinder_MechGun_GiantMiniGun.description>
+  <!-- EN: giant minigun -->
+  <Cinder_MechGun_GiantMiniGun.verbs.Verb_ArcSprayProjectile.label>速射机炮</Cinder_MechGun_GiantMiniGun.verbs.Verb_ArcSprayProjectile.label>
+  
+  <!-- EN: Hellfire Missile -->
+  <CinderBullet_Hellfire.label>地狱火导弹</CinderBullet_Hellfire.label>
+  
+</LanguageData>

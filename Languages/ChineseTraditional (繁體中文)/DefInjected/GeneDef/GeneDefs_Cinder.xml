@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: black hair -->
+  <Cinder_BlackHair.label>黑发</Cinder_BlackHair.label>
+  <!-- EN: Carriers of this gene have a particular hair color. With multiple hair color genes, one is randomly selected. -->
+  <Cinder_BlackHair.description>携带者会长出特定颜色的头发</Cinder_BlackHair.description>
+  
+  <!-- EN: dark brown hair -->
+  <Cinder_BrownHair.label>茶发</Cinder_BrownHair.label>
+  <!-- EN: Carriers of this gene have a particular hair color. With multiple hair color genes, one is randomly selected. -->
+  <Cinder_BrownHair.description>携带者会长出特定颜色的头发</Cinder_BrownHair.description>
+  
+  <!-- EN: erosion eyes -->
+  <Cinder_ErosionEyes.label>侵蚀眼</Cinder_ErosionEyes.label>
+  <!-- EN: Carriers of this gene have deeply erosion eyes. -->
+  <Cinder_ErosionEyes.description>携带者会生长有被侵蚀的眼睛</Cinder_ErosionEyes.description>
+  <!-- EN: erosion eyes -->
+  <Cinder_ErosionEyes.labelShortAdj>侵蚀眼</Cinder_ErosionEyes.labelShortAdj>
+  
+  <!-- EN: fin -->
+  <Cinder_Fin.label>鳍</Cinder_Fin.label>
+  <!-- EN: Carriers of this gene will grow head fins. -->
+  <Cinder_Fin.description>携带者头部会长出鳍</Cinder_Fin.description>
+  <!-- EN: fin -->
+  <Cinder_Fin.labelShortAdj>鳍</Cinder_Fin.labelShortAdj>
+  
+  <!-- EN: cinder-haired -->
+  <Cinder_HairOnly.label>烟烬发</Cinder_HairOnly.label>
+  <!-- EN: Carriers of this gene can only grow cinder hair. -->
+  <Cinder_HairOnly.description>携带者的头发只会长出烟烬的发型样式</Cinder_HairOnly.description>
+  <!-- EN: cinder -->
+  <Cinder_HairOnly.labelShortAdj>烟烬</Cinder_HairOnly.labelShortAdj>
+  
+  <!-- EN: low black hair -->
+  <Cinder_LowBlackHair.label>深黑发</Cinder_LowBlackHair.label>
+  <!-- EN: Carriers of this gene have a particular hair color. With multiple hair color genes, one is randomly selected. -->
+  <Cinder_LowBlackHair.description>携带者会长出特定颜色的头发</Cinder_LowBlackHair.description>
+  
+  <!-- EN: amorphous regeneration -->
+  <Cinder_Regeneration.label>无定形再生</Cinder_Regeneration.label>
+  <!-- EN: Carriers of this gene when injured,will regenerate according to its original body structure. -->
+  <Cinder_Regeneration.description>当携带者受到伤害时，体内的无定形聚合物会按照原来的身体结构再生</Cinder_Regeneration.description>
+  <!-- EN: regeneration -->
+  <Cinder_Regeneration.labelShortAdj>再生</Cinder_Regeneration.labelShortAdj>
+  
+  <!-- EN: amorphous revive -->
+  <Cinder_Revive.label>无定形复苏</Cinder_Revive.label>
+  <!-- EN: Carriers of this gene will resurrect upon death. -->
+  <Cinder_Revive.description>携带者会在死亡时复活一次</Cinder_Revive.description>
+  <!-- EN: revive -->
+  <Cinder_Revive.labelShortAdj>复苏</Cinder_Revive.labelShortAdj>
+  
+  <!-- EN: uncontrollable tentacle -->
+  <Cinder_UncontrollableTentacle.label>不可控触手</Cinder_UncontrollableTentacle.label>
+  <!-- EN: Carriers of this gene will grow uncontrollable tentacle. -->
+  <Cinder_UncontrollableTentacle.description>携带者会长出不可控制的触手</Cinder_UncontrollableTentacle.description>
+  
+  <!-- EN: white hair -->
+  <Cinder_WhiteHair.label>白发</Cinder_WhiteHair.label>
+  <!-- EN: Carriers of this gene have a particular hair color. With multiple hair color genes, one is randomly selected. -->
+  <Cinder_WhiteHair.description>携带者会长出特定颜色的头发</Cinder_WhiteHair.description>
+  
+  <!-- EN: cinder head -->
+  <CinderHead_Female.label>烟烬头部</CinderHead_Female.label>
+  <!-- EN: Carriers of this gene have a cinder appearance in their face and head. -->
+  <CinderHead_Female.description>携带者的脸部会长得像某个人</CinderHead_Female.description>
+  
+</LanguageData>

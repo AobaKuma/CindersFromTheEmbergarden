@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: break through unit -->
+  <Cinder_BreakUnit.label>突破单位</Cinder_BreakUnit.label>
+  
+  <!-- EN: Caster unit -->
+  <Cinder_CasterUnit.label>法术单位</Cinder_CasterUnit.label>
+  
+  <!-- EN: colonist -->
+  <Cinder_Colonist.label>殖民者</Cinder_Colonist.label>
+  
+  <!-- EN: cult follower -->
+  <Cinder_Cult.label>教徒</Cinder_Cult.label>
+  
+  <!-- EN: cult guard -->
+  <Cinder_EliteCult.label>教团守卫</Cinder_EliteCult.label>
+  
+  <!-- EN: ghoul unit -->
+  <Cinder_EliteGhoul.label>尸鬼单位</Cinder_EliteGhoul.label>
+  
+  <!-- EN: ghoul unit -->
+  <Cinder_Ghoul.label>尸鬼单位</Cinder_Ghoul.label>
+  
+  <!-- EN: grenadier -->
+  <Cinder_Grenadier.label>掷弹兵</Cinder_Grenadier.label>
+  
+  <!-- EN: Bombing unit -->
+  <Cinder_HeavySoliderUnit.label>轰炸单位</Cinder_HeavySoliderUnit.label>
+  
+  <!-- EN: Lantern Bearer -->
+  <Cinder_Leader.label>提灯人</Cinder_Leader.label>
+  
+  <!-- EN: Frontline troops -->
+  <Cinder_Outlander.label>前线士兵</Cinder_Outlander.label>
+  
+  <!-- EN: Civilan -->
+  <Cinder_OutlanderCivilan.label>舰队居民</Cinder_OutlanderCivilan.label>
+  
+  <!-- EN: shock troops -->
+  <Cinder_OutlanderElite.label>突击士兵</Cinder_OutlanderElite.label>
+  
+  <!-- EN: Logistics troops -->
+  <Cinder_OutlanderSecond.label>后勤士兵</Cinder_OutlanderSecond.label>
+  
+  <!-- EN: solider unit -->
+  <Cinder_SoliderUnit.label>士兵单位</Cinder_SoliderUnit.label>
+  
+  <!-- EN: supply officer -->
+  <Cinder_SupplyOfficer.label>后勤官</Cinder_SupplyOfficer.label>
+  
+</LanguageData>

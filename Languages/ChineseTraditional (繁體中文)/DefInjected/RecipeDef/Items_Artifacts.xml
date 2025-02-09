@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make erosion agent -->
+  <Make_Cinder_ErosionAgent.label>调制侵蚀药剂</Make_Cinder_ErosionAgent.label>
+  <!-- EN: Make erosion agent. -->
+  <Make_Cinder_ErosionAgent.description>调制侵蚀药剂</Make_Cinder_ErosionAgent.description>
+  <!-- EN: Making erosion agent. -->
+  <Make_Cinder_ErosionAgent.jobString>正在调制侵蚀药剂</Make_Cinder_ErosionAgent.jobString>
+  
+  <!-- EN: make extra armour plates -->
+  <Make_Cinder_ExtraArmour.label>制作附加装甲板</Make_Cinder_ExtraArmour.label>
+  <!-- EN: Make extra armour plates. -->
+  <Make_Cinder_ExtraArmour.description>制作附加装甲板</Make_Cinder_ExtraArmour.description>
+  <!-- EN: Making extra armour plates. -->
+  <Make_Cinder_ExtraArmour.jobString>正在制作附加装甲板</Make_Cinder_ExtraArmour.jobString>
+  
+  <!-- EN: make regenerated enhanced serum -->
+  <Make_Cinder_RegeneratedEnhancedSerum.label>调制再生血清</Make_Cinder_RegeneratedEnhancedSerum.label>
+  <!-- EN: Make regenerated enhanced serum. -->
+  <Make_Cinder_RegeneratedEnhancedSerum.description>调制再生血清</Make_Cinder_RegeneratedEnhancedSerum.description>
+  <!-- EN: Making regenerated enhanced serum. -->
+  <Make_Cinder_RegeneratedEnhancedSerum.jobString>正在调制再生血清</Make_Cinder_RegeneratedEnhancedSerum.jobString>
+  
+</LanguageData>
