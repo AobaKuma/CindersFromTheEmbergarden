@@ -570,7 +570,6 @@
 			<min>300</min>
 			<max>400</max>
 		</apparelMoney>
-		<weaponStuffOverride>Cinder_AmorphousPolymer</weaponStuffOverride>
 		<weaponTags>
 			<li>MedievalMeleeBasic</li>
 			<li>MedievalMeleeDecent</li>
@@ -596,13 +595,12 @@
 		<isFighter>true</isFighter>
 		<initialWillRange>10~30</initialWillRange>
 		<invNutrition>1</invNutrition>
-		<itemQuality>Good</itemQuality>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>45</maxGenerationAge>
 		<minGenerationAge>19</minGenerationAge>
 		<startingHediffs>
 			<li>
-				<def>Cinder_ExtraArmourPlateII</def>
+				<def>Cinder_ExtraArmourPlate</def>
 				<chance>1</chance>
 			</li>
 		</startingHediffs>
@@ -621,18 +619,22 @@
 		</apparelTags>
 		<specificApparelRequirements>
 			<li>
+				<bodyPartGroup>FullHead</bodyPartGroup>
+				<requiredTag>Cinder_Cult</requiredTag>
+				<useRandomStyleDef>true</useRandomStyleDef>
+			</li>
+			<li>
 				<bodyPartGroup>Torso</bodyPartGroup>
 				<stuff>Synthread</stuff>
 				<requiredTag>IndustrialBasic</requiredTag>
 				<apparelLayer>OnSkin</apparelLayer>
 				<color>(85, 85, 85)</color>
 			</li>
-				 <li>
-               <bodyPartGroup>Torso</bodyPartGroup>
-		       <requiredTag>Cinder_Bulletproof</requiredTag>
-		       <stuff>Synthread</stuff>
-		       <apparelLayer>Middle</apparelLayer>
-            </li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<requiredTag>Cinder_Military</requiredTag>
+				<apparelLayer>Middle</apparelLayer>
+			</li>
 			<li>
 				<bodyPartGroup>Torso</bodyPartGroup>
 				<requiredTag>Cinder_Outlands</requiredTag>
@@ -648,17 +650,16 @@
 		</specificApparelRequirements>
 		<apparelRequired>
 			<li>Apparel_ShieldBelt</li>
-			<li>Cinder_HeadGear_FullyEnclosedMask</li>
 		</apparelRequired>
 		<apparelMoney>
-			<min>2300</min>
-			<max>2800</max>
+			<min>1700</min>
+			<max>2100</max>
 		</apparelMoney>
-		 <weaponStuffOverride>Cinder_AmorphousPolymer</weaponStuffOverride>
 		<weaponTags>
+			<li>MedievalMeleeBasic</li>
 			<li>MedievalMeleeAdvanced</li>
 		</weaponTags>
-		<weaponMoney>1600~1700</weaponMoney>
+		<weaponMoney>600~700</weaponMoney>
 		<modExtensions>
 			<li Class="Embergarden.ModExtension_RandomOneAbility">
 				<abilities>
@@ -673,9 +674,6 @@
 		<fixedInventory>
 			<Cinder_EmptyAgentBottle>1</Cinder_EmptyAgentBottle>
 		</fixedInventory>
-	<forcedTraits>
-	<li>Tough</li>
-	</forcedTraits>
 		<skills>
 			<li>
 				<skill>Melee</skill>
@@ -1162,7 +1160,6 @@
 		<requiredWorkTags>
 			<li>Violent</li>
 		</requiredWorkTags>
-		<weaponStuffOverride>Cinder_AmorphousPolymer</weaponStuffOverride>
 		<weaponTags>
 			<li>MedievalMeleeBasic</li>
 		</weaponTags>

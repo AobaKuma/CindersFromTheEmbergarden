@@ -485,11 +485,7 @@
 			<li>
 				<damageFactors>
 					<Bullet>0.75</Bullet>
-					<Bomb>0.15</Bomb>
-					<Cut>0.25</Cut>
-					<Blunt>0.5</Blunt>
-					<Poke>0.25</Poke>
-					<Stab>0.25</Stab>
+					<Bomb>0.25</Bomb>
 				</damageFactors>
 				<statOffsets>
 					<MoveSpeed>-0.1</MoveSpeed>
