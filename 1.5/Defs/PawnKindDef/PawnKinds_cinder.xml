@@ -620,11 +620,6 @@
 		</apparelTags>
 		<specificApparelRequirements>
 			<li>
-				<bodyPartGroup>FullHead</bodyPartGroup>
-				<requiredTag>Cinder_Cult</requiredTag>
-				<useRandomStyleDef>true</useRandomStyleDef>
-			</li>
-			<li>
 				<bodyPartGroup>Torso</bodyPartGroup>
 				<stuff>Synthread</stuff>
 				<requiredTag>IndustrialBasic</requiredTag>
@@ -632,10 +627,11 @@
 				<color>(85, 85, 85)</color>
 			</li>
 			<li>
-				<bodyPartGroup>Torso</bodyPartGroup>
-				<requiredTag>Cinder_Military</requiredTag>
-				<apparelLayer>Middle</apparelLayer>
-			</li>
+               <bodyPartGroup>Torso</bodyPartGroup>
+		       <requiredTag>Cinder_Bulletproof</requiredTag>
+		       <stuff>Synthread</stuff>
+		       <apparelLayer>Middle</apparelLayer>
+            </li>
 			<li>
 				<bodyPartGroup>Torso</bodyPartGroup>
 				<requiredTag>Cinder_Outlands</requiredTag>
@@ -651,6 +647,7 @@
 		</specificApparelRequirements>
 		<apparelRequired>
 			<li>Apparel_ShieldBelt</li>
+			<li>Cinder_HeadGear_FullyEnclosedMask</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>1700</min>
