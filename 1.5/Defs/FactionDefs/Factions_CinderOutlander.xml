@@ -347,6 +347,7 @@
 		   <Cinder_SoliderUnit>0.1</Cinder_SoliderUnit>
 		  <Cinder_HeavySoliderUnit>10</Cinder_HeavySoliderUnit>
 		  <Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
+		  <Cinder_Mech_WalkerAutoCannon>1.5</Cinder_Mech_WalkerAutoCannon>
           <Cinder_Mech_ErodedEXO>30</Cinder_Mech_ErodedEXO>
 		  <Cinder_Mech_WarSweeper>30</Cinder_Mech_WarSweeper>
         </options>
@@ -361,6 +362,7 @@
 		   <Cinder_SoliderUnit>0.1</Cinder_SoliderUnit>
 		  <Cinder_HeavySoliderUnit>5</Cinder_HeavySoliderUnit>
 		  <Cinder_Mech_MiniTurretWalker>5</Cinder_Mech_MiniTurretWalker>
+		  <Cinder_Mech_WalkerAutoCannon>1.5</Cinder_Mech_WalkerAutoCannon>
 		  <Cinder_Mech_ErodedEXO>30</Cinder_Mech_ErodedEXO>
 		  <Cinder_Mech_WarAttacker>30</Cinder_Mech_WarAttacker>
         </options>
@@ -375,6 +377,7 @@
 		  <Cinder_SoliderUnit>5</Cinder_SoliderUnit>
 		  <Cinder_HeavySoliderUnit>5</Cinder_HeavySoliderUnit>
 		  <Cinder_Mech_MiniTurretWalker>5</Cinder_Mech_MiniTurretWalker>
+		  <Cinder_Mech_WalkerAutoCannon>1.5</Cinder_Mech_WalkerAutoCannon>
 		  <Cinder_Mech_ErodedEXO>25</Cinder_Mech_ErodedEXO>
         </options>
       </li>
