@@ -79,10 +79,6 @@
     <label>Burnt strange meat</label>
     <description>A burnt tentacle meat separated from amorphous polymer, edible and without strange taste, but usually used as a material for some serum.</description>
     <thingClass>ThingWithComps</thingClass>
-	<descriptionHyperlinks>
-			<RecipeDef>Make_Cinder_ExtraArmour</RecipeDef>
-			<ThingDef>Cinder_AncientWorkstation</ThingDef>
-	</descriptionHyperlinks>
     <selectable>true</selectable>
     <category>Item</category>
     <drawerType>MapMeshOnly</drawerType>

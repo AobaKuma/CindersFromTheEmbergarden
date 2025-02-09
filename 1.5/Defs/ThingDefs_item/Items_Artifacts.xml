@@ -369,8 +369,6 @@
 		<description>A sturdy metal plate separated from amorphous polymer. Once damaged, the armor plating must be completely replaced.</description>
 		<descriptionHyperlinks>
 			<HediffDef>Cinder_ExtraArmourPlate</HediffDef>
-			<RecipeDef>Make_Cinder_ExtraArmour</RecipeDef>
-			<ThingDef>Cinder_AncientWorkstation</ThingDef>
 		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Item/ExtraArmour</texPath>
