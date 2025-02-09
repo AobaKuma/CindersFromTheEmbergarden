@@ -509,7 +509,7 @@
 		<minGenerationAge>19</minGenerationAge>
 		<startingHediffs>
 			<li>
-				<def>Cinder_ExtraArmourPlate</def>
+				<def>Cinder_ExtraArmourPlateII</def>
 				<chance>0.15</chance>
 			</li>
 		</startingHediffs>
@@ -570,6 +570,7 @@
 			<min>300</min>
 			<max>400</max>
 		</apparelMoney>
+		<weaponStuffOverride>Cinder_AmorphousPolymer</weaponStuffOverride>
 		<weaponTags>
 			<li>MedievalMeleeBasic</li>
 			<li>MedievalMeleeDecent</li>
@@ -589,7 +590,7 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_EliteCult</defName>
 		<label>cult guard</label>
-		<combatPower>200</combatPower>
+		<combatPower>180</combatPower>
 		<maxPerGroup>6</maxPerGroup>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
@@ -659,6 +660,7 @@
 			<li>MedievalMeleeBasic</li>
 			<li>MedievalMeleeAdvanced</li>
 		</weaponTags>
+		<weaponStuffOverride>Cinder_AmorphousPolymer</weaponStuffOverride>
 		<weaponMoney>600~700</weaponMoney>
 		<modExtensions>
 			<li Class="Embergarden.ModExtension_RandomOneAbility">
@@ -1163,6 +1165,7 @@
 		<weaponTags>
 			<li>MedievalMeleeBasic</li>
 		</weaponTags>
+		<weaponStuffOverride>Cinder_AmorphousPolymer</weaponStuffOverride>
 		<weaponMoney>200~400</weaponMoney>
 	</PawnKindDef>
 

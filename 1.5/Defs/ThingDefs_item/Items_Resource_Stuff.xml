@@ -35,8 +35,8 @@
         <li>Metallic</li>
       </categories>
       <appearance>Metal</appearance>
-      <commonality>0</commonality>
-      <allowedInStuffGeneration>false</allowedInStuffGeneration>
+      <commonality>0.001</commonality>
+      <allowedInStuffGeneration>true</allowedInStuffGeneration>
       <constructEffect>ConstructMetal</constructEffect>
       <color>(83, 84, 83)</color>
       <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>

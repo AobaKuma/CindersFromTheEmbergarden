@@ -305,7 +305,8 @@
       <points>
         <li>(1000,200)</li>
         <li>(2000,300)</li>
-		<li>(4000,1200)</li>
+		<li>(5000,420)</li>
+		<li>(6000,1000)</li>
 		<li>(6000,3000)</li>
         <li>(100000,10000)</li>
       </points>
@@ -323,6 +324,7 @@
 		  <Cinder_HeavySoliderUnit>10</Cinder_HeavySoliderUnit>
 		  <Cinder_Mech_WalkerAutoCannon>1.5</Cinder_Mech_WalkerAutoCannon>
           <Cinder_Mech_WalkerSniper>0.7</Cinder_Mech_WalkerSniper>
+		   <Cinder_Mech_ErodedEXO>25</Cinder_Mech_ErodedEXO>
         </options>
       </li>
 	   <li>
@@ -335,6 +337,7 @@
 		  <Cinder_HeavySoliderUnit>2</Cinder_HeavySoliderUnit>
 		  <Cinder_Mech_WalkerAutoCannon>1.5</Cinder_Mech_WalkerAutoCannon>
           <Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
+		   <Cinder_Mech_ErodedEXO>25</Cinder_Mech_ErodedEXO>
         </options>
       </li>
       <li>
@@ -347,6 +350,7 @@
 		   <Cinder_SoliderUnit>0.1</Cinder_SoliderUnit>
 		  <Cinder_HeavySoliderUnit>10</Cinder_HeavySoliderUnit>
 		  <Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
+		   <Cinder_Mech_WalkerAutoCannon>0.1</Cinder_Mech_WalkerAutoCannon>
           <Cinder_Mech_ErodedEXO>30</Cinder_Mech_ErodedEXO>
 		  <Cinder_Mech_WarSweeper>30</Cinder_Mech_WarSweeper>
         </options>
