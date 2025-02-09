@@ -95,6 +95,7 @@
     <Compile Include="HediffComp_StopMusicIfDowned.cs" />
     <Compile Include="Hediff_DownedAction.cs" />
     <Compile Include="Hediff_DynamicCap.cs" />
+    <Compile Include="JobGiver_FleeAllPawnsUnfucked.cs" />
     <Compile Include="PatchOperationAddSafe.cs" />
     <Compile Include="PatchOperationConditionalSettings.cs" />
     <Compile Include="Projectile_CompExplosive.cs" />

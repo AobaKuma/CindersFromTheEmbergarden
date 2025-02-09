@@ -8,7 +8,7 @@ using Verse.AI;
 
 namespace Embergarden
 {
-    public class HediffComp_PreApplyDamage: HediffComp
+    public class HediffComp_PreApplyDamage : HediffComp
     {
         public override void CompPostMake()
         {
@@ -18,7 +18,7 @@ namespace Embergarden
         public override void CompExposeData()
         {
             base.CompExposeData();
-            if(Scribe.mode == LoadSaveMode.PostLoadInit)
+            if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 AddPawnComp();
             }
@@ -42,8 +42,9 @@ namespace Embergarden
         public float Hitpoints
         {
             get { return hitpoints; }
-            set {
-                if(value>MaxHitpoints) value = MaxHitpoints;
+            set
+            {
+                if (value > MaxHitpoints) value = MaxHitpoints;
                 parent.Severity = DurablePercent;
                 hitpoints = value;
             }
@@ -78,11 +79,13 @@ namespace Embergarden
                 }
                 dinfo.SetAmount(dmgReduced);
                 Hitpoints -= dmg;
-                Props.effectOnDamaged?.SpawnMaintained(parent.pawn.Position, parent.pawn.MapHeld, 0.2f);
-                FilthMaker.TryMakeFilth(GenAdjFast.AdjacentCells8Way(parent.pawn.Position).RandomElement().ClampInsideMap(parent.pawn.MapHeld), parent.pawn.MapHeld, Props.filthOnDamaged);
-
+                if (parent.pawn.Spawned)
+                {
+                    Props.effectOnDamaged?.SpawnMaintained(parent.pawn.Position, parent.pawn.MapHeld, 0.2f);
+                    FilthMaker.TryMakeFilth(GenAdjFast.AdjacentCells8Way(parent.pawn.Position).RandomElement().ClampInsideMap(parent.pawn.MapHeld), parent.pawn.MapHeld, Props.filthOnDamaged);
+                }
             }
-            if (Hitpoints <=0)
+            if (Hitpoints <= 0)
             {
                 Hitpoints = 0;
                 //Messages.Message("Embergarden_AddonBroken".Translate(), new LookTargets(parent.pawn.PositionHeld, parent.pawn.MapHeld), MessageTypeDefOf.NeutralEvent);
@@ -92,14 +95,14 @@ namespace Embergarden
         }
         public override IEnumerable<Gizmo> CompGetGizmos()
         {
-            if (base.CompGetGizmos()!=null)
+            if (base.CompGetGizmos() != null)
             {
                 foreach (Gizmo item in base.CompGetGizmos())
                 {
                     yield return item;
                 }
             }
-            
+
             foreach (Gizmo gizmo in GetGizmos())
             {
                 yield return gizmo;
@@ -115,7 +118,7 @@ namespace Embergarden
                 };
                 yield return gizmo_Shield;
             }
-        }        
+        }
         public override void CompExposeData()
         {
             base.CompExposeData();
@@ -146,11 +149,11 @@ namespace Embergarden
 
     public class Comp_PreApplyDamage : ThingComp
     {
-        public IEnumerable<HediffComp_PreApplyDamage> HediffsPreApplyDamage=>((Pawn) parent)?.health.hediffSet.GetHediffComps<HediffComp_PreApplyDamage>();
+        public IEnumerable<HediffComp_PreApplyDamage> HediffsPreApplyDamage => ((Pawn)parent)?.health.hediffSet.GetHediffComps<HediffComp_PreApplyDamage>();
         public override void PostPreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
         {
             base.PostPreApplyDamage(ref dinfo, out absorbed);
-            foreach(var h in HediffsPreApplyDamage)
+            foreach (var h in HediffsPreApplyDamage)
             {
                 h.PreApplyDamage(ref dinfo, out absorbed);
             }
@@ -159,7 +162,7 @@ namespace Embergarden
         {
             base.PostExposeData();
             //Scribe_Collections.Look(ref hediffs, "hediffs", LookMode.Reference);
-            
+
         }
         //public List<HediffComp_PreApplyDamage> hediffs;
     }
