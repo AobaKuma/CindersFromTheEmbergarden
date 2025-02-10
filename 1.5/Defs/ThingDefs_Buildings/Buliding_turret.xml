@@ -280,7 +280,7 @@
 				<defaultProjectile>Bullet_TurretSniper</defaultProjectile>
 				<warmupTime>0</warmupTime>
 				<minRange>11.9</minRange>
-				<range>34.9</range>
+				<range>36.9</range>
 				<burstShotCount>1</burstShotCount>
 				<soundCast>Shot_TurretSniper</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>

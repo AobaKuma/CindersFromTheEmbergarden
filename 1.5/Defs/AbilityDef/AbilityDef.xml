@@ -158,7 +158,7 @@
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>2</warmupTime>
 			<soundCast></soundCast>
-			<range>34.9</range>
+			<range>35.9</range>
 			<targetable>false</targetable>
 			<violent>false</violent>
 			<targetParams>
