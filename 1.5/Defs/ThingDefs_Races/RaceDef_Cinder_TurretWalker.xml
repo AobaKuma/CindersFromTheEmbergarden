@@ -51,7 +51,7 @@
 		<defName>Cinder_Mech_WalkerAutoCannon</defName>
 		<label>Autocannon walker</label>
 		<race>Cinder_Mech_WalkerAutoCannon</race>
-		<combatPower>650</combatPower>
+		<combatPower>400</combatPower>
 		<maxPerGroup>5</maxPerGroup>
 		<allowInMechClusters>false</allowInMechClusters>
 		<lifeStages>
@@ -225,7 +225,7 @@
 		<defName>Cinder_Mech_WalkerSniper</defName>
 		<label>Uranium slug walker</label>
 		<race>Cinder_Mech_WalkerSniper</race>
-		<combatPower>800</combatPower>
+		<combatPower>500</combatPower>
 		<allowInMechClusters>false</allowInMechClusters>
 		<maxPerGroup>2</maxPerGroup>
 		<lifeStages>
