@@ -11,7 +11,7 @@
 				<PawnBeauty>1</PawnBeauty>
 				</statOffsets>
 				<statFactors>
-					<Flammability>0.5</Flammability>
+					<Flammability>0.8</Flammability>
 				</statFactors>
 				<disablesNeeds>
 					<li>Outdoors</li>

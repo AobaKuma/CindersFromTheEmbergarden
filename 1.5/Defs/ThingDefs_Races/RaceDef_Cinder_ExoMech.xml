@@ -47,7 +47,7 @@
 		<race>
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Mechanoid</thinkTreeMain>
-			<baseBodySize>1.5</baseBodySize>
+			<baseBodySize>2</baseBodySize>
 			<lifeStageAges>
 				<li>
 					<def>MechanoidFullyFormed</def>
@@ -227,8 +227,8 @@
 		<defName>Cinder_Mech_ErodedEXO</defName>
 		<label>eroded exoskeleton</label>
 		<race>Cinder_Mech_ErodedEXO</race>
-		<combatPower>800</combatPower>
-         <maxPerGroup>2</maxPerGroup>
+		<combatPower>1200</combatPower>
+         <maxPerGroup>3</maxPerGroup>
 		 <allowInMechClusters>false</allowInMechClusters>
          <isBoss>true</isBoss>
 		<lifeStages>

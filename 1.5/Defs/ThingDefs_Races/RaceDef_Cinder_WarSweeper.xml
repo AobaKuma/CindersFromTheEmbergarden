@@ -286,7 +286,7 @@
 		<label>war sweeper</label>
 		<race>Cinder_Mech_WarSweeper</race>
 		 <combatPower>1200</combatPower>
-         <maxPerGroup>2</maxPerGroup>
+         <maxPerGroup>1</maxPerGroup>
 		 <allowInMechClusters>false</allowInMechClusters>
          <isBoss>true</isBoss>
 		<lifeStages>

@@ -470,7 +470,7 @@
 			<RoyalFavorValue>4</RoyalFavorValue>
 			<Mass>75</Mass>
 			<MoveSpeed>4.6</MoveSpeed>
-			<Flammability>0</Flammability>
+			<Flammability>1</Flammability>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<ComfyTemperatureMin>6</ComfyTemperatureMin>
 			<MeatAmount>80</MeatAmount>

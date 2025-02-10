@@ -132,6 +132,7 @@
     <defName>Cinder_MultipleWarheads</defName>
     <label>Multiple warheads</label>
     <description>An improvement to firearms and ammunition that can cause more damage when bullets hit enemies.</description>
+	 <requiredResearchBuilding Inherit="False"/>
     <baseCost>150</baseCost>
     <techLevel>Industrial</techLevel>
     <researchViewX>0.00</researchViewX>
