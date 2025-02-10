@@ -556,6 +556,7 @@
 			<AccuracyShort>0.95</AccuracyShort>
 			<AccuracyMedium>0.92</AccuracyMedium>
 			<AccuracyLong>0.90</AccuracyLong>
+			<RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Steel>130</Steel>
@@ -578,7 +579,7 @@
 				<forcedMissRadius>0.5</forcedMissRadius>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Cinder_Bullet_RPG</defaultProjectile>
-				<warmupTime>6.5</warmupTime>
+				<warmupTime>5.5</warmupTime>
 				<range>30.9</range>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
