@@ -550,9 +550,9 @@
 			<li Class="CompProperties_Explosive">
 				<compClass>CompExplosivePowered</compClass>
 				<wickTicks>240</wickTicks>
-				<explosiveRadius>2.9</explosiveRadius>
+				<explosiveRadius>1.5</explosiveRadius>
 				<explosiveDamageType>Bomb</explosiveDamageType>
-				<chanceNeverExplodeFromDamage>0.25</chanceNeverExplodeFromDamage>
+				<chanceNeverExplodeFromDamage>0.9</chanceNeverExplodeFromDamage>
 			</li>
 		</comps>
 		<passability>PassThroughOnly</passability>

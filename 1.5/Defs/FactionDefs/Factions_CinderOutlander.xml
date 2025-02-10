@@ -91,6 +91,7 @@
         <li>(0,80)</li>
         <li>(200, 100)</li>
 		<li>(2300, 120)</li>
+		<li>(3000,400)</li>
         <li>(100000, 10000)</li>
       </points>
     </maxPawnCostPerTotalPointsCurve>
@@ -102,13 +103,13 @@
         <options>
 		  <Cinder_Cult>3</Cinder_Cult>
 		  <Cinder_OutlanderCivilan>3</Cinder_OutlanderCivilan>
-		  <Cinder_OutlanderSecond>12</Cinder_OutlanderSecond>
-		  <Cinder_Mech_MiniTurretWalker>5</Cinder_Mech_MiniTurretWalker>
-          <Cinder_Outlander>15</Cinder_Outlander>
-          <Cinder_Mech_WalkerAutoCannon>1.5</Cinder_Mech_WalkerAutoCannon>
-          <Cinder_EliteCult>2</Cinder_EliteCult>
+		  <Cinder_OutlanderSecond>8</Cinder_OutlanderSecond>
+		  <Cinder_Mech_MiniTurretWalker>60</Cinder_Mech_MiniTurretWalker>
+          <Cinder_Outlander>8</Cinder_Outlander>
+          <Cinder_Mech_WalkerAutoCannon>8</Cinder_Mech_WalkerAutoCannon>
+          <Cinder_EliteCult>10</Cinder_EliteCult>
           <Cinder_OutlanderElite>1</Cinder_OutlanderElite>
-          <Cinder_Mech_WalkerSniper>0.7</Cinder_Mech_WalkerSniper>
+          <Cinder_Mech_WalkerSniper>12</Cinder_Mech_WalkerSniper>
         </options>
       </li>
       <li>
@@ -116,11 +117,11 @@
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>
-          <Cinder_Cult>10</Cinder_Cult>
-          <Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
-          <Cinder_EliteCult>2.5</Cinder_EliteCult>
-          <Cinder_Mech_WalkerAutoCannon>2</Cinder_Mech_WalkerAutoCannon>
-		  <Cinder_Mech_WalkerSniper>0.7</Cinder_Mech_WalkerSniper>
+          <Cinder_Cult>8</Cinder_Cult>
+          <Cinder_Mech_MiniTurretWalker>60</Cinder_Mech_MiniTurretWalker>
+          <Cinder_EliteCult>25</Cinder_EliteCult>
+          <Cinder_Mech_WalkerAutoCannon>12</Cinder_Mech_WalkerAutoCannon>
+		  <Cinder_Mech_WalkerSniper>12</Cinder_Mech_WalkerSniper>
         </options>
       </li>
 	  <li>
@@ -129,13 +130,13 @@
 		<commonality>10</commonality>
         <options>
           <Cinder_Cult>2.5</Cinder_Cult>
-		  <Cinder_OutlanderSecond>13</Cinder_OutlanderSecond>
-          <Cinder_Outlander>15</Cinder_Outlander>
-          <Cinder_Mech_WalkerAutoCannon>1.5</Cinder_Mech_WalkerAutoCannon>
+		  <Cinder_OutlanderSecond>8</Cinder_OutlanderSecond>
+          <Cinder_Outlander>8</Cinder_Outlander>
+          <Cinder_Mech_WalkerAutoCannon>12</Cinder_Mech_WalkerAutoCannon>
 		  <Cinder_Grenadier>2</Cinder_Grenadier>
-          <Cinder_EliteCult>2</Cinder_EliteCult>
+          <Cinder_EliteCult>10</Cinder_EliteCult>
           <Cinder_OutlanderElite>1</Cinder_OutlanderElite>
-          <Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
+          <Cinder_Mech_MiniTurretWalker>60</Cinder_Mech_MiniTurretWalker>
         </options>
       </li>
       <li>
@@ -303,8 +304,9 @@
     <raidLootMaker>Cinder_OutlanderRaidLootMaker</raidLootMaker>
     <maxPawnCostPerTotalPointsCurve>
       <points>
-        <li>(1000,200)</li>
-        <li>(2000,300)</li>
+        <li>(1500,180)</li>
+        <li>(2000,205)</li>
+		<li>(3000,400)</li>
 		<li>(5000,420)</li>
 		<li>(7000,1000)</li>
 		<li>(8000,2000)</li>
@@ -317,14 +319,14 @@
         <kindDef>Combat</kindDef>
 		<commonality>100</commonality>
         <options>
-		  <Cinder_Ghoul>3</Cinder_Ghoul>
-		  <Cinder_SoliderUnit>3</Cinder_SoliderUnit>
-		   <Cinder_Mech_MiniTurretWalker>8</Cinder_Mech_MiniTurretWalker>
+		  <Cinder_Ghoul>2</Cinder_Ghoul>
+		  <Cinder_SoliderUnit>2</Cinder_SoliderUnit>
+		   <Cinder_Mech_MiniTurretWalker>40</Cinder_Mech_MiniTurretWalker>
 		  <Cinder_EliteGhoul>2</Cinder_EliteGhoul>
 		  <Cinder_HeavySoliderUnit>10</Cinder_HeavySoliderUnit>
 		  <Cinder_Mech_WalkerAutoCannon>15</Cinder_Mech_WalkerAutoCannon>
           <Cinder_Mech_WalkerSniper>15</Cinder_Mech_WalkerSniper>
-		   <Cinder_Mech_ErodedEXO>25</Cinder_Mech_ErodedEXO>
+		   <Cinder_Mech_ErodedEXO>100</Cinder_Mech_ErodedEXO>
         </options>
       </li>
 	   <li>
@@ -332,12 +334,12 @@
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>
-		  <Cinder_Ghoul>10</Cinder_Ghoul>
-		  <Cinder_EliteGhoul>10</Cinder_EliteGhoul>
+		  <Cinder_Ghoul>4</Cinder_Ghoul>
+		  <Cinder_EliteGhoul>4</Cinder_EliteGhoul>
 		  <Cinder_HeavySoliderUnit>2</Cinder_HeavySoliderUnit>
 		  <Cinder_Mech_WalkerAutoCannon>5</Cinder_Mech_WalkerAutoCannon>
-          <Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
-		   <Cinder_Mech_ErodedEXO>25</Cinder_Mech_ErodedEXO>
+          <Cinder_Mech_MiniTurretWalker>40</Cinder_Mech_MiniTurretWalker>
+		   <Cinder_Mech_ErodedEXO>100</Cinder_Mech_ErodedEXO>
         </options>
       </li>
       <li>
@@ -345,14 +347,14 @@
         <kindDef>Combat</kindDef>
         <commonality>50</commonality>
         <options>
-		  <Cinder_EliteGhoul>4</Cinder_EliteGhoul>
-		  <Cinder_Ghoul>0.1</Cinder_Ghoul>
+		  <Cinder_EliteGhoul>2</Cinder_EliteGhoul>
+		   <Cinder_Ghoul>0.1</Cinder_Ghoul>
 		   <Cinder_SoliderUnit>0.1</Cinder_SoliderUnit>
 		  <Cinder_HeavySoliderUnit>10</Cinder_HeavySoliderUnit>
-		  <Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
-		   <Cinder_Mech_WalkerAutoCannon>5</Cinder_Mech_WalkerAutoCannon>
-          <Cinder_Mech_ErodedEXO>30</Cinder_Mech_ErodedEXO>
-		  <Cinder_Mech_WarSweeper>30</Cinder_Mech_WarSweeper>
+		  <Cinder_Mech_MiniTurretWalker>40</Cinder_Mech_MiniTurretWalker>
+		   <Cinder_Mech_WalkerAutoCannon>15</Cinder_Mech_WalkerAutoCannon>
+          <Cinder_Mech_ErodedEXO>1000</Cinder_Mech_ErodedEXO>
+		  <Cinder_Mech_WarSweeper>1000</Cinder_Mech_WarSweeper>
         </options>
       </li>		
 	  <li>
@@ -363,10 +365,11 @@
 		  <Cinder_EliteGhoul>2</Cinder_EliteGhoul>
 		   <Cinder_Ghoul>0.1</Cinder_Ghoul>
 		   <Cinder_SoliderUnit>0.1</Cinder_SoliderUnit>
-		  <Cinder_HeavySoliderUnit>5</Cinder_HeavySoliderUnit>
-		  <Cinder_Mech_MiniTurretWalker>5</Cinder_Mech_MiniTurretWalker>
-		  <Cinder_Mech_ErodedEXO>30</Cinder_Mech_ErodedEXO>
-		  <Cinder_Mech_WarAttacker>30</Cinder_Mech_WarAttacker>
+		  <Cinder_HeavySoliderUnit>2</Cinder_HeavySoliderUnit>
+		  <Cinder_Mech_MiniTurretWalker>40</Cinder_Mech_MiniTurretWalker>
+		  <Cinder_Mech_WalkerAutoCannon>5</Cinder_Mech_WalkerAutoCannon>
+		  <Cinder_Mech_ErodedEXO>1000</Cinder_Mech_ErodedEXO>
+		  <Cinder_Mech_WarAttacker>100</Cinder_Mech_WarAttacker>
         </options>
       </li>
 	  <li>
@@ -374,13 +377,13 @@
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>
-		  <Cinder_BreakUnit>5</Cinder_BreakUnit>
+		  <Cinder_BreakUnit>2</Cinder_BreakUnit>
 		   <Cinder_Ghoul>0.1</Cinder_Ghoul>
-		  <Cinder_SoliderUnit>5</Cinder_SoliderUnit>
-		  <Cinder_HeavySoliderUnit>5</Cinder_HeavySoliderUnit>
-		  <Cinder_Mech_MiniTurretWalker>5</Cinder_Mech_MiniTurretWalker>
-		   <Cinder_Mech_WalkerAutoCannon>5</Cinder_Mech_WalkerAutoCannon>
-		  <Cinder_Mech_ErodedEXO>25</Cinder_Mech_ErodedEXO>
+		  <Cinder_SoliderUnit>2</Cinder_SoliderUnit>
+		  <Cinder_HeavySoliderUnit>2</Cinder_HeavySoliderUnit>
+		  <Cinder_Mech_MiniTurretWalker>40</Cinder_Mech_MiniTurretWalker>
+		   <Cinder_Mech_WalkerAutoCannon>15</Cinder_Mech_WalkerAutoCannon>
+		  <Cinder_Mech_ErodedEXO>100</Cinder_Mech_ErodedEXO>
         </options>
       </li>
     </pawnGroupMakers>
