@@ -3,6 +3,8 @@ using HarmonyLib;
 using RimWorld;
 using System.Reflection;
 using static RimWorld.MechClusterSketch;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Embergarden
 {
@@ -96,6 +98,30 @@ namespace Embergarden
         public static bool CanDraft(Pawn p)
         {
             return p.def.HasModExtension<ModExtension_Draftable>() && p.Faction == Faction.OfPlayer && p.MentalStateDef == null;
+        }
+    }
+
+    [StaticConstructorOnStartup]
+    [HarmonyPatch]
+    static class PlayerPawnsForStoryteller_Postfix
+    {
+        static MethodBase TargetMethod()
+        {
+            return typeof(Map).PropertyGetter("PlayerPawnsForStoryteller");
+        }
+
+        [HarmonyPostfix]
+        static void Postfix(ref IEnumerable<Pawn> __result)
+        {
+            var cache = __result.ToList();
+            foreach (var p in __result)
+            {
+                if (p.def.HasModExtension<ModExtension_Draftable>())
+                {
+                    cache.Remove(p);
+                }
+            }
+            __result = cache;
         }
     }
 }
