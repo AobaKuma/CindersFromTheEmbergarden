@@ -38,6 +38,7 @@ namespace Embergarden
                 Job job = JobMaker.MakeJob(Props.targetingJobDef, parent, extraTarget);
                 job.count = 1;
                 pawn.jobs.TryTakeOrderedJob(job, JobTag.Misc);
+                return;
             }
             base.TryStartUseJob(pawn, extraTarget, forced);
         }
