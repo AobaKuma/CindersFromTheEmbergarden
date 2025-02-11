@@ -9,7 +9,20 @@ namespace Embergarden
 {
     public class CompUseableTargetable : CompUsable
     {
-        public override LocalTargetInfo GetExtraTarget(Pawn pawn)
+        LocalTargetInfo tgt = LocalTargetInfo.Invalid;
+
+        public override ITargetingSource DestinationSelector => this;
+
+        public override AcceptanceReport CanBeUsedBy(Pawn p, bool forced = false, bool ignoreReserveAndReachable = false)
+        {
+            if (tgt.Thing is Pawn pawn)
+            {
+                return base.CanBeUsedBy(pawn, forced, ignoreReserveAndReachable);
+            }
+            return false;
+        }
+
+        public override IEnumerable<FloatMenuOption> CompFloatMenuOptions(Pawn myPawn)
         {
             TargetingParameters parm = new TargetingParameters()
             {
@@ -18,20 +31,8 @@ namespace Embergarden
                 canTargetAnimals = false
             };
             LocalTargetInfo tgt = LocalTargetInfo.Invalid;
-            SoundDefOf.Tick_Tiny.PlayOneShotOnCamera();
             Find.Targeter.BeginTargeting(parm, action: delegate (LocalTargetInfo target) { if (target.Thing is Pawn p) tgt = p; });
-            return tgt;
-        }
-
-        public override ITargetingSource DestinationSelector => this;
-
-        public override AcceptanceReport CanBeUsedBy(Pawn p, bool forced = false, bool ignoreReserveAndReachable = false)
-        {
-            if (GetExtraTarget(p).Thing is Pawn pawn)
-            {
-                return base.CanBeUsedBy(pawn, forced, ignoreReserveAndReachable);
-            }
-            return false;
+            return null;
         }
     }
 
