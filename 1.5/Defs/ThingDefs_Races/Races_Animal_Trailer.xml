@@ -34,6 +34,7 @@
 		</comps>
 		<race>
 			<hasGenders>false</hasGenders>
+			 <herdMigrationAllowed>false</herdMigrationAllowed>
 			<herdAnimal>false</herdAnimal>
 			<body>Cinder_TurretWalker</body>
 			<baseBodySize>4</baseBodySize>
@@ -43,7 +44,6 @@
 			<specificMeatDef>Cinder_BurntStrangeMeat</specificMeatDef>
 			<gestationPeriodDays>6.66</gestationPeriodDays>
 			<wildness>0</wildness>
-			<roamMtbDays>10</roamMtbDays>
 			<trainability>Advanced</trainability>
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>1000</lifeExpectancy>
