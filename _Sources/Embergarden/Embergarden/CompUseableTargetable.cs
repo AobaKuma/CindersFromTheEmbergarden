@@ -26,11 +26,6 @@ namespace Embergarden
 
         public override ITargetingSource DestinationSelector => this;
 
-        public override AcceptanceReport CanBeUsedBy(Pawn p, bool forced = false, bool ignoreReserveAndReachable = false)
-        {
-            return true;
-        }
-
         public override void TryStartUseJob(Pawn pawn, LocalTargetInfo extraTarget, bool forced = false)
         {
             if (extraTarget.IsValid)
