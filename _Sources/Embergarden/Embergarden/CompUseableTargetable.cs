@@ -9,18 +9,7 @@ namespace Embergarden
 {
     public class CompUseableTargetable : CompUsable
     {
-        LocalTargetInfo tgt = LocalTargetInfo.Invalid;
-
         public override ITargetingSource DestinationSelector => this;
-
-        public override AcceptanceReport CanBeUsedBy(Pawn p, bool forced = false, bool ignoreReserveAndReachable = false)
-        {
-            if (tgt.Thing is Pawn pawn)
-            {
-                return base.CanBeUsedBy(pawn, forced, ignoreReserveAndReachable);
-            }
-            return false;
-        }
 
         public override IEnumerable<FloatMenuOption> CompFloatMenuOptions(Pawn myPawn)
         {
@@ -30,8 +19,23 @@ namespace Embergarden
                 canTargetMechs = false,
                 canTargetAnimals = false
             };
-            LocalTargetInfo tgt = LocalTargetInfo.Invalid;
-            Find.Targeter.BeginTargeting(parm, action: delegate (LocalTargetInfo target) { if (target.Thing is Pawn p) tgt = p; });
+            Find.Targeter.BeginTargeting(parm, action: delegate (LocalTargetInfo target)
+            {
+                LocalTargetInfo tgt = LocalTargetInfo.Invalid;
+                if (target.Thing is Pawn p)
+                {
+                    tgt = p;
+                    var acrp = CanBeUsedBy(p, true);
+                    if (acrp)
+                    {
+                        TryStartUseJob(myPawn, tgt, Props.ignoreOtherReservations);
+                    }
+                    else
+                    {
+                        Messages.Message(acrp.Reason, MessageTypeDefOf.RejectInput, false);
+                    }
+                }
+            });
             yield break;
         }
     }
