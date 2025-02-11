@@ -45,7 +45,7 @@ namespace Embergarden
                 yield return fm;
             }
 
-            FloatMenuOption floatMenuOption = FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption("Cinder_SerumTargetOthers", delegate
+            FloatMenuOption floatMenuOption = FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption(Props.targetingFloatMenuLabel, delegate
             {
                 TargetingParameters parm = new TargetingParameters()
                 {
