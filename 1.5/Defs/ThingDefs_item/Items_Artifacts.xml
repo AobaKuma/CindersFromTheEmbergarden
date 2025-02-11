@@ -14,12 +14,13 @@
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
 		<comps>
-			<li Class="CompProperties_Usable">
-				<compClass>Embergarden.CompUseableTargetable</compClass>
-				<useJob>Cinder_UseSerum</useJob>
+			<li Class="Embergarden.CompProperties_UsableTargetable">
+				<useJob>UseItem</useJob>
+				<targetingJobDef>Cinder_UseSerum</targetingJobDef>
 				<useLabel>Consume {0_label}</useLabel>
 				<showUseGizmo>true</showUseGizmo>
 				<useDuration>132</useDuration>
+				<targetingFloatMenuLabel>Target others</targetingFloatMenuLabel>
 			</li>
 			<li Class="CompProperties_UseEffectDestroySelf" />
 			<li Class="CompProperties_Styleable"></li>
@@ -97,7 +98,6 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>Cinder_EmptyAgentBottle</defName>
