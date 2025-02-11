@@ -71,7 +71,9 @@
   <Cinder_RegeneratedEnhancedSerum.label>再生强化血清</Cinder_RegeneratedEnhancedSerum.label>
   <!-- EN: A type of eroded golden serum, injected into the human body, enhances the regeneration ability of amorphous polymers and gives the user the ability to come back to life after death. -->
   <Cinder_RegeneratedEnhancedSerum.description>一种被侵蚀的金色血清，注射它的人体内的无定形聚合物再生能力会被增强，并且会让使用者拥有一次死而复生的能力。</Cinder_RegeneratedEnhancedSerum.description>
+  <!-- EN: Target others -->
+  <Cinder_RegeneratedEnhancedSerum.comps.CompUseableTargetable.targetingFloatMenuLabel>为其他人注射血清</Cinder_RegeneratedEnhancedSerum.comps.CompUseableTargetable.targetingFloatMenuLabel>
   <!-- EN: Consume {0_label} -->
-  <Cinder_RegeneratedEnhancedSerum.comps.CompUsable.useLabel>注射{0_label}</Cinder_RegeneratedEnhancedSerum.comps.CompUsable.useLabel>
+  <Cinder_RegeneratedEnhancedSerum.comps.CompUseableTargetable.useLabel>注射{0_label}</Cinder_RegeneratedEnhancedSerum.comps.CompUseableTargetable.useLabel>
   
 </LanguageData>

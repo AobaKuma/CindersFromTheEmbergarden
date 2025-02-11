@@ -17,10 +17,10 @@
 			<li Class="Embergarden.CompProperties_UsableTargetable">
 				<useJob>UseItem</useJob>
 				<targetingJobDef>Cinder_UseSerum</targetingJobDef>
-				<useLabel>Consume {0_label}</useLabel>
+				<useLabel>Use {0_label}</useLabel>
 				<showUseGizmo>true</showUseGizmo>
 				<useDuration>132</useDuration>
-				<targetingFloatMenuLabel>Target others</targetingFloatMenuLabel>
+				<targetingFloatMenuLabel>Inject serum for others</targetingFloatMenuLabel>
 			</li>
 			<li Class="CompProperties_UseEffectDestroySelf" />
 			<li Class="CompProperties_Styleable"></li>
