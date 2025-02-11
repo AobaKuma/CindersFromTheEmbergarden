@@ -120,18 +120,22 @@
 			<li Class="Embergarden.CompProperties_VehicleWeapon">
 				<drawData>
 					<dataEast>
-						<offset>(1.2,0,-0.25)</offset>
+						<offset>(1.05,0,-0.25)</offset>
+						<rotationOffset>-90</rotationOffset>
 					</dataEast>
 					<dataWest>
 						<offset>(-1.,0,0.75)</offset>
+						<rotationOffset>-90</rotationOffset>
 						<layer>0</layer>
 					</dataWest>
 					<dataSouth>
 						<offset>(-0.55,0,-0.75)</offset>
+						<rotationOffset>-90</rotationOffset>
 						<layer>1</layer>
 					</dataSouth>
 					<dataNorth>
 						<offset>(0.5,0,1.25)</offset>
+						<rotationOffset>-90</rotationOffset>
 						<layer>0</layer>
 					</dataNorth>
 				</drawData>
