@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Cinder_Trailer</defName>
 		<label>trailer</label>
-		<devNote>cow-1</devNote>
+		<devNote>insect</devNote>
 		<description>An artificial life form assembled from discarded armored vehicle components and amorphous polymers, which can be used as a transport truck and can replace freight vehicles on rough roads.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
@@ -23,10 +23,10 @@
 			</li>
 			<li Class="CompProperties_Spawner">
 				<thingToSpawn>Cinder_AmorphousPolymer</thingToSpawn>
-				<spawnCount>10</spawnCount>
+				<spawnCount>20</spawnCount>
 				<spawnIntervalRange>
-					<min>120000</min>
-					<max>120000</max>
+					<min>600000</min>
+					<max>600000</max>
 				</spawnIntervalRange>
 				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
 				<showMessageIfOwned>true</showMessageIfOwned>
@@ -42,7 +42,7 @@
 			<baseHungerRate>0.01</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<specificMeatDef>Cinder_BurntStrangeMeat</specificMeatDef>
-			<gestationPeriodDays>6.66</gestationPeriodDays>
+			<gestationPeriodDays>16.66</gestationPeriodDays>
 			<wildness>0</wildness>
 			<trainability>Advanced</trainability>
 			<packAnimal>true</packAnimal>
@@ -72,6 +72,7 @@
 		<tradeTags>
 			<li>AnimalCommon</li>
 			<li>AnimalFarm</li>
+			<li>AnimalCinder</li>
 		</tradeTags>
 		<tools>
 			<li>
