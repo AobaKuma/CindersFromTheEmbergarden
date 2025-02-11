@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="PatchOperationAddModExtension">
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Humanoid Alien Races</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+	<li Class="PatchOperationAddModExtension">
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]</xpath>
 		<value>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>Humanoid</bodyShape>
 			</li>
 		</value>
-	</Operation>
+	</li>
 
-	<Operation Class="PatchOperationAdd">
+	<li Class="PatchOperationAdd">
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/comps</xpath>
 		<value>
 			<li>
@@ -17,9 +24,9 @@
 			</li>
 			<li Class="CombatExtended.CompProperties_Suppressable"/>
 		</value>
-	</Operation>
+	</li>
 
-	<Operation Class="PatchOperationAdd">
+	<li Class="PatchOperationAdd">
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/statBases</xpath>
 		<value>
 			<MeleeCritChance>1</MeleeCritChance>
@@ -27,9 +34,9 @@
 			<Suppressability>1</Suppressability>
 			<SmokeSensitivity>1</SmokeSensitivity>
 		</value>
-	</Operation>
+	</li>
 
-	<Operation Class="PatchOperationReplace">
+	<li Class="PatchOperationReplace">
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/tools</xpath>
 		<value>
 			<tools>
@@ -78,5 +85,8 @@
 				</li>
 			</tools>
 		</value>
+	</li>
+			</operations>
+		</match>
 	</Operation>
 </Patch>

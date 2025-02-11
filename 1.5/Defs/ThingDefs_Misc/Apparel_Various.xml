@@ -371,6 +371,8 @@
 			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.5</ArmorRating_Heat>
 			<EquipDelay>13</EquipDelay>
+			<Insulation_Cold>14.4</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
 		</statBases>
 		<apparel>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/LowVisibilityDress/LowVisibilityDress</wornGraphicPath>
