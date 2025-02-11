@@ -26,7 +26,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="Cinder_ArtifactBase">
+	<ThingDef ParentName="ResourceBase">
 		<defName>Cinder_ErosionAgent</defName>
 		<label>erosion agent</label>
 		<description>A drug containing large amount of amorphous polymer, which imparts special abilities after injection.</description>
@@ -35,6 +35,14 @@
 			<texPath>Things/Item/ErosionAgent</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
+		<thingClass>ThingWithComps</thingClass>
+		<techLevel>Archotech</techLevel>
+		<thingCategories>
+			<li>Artifacts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Artifact</li>
+		</tradeTags>
 		<stealable>false</stealable>
 		<resourceReadoutPriority>Middle</resourceReadoutPriority>
 		<stackLimit>5</stackLimit>
@@ -44,10 +52,18 @@
 		<statBases>
 			<MarketValue>1200</MarketValue>
 			<MaxHitPoints>2000</MaxHitPoints>
+			<Mass>0.5</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<thingSetMakerTags IsNull="true"/>
 		<comps>
+		    <li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Use {0_label}</useLabel>
+				<useDuration>40</useDuration>
+				<showUseGizmo>true</showUseGizmo>
+			</li>
 			<li Class="Embergarden.CompProperties_UseEffect_RandomAbilityGain">
 				<abilityDefs>
 					<li>Cinder_BurnHemostasis</li>
@@ -64,6 +80,8 @@
 			<li Class="CompProperties_UseEffectPlaySound">
 				<soundOnUsed>MechSerumUsed</soundOnUsed>
 			</li>
+			<li Class="CompProperties_UseEffectDestroySelf" />
+			<li Class="CompProperties_Styleable"></li>
 		</comps>
 	</ThingDef>
 
