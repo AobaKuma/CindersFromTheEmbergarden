@@ -1,6 +1,8 @@
-﻿using System.Diagnostics;
+﻿using RimWorld;
+using System.Diagnostics;
 using UnityEngine;
 using Verse;
+using Verse.AI;
 using static RimWorld.Sketch;
 
 namespace Embergarden

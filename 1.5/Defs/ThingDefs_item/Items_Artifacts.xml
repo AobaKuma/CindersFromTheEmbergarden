@@ -15,7 +15,8 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Usable">
-				<useJob>UseItem</useJob>
+				<compClass>Embergarden.CompUseableTargetable</compClass>
+				<useJob>Cinder_UseSerum</useJob>
 				<useLabel>Consume {0_label}</useLabel>
 				<showUseGizmo>true</showUseGizmo>
 				<useDuration>132</useDuration>
@@ -61,8 +62,8 @@
 				<compClass>Embergarden.CompUseEffect_RandomAbilityGain</compClass>
 			</li>
 			<li Class="CompProperties_UseEffectPlaySound">
-        <soundOnUsed>MechSerumUsed</soundOnUsed>
-      </li>
+				<soundOnUsed>MechSerumUsed</soundOnUsed>
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -92,8 +93,8 @@
 				<compClass>Embergarden.CompUseEffect_ActivateHediffs</compClass>
 			</li>
 			<li Class="CompProperties_UseEffectPlaySound">
-        <soundOnUsed>MechSerumUsed</soundOnUsed>
-      </li>
+				<soundOnUsed>MechSerumUsed</soundOnUsed>
+			</li>
 		</comps>
 	</ThingDef>
 	
@@ -129,36 +130,36 @@
 		<allowedArchonexusCount>5</allowedArchonexusCount>
 		<comps>
 			<li Class="CompProperties_CompAnalyzableUnlockResearch">
-		<analysisID>122249063</analysisID>
+				<analysisID>122249063</analysisID>
 
-        <!-- Analyzable -->
+				<!-- Analyzable -->
 
-        <analysisDurationHours>0.25</analysisDurationHours>
-        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
-        <completedLetterLabel>Empty agent bottle studied: {RESEARCH} unlocked</completedLetterLabel>
-        <completedLetter>By studying the empty agent bottle, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
-        <completedLetterDef>PositiveEvent</completedLetterDef>
+				<analysisDurationHours>0.25</analysisDurationHours>
+				<destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+				<completedLetterLabel>Empty agent bottle studied: {RESEARCH} unlocked</completedLetterLabel>
+				<completedLetter>By studying the empty agent bottle, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
 
-        <!-- Interactable -->
+				<!-- Interactable -->
 
-        <activateTexPath>UI/Icons/Study</activateTexPath>
+				<activateTexPath>UI/Icons/Study</activateTexPath>
 
-        <activateLabelString>Analyze...</activateLabelString>
-        <activateDescString>Analyze the empty agent bottle.</activateDescString>
-        <jobString>analyze empty agent bottle</jobString>
-        <guiLabelString>Choose who should analyze this</guiLabelString>
-        <inspectString>Can be analyzed by a colonist.</inspectString>
+				<activateLabelString>Analyze...</activateLabelString>
+				<activateDescString>Analyze the empty agent bottle.</activateDescString>
+				<jobString>analyze empty agent bottle</jobString>
+				<guiLabelString>Choose who should analyze this</guiLabelString>
+				<inspectString>Can be analyzed by a colonist.</inspectString>
 
-        <targetingParameters>
-          <canTargetBuildings>false</canTargetBuildings>
-          <canTargetAnimals>false</canTargetAnimals>
-          <canTargetMechs>false</canTargetMechs>
-          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
-        </targetingParameters>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
 			</li>
 		</comps>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="ResourceBase">
 		<defName>Cinder_ErodedMechComponent</defName>
 		<label>eroded mech component</label>
@@ -187,32 +188,32 @@
 		<allowedArchonexusCount>5</allowedArchonexusCount>
 		<comps>
 			<li Class="CompProperties_CompAnalyzableUnlockResearch">
-		<analysisID>122249069</analysisID>
+				<analysisID>122249069</analysisID>
 
-        <!-- Analyzable -->
+				<!-- Analyzable -->
 
-        <analysisDurationHours>0.25</analysisDurationHours>
-        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
-        <completedLetterLabel>Eroded mech component studied: {RESEARCH} unlocked</completedLetterLabel>
-        <completedLetter>By studying the eroded mech component, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
-        <completedLetterDef>PositiveEvent</completedLetterDef>
+				<analysisDurationHours>0.25</analysisDurationHours>
+				<destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+				<completedLetterLabel>Eroded mech component studied: {RESEARCH} unlocked</completedLetterLabel>
+				<completedLetter>By studying the eroded mech component, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
 
-        <!-- Interactable -->
+				<!-- Interactable -->
 
-        <activateTexPath>UI/Icons/Study</activateTexPath>
+				<activateTexPath>UI/Icons/Study</activateTexPath>
 
-        <activateLabelString>Analyze...</activateLabelString>
-        <activateDescString>Analyze the eroded mech component.</activateDescString>
-        <jobString>analyze eroded mech component</jobString>
-        <guiLabelString>Choose who should analyze this</guiLabelString>
-        <inspectString>Can be analyzed by a colonist.</inspectString>
+				<activateLabelString>Analyze...</activateLabelString>
+				<activateDescString>Analyze the eroded mech component.</activateDescString>
+				<jobString>analyze eroded mech component</jobString>
+				<guiLabelString>Choose who should analyze this</guiLabelString>
+				<inspectString>Can be analyzed by a colonist.</inspectString>
 
-        <targetingParameters>
-          <canTargetBuildings>false</canTargetBuildings>
-          <canTargetAnimals>false</canTargetAnimals>
-          <canTargetMechs>false</canTargetMechs>
-          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
-        </targetingParameters>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
 			</li>
 		</comps>
 	</ThingDef>
@@ -393,32 +394,32 @@
 			</li>
 			<li Class="CompProperties_UseEffectDestroySelf" />
 			<li Class="CompProperties_CompAnalyzableUnlockResearch">
-		<analysisID>122249062</analysisID>
+				<analysisID>122249062</analysisID>
 
-        <!-- Analyzable -->
+				<!-- Analyzable -->
 
-        <analysisDurationHours>0.25</analysisDurationHours>
-        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
-        <completedLetterLabel>Extra armour plate studied: {RESEARCH} unlocked</completedLetterLabel>
-        <completedLetter>By studying the extra armour plate, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
-        <completedLetterDef>PositiveEvent</completedLetterDef>
+				<analysisDurationHours>0.25</analysisDurationHours>
+				<destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+				<completedLetterLabel>Extra armour plate studied: {RESEARCH} unlocked</completedLetterLabel>
+				<completedLetter>By studying the extra armour plate, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
 
-        <!-- Interactable -->
+				<!-- Interactable -->
 
-        <activateTexPath>UI/Icons/Study</activateTexPath>
+				<activateTexPath>UI/Icons/Study</activateTexPath>
 
-        <activateLabelString>Analyze...</activateLabelString>
-        <activateDescString>Analyze the extra armour plate.</activateDescString>
-        <jobString>analyze extra armour plate</jobString>
-        <guiLabelString>Choose who should analyze this</guiLabelString>
-        <inspectString>Can be analyzed by a colonist.</inspectString>
+				<activateLabelString>Analyze...</activateLabelString>
+				<activateDescString>Analyze the extra armour plate.</activateDescString>
+				<jobString>analyze extra armour plate</jobString>
+				<guiLabelString>Choose who should analyze this</guiLabelString>
+				<inspectString>Can be analyzed by a colonist.</inspectString>
 
-        <targetingParameters>
-          <canTargetBuildings>false</canTargetBuildings>
-          <canTargetAnimals>false</canTargetAnimals>
-          <canTargetMechs>false</canTargetMechs>
-          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
-        </targetingParameters>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
 			</li>
 		</comps>
 	</ThingDef>
