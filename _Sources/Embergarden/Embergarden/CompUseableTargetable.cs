@@ -7,13 +7,39 @@ using Verse.Sound;
 
 namespace Embergarden
 {
+    public class CompProperties_UsableTargetable : CompProperties_Usable
+    {
+        public CompProperties_UsableTargetable()
+        {
+            compClass = typeof(CompUseableTargetable);
+        }
+
+        [MustTranslate]
+        public string targetingFloatMenuLabel = "Target others";
+
+        public JobDef targetingJobDef;
+    }
+
     public class CompUseableTargetable : CompUsable
     {
+        CompProperties_UsableTargetable Props => props as CompProperties_UsableTargetable;
+
         public override ITargetingSource DestinationSelector => this;
 
         public override AcceptanceReport CanBeUsedBy(Pawn p, bool forced = false, bool ignoreReserveAndReachable = false)
         {
             return true;
+        }
+
+        public override void TryStartUseJob(Pawn pawn, LocalTargetInfo extraTarget, bool forced = false)
+        {
+            if (extraTarget.IsValid)
+            {
+                Job job = JobMaker.MakeJob(Props.targetingJobDef, parent, extraTarget);
+                job.count = 1;
+                pawn.jobs.TryTakeOrderedJob(job, JobTag.Misc);
+            }
+            base.TryStartUseJob(pawn, extraTarget, forced);
         }
 
         public override IEnumerable<FloatMenuOption> CompFloatMenuOptions(Pawn myPawn)
@@ -98,7 +124,6 @@ namespace Embergarden
         {
             Toil toil = Toils_General.Wait(useDuration, TargetIndex.A);
             toil.WithProgressBarToilDelay(TargetIndex.A);
-            toil.FailOnDespawnedNullOrForbidden(TargetIndex.A);
             toil.handlingFacing = true;
             toil.tickAction = delegate
             {
