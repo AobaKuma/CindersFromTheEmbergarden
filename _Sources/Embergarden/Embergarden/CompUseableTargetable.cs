@@ -32,7 +32,7 @@ namespace Embergarden
             };
             LocalTargetInfo tgt = LocalTargetInfo.Invalid;
             Find.Targeter.BeginTargeting(parm, action: delegate (LocalTargetInfo target) { if (target.Thing is Pawn p) tgt = p; });
-            return null;
+            yield break;
         }
     }
 
