@@ -103,14 +103,7 @@ namespace Embergarden
 
             if (Props.turretRotationFollowPawn)
             {
-                if (pawn.Rotation == Rot4.South)
-                    _turretFollowingAngle = 180;
-                else if (pawn.Rotation == Rot4.North)
-                    _turretFollowingAngle = 0;
-                else if (pawn.Rotation == Rot4.East)
-                    _turretFollowingAngle = 90;
-                else if (pawn.Rotation == Rot4.West)
-                    _turretFollowingAngle = 270;
+                _turretFollowingAngle = pawn.Rotation.AsAngle + Props.drawData.RotationOffsetForRot(pawn.Rotation);
             }
             else
             {
