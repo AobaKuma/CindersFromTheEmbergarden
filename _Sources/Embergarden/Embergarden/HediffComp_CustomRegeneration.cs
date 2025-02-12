@@ -36,7 +36,10 @@ namespace Embergarden
                 {
                     if (hediff is Hediff_AddedPart)
                     {
-                        ignoreParts.Add(hediff.Part);
+                        foreach (var child in hediff.Part.GetPartAndAllChildParts())
+                        {
+                            ignoreParts.Add(child);
+                        }
                     }
                     if (hediff is Hediff_Injury)
                     {
