@@ -149,6 +149,13 @@ namespace Embergarden
         {
             base.Complete(signalArgs);
             if (song != null) Find.MusicManagerPlay.ForcePlaySong(song, false);
+            foreach (var q in quest.PartsListForReading)
+            {
+                if (q is QuestPart_Bossgroup questPart_Bossgroup)
+                {
+                    questPart_Bossgroup.bosses.Clear();
+                }
+            }
         }
 
         public override void ExposeData()
