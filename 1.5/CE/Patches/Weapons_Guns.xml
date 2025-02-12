@@ -244,7 +244,8 @@
 			<defaultProjectile>Bullet_RPG7Grenade_HEAT</defaultProjectile>
 			<warmupTime>2.1</warmupTime>
 			<range>40</range>
-			<burstShotCount>1</burstShotCount>
+			<burstShotCount>50</burstShotCount>
+			<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
 			<soundCast>Shot_IncendiaryLauncher</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>9</muzzleFlashScale>
