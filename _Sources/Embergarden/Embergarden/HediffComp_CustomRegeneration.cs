@@ -11,6 +11,8 @@ namespace Embergarden
 {
     public class HediffComp_Regen : HediffComp
     {
+        static List<Hediff> hediffsToHeal = [];
+        static List<BodyPartRecord> ignoreParts = [];
         HediffCompProperties_Regen Props => base.props as HediffCompProperties_Regen;
 
         float healPerDay => Unlocked ? Props.healPerDayUnlocked : Props.healPerDay;
@@ -28,9 +30,14 @@ namespace Embergarden
         {
             if (Pawn.IsHashIntervalTick(Props.checkInterval))
             {
-                List<Hediff> hediffsToHeal = [];
+                hediffsToHeal.Clear();
+                ignoreParts.Clear();
                 foreach (Hediff hediff in Pawn.health.hediffSet.hediffs.InRandomOrder())
                 {
+                    if (hediff is Hediff_AddedPart)
+                    {
+                        ignoreParts.Add(hediff.Part);
+                    }
                     if (hediff is Hediff_Injury)
                     {
                         hediffsToHeal.Add(hediff);
@@ -62,6 +69,7 @@ namespace Embergarden
                         }
                         if (hediffToHeal is Hediff_MissingPart missingPart)
                         {
+                            if (ignoreParts.Contains(missingPart.Part)) continue;
                             if (CannotRegenPart(missingPart.Part)) continue;
                             float severity = missingPart.Part.def.GetMaxHealth(Pawn);
                             float actualHeal = heals / count;
