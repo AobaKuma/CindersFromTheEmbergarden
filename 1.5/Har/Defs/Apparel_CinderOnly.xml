@@ -29,6 +29,7 @@
 			<WorkToMake>5000</WorkToMake>
 			<Mass>0.5</Mass>
 			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.36</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
