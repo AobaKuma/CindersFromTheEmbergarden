@@ -103,7 +103,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</fuelFilter>
-				<fuelCapacity>90</fuelCapacity>
+				<fuelCapacity>60</fuelCapacity>
 				<!-- 30 bursts -->
 				<fuelMultiplier>0.5</fuelMultiplier>
 				<!-- 2 steel per burst, 180 per full rearm -->
@@ -219,7 +219,7 @@
 						<li>Uranium</li>
 					</thingDefs>
 				</fuelFilter>
-				<fuelCapacity>30</fuelCapacity>
+				<fuelCapacity>20</fuelCapacity>
 				<!-- 20 bursts -->
 				<fuelMultiplier>0.5</fuelMultiplier>
 				<!-- 2 uranium per shot, 60 per full rearm -->
@@ -527,7 +527,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</fuelFilter>
-				<fuelCapacity>60</fuelCapacity>
+				<fuelCapacity>40</fuelCapacity>
 				<!-- 30 bursts -->
 				<fuelMultiplier>0.75</fuelMultiplier>
 				<!-- 1.333 steel per burst, 80 per full rearm -->

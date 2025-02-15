@@ -67,6 +67,13 @@
   <!-- EN: analyze extra armour plate -->
   <Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.jobString>分析附加装甲板</Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.jobString>
   
+  <!-- EN: extra armour plates -->
+  <Cinder_HeavyExtraArmour.label>重型装甲板</Cinder_HeavyExtraArmour.label>
+  <!-- EN: A sturdy metal plate separated from amorphous polymer. Once damaged, the armor plating must be completely replaced. -->
+  <Cinder_HeavyExtraArmour.description>与无定形聚合物分离的重型坚固金属板，可以被任何人使用，一旦损坏，必须完全更换装甲板。</Cinder_HeavyExtraArmour.description>
+  <!-- EN: Use {0_label} -->
+  <Cinder_HeavyExtraArmour.comps.CompUsable.useLabel>使用{0_label}</Cinder_HeavyExtraArmour.comps.CompUsable.useLabel>
+  
   <!-- EN: regeneration enhanced serum -->
   <Cinder_RegeneratedEnhancedSerum.label>再生强化血清</Cinder_RegeneratedEnhancedSerum.label>
   <!-- EN: A type of eroded golden serum, injected into the human body, enhances the regeneration ability of amorphous polymers and gives the user the ability to come back to life after death. -->

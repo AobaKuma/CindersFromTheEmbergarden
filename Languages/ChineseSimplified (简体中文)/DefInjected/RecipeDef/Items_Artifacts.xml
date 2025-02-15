@@ -15,6 +15,14 @@
   <!-- EN: Making extra armour plates. -->
   <Make_Cinder_ExtraArmour.jobString>正在制作附加装甲板</Make_Cinder_ExtraArmour.jobString>
   
+  <!-- EN: make extra armour plates -->
+  <Make_Cinder_HeavyExtraArmour.label>制作重型装甲板</Make_Cinder_HeavyExtraArmour.label>
+  <!-- EN: Make extra armour plates. -->
+  <Make_Cinder_HeavyExtraArmour.description>制作重型装甲板</Make_Cinder_HeavyExtraArmour.description>
+  <!-- EN: Making extra armour plates. -->
+  <Make_Cinder_HeavyExtraArmour.jobString>正在制作重型装甲板</Make_Cinder_HeavyExtraArmour.jobString>
+  
+  
   <!-- EN: make regenerated enhanced serum -->
   <Make_Cinder_RegeneratedEnhancedSerum.label>调制再生血清</Make_Cinder_RegeneratedEnhancedSerum.label>
   <!-- EN: Make regenerated enhanced serum. -->

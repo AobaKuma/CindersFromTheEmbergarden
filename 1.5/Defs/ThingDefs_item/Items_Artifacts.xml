@@ -4,14 +4,13 @@
 		<thingClass>ThingWithComps</thingClass>
 		<techLevel>Archotech</techLevel>
 		<thingCategories>
-			<li>Artifacts</li>
+			<li>Cinder_Amorphous</li>
 		</thingCategories>
 		<tradeTags>
-			<li>Artifact</li>
+			<li>Cinder_Artifact</li>
 		</tradeTags>
 		<statBases>
 			<Mass>0.5</Mass>
-			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
 		<comps>
 			<li Class="Embergarden.CompProperties_UsableTargetable">
@@ -39,10 +38,10 @@
 		<thingClass>ThingWithComps</thingClass>
 		<techLevel>Archotech</techLevel>
 		<thingCategories>
-			<li>Artifacts</li>
+			<li>Cinder_Amorphous</li>
 		</thingCategories>
 		<tradeTags>
-			<li>Artifact</li>
+			<li>Cinder_Artifact</li>
 		</tradeTags>
 		<stealable>false</stealable>
 		<resourceReadoutPriority>Middle</resourceReadoutPriority>
@@ -132,10 +131,10 @@
 		<healthAffectsPrice>false</healthAffectsPrice>
 		<techLevel>Archotech</techLevel>
 		<thingCategories>
-			<li>Artifacts</li>
+			<li>Cinder_Amorphous</li>
 		</thingCategories>
 		<tradeTags>
-			<li>Artifact</li>
+			<li>Cinder_Artifact</li>
 		</tradeTags>
 		<statBases>
 			<MaxHitPoints>2000</MaxHitPoints>
@@ -193,7 +192,7 @@
 		<healthAffectsPrice>false</healthAffectsPrice>
 		<techLevel>Archotech</techLevel>
 		<thingCategories>
-			<li>Artifacts</li>
+			<li>Cinder_Amorphous</li>
 		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
@@ -372,6 +371,7 @@
 		<stackLimit>10</stackLimit>
 		<thingCategories>
 			<li>Manufactured</li>
+			<li>Cinder_Amorphous</li>
 		</thingCategories>
 		<comps>
 			<li Class="CompProperties_Usable">
@@ -441,6 +441,37 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	<ThingDef ParentName="Cinder_BaseModificationItem">
+		<defName>Cinder_HeavyExtraArmour</defName>
+		<label>heavy armour plates</label>
+		<description>A heavy sturdy metal plate separated from amorphous polymer. Once damaged, the armor plating must be completely replaced.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Cinder_ExtraArmourPlateII</HediffDef>
+			<RecipeDef>Make_Cinder_HeavyExtraArmour</RecipeDef>
+			<ThingDef>Cinder_AncientWorkstation</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/HeavyArmour</texPath>
+			<graphicClass>Graphic_Stackcount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>460</MaxHitPoints>
+			<MarketValue>120</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.7</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_UseEffectAddHediff">
+				<hediffDef>Cinder_ExtraArmourPlateII</hediffDef>
+				<allowRepeatedUse>true</allowRepeatedUse>
+			</li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>Cinder_Transform</soundOnUsed>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf" />
+		</comps>
+	</ThingDef>
 
 	<RecipeDef>
 		<defName>Make_Cinder_ExtraArmour</defName>
@@ -468,13 +499,69 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Cinder_ExtraArmour>4</Cinder_ExtraArmour>
+			<Cinder_ExtraArmour>3</Cinder_ExtraArmour>
 			<Cinder_BurntStrangeMeat>75</Cinder_BurntStrangeMeat>
 		</products>
 		<recipeUsers>
 			<li>Cinder_AncientWorkstation</li>
 		</recipeUsers>
 		<researchPrerequisite>Cinder_Separation</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<displayPriority>0</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Make_Cinder_HeavyExtraArmour</defName>
+		<label>make extra armour plates</label>
+		<description>Make extra armour plates.</description>
+		<jobString>Making extra armour plates.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>6000</workAmount>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>120</count>
+		    </li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>	
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Cinder_HeavyExtraArmour>2</Cinder_HeavyExtraArmour>
+			<Cinder_BurntStrangeMeat>120</Cinder_BurntStrangeMeat>
+		</products>
+		<recipeUsers>
+			<li>Cinder_AncientWorkstation</li>
+		</recipeUsers>
+		<researchPrerequisite>Cinder_HeavyArmor</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>6</Crafting>
 		</skillRequirements>

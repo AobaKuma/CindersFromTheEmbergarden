@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+    <ThingCategoryDef>
+      <defName>Cinder_Amorphous</defName>
+      <label>amorphous</label>
+      <parent>Items</parent>
+	  <iconPath>Things/Item/ErosionAgent/ErosionAgentC</iconPath>
+    </ThingCategoryDef>
+
+  
+</Defs>

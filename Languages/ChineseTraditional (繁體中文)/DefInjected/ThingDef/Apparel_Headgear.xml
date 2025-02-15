@@ -21,14 +21,39 @@
   <!-- EN: A scarf with burnt edges and metal chain armor wrapped inside can provide some protection for the neck. -->
   <Cinder_HeadGear_DamagedScarf.description>一条边缘烧焦的围巾，里面包着的金属链甲可以为颈部提供一些保护。</Cinder_HeadGear_DamagedScarf.description>
   
+  <!-- EN: exotic veil -->
+  <Cinder_HeadGear_ExoticVeil.label>异域面纱</Cinder_HeadGear_ExoticVeil.label>
+  <!-- EN: A faintly visible dancer's veil, paired with a golden headpiece, evokes vivid imagination. -->
+  <Cinder_HeadGear_ExoticVeil.description>若隐若现的舞娘面纱，搭配金制头冠，让人浮想联翩。</Cinder_HeadGear_ExoticVeil.description>
+  
   <!-- EN: fully enclosed mask -->
   <Cinder_HeadGear_FullyEnclosedMask.label>全封闭面具</Cinder_HeadGear_FullyEnclosedMask.label>
   <!-- EN: A fully covered heavy-duty bulletproof mask reinforced with amorphous polymer, capable of providing protection for the entire head and resisting toxic environments. But its field of view is limited, affecting shooting accuracy. -->
   <Cinder_HeadGear_FullyEnclosedMask.description>一个全覆盖的重型防弹面罩，用无定形聚合物加固，能够为整个头部提供保护，并抵抗有毒环境。但它的视野有限，影响了射击精度。</Cinder_HeadGear_FullyEnclosedMask.description>
   
+  <!-- EN: ghost veil -->
+  <Cinder_HeadGear_GhostVeil.label>幽灵面纱</Cinder_HeadGear_GhostVeil.label>
+  <!-- EN: A strange ghost veil that looks like some kind of Halloween costume. -->
+  <Cinder_HeadGear_GhostVeil.description>一件奇怪的幽灵面纱，看起来像是某种万圣节装扮。</Cinder_HeadGear_GhostVeil.description>
+  
   <!-- EN: ghoul unit helmet -->
   <Cinder_HeadGear_GhoulUnitHelmet.label>尸鬼单位头盔</Cinder_HeadGear_GhoulUnitHelmet.label>
   <!-- EN: The thermal imaging helmet used by the Ghoul unit can scan targets in complex tunnels. -->
   <Cinder_HeadGear_GhoulUnitHelmet.description>尸鬼单位使用的热成像头盔，可以扫描复杂地道中的目标。</Cinder_HeadGear_GhoulUnitHelmet.description>
+  
+  <!-- EN: maid headwear -->
+  <Cinder_HeadGear_MaidHeadwear.label>女仆头饰</Cinder_HeadGear_MaidHeadwear.label>
+  <!-- EN: A delicate maid headpiece. -->
+  <Cinder_HeadGear_MaidHeadwear.description>一件精致的女仆头饰</Cinder_HeadGear_MaidHeadwear.description>
+  
+  <!-- EN: night service veil -->
+  <Cinder_HeadGear_NightServiceVeil.label>夜间面纱</Cinder_HeadGear_NightServiceVeil.label>
+  <!-- EN: A silver crown and silk veil, evokes vivid imagination. -->
+  <Cinder_HeadGear_NightServiceVeil.description>银制的头冠和丝绸面纱，让人浮想联翩。</Cinder_HeadGear_NightServiceVeil.description>
+  
+  <!-- EN: projection visor -->
+  <Cinder_HeadGear_ProjectionVisor.label>投影面甲</Cinder_HeadGear_ProjectionVisor.label>
+  <!-- EN: A sturdy mask that covers the user's mouth and nose. -->
+  <Cinder_HeadGear_ProjectionVisor.description>一个覆盖使用者嘴部的坚固面具</Cinder_HeadGear_ProjectionVisor.description>
   
 </LanguageData>

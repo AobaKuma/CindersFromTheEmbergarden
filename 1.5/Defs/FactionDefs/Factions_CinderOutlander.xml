@@ -257,7 +257,7 @@
 	<autoFlee>false</autoFlee>
 	
     <factionIconPath>UI/Icon/fleetIcon</factionIconPath>
-    <techLevel>Ultra</techLevel>
+    <techLevel>Archotech</techLevel>
 	<earliestRaidDays>60</earliestRaidDays>
     <permanentEnemy>true</permanentEnemy>
     <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>

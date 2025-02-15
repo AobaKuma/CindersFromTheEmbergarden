@@ -341,6 +341,12 @@
 					<li>Cinder_Apparel_Starry</li>
 					<li>Cinder_Apparel_GhoulUnitGear</li>
 					<li>Cinder_Apparel_BrokenGhoulUnitGear</li>
+					<li>Cinder_Apparel_Exotic</li>
+					<li>Cinder_Apparel_GhostCloak</li>
+					<li>Cinder_Apparel_GhostUnderwear</li>
+					<li>Cinder_Apparel_NightService</li>
+					<li>Cinder_Apparel_MaidCostume</li>
+					<li>Cinder_Apparel_Projection</li>
 				</apparelList>
 				<whiteXenotypeList>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Cinder_Xenotype</li>

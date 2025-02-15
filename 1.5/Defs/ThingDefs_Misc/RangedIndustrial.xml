@@ -251,8 +251,8 @@
 		<statBases>
 			<WorkToMake>30000</WorkToMake>
 			<Mass>3.0</Mass>
-			<AccuracyTouch>0.60</AccuracyTouch>
-			<AccuracyShort>0.47</AccuracyShort>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.5</AccuracyShort>
 			<AccuracyMedium>0.32</AccuracyMedium>
 			<AccuracyLong>0.15</AccuracyLong>
 			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
@@ -318,8 +318,8 @@
 				<defaultProjectile>Cinder_Bullet_PDW</defaultProjectile>
 				<warmupTime>0.6</warmupTime>
 				<range>23.9</range>
-				<burstShotCount>6</burstShotCount>
-				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<soundCast>Cinder_Shot_12J</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>

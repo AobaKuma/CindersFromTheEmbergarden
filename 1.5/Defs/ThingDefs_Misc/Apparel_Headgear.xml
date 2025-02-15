@@ -118,6 +118,252 @@
 			</drawData>
 		</apparel>
 	</ThingDef>
+	
+	<ThingDef ParentName="Cinder_HatBase">
+		<defName>Cinder_HeadGear_GhostVeil</defName>
+		<label>ghost veil</label>
+		<description>A strange ghost veil that looks like some kind of Halloween costume.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Ghost/GhostVeil/Icon</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Cloth>40</Cloth>
+			<Steel>5</Steel>
+		</costList>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>2100</WorkToMake>
+			<Mass>0.1</Mass>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>4.4</Insulation_Cold>
+			<Insulation_Heat>6</Insulation_Heat>
+			<EquipDelay>1.3</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Ghost/GhostVeil/GhostVeil</wornGraphicPath>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			<tags Inherit="false">
+				<li>Cinder_Private</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="Cinder_HatBase">
+		<defName>Cinder_HeadGear_ExoticVeil</defName>
+		<label>exotic veil</label>
+		<description>A faintly visible dancer's veil, paired with a golden headpiece, evokes vivid imagination.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Exotic/ExoticVeil/Icon</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Cloth>20</Cloth>
+			<Gold>1</Gold>
+		</costList>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>2100</WorkToMake>
+			<Mass>0.1</Mass>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>4.4</Insulation_Cold>
+			<Insulation_Heat>6</Insulation_Heat>
+			<EquipDelay>1.3</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Exotic/ExoticVeil/ExoticVeil</wornGraphicPath>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			<tags Inherit="false">
+				<li>Cinder_Private</li>
+			</tags>
+		</apparel>
+		<equippedStatOffsets>
+	    <PawnBeauty>1</PawnBeauty>
+    </equippedStatOffsets>
+	</ThingDef>
+	
+	<ThingDef ParentName="Cinder_HatBase">
+		<defName>Cinder_HeadGear_NightServiceVeil</defName>
+		<label>night service veil</label>
+		<description>A silver crown and silk veil, evokes vivid imagination.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/NightService/NightServiceVeil/Icon</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Cloth>20</Cloth>
+			<Silver>8</Silver>
+		</costList>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>2100</WorkToMake>
+			<Mass>0.1</Mass>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>4.4</Insulation_Cold>
+			<Insulation_Heat>6</Insulation_Heat>
+			<EquipDelay>1.3</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/NightService/NightServiceVeil/NightServiceVeil</wornGraphicPath>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			<tags Inherit="false">
+				<li>Cinder_Private</li>
+			</tags>
+		</apparel>
+		<equippedStatOffsets>
+	    <PawnBeauty>1</PawnBeauty>
+    </equippedStatOffsets>
+	</ThingDef>
+	
+	<ThingDef ParentName="Cinder_HatBase">
+		<defName>Cinder_HeadGear_MaidHeadwear</defName>
+		<label>maid headwear</label>
+		<description>A delicate maid headpiece.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Maid/MaidHeadwear/Icon</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Cloth>20</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>2100</WorkToMake>
+			<Mass>0.1</Mass>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>4.4</Insulation_Cold>
+			<Insulation_Heat>6</Insulation_Heat>
+			<EquipDelay>1.3</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Maid/MaidHeadwear/MaidHeadwear</wornGraphicPath>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			<tags Inherit="false">
+				<li>Cinder_Private</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="Cinder_ArmorHelmetBase">
+		<defName>Cinder_HeadGear_ProjectionVisor</defName>
+		<label>projection visor</label>
+		<description>A sturdy mask that covers the user's mouth.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Projection/ProjectionVisor/Icon</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Cloth>20</Cloth>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Cinder_AmorphousPolymer>75</Cinder_AmorphousPolymer>
+		</costList>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>2100</WorkToMake>
+			<Mass>0.1</Mass>
+			<ArmorRating_Sharp>0.52</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.9</ArmorRating_Heat>
+			<Insulation_Cold>4.4</Insulation_Cold>
+			<Insulation_Heat>6</Insulation_Heat>
+			<EquipDelay>1.3</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Projection/ProjectionVisor/ProjectionVisor</wornGraphicPath>
+			<bodyPartGroups>
+				 <li>Mouth</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			<tags Inherit="false">
+				<li>Cinder_Private</li>
+			</tags>
+		</apparel>
+	</ThingDef>
 
 	<ThingDef ParentName="Cinder_ArmorHelmetBase">
 		<defName>Cinder_HeadGear_AssaultHelmet</defName>

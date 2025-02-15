@@ -86,6 +86,13 @@
   <!-- EN: Resurrection coma caused by resurrection. -->
   <Cinder_ResurrectComa.description>因为复活导致的昏迷</Cinder_ResurrectComa.description>
   
+  <!-- EN: strange solution -->
+  <Cinder_SrangeSolution.label>奇怪的溶液</Cinder_SrangeSolution.label>
+  <!-- EN: A harmless medication that often distracts people and makes them feel uncontrollable libido. -->
+  <Cinder_SrangeSolution.description>一种无害的药物，常常分散使用者的注意力，让他们感到无法控制的性欲。</Cinder_SrangeSolution.description>
+  <!-- EN: A harmless medication that often distracts people and makes them feel uncontrollable libido. -->
+  <Cinder_SrangeSolution.descriptionCached>一种无害的药物，常常分散使用者的注意力，让他们感到无法控制的性欲。</Cinder_SrangeSolution.descriptionCached>
+  
   <!-- EN: suffocation coma -->
   <Cinder_Suffocation.label>窒息昏迷</Cinder_Suffocation.label>
   <!-- EN: coma caused by suffocation. -->

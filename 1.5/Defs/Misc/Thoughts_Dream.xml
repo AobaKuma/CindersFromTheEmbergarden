@@ -29,4 +29,19 @@
       </li>
     </stages>
   </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>Cinder_StrangeSolutionEffect</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Cinder_SrangeSolution</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>Mesmerised</label>
+        <description>Strange ideas keep popping up...</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 </Defs>

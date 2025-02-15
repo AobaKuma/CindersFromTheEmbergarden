@@ -448,7 +448,7 @@
 		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
 		<comps>
 			<li Class="Embergarden.HediffCompProperties_ProtectiveShield">
-				<hitpoints>30</hitpoints>
+				<hitpoints>20</hitpoints>
 				<filthOnDamaged>Filth_MachineBits</filthOnDamaged>
 				<effectOnDamaged>Deflect_Metal</effectOnDamaged>
 			</li>
@@ -485,11 +485,15 @@
 		<stages>
 			<li>
 				<damageFactors>
-					<Bullet>0.75</Bullet>
+					<Bullet>0.65</Bullet>
 					<Bomb>0.25</Bomb>
+					<Cut>0.65</Cut>
+                    <Stab>0.65</Stab>
+				    <Thump>0.65</Thump>
+				    <Scratch>0.65</Scratch>
+					<Stun>0</Stun>
 				</damageFactors>
 				<statOffsets>
-					<MoveSpeed>-0.1</MoveSpeed>
 					<ArmorRating_Heat>0.5</ArmorRating_Heat>
 				</statOffsets>
 			</li>
@@ -520,4 +524,27 @@
 		</comps>
 	</HediffDef>
 	
+	<HediffDef>
+	<defName>Cinder_SrangeSolution</defName>
+		<label>strange solution</label>
+		<description>A harmless medication that often distracts people and makes them feel uncontrollable libido.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(254, 60, 164)</defaultLabelColor>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <statFactors>
+          <WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+        </statFactors>
+      </li>
+    </stages>
+    <comps>
+	 <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+      <li Class="HediffCompProperties_GiveLovinMTBFactor">
+        <lovinMTBFactor>0.5</lovinMTBFactor>
+      </li>
+    </comps>
+	</HediffDef>
 </Defs>

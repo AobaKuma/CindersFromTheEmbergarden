@@ -99,7 +99,7 @@
 			<recoilPattern>Mounted</recoilPattern>
 		</Properties>
 		<AmmoUser>
-			<magazineSize>100</magazineSize>
+			<magazineSize>75</magazineSize>
 			<reloadTime>7.8</reloadTime>
 			<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
 		</AmmoUser>
@@ -164,7 +164,7 @@
 			<recoilPattern>Mounted</recoilPattern>
 		</Properties>
 		<AmmoUser>
-			<magazineSize>20</magazineSize>
+			<magazineSize>15</magazineSize>
 			<reloadTime>6.8</reloadTime>
 			<ammoSet>AmmoSet_40x311mmR</ammoSet>
 		</AmmoUser>
@@ -228,7 +228,7 @@
 			<recoilPattern>Mounted</recoilPattern>
 		</Properties>
 		<AmmoUser>
-			<magazineSize>100</magazineSize>
+			<magazineSize>75</magazineSize>
 			<reloadTime>7.8</reloadTime>
 			<ammoSet>AmmoSet_20x102mmNATO</ammoSet>
 		</AmmoUser>

@@ -60,7 +60,7 @@
 					<texPath>Things/Building/WalkerAutoCannon/WalkerAutocannon</texPath>
 					<shaderType>CutoutComplex</shaderType>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(1.86, 1.86)</drawSize>
+					<drawSize>(2.79, 2.79)</drawSize>
 					<shadowData>
 						<volume>(1.5,0.35,1.4)</volume>
 					</shadowData>
@@ -72,7 +72,7 @@
 					<texPath>Things/Building/WalkerAutoCannon/WalkerAutocannon</texPath>
 					<shaderType>CutoutComplex</shaderType>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(1.86, 1.86)</drawSize>
+					<drawSize>(2.79, 2.79)</drawSize>
 					<shadowData>
 						<volume>(1.5,0.35,1.4)</volume>
 					</shadowData>
@@ -234,7 +234,7 @@
 					<texPath>Things/Building/WalkerSniper/WalkerSniper</texPath>
 					<shaderType>CutoutComplex</shaderType>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(1.86, 1.86)</drawSize>
+					<drawSize>(2.79, 2.79)</drawSize>
 					<shadowData>
 						<volume>(1.5,0.35,1.4)</volume>
 					</shadowData>
@@ -246,7 +246,7 @@
 					<texPath>Things/Building/WalkerSniper/WalkerSniper</texPath>
 					<shaderType>CutoutComplex</shaderType>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(1.86, 1.86)</drawSize>
+					<drawSize>(2.79, 2.79)</drawSize>
 					<shadowData>
 						<volume>(1.5,0.35,1.4)</volume>
 					</shadowData>
