@@ -248,6 +248,12 @@
 								</Hediff>
 							</extendedGraphics>
 						</Age>
+						<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">
+							Things/Pawn/Humanlike/Body/CinderNaked_Male
+						</Age>
+						<Age For="HumanlikeTeenager" MayRequire="Ludeon.RimWorld.Biotech">
+							Things/Pawn/Humanlike/Body/CinderNaked_Male
+						</Age>
 						<Age For="HumanlikeAdult">
 							<path>Things/Pawn/Humanlike/Body/CinderNaked_Female</path>
 							<extendedGraphics>
@@ -402,7 +408,7 @@
 				<li Class="AlienRace.LifeStageAgeAlien" MayRequire="Ludeon.RimWorld.Biotech">
 					<def>HumanlikePreTeenager</def>
 					<minAge>9</minAge>
-					<headOffset>(0, -0.09)</headOffset>
+					<headOffset>(0, -0.06)</headOffset>
 				</li>
 				<li Class="AlienRace.LifeStageAgeAlien">
 					<def>HumanlikeTeenager</def>

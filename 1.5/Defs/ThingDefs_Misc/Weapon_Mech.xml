@@ -90,7 +90,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Cinder_Bullet_RPG</defaultProjectile>
 				<warmupTime>3.5</warmupTime>
-				<range>34.9</range>
+				<range>33.9</range>
 				<burstShotCount>2</burstShotCount>
 				<ticksBetweenBurstShots>50</ticksBetweenBurstShots>
 				<soundCast>InfernoCannon_Fire</soundCast>
