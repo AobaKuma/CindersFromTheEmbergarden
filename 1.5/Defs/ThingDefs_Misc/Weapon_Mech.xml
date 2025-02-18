@@ -42,7 +42,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
 				<warmupTime>0</warmupTime>
-				<range>29.9</range>
+				<range>31.9</range>
 				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
 				<burstShotCount>2</burstShotCount>
 				<soundCast>Shot_Autocannon</soundCast>

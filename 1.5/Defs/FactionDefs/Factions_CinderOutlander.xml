@@ -360,16 +360,16 @@
 	  <li>
         <!-- 重装甲突破单位 -->
         <kindDef>Combat</kindDef>
-        <commonality>50</commonality>
+        <commonality>100</commonality>
         <options>
+		 <Cinder_Mech_WarAttacker>1000</Cinder_Mech_WarAttacker>
+		   <Cinder_Mech_ErodedEXO>500</Cinder_Mech_ErodedEXO>
 		  <Cinder_EliteGhoul>2</Cinder_EliteGhoul>
 		   <Cinder_Ghoul>0.1</Cinder_Ghoul>
 		   <Cinder_SoliderUnit>0.1</Cinder_SoliderUnit>
 		  <Cinder_HeavySoliderUnit>2</Cinder_HeavySoliderUnit>
 		  <Cinder_Mech_MiniTurretWalker>40</Cinder_Mech_MiniTurretWalker>
 		  <Cinder_Mech_WalkerAutoCannon>5</Cinder_Mech_WalkerAutoCannon>
-		  <Cinder_Mech_ErodedEXO>1000</Cinder_Mech_ErodedEXO>
-		  <Cinder_Mech_WarAttacker>100</Cinder_Mech_WarAttacker>
         </options>
       </li>
 	  <li>

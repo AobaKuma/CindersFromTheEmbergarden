@@ -543,7 +543,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/DragonslayerBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.265</drawSize>
+			<drawSize>1.24</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
@@ -643,7 +643,7 @@
 				<graphicData>
 					<texPath>Things/Weapons/DragonslayerRapidFire</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
-					<drawSize>1.1</drawSize>
+					<drawSize>1.03</drawSize>
 				</graphicData>
 			</li>
 		</modExtensions>

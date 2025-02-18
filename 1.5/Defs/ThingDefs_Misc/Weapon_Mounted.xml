@@ -122,7 +122,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_Autopistol</defaultProjectile>
 				<warmupTime>0</warmupTime>
-				<range>29.9</range>
+				<range>30.9</range>
 				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 				<burstShotCount>5</burstShotCount>
 				<soundCast>Shot_Minigun</soundCast>

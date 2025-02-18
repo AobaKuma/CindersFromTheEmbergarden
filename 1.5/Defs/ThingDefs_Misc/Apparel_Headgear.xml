@@ -331,8 +331,7 @@
 		</recipeMaker>
 		<costList>
 			<Cloth>20</Cloth>
-			<ComponentSpacer>1</ComponentSpacer>
-			<Cinder_AmorphousPolymer>75</Cinder_AmorphousPolymer>
+			<Cinder_AmorphousPolymer>25</Cinder_AmorphousPolymer>
 		</costList>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>

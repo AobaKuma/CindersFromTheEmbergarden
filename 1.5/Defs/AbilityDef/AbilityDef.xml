@@ -206,7 +206,7 @@
     <label>burn hemostasis</label>
     <description>Use burnt tentacles to stop bleeding from wounds on the target's body.</description>
     <iconPath>UI/Abilities/BurnHemostasis</iconPath>
-    <cooldownTicksRange>7500</cooldownTicksRange> <!-- 3 hours -->
+    <cooldownTicksRange>75000</cooldownTicksRange> <!-- 30 hours -->
      <stunTargetWhileCasting>true</stunTargetWhileCasting>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
@@ -243,7 +243,7 @@
     <label>suffocating whispers</label>
     <description>Entangles the target with tentacles, causing temporary suffocation and coma.</description>
     <iconPath>UI/Abilities/SuffocatingWhispers</iconPath>
-    <cooldownTicksRange>27500</cooldownTicksRange> <!-- 3 hours -->
+    <cooldownTicksRange>60000</cooldownTicksRange> <!-- 24 hours -->
      <stunTargetWhileCasting>true</stunTargetWhileCasting>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
@@ -290,7 +290,7 @@
     <label>eternal fear</label>
     <description>Erodes the spirit of the target, detach it from the protection of reason, and make them fall into the state of fear.</description>
     <iconPath>UI/Abilities/EternalFear</iconPath>
-    <cooldownTicksRange>7500</cooldownTicksRange> <!-- 3 hours -->
+    <cooldownTicksRange>30000</cooldownTicksRange> <!-- 12 hours -->
     <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
 	<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
     <writeCombatLog>true</writeCombatLog>
@@ -334,13 +334,13 @@
 	<label>fear pulse</label>
     <description>Erodes the spirit of nearby animals, causing them to fall into the state of fear.</description>
     <iconPath>UI/Abilities/FearPulse</iconPath>
-    <cooldownTicksRange>20000</cooldownTicksRange> <!-- 3 hours -->
+    <cooldownTicksRange>120000</cooldownTicksRange> <!-- 48 hours -->
     <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
     <writeCombatLog>true</writeCombatLog>
 	<aiCanUse>true</aiCanUse>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <statBases>
-      <Ability_EffectRadius>27.9</Ability_EffectRadius>
+      <Ability_EffectRadius>10.9</Ability_EffectRadius>
 	  <Ability_Duration>120</Ability_Duration>
     </statBases>
     <verbProperties>
@@ -375,7 +375,7 @@
     <description>Summon a sturdy tentacle wall from underground.</description>
     <iconPath>UI/Abilities/AmorphousWall</iconPath>
     <writeCombatLog>True</writeCombatLog>
-	<cooldownTicksRange>7500</cooldownTicksRange>
+	<cooldownTicksRange>30000</cooldownTicksRange>
 	<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
@@ -403,7 +403,7 @@
     <iconPath>UI/Abilities/ErodedMines</iconPath>
     <writeCombatLog>True</writeCombatLog>
 	<aiCanUse>true</aiCanUse>
-	<cooldownTicksRange>47500</cooldownTicksRange>
+	<cooldownTicksRange>80000</cooldownTicksRange>
 	<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
@@ -431,13 +431,13 @@
     <iconPath>UI/Abilities/AmorphousWinding</iconPath>
     <writeCombatLog>True</writeCombatLog>
 	<aiCanUse>true</aiCanUse>
-	<cooldownTicksRange>20000</cooldownTicksRange>
+	<cooldownTicksRange>300000</cooldownTicksRange>
 	<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
 	<verbClass>Verb_CastAbility</verbClass>
       <warmupTime>1.7</warmupTime>
-      <range>24.9</range>
+      <range>27.9</range>
       <targetParams>
         <canTargetPawns>False</canTargetPawns>
         <canTargetLocations>True</canTargetLocations>
