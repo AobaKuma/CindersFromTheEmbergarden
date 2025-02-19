@@ -19,17 +19,20 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/alienRace/graphicPaths/body</xpath>
 					<value>
-						<body>
+				<body>
 					<path>Things/Pawn/Humanlike/Bodies/Naked_Female</path>
 					<extendedGraphics>
 						<Age For="HumanlikeBaby" MayRequire="Ludeon.RimWorld.Biotech">
-							Things/Pawn/Humanlike/Body/Naked_Child</Age>
+							Things/Pawn/Humanlike/Bodies/Naked_Child</Age>
 						<Age For="HumanlikeChild" MayRequire="Ludeon.RimWorld.Biotech">
-							<path>Things/Pawn/Humanlike/Body/CinderNaked_Child</path>
+							<path>Things/Pawn/Humanlike/Bodies/Naked_Child</path>
 							<extendedGraphics>
 								<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
-									Things/Pawn/Humanlike/Body/GhoulNaked_Child</Hediff>
+									Things/Pawn/Humanlike/Bodies/Naked_Child</Hediff>
 							</extendedGraphics>
+						</Age>
+						<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">
+							Things/Pawn/Humanlike/Bodies/Naked_Child
 						</Age>
 						<Age For="HumanlikeAdult">
 							<path>Things/Pawn/Humanlike/Bodies/Naked_Female</path>

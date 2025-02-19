@@ -135,8 +135,8 @@
 				<defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
 				<warmupTime>2.5</warmupTime>
 				<minRange>8</minRange>
-				<range>39.9</range>
-				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<range>33.9</range>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<burstShotCount>30</burstShotCount>
 				<soundCast>Shot_Autocannon</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>

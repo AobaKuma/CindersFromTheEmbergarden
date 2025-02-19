@@ -81,7 +81,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Proj_Rocket</defaultProjectile>
 				<warmupTime>0</warmupTime>
-				<range>28.9</range>
+				<range>30.9</range>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<burstShotCount>3</burstShotCount>
 				<soundCast>RocketswarmLauncher_Fire</soundCast>
