@@ -785,8 +785,8 @@
 				<chance>1</chance>
 			</li>
 			<li>
-				<def>Cinder_ExtraArmourPlate</def>
-				<chance>0.25</chance>
+				<def>Cinder_ExtraArmourPlateII</def>
+				<chance>1</chance>
 			</li>
 			<li>
 				<def>Cinder_MusicStopper</def>

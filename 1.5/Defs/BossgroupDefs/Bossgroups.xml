@@ -69,9 +69,9 @@
 				<bossCount>1</bossCount>
 				<escorts>
 					<Cinder_HeavySoliderUnit>1</Cinder_HeavySoliderUnit>
-					<Cinder_Mech_MiniTurretWalker>12</Cinder_Mech_MiniTurretWalker>
-					<Cinder_Mech_WalkerAutoCannon>8</Cinder_Mech_WalkerAutoCannon>
-					<Cinder_Mech_WalkerSniper>4</Cinder_Mech_WalkerSniper>
+					<Cinder_Mech_ErodedEXO>1</Cinder_Mech_ErodedEXO>
+					<Cinder_Mech_MiniTurretWalker>8</Cinder_Mech_MiniTurretWalker>
+					<Cinder_Mech_WalkerAutoCannon>4</Cinder_Mech_WalkerAutoCannon>
 				</escorts>
 			</li>
 			<li>

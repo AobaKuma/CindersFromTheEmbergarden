@@ -640,6 +640,7 @@
 		</apparel>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
+			<ToxicEnvironmentResistance>0.35</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 	</ThingDef>
 </Defs>
