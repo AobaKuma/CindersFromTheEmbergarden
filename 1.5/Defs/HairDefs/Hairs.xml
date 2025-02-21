@@ -88,4 +88,14 @@
 		<label>wheat</label>
 		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Wheat</texPath>
 	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairQ</defName>
+		<label>twilight</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Twilight</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairR</defName>
+		<label>flour</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Flour</texPath>
+	</HairDef>
 </Defs>

@@ -445,7 +445,7 @@
 		</descriptionHyperlinks>
 		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
 		<isBad>false</isBad>
-		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
 		<comps>
 			<li Class="Embergarden.HediffCompProperties_ProtectiveShield">
 				<hitpoints>20</hitpoints>
@@ -474,7 +474,7 @@
 		<description>Installed additional amorphous polymer armor plates to protect users from injury.\n\nAlthough it is an excellent protective armor, it must be completely replaced once damaged.</description>
 		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
 		<isBad>false</isBad>
-		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
 		<comps>
 			<li Class="Embergarden.HediffCompProperties_ProtectiveShield">
 				<hitpoints>80</hitpoints>

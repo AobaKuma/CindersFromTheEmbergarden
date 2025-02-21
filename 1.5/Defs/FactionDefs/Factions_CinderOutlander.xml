@@ -247,7 +247,7 @@
     <configurationListOrderPriority>10</configurationListOrderPriority>
     <pawnSingular>combat unit</pawnSingular>
     <pawnsPlural>combat units</pawnsPlural>
-    <categoryTag>Cinder</categoryTag>
+    <categoryTag>CinderESDSP</categoryTag>
     <listOrderPriority>35</listOrderPriority>
     <hidden>true</hidden>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>

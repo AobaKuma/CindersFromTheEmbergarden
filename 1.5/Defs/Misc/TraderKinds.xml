@@ -91,6 +91,19 @@
         <thingDefCountRange>2</thingDefCountRange>
         <countRange>-2~1</countRange>
       </li>  
+	  
+	   <li Class="StockGenerator_Techprints">
+        <countChances>
+          <li>
+            <count>2</count>
+            <chance>0.5</chance>
+          </li>
+          <li>
+            <count>3</count>
+            <chance>0.5</chance>
+          </li>
+        </countChances>
+      </li>
 
 
       <!-- Pack turret apparel -->
@@ -266,11 +279,11 @@
         <countChances>
           <li>
             <count>2</count>
-            <chance>0.5</chance>
+            <chance>1</chance>
           </li>
           <li>
             <count>3</count>
-            <chance>0.5</chance>
+            <chance>1</chance>
           </li>
         </countChances>
       </li>
