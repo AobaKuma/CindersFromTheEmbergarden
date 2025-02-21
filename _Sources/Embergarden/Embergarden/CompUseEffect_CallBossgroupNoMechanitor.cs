@@ -7,6 +7,11 @@ namespace Embergarden
     {
         CompPropertiesUseable_SummonRaid Props => props as CompPropertiesUseable_SummonRaid;
 
+        public override AcceptanceReport CanBeUsedBy(Pawn p)
+        {
+            return Props.bossgroupDef.Worker.CanResolve(p);
+        }
+
         public override void DoEffect(Pawn usedBy)
         {
             base.DoEffect(usedBy);
