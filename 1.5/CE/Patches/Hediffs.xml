@@ -10,10 +10,6 @@
 				<ArmorRating_Blunt>-40</ArmorRating_Blunt>
 				<ArmorRating_Heat>-1</ArmorRating_Heat>
 			</statOffsets>
-			<statFactors>
-				<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
-				<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
-			</statFactors>
 		</value>
 	</Operation>
 	
