@@ -456,11 +456,11 @@
 				<filthOnDamaged>Filth_MachineBits</filthOnDamaged>
 				<effectOnDamaged>Deflect_Metal</effectOnDamaged>
 			</li>
-			<li Class="HediffCompProperties_RemoveIfOtherHediff">
-        <hediffs>
-          <li>Cinder_ExtraArmourPlateII</li>
-        </hediffs>
-            </li>
+			<li Class="Embergarden.HediffCompProperties_EexclusiveHediff">
+				<exclusiveHediff>
+					<li>Cinder_ExtraArmourPlateII</li>
+				</exclusiveHediff>
+			</li>
 		</comps>
 		<stages>
 			<li>
@@ -490,11 +490,11 @@
 				<filthOnDamaged>Filth_MachineBits</filthOnDamaged>
 				<effectOnDamaged>Deflect_Metal</effectOnDamaged>
 			</li>
-			<li Class="HediffCompProperties_RemoveIfOtherHediff">
-        <hediffs>
-          <li>Cinder_ExtraArmourPlate</li>
-        </hediffs>
-            </li>
+			<li Class="Embergarden.HediffCompProperties_EexclusiveHediff">
+				<exclusiveHediff>
+					<li>Cinder_ExtraArmourPlate</li>
+				</exclusiveHediff>
+			</li>
 		</comps>
 		<stages>
 			<li>
