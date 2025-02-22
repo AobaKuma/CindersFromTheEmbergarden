@@ -370,4 +370,31 @@
 		<texturePath>Things/Building/AmorphousTentacle</texturePath>
 		<uiIconPath>Things/Building/AmorphousTentacle</uiIconPath>
 	</TerrainDef>
+	
+	<ThingDef ParentName="TrapIEDBase">
+    <defName>CinderTrapIED_Erosion</defName>
+    <label>erosion trap</label>
+    <description>A pair of erosion shells connected to a trigger which detonates on touch or bullet impact. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+    <graphicData>
+      <texPath>Things/Building/ErosionIED</texPath>
+    </graphicData>
+    <costList>
+      <CinderShell_Erosion>2</CinderShell_Erosion>
+    </costList>
+    <designationHotKey>Misc7</designationHotKey>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Cinder_BombC</explosiveDamageType>
+        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        <wickTicks>15</wickTicks>
+        <startWickOnDamageTaken>
+          <li>Bullet</li>
+          <li>Arrow</li>
+          <li>ArrowHighVelocity</li>
+        </startWickOnDamageTaken>
+      </li>
+    </comps>
+    <specialDisplayRadius>3.9</specialDisplayRadius>
+  </ThingDef>
 </Defs>

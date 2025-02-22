@@ -430,6 +430,7 @@
 					<ArmorRating_Sharp>-0.2</ArmorRating_Sharp>
 					<ArmorRating_Blunt>-0.25</ArmorRating_Blunt>
 					<ArmorRating_Heat>-1</ArmorRating_Heat>
+					<Flammability>0.9</Flammability>
 				</statOffsets>
 				<statFactors>
 				<ArmorRating_Sharp>0.7</ArmorRating_Sharp>

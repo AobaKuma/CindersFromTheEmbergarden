@@ -40,4 +40,8 @@
   <!-- EN: Activate the unit -->
   <Cinder_WarSweeperBuliding.comps.CompUsable.useLabel>启动该单位</Cinder_WarSweeperBuliding.comps.CompUsable.useLabel>
   
+  <!-- EN: erosion trap -->
+  <CinderTrapIED_Erosion.label>侵蚀陷阱</CinderTrapIED_Erosion.label>
+  <!-- EN: A pair of erosion shells connected to a trigger which detonates on touch or bullet impact. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm. -->
+  <CinderTrapIED_Erosion.description>由一个侵蚀弹和自制的触发机关组成的陷阱，当机关被生物触发或子弹击中后，陷阱会引发爆炸并造成伤害。由于它隐藏在周围的地形中，因此不能与其他陷阱相邻。动物可以在非狂暴状态下感知陷阱。</CinderTrapIED_Erosion.description>
 </LanguageData>

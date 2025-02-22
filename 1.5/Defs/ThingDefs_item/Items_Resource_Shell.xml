@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>CinderShell_Erosion</defName>
+    <label>erosion shell</label>
+    <description>A type of explosive shell that uses amorphous polymers as charges, which will erode the armor of affected enemies during explosion, causing them to suffer higher subsequent damage. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
+	<descriptionHyperlinks>
+			<HediffDef>Cinder_Erosion</HediffDef>
+	</descriptionHyperlinks>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/ErosionShell</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.5</explosiveRadius>
+        <explosiveDamageType>Cinder_BombC</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <wickTicks>30~60</wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>CinderBullet_Shell_Erosion</projectileWhenLoaded>
+	<costList>
+        <Cinder_AmorphousPolymer>25</Cinder_AmorphousPolymer>
+      </costList>
+    <costListForDifficulty>
+      <difficultyVar>classicMortars</difficultyVar>
+      <costList>
+        <Cinder_AmorphousPolymer>25</Cinder_AmorphousPolymer>
+      </costList>
+    </costListForDifficulty>
+    <recipeMaker>
+	  <recipeUsers Inherit="false">
+        <li>Cinder_AncientWorkstation</li>
+      </recipeUsers>
+       <researchPrerequisites>
+				<li>Mortars</li>
+				<li>Cinder_HellfireMissile</li>
+	    </researchPrerequisites>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>CinderBullet_Shell_Erosion</defName>
+    <label>erosion shell</label>
+    <graphicData>
+      <texPath>Things/Weapons/ErosionShell_prj</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Cinder_BombC</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>41</speed>
+	  <explosionRadius>3.5</explosionRadius>
+	  <damageAmountBase>20</damageAmountBase>
+	  <armorPenetrationBase>5</armorPenetrationBase>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>MortarBomb_Explode</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+  </ThingDef>
+
+  
+
+</Defs>
