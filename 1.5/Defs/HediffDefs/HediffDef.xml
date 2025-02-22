@@ -452,6 +452,11 @@
 				<filthOnDamaged>Filth_MachineBits</filthOnDamaged>
 				<effectOnDamaged>Deflect_Metal</effectOnDamaged>
 			</li>
+			<li Class="Embergarden.HediffCompProperties_EexclusiveHediff">
+				<exclusiveHediff>
+					<li>Cinder_ExtraArmourPlateII</li>
+				</exclusiveHediff>
+			</li>
 		</comps>
 		<stages>
 			<li>
@@ -480,6 +485,11 @@
 				<hitpoints>80</hitpoints>
 				<filthOnDamaged>Filth_MachineBits</filthOnDamaged>
 				<effectOnDamaged>Deflect_Metal</effectOnDamaged>
+			</li>
+			<li Class="Embergarden.HediffCompProperties_EexclusiveHediff">
+				<exclusiveHediff>
+					<li>Cinder_ExtraArmourPlate</li>
+				</exclusiveHediff>
 			</li>
 		</comps>
 		<stages>

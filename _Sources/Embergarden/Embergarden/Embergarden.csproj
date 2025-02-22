@@ -97,6 +97,7 @@
     <Compile Include="Hediff_DownedAction.cs" />
     <Compile Include="Hediff_DynamicCap.cs" />
     <Compile Include="JobGiver_FleeAllPawnsUnfucked.cs" />
+    <Compile Include="HediffComp_EexclusiveHediff.cs" />
     <Compile Include="PatchOperationAddSafe.cs" />
     <Compile Include="PatchOperationConditionalSettings.cs" />
     <Compile Include="Projectile_CompExplosive.cs" />
@@ -115,8 +116,6 @@
     <Compile Include="ThoughtWorker_OtherHasTrait.cs" />
     <Compile Include="Verb_ArcSprayProjectile.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Hediffs\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
