@@ -1,8 +1,10 @@
-﻿using RimWorld;
+﻿using LudeonTK;
+using RimWorld;
 using RimWorld.Planet;
 using RimWorld.QuestGen;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using Verse;
 
 namespace Embergarden
@@ -154,6 +156,29 @@ namespace Embergarden
                 if (q is QuestPart_Bossgroup questPart_Bossgroup)
                 {
                     questPart_Bossgroup.bosses.Clear();
+                }
+            }
+        }
+
+
+
+        [DebugAction("Cinder", "Flush quest bosses", false, false, false, false, actionType = DebugActionType.Action, allowedGameStates = AllowedGameStates.PlayingOnMap, displayPriority = 1000)]
+        public static void DebugInfo()
+        {
+            List<Quest> questsListForReading = Find.QuestManager.QuestsListForReading;
+            for (int i = 0; i < questsListForReading.Count; i++)
+            {
+                if (questsListForReading[i].State != QuestState.Ongoing)
+                {
+                    continue;
+                }
+                List<QuestPart> partsListForReading = questsListForReading[i].PartsListForReading;
+                for (int j = 0; j < partsListForReading.Count; j++)
+                {
+                    if (partsListForReading[j] is QuestPart_Bossgroup questPart_Bossgroup)
+                    {
+                        questPart_Bossgroup.bosses.Clear();
+                    }
                 }
             }
         }
