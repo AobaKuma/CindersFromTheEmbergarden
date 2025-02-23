@@ -128,11 +128,11 @@
 
 	<HediffDef>
 		<defName>Cinder_ResurrectComa</defName>
-		<label>resurrect coma</label>
+		<label>crystallization coma</label>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
 		<initialSeverity>1</initialSeverity>
-		<description>Resurrection coma caused by resurrection.</description>
+		<description>The amorphous polymer completely crystallized this person's body, This person is now almost identical to a cluster of high hardness polymer rather than a biological entity，making them indestructible.</description>
 		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
@@ -151,25 +151,51 @@
 					</li>
 					<li>
 						<capacity>Moving</capacity>
-						<offset>-999</offset>
+						<setMax>0</setMax>
 					</li>
 				</capMods>
 				<statFactors>
 				    <Flammability>0</Flammability>
-					<IncomingDamageFactor>0.01</IncomingDamageFactor>
+					<IncomingDamageFactor>0.1</IncomingDamageFactor>
 					<RestFallRateFactor>0.01</RestFallRateFactor>
 					<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 					<NecrotionResistance MayRequire="BlackMarket420.TAOFC">2.0</NecrotionResistance>
 	                <NecrotionEnvironmentResistance MayRequire="BlackMarket420.TAOFC">2.0</NecrotionEnvironmentResistance>
+					<StaggerDurationFactor>0</StaggerDurationFactor>
 				</statFactors>
 				<damageFactors>
 					<Flame>0</Flame>
 					<Burn>0</Burn>
+					<Frostbite>0</Frostbite>
+					<TornadoScratch>0</TornadoScratch>
+					<Cut>0</Cut>
+					<Crush>0</Crush>
+					<Blunt>0</Blunt>
+					<Poke>0</Poke>
+					<Demolish>0</Demolish>
+					<Stab>0</Stab>
+					<Scratch>0</Scratch>
+					<ScratchToxic>0</ScratchToxic>
+					<Bite>0</Bite>
+					<ToxicBite>0</ToxicBite>
 					<Cinder_Bomb>0</Cinder_Bomb>
 					<Cinder_BombB>0</Cinder_BombB>
 					<Vaporize>0</Vaporize>
 					<Cinder_BombC>0</Cinder_BombC>
-					<Bullet>0.6</Bullet>
+					<Bullet>0.5</Bullet>
+					<Bomb>0</Bomb>
+					<BombSuper>0.5</BombSuper>
+					<Thump>0</Thump>
+					<AcidBurn>0</AcidBurn>
+					<Decayed>0</Decayed>
+					<RangedStab>0.5</RangedStab>
+					<Arrow>0.5</Arrow>
+					<ArrowHighVelocity>0.5</ArrowHighVelocity>
+					<ElectricalBurn MayRequire="Ludeon.RimWorld.Anomaly">0</ElectricalBurn>
+					<Digested MayRequire="Ludeon.RimWorld.Anomaly">0</Digested>
+					<Nerve MayRequire="Ludeon.RimWorld.Anomaly">0</Nerve>
+					<Psychic MayRequire="Ludeon.RimWorld.Anomaly">0</Psychic>
+					<NociosphereVaporize MayRequire="Ludeon.RimWorld.Anomaly">0</NociosphereVaporize>
 				</damageFactors>
 			</li>
 		</stages>
@@ -204,7 +230,7 @@
 					</li>
 				</capMods>
 				<statFactors>
-					<IncomingDamageFactor>0.01</IncomingDamageFactor>
+					<IncomingDamageFactor>0</IncomingDamageFactor>
 					<RestFallRateFactor>0</RestFallRateFactor>
 					<Flammability>0</Flammability>
 				</statFactors>
