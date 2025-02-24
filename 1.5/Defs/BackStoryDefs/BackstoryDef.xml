@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<BackstoryDef Name="BaseCinderBackStory" Abstract="True">
-		<bodyTypeMale>Female</bodyTypeMale>
+		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<shuffleable>true</shuffleable>
 		<disallowedTraits>
