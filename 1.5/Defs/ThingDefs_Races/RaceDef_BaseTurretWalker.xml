@@ -58,6 +58,9 @@
 				<wakeUpSound>MechanoidsWakeUp</wakeUpSound>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech" Class="CompProperties_MechRepairable" />
+			<li>
+				<compClass>Embergarden.CompTransformWhenDowned</compClass>
+			</li>
 		</comps>
 		<butcherProducts>
 			<Cinder_AmorphousPolymer>55</Cinder_AmorphousPolymer>

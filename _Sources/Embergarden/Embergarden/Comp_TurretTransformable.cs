@@ -89,7 +89,7 @@ namespace Embergarden
         }
         int lastHaveTargetTick = -1;
         bool needUpdateHP = true;
-        bool needCheckRepair = true;
+        bool needCheckRepair = false;
     }
 
     public abstract partial class Comp_TurretTransformableAbstract : IThingHolder

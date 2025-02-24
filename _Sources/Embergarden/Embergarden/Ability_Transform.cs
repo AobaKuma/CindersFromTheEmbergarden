@@ -1,11 +1,7 @@
 ﻿using RimWorld;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
-using Verse.AI.Group;
 
 namespace Embergarden
 {
@@ -75,5 +71,35 @@ namespace Embergarden
             compClass = typeof(AbilityCompEffect_Transform);
         }
         public ThingDef buildingDef;
+    }
+
+    public class CompTransformWhenDowned : ThingComp
+    {
+        Ability ability;
+
+        public override IEnumerable<Gizmo> CompGetGizmosExtra()
+        {
+            if ((!parent.Faction?.IsPlayer ?? true) || parent is not Pawn p) yield break;
+
+            if (ability == null)
+            {
+                var abilitys = p.abilities?.abilities.Where(a => a.comps.ContainsAny(c => c is AbilityCompEffect_Transform));
+                if (abilitys.Any())
+                {
+                    ability = abilitys.First();
+                }
+            }
+            if (p.Downed && ability != null)
+            {
+                Command_Action command = new()
+                {
+                    defaultLabel = ability.def.label,
+                    defaultDesc = ability.def.description,
+                    icon = ability.def.uiIcon,
+                    action = delegate { ability.Activate(parent, parent); },
+                };
+                yield return command;
+            }
+        }
     }
 }
