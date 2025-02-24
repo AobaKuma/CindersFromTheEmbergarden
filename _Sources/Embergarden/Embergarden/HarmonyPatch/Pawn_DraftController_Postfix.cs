@@ -124,4 +124,29 @@ namespace Embergarden
             __result = cache;
         }
     }
+
+
+    [StaticConstructorOnStartup]
+    [HarmonyPatch]
+    static class Alert_StarvationAnimals_Postfix
+    {
+        static MethodBase TargetMethod()
+        {
+            return typeof(Alert_StarvationAnimals).PropertyGetter("StarvingAnimals");
+        }
+
+        [HarmonyPostfix]
+        static void Postfix(ref List<Pawn> __result)
+        {
+            var cache = __result.ToList();
+            foreach (var p in __result)
+            {
+                if (p.def.HasModExtension<ModExtension_Draftable>() && !p.Spawned)
+                {
+                    cache.Remove(p);
+                }
+            }
+            __result = cache;
+        }
+    }
 }
