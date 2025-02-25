@@ -43,7 +43,7 @@
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Cinder_WalkerTurret</thinkTreeMain>
 			<body>Cinder_TurretWalker</body>
-			<baseHealthScale>2.2</baseHealthScale>
+			<baseHealthScale>2.7</baseHealthScale>
 		</race>
 	</ThingDef>
 
@@ -131,7 +131,7 @@
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Cinder_WalkerTurret</thinkTreeMain>
 			<body>Cinder_TurretWalker</body>
-			<baseHealthScale>2</baseHealthScale>
+			<baseHealthScale>2.2</baseHealthScale>
 		</race>
 	</ThingDef>
 
@@ -217,7 +217,7 @@
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Cinder_WalkerTurret</thinkTreeMain>
 			<body>Cinder_TurretWalker</body>
-			<baseHealthScale>2.2</baseHealthScale>
+			<baseHealthScale>2.7</baseHealthScale>
 		</race>
 	</ThingDef>
 

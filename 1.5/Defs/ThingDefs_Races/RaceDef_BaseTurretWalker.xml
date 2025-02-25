@@ -17,6 +17,28 @@
 			<ArmorRating_Heat>2.00</ArmorRating_Heat>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
 		</statBases>
+		<damageMultipliers>
+			<li MayRequire="CETeam.CombatExtended">
+				<damageDef>Fragment</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li MayRequire="CETeam.CombatExtended">
+				<damageDef>Bomb_Secondary</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+			<li MayRequire="CETeam.CombatExtended">
+				<damageDef>Thermobaric</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li MayRequire="CETeam.CombatExtended">
+				<damageDef>Electrical</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li MayRequire="CETeam.CombatExtended">
+				<damageDef>Bullet</damageDef>
+				<multiplier>0.4</multiplier>
+			</li>
+		</damageMultipliers>
 		<receivesSignals>true</receivesSignals>
 		<tradeability>None</tradeability>
 		<race>

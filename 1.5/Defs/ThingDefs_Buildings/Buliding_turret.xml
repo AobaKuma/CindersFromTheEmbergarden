@@ -31,6 +31,24 @@
 			<Mass>100</Mass>
 			<Beauty>-20</Beauty>
 		</statBases>
+		<damageMultipliers>
+			<li MayRequire="CETeam.CombatExtended">
+				<damageDef>Fragment</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li MayRequire="CETeam.CombatExtended">
+				<damageDef>Bomb_Secondary</damageDef>
+				<multiplier>0.1</multiplier>
+			</li>
+			<li MayRequire="CETeam.CombatExtended">
+				<damageDef>Thermobaric</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li MayRequire="CETeam.CombatExtended">
+				<damageDef>Electrical</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+		</damageMultipliers>
 		<tickerType>Normal</tickerType>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
