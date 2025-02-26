@@ -95,6 +95,7 @@
 		<warmupEffecter></warmupEffecter>
 		<hostile>false</hostile>
 		<aiCanUse>true</aiCanUse>
+		<groupAbility>true</groupAbility>
 		<targetRequired>false</targetRequired>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
@@ -124,6 +125,7 @@
 		<warmupEffecter></warmupEffecter>
 		<hostile>false</hostile>
 		<aiCanUse>true</aiCanUse>
+		<groupAbility>true</groupAbility>
 		<targetRequired>false</targetRequired>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
@@ -153,6 +155,7 @@
 		<warmupEffecter></warmupEffecter>
 		<hostile>false</hostile>
 		<aiCanUse>true</aiCanUse>
+		<groupAbility>true</groupAbility>
 		<targetRequired>false</targetRequired>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
@@ -182,6 +185,7 @@
 		<warmupEffecter></warmupEffecter>
 		<hostile>false</hostile>
 		<aiCanUse>true</aiCanUse>
+		<groupAbility>true</groupAbility>
 		<targetRequired>false</targetRequired>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
@@ -243,7 +247,7 @@
     <label>suffocating whispers</label>
     <description>Entangles the target with tentacles, causing temporary suffocation and coma.</description>
     <iconPath>UI/Abilities/SuffocatingWhispers</iconPath>
-    <cooldownTicksRange>60000</cooldownTicksRange> <!-- 24 hours -->
+    <cooldownTicksRange>120000</cooldownTicksRange> <!-- 48 hours -->
      <stunTargetWhileCasting>true</stunTargetWhileCasting>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
@@ -290,7 +294,7 @@
     <label>eternal fear</label>
     <description>Erodes the spirit of the target, detach it from the protection of reason, and make them fall into the state of fear.</description>
     <iconPath>UI/Abilities/EternalFear</iconPath>
-    <cooldownTicksRange>30000</cooldownTicksRange> <!-- 12 hours -->
+    <cooldownTicksRange>90000</cooldownTicksRange> <!-- 36 hours -->
     <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
 	<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
     <writeCombatLog>true</writeCombatLog>
@@ -334,7 +338,7 @@
 	<label>fear pulse</label>
     <description>Erodes the spirit of nearby animals, causing them to fall into the state of fear.</description>
     <iconPath>UI/Abilities/FearPulse</iconPath>
-    <cooldownTicksRange>120000</cooldownTicksRange> <!-- 48 hours -->
+    <cooldownTicksRange>180000</cooldownTicksRange> <!-- 60 hours -->
     <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
     <writeCombatLog>true</writeCombatLog>
 	<aiCanUse>true</aiCanUse>
@@ -375,7 +379,7 @@
     <description>Summon a sturdy tentacle wall from underground.</description>
     <iconPath>UI/Abilities/AmorphousWall</iconPath>
     <writeCombatLog>True</writeCombatLog>
-	<cooldownTicksRange>30000</cooldownTicksRange>
+	<cooldownTicksRange>60000</cooldownTicksRange>
 	<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
@@ -403,7 +407,7 @@
     <iconPath>UI/Abilities/ErodedMines</iconPath>
     <writeCombatLog>True</writeCombatLog>
 	<aiCanUse>true</aiCanUse>
-	<cooldownTicksRange>80000</cooldownTicksRange>
+	<cooldownTicksRange>120000</cooldownTicksRange>
 	<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
@@ -431,7 +435,7 @@
     <iconPath>UI/Abilities/AmorphousWinding</iconPath>
     <writeCombatLog>True</writeCombatLog>
 	<aiCanUse>true</aiCanUse>
-	<cooldownTicksRange>300000</cooldownTicksRange>
+	<cooldownTicksRange>360000</cooldownTicksRange>
 	<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
@@ -457,7 +461,7 @@
 		<label>eroded bomb</label>
 		<description>Throws a eroded bomb</description>
 		<iconPath>UI/Abilities/ErodedBomb</iconPath>
-		<cooldownTicksRange>30000</cooldownTicksRange>
+		<cooldownTicksRange>60000</cooldownTicksRange>
 		<aiCanUse>true</aiCanUse>
 		<writeCombatLog>true</writeCombatLog>
 		<verbProperties>

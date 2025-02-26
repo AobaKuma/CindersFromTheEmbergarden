@@ -26,4 +26,8 @@
   <!-- EN: A sturdy jacket with embedded metal plates to prevent accidental injuries. -->
   <Cinder_Apparel_WorkwearJacket.description>带有嵌入式金属板的坚固夹克，可防止意外伤害。</Cinder_Apparel_WorkwearJacket.description>
   
+   <!-- EN: workwear jacket -->
+  <Cinder_Apparel_Ink.label>水墨</Cinder_Apparel_Ink.label>
+  <!-- EN: A sturdy jacket with embedded metal plates to prevent accidental injuries. -->
+  <Cinder_Apparel_Ink.description>一套传统风格的厚实棉袄，常在冬天穿着。</Cinder_Apparel_Ink.description>
 </LanguageData>

@@ -406,4 +406,62 @@
 			<PainShockThreshold>0.20</PainShockThreshold>
 		</equippedStatOffsets>
 	</ThingDef>
+	
+	<ThingDef ParentName="Cinder_ApparelBase">
+		<defName>Cinder_Apparel_Ink</defName>
+		<label>Ink</label>
+		<description>A traditional style quilted jacket，often worn in winter.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Ink/Icon</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>20</Steel>
+		</costList>
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<MarketValue>200</MarketValue>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+			<Insulation_Cold>10</Insulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>1.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Ink/Ink</wornGraphicPath>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<drawData>
+				<dataNorth>
+					<layer>51</layer>
+				</dataNorth>
+			</drawData>
+		</apparel>
+	</ThingDef>
+	
 </Defs>

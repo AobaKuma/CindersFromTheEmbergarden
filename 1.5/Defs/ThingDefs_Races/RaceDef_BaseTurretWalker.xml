@@ -24,7 +24,7 @@
 			</li>
 			<li MayRequire="CETeam.CombatExtended">
 				<damageDef>Bomb_Secondary</damageDef>
-				<multiplier>0</multiplier>
+				<multiplier>0.05</multiplier>
 			</li>
 			<li MayRequire="CETeam.CombatExtended">
 				<damageDef>Thermobaric</damageDef>
