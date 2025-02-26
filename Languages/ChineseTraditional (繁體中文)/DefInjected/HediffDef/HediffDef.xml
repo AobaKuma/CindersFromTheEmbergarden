@@ -81,7 +81,7 @@
   <!-- EN: lose efficacy -->
   <Cinder_Resurrect.comps.HediffComp_LimitedResurrect.disabledString>已失效</Cinder_Resurrect.comps.HediffComp_LimitedResurrect.disabledString>
   
-  <  <!-- EN: resurrect coma -->
+  <!-- EN: resurrect coma -->
   <Cinder_ResurrectComa.label>晶化昏迷</Cinder_ResurrectComa.label>
   <!-- EN: Resurrection coma caused by resurrection. -->
   <Cinder_ResurrectComa.description>无定形聚合物完全晶化了这个人的身体，这个人现在几乎是一团高强度聚合物，而不是一个生物，其几乎坚不可摧。</Cinder_ResurrectComa.description>
