@@ -10,8 +10,8 @@
     <defName>Cinder_EternalFear</defName>
     <label>eternal fear</label>
     <stateClass>MentalState_WanderSad</stateClass>
-    <minTicksBeforeRecovery>40000</minTicksBeforeRecovery>
-    <maxTicksBeforeRecovery>60000</maxTicksBeforeRecovery>
+    <minTicksBeforeRecovery>20000</minTicksBeforeRecovery>
+    <maxTicksBeforeRecovery>30000</maxTicksBeforeRecovery>
     <recoveryMtbDays>0.166</recoveryMtbDays>
     <recoverFromSleep>true</recoverFromSleep>
     <blockNormalThoughts>true</blockNormalThoughts>

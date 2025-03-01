@@ -302,6 +302,9 @@
     <charges>2</charges>
     <cooldownPerCharge>true</cooldownPerCharge>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	 <statBases>
+	  <Ability_Duration>180</Ability_Duration>
+    </statBases>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <warmupTime>1.5</warmupTime>

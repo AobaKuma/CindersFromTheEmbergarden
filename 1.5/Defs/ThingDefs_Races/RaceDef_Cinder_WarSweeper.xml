@@ -234,7 +234,7 @@
 										<rotationOffset>180</rotationOffset>
 									</dataWest>
 									<dataSouth>
-										<offset>(-1.55,0,1.05)</offset>
+										<offset>(-1.55,0,0.5)</offset>
 									</dataSouth>
 									<dataNorth>
 										<offset>(1.55,0,-0.5)</offset>
@@ -267,7 +267,7 @@
 										<rotationOffset>180</rotationOffset>
 									</dataWest>
 									<dataSouth>
-										<offset>(1.55,0,1.05)</offset>
+										<offset>(1.55,0,0.5)</offset>
 									</dataSouth>
 									<dataNorth>
 										<offset>(-1.55,0,-0.5)</offset>
