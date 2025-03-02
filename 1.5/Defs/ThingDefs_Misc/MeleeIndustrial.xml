@@ -78,7 +78,7 @@
     </weaponTags>
     <statBases>
       <WorkToMake>12000</WorkToMake>
-      <Mass>0.85</Mass>
+      <Mass>5.85</Mass>
     </statBases>
     <equippedAngleOffset>-65</equippedAngleOffset>
    <recipeMaker Inherit="false">

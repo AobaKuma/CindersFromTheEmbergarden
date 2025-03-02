@@ -21,7 +21,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Cinder_ImpactBreaker"]/statBases/Mass</xpath>
 		<value>
-			<Mass>25</Mass>
+			<Mass>12</Mass>
 		</value>
 	</Operation>
 
@@ -77,7 +77,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Cinder_ElectricScythe"]/statBases/Mass</xpath>
 		<value>
-			<Mass>10</Mass>
+			<Mass>8</Mass>
 		</value>
 	</Operation>
 
