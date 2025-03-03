@@ -270,6 +270,18 @@
 					<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 					<ArmorRating_Heat>1</ArmorRating_Heat>
 				</statOffsets>
+				<damageFactors>
+					<Cut>0.8</Cut>
+					<Crush>0.8</Crush>
+					<Blunt>0.8</Blunt>
+					<Poke>0.8</Poke>
+					<Demolish>0.8</Demolish>
+					<Stab>0.8</Stab>
+					<Bullet>0.95</Bullet>
+					<RangedStab>0.75</RangedStab>
+					<Arrow>0.55</Arrow>
+					<ArrowHighVelocity>0.55</ArrowHighVelocity>
+				</damageFactors>
 			</li>
 		</stages>
 		<comps>
@@ -314,6 +326,11 @@
 					<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 					<ArmorRating_Heat>1</ArmorRating_Heat>
 				</statOffsets>
+				<damageFactors>
+					<RangedStab>0.85</RangedStab>
+					<Arrow>0.75</Arrow>
+					<ArrowHighVelocity>0.75</ArrowHighVelocity>
+				</damageFactors>
 			</li>
 		</stages>
 		<comps>
@@ -493,6 +510,7 @@
 			<li>
 				<damageFactors>
 					<Bullet>0.75</Bullet>
+					<Arrow>0.75</Arrow>
 					<Bomb>0.25</Bomb>
 				</damageFactors>
 				<statOffsets>
@@ -527,6 +545,7 @@
 			<li>
 				<damageFactors>
 					<Bullet>0.65</Bullet>
+					<Arrow>0.65</Arrow>
 					<Bomb>0.25</Bomb>
 					<Cut>0.65</Cut>
                     <Stab>0.65</Stab>

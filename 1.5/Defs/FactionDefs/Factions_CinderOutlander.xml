@@ -101,11 +101,11 @@
         <kindDef>Combat</kindDef>
 		<commonality>100</commonality>
         <options>
-		  <Cinder_Cult>3</Cinder_Cult>
+		  <Cinder_Cult>1</Cinder_Cult>
 		  <Cinder_OutlanderCivilan>3</Cinder_OutlanderCivilan>
-		  <Cinder_OutlanderSecond>8</Cinder_OutlanderSecond>
+		  <Cinder_OutlanderSecond>6</Cinder_OutlanderSecond>
 		  <Cinder_Mech_MiniTurretWalker>60</Cinder_Mech_MiniTurretWalker>
-          <Cinder_Outlander>8</Cinder_Outlander>
+          <Cinder_Outlander>6</Cinder_Outlander>
           <Cinder_Mech_WalkerAutoCannon>8</Cinder_Mech_WalkerAutoCannon>
           <Cinder_EliteCult>10</Cinder_EliteCult>
           <Cinder_OutlanderElite>1</Cinder_OutlanderElite>
@@ -115,11 +115,13 @@
       <li>
         <!-- 法术部队 -->
         <kindDef>Combat</kindDef>
-        <commonality>10</commonality>
+        <commonality>80</commonality>
         <options>
           <Cinder_Cult>8</Cinder_Cult>
           <Cinder_Mech_MiniTurretWalker>60</Cinder_Mech_MiniTurretWalker>
           <Cinder_EliteCult>25</Cinder_EliteCult>
+		  <Cinder_OutlanderSecond>1</Cinder_OutlanderSecond>
+		  <Cinder_OutlanderElite>1</Cinder_OutlanderElite>
           <Cinder_Mech_WalkerAutoCannon>12</Cinder_Mech_WalkerAutoCannon>
 		  <Cinder_Mech_WalkerSniper>12</Cinder_Mech_WalkerSniper>
         </options>

@@ -154,6 +154,7 @@
 		<initialWillRange>10~30</initialWillRange>
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<maxPerGroup>5</maxPerGroup>
 		<maxGenerationAge>45</maxGenerationAge>
 		<minGenerationAge>13</minGenerationAge>
 		<backstoryFiltersOverride>
@@ -283,6 +284,7 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>45</maxGenerationAge>
 		<minGenerationAge>19</minGenerationAge>
+		<maxPerGroup>6</maxPerGroup>
 		<startingHediffs>
 			<li>
 				<def>Cinder_ExtraArmourPlate</def>
@@ -345,7 +347,7 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_Outlander</defName>
 		<label>Frontline troops</label>
-		<combatPower>140</combatPower>
+		<combatPower>130</combatPower>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<initialWillRange>10~30</initialWillRange>
@@ -353,6 +355,7 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>45</maxGenerationAge>
 		<minGenerationAge>19</minGenerationAge>
+		<maxPerGroup>6</maxPerGroup>
 		<startingHediffs>
 			<li>
 				<def>Cinder_ExtraArmourPlate</def>
@@ -418,7 +421,7 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_Grenadier</defName>
 		<label>grenadier</label>
-		<combatPower>160</combatPower>
+		<combatPower>150</combatPower>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<initialWillRange>10~30</initialWillRange>
@@ -428,6 +431,7 @@
 		<isGoodBreacher>true</isGoodBreacher>
 		<maxGenerationAge>45</maxGenerationAge>
 		<minGenerationAge>19</minGenerationAge>
+		<maxPerGroup>2</maxPerGroup>
 		<startingHediffs>
 			<li>
 				<def>Cinder_ExtraArmourPlateII</def>
@@ -499,7 +503,7 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_Cult</defName>
 		<label>cult follower</label>
-		<combatPower>110</combatPower>
+		<combatPower>100</combatPower>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<initialWillRange>10~30</initialWillRange>
@@ -590,7 +594,7 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_EliteCult</defName>
 		<label>cult guard</label>
-		<combatPower>200</combatPower>
+		<combatPower>180</combatPower>
 		<maxPerGroup>6</maxPerGroup>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
@@ -684,8 +688,8 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_OutlanderElite</defName>
 		<label>shock troops</label>
-		<combatPower>300</combatPower>
-		<maxPerGroup>3</maxPerGroup>
+		<combatPower>250</combatPower>
+		<maxPerGroup>4</maxPerGroup>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<itemQuality>Excellent</itemQuality>
@@ -859,7 +863,7 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_SoliderUnit</defName>
 		<label>solider unit</label>
-		<combatPower>220</combatPower>
+		<combatPower>190</combatPower>
 		<maxPerGroup>10</maxPerGroup>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
 		<isFighter>true</isFighter>
@@ -933,7 +937,7 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_BreakUnit</defName>
 		<label>break through unit</label>
-		<combatPower>350</combatPower>
+		<combatPower>300</combatPower>
 		<maxPerGroup>4</maxPerGroup>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
 		<isFighter>true</isFighter>
@@ -1022,7 +1026,7 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_HeavySoliderUnit</defName>
 		<label>Bombing unit</label>
-		<combatPower>420</combatPower>
+		<combatPower>320</combatPower>
 		<maxPerGroup>4</maxPerGroup>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
 		<isFighter>true</isFighter>
