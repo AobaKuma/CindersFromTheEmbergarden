@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 4.6x30mm (Erosion) -->
+  <Ammo_46x30mm_CinderErosion.label>4.6x30mm 手枪弹 (侵蚀弹)</Ammo_46x30mm_CinderErosion.label>
+  <!-- EN: This high-velocity handgun cartridge was specifically designed for military personnel to defeat body armor.
+\n\nErosion:
+\nAmorphous polymer ammunition that temporarily reduces enemy armor.
+\n\n使用者: -->
+  <Ammo_46x30mm_CinderErosion.description>这种高速手枪弹药是专门为反军事人员设计的，用于穿透防弹衣。</Ammo_46x30mm_CinderErosion.description>
+  
+  <!-- EN: 4.6x30mm bullet (Erosion) -->
+  <Bullet_46x30mm_CinderErosion.label>4.6x30mm 手枪弹 (侵蚀弹)</Bullet_46x30mm_CinderErosion.label>
+  
+</LanguageData>

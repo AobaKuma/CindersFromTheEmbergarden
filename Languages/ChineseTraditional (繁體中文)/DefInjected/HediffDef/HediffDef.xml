@@ -17,8 +17,13 @@
   
   <!-- EN: erosion -->
   <Cinder_Erosion.label>侵蚀</Cinder_Erosion.label>
-  <!-- EN: The armor on this person's body has been eroded. -->
+  <!-- EN: This person's body has been eroded. -->
   <Cinder_Erosion.description>这个单位被侵蚀了。</Cinder_Erosion.description>
+  
+  <!-- EN: erosion -->
+  <Cinder_Erosion_Bullet.label>侵蚀</Cinder_Erosion_Bullet.label>
+  <!-- EN: This person's body has been eroded. -->
+  <Cinder_Erosion_Bullet.description>这个单位被侵蚀了</Cinder_Erosion_Bullet.description>
   
   <!-- EN: armour Plates -->
   <Cinder_ExtraArmourPlate.label>装甲板</Cinder_ExtraArmourPlate.label>
@@ -81,16 +86,15 @@
   <!-- EN: lose efficacy -->
   <Cinder_Resurrect.comps.HediffComp_LimitedResurrect.disabledString>已失效</Cinder_Resurrect.comps.HediffComp_LimitedResurrect.disabledString>
   
-  <!-- EN: resurrect coma -->
+  <!-- EN: crystallization coma -->
   <Cinder_ResurrectComa.label>晶化昏迷</Cinder_ResurrectComa.label>
-  <!-- EN: Resurrection coma caused by resurrection. -->
+  <!-- EN: The amorphous polymer completely crystallized this person's body, This person is now almost identical to a cluster of high hardness polymer rather than a biological entity，making them indestructible. -->
   <Cinder_ResurrectComa.description>无定形聚合物完全晶化了这个人的身体，这个人现在几乎是一团高强度聚合物，而不是一个生物，其几乎坚不可摧。</Cinder_ResurrectComa.description>
   
   <!-- EN: strange solution -->
   <Cinder_SrangeSolution.label>奇怪的溶液</Cinder_SrangeSolution.label>
   <!-- EN: A harmless medication that often distracts people and makes them feel uncontrollable libido. -->
   <Cinder_SrangeSolution.description>一种无害的药物，常常分散使用者的注意力，让他们感到无法控制的性欲。</Cinder_SrangeSolution.description>
-  <!-- EN: A harmless medication that often distracts people and makes them feel uncontrollable libido. -->
   <Cinder_SrangeSolution.descriptionCached>一种无害的药物，常常分散使用者的注意力，让他们感到无法控制的性欲。</Cinder_SrangeSolution.descriptionCached>
   
   <!-- EN: suffocation coma -->

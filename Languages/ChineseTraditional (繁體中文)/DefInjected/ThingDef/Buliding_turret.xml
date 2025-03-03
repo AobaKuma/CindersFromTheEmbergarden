@@ -8,30 +8,32 @@
   <Cinder_ErodedAutocannon.label>步行者自动加农炮</Cinder_ErodedAutocannon.label>
   <!-- EN: A movable heavy automatic turret.There are many strange tentacles wrapped around the turret. -->
   <Cinder_ErodedAutocannon.description>一种可移动的重型自动加农炮，炮塔上挂着奇怪的触手。</Cinder_ErodedAutocannon.description>
-  <!-- EN: Barrel durability -->
-  <Cinder_ErodedAutocannon.comps.CompRefuelable.fuelGizmoLabel>炮管耐久</Cinder_ErodedAutocannon.comps.CompRefuelable.fuelGizmoLabel>
-  <!-- EN: Shots until barrel change -->
-  <Cinder_ErodedAutocannon.comps.CompRefuelable.fuelLabel>射击直到炮管耐久耗尽</Cinder_ErodedAutocannon.comps.CompRefuelable.fuelLabel>
-  <!-- EN: Needs new barrel -->
-  <Cinder_ErodedAutocannon.comps.CompRefuelable.outOfFuelMessage>需要新的炮管</Cinder_ErodedAutocannon.comps.CompRefuelable.outOfFuelMessage>
   <!-- EN: Order the turret to "stand up" and relocate. -->
-  <Cinder_ErodedAutocannon.comps.Comp_TurretTransformable.defaultDesc>命令炮塔站起来重新寻找位置部署</Cinder_ErodedAutocannon.comps.Comp_TurretTransformable.defaultDesc>
+  <Cinder_ErodedAutocannon.comps.Comp_TurretTransformableCE.defaultDesc>TODO</Cinder_ErodedAutocannon.comps.Comp_TurretTransformableCE.defaultDesc>
   <!-- EN: Change to walking mode -->
+  <Cinder_ErodedAutocannon.comps.Comp_TurretTransformableCE.defaultLabel>TODO</Cinder_ErodedAutocannon.comps.Comp_TurretTransformableCE.defaultLabel>
+  
+  <!-- UNUSED -->
+  <Cinder_ErodedAutocannon.comps.CompRefuelable.fuelGizmoLabel>炮管耐久</Cinder_ErodedAutocannon.comps.CompRefuelable.fuelGizmoLabel>
+  <Cinder_ErodedAutocannon.comps.CompRefuelable.fuelLabel>射击直到炮管耐久耗尽</Cinder_ErodedAutocannon.comps.CompRefuelable.fuelLabel>
+  <Cinder_ErodedAutocannon.comps.CompRefuelable.outOfFuelMessage>需要新的炮管</Cinder_ErodedAutocannon.comps.CompRefuelable.outOfFuelMessage>
+  <Cinder_ErodedAutocannon.comps.Comp_TurretTransformable.defaultDesc>命令炮塔站起来重新寻找位置部署</Cinder_ErodedAutocannon.comps.Comp_TurretTransformable.defaultDesc>
   <Cinder_ErodedAutocannon.comps.Comp_TurretTransformable.defaultLabel>站起</Cinder_ErodedAutocannon.comps.Comp_TurretTransformable.defaultLabel>
   
   <!-- EN: walker uranium slug turret -->
   <Cinder_ErodedSniperBase.label>步行者铀弹加农炮</Cinder_ErodedSniperBase.label>
   <!-- EN: A movable armor-piercing turret. There are many strange tentacles wrapped around the turret. -->
   <Cinder_ErodedSniperBase.description>一种可移动的重型穿甲炮塔，炮塔上挂着奇怪的触手。</Cinder_ErodedSniperBase.description>
-  <!-- EN: Uranium slugs -->
-  <Cinder_ErodedSniperBase.comps.CompRefuelable.fuelGizmoLabel>铀弹剩余</Cinder_ErodedSniperBase.comps.CompRefuelable.fuelGizmoLabel>
-  <!-- EN: Shots until rearm -->
-  <Cinder_ErodedSniperBase.comps.CompRefuelable.fuelLabel>射击直到弹药耗尽</Cinder_ErodedSniperBase.comps.CompRefuelable.fuelLabel>
-  <!-- EN: No slugs -->
-  <Cinder_ErodedSniperBase.comps.CompRefuelable.outOfFuelMessage>弹药耗尽</Cinder_ErodedSniperBase.comps.CompRefuelable.outOfFuelMessage>
   <!-- EN: Order the turret to "stand up" and relocate. -->
-  <Cinder_ErodedSniperBase.comps.Comp_TurretTransformable.defaultDesc>命令炮塔站起来重新寻找位置部署</Cinder_ErodedSniperBase.comps.Comp_TurretTransformable.defaultDesc>
+  <Cinder_ErodedSniperBase.comps.Comp_TurretTransformableCE.defaultDesc>TODO</Cinder_ErodedSniperBase.comps.Comp_TurretTransformableCE.defaultDesc>
   <!-- EN: Change to walking mode -->
+  <Cinder_ErodedSniperBase.comps.Comp_TurretTransformableCE.defaultLabel>TODO</Cinder_ErodedSniperBase.comps.Comp_TurretTransformableCE.defaultLabel>
+  
+  <!-- UNUSED -->
+  <Cinder_ErodedSniperBase.comps.CompRefuelable.fuelGizmoLabel>铀弹剩余</Cinder_ErodedSniperBase.comps.CompRefuelable.fuelGizmoLabel>
+  <Cinder_ErodedSniperBase.comps.CompRefuelable.fuelLabel>射击直到弹药耗尽</Cinder_ErodedSniperBase.comps.CompRefuelable.fuelLabel>
+  <Cinder_ErodedSniperBase.comps.CompRefuelable.outOfFuelMessage>弹药耗尽</Cinder_ErodedSniperBase.comps.CompRefuelable.outOfFuelMessage>
+  <Cinder_ErodedSniperBase.comps.Comp_TurretTransformable.defaultDesc>命令炮塔站起来重新寻找位置部署</Cinder_ErodedSniperBase.comps.Comp_TurretTransformable.defaultDesc>
   <Cinder_ErodedSniperBase.comps.Comp_TurretTransformable.defaultLabel>站起</Cinder_ErodedSniperBase.comps.Comp_TurretTransformable.defaultLabel>
   
   <!-- EN: eroded autocannon -->
@@ -39,6 +41,9 @@
   <!-- EN: An eroded self-loading large-bore cannon designed to attach to a turret. -->
   <Cinder_GunErodedAutocannon.description>一种被侵蚀的自装大口径火炮，设计用于连接炮塔。</Cinder_GunErodedAutocannon.description>
   <!-- EN: eroded autocannon -->
+  <Cinder_GunErodedAutocannon.verbs.Verb_ShootCE.label>TODO</Cinder_GunErodedAutocannon.verbs.Verb_ShootCE.label>
+  
+  <!-- UNUSED -->
   <Cinder_GunErodedAutocannon.verbs.Verb_Shoot.label>被侵蚀的自动炮</Cinder_GunErodedAutocannon.verbs.Verb_Shoot.label>
   
   <!-- EN: eroded uranium slug cannon -->
@@ -46,6 +51,9 @@
   <!-- EN: An eroded self-loading uranium slug cannon designed to attach to a turret. -->
   <Cinder_GunErodedSniper.description>一种被侵蚀的自装铀弹炮，设计用于连接炮塔。</Cinder_GunErodedSniper.description>
   <!-- EN: eroded uranium slug cannon -->
+  <Cinder_GunErodedSniper.verbs.Verb_ShootCE.label>TODO</Cinder_GunErodedSniper.verbs.Verb_ShootCE.label>
+  
+  <!-- UNUSED -->
   <Cinder_GunErodedSniper.verbs.Verb_Shoot.label>被侵蚀的铀弹加农炮</Cinder_GunErodedSniper.verbs.Verb_Shoot.label>
   
   <!-- EN: rocketswarm tube -->
@@ -53,40 +61,43 @@
   <!-- EN: A rocketswarm tube of the type usually mounted on a rocketswarm launcher turret. -->
   <Cinder_GunRocketswarmLauncher.description>一种集群火箭发射器，设计用于连接炮塔。</Cinder_GunRocketswarmLauncher.description>
   <!-- EN: rocketswarm tube -->
+  <Cinder_GunRocketswarmLauncher.verbs.Verb_ShootMortarCE.label>TODO</Cinder_GunRocketswarmLauncher.verbs.Verb_ShootMortarCE.label>
+  
+  <!-- UNUSED -->
   <Cinder_GunRocketswarmLauncher.verbs.Verb_Shoot.label>集群火箭发射器</Cinder_GunRocketswarmLauncher.verbs.Verb_Shoot.label>
   
   <!-- EN: walker rocketswarm launcher -->
   <Cinder_RocketswarmLauncher.label>步行者集群火箭发射器</Cinder_RocketswarmLauncher.label>
   <!-- EN: A movable emergency-defense launcher that fires a single barrage of rockets covering a large area. The turret does not fire until someone activates it. It is very effective against large groups of weaker combatants, but less effective against small numbers of armored targets. Once fired, it must cool off for hours and be reloaded to fire again. -->
   <Cinder_RocketswarmLauncher.description>一种可移动的紧急防御发射器，发射覆盖大片区域的单次火箭弹。炮塔在有人激活之前不会开火。它对大批较弱的战斗人员非常有效，但对少数装甲目标的效果较差。一旦开火，它必须冷却数小时，然后重新装弹再次开火。</Cinder_RocketswarmLauncher.description>
-  <!-- EN: Rockets -->
-  <Cinder_RocketswarmLauncher.comps.CompRefuelable.fuelGizmoLabel>火箭弹</Cinder_RocketswarmLauncher.comps.CompRefuelable.fuelGizmoLabel>
-  <!-- EN: Rockets -->
-  <Cinder_RocketswarmLauncher.comps.CompRefuelable.fuelLabel>火箭弹</Cinder_RocketswarmLauncher.comps.CompRefuelable.fuelLabel>
-  <!-- EN: Missing rockets -->
-  <Cinder_RocketswarmLauncher.comps.CompRefuelable.outOfFuelMessage>弹药耗尽</Cinder_RocketswarmLauncher.comps.CompRefuelable.outOfFuelMessage>
-  <!-- EN: activate -->
-  <Cinder_RocketswarmLauncher.comps.CompInteractableRocketswarmLauncher.jobString>激活</Cinder_RocketswarmLauncher.comps.CompInteractableRocketswarmLauncher.jobString>
-  <!-- EN: cooling off -->
-  <Cinder_RocketswarmLauncher.comps.CompInteractableRocketswarmLauncher.onCooldownString>冷却中</Cinder_RocketswarmLauncher.comps.CompInteractableRocketswarmLauncher.onCooldownString>
   <!-- EN: Order the turret to "stand up" and relocate. -->
-  <Cinder_RocketswarmLauncher.comps.Comp_TurretTransformable.defaultDesc>命令炮塔站起来重新寻找位置部署</Cinder_RocketswarmLauncher.comps.Comp_TurretTransformable.defaultDesc>
+  <Cinder_RocketswarmLauncher.comps.Comp_TurretTransformableCE.defaultDesc>TODO</Cinder_RocketswarmLauncher.comps.Comp_TurretTransformableCE.defaultDesc>
   <!-- EN: Change to walking mode -->
+  <Cinder_RocketswarmLauncher.comps.Comp_TurretTransformableCE.defaultLabel>TODO</Cinder_RocketswarmLauncher.comps.Comp_TurretTransformableCE.defaultLabel>
+  
+  <!-- UNUSED -->
+  <Cinder_RocketswarmLauncher.comps.CompRefuelable.fuelGizmoLabel>火箭弹</Cinder_RocketswarmLauncher.comps.CompRefuelable.fuelGizmoLabel>
+  <Cinder_RocketswarmLauncher.comps.CompRefuelable.fuelLabel>火箭弹</Cinder_RocketswarmLauncher.comps.CompRefuelable.fuelLabel>
+  <Cinder_RocketswarmLauncher.comps.CompRefuelable.outOfFuelMessage>弹药耗尽</Cinder_RocketswarmLauncher.comps.CompRefuelable.outOfFuelMessage>
+  <Cinder_RocketswarmLauncher.comps.CompInteractableRocketswarmLauncher.jobString>激活</Cinder_RocketswarmLauncher.comps.CompInteractableRocketswarmLauncher.jobString>
+  <Cinder_RocketswarmLauncher.comps.CompInteractableRocketswarmLauncher.onCooldownString>冷却中</Cinder_RocketswarmLauncher.comps.CompInteractableRocketswarmLauncher.onCooldownString>
+  <Cinder_RocketswarmLauncher.comps.Comp_TurretTransformable.defaultDesc>命令炮塔站起来重新寻找位置部署</Cinder_RocketswarmLauncher.comps.Comp_TurretTransformable.defaultDesc>
   <Cinder_RocketswarmLauncher.comps.Comp_TurretTransformable.defaultLabel>站起</Cinder_RocketswarmLauncher.comps.Comp_TurretTransformable.defaultLabel>
   
   <!-- EN: walker tactical turret -->
   <Cinder_TacticalTurret.label>步行者战术炮塔</Cinder_TacticalTurret.label>
   <!-- EN: A movable short-range turret, If damaged sufficiently, it may explode. -->
   <Cinder_TacticalTurret.description>一种可移动的短程炮塔，如果损坏严重，可能会爆炸。</Cinder_TacticalTurret.description>
-  <!-- EN: Barrel durability -->
-  <Cinder_TacticalTurret.comps.CompRefuelable.fuelGizmoLabel>炮管耐久</Cinder_TacticalTurret.comps.CompRefuelable.fuelGizmoLabel>
-  <!-- EN: Shots until barrel change -->
-  <Cinder_TacticalTurret.comps.CompRefuelable.fuelLabel>射击直到炮管耐久耗尽</Cinder_TacticalTurret.comps.CompRefuelable.fuelLabel>
-  <!-- EN: Needs new barrel -->
-  <Cinder_TacticalTurret.comps.CompRefuelable.outOfFuelMessage>需要新的炮管</Cinder_TacticalTurret.comps.CompRefuelable.outOfFuelMessage>
   <!-- EN: Order the turret to "stand up" and relocate. -->
-  <Cinder_TacticalTurret.comps.Comp_TurretTransformable.defaultDesc>命令炮塔站起来重新寻找位置部署</Cinder_TacticalTurret.comps.Comp_TurretTransformable.defaultDesc>
+  <Cinder_TacticalTurret.comps.Comp_TurretTransformableCE.defaultDesc>TODO</Cinder_TacticalTurret.comps.Comp_TurretTransformableCE.defaultDesc>
   <!-- EN: Change to walking mode -->
+  <Cinder_TacticalTurret.comps.Comp_TurretTransformableCE.defaultLabel>TODO</Cinder_TacticalTurret.comps.Comp_TurretTransformableCE.defaultLabel>
+  
+  <!-- UNUSED -->
+  <Cinder_TacticalTurret.comps.CompRefuelable.fuelGizmoLabel>炮管耐久</Cinder_TacticalTurret.comps.CompRefuelable.fuelGizmoLabel>
+  <Cinder_TacticalTurret.comps.CompRefuelable.fuelLabel>射击直到炮管耐久耗尽</Cinder_TacticalTurret.comps.CompRefuelable.fuelLabel>
+  <Cinder_TacticalTurret.comps.CompRefuelable.outOfFuelMessage>需要新的炮管</Cinder_TacticalTurret.comps.CompRefuelable.outOfFuelMessage>
+  <Cinder_TacticalTurret.comps.Comp_TurretTransformable.defaultDesc>命令炮塔站起来重新寻找位置部署</Cinder_TacticalTurret.comps.Comp_TurretTransformable.defaultDesc>
   <Cinder_TacticalTurret.comps.Comp_TurretTransformable.defaultLabel>站起</Cinder_TacticalTurret.comps.Comp_TurretTransformable.defaultLabel>
   
   <!-- EN: tactical turret gun -->
@@ -94,6 +105,9 @@
   <!-- EN: A simple automatic gun made to be mounted on a turret. -->
   <Cinder_TacticalTurretGun.description>用于链接炮塔的小型自动枪</Cinder_TacticalTurretGun.description>
   <!-- EN: tactical turret gun -->
+  <Cinder_TacticalTurretGun.verbs.Verb_ShootCE.label>TODO</Cinder_TacticalTurretGun.verbs.Verb_ShootCE.label>
+  
+  <!-- UNUSED -->
   <Cinder_TacticalTurretGun.verbs.Verb_Shoot.label>战术炮塔</Cinder_TacticalTurretGun.verbs.Verb_Shoot.label>
   
 </LanguageData>

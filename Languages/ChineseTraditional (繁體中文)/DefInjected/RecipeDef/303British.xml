@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make .303 British (Erosion) cartridge x500 -->
+  <MakeAmmo_303British_Erosion.label>制作.303 英国制式步枪弹(侵蚀弹)x500</MakeAmmo_303British_Erosion.label>
+  <!-- EN: Craft 500 .303 British (Erosion) cartridges. -->
+  <MakeAmmo_303British_Erosion.description>制作.303 英国制式步枪弹(侵蚀弹)</MakeAmmo_303British_Erosion.description>
+  <!-- EN: Making .303 British (Erosion) cartridges. -->
+  <MakeAmmo_303British_Erosion.jobString>正在制作.303 英国制式步枪弹(侵蚀弹)</MakeAmmo_303British_Erosion.jobString>
+  
+</LanguageData>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: .44 Magnum (Erosion) -->
+  <Ammo_44Magnum_Erosion.label>.44 马格南手枪弹 (侵蚀弹)</Ammo_44Magnum_Erosion.label>
+  <!-- EN: Ancient pistol cartridge originally designed for revolvers.
+\n\nErosion:
+\nAmorphous polymer ammunition that temporarily reduces enemy armor.
+\n\n使用者: -->
+  <Ammo_44Magnum_Erosion.description>古老的左轮手枪弹药.</Ammo_44Magnum_Erosion.description>
+  
+  <!-- EN: .44 Magnum bullet (Erosion) -->
+  <Bullet_44Magnum_Erosion.label>.44 马格南手枪弹 (侵蚀弹)</Bullet_44Magnum_Erosion.label>
+  
+  <!-- EN: .44 Magnum bullet (Erosion) -->
+  <Bullet_44Magnum_HV_Erosion.label>.44 马格南手枪弹 (侵蚀弹)</Bullet_44Magnum_HV_Erosion.label>
+  
+</LanguageData>

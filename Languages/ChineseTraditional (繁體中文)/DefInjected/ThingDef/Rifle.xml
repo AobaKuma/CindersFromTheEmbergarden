@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: rifle cartridge (Erosion) -->
+  <Ammo_Rifle_Erosion.label>步枪弹(侵蚀弹)</Ammo_Rifle_Erosion.label>
+  <!-- EN: Large rifle bullet used in machine guns, sniper rifles and battle rifles. -->
+  <Ammo_Rifle_Erosion.description>机枪、狙击步枪和战斗步枪中使用的大型步枪子弹。</Ammo_Rifle_Erosion.description>
+  
+</LanguageData>

@@ -26,7 +26,7 @@
 				<spawnCount>20</spawnCount>
 				<spawnIntervalRange>
 					<min>600000</min>
-					<max>600000</max>
+					<max>800000</max>
 				</spawnIntervalRange>
 				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
 				<showMessageIfOwned>true</showMessageIfOwned>

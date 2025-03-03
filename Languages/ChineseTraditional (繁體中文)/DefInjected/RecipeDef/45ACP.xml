@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make .45 ACP (Erosion) cartridge x500 -->
+  <MakeAmmo_45ACP_Erosion.label>制作.45 ACP手枪弹(侵蚀弹)x500</MakeAmmo_45ACP_Erosion.label>
+  <!-- EN: Craft 500 .45 ACP (Erosion) cartridges. -->
+  <MakeAmmo_45ACP_Erosion.description>制作.45 ACP手枪弹(侵蚀弹)</MakeAmmo_45ACP_Erosion.description>
+  <!-- EN: Making .45 ACP (Erosion) cartridges. -->
+  <MakeAmmo_45ACP_Erosion.jobString>正在制作.45 ACP手枪弹(侵蚀弹)</MakeAmmo_45ACP_Erosion.jobString>
+  
+</LanguageData>

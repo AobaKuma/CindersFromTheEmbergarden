@@ -5,7 +5,8 @@
 		<xpath>Defs/ThingDef[defName="Cinder_AmorphousPolymer"]/statBases</xpath>
 		<value>
     <statBases>
-      <MarketValue>0.75</MarketValue>
+      <MarketValue>1</MarketValue>
+	    <SellPriceFactor>0.1</SellPriceFactor>
       <Mass>0.25</Mass>
       <StuffPower_Armor_Sharp>1.8</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>2.7</StuffPower_Armor_Blunt>

@@ -2,56 +2,60 @@
 <LanguageData>
   
   <!-- EN: bread -->
-  <Cinder_HairA.label>面包</Cinder_HairA.label>
+  <Cinder_HairA.label>TODO</Cinder_HairA.label>
   
   <!-- EN: bun -->
-  <Cinder_HairB.label>小圆饼</Cinder_HairB.label>
+  <Cinder_HairB.label>TODO</Cinder_HairB.label>
   
   <!-- EN: chiffon -->
-  <Cinder_HairC.label>戚风</Cinder_HairC.label>
+  <Cinder_HairC.label>TODO</Cinder_HairC.label>
   
   <!-- EN: cinnamon -->
-  <Cinder_HairD.label>肉桂卷</Cinder_HairD.label>
+  <Cinder_HairD.label>TODO</Cinder_HairD.label>
   
   <!-- EN: cookies -->
-  <Cinder_HairE.label>曲奇</Cinder_HairE.label>
+  <Cinder_HairE.label>TODO</Cinder_HairE.label>
   
   <!-- EN: croissant -->
-  <Cinder_HairF.label>可颂</Cinder_HairF.label>
+  <Cinder_HairF.label>TODO</Cinder_HairF.label>
   
   <!-- EN: laurel -->
-  <Cinder_HairG.label>月桂</Cinder_HairG.label>
+  <Cinder_HairG.label>TODO</Cinder_HairG.label>
   
   <!-- EN: licorice -->
-  <Cinder_HairH.label>甘草</Cinder_HairH.label>
+  <Cinder_HairH.label>TODO</Cinder_HairH.label>
   
   <!-- EN: loaf -->
-  <Cinder_HairI.label>长面包</Cinder_HairI.label>
+  <Cinder_HairI.label>TODO</Cinder_HairI.label>
   
   <!-- EN: lowDoublePony -->
-  <Cinder_HairJ.label>低双马尾</Cinder_HairJ.label>
+  <Cinder_HairJ.label>TODO</Cinder_HairJ.label>
   
   <!-- EN: midPony -->
-  <Cinder_HairK.label>中马尾</Cinder_HairK.label>
+  <Cinder_HairK.label>TODO</Cinder_HairK.label>
   
   <!-- EN: muse -->
-  <Cinder_HairL.label>慕斯</Cinder_HairL.label>
+  <Cinder_HairL.label>TODO</Cinder_HairL.label>
   
   <!-- EN: rumple -->
-  <Cinder_HairM.label>凌乱</Cinder_HairM.label>
+  <Cinder_HairM.label>TODO</Cinder_HairM.label>
   
   <!-- EN: sideTail -->
-  <Cinder_HairN.label>侧马尾</Cinder_HairN.label>
+  <Cinder_HairN.label>TODO</Cinder_HairN.label>
   
   <!-- EN: solemn -->
-  <Cinder_HairO.label>庄重</Cinder_HairO.label>
+  <Cinder_HairO.label>TODO</Cinder_HairO.label>
   
   <!-- EN: wheat -->
-  <Cinder_HairP.label>稻穗</Cinder_HairP.label>
+  <Cinder_HairP.label>TODO</Cinder_HairP.label>
   
-  <Cinder_HairQ.label>暮光</Cinder_HairP.label>
-   
-  <Cinder_HairR.label>面粉</Cinder_HairP.label>
+  <!-- EN: twilight -->
+  <Cinder_HairQ.label>TODO</Cinder_HairQ.label>
   
-  <Cinder_HairS.label>甜饼</Cinder_HairP.label>
+  <!-- EN: flour -->
+  <Cinder_HairR.label>TODO</Cinder_HairR.label>
+  
+  <!-- EN: roti -->
+  <Cinder_HairS.label>TODO</Cinder_HairS.label>
+  
 </LanguageData>

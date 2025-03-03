@@ -5,10 +5,13 @@
   <Cinder_ElectricScythe.label>高周波镰刀</Cinder_ElectricScythe.label>
   <!-- EN: An electric ultrasonic sickle used for rapid cutting of flesh and blood, and can also be used for harvesting crops. -->
   <Cinder_ElectricScythe.description>一种用于快速切割血肉的电超声镰刀，也可用于收割作物。</Cinder_ElectricScythe.description>
-  <!-- EN: point -->
-  <Cinder_ElectricScythe.tools.point.label>尖端</Cinder_ElectricScythe.tools.point.label>
+  <!-- EN: handle -->
+  <Cinder_ElectricScythe.tools.handle.label>TODO</Cinder_ElectricScythe.tools.handle.label>
   <!-- EN: edge -->
   <Cinder_ElectricScythe.tools.edge.label>刀刃</Cinder_ElectricScythe.tools.edge.label>
+  
+  <!-- UNUSED -->
+  <Cinder_ElectricScythe.tools.point.label>尖端</Cinder_ElectricScythe.tools.point.label>
   
   <!-- EN: impact breaker -->
   <Cinder_ImpactBreaker.label>冲击锤</Cinder_ImpactBreaker.label>

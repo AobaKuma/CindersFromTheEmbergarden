@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: bullet -->
+  <Cider_ErosionBullet.label>TODO</Cider_ErosionBullet.label>
+  <!-- EN: {0} has been shot to death. -->
+  <Cider_ErosionBullet.deathMessage>TODO</Cider_ErosionBullet.deathMessage>
+  
   <!-- EN: bomb -->
   <Cinder_Bomb.label>爆炸</Cinder_Bomb.label>
   <!-- EN: {0} has died in an explosion. -->

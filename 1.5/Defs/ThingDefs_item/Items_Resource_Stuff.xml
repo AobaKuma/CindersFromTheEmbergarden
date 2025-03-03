@@ -15,7 +15,8 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
-      <MarketValue>0.75</MarketValue>
+      <MarketValue>1</MarketValue>
+	  <SellPriceFactor>0.1</SellPriceFactor>
       <Mass>0.25</Mass>
       <StuffPower_Armor_Sharp>1.1</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>0.7</StuffPower_Armor_Blunt>
@@ -47,14 +48,14 @@
         <Beauty>0</Beauty>
       </statOffsets>
       <statFactors>
-        <MaxHitPoints>2.5</MaxHitPoints>
+        <MaxHitPoints>2</MaxHitPoints>
         <Beauty>0.25</Beauty>
         <Flammability>0</Flammability>
         <WorkToMake>2.5</WorkToMake>
         <WorkToBuild>2.5</WorkToBuild>
         <DoorOpenSpeed>1</DoorOpenSpeed>
         <BedRestEffectiveness>0.85</BedRestEffectiveness>
-        <MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier>
+        <MeleeWeapon_CooldownMultiplier>1.1</MeleeWeapon_CooldownMultiplier>
       </statFactors>
       <statFactorsQuality>
         <li>

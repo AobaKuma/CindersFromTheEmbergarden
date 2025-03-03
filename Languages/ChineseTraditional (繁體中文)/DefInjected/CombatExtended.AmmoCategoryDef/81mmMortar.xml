@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: erosion -->
+  <Cinder_Erosion.label>侵蚀弹</Cinder_Erosion.label>
+  <!-- EN: Amorphous polymer ammunition that temporarily reduces enemy armor. -->
+  <Cinder_Erosion.description>无定形聚合物制作成的弹头，可以侵蚀敌人</Cinder_Erosion.description>
+  
+</LanguageData>

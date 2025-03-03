@@ -30,6 +30,7 @@
 	   <li Class="StockGenerator_SingleDef">
         <thingDef>Cinder_AmorphousPolymer</thingDef>
         <countRange>175~250</countRange>
+		<price>Exorbitant</price>
       </li>
 	  <li Class="StockGenerator_SingleDef">
         <thingDef>Synthread</thingDef>
@@ -54,6 +55,7 @@
 	  <li Class="StockGenerator_SingleDef">
         <thingDef>Cinder_EmptyAgentBottle</thingDef>
         <countRange>1</countRange>
+		<price>Expensive</price>
       </li>
 	  
 	   <li Class="StockGenerator_Animals">
@@ -193,6 +195,7 @@
 	   <li Class="StockGenerator_SingleDef">
         <thingDef>Cinder_AmorphousPolymer</thingDef>
         <countRange>175~250</countRange>
+		<price>Exorbitant</price>
       </li>
 	  <li Class="StockGenerator_SingleDef">
         <thingDef>Synthread</thingDef>
@@ -217,6 +220,7 @@
 	  <li Class="StockGenerator_SingleDef">
         <thingDef>Cinder_EmptyAgentBottle</thingDef>
         <countRange>1~2</countRange>
+		<price>Expensive</price>
       </li>
 	  <li Class="StockGenerator_Tag">
         <tradeTag>Cinder_Gun</tradeTag>

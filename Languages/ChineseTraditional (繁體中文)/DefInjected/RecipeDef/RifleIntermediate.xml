@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make intermediate rifle (Erosion) cartridge x500 -->
+  <MakeAmmo_RifleIntermediate_Erosion.label>制作中间威力步枪弹(侵蚀弹)x500</MakeAmmo_RifleIntermediate_Erosion.label>
+  <!-- EN: Craft 500 intermediate rifle (Erosion) cartridges. -->
+  <MakeAmmo_RifleIntermediate_Erosion.description>制作中间威力步枪弹(侵蚀弹)</MakeAmmo_RifleIntermediate_Erosion.description>
+  <!-- EN: Making intermediate rifle (Erosion) cartridges. -->
+  <MakeAmmo_RifleIntermediate_Erosion.jobString>正在制作中间威力步枪弹(侵蚀弹)</MakeAmmo_RifleIntermediate_Erosion.jobString>
+  
+</LanguageData>
