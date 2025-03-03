@@ -459,11 +459,16 @@
 		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
 		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
 		<initialSeverity>1</initialSeverity>
-		<description>The armor on this person's body has been eroded.</description>
+		<description>This person's body has been eroded.</description>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
 				<disappearsAfterTicks>3000</disappearsAfterTicks>
 				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="Embergarden.HediffCompProperties_EexclusiveHediff">
+				<exclusiveHediff>
+					<li>Cinder_Erosion_Bullet</li>
+				</exclusiveHediff>
 			</li>
 		</comps>
 		<stages>
@@ -479,6 +484,42 @@
 				<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
 				<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
 			    </statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Cinder_Erosion_Bullet</defName>
+		<label>erosion</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<initialSeverity>1</initialSeverity>
+		<description>This person's body has been eroded.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>3000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="Embergarden.HediffCompProperties_EexclusiveHediff">
+				<exclusiveHediff>
+					<li>Cinder_Erosion</li>
+				</exclusiveHediff>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+				<ToxicEnvironmentResistance>-0.5</ToxicEnvironmentResistance>
+				<ArmorRating_Heat>-1</ArmorRating_Heat>
+			    </statOffsets>
+				<statFactors>
+				<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+				<IncomingDamageFactor>1.20</IncomingDamageFactor>
+			</statFactors>
+		    <painFactor>1.5</painFactor>
+			<painOffset>0.1</painOffset>
 			</li>
 		</stages>
 	</HediffDef>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: pistol cartridge (Erosion) -->
+  <Ammo_Pistol_Erosion.label>手枪弹(侵蚀弹)</Ammo_Pistol_Erosion.label>
+  <!-- EN: Common pistol cartridge used by a variety of handguns and SMGs. -->
+  <Ammo_Pistol_Erosion.description>各种手枪和冲锋枪使用的普通手枪子弹。</Ammo_Pistol_Erosion.description>
+  
+</LanguageData>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 12.7x108mm (Erosion) -->
+  <Ammo_127x108mm_Erosion.label>12.7x108mm 机枪弹 (侵蚀弹)</Ammo_127x108mm_Erosion.label>
+  <!-- EN: Large caliber bullet used by many heavy machine guns and anti-materiel rifles. -->
+  <Ammo_127x108mm_Erosion.description>许多重机枪与反器材步枪使用的大口径子弹</Ammo_127x108mm_Erosion.description>
+  
+  <!-- EN: 12.7x108mm bullet (Erosion) -->
+  <Bullet_127x108mm_Erosion.label>12.7x108mm 机枪弹 (侵蚀弹)</Bullet_127x108mm_Erosion.label>
+  
+</LanguageData>

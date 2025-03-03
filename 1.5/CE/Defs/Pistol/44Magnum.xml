@@ -37,7 +37,7 @@
 		</projectile>
 	</ThingDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_44Magnum_Erosion</defName>
 		<label>make .44 Magnum (Erosion) cartridge x500</label>
 		<description>Craft 500 .44 Magnum (Erosion) cartridges.</description>

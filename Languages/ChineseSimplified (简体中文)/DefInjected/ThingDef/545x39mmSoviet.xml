@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 5.45x39mm Soviet (Erosion) -->
+  <Ammo_545x39mmSoviet_Erosion.label>5.45x39mm 苏联制式步枪弹 (侵蚀弹)</Ammo_545x39mmSoviet_Erosion.label>
+  <!-- EN: Small, high-velocity rifle bullet used in a variety of assault rifles. -->
+  <Ammo_545x39mmSoviet_Erosion.description>小型高速步枪子弹，用于各种突击步枪。</Ammo_545x39mmSoviet_Erosion.description>
+  
+  <!-- EN: 5.45mm Soviet bullet (Erosion) -->
+  <Bullet_545x39mmSoviet_Erosion.label>5.45x39mm 苏联制式步枪弹 (侵蚀弹)</Bullet_545x39mmSoviet_Erosion.label>
+  
+  <!-- EN: 5.45mm Soviet bullet (Erosion) -->
+  <Bullet_545x39mmSoviet_Erosion_SB.label>5.45x39mm 苏联制式步枪弹 (侵蚀弹)</Bullet_545x39mmSoviet_Erosion_SB.label>
+  
+</LanguageData>

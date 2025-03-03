@@ -43,7 +43,7 @@
   <Cinder_ErosionAgent.label>侵蚀剂</Cinder_ErosionAgent.label>
   <!-- EN: A drug containing large amount of amorphous polymer, which imparts special abilities after injection. -->
   <Cinder_ErosionAgent.description>一种含有大量无定形聚合物的药物，注射后可以获得一些特殊能力。</Cinder_ErosionAgent.description>
-  <!-- EN: Consume {0_label} -->
+  <!-- EN: Use {0_label} -->
   <Cinder_ErosionAgent.comps.CompUsable.useLabel>注射{0_label}</Cinder_ErosionAgent.comps.CompUsable.useLabel>
   
   <!-- EN: extra armour plates -->
@@ -67,9 +67,9 @@
   <!-- EN: analyze extra armour plate -->
   <Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.jobString>分析附加装甲板</Cinder_ExtraArmour.comps.CompAnalyzableUnlockResearch.jobString>
   
-  <!-- EN: extra armour plates -->
+  <!-- EN: heavy armour plates -->
   <Cinder_HeavyExtraArmour.label>重型装甲板</Cinder_HeavyExtraArmour.label>
-  <!-- EN: A sturdy metal plate separated from amorphous polymer. Once damaged, the armor plating must be completely replaced. -->
+  <!-- EN: A heavy sturdy metal plate separated from amorphous polymer. Once damaged, the armor plating must be completely replaced. -->
   <Cinder_HeavyExtraArmour.description>与无定形聚合物分离的重型坚固金属板，可以被任何人使用，一旦损坏，必须完全更换装甲板。</Cinder_HeavyExtraArmour.description>
   <!-- EN: Use {0_label} -->
   <Cinder_HeavyExtraArmour.comps.CompUsable.useLabel>使用{0_label}</Cinder_HeavyExtraArmour.comps.CompUsable.useLabel>
@@ -78,9 +78,9 @@
   <Cinder_RegeneratedEnhancedSerum.label>再生强化血清</Cinder_RegeneratedEnhancedSerum.label>
   <!-- EN: A type of eroded golden serum, injected into the human body, enhances the regeneration ability of amorphous polymers and gives the user the ability to come back to life after death. -->
   <Cinder_RegeneratedEnhancedSerum.description>一种被侵蚀的金色血清，注射它的人体内的无定形聚合物再生能力会被增强，并且会让使用者拥有一次死而复生的能力。</Cinder_RegeneratedEnhancedSerum.description>
-  <!-- EN: Target others -->
+  <!-- EN: Inject serum for others -->
   <Cinder_RegeneratedEnhancedSerum.comps.CompUseableTargetable.targetingFloatMenuLabel>为其他人注射血清</Cinder_RegeneratedEnhancedSerum.comps.CompUseableTargetable.targetingFloatMenuLabel>
-  <!-- EN: Consume {0_label} -->
+  <!-- EN: Use {0_label} -->
   <Cinder_RegeneratedEnhancedSerum.comps.CompUseableTargetable.useLabel>注射{0_label}</Cinder_RegeneratedEnhancedSerum.comps.CompUseableTargetable.useLabel>
   
 </LanguageData>

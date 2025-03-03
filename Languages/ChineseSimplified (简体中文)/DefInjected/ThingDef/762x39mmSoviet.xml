@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 7.62x39mm Soviet (Erosion) -->
+  <Ammo_762x39mmSoviet_Erosion.label>7.62x39mm 苏联制式步枪弹 (侵蚀弹)</Ammo_762x39mmSoviet_Erosion.label>
+  <!-- EN: Intermediate rifle cartridge used by certain older assault rifles. -->
+  <Ammo_762x39mmSoviet_Erosion.description>中威力步枪子弹，用于各种突击步枪。</Ammo_762x39mmSoviet_Erosion.description>
+  
+  <!-- EN: 7.62mm Soviet bullet (Erosion) -->
+  <Bullet_762x39mmSoviet_Erosion.label>7.62x39mm 苏联制式步枪弹 (侵蚀弹)</Bullet_762x39mmSoviet_Erosion.label>
+  
+  <!-- EN: 7.62mm Soviet bullet (Erosion) -->
+  <Bullet_762x39mmSoviet_Erosion_SB.label>7.62x39mm 苏联制式步枪弹 (侵蚀弹)</Bullet_762x39mmSoviet_Erosion_SB.label>
+  
+</LanguageData>

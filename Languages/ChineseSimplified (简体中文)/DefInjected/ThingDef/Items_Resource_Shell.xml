@@ -4,9 +4,4 @@
   <!-- EN: erosion shell -->
   <CinderBullet_Shell_Erosion.label>侵蚀弹</CinderBullet_Shell_Erosion.label>
   
-  <!-- EN: erosion shell -->
-  <CinderShell_Erosion.label>侵蚀弹</CinderShell_Erosion.label>
-  <!-- EN: A type of explosive shell that uses amorphous polymers as charges, which will erode the armor of affected enemies during explosion, causing them to suffer higher subsequent damage. Can be fired from mortars or installed as a trap. Explodes when damaged. -->
-  <CinderShell_Erosion.description>一种以无定形聚合物作为装药的爆炸弹药，在爆炸时会侵蚀受影响敌人的护甲，使他们会受到更高的后续伤害，可以使用迫击炮发射，也可以作为陷阱安装，被摧毁时会爆炸。</CinderShell_Erosion.description>
-  
 </LanguageData>

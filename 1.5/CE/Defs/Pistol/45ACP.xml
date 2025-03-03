@@ -19,13 +19,13 @@
 		<label>.45 ACP bullet (Erosion)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Cider_ErosionBullet</damageDef>
-			<damageAmountBase>7</damageAmountBase>
-			<armorPenetrationSharp>7</armorPenetrationSharp>
+			<damageAmountBase>6</damageAmountBase>
+			<armorPenetrationSharp>11</armorPenetrationSharp>
 			<armorPenetrationBlunt>10.860</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_45ACP_Erosion</defName>
 		<label>make .45 ACP (Erosion) cartridge x500</label>
 		<description>Craft 500 .45 ACP (Erosion) cartridges.</description>

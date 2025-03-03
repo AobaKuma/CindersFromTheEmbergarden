@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make .44 Magnum (Erosion) cartridge x500 -->
+  <MakeAmmo_44Magnum_Erosion.label>制作.44 马格南手枪弹(侵蚀弹)x500</MakeAmmo_44Magnum_Erosion.label>
+  <!-- EN: Craft 500 .44 Magnum (Erosion) cartridges. -->
+  <MakeAmmo_44Magnum_Erosion.description>制作.44 马格南手枪弹(侵蚀弹)</MakeAmmo_44Magnum_Erosion.description>
+  <!-- EN: Making .44 Magnum (Erosion) cartridges. -->
+  <MakeAmmo_44Magnum_Erosion.jobString>正在制作.44 马格南手枪弹(侵蚀弹)</MakeAmmo_44Magnum_Erosion.jobString>
+  
+</LanguageData>

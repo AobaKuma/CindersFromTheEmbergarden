@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: magnum pistol cartridge (Erosion) -->
+  <Ammo_PistolMagnum_Erosion.label>马格南手枪弹(侵蚀弹)</Ammo_PistolMagnum_Erosion.label>
+  <!-- EN: Powerful pistol cartridge designed primarily for revolvers. -->
+  <Ammo_PistolMagnum_Erosion.description>主要为左轮手枪设计的大威力手枪弹药。</Ammo_PistolMagnum_Erosion.description>
+  
+</LanguageData>

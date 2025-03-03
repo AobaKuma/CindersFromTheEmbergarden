@@ -6,6 +6,9 @@
   <!-- EN: TODO -->
   <Cinder_Mounted_AA.description>一种用于对空的霰弹武器舱。</Cinder_Mounted_AA.description>
   <!-- EN: anti air turret -->
+  <Cinder_Mounted_AA.verbs.Verb_ShootCE.label>霰弹武器舱</Cinder_Mounted_AA.verbs.Verb_ShootCE.label>
+  
+  <!-- UNUSED -->
   <Cinder_Mounted_AA.verbs.Verb_Shoot.label>霰弹武器舱</Cinder_Mounted_AA.verbs.Verb_Shoot.label>
   
   <!-- EN: exoskeleton minigun -->
@@ -13,6 +16,9 @@
   <!-- EN: TODO -->
   <Cinder_Mounted_EXOminigun.description>一种小口径的速射机枪，用于压制近距离的步兵。</Cinder_Mounted_EXOminigun.description>
   <!-- EN: exoskeleton minigun -->
+  <Cinder_Mounted_EXOminigun.verbs.Verb_ShootCE.label>速射机枪</Cinder_Mounted_EXOminigun.verbs.Verb_ShootCE.label>
+  
+  <!-- UNUSED -->
   <Cinder_Mounted_EXOminigun.verbs.Verb_Shoot.label>速射机枪</Cinder_Mounted_EXOminigun.verbs.Verb_Shoot.label>
   
   <!-- EN: exoskeleton turret -->
@@ -20,6 +26,9 @@
   <!-- EN: TODO -->
   <Cinder_Mounted_EXOturret.description>一种用于对近距离目标的霰弹武器舱。</Cinder_Mounted_EXOturret.description>
   <!-- EN: exoskeleton turret -->
+  <Cinder_Mounted_EXOturret.verbs.Verb_ShootCE.label>霰弹武器舱</Cinder_Mounted_EXOturret.verbs.Verb_ShootCE.label>
+  
+  <!-- UNUSED -->
   <Cinder_Mounted_EXOturret.verbs.Verb_Shoot.label>霰弹武器舱</Cinder_Mounted_EXOturret.verbs.Verb_Shoot.label>
   
   <!-- EN: rocket pod -->
@@ -27,6 +36,9 @@
   <!-- EN: TODO -->
   <Cinder_Mounted_Rocket.description>发射小型火箭的火箭巢。</Cinder_Mounted_Rocket.description>
   <!-- EN: rocket pod -->
+  <Cinder_Mounted_Rocket.verbs.Verb_ShootCE.label>火箭巢</Cinder_Mounted_Rocket.verbs.Verb_ShootCE.label>
+  
+  <!-- UNUSED -->
   <Cinder_Mounted_Rocket.verbs.Verb_Shoot.label>火箭巢</Cinder_Mounted_Rocket.verbs.Verb_Shoot.label>
   
 </LanguageData>

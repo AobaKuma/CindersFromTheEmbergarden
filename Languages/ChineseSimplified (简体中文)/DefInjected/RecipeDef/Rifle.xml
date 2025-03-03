@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make rifle (Erosion) cartridge x500 -->
+  <MakeAmmo_Rifle_Erosion.label>制作步枪弹(侵蚀弹)x500</MakeAmmo_Rifle_Erosion.label>
+  <!-- EN: Craft 500 rifle (Erosion) cartridges. -->
+  <MakeAmmo_Rifle_Erosion.description>制作步枪弹(侵蚀弹)</MakeAmmo_Rifle_Erosion.description>
+  <!-- EN: Making rifle (Erosion) cartridges. -->
+  <MakeAmmo_Rifle_Erosion.jobString>正在制作步枪弹(侵蚀弹)</MakeAmmo_Rifle_Erosion.jobString>
+  
+</LanguageData>

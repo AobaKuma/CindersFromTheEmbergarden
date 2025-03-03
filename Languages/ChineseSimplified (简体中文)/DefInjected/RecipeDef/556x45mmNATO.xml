@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make 5.56x45mm NATO (Erosion) cartridge x500 -->
+  <MakeAmmo_556x45mmNATO_Erosion.label>制作5.56x45mm 北约标准步枪弹(侵蚀弹)x500</MakeAmmo_556x45mmNATO_Erosion.label>
+  <!-- EN: Craft 500 5.56x45mm NATO (Erosion) cartridges. -->
+  <MakeAmmo_556x45mmNATO_Erosion.description>制作5.56x45mm 北约标准步枪弹(侵蚀弹)</MakeAmmo_556x45mmNATO_Erosion.description>
+  <!-- EN: Making 5.56x45mm NATO (Erosion) cartridges. -->
+  <MakeAmmo_556x45mmNATO_Erosion.jobString>正在制作5.56x45mm 北约标准步枪弹(侵蚀弹)x500</MakeAmmo_556x45mmNATO_Erosion.jobString>
+  
+</LanguageData>

@@ -28,7 +28,7 @@
 		</projectile>
 	</ThingDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_145x114mm_Erosion</defName>
 		<label>make 14.5x114mm (Erosion) cartridge x200</label>
 		<description>Craft 200 14.5x114mm (Erosion) cartridges.</description>

@@ -14,7 +14,7 @@
 		<cookOffProjectile>Bullet_45ACP_Erosion</cookOffProjectile>
 	</ThingDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_Pistol_Erosion</defName>
 		<label>make pistol (Erosion) cartridge x500</label>
 		<description>Craft 500 pistol (Erosion) cartridges.</description>

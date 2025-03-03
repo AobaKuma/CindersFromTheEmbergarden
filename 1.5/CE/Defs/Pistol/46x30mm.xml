@@ -22,14 +22,14 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Cider_ErosionBullet</damageDef>
 			<damageAmountBase>5</damageAmountBase>
-			<armorPenetrationSharp>12</armorPenetrationSharp>
+			<armorPenetrationSharp>16</armorPenetrationSharp>
 			<armorPenetrationBlunt>9.72</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 
 	<!-- ==================== Recipes ========================== -->
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_46x30mm_CinderErosion</defName>
 		<label>make 4.6x30mm (Erosion) cartridge x500</label>
 		<description>Craft 500 4.6x30mm (Erosion) cartridges.</description>

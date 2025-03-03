@@ -13,7 +13,7 @@
   
   <!-- EN: exotic -->
   <Cinder_Apparel_Exotic.label>异域</Cinder_Apparel_Exotic.label>
-  <!-- EN: A exotic dancer costume, completely defenseless, but very capable of adorning the body.It seems that there is some strange device installed on it, and the person wearing it will enter a state of heightened libido. -->
+  <!-- EN: A exotic dancer costume, completely defenseless.It seems that there is some strange device installed on it, and the person wearing it will enter a state of heightened libido. -->
   <Cinder_Apparel_Exotic.description>一条异域风情的舞娘服装，完全没有防御力，上面似乎安装有一种奇怪的药物散发设备，穿着它的人会不受控制的性欲高涨。</Cinder_Apparel_Exotic.description>
   
   <!-- EN: ghost clock -->
@@ -31,7 +31,7 @@
   <!-- EN: The heavy armor suit of the Ghoul unit, which uses artificial muscles and amorphous polymers to form a sturdy suit, allows the Ghoul unit to charge without damage under fire suppression. -->
   <Cinder_Apparel_GhoulUnitGear.description>一套尸鬼单位使用的重装甲装备，使用人造肌肉和无定形聚合物组合成坚固的装甲，使尸鬼单位在面对火力压制时不受伤害。</Cinder_Apparel_GhoulUnitGear.description>
   
-  <!-- EN: night service -->
+  <!-- EN: maid -->
   <Cinder_Apparel_MaidCostume.label>女仆</Cinder_Apparel_MaidCostume.label>
   <!-- EN: A delicate special maid outfit, using very little fabric, completely defenseless.It seems that there is some strange device installed on it, and the person wearing it will enter a state of heightened libido. -->
   <Cinder_Apparel_MaidCostume.description>一套精致的特殊女仆装，布料很少，完全没有防御力，上面似乎安装有一种奇怪的药物散发设备，穿着它的人会不受控制的性欲高涨。</Cinder_Apparel_MaidCostume.description>

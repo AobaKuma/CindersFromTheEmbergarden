@@ -266,7 +266,7 @@
 		<defName>Cider_ErosionBullet</defName>
 		<additionalHediffs>
 			<li>
-				<hediff>Cinder_Erosion</hediff>
+				<hediff>Cinder_Erosion_Bullet</hediff>
 				<severityPerDamageDealt>1</severityPerDamageDealt>
 				<inverseStatScaling>true</inverseStatScaling>
 				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>

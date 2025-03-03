@@ -31,7 +31,7 @@
 
 	<!-- ==================== Recipes ========================== -->
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_50BMG_Erosion</defName>
 		<label>make .50 BMG (Erosion) cartridge x200</label>
 		<description>Craft 200 .50 BMG (Erosion) cartridges.</description>

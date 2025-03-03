@@ -34,13 +34,13 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>7</damageAmountBase>
 			<damageDef>Cider_ErosionBullet</damageDef>
-			<armorPenetrationSharp>15.75</armorPenetrationSharp>
+			<armorPenetrationSharp>16</armorPenetrationSharp>
 			<armorPenetrationBlunt>38.34</armorPenetrationBlunt>
 			<speed>167</speed>
 		</projectile>
 	</ThingDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_762x39mmSoviet_Erosion</defName>
 		<label>make 7.62x39mm Soviet (Erosion) cartridge x500</label>
 		<description>Craft 500 7.62x39mm Soviet (Erosion) cartridges.</description>

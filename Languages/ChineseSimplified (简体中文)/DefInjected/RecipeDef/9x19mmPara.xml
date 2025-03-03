@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make 9x19mm Parabellum (Erosion) cartridge x500 -->
+  <MakeAmmo_9x19mmPara_Erosion.label>制作9x19mm 帕拉贝鲁姆手枪弹(侵蚀弹)x500</MakeAmmo_9x19mmPara_Erosion.label>
+  <!-- EN: Craft 500 9x19mm Parabellum (Erosion) cartridges. -->
+  <MakeAmmo_9x19mmPara_Erosion.description>制作9x19mm 帕拉贝鲁姆手枪弹(侵蚀弹)</MakeAmmo_9x19mmPara_Erosion.description>
+  <!-- EN: Making 9x19mm Parabellum (Erosion) cartridges. -->
+  <MakeAmmo_9x19mmPara_Erosion.jobString>正在制作9x19mm 帕拉贝鲁姆手枪弹(侵蚀弹)</MakeAmmo_9x19mmPara_Erosion.jobString>
+  
+</LanguageData>

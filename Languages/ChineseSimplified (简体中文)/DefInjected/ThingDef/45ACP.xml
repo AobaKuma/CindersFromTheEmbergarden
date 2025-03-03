@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: .45 ACP (Erosion) -->
+  <Ammo_45ACP_Erosion.label>.45 ACP手枪弹 (侵蚀弹)</Ammo_45ACP_Erosion.label>
+  <!-- EN: Pistol cartridge favoured for its above average stopping power.
+\n\nErosion:
+\nAmorphous polymer ammunition that temporarily reduces enemy armor.
+\n\n使用者: -->
+  <Ammo_45ACP_Erosion.description>手枪弹，因其高于平均水平的停止能力而受到青睐。</Ammo_45ACP_Erosion.description>
+  
+  <!-- EN: .45 ACP bullet (Erosion) -->
+  <Bullet_45ACP_Erosion.label>.45 ACP手枪弹 (侵蚀弹)</Bullet_45ACP_Erosion.label>
+  <!-- EN: pistol -->
+  <Bullet_45ACP_Erosion.projectile.genericLabelOverride>.45 ACP手枪弹 (侵蚀弹)</Bullet_45ACP_Erosion.projectile.genericLabelOverride>
+  
+</LanguageData>

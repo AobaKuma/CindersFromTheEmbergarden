@@ -5,7 +5,7 @@
 		<defName>Ammo_303British_Erosion</defName>
 		<label>.303 British (Erosion)</label>
 		<graphicData>
-			<texPath>Things/Ammo/Rifle/Ero</texPath>
+			<texPath>Things/Ammo/762Ero</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -28,7 +28,7 @@
 		</projectile>
 	</ThingDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_303British_Erosion</defName>
 		<label>make .303 British (Erosion) cartridge x500</label>
 		<description>Craft 500 .303 British (Erosion) cartridges.</description>

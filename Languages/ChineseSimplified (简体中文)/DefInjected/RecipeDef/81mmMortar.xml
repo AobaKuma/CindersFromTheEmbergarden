@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make erosion shell x5 -->
+  <MakeCinderShell_ErosionCE.label>制作侵蚀弹x5</MakeCinderShell_ErosionCE.label>
+  <!-- EN: Craft 5 81mm erosion mortar shells with amorphous polymer. -->
+  <MakeCinderShell_ErosionCE.description>用无定形聚合物制作81mm侵蚀迫击炮弹x5</MakeCinderShell_ErosionCE.description>
+  <!-- EN: Making 81mm erosion mortar shells. -->
+  <MakeCinderShell_ErosionCE.jobString>正在制作81mm侵蚀迫击炮弹x5</MakeCinderShell_ErosionCE.jobString>
+  
+</LanguageData>

@@ -31,12 +31,12 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Cider_ErosionBullet</damageDef>
 			<damageAmountBase>6</damageAmountBase>
-			<armorPenetrationSharp>6.6</armorPenetrationSharp>
+			<armorPenetrationSharp>10</armorPenetrationSharp>
 			<armorPenetrationBlunt>6.70</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
 		<defName>MakeAmmo_9x19mmPara_Erosion</defName>
 		<label>make 9x19mm Parabellum (Erosion) cartridge x500</label>
 		<description>Craft 500 9x19mm Parabellum (Erosion) cartridges.</description>

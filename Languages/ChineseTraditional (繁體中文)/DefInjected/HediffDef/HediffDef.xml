@@ -18,7 +18,7 @@
   <!-- EN: erosion -->
   <Cinder_Erosion.label>侵蚀</Cinder_Erosion.label>
   <!-- EN: The armor on this person's body has been eroded. -->
-  <Cinder_Erosion.description>这个单位的装甲被侵蚀了。</Cinder_Erosion.description>
+  <Cinder_Erosion.description>这个单位被侵蚀了。</Cinder_Erosion.description>
   
   <!-- EN: armour Plates -->
   <Cinder_ExtraArmourPlate.label>装甲板</Cinder_ExtraArmourPlate.label>

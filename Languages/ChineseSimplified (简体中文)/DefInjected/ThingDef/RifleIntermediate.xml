@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: intermediate rifle cartridge (Erosion) -->
+  <Ammo_RifleIntermediate_Erosion.label>中间威力步枪弹(侵蚀弹)</Ammo_RifleIntermediate_Erosion.label>
+  <!-- EN: Intermediate power rifle ammunition, used mainly by assault rifles. -->
+  <Ammo_RifleIntermediate_Erosion.description>中等威力步枪弹药，主要用于突击步枪。</Ammo_RifleIntermediate_Erosion.description>
+  
+</LanguageData>
