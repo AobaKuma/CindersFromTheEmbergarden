@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="545x39mmSovietBase">
+		<defName>Ammo_545x39mmSoviet_Erosion</defName>
+		<label>5.45x39mm Soviet (Erosion)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Rifle/Ero</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.07</MarketValue>
+			<Mass>0.01</Mass>
+		</statBases>
+		<ammoClass>Cinder_Erosion</ammoClass>
+		<cookOffProjectile>Bullet_545x39mmSoviet_Erosion</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base545x39mmSovietBullet">
+		<defName>Bullet_545x39mmSoviet_Erosion</defName>
+		<label>5.45mm Soviet bullet (Erosion)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Cider_ErosionBullet</damageDef>
+			<damageAmountBase>7</damageAmountBase>
+			<armorPenetrationSharp>19.25</armorPenetrationSharp>
+			<armorPenetrationBlunt>36.6</armorPenetrationBlunt>
+			<speed>219</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base545x39mmSovietBullet">
+		<defName>Bullet_545x39mmSoviet_Erosion_SB</defName>
+		<label>5.45mm Soviet bullet (Erosion)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Cider_ErosionBullet</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<armorPenetrationSharp>17.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>25.5</armorPenetrationBlunt>
+			<speed>192</speed>
+		</projectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_545x39mmSoviet_Erosion</defName>
+		<label>make 5.45x39mm Soviet (Erosion) cartridge x500</label>
+		<description>Craft 500 5.45x39mm Soviet (Erosion) cartridges.</description>
+		<jobString>Making 5.45x39mm Soviet (Erosion) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Cinder_AmorphousPolymer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_545x39mmSoviet_Erosion>500</Ammo_545x39mmSoviet_Erosion>
+		</products>
+		<recipeUsers Inherit="false">
+			<li>Cinder_AncientWorkstation</li>
+		</recipeUsers>
+		<workAmount>2000</workAmount>
+	</RecipeDef>
+
+</Defs>

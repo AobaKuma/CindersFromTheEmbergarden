@@ -261,4 +261,16 @@
 			</li>
 		</additionalHediffs>
 	</DamageDef>
+
+	<DamageDef ParentName="Bullet">
+		<defName>Cider_ErosionBullet</defName>
+		<additionalHediffs>
+			<li>
+				<hediff>Cinder_Erosion</hediff>
+				<severityPerDamageDealt>1</severityPerDamageDealt>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
 </Defs>
