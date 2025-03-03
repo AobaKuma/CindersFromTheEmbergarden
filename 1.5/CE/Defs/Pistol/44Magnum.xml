@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="44MagnumBase">
+		<defName>Ammo_44Magnum_Erosion</defName>
+		<label>.44 Magnum (Erosion)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Pistol/Ero</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.1</MarketValue>
+		</statBases>
+		<ammoClass>Cinder_Erosion</ammoClass>
+		<cookOffProjectile>Bullet_44Magnum_Erosion</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base44MagnumBullet">
+		<defName>Bullet_44Magnum_Erosion</defName>
+		<label>.44 Magnum bullet (Erosion)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Cider_ErosionBullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationSharp>12</armorPenetrationSharp>
+			<armorPenetrationBlunt>23.280</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base44MagnumBullet">
+		<defName>Bullet_44Magnum_HV_Erosion</defName>
+		<label>.44 Magnum bullet (Erosion)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Cider_ErosionBullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<armorPenetrationSharp>14</armorPenetrationSharp>
+			<armorPenetrationBlunt>47.04</armorPenetrationBlunt>
+			<speed>114</speed>
+		</projectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_44Magnum_Erosion</defName>
+		<label>make .44 Magnum (Erosion) cartridge x500</label>
+		<description>Craft 500 .44 Magnum (Erosion) cartridges.</description>
+		<jobString>Making .44 Magnum (Erosion) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Cinder_AmorphousPolymer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_44Magnum_Erosion>500</Ammo_44Magnum_Erosion>
+		</products>
+		<recipeUsers Inherit="false">
+			<li>Cinder_AncientWorkstation</li>
+		</recipeUsers>
+		<workAmount>2880</workAmount>
+	</RecipeDef>
+</Defs>

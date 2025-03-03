@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo127x108mmBase">
+		<defName>Ammo_127x108mm_Erosion</defName>
+		<label>12.7x108mm (Erosion)</label>
+		<graphicData>
+			<texPath>Things/Ammo/HighCaliber/Ero</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.61</MarketValue>
+			<Mass>0.112</Mass>
+		</statBases>
+		<ammoClass>Cinder_Erosion</ammoClass>
+		<cookOffProjectile>Bullet_127x108mm_Erosion</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base127x108mmBullet">
+		<defName>Bullet_127x108mm_Erosion</defName>
+		<label>12.7x108mm bullet (Erosion)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Cider_ErosionBullet</damageDef>
+			<speed>216</speed>
+			<damageAmountBase>22</damageAmountBase>
+			<armorPenetrationSharp>49</armorPenetrationSharp>
+			<armorPenetrationBlunt>459.3</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_127x108mm_Erosion</defName>
+		<label>make 12.7x108mm (Erosion) cartridge x200</label>
+		<description>Craft 200 12.7x108mm (Erosion) cartridges.</description>
+		<jobString>Making 12.7x108mm (Erosion) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>34</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>34</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Cinder_AmorphousPolymer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_127x108mm_Erosion>200</Ammo_127x108mm_Erosion>
+		</products>
+		<recipeUsers Inherit="false">
+			<li>Cinder_AncientWorkstation</li>
+		</recipeUsers>
+		<workAmount>7000</workAmount>
+	</RecipeDef>
+
+</Defs>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoAntiMaterielBase">
+		<defName>Ammo_AntiMateriel_Erosion</defName>
+		<label>anti-materiel cartridge (Erosion)</label>
+		<graphicData>
+			<texPath>Things/Ammo/HighCaliber/Ero</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.57</MarketValue>
+			<Mass>0.099</Mass>
+		</statBases>
+		<ammoClass>Cinder_Erosion</ammoClass>
+		<cookOffProjectile>Bullet_50BMG_Erosion</cookOffProjectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
+		<defName>MakeAmmo_AntiMateriel_Erosion</defName>
+		<label>make anti-materiel (Erosion) cartridge x200</label>
+		<description>Craft 200 anti-materiel (Erosion) cartridges.</description>
+		<jobString>Making anti-materiel (Erosion) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Cinder_AmorphousPolymer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_AntiMateriel_Erosion>200</Ammo_AntiMateriel_Erosion>
+		</products>
+		<recipeUsers Inherit="false">
+			<li>Cinder_AncientWorkstation</li>
+		</recipeUsers>
+		<workAmount>6600</workAmount>
+	</RecipeDef>
+
+</Defs>
