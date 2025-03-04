@@ -626,6 +626,25 @@
 	</HediffDef>
 	
 	<HediffDef>
+		<defName>Cinder_ArtificiaLife</defName>
+		<label>artificial life</label>
+		<description>Unable to conceive.</description>
+		<hediffClass>Embergarden.Hediff_DownedAction</hediffClass>
+		<defaultLabelColor>(0, 0, 0)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<statFactors>
+                  <Fertility>0</Fertility>
+                </statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
 	<defName>Cinder_SrangeSolution</defName>
 		<label>strange solution</label>
 		<description>A harmless medication that often distracts people and makes them feel uncontrollable libido.</description>

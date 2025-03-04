@@ -19,6 +19,7 @@
 			<li Class="Embergarden.CompProperties_AddHediff">
 				<hediffDefs>
 					<li>Cinder_Regen</li>
+					<li>Cinder_ArtificiaLife</li>
 				</hediffDefs>
 			</li>
 			<li Class="CompProperties_Spawner">

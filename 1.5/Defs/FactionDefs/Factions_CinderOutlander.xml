@@ -258,7 +258,7 @@
 	<canUseAvoidGrid>true</canUseAvoidGrid>
 	<autoFlee>false</autoFlee>
 	
-    <factionIconPath>UI/Icon/fleetIcon</factionIconPath>
+    <factionIconPath>UI/Icon/Culture_Icon</factionIconPath>
     <techLevel>Archotech</techLevel>
 	<earliestRaidDays>60</earliestRaidDays>
     <permanentEnemy>true</permanentEnemy>
