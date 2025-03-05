@@ -579,7 +579,7 @@
 				<forcedMissRadius>0.5</forcedMissRadius>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Cinder_Bullet_RPG</defaultProjectile>
-				<warmupTime>4.5</warmupTime>
+				<warmupTime>2</warmupTime>
 				<range>30.9</range>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
@@ -616,7 +616,7 @@
 					<verbClass>Verb_Shoot</verbClass>
 					<hasStandardCommand>true</hasStandardCommand>
 					<defaultProjectile>Bullet_Minigun</defaultProjectile>
-					<warmupTime>1</warmupTime>
+					<warmupTime>0.4</warmupTime>
 					<range>30.9</range>
 					<burstShotCount>25</burstShotCount>
 					<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
@@ -638,6 +638,11 @@
 				<sound>Cinder_Transform</sound>
 			</li>
 		</comps>
+		
+		<equippedStatOffsets>
+             <AimingDelayFactor>1.5</AimingDelayFactor>
+        </equippedStatOffsets>
+		
 		<modExtensions>
 			<li Class="Embergarden.DefModExtension_WeaponAltGraphic">
 				<graphicData>
