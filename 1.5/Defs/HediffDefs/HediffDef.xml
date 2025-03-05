@@ -638,7 +638,7 @@
 			<li>
 				<becomeVisible>false</becomeVisible>
 				<statFactors>
-                  <Fertility>0</Fertility>
+                  <Fertility  MayRequire="Ludeon.RimWorld.Biotech">0</Fertility>
                 </statFactors>
 			</li>
 		</stages>

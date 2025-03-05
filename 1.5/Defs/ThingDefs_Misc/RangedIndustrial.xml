@@ -579,7 +579,7 @@
 				<forcedMissRadius>0.5</forcedMissRadius>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Cinder_Bullet_RPG</defaultProjectile>
-				<warmupTime>5</warmupTime>
+				<warmupTime>4.5</warmupTime>
 				<range>30.9</range>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
