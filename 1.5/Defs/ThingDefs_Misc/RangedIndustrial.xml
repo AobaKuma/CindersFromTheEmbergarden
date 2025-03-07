@@ -9,7 +9,7 @@
 			<li>Cinder_Gun</li>
 		</tradeTags>
 		<recipeMaker>
-		    <recipeUsers Inherit="false">
+			<recipeUsers Inherit="false">
 				<li>Cinder_AncientWorkstation</li>
 			</recipeUsers>
 		</recipeMaker>
@@ -638,11 +638,11 @@
 				<sound>Cinder_Transform</sound>
 			</li>
 		</comps>
-		
+
 		<equippedStatOffsets>
-             <AimingDelayFactor>1.5</AimingDelayFactor>
-        </equippedStatOffsets>
-		
+			<AimingDelayFactor>1.5</AimingDelayFactor>
+		</equippedStatOffsets>
+
 		<modExtensions>
 			<li Class="Embergarden.DefModExtension_WeaponAltGraphic">
 				<graphicData>
@@ -653,8 +653,8 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	
-	
+
+
 	<ThingDef ParentName="Cinder_Gun">
 		<defName>Cinder_ErosionGourd</defName>
 		<label>erosion gourd</label>
@@ -694,7 +694,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Cinder_Bullet_50APE</defaultProjectile>
+				<defaultProjectile>Cinder_TentacleGourdProj</defaultProjectile>
 				<warmupTime>1</warmupTime>
 				<range>29.9</range>
 				<burstShotCount>1</burstShotCount>
@@ -726,5 +726,30 @@
 				<cooldownTime>1.5</cooldownTime>
 			</li>
 		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Cinder_TentacleGourdProj</defName>
+		<label>.50 bullet</label>
+		<thingClass>Embergarden.Projectile_Tentacle</thingClass>
+		<graphicData>
+			<texPath>Things/Weapons/Bullet_clustered</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.4, 1.4)</drawSize>
+		</graphicData>
+		<projectile Class="Embergarden.ProjectileProperties_Tentacle">
+			<damageDef>Cut</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>5</stoppingPower>
+			<armorPenetrationBase>0.52</armorPenetrationBase>
+			<speed>65</speed>
+
+			<effecterDef>Cinder_TentacleProj</effecterDef>
+			<tickPerTentacle>2</tickPerTentacle>
+			<tentacleFleck>Cinder_TentacleSection</tentacleFleck>
+			<tentacleHeadFleck>Cinder_TentacleHead</tentacleHeadFleck>
+			<tentacleHitFleck>Cinder_TentacleHeadHit</tentacleHitFleck>
+			<hitEffecterDef>Cinder_TentacleHit</hitEffecterDef>
+		</projectile>
 	</ThingDef>
 </Defs>
