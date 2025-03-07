@@ -74,7 +74,7 @@ namespace Embergarden
                 {
                     base.Position = DestinationCell;
                 }
-                Impact(intendedTarget.Thing);
+                Impact(usedTarget.Thing);
             }
         }
 
@@ -124,7 +124,7 @@ namespace Embergarden
         public override void Launch(Thing launcher, Vector3 origin, LocalTargetInfo usedTarget, LocalTargetInfo intendedTarget, ProjectileHitFlags hitFlags, bool preventFriendlyFire = false, Thing equipment = null, ThingDef targetCoverDef = null)
         {
             base.Launch(launcher, origin, usedTarget, intendedTarget, hitFlags, preventFriendlyFire, equipment, targetCoverDef);
-            var delta = intendedTarget.Cell.ToVector3Shifted() - origin;
+            var delta = usedTarget.Cell.ToVector3Shifted() - origin;
             var angle = delta.ToAngleFlat();
             float magnitude = delta.Yto0().magnitude;
 
