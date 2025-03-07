@@ -274,4 +274,15 @@
 		</additionalHediffs>
 	</DamageDef>
 	
+	<DamageDef ParentName="CutBase">
+    <defName>Cider_Cut</defName>
+    <additionalHediffs>
+			<li>
+				<hediff>Cinder_BlindnessLow</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+	</additionalHediffs>
+  </DamageDef>
 </Defs>

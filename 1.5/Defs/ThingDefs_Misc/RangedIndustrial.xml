@@ -658,7 +658,7 @@
 	<ThingDef ParentName="Cinder_Gun">
 		<defName>Cinder_ErosionGourd</defName>
 		<label>erosion gourd</label>
-		<description>A strange gourd,occasionally this thing grows some strange tentacles.</description>
+		<description>A strange gourd,Can release tentacles to stab enemies in the distance,occasionally this thing grows some strange tentacles.</description>
 		<graphicData>
 			<texPath>Things/Weapons/ErosionGourd/ErosionGourd</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -669,17 +669,18 @@
 		</weaponClasses>
 		<statBases>
 			<WorkToMake>50000</WorkToMake>
+			<MarketValue>425</MarketValue>
 			<Mass>3.0</Mass>
 			<AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.75</AccuracyShort>
 			<AccuracyMedium>0.85</AccuracyMedium>
 			<AccuracyLong>0.55</AccuracyLong>
-			<RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Steel>75</Steel>
 			<Cinder_AmorphousPolymer>75</Cinder_AmorphousPolymer>
-			<ComponentIndustrial>10</ComponentIndustrial>
+			<Cinder_EmptyAgentBottle>1</Cinder_EmptyAgentBottle>
 		</costList>
 		<recipeMaker>
 			<skillRequirements>
@@ -687,7 +688,7 @@
 			</skillRequirements>
 			<researchPrerequisite Inherit="False"/>
 			<researchPrerequisites Inherit="False">
-				<li>Cinder_ShapedCharges</li>
+				<li>Cinder_TwistedPharmacology</li>
 			</researchPrerequisites>
 		</recipeMaker>
 		<verbs>
@@ -695,42 +696,59 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Cinder_TentacleGourdProj</defaultProjectile>
-				<warmupTime>1</warmupTime>
-				<range>29.9</range>
+				<warmupTime>0.5</warmupTime>
+				<range>28.9</range>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-				<soundCast>Shot_TurretSniper</soundCast>
+				<soundCast>Cinder_TentacleShot</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>CinderElite</li>
+			<li>CinderCaster</li>
 		</weaponTags>
+		<tradeTags Inherit="False">
+			<li>Cinder_Caster</li>
+		</tradeTags>
 		<tools>
 			<li>
-				<label>stock</label>
+				<label>Tentacle blade</label>
 				<capacities>
-					<li>Blunt</li>
+					<li>Cut</li>
 				</capacities>
-				<power>10</power>
+				<power>15</power>
 				<cooldownTime>2</cooldownTime>
+				<extraMeleeDamages>
+                   <li>
+                   <def>Cider_Cut</def>
+                   <amount>5</amount>
+                   <chance>1</chance>
+                  </li>
+             </extraMeleeDamages>
 			</li>
 			<li>
-				<label>barrel</label>
+				<label>Tentacle stab</label>
 				<capacities>
-					<li>Blunt</li>
+					<li>Cut</li>
 					<li>Poke</li>
 				</capacities>
-				<power>12</power>
+				<power>10</power>
 				<cooldownTime>1.5</cooldownTime>
+				<extraMeleeDamages>
+                   <li>
+                   <def>Cider_Cut</def>
+                   <amount>5</amount>
+                   <chance>1</chance>
+                  </li>
+             </extraMeleeDamages>
 			</li>
 		</tools>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Cinder_TentacleGourdProj</defName>
-		<label>.50 bullet</label>
+		<label>Tentacle</label>
 		<thingClass>Embergarden.Projectile_Tentacle</thingClass>
 		<graphicData>
 			<texPath>Things/Weapons/Bullet_clustered</texPath>
@@ -738,10 +756,10 @@
 			<drawSize>(1.4, 1.4)</drawSize>
 		</graphicData>
 		<projectile Class="Embergarden.ProjectileProperties_Tentacle">
-			<damageDef>Cut</damageDef>
-			<damageAmountBase>20</damageAmountBase>
+			<damageDef>Cider_Cut</damageDef>
+			<damageAmountBase>15</damageAmountBase>
 			<stoppingPower>5</stoppingPower>
-			<armorPenetrationBase>0.52</armorPenetrationBase>
+			<armorPenetrationBase>0.72</armorPenetrationBase>
 			<speed>65</speed>
 
 			<effecterDef>Cinder_TentacleProj</effecterDef>

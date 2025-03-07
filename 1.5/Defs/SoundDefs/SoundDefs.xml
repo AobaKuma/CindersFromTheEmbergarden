@@ -77,6 +77,24 @@
         </subSounds>
     </SoundDef>
 	
+	 <SoundDef>
+    <defName>Cinder_TentacleShot</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+		  <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapons/TentacleGround</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>20~25</volumeRange>
+        <pitchRange>0.9~1.1</pitchRange>
+		 <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+	
 	<SoundDef>
     <defName>Cinder_Hellfire_Aiming</defName>
     <sustain>true</sustain>
@@ -97,6 +115,8 @@
       </li>
     </subSounds>
   </SoundDef>
+  
+   
   
   <SoundDef>
     <defName>Cinder_TentacleGround</defName>

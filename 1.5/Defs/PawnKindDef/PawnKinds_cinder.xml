@@ -605,7 +605,7 @@
 		<minGenerationAge>19</minGenerationAge>
 		<startingHediffs>
 			<li>
-				<def>Cinder_ExtraArmourPlate</def>
+				<def>Cinder_ExtraArmourPlateII</def>
 				<chance>1</chance>
 			</li>
 		</startingHediffs>
@@ -650,7 +650,6 @@
 			</li>
 		</specificApparelRequirements>
 		<apparelRequired>
-			<li>Apparel_ShieldBelt</li>
 			<li>Cinder_HeadGear_FullyEnclosedMask</li>
 		</apparelRequired>
 		<apparelMoney>
@@ -658,10 +657,8 @@
 			<max>2100</max>
 		</apparelMoney>
 		<weaponTags>
-			<li>MedievalMeleeBasic</li>
-			<li>MedievalMeleeAdvanced</li>
+			<li>CinderCaster</li>
 		</weaponTags>
-		<weaponStuffOverride>Cinder_AmorphousPolymer</weaponStuffOverride>
 		<weaponMoney>600~700</weaponMoney>
 		<modExtensions>
 			<li Class="Embergarden.ModExtension_RandomOneAbility">
@@ -777,7 +774,7 @@
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
 		<isFighter>true</isFighter>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
-		<biocodeWeaponChance>0.15</biocodeWeaponChance>
+		<biocodeWeaponChance>0.7</biocodeWeaponChance>
 		<initialWillRange>10~30</initialWillRange>
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
@@ -840,6 +837,7 @@
 		</apparelMoney>
 		<weaponTags>
 			<li>CinderRifles</li>
+			<li>CinderCaster</li>
 			<li>CinderSimpleGuns</li>
 		</weaponTags>
 		<weaponMoney>400~600</weaponMoney>
@@ -923,6 +921,7 @@
 		</apparelMoney>
 		<weaponTags>
 			<li>CinderElite</li>
+			<li>CinderCaster</li>
 			<li>GunHeavy</li>
 		</weaponTags>
 		<weaponMoney>900~1900</weaponMoney>
