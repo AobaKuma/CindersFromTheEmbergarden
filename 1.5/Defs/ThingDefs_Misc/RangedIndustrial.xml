@@ -757,7 +757,7 @@
 		</graphicData>
 		<projectile Class="Embergarden.ProjectileProperties_Tentacle">
 			<damageDef>Cider_Cut</damageDef>
-			<damageAmountBase>15</damageAmountBase>
+			<damageAmountBase>12</damageAmountBase>
 			<stoppingPower>5</stoppingPower>
 			<armorPenetrationBase>0.72</armorPenetrationBase>
 			<speed>65</speed>

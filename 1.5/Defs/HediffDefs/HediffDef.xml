@@ -471,7 +471,7 @@
 				<capMods>
 					<li>
 						<capacity>Sight</capacity>
-						<setMax>0.4</setMax>
+						<setMax>0.8</setMax>
 					</li>
 					<li>
 						<capacity>Moving</capacity>
@@ -484,7 +484,7 @@
 				<capMods>
 					<li>
 						<capacity>Sight</capacity>
-						<setMax>0.2</setMax>
+						<setMax>0.4</setMax>
 					</li>
 					<li>
 						<capacity>Moving</capacity>
@@ -508,7 +508,7 @@
            </li>
 		   <li>
                <minSeverity>1</minSeverity>
-               <painOffset>0.8</painOffset>
+               <painOffset>0.6</painOffset>
                 <capMods>
 					<li>
 						<capacity>Sight</capacity>
@@ -517,6 +517,10 @@
 					<li>
 						<capacity>Moving</capacity>
 						<setMax>0.2</setMax>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<setMax>0.8</setMax>
 					</li>
 				</capMods>
            </li>

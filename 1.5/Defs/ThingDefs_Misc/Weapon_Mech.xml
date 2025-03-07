@@ -279,7 +279,7 @@
     <additionalHediffs>
 			<li>
 				<hediff>Cinder_BlindnessLow</hediff>
-				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+				<severityPerDamageDealt>0.015</severityPerDamageDealt>
 				<inverseStatScaling>true</inverseStatScaling>
 				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
 			</li>
