@@ -95,7 +95,7 @@ namespace Embergarden
         {
             BattleLogEntry_RangedImpact battleLogEntry_RangedImpact = new(launcher, hitThing, intendedTarget.Thing, equipmentDef, def, targetCoverDef);
             Find.BattleLog.Add(battleLogEntry_RangedImpact);
-            if (hitThing != null && !Rand.Chance(GetDodgeChance(hitThing)))
+            if (hitThing != null)
             {
                 bool instigatorGuilty = launcher is not Pawn pawn || !pawn.Drafted;
                 DamageInfo dinfo = new(def.projectile.damageDef, DamageAmount, ArmorPenetration, ExactRotation.eulerAngles.y, launcher, null, equipmentDef, DamageInfo.SourceCategory.ThingOrUnknown, intendedTarget.Thing, instigatorGuilty);
