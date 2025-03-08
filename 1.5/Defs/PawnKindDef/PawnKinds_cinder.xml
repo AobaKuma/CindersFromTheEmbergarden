@@ -601,6 +601,7 @@
 		<initialWillRange>10~30</initialWillRange>
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<biocodeWeaponChance>1</biocodeWeaponChance>
 		<maxGenerationAge>45</maxGenerationAge>
 		<minGenerationAge>19</minGenerationAge>
 		<startingHediffs>
@@ -677,7 +678,11 @@
 		<skills>
 			<li>
 				<skill>Melee</skill>
-				<range>7~10</range>
+				<range>7~8</range>
+			</li>
+			<li>
+				<skill>Shooting</skill>
+				<range>7~11</range>
 			</li>
 		</skills>
 	</PawnKindDef>
@@ -756,11 +761,11 @@
 		<skills>
 			<li>
 				<skill>Melee</skill>
-				<range>5~6</range>
+				<range>10~12</range>
 			</li>
 			<li>
 				<skill>Shooting</skill>
-				<range>4~6</range>
+				<range>7~11</range>
 			</li>
 		</skills>
 	</PawnKindDef>
@@ -838,9 +843,8 @@
 		<weaponTags>
 			<li>CinderRifles</li>
 			<li>CinderCaster</li>
-			<li>CinderSimpleGuns</li>
 		</weaponTags>
-		<weaponMoney>400~600</weaponMoney>
+		<weaponMoney>425~800</weaponMoney>
 		<fixedInventory>
 			<Cinder_ExtraArmour>1</Cinder_ExtraArmour>
 		</fixedInventory>

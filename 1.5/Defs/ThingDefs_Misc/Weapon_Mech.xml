@@ -276,10 +276,11 @@
 	
 	<DamageDef ParentName="CutBase">
     <defName>Cider_Cut</defName>
+	<armorCategory>Blunt</armorCategory>
     <additionalHediffs>
 			<li>
 				<hediff>Cinder_BlindnessLow</hediff>
-				<severityPerDamageDealt>0.015</severityPerDamageDealt>
+				<severityPerDamageDealt>0.02</severityPerDamageDealt>
 				<inverseStatScaling>true</inverseStatScaling>
 				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
 			</li>

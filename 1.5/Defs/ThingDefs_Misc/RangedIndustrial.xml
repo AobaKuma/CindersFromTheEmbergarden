@@ -671,9 +671,9 @@
 			<WorkToMake>50000</WorkToMake>
 			<MarketValue>425</MarketValue>
 			<Mass>3.0</Mass>
-			<AccuracyTouch>0.60</AccuracyTouch>
-			<AccuracyShort>0.75</AccuracyShort>
-			<AccuracyMedium>0.85</AccuracyMedium>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
 			<AccuracyLong>0.55</AccuracyLong>
 			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 		</statBases>
@@ -696,7 +696,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Cinder_TentacleGourdProj</defaultProjectile>
-				<warmupTime>0.5</warmupTime>
+				<warmupTime>0.65</warmupTime>
 				<range>28.9</range>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
@@ -759,7 +759,7 @@
 			<damageDef>Cider_Cut</damageDef>
 			<damageAmountBase>12</damageAmountBase>
 			<stoppingPower>5</stoppingPower>
-			<armorPenetrationBase>0.72</armorPenetrationBase>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
 			<speed>65</speed>
 
 			<effecterDef>Cinder_TentacleProj</effecterDef>
