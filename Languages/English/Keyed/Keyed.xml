@@ -6,6 +6,6 @@
   <Cinder_CommaEyesDesc>Replace face and body with vanilla style comma face and vanilla body(Need to restart game)</Cinder_CommaEyesDesc>
   <Cinder_NeedResurrectOrRegen>People with amorphous regeneration ability are required to use it</Cinder_NeedResurrectOrRegen>
   <Cinder_AllAbilityGained>Already acquired all abilities</Cinder_AllAbilityGained>
-  <Embergarden_PlatingTooltip>The armor plate on {0}'s body has been completely damaged</Embergarden_PlatingTooltip>
+  <Embergarden_PlatingTooltip>Remaining armor</Embergarden_PlatingTooltip>
 </LanguageData>
 

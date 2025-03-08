@@ -12,5 +12,5 @@
   <!-- EN: Already acquired all abilities -->
   <Cinder_AllAbilityGained>已经获得所有能力了</Cinder_AllAbilityGained>
   <!-- EN: The armor plate on {0}'s body has been completely damaged -->
-  <Embergarden_PlatingTooltip>{0}身上的装甲板已经完全损坏</Embergarden_PlatingTooltip>
+  <Embergarden_PlatingTooltip>剩余装甲</Embergarden_PlatingTooltip>
 </LanguageData>
