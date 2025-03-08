@@ -3,13 +3,10 @@
   
   <!-- EN: .303 British (Erosion) -->
   <Ammo_303British_Erosion.label>.303 英国制式步枪弹 (侵蚀弹)</Ammo_303British_Erosion.label>
-  <!-- EN: Large rifle bullet found mostly in outdated bolt-action firearms.
-\n\nErosion:
-\nAmorphous polymer ammunition that temporarily reduces enemy armor.
-\n\n使用者: -->
+  <!-- EN: Large rifle bullet found mostly in outdated bolt-action firearms. -->
   <Ammo_303British_Erosion.description>大型步枪子弹，主要用于过时的栓动式步枪中。</Ammo_303British_Erosion.description>
   
-  <!-- EN: .303 British bullet (Erosion) --> 
+  <!-- EN: .303 British bullet (Erosion) -->
   <Bullet_303British_Erosion.label>.303 英国制式步枪弹 (侵蚀弹)</Bullet_303British_Erosion.label>
   
 </LanguageData>

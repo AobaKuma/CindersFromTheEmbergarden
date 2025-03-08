@@ -23,7 +23,7 @@
   <!-- EN: barrel -->
   <Cinder_Dragonslayer.tools.barrel.label>枪管</Cinder_Dragonslayer.tools.barrel.label>
   <!-- EN: Dragon slayer Bow -->
-  <Cinder_Dragonslayer.verbs.Verb_ShootCE.label>TODO</Cinder_Dragonslayer.verbs.Verb_ShootCE.label>
+  <Cinder_Dragonslayer.verbs.Verb_ShootCE.label>猎龙大弓</Cinder_Dragonslayer.verbs.Verb_ShootCE.label>
   
   <!-- UNUSED -->
   <Cinder_Dragonslayer.comps.CompSecondaryVerb.description>切换武器形态</Cinder_Dragonslayer.comps.CompSecondaryVerb.description>
@@ -31,6 +31,16 @@
   <Cinder_Dragonslayer.comps.CompSecondaryVerb.secondaryWeaponLabel>速射机枪</Cinder_Dragonslayer.comps.CompSecondaryVerb.secondaryWeaponLabel>
   <Cinder_Dragonslayer.tools.stock.label>枪托</Cinder_Dragonslayer.tools.stock.label>
   <Cinder_Dragonslayer.verbs.Verb_Shoot.label>猎龙大弓</Cinder_Dragonslayer.verbs.Verb_Shoot.label>
+  
+  <!-- EN: erosion gourd -->
+  <Cinder_ErosionGourd.label>侵蚀葫芦</Cinder_ErosionGourd.label>
+  <!-- EN: A strange gourd,Can release tentacles to stab enemies in the distance,occasionally this thing grows some strange tentacles. \n CE data：  damage：20  AP：80Mpa -->
+  <Cinder_ErosionGourd.description>一个奇怪的葫芦，能够放出巨大的触手远距离刺击敌人，这个葫芦的头部不知道为什么缠绕着触手 \nCE数据：  伤害：20  钝器穿透：80Mpa</Cinder_ErosionGourd.description>
+  <!-- EN: Tentacle blade -->
+  <Cinder_ErosionGourd.tools.Tentacle_blade.label>触手剑刃</Cinder_ErosionGourd.tools.Tentacle_blade.label>
+   <Cinder_ErosionGourd.tools.Tentacle_stab.label>触手剑尖</Cinder_ErosionGourd.tools.Tentacle_stab.label>
+  <!-- EN: erosion gourd -->
+  <Cinder_ErosionGourd.verbs.Verb_Shoot.label>侵蚀葫芦</Cinder_ErosionGourd.verbs.Verb_Shoot.label>
   
   <!-- EN: Flint anti material rifle -->
   <Cinder_Flint50A.label>火石反器材步枪</Cinder_Flint50A.label>
@@ -41,9 +51,9 @@
   <!-- EN: barrel -->
   <Cinder_Flint50A.tools.barrel.label>枪管</Cinder_Flint50A.tools.barrel.label>
   <!-- EN: muzzle -->
-  <Cinder_Flint50A.tools.muzzle.label>TODO</Cinder_Flint50A.tools.muzzle.label>
+  <Cinder_Flint50A.tools.muzzle.label>枪口</Cinder_Flint50A.tools.muzzle.label>
   <!-- EN: Flint anti material rifle -->
-  <Cinder_Flint50A.verbs.Verb_ShootCE.label>TODO</Cinder_Flint50A.verbs.Verb_ShootCE.label>
+  <Cinder_Flint50A.verbs.Verb_ShootCE.label>火石反器材步枪</Cinder_Flint50A.verbs.Verb_ShootCE.label>
   
   <!-- UNUSED -->
   <Cinder_Flint50A.verbs.Verb_Shoot.label>火石反器材步枪</Cinder_Flint50A.verbs.Verb_Shoot.label>
@@ -57,9 +67,9 @@
   <!-- EN: barrel -->
   <Cinder_Magistrate.tools.barrel.label>枪管</Cinder_Magistrate.tools.barrel.label>
   <!-- EN: muzzle -->
-  <Cinder_Magistrate.tools.muzzle.label>TODO</Cinder_Magistrate.tools.muzzle.label>
+  <Cinder_Magistrate.tools.muzzle.label>枪口</Cinder_Magistrate.tools.muzzle.label>
   <!-- EN: Magistrate shotgun -->
-  <Cinder_Magistrate.verbs.Verb_ShootCE.label>TODO</Cinder_Magistrate.verbs.Verb_ShootCE.label>
+  <Cinder_Magistrate.verbs.Verb_ShootCE.label>判官霰弹枪</Cinder_Magistrate.verbs.Verb_ShootCE.label>
   
   <!-- UNUSED -->
   <Cinder_Magistrate.verbs.Verb_Shoot.label>判官霰弹枪</Cinder_Magistrate.verbs.Verb_Shoot.label>
@@ -73,9 +83,9 @@
   <!-- EN: barrel -->
   <Cinder_MP12A.tools.barrel.label>枪管</Cinder_MP12A.tools.barrel.label>
   <!-- EN: muzzle -->
-  <Cinder_MP12A.tools.muzzle.label>TODO</Cinder_MP12A.tools.muzzle.label>
+  <Cinder_MP12A.tools.muzzle.label>枪口</Cinder_MP12A.tools.muzzle.label>
   <!-- EN: Needle PDW -->
-  <Cinder_MP12A.verbs.Verb_ShootCE.label>TODO</Cinder_MP12A.verbs.Verb_ShootCE.label>
+  <Cinder_MP12A.verbs.Verb_ShootCE.label>针式PDW</Cinder_MP12A.verbs.Verb_ShootCE.label>
   
   <!-- UNUSED -->
   <Cinder_MP12A.verbs.Verb_Shoot.label>针式PDW</Cinder_MP12A.verbs.Verb_Shoot.label>
@@ -89,11 +99,14 @@
   <!-- EN: barrel -->
   <Cinder_PCX33A.tools.barrel.label>枪管</Cinder_PCX33A.tools.barrel.label>
   <!-- EN: muzzle -->
-  <Cinder_PCX33A.tools.muzzle.label>TODO</Cinder_PCX33A.tools.muzzle.label>
+  <Cinder_PCX33A.tools.muzzle.label>枪口</Cinder_PCX33A.tools.muzzle.label>
   <!-- EN: Ouroboros rifle -->
-  <Cinder_PCX33A.verbs.Verb_ShootCE.label>TODO</Cinder_PCX33A.verbs.Verb_ShootCE.label>
+  <Cinder_PCX33A.verbs.Verb_ShootCE.label>衔尾蛇步枪</Cinder_PCX33A.verbs.Verb_ShootCE.label>
   
   <!-- UNUSED -->
   <Cinder_PCX33A.verbs.Verb_Shoot.label>衔尾蛇步枪</Cinder_PCX33A.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Tentacle -->
+  <Cinder_TentacleGourdProj.label>触手</Cinder_TentacleGourdProj.label>
   
 </LanguageData>

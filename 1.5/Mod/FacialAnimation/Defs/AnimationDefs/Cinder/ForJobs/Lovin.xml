@@ -2,7 +2,7 @@
 
 <Defs>
   <FacialAnimation.FaceAnimationDef>
-    <defName>Lovin</defName>
+    <defName>Lovin_Cinder</defName>
 	<raceName>Alien_Cinder</raceName>
     <animationFrames>
       <li>

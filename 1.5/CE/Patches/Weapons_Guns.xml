@@ -108,7 +108,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Cinder_ErosionGourd"]/description</xpath>
 		<value>
-          <description>A strange gourd,Can release tentacles to stab enemies in the distance,occasionally this thing grows some strange tentacles. \n CE data：  damage：20  AP：160Mpa</description>
+          <description>A strange gourd,Can release tentacles to stab enemies in the distance,occasionally this thing grows some strange tentacles. \n CE data：  damage：20  AP：80Mpa</description>
 		</value>
 	</Operation>
 	
@@ -119,7 +119,7 @@
 			<damageDef>Cider_Cut</damageDef>
 			<damageAmountBase>20</damageAmountBase>
 			<stoppingPower>5</stoppingPower>
-			<armorPenetrationBase>160</armorPenetrationBase>
+			<armorPenetrationBase>80</armorPenetrationBase>
 			<speed>65</speed>
 
 			<effecterDef>Cinder_TentacleProj</effecterDef>

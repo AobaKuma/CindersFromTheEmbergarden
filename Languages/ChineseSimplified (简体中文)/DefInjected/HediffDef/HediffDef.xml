@@ -1,12 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: artificial life -->
+  <Cinder_ArtificiaLife.label>人工生命</Cinder_ArtificiaLife.label>
+  <!-- EN: Unable to conceive. -->
+  <Cinder_ArtificiaLife.description>无法生育</Cinder_ArtificiaLife.description>
+  
   <!-- EN: entanglement of tentacles -->
   <Cinder_Blindness.label>触手缠绕</Cinder_Blindness.label>
   <!-- EN: Entangled by tentacles on the ground, affecting vision and mobility. -->
   <Cinder_Blindness.description>被地上的触手缠绕，影响了视力与移动能力。</Cinder_Blindness.description>
   
-   <!-- EN: entanglement of tentacles -->
+  <!-- EN: entanglement of tentacles -->
   <Cinder_BlindnessLow.label>侵蚀缠绕</Cinder_BlindnessLow.label>
   <!-- EN: Entangled by tentacles on the ground, affecting vision and mobility. -->
   <Cinder_BlindnessLow.description>被灼热触手缠绕，降低了视力与移动能力。</Cinder_BlindnessLow.description>

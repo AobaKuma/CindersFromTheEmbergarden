@@ -3,10 +3,7 @@
   
   <!-- EN: 5.56x45mm NATO (Erosion) -->
   <Ammo_556x45mmNATO_Erosion.label>5.56x45mm 北约标准步枪弹 (侵蚀弹)</Ammo_556x45mmNATO_Erosion.label>
-  <!-- EN: Small, high-velocity rifle bullet used in a variety of assault rifles.
-\n\nErosion:
-\nAmorphous polymer ammunition that temporarily reduces enemy armor.
-\n\n使用者: -->
+  <!-- EN: Small, high-velocity rifle bullet used in a variety of assault rifles. -->
   <Ammo_556x45mmNATO_Erosion.description>小型高速步枪子弹，用于各种突击步枪。</Ammo_556x45mmNATO_Erosion.description>
   
   <!-- EN: 5.56mm NATO bullet (Erosion) -->
