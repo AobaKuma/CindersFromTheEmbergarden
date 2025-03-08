@@ -506,7 +506,7 @@
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
-						<setMax>0.5</setMax>
+						<setMax>0.8</setMax>
 					</li>
 				</capMods>
            </li>
@@ -524,7 +524,7 @@
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
-						<setMax>0.2</setMax>
+						<setMax>0.6</setMax>
 					</li>
 				</capMods>
            </li>

@@ -1,10 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
+   <!-- EN: cut -->
+  <Cider_Cut.label>割伤</Cider_Cut.label>
+  <!-- EN: {0} has been cut to death. -->
+  <Cider_Cut.deathMessage>{0}被砍杀了。</Cider_Cut.deathMessage>
   
   <!-- EN: bullet -->
-  <Cider_ErosionBullet.label>TODO</Cider_ErosionBullet.label>
+  <Cider_ErosionBullet.label>枪伤</Cider_ErosionBullet.label>
   <!-- EN: {0} has been shot to death. -->
-  <Cider_ErosionBullet.deathMessage>TODO</Cider_ErosionBullet.deathMessage>
+  <Cider_ErosionBullet.deathMessage>{0}被射杀了。</Cider_ErosionBullet.deathMessage>
   
   <!-- EN: bomb -->
   <Cinder_Bomb.label>爆炸</Cinder_Bomb.label>

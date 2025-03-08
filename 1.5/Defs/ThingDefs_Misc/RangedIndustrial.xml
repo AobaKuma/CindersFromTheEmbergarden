@@ -675,7 +675,7 @@
 			<AccuracyShort>0.95</AccuracyShort>
 			<AccuracyMedium>0.75</AccuracyMedium>
 			<AccuracyLong>0.55</AccuracyLong>
-			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Steel>75</Steel>
@@ -696,7 +696,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Cinder_TentacleGourdProj</defaultProjectile>
-				<warmupTime>0.65</warmupTime>
+				<warmupTime>0.3</warmupTime>
 				<range>28.9</range>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
@@ -757,8 +757,8 @@
 		</graphicData>
 		<projectile Class="Embergarden.ProjectileProperties_Tentacle">
 			<damageDef>Cider_Cut</damageDef>
-			<damageAmountBase>12</damageAmountBase>
-			<stoppingPower>5</stoppingPower>
+			<damageAmountBase>14</damageAmountBase>
+			<stoppingPower>3</stoppingPower>
 			<armorPenetrationBase>0.75</armorPenetrationBase>
 			<speed>65</speed>
 

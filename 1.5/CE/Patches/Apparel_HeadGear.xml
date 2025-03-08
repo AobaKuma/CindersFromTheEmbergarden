@@ -142,4 +142,18 @@
 			</layers>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_BrokenMask"]/equippedStatOffsets/ShootingAccuracyPawn</xpath>
+		<value>
+			<ShootingAccuracyPawn>0</ShootingAccuracyPawn>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_FullyEnclosedMask"]/equippedStatOffsets/ShootingAccuracyPawn</xpath>
+		<value>
+			<ShootingAccuracyPawn>0</ShootingAccuracyPawn>
+		</value>
+	</Operation>
 </Patch>

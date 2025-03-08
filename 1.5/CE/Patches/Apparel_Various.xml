@@ -284,6 +284,12 @@
 			<CarryWeight>30</CarryWeight>
 		</value>
 	</li>
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_GhoulUnitGear"]/equippedStatOffsets/ShootingAccuracyPawn</xpath>
+		<value>
+			<ShootingAccuracyPawn>0</ShootingAccuracyPawn>
+		</value>
+	</li>
 
 
 
@@ -316,6 +322,14 @@
 			<Suppressability>-1</Suppressability>
 		</value>
 	</li>
+	
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Apparel_BrokenGhoulUnitGear"]/equippedStatOffsets/ShootingAccuracyPawn</xpath>
+		<value>
+			<ShootingAccuracyPawn>0</ShootingAccuracyPawn>
+		</value>
+	</li>
+	
 	
 	<li Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Cinder_Apparel_Commemorative"]/statBases/ArmorRating_Sharp</xpath>

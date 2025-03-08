@@ -10,8 +10,7 @@
 			defName="Cinder_Magistrate" or
 			defName="Cinder_MP12A" or
 			defName="Cinder_PCX33A" or
-			defName="Cinder_Flint50A"
-			]/tools
+			defName="Cinder_Flint50A"]/tools
 		</xpath>
 		<value>
 			<tools>
@@ -65,6 +64,71 @@
 					<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
 				</li>
 			</tools>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_ErosionGourd"]/tools</xpath>
+		<value>
+		<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>Tentacle blade</label>
+					<capacities>
+						<li>Cut</li>
+					</capacities>
+					<power>10</power>
+					<cooldownTime>2.44</cooldownTime>
+					<armorPenetrationBlunt>50</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_ErosionGourd"]/verbs</xpath>
+		<value>
+          <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Cinder_TentacleGourdProj</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<range>45.9</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<soundCast>Cinder_TentacleShot</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_ErosionGourd"]/description</xpath>
+		<value>
+          <description>A strange gourd,Can release tentacles to stab enemies in the distance,occasionally this thing grows some strange tentacles. \n CE data：  damage：20  AP：160Mpa</description>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_TentacleGourdProj"]/projectile</xpath>
+		<value>
+         <projectile Class="Embergarden.ProjectileProperties_Tentacle">
+			<damageDef>Cider_Cut</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>5</stoppingPower>
+			<armorPenetrationBase>160</armorPenetrationBase>
+			<speed>65</speed>
+
+			<effecterDef>Cinder_TentacleProj</effecterDef>
+			<tickPerTentacle>2</tickPerTentacle>
+			<tentacleFleck>Cinder_TentacleSection</tentacleFleck>
+			<tentacleHeadFleck>Cinder_TentacleHead</tentacleHeadFleck>
+			<tentacleHitFleck>Cinder_TentacleHeadHit</tentacleHitFleck>
+			<hitEffecterDef>Cinder_TentacleHit</hitEffecterDef>
+		</projectile>
 		</value>
 	</Operation>
 	<!-- ========== Magistrate shotgun ========== -->

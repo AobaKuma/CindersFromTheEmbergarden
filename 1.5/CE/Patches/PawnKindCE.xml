@@ -206,12 +206,4 @@
 		</value>
 	</Operation>
 	
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/PawnKindDef[defName="Cinder_EliteCult"]/weaponTags</xpath>
-		<value>
-      <weaponTags>
-    <li>Cinder_IndustrialMelee</li>
-    </weaponTags>
-		</value>
-	</Operation>
 </Patch>
