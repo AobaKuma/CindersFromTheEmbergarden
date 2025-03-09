@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef ParentName="BaseMechanoidResurrectionRecipe">
+    <defName>Cinder_ResurrectUltraheavyMech</defName>
+    <label>resurrect war walkers</label>
+    <description>Resurrect a friendly  war walkers of the ultraheavy weight class. So long as the  war walker's body is not completely destroyed, it can be resurrected.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Cinder_AmorphousPolymer</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Cinder_ErodedMechComponent</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Corpse_Cinder_Mech_ErodedEXO</li>
+        <li>Corpse_Cinder_Mech_WarSweeper</li>
+        <li>Corpse_Cinder_Mech_WarAttacker</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+</Defs>
