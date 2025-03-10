@@ -17,6 +17,7 @@ namespace Embergarden
         float? angle = null;
         int index;
         int flightTicks => (int)StartingTicksToImpact - lifetime;
+        private Color? EmissionColor;
 
         public override void ExposeData()
         {
@@ -38,6 +39,8 @@ namespace Embergarden
             lifetime--;
             if (flightTicks % Props.tickPerTentacle == 0)
             {
+                if (EmissionColor == null) EmissionColor = Color.Lerp(Props.colorA, Props.colorB, Rand.Value);
+
                 index = flightTicks / Props.tickPerTentacle;
                 if (index < tentacles.Count)
                 {
@@ -45,6 +48,7 @@ namespace Embergarden
                     {
                         var dataStatic = FleckMaker.GetDataStatic(origin + tentacles[index - 1], MapHeld, Props.tentacleFleck);
                         dataStatic.rotation = angle.Value;
+                        dataStatic.instanceColor = EmissionColor;
                         MapHeld.flecks.CreateFleck(dataStatic);
                     }
                     if (Props.tentacleHeadFleck != null)
@@ -55,6 +59,7 @@ namespace Embergarden
 
                         var dataStatic = FleckMaker.GetDataStatic(origin + tentacles[index], MapHeld, Props.tentacleHeadFleck);
                         dataStatic.rotation = angle.Value;
+                        dataStatic.instanceColor = EmissionColor;
                         MapHeld.flecks.CreateFleck(dataStatic);
                     }
                     Props.effecterDef.Spawn(this, Map, tentacles[index]);
@@ -127,11 +132,12 @@ namespace Embergarden
             var delta = usedTarget.Cell.ToVector3Shifted() - origin;
             var angle = delta.ToAngleFlat();
             float magnitude = delta.Yto0().magnitude;
-
+            float swing = Props.swingRange.RandomInRange * Rand.Sign;
+            float freq = Props.frequencyRange.RandomInRange;
             for (int i = Props.tickPerTentacle; i < ticksToImpact + Props.tickPerTentacle; i += Props.tickPerTentacle)
             {
                 float pct = (float)i / ticksToImpact;
-                var offset = Mathf.Sin(pct * magnitude) * (pct > 0.5f ? 1 - pct : pct);
+                var offset = Mathf.Sin(pct * magnitude * freq) * (pct > 0.5f ? 1 - pct : pct) * swing;
                 tentacles.Add(delta * pct + new Vector3(0, 0, offset).RotatedBy(angle));
             }
         }
@@ -180,5 +186,7 @@ namespace Embergarden
         public int tickPerTentacle = 1;
         public EffecterDef effecterDef, hitEffecterDef;
         public FleckDef tentacleFleck, tentacleHeadFleck, tentacleHitFleck;
+        public FloatRange swingRange = new FloatRange(1, 2), frequencyRange = new FloatRange(0.8f, 1.2f);
+        public Color colorA = Color.white, colorB = Color.white;
     }
 }

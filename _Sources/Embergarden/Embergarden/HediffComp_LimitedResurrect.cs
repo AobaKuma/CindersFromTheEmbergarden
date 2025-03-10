@@ -60,9 +60,9 @@ namespace Embergarden
                     comp.disappearsAfterTicks = Props.afterEffectTick;
                     comp.ticksToDisappear = Props.afterEffectTick;
                 }
-                Pawn.health.AddHediff(hediff);
-                Pawn.health.Notify_HediffChanged(hediff);
                 Pawn.health.forceDowned = true;
+                Pawn.health.AddHediff(hediff);
+                Pawn.health.forceDowned = false;
             }
             foreach (var hediffInfo in Props.regenHediffs)
             {
