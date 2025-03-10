@@ -179,9 +179,9 @@
 					</li>
 					<li>
 						<ID>anti air turret</ID>
-						<turret>Cinder_Mounted_AA</turret>
+						<turret>Cinder_Mounted_Tentacle</turret>
 						<autoAttack>true</autoAttack>
-						<warmingTime>0.5</warmingTime>
+						<warmingTime>1</warmingTime>
 						<angleOffset>-90</angleOffset>
 						<renderNodeProperties>
 							<li>
@@ -189,8 +189,8 @@
 								<nodeClass>Embergarden.PawnRenderNode_SubTurretGun</nodeClass>
 								<workerClass>Embergarden.PawnRenderNodeWorker_SubTurretGun</workerClass>
 								<parentTagDef>Body</parentTagDef>
-								<drawSize>0.75</drawSize>
-								<baseLayer>9</baseLayer>
+								<drawSize>1.2</drawSize>
+								<baseLayer>9.2</baseLayer>
 								<pawnType>Any</pawnType>
 								<drawData>
 									<dataEast>

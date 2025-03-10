@@ -672,8 +672,8 @@
 			<MarketValue>425</MarketValue>
 			<Mass>3.0</Mass>
 			<AccuracyTouch>1</AccuracyTouch>
-			<AccuracyShort>0.95</AccuracyShort>
-			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.55</AccuracyLong>
 			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
 		</statBases>
@@ -757,9 +757,9 @@
 		</graphicData>
 		<projectile Class="Embergarden.ProjectileProperties_Tentacle">
 			<damageDef>Cider_Cut</damageDef>
-			<damageAmountBase>14</damageAmountBase>
+			<damageAmountBase>13</damageAmountBase>
 			<stoppingPower>3</stoppingPower>
-			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
 			<speed>65</speed>
 
 			<effecterDef>Cinder_TentacleProj</effecterDef>

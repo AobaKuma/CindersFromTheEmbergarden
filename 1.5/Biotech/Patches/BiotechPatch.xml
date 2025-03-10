@@ -101,4 +101,30 @@
         </li>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName="LargeMechGestator"]/recipes</xpath>
+  <order>Prepend</order>
+  <value>
+	  <li>Cinder_ResurrectUltraheavyMech</li>
+  </value>
+   </Operation>
+   
+   
+   <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>The Dead Man's Switch</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+                  <xpath>Defs/ThingDef[defName="DMS_MechGestatorSamll"]/recipes</xpath>
+                 <order>Prepend</order>
+                  <value>
+	                <li>Cinder_ResurrectUltraheavyMech</li>
+                  </value>
+                </li>
+			</operations>
+		</match>
+	</Operation>
 </Patch>

@@ -58,6 +58,48 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	
+	<ThingDef ParentName="Cinder_MountedGun">
+		<defName>Cinder_Mounted_Tentacle</defName>
+		<label>tentacle turret</label>
+		<description>TODO</description>
+		<graphicData>
+			<texPath>Things/Pawn/Mech/TentacleTurret</texPath>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>0.9</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.2</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Cinder_TentacleGourdProj</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>15.9</range>
+				<ticksBetweenBurstShots>24</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>Cinder_TentacleShot</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.5,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
 
 	<ThingDef ParentName="Cinder_MountedGun">
 		<defName>Cinder_Mounted_Rocket</defName>

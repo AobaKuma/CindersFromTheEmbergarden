@@ -45,6 +45,7 @@
 			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
 			<StaggerDurationFactor>0</StaggerDurationFactor>
 			<EMPResistance MayRequire="Ludeon.RimWorld.Biotech">0.6</EMPResistance>
+			 <MechEnergyLossPerHP MayRequire="Ludeon.RimWorld.Biotech">0.15</MechEnergyLossPerHP>
 		</statBases>
 		<damageMultipliers>
 			<li>
