@@ -769,7 +769,7 @@
 			<tentacleHitFleck>Cinder_TentacleHeadHit</tentacleHitFleck>
 			<hitEffecterDef>Cinder_TentacleHit</hitEffecterDef>
 
-			<swingRange>1~2</swingRange>
+			<swingRange>0.5~1</swingRange>
 			<colorA>(1,1,1)</colorA>
 			<colorB>(0.9,0.9,0.9)</colorB>
 		</projectile>
