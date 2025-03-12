@@ -80,13 +80,14 @@
 				<cooldownTime>1</cooldownTime>
 				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+				
 			</li>
 			<li>
 				<label>Front tentacle</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>45.5</power>
+				<power>55.5</power>
 				<cooldownTime>1</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>

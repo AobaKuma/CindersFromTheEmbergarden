@@ -42,7 +42,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
 				<warmupTime>0</warmupTime>
-				<range>31.9</range>
+				<range>28.9</range>
 				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
 				<burstShotCount>2</burstShotCount>
 				<soundCast>Shot_Autocannon</soundCast>
@@ -290,6 +290,20 @@
 			<li>
 				<hediff>Cinder_BlindnessLow</hediff>
 				<severityPerDamageDealt>0.02</severityPerDamageDealt>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+	</additionalHediffs>
+  </DamageDef>
+  
+  <DamageDef ParentName="CutBase">
+    <defName>Cider_CutB</defName>
+	<armorCategory>Heat</armorCategory>
+	<externalViolence>false</externalViolence>
+    <additionalHediffs>
+			<li>
+				<hediff>Cinder_ErosionDisability</hediff>
+				<severityPerDamageDealt>0.3</severityPerDamageDealt>
 				<inverseStatScaling>true</inverseStatScaling>
 				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
 			</li>

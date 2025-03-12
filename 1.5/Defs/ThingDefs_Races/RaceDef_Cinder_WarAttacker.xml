@@ -65,7 +65,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>40.0</power>
+				<power>35.0</power>
 				<cooldownTime>1</cooldownTime>
 				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
@@ -76,10 +76,11 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>40.0</power>
+				<power>35.0</power>
 				<cooldownTime>1</cooldownTime>
 				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+				
 			</li>
 			<li>
 				<label>Front tentacle</label>
@@ -87,10 +88,17 @@
 					<li>Blunt</li>
 				</capacities>
 				<power>55.5</power>
+				<extraMeleeDamages>
+					<li>
+						<def>Cider_CutB</def>
+						<amount>10</amount>
+						<chance>1</chance>
+					</li>
+				</extraMeleeDamages>
 				<cooldownTime>1</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>
+				<chanceFactor>0.4</chanceFactor>
 			</li>
 		</tools>
 		<race>

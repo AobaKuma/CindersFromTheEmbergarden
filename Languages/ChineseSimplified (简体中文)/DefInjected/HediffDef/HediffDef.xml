@@ -12,6 +12,11 @@
   <Cinder_Blindness.description>被地上的触手缠绕，影响了视力与移动能力。</Cinder_Blindness.description>
   
   <!-- EN: entanglement of tentacles -->
+  <Cinder_ErosionDisability.label>侵蚀失能</Cinder_ErosionDisability.label>
+  <!-- EN: Entangled by tentacles on the ground, affecting vision and mobility. -->
+  <Cinder_ErosionDisability.description>被诡异的物质侵蚀导致几乎失去近战能力。</Cinder_ErosionDisability.description>
+  
+  <!-- EN: entanglement of tentacles -->
   <Cinder_BlindnessLow.label>侵蚀缠绕</Cinder_BlindnessLow.label>
   <!-- EN: Entangled by tentacles on the ground, affecting vision and mobility. -->
   <Cinder_BlindnessLow.description>被灼热触手缠绕，降低了视力与移动能力。</Cinder_BlindnessLow.description>

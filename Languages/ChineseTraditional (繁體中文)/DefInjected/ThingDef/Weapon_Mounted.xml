@@ -8,6 +8,12 @@
   <!-- EN: anti air turret -->
   <Cinder_Mounted_AA.verbs.Verb_ShootCE.label>霰弹武器舱</Cinder_Mounted_AA.verbs.Verb_ShootCE.label>
   
+  <Cinder_Mounted_Tentacle.label>触手武器舱</Cinder_Mounted_Tentacle.label>
+  <!-- EN: TODO -->
+  <Cinder_Mounted_Tentacle.description>一种用于近距离单位发动触手攻击的武器舱。</Cinder_Mounted_Tentacle.description>
+  <!-- EN: anti air turret -->
+  <Cinder_Mounted_Tentacle.verbs.Verb_ShootCE.label>触手武器舱</Cinder_Mounted_Tentacle.verbs.Verb_ShootCE.label>
+  <Cinder_Mounted_Tentacle.verbs.Verb_Shoot.label>触手武器舱</Cinder_Mounted_Tentacle.verbs.Verb_Shoot.label>
   <!-- UNUSED -->
   <Cinder_Mounted_AA.verbs.Verb_Shoot.label>霰弹武器舱</Cinder_Mounted_AA.verbs.Verb_Shoot.label>
   
@@ -41,4 +47,5 @@
   <!-- UNUSED -->
   <Cinder_Mounted_Rocket.verbs.Verb_Shoot.label>火箭巢</Cinder_Mounted_Rocket.verbs.Verb_Shoot.label>
   
+  <Cinder_TentacleGourdProjB.label>触手</Cinder_TentacleGourdProjB.label>
 </LanguageData>

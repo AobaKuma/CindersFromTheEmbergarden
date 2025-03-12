@@ -454,6 +454,104 @@
 	</HediffDef>
 	
 	<HediffDef>
+		<defName>Cinder_ErosionDisability</defName>
+		<label>Erosion disability</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<initialSeverity>0.1</initialSeverity>
+		<description>Disabled due to erosion by strange substances.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>6000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+		    <li>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<setMax>0.8</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>1</setMax>
+					</li>
+				</capMods>
+				<statFactors>
+				    <MeleeCooldownFactor>1.1</MeleeCooldownFactor>
+					<MeleeHitChance>0.75</MeleeHitChance>
+					<MeleeDamageFactor>0.8</MeleeDamageFactor>
+					<MeleeDodgeChance>0.2</MeleeDodgeChance>
+				</statFactors>
+				<statOffsets>
+					<MeleeDamageFactor>-0.2</MeleeDamageFactor>
+				</statOffsets>
+			</li>
+			<li>
+			   <minSeverity>0.5</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<setMax>0.4</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.85</setMax>
+					</li>
+				</capMods>
+				<statFactors>
+					<MeleeCooldownFactor>1.5</MeleeCooldownFactor>
+					<MeleeDamageFactor>0.7</MeleeDamageFactor>
+					<MeleeHitChance>0.5</MeleeHitChance>
+					<MeleeDodgeChance>0.1</MeleeDodgeChance>
+				</statFactors>
+			</li>
+			<li>
+			     <minSeverity>0.8</minSeverity>
+				  <painOffset>0.3</painOffset>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<setMax>0</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.8</setMax>
+					</li>
+				</capMods>
+				<statFactors>
+					<MeleeCooldownFactor>2</MeleeCooldownFactor>
+					<MeleeDamageFactor>0.5</MeleeDamageFactor>
+					<MeleeHitChance>0.3</MeleeHitChance>
+					<MeleeDodgeChance>0</MeleeDodgeChance>
+				</statFactors>
+			</li>
+			<li>
+			     <minSeverity>1</minSeverity>
+				  <painOffset>0.5</painOffset>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<setMax>0</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.75</setMax>
+					</li>
+				</capMods>
+				<statFactors>
+					<MeleeCooldownFactor>2.5</MeleeCooldownFactor>
+					<MeleeDamageFactor>0.3</MeleeDamageFactor>
+					<MeleeHitChance>0.1</MeleeHitChance>
+					<MeleeDodgeChance>0</MeleeDodgeChance>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
 		<defName>Cinder_BlindnessLow</defName>
 		<label>entanglement of tentacles</label>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -531,7 +629,7 @@
            </li>
 		</stages>
 	</HediffDef>
-
+	
 	<HediffDef>
 		<defName>Cinder_Erosion</defName>
 		<label>erosion</label>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make erosion agent -->
+  <Cinder_ResurrectUltraheavyMech.label>复活战争步行者</Cinder_ResurrectUltraheavyMech.label>
+  <!-- EN: Make erosion agent. -->
+  <Cinder_ResurrectUltraheavyMech.description>复活一个我方的超重型步行者。只要战争步行者的尸体没有被完全摧毁，它就可以复活。</Cinder_ResurrectUltraheavyMech.description>
+  <!-- EN: Making erosion agent. -->
+  <Cinder_ResurrectUltraheavyMech.jobString>正在复活战争步行者</Cinder_ResurrectUltraheavyMech.jobString>
+  
+  
+</LanguageData>

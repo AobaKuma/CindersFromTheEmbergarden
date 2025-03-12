@@ -706,6 +706,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
+			<li>CinderCut</li>
 			<li>CinderCaster</li>
 		</weaponTags>
 		<tradeTags Inherit="False">

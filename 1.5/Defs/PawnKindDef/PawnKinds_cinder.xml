@@ -841,6 +841,7 @@
 			<max>900</max>
 		</apparelMoney>
 		<weaponTags>
+		    <li>CinderCut</li>
 			<li>CinderRifles</li>
 			<li>CinderCaster</li>
 		</weaponTags>

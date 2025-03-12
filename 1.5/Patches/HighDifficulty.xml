@@ -26,6 +26,7 @@
 					<xpath>Defs/HediffDef[defName="Cinder_Regen"]/stages/li[1]</xpath>
 					<value>
 						<li>
+						<painOffset>-0.3</painOffset>
 				        <totalBleedFactor>0.95</totalBleedFactor>
 		              	</li>
 					</value>
@@ -65,27 +66,28 @@
 					<xpath>Defs/HediffDef[defName="Cinder_LongDream"]/stages/li[label="long dream"]</xpath>
 					<value>
                         <li>
-						<totalBleedFactor>0.2</totalBleedFactor>
+						<totalBleedFactor>0.5</totalBleedFactor>
 				        <painFactor>0</painFactor>
 				        <hungerRateFactor>0.5</hungerRateFactor>
 				        <minSeverity>0</minSeverity>
 				        <label>long dream</label>
 				        <statFactors>
-					      <IncomingDamageFactor>0.9</IncomingDamageFactor>
-						  <MeleeCooldownFactor>0.6</MeleeCooldownFactor>
 						  <Flammability>0</Flammability>
 						  <InjuryHealingFactor>4</InjuryHealingFactor>
 						  <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
 				        </statFactors>
 				        <damageFactors>
 					       <Cut>0.4</Cut>
+						   <Bomb>0.75</Bomb>
+						   <Flame>0</Flame>
+						   <Burn>0.1</Burn>
 					       <Crush>0.4</Crush>
 					       <Blunt>0.4</Blunt>
 					       <Poke>0.4</Poke>
 					       <Demolish>0.4</Demolish>
 					       <Stab>0.4</Stab>
-					       <Arrow>0.4</Arrow>
-					       <ArrowHighVelocity>0.4</ArrowHighVelocity>
+					       <Arrow>0.55</Arrow>
+					       <ArrowHighVelocity>0.55</ArrowHighVelocity>
 				        </damageFactors>
 			            </li>
 					</value>
@@ -208,7 +210,7 @@
                         <projectile>
 			            <damageDef>Cinder_Bomb</damageDef>
 			            <damageAmountBase>250</damageAmountBase>
-			            <armorPenetrationBase>2</armorPenetrationBase>
+			            <armorPenetrationBase>4</armorPenetrationBase>
 			            <speed>65</speed>
 			            <explosionRadius>10</explosionRadius>
 			            <screenShakeFactor>1.5</screenShakeFactor>
@@ -222,7 +224,7 @@
                         <li Class="CompProperties_Explosive">
 				            <explosiveRadius>4.5</explosiveRadius>
 				            <explosiveDamageType>Cinder_BombB</explosiveDamageType>
-				            <damageAmountBase>60</damageAmountBase>
+				            <damageAmountBase>100</damageAmountBase>
 				            <armorPenetrationBase>1.5</armorPenetrationBase>
 				            <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
 				            <wickTicks>15</wickTicks>
@@ -288,27 +290,76 @@
 					</value>
 				</li>
 				
+				
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/PawnKindDef[defName="Cinder_Mech_ErodedEXO"]/combatPower</xpath>
+					<xpath>Defs/ThingDef[defName="Cinder_Mounted_Tentacle"]/verbs/li[1]</xpath>
 					<value>
-                      <combatPower>800</combatPower>
+                      <li>
+				        <verbClass>Verb_Shoot</verbClass>
+				         <hasStandardCommand>true</hasStandardCommand>
+				         <defaultProjectile>Cinder_TentacleGourdProjB</defaultProjectile>
+				         <warmupTime>0</warmupTime>
+				         <range>15.9</range>
+				         <ticksBetweenBurstShots>24</ticksBetweenBurstShots>
+				         <burstShotCount>1</burstShotCount>
+				         <soundCast>Cinder_TentacleShot</soundCast>
+				         <soundCastTail>GunTail_Heavy</soundCastTail>
+				         <muzzleFlashScale>9</muzzleFlashScale>
+			            </li> 
 					</value>
 				</li>
 				
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/PawnKindDef[defName="Cinder_Mech_WarAttacker"]/combatPower</xpath>
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_WarAttacker"]/comps/li[@Class="Embergarden.CompProperties_MultipleTurretGun"]/subTurrets/li[ID="anti air turret"]/warmingTime</xpath>
 					<value>
-                      <combatPower>1200</combatPower>
+                      <warmingTime>0.6</warmingTime>
 					</value>
 				</li>
 				
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/PawnKindDef[defName="Cinder_Mech_WarSweeper"]/combatPower</xpath>
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_WarSweeper"]/comps/li[@Class="Embergarden.CompProperties_MultipleTurretGun"]/subTurrets/li[ID="anti air turret"]/warmingTime</xpath>
 					<value>
-                      <combatPower>1000</combatPower>
+                      <warmingTime>0.6</warmingTime>
 					</value>
 				</li>
 				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_ErodedEXO"]/comps/li[@Class="Embergarden.CompProperties_MultipleTurretGun"]/subTurrets/li[ID="exo turret"]</xpath>
+					<value>
+                      <li>
+						<ID>exo turret</ID>
+						<turret>Cinder_Mounted_Tentacle</turret>
+						<autoAttack>true</autoAttack>
+						<warmingTime>0.75</warmingTime>
+						<angleOffset>-90</angleOffset>
+						<renderNodeProperties>
+							<li>
+								<nodeClass>Embergarden.PawnRenderNode_SubTurretGun</nodeClass>
+								<workerClass>Embergarden.PawnRenderNodeWorker_SubTurretGun</workerClass>
+								<parentTagDef>Body</parentTagDef>
+								<drawSize>1.1</drawSize>
+								<baseLayer>5</baseLayer>
+								<pawnType>Any</pawnType>
+								<drawData>
+									<dataEast>
+										<offset>(0.25,0,1.2)</offset>
+									</dataEast>
+									<dataWest>
+										<offset>(-0.35,0,0)</offset>
+										<rotationOffset>180</rotationOffset>
+									</dataWest>
+									<dataSouth>
+										<offset>(0.75,0,0.65)</offset>
+									</dataSouth>
+									<dataNorth>
+										<offset>(-0.75,0,0.9)</offset>
+									</dataNorth>
+								</drawData>
+							</li>
+						</renderNodeProperties>
+					</li>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>			

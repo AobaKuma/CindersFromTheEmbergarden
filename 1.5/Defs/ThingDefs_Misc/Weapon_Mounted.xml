@@ -100,6 +100,35 @@
 		</modExtensions>
 	</ThingDef>
 	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Cinder_TentacleGourdProjB</defName>
+		<label>Tentacle</label>
+		<thingClass>Embergarden.Projectile_Tentacle</thingClass>
+		<graphicData>
+			<texPath>Things/Weapons/Bullet_clustered</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.4, 1.4)</drawSize>
+		</graphicData>
+		<projectile Class="Embergarden.ProjectileProperties_Tentacle">
+			<damageDef>Cider_CutB</damageDef>
+			<damageAmountBase>2</damageAmountBase>
+			<stoppingPower>3</stoppingPower>
+			<armorPenetrationBase>10</armorPenetrationBase>
+			<speed>65</speed>
+
+			<effecterDef>Cinder_TentacleProj</effecterDef>
+			<tickPerTentacle>2</tickPerTentacle>
+			<tentacleFleck>Cinder_TentacleSection</tentacleFleck>
+			<tentacleHeadFleck>Cinder_TentacleHead</tentacleHeadFleck>
+			<tentacleHitFleck>Cinder_TentacleHeadHit</tentacleHitFleck>
+			<hitEffecterDef>Cinder_TentacleHit</hitEffecterDef>
+
+			<swingRange>0.5~1</swingRange>
+			<colorA>(1,1,1)</colorA>
+			<colorB>(0.9,0.9,0.9)</colorB>
+		</projectile>
+	</ThingDef>
+	
 
 	<ThingDef ParentName="Cinder_MountedGun">
 		<defName>Cinder_Mounted_Rocket</defName>

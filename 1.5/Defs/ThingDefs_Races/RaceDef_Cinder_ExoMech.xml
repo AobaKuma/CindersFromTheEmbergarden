@@ -57,6 +57,14 @@
 				<multiplier>0.70</multiplier>
 			</li>
 			<li>
+				<damageDef>Burn</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li>
 				<damageDef>Stab</damageDef>
 				<multiplier>0.70</multiplier>
 			</li>

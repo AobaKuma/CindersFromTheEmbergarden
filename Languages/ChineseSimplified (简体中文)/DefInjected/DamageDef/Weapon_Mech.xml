@@ -6,6 +6,11 @@
   <!-- EN: {0} has been cut to death. -->
   <Cider_Cut.deathMessage>{0}被砍杀了。</Cider_Cut.deathMessage>
   
+    <!-- EN: cut -->
+  <Cider_CutB.label>割伤</Cider_CutB.label>
+  <!-- EN: {0} has been cut to death. -->
+  <Cider_CutB.deathMessage>{0}被砍杀了。</Cider_CutB.deathMessage>
+  
   <!-- EN: bullet -->
   <Cider_ErosionBullet.label>枪伤</Cider_ErosionBullet.label>
   <!-- EN: {0} has been shot to death. -->
