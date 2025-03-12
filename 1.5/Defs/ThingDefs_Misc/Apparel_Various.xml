@@ -164,7 +164,7 @@
 			<WorkToMake>5000</WorkToMake>
 			<Mass>0.5</Mass>
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.4</ArmorRating_Heat>
 			<Insulation_Cold>7.4</Insulation_Cold>
 			<Insulation_Heat>13</Insulation_Heat>

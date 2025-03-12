@@ -9,8 +9,8 @@
 		<statBases>
 			<MoveSpeed>4</MoveSpeed>
 			<MarketValue>1000</MarketValue>
-			<ComfyTemperatureMin>-155</ComfyTemperatureMin>
-			<ComfyTemperatureMax>75</ComfyTemperatureMax>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<ComfyTemperatureMax>70</ComfyTemperatureMax>
 			<FilthRate>1</FilthRate>
 			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
 		</statBases>
@@ -40,7 +40,7 @@
 			<body>Cinder_TurretWalker</body>
 			<baseBodySize>4</baseBodySize>
 			<baseHealthScale>3</baseHealthScale>
-			<baseHungerRate>0.2</baseHungerRate>
+			<baseHungerRate>0.8</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<specificMeatDef>Cinder_BurntStrangeMeat</specificMeatDef>
 			<gestationPeriodDays>16.66</gestationPeriodDays>

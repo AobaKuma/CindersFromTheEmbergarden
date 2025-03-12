@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="Embergarden.PatchOperationConditionalSettings">
+		<key>Nerf</key>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_UncontrollableTentacles"]/stages/li[label="active"]</xpath>
+					<value>
+						<li>
+				            <label>active</label>
+				            <minSeverity>0</minSeverity>
+				            <statFactors>
+				               <Flammability>0.75</Flammability>
+					           <MeleeCooldownFactor>1.4</MeleeCooldownFactor>
+					           <IncomingDamageFactor>0.95</IncomingDamageFactor>
+				            </statFactors>
+				            <statOffsets>
+					          <MeleeDamageFactor>0.3</MeleeDamageFactor>
+				            </statOffsets>
+			             </li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_Regen"]/stages/li[1]</xpath>
+					<value>
+						<li>
+				        <totalBleedFactor>0.95</totalBleedFactor>
+		              	</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_Regen"]/comps/li[@Class="Embergarden.HediffCompProperties_Regen"]</xpath>
+					<value>
+						<li Class="Embergarden.HediffCompProperties_Regen">
+			           	<healPerDay>2</healPerDay>
+				        <checkInterval>600</checkInterval>
+				        <healPerDayUnlocked>50</healPerDayUnlocked>
+				        <maxPartHpForLocked>10</maxPartHpForLocked>
+				        <unlockedString>unlocked</unlockedString>
+			            </li>
+					</value>
+				</li>
+				
+			    <li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_Resurrect"]/comps/li[@Class="Embergarden.HediffCompProperties_Resurrect"]</xpath>
+					<value>
+						<li Class="Embergarden.HediffCompProperties_Resurrect">
+				          <afterEffectHediff>Cinder_ResurrectComa</afterEffectHediff>
+						  <afterEffectTick>240000</afterEffectTick>
+				          <disabledString>lose efficacy</disabledString>
+				          <regenHediffs>
+					        <li>
+						        <hediff>Cinder_EyeHediff</hediff>
+						        <bodyPart>Head</bodyPart>
+					        </li>
+				          </regenHediffs>
+			          </li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_LongDream"]/stages/li[label="long dream"]</xpath>
+					<value>
+                        <li>
+						<totalBleedFactor>0.2</totalBleedFactor>
+				        <painFactor>0</painFactor>
+				        <hungerRateFactor>0.5</hungerRateFactor>
+				        <minSeverity>0</minSeverity>
+				        <label>long dream</label>
+				        <statFactors>
+					      <IncomingDamageFactor>0.9</IncomingDamageFactor>
+						  <MeleeCooldownFactor>0.6</MeleeCooldownFactor>
+						  <Flammability>0</Flammability>
+						  <InjuryHealingFactor>4</InjuryHealingFactor>
+						  <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+				        </statFactors>
+				        <damageFactors>
+					       <Cut>0.4</Cut>
+					       <Crush>0.4</Crush>
+					       <Blunt>0.4</Blunt>
+					       <Poke>0.4</Poke>
+					       <Demolish>0.4</Demolish>
+					       <Stab>0.4</Stab>
+					       <Arrow>0.4</Arrow>
+					       <ArrowHighVelocity>0.4</ArrowHighVelocity>
+				        </damageFactors>
+			            </li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_EternalFearAbility"]/cooldownTicksRange</xpath>
+					<value>
+						   <cooldownTicksRange>150000</cooldownTicksRange>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_EternalFearAbility"]/charges</xpath>
+					<value>
+						   <charges>1</charges>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_FearPulse"]/cooldownTicksRange</xpath>
+					<value>
+						    <cooldownTicksRange>300000</cooldownTicksRange>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_BurnHemostasis"]/cooldownTicksRange</xpath>
+					<value>
+						    <cooldownTicksRange>120000</cooldownTicksRange>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_AmorphousIED"]/cooldownTicksRange</xpath>
+					<value>
+						    <cooldownTicksRange>270000</cooldownTicksRange>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_AmorphousWinding"]/cooldownTicksRange</xpath>
+					<value>
+						    <cooldownTicksRange>600000</cooldownTicksRange>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_ErodedBomb"]/cooldownTicksRange</xpath>
+					<value>
+						    <cooldownTicksRange>180000</cooldownTicksRange>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_SuffocatingWhispers"]/cooldownTicksRange</xpath>
+					<value>
+						    <cooldownTicksRange>240000</cooldownTicksRange>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_LaunchHellfireMissile"]/cooldownTicksRange</xpath>
+					<value>
+						    <cooldownTicksRange>600000</cooldownTicksRange>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_LaunchHellfireMissileB"]/cooldownTicksRange</xpath>
+					<value>
+						    <cooldownTicksRange>600000</cooldownTicksRange>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_LaunchHellfireMissile"]/verbProperties/range</xpath>
+					<value>
+						    <range>27</range>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_LaunchHellfireMissileB"]/verbProperties/range</xpath>
+					<value>
+						    <range>30</range>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Bullet_RPG"]/projectile</xpath>
+					<value>
+                        <projectile>
+			              <damageDef>Cinder_Bomb</damageDef>
+			              <damageAmountBase>100</damageAmountBase>
+			              <armorPenetrationBase>1</armorPenetrationBase>
+		                  <speed>75</speed>
+			              <explosionRadius>3</explosionRadius>
+		                </projectile>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_MechGun_GiantHEATRifle"]/verbs/li[1]/range</xpath>
+					<value>
+                        <range>30</range>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_MechGun_GiantHEATRifle"]/verbs/li[1]/warmupTime</xpath>
+					<value>
+                        <warmupTime>4.5</warmupTime>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="CinderBullet_Hellfire"]/projectile</xpath>
+					<value>
+                        <projectile>
+			            <damageDef>Cinder_Bomb</damageDef>
+			            <damageAmountBase>250</damageAmountBase>
+			            <armorPenetrationBase>2</armorPenetrationBase>
+			            <speed>65</speed>
+			            <explosionRadius>10</explosionRadius>
+			            <screenShakeFactor>1.5</screenShakeFactor>
+		                </projectile>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="CinderBullet_Hellfire"]/comps/li[@Class="CompProperties_Explosive"]</xpath>
+					<value>
+                        <li Class="CompProperties_Explosive">
+				            <explosiveRadius>4.5</explosiveRadius>
+				            <explosiveDamageType>Cinder_BombB</explosiveDamageType>
+				            <damageAmountBase>60</damageAmountBase>
+				            <armorPenetrationBase>1.5</armorPenetrationBase>
+				            <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+				            <wickTicks>15</wickTicks>
+				            <startWickOnDamageTaken>
+					          <li>Bullet</li>
+					          <li>Arrow</li>
+					          <li>ArrowHighVelocity</li>
+				            </startWickOnDamageTaken>
+				            <destroyThingOnExplosionSize>9999</destroyThingOnExplosionSize>
+				            <propagationSpeed>0.5</propagationSpeed>
+		             	</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/DamageDef[defName="Cinder_BombB"]/externalViolence</xpath>
+					<value>
+                        <externalViolence>false</externalViolence>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Trailer"]/statBases</xpath>
+					<value>
+                        <statBases>
+		                  	<MoveSpeed>3.5</MoveSpeed>
+			                <MarketValue>1000</MarketValue>
+			                <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+			                <ComfyTemperatureMax>60</ComfyTemperatureMax>
+			                <FilthRate>1</FilthRate>
+			                <CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+		                </statBases>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Trailer"]/race/baseHungerRate</xpath>
+					<value>
+                       <baseHungerRate>2</baseHungerRate>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Apparel_ScavHeavyCoat"]/statBases/ArmorRating_Sharp</xpath>
+					<value>
+                      <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Apparel_HeavyArmorDress"]/statBases/StuffEffectMultiplierArmor</xpath>
+					<value>
+                      <StuffEffectMultiplierArmor>0.95</StuffEffectMultiplierArmor>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_ErodedEXO"]/statBases</xpath>
+					<value>
+                      <statBases>
+			            <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">4</BandwidthCost>
+		              </statBases>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Cinder_Mech_ErodedEXO"]/combatPower</xpath>
+					<value>
+                      <combatPower>800</combatPower>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Cinder_Mech_WarAttacker"]/combatPower</xpath>
+					<value>
+                      <combatPower>1200</combatPower>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Cinder_Mech_WarSweeper"]/combatPower</xpath>
+					<value>
+                      <combatPower>1000</combatPower>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>			
+</Patch>

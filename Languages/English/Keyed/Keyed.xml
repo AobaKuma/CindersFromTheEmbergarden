@@ -4,6 +4,10 @@
 	<!-- EN: {0} has appeared! -->
   <Cinder_CommaEyesLabel>Vanilla style face</Cinder_CommaEyesLabel>
   <Cinder_CommaEyesDesc>Replace face and body with vanilla style comma face and vanilla body(Need to restart game)</Cinder_CommaEyesDesc>
+  
+  <Cinder_NerfLabel>Vanilla style rebalance(High difficulty)</Cinder_NerfLabel>
+  <Cinder_NerfDesc>Nerf the attributes that players can possess to a level similar to vanilla games.But the enemy will be stronger(Need to restart game)</Cinder_NerfDesc>
+  
   <Cinder_NeedResurrectOrRegen>People with amorphous regeneration ability are required to use it</Cinder_NeedResurrectOrRegen>
   <Cinder_AllAbilityGained>Already acquired all abilities</Cinder_AllAbilityGained>
   <Embergarden_PlatingTooltip>Remaining armor</Embergarden_PlatingTooltip>

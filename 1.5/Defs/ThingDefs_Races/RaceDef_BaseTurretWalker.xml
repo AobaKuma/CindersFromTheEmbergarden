@@ -85,7 +85,7 @@
 			</li>
 		</comps>
 		<butcherProducts>
-			<Cinder_AmorphousPolymer>55</Cinder_AmorphousPolymer>
+			<Cinder_AmorphousPolymer>25</Cinder_AmorphousPolymer>
 		</butcherProducts>
 		<modExtensions>
 			<li Class="Embergarden.ModExtension_Draftable"/>

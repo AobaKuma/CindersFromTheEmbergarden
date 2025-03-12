@@ -48,7 +48,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Cinder_Bomb</damageDef>
-			<damageAmountBase>150</damageAmountBase>
+			<damageAmountBase>110</damageAmountBase>
 			<armorPenetrationBase>1.5</armorPenetrationBase>
 			<speed>75</speed>
 			<explosionRadius>3</explosionRadius>

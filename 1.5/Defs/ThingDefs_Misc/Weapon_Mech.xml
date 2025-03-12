@@ -235,6 +235,7 @@
 		<defName>Cinder_BombB</defName>
 		<label>bomb</label>
 		<isExplosive>False</isExplosive>
+		<externalViolence>true</externalViolence>
 		<workerClass>DamageWorker_Vaporize</workerClass>
 		<explosionCellFleck>BlastDry</explosionCellFleck>
 		<hasForcefulImpact>true</hasForcefulImpact>
