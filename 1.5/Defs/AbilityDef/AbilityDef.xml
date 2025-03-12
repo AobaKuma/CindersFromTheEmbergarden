@@ -21,7 +21,7 @@
 			<ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
 			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 			<ai_TargetHasRangedAttackScoreOffset>50</ai_TargetHasRangedAttackScoreOffset>
-			<minRange>5.9</minRange>
+			<minRange>2.9</minRange>
 			<targetParams>
 				<canTargetPawns>true</canTargetPawns>
 				<canTargetLocations>true</canTargetLocations>

@@ -180,7 +180,7 @@
 				<explosiveRadius>4.9</explosiveRadius>
 				<explosiveDamageType>Cinder_BombB</explosiveDamageType>
 				<damageAmountBase>150</damageAmountBase>
-				<armorPenetrationBase>1</armorPenetrationBase>
+				<armorPenetrationBase>1.5</armorPenetrationBase>
 				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
 				<wickTicks>15</wickTicks>
 				<startWickOnDamageTaken>
@@ -240,6 +240,14 @@
 		<hasForcefulImpact>true</hasForcefulImpact>
 		<explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
 		<expolosionPropagationSpeed>0.4</expolosionPropagationSpeed>
+		<additionalHediffs>
+			<li>
+				<hediff>Cinder_Erosion</hediff>
+				<severityPerDamageDealt>5</severityPerDamageDealt>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
 	</DamageDef>
 
 	<DamageDef ParentName="Cinder_Bomb">
