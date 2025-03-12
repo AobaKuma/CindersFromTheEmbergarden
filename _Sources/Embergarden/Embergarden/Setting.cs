@@ -9,11 +9,13 @@ namespace Embergarden
 {
     public class Setting : ModSettings
     {
-        public bool CommaEyes = false;
+        public bool CommaEyes = false, VanillaHead = false, Nerf = false;
 
         public override void ExposeData()
         {
             Scribe_Values.Look(ref CommaEyes, "CommaEyes");
+            Scribe_Values.Look(ref VanillaHead, "VanillaHead");
+            Scribe_Values.Look(ref Nerf, "Nerf");
         }
     }
 
@@ -21,6 +23,8 @@ namespace Embergarden
     {
         public static Setting settings;
         public static bool CommaEyes => settings.CommaEyes;
+        public static bool VanillaHead => settings.VanillaHead;
+        public static bool Nerf => settings.Nerf;
 
         public CinderMod(ModContentPack content) : base(content)
         {
@@ -36,6 +40,8 @@ namespace Embergarden
             Text.Font = GameFont.Small;
             listing_Standard.GapLine();
             listing_Standard.CheckboxLabeled("Cinder_CommaEyesLabel".Translate(), ref settings.CommaEyes, "Cinder_CommaEyesDesc".Translate());
+            listing_Standard.CheckboxLabeled("Cinder_VanillaHeadLabel".Translate(), ref settings.VanillaHead, "Cinder_VanillaHeadDesc".Translate());
+            listing_Standard.CheckboxLabeled("Cinder_NerfLabel".Translate(), ref settings.Nerf, "Cinder_NerfDesc".Translate());
             listing_Standard.End();
         }
         public override string SettingsCategory()
