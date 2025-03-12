@@ -720,12 +720,12 @@
 				<power>15</power>
 				<cooldownTime>2</cooldownTime>
 				<extraMeleeDamages>
-                   <li>
-                   <def>Cider_Cut</def>
-                   <amount>5</amount>
-                   <chance>1</chance>
-                  </li>
-             </extraMeleeDamages>
+					<li>
+						<def>Cider_Cut</def>
+						<amount>5</amount>
+						<chance>1</chance>
+					</li>
+				</extraMeleeDamages>
 			</li>
 			<li>
 				<label>Tentacle stab</label>
@@ -736,12 +736,12 @@
 				<power>10</power>
 				<cooldownTime>1.5</cooldownTime>
 				<extraMeleeDamages>
-                   <li>
-                   <def>Cider_Cut</def>
-                   <amount>5</amount>
-                   <chance>1</chance>
-                  </li>
-             </extraMeleeDamages>
+					<li>
+						<def>Cider_Cut</def>
+						<amount>5</amount>
+						<chance>1</chance>
+					</li>
+				</extraMeleeDamages>
 			</li>
 		</tools>
 	</ThingDef>
@@ -768,6 +768,10 @@
 			<tentacleHeadFleck>Cinder_TentacleHead</tentacleHeadFleck>
 			<tentacleHitFleck>Cinder_TentacleHeadHit</tentacleHitFleck>
 			<hitEffecterDef>Cinder_TentacleHit</hitEffecterDef>
+
+			<swingRange>0.5~1</swingRange>
+			<colorA>(1,1,1)</colorA>
+			<colorB>(0.9,0.9,0.9)</colorB>
 		</projectile>
 	</ThingDef>
 </Defs>
