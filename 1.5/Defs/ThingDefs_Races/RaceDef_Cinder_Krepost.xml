@@ -25,7 +25,7 @@
       <mechFixedSkillLevel>12</mechFixedSkillLevel>
       <body>Cinder_ErodedEXO</body>
       <baseBodySize>4</baseBodySize>
-      <baseHealthScale>15</baseHealthScale>
+      <baseHealthScale>14</baseHealthScale>
       <mechWeightClass>UltraHeavy</mechWeightClass>
       <detritusLeavings>
         <li>
@@ -275,8 +275,8 @@
 	<allowInMechClusters>false</allowInMechClusters>
     <race>Cinder_Mech_Krepost</race>
     <isFighter>true</isFighter>
-    <combatPower>2400</combatPower>                                               <!--威脅點數-->
-    <maxPerGroup>1</maxPerGroup>                                                 <!--單個集群內的數量-->
+    <combatPower>1800</combatPower>                                               <!--威脅點數-->
+    <maxPerGroup>2</maxPerGroup>                                                 <!--單個集群內的數量-->
     <isBoss>true</isBoss>
     <lifeStages>                                                                 <!--身體圖片-->
       <li>
@@ -314,6 +314,7 @@
     <techHediffsMoney>9999~9999</techHediffsMoney>
     <abilities>
 	  <li>Cinder_AmorphousIED</li>
+	  <li>Cinder_EternalFearAbility</li>
       <li MayRequire="Aoba.DeadManSwitch.AncientCorps">DMSAC_APS</li>
     </abilities>
   </PawnKindDef>

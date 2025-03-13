@@ -402,7 +402,6 @@
 		  <Cinder_Mech_MiniTurretWalker>40</Cinder_Mech_MiniTurretWalker>
 		   <Cinder_Mech_WalkerAutoCannon>15</Cinder_Mech_WalkerAutoCannon>
 		  <Cinder_Mech_ErodedEXO>100</Cinder_Mech_ErodedEXO>
-		  <Cinder_Mech_Krepost>200</Cinder_Mech_Krepost>
         </options>
       </li>
     </pawnGroupMakers>

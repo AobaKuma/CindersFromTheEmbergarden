@@ -131,7 +131,6 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>CinderBullet_AnvilDiscipline</defaultProjectile>
 				<warmupTime>6</warmupTime>
-				<minRange>7</minRange>
 				<range>58</range>
 				<ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
 				<burstShotCount>1</burstShotCount>
