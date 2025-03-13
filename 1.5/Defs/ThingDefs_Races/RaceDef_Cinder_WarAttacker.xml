@@ -80,7 +80,7 @@
 				<cooldownTime>1</cooldownTime>
 				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-				
+
 			</li>
 			<li>
 				<label>Front tentacle</label>
@@ -221,10 +221,10 @@
 				</subTurrets>
 			</li>
 		</comps>
-		 <killedLeavings>
-            <Cinder_ChunkSlag>2</Cinder_ChunkSlag>
+		<killedLeavings>
+			<Cinder_ChunkSlag>2</Cinder_ChunkSlag>
 			<Cinder_ErodedMechComponent>1</Cinder_ErodedMechComponent>
-        </killedLeavings>
+		</killedLeavings>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BaseMechanoidKind">
@@ -232,9 +232,9 @@
 		<label>war attacker</label>
 		<race>Cinder_Mech_WarAttacker</race>
 		<combatPower>1400</combatPower>
-         <maxPerGroup>1</maxPerGroup>
-		 <allowInMechClusters>false</allowInMechClusters>
-         <isBoss>true</isBoss>
+		<maxPerGroup>1</maxPerGroup>
+		<allowInMechClusters>false</allowInMechClusters>
+		<isBoss>true</isBoss>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<bodyGraphicData>
@@ -262,8 +262,8 @@
 			</li>
 		</lifeStages>
 		<abilities>
-      <li>Cinder_LaunchHellfireMissileB</li>
-    </abilities>
+			<li>Cinder_LaunchHellfireMissileB</li>
+		</abilities>
 		<weaponMoney>9999~9999</weaponMoney>
 		<weaponTags>
 			<li>Cinder_HEATRifle</li>
