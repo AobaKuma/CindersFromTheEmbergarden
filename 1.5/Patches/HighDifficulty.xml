@@ -183,7 +183,7 @@
                         <projectile>
 			              <damageDef>Cinder_Bomb</damageDef>
 			              <damageAmountBase>100</damageAmountBase>
-			              <armorPenetrationBase>1</armorPenetrationBase>
+			              <armorPenetrationBase>1.2</armorPenetrationBase>
 		                  <speed>75</speed>
 			              <explosionRadius>3</explosionRadius>
 		                </projectile>
@@ -193,7 +193,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="Cinder_MechGun_GiantHEATRifle"]/verbs/li[1]/range</xpath>
 					<value>
-                        <range>30</range>
+                        <range>29</range>
 					</value>
 				</li>
 				
