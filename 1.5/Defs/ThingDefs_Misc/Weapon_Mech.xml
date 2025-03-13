@@ -100,6 +100,90 @@
 		</verbs>
 	</ThingDef>
 
+    <ThingDef ParentName="Cinder_MechGun">
+		<defName>Cinder_MechGun_AnvilDiscipline</defName>
+		<label>2A46M “Anvil of Discipline”</label>
+		<description>A semi-automatic anti-tank cannon carried by ultra-heavy automatrons, known for its simple and reliable structure. It is widely used on various armored platforms to engage heavily armed and armored targets such as tanks and heavy mechs.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Mech/AnvilDiscipline</texPath>
+			<drawSize>4</drawSize>
+		</graphicData>
+		<weaponTags>
+			<li>Cinder_AnvilDiscipline</li>
+			<li>NoSwitch</li>
+			<li>DMS_MechWeaponUltraHeavy</li>
+			<li>DMS_MechWeaponTankGun</li>
+		</weaponTags>
+		<uiIconPath>Things/Pawn/Mech/AnvilDiscipline</uiIconPath>
+		<uiIconScale>2</uiIconScale>
+		<statBases>
+			<Mass>265</Mass>
+		    <AccuracyTouch>0.89</AccuracyTouch>
+		    <AccuracyShort>1.00</AccuracyShort>
+		    <AccuracyMedium>1.00</AccuracyMedium>
+		    <AccuracyLong>0.99</AccuracyLong>
+		    <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<forcedMissRadius>1</forcedMissRadius>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CinderBullet_AnvilDiscipline</defaultProjectile>
+				<warmupTime>6</warmupTime>
+				<minRange>7</minRange>
+				<range>58</range>
+				<ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>Cinder_MBTCannonSound</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>30</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>CinderBullet_AnvilDiscipline</defName>
+		<label>HEAT shell</label>
+		<thingClass>Embergarden.Projectile_ConeExplosion</thingClass>
+		<graphicData>
+			<texPath>Things/Weapons/Bullet_RPG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5, 1.5)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Cinder_Bomb</damageDef>
+			<damageAmountBase>120</damageAmountBase>
+			<armorPenetrationBase>1.5</armorPenetrationBase>
+			<speed>75</speed>
+			<explosionRadius>6</explosionRadius>
+			<screenShakeFactor>1.5</screenShakeFactor>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>3.2</explosiveRadius>
+				<explosiveDamageType>Cinder_BombB</explosiveDamageType>
+				<damageAmountBase>80</damageAmountBase>
+				<armorPenetrationBase>1.5</armorPenetrationBase>
+				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+				<wickTicks>15</wickTicks>
+				<startWickOnDamageTaken>
+					<li>Bullet</li>
+					<li>Arrow</li>
+					<li>ArrowHighVelocity</li>
+				</startWickOnDamageTaken>
+				<destroyThingOnExplosionSize>9999</destroyThingOnExplosionSize>
+				<propagationSpeed>0.5</propagationSpeed>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="Embergarden.DefModExtension_ConeExplosion">
+				<angle>10</angle>
+				<invert>false</invert>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
 	<ThingDef ParentName="Cinder_MechGun">
 		<defName>Cinder_MechGun_GiantMiniGun</defName>
 		<label>giant minigun</label>

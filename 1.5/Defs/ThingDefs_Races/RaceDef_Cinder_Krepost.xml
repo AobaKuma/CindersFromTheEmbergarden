@@ -6,20 +6,26 @@
     <label>Krepost</label>
     <description>6M41 / BR-6 "Krepost" NATO nicknamed "TankHead". Huge and bulky walker, used as a bridgehead and mobile battery to maintain frontal battlefield firepower, Krepost is equipped with several active protection system and reactive armors to resist incoming projectiles. Even if the shields are exhausted, its huge size and weapon systems are sufficient at holding off incoming enemies until reinforcements arrive.</description>
     <statBases>
-      <MoveSpeed>2.7</MoveSpeed>
-      <ArmorRating_Sharp>1.65</ArmorRating_Sharp><!--銳抗-->
-      <ArmorRating_Blunt>1.00</ArmorRating_Blunt><!--鈍抗-->
-      <ArmorRating_Heat>1.8</ArmorRating_Heat>  <!--能抗-->
+      <MoveSpeed>3.0</MoveSpeed>
+      <ArmorRating_Sharp>1.40</ArmorRating_Sharp><!--銳抗-->
+      <ArmorRating_Blunt>1.0</ArmorRating_Blunt><!--鈍抗-->
+      <ArmorRating_Heat>2</ArmorRating_Heat>  <!--能抗-->
       <StaggerDurationFactor>0</StaggerDurationFactor>
       <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
-      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">6</BandwidthCost>        <!--帶寬消耗-->
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">8</BandwidthCost>        <!--帶寬消耗-->
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">6</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
+	<damageMultipliers>
+			<li>
+				<damageDef>EMP</damageDef>
+				<multiplier>0.60</multiplier>
+			</li>
+	</damageMultipliers>
     <race>
       <mechFixedSkillLevel>12</mechFixedSkillLevel>
       <body>Cinder_ErodedEXO</body>
-      <baseBodySize>3.25</baseBodySize>
-      <baseHealthScale>5.5</baseHealthScale>
+      <baseBodySize>4</baseBodySize>
+      <baseHealthScale>15</baseHealthScale>
       <mechWeightClass>UltraHeavy</mechWeightClass>
       <detritusLeavings>
         <li>
@@ -60,14 +66,14 @@
             <ID>forward machinegun</ID>
             <turret>Cinder_Mounted_Tentacle</turret>
             <autoAttack>true</autoAttack>
-            <warmingTime>5</warmingTime>
+            <warmingTime>0.75</warmingTime>
             <angleOffset>-90</angleOffset>
             <renderNodeProperties>
               <li>
                 <nodeClass>Embergarden.PawnRenderNode_SubTurretGun</nodeClass>
                 <workerClass>Embergarden.PawnRenderNodeWorker_SubTurretGun</workerClass>
                 <parentTagDef>Body</parentTagDef>
-								<drawSize>1.2</drawSize>
+								<drawSize>1.25</drawSize>
                 <baseLayer>-5</baseLayer>
                 <pawnType>Any</pawnType>
                 <drawData>
@@ -90,7 +96,7 @@
           </li>
           <li>
             <ID>top machinegun</ID>
-            <turret>Cinder_Mounted_EXOminigun</turret>
+            <turret>Cinder_Mounted_KPVTurret</turret>
             <autoAttack>true</autoAttack>
             <warmingTime>8</warmingTime>
             <angleOffset>-90</angleOffset>
@@ -99,7 +105,7 @@
                 <nodeClass>Embergarden.PawnRenderNode_SubTurretGun</nodeClass>
                 <workerClass>Embergarden.PawnRenderNodeWorker_SubTurretGun</workerClass>
                 <parentTagDef>Body</parentTagDef>
-								<drawSize>0.75</drawSize>
+								<drawSize>2</drawSize>
                 <baseLayer>20</baseLayer>
                 <pawnType>Any</pawnType>
                 <drawData>
@@ -183,12 +189,12 @@
     </modExtensions>
     <tools Inherit="False">
       <li>
-        <label>Mechanical Head</label>
+        <label>Front tentacle</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>35</power>
-        <cooldownTime>6.5</cooldownTime>
+        <power>55</power>
+        <cooldownTime>1</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.08</chanceFactor>
@@ -207,7 +213,7 @@
           <li>Blunt</li>
         </capacities>
         <power>24</power>
-        <cooldownTime>5</cooldownTime>
+        <cooldownTime>4</cooldownTime>
         <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
@@ -216,8 +222,13 @@
           <extraMeleeDamages>
             <li>
               <def>Stun</def>
-              <amount>16</amount>
+              <amount>15</amount>
             </li>
+			<li>
+				<def>Cider_CutB</def>
+				<amount>5</amount>
+				<chance>1</chance>
+			</li>
           </extraMeleeDamages>
         </surpriseAttack>
       </li>
@@ -227,7 +238,7 @@
           <li>Blunt</li>
         </capacities>
         <power>24</power>
-        <cooldownTime>5</cooldownTime>
+        <cooldownTime>4</cooldownTime>
         <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
@@ -236,8 +247,13 @@
           <extraMeleeDamages>
             <li>
               <def>Stun</def>
-              <amount>16</amount>
+              <amount>15</amount>
             </li>
+			<li>
+				<def>Cider_CutB</def>
+				<amount>5</amount>
+				<chance>1</chance>
+			</li>
           </extraMeleeDamages>
         </surpriseAttack>
       </li>
@@ -255,8 +271,8 @@
 
   <PawnKindDef ParentName="BaseMechanoidKind" Name="DMS_BaseKrepostKind">
     <defName>Cinder_Mech_Krepost</defName>
-    <label>BR-6 "Krepost"</label>
-		<allowInMechClusters>false</allowInMechClusters>
+    <label>eroded"Krepost"</label>
+	<allowInMechClusters>false</allowInMechClusters>
     <race>Cinder_Mech_Krepost</race>
     <isFighter>true</isFighter>
     <combatPower>2400</combatPower>                                               <!--威脅點數-->
@@ -292,13 +308,13 @@
     <weaponTags>
       <li>DMS_MechWeaponTankGun</li>
       <li>DMS_DragoonGun</li>
-      <li>Cinder_HEATRifle</li>
+      <li>Cinder_MechGun_AnvilDiscipline</li>
     </weaponTags>
     <techHediffsChance>1</techHediffsChance>
     <techHediffsMoney>9999~9999</techHediffsMoney>
     <abilities>
-      <li>Cinder_LaunchHellfireMissileB</li>
-      <li MayRequire="aoba.deadmanswitch.core">DMSAC_APS</li>
+	  <li>Cinder_AmorphousIED</li>
+      <li MayRequire="Aoba.DeadManSwitch.AncientCorps">DMSAC_APS</li>
     </abilities>
   </PawnKindDef>
 </Defs>

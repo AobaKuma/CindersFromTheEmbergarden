@@ -312,6 +312,7 @@
 		<li>(5000,420)</li>
 		<li>(7000,1000)</li>
 		<li>(8000,2000)</li>
+		<li>(9000,2500)</li>
         <li>(100000,10000)</li>
       </points>
     </maxPawnCostPerTotalPointsCurve>
@@ -334,7 +335,7 @@
 	   <li>
         <!-- 尸鬼单位 -->
         <kindDef>Combat</kindDef>
-        <commonality>10</commonality>
+        <commonality>15</commonality>
         <options>
 		  <Cinder_Ghoul>4</Cinder_Ghoul>
 		  <Cinder_EliteGhoul>4</Cinder_EliteGhoul>
@@ -347,7 +348,7 @@
       <li>
         <!-- 装甲扫荡单位 -->
         <kindDef>Combat</kindDef>
-        <commonality>50</commonality>
+        <commonality>75</commonality>
         <options>
 		  <Cinder_EliteGhoul>2</Cinder_EliteGhoul>
 		   <Cinder_Ghoul>0.1</Cinder_Ghoul>
@@ -375,6 +376,21 @@
         </options>
       </li>
 	  <li>
+        <!-- 主战单位 -->
+        <kindDef>Combat</kindDef>
+        <commonality>150</commonality>
+        <options>
+		 <Cinder_Mech_ErodedEXO>1000</Cinder_Mech_ErodedEXO>
+		 <Cinder_Mech_Krepost>1200</Cinder_Mech_Krepost>
+		  <Cinder_EliteGhoul>2</Cinder_EliteGhoul>
+		   <Cinder_Ghoul>0.1</Cinder_Ghoul>
+		   <Cinder_SoliderUnit>0.1</Cinder_SoliderUnit>
+		  <Cinder_HeavySoliderUnit>2</Cinder_HeavySoliderUnit>
+		  <Cinder_Mech_MiniTurretWalker>40</Cinder_Mech_MiniTurretWalker>
+		  <Cinder_Mech_WalkerAutoCannon>5</Cinder_Mech_WalkerAutoCannon>
+        </options>
+      </li>
+	  <li>
         <!-- 破墙单位 -->
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
@@ -386,6 +402,7 @@
 		  <Cinder_Mech_MiniTurretWalker>40</Cinder_Mech_MiniTurretWalker>
 		   <Cinder_Mech_WalkerAutoCannon>15</Cinder_Mech_WalkerAutoCannon>
 		  <Cinder_Mech_ErodedEXO>100</Cinder_Mech_ErodedEXO>
+		  <Cinder_Mech_Krepost>200</Cinder_Mech_Krepost>
         </options>
       </li>
     </pawnGroupMakers>

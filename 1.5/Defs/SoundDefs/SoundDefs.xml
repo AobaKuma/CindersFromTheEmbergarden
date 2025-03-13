@@ -175,4 +175,19 @@
     </subSounds>
   </SoundDef>
   
+   <SoundDef>
+    <defName>Cinder_MBTCannonSound</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/2A46M</clipPath>
+          </li>
+        </grains>
+        <volumeRange>60~60</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
 </Defs>
