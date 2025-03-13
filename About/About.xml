@@ -26,4 +26,7 @@
 		<li>Dubwise.DubsBadHygiene</li>
 		<li>Dubwise.DubsBadHygiene.Lite</li>
 	</loadAfter>
+	<forceLoadBefore>
+    <li>Aoba.DeadManSwitch.MobileDragoon</li>
+  </forceLoadBefore>
 </ModMetaData>

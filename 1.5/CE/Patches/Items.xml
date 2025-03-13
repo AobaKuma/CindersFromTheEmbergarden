@@ -18,4 +18,13 @@
     </statBases>
 		</value>
 	</Operation>
+	
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Cinder_AmorphousPolymer"]/stuffProps/categories</xpath>
+		<value>
+			<li>Metallic_Weapon</li>
+			<li>Steeled</li>
+		</value>
+	</Operation>
 </Patch>
