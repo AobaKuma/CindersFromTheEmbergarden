@@ -10,7 +10,7 @@
   
   <Cinder_NerfLabel>原版平衡模式(高难度)</Cinder_NerfLabel>
   
-  <Cinder_NerfDesc>玩家的种族数值将会被平衡到无dlc原版水平，但敌人更强（需要重启游戏）</Cinder_NerfDesc>
+  <Cinder_NerfDesc>玩家的种族数值将会被平衡到无dlc原版水平，武器伤害，射程，致死率均有所下降，但敌我差距更为明显，难度更高（需要重启游戏）</Cinder_NerfDesc>
   
   <!-- EN: People with amorphous regeneration ability are required to use it -->
   <Cinder_NeedResurrectOrRegen>需要具有无定形再生能力的人使用</Cinder_NeedResurrectOrRegen>
