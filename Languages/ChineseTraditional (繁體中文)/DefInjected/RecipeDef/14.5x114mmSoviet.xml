@@ -2,10 +2,10 @@
 <LanguageData>
   
   <!-- EN: make 14.5x114mm (Erosion) cartridge x200 -->
-  <MakeAmmo_145x114mm_Erosion.label>制作14.5x114mm 反坦克步枪弹(侵蚀弹)x200</MakeAmmo_145x114mm_Erosion.label>
+  <MakeAmmo_145x114mm_Erosion.label>製作14.5x114mm 反器材步槍彈(侵蝕彈)x200</MakeAmmo_145x114mm_Erosion.label>
   <!-- EN: Craft 200 14.5x114mm (Erosion) cartridges. -->
-  <MakeAmmo_145x114mm_Erosion.description>制作14.5x114mm 反坦克步枪弹(侵蚀弹)</MakeAmmo_145x114mm_Erosion.description>
+  <MakeAmmo_145x114mm_Erosion.description>製作14.5x114mm 反器材步槍彈(侵蝕彈)</MakeAmmo_145x114mm_Erosion.description>
   <!-- EN: Making 14.5x114mm (Erosion) cartridges. -->
-  <MakeAmmo_145x114mm_Erosion.jobString>正在制作14.5x114mm 反坦克步枪弹(侵蚀弹)</MakeAmmo_145x114mm_Erosion.jobString>
+  <MakeAmmo_145x114mm_Erosion.jobString>正在製作14.5x114mm 反器材步槍彈(侵蝕彈)</MakeAmmo_145x114mm_Erosion.jobString>
   
 </LanguageData>

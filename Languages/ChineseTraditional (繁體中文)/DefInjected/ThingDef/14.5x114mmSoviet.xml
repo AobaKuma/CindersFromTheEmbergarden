@@ -2,11 +2,11 @@
 <LanguageData>
   
   <!-- EN: 14.5x114mm (Erosion) -->
-  <Ammo_145x114mm_Erosion.label>14.5x114mm 反器材步枪弹 (侵蚀弹)</Ammo_145x114mm_Erosion.label>
+  <Ammo_145x114mm_Erosion.label>14.5x114mm 反器材步槍彈 (侵蝕彈)</Ammo_145x114mm_Erosion.label>
   <!-- EN: Old-school anti-tank cartridge originally designed for AT rifles, it is also used by a number of heavy machine guns. -->
-  <Ammo_145x114mm_Erosion.description>老式的反坦克步枪弹，最初是为AT步枪设计的，它也被许多重机枪使用。</Ammo_145x114mm_Erosion.description>
+  <Ammo_145x114mm_Erosion.description>老式的反戰車步槍彈，最初是為AT步槍設計的，它也被許多重機槍使用。</Ammo_145x114mm_Erosion.description>
   
   <!-- EN: 14.5x114mm bullet (Erosion) -->
-  <Bullet_145x114mm_Erosion.label>14.5x114mm 反器材步枪弹 (侵蚀弹)</Bullet_145x114mm_Erosion.label>
+  <Bullet_145x114mm_Erosion.label>14.5x114mm 反器材步槍彈 (侵蝕彈)</Bullet_145x114mm_Erosion.label>
   
 </LanguageData>

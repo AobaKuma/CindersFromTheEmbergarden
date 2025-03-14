@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   <!-- EN: amorphous ember -->
-  <Cinder_Setting>无定形余烬</Cinder_Setting>
+  <Cinder_Setting>無定形餘燼</Cinder_Setting>
 	<!-- EN: {0} has appeared! -->
   <!-- EN: Vanilla style face -->
-  <Cinder_CommaEyesLabel>原版脸</Cinder_CommaEyesLabel>
+  <Cinder_CommaEyesLabel>原版臉</Cinder_CommaEyesLabel>
   <!-- EN: Replace face and body with vanilla style comma face and vanilla body(Need to restart game) -->
-  <Cinder_CommaEyesDesc>将脸部与身体替换为原版风格的逗号脸与原版身体（需要重启游戏）</Cinder_CommaEyesDesc>
+  <Cinder_CommaEyesDesc>將臉部與身體替換為原版風格的逗號臉與原版身體（需要重啟遊戲）</Cinder_CommaEyesDesc>
   
-  <Cinder_NerfLabel>原版平衡模式(高难度)</Cinder_NerfLabel>
+  <Cinder_NerfLabel>原版平衡模式(高難度)</Cinder_NerfLabel>
   
-  <Cinder_NerfDesc>玩家的种族数值将会被平衡到无dlc原版水平，武器伤害，射程，致死率均有所下降，但敌我差距更为明显，难度更高（需要重启游戏）</Cinder_NerfDesc>
+  <Cinder_NerfDesc>玩家的種族數值將會被平衡到無dlc原版水平，武器傷害，射程，致死率均有所下降，但敵我差距更為明顯，難度更高（需要重啟遊戲）</Cinder_NerfDesc>
   
   <!-- EN: People with amorphous regeneration ability are required to use it -->
-  <Cinder_NeedResurrectOrRegen>需要具有无定形再生能力的人使用</Cinder_NeedResurrectOrRegen>
+  <Cinder_NeedResurrectOrRegen>需要具有無定形再生能力的人使用</Cinder_NeedResurrectOrRegen>
   <!-- EN: Already acquired all abilities -->
-  <Cinder_AllAbilityGained>已经获得所有能力了</Cinder_AllAbilityGained>
+  <Cinder_AllAbilityGained>已經獲得所有能力了</Cinder_AllAbilityGained>
   <!-- EN: The armor plate on {0}'s body has been completely damaged -->
-  <Embergarden_PlatingTooltip>剩余装甲</Embergarden_PlatingTooltip>
+  <Embergarden_PlatingTooltip>剩餘裝甲</Embergarden_PlatingTooltip>
 </LanguageData>

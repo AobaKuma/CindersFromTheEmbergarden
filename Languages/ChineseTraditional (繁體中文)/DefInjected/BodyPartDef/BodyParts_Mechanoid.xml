@@ -2,34 +2,34 @@
 <LanguageData>
   
   <!-- EN: Armored seat ring -->
-  <Cinder_ArmoredRing.label>装甲座圈</Cinder_ArmoredRing.label>
+  <Cinder_ArmoredRing.label>裝甲座圈</Cinder_ArmoredRing.label>
   
   <!-- EN: armour plate -->
-  <Cinder_ArmourPlate.label>装甲板</Cinder_ArmourPlate.label>
+  <Cinder_ArmourPlate.label>裝甲板</Cinder_ArmourPlate.label>
   
   <!-- EN: armored core -->
-  <Cinder_ArtificialBrain.label>装甲核心</Cinder_ArtificialBrain.label>
+  <Cinder_ArtificialBrain.label>裝甲核心</Cinder_ArtificialBrain.label>
   
   <!-- EN: fluid ganglion -->
-  <Cinder_Ganglion.label>液体神经节</Cinder_Ganglion.label>
+  <Cinder_Ganglion.label>液體神經節</Cinder_Ganglion.label>
   
   <!-- EN: integrated sensors -->
-  <Cinder_IntegratedSensors.label>集成传感器</Cinder_IntegratedSensors.label>
+  <Cinder_IntegratedSensors.label>集成傳感器</Cinder_IntegratedSensors.label>
   
   <!-- EN: armored chassis -->
-  <Cinder_MechanicalThorax.label>装甲躯干</Cinder_MechanicalThorax.label>
+  <Cinder_MechanicalThorax.label>裝甲軀幹</Cinder_MechanicalThorax.label>
   
   <!-- EN: neural spine -->
-  <Cinder_NeuralSpine.label>神经棘</Cinder_NeuralSpine.label>
+  <Cinder_NeuralSpine.label>神經棘</Cinder_NeuralSpine.label>
   
   <!-- EN: tentacle -->
-  <Cinder_Tentacle.label>触手</Cinder_Tentacle.label>
+  <Cinder_Tentacle.label>觸手</Cinder_Tentacle.label>
   
   <!-- EN: Tentacle leg -->
-  <Cinder_TentacleLeg.label>触手腿</Cinder_TentacleLeg.label>
+  <Cinder_TentacleLeg.label>觸手腿</Cinder_TentacleLeg.label>
   
     
   <!-- EN: armored chassis -->
-  <Cinder_MechanicalThoraxB.label>主体结构</Cinder_MechanicalThoraxB.label>
+  <Cinder_MechanicalThoraxB.label>主體結構</Cinder_MechanicalThoraxB.label>
   
 </LanguageData>

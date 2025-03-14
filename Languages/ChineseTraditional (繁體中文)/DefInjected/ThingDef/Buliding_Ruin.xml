@@ -2,54 +2,54 @@
 <LanguageData>
   
   <!-- EN: Amorphous wall -->
-  <Cinder_AmorphousWall.label>无定形墙体</Cinder_AmorphousWall.label>
+  <Cinder_AmorphousWall.label>無定形牆體</Cinder_AmorphousWall.label>
   <!-- EN: An indescribable amorphous tentacle mixed with a lump of metal, emitting a burnt odor. -->
-  <Cinder_AmorphousWall.description>一种难以名状的无定形触手，混有一块金属，散发出烧焦的气味。</Cinder_AmorphousWall.description>
+  <Cinder_AmorphousWall.description>一種難以名狀的無定形觸手，混有一塊金屬，散發出燒焦的氣味。</Cinder_AmorphousWall.description>
   
   <!-- EN: tentacle -->
-  <Cinder_BlackTentacle.label>触手</Cinder_BlackTentacle.label>
+  <Cinder_BlackTentacle.label>觸手</Cinder_BlackTentacle.label>
   
   <!-- EN: eroded EXO(Not Started) -->
-  <Cinder_ErodedEXOBuliding.label>被侵蚀的外骨骼（未启动）</Cinder_ErodedEXOBuliding.label>
+  <Cinder_ErodedEXOBuliding.label>被侵蝕的外骨骼（未啟動）</Cinder_ErodedEXOBuliding.label>
   <!-- EN: A three meter high mass-produced main attack armored mecha, used to fill the gap between infantry and tanks, carrying many weapons and anti tank missiles, and is a component of the armored torrent.\n\nNeed a Mechanitor to activate it. -->
-  <Cinder_ErodedEXOBuliding.description>一种三米高的量产型主力攻击装甲机甲，用于填补步兵和坦克之间的空缺，携带有许多武器与反坦克导弹，是装甲洪流的组成部分。\n\n需要机械师来启动</Cinder_ErodedEXOBuliding.description>
+  <Cinder_ErodedEXOBuliding.description>一種三米高的量產型主力攻擊裝甲機甲，用於填補步兵和戰車之間的空缺，攜帶有許多武器與反戰車導彈，是裝甲洪流的組成部分。\n\n需要機械師來啟動</Cinder_ErodedEXOBuliding.description>
   <!-- EN: Activate the unit -->
-  <Cinder_ErodedEXOBuliding.comps.CompUsable.useLabel>启动该单位</Cinder_ErodedEXOBuliding.comps.CompUsable.useLabel>
+  <Cinder_ErodedEXOBuliding.comps.CompUsable.useLabel>啟動該單位</Cinder_ErodedEXOBuliding.comps.CompUsable.useLabel>
   
   <!-- EN: Tentacle trap -->
-  <Cinder_TentacleTrap.label>触手陷阱</Cinder_TentacleTrap.label>
+  <Cinder_TentacleTrap.label>觸手陷阱</Cinder_TentacleTrap.label>
   <!-- EN: / -->
-  <Cinder_TentacleTrap.description>缠绕在地板上的触手</Cinder_TentacleTrap.description>
+  <Cinder_TentacleTrap.description>纏繞在地板上的觸手</Cinder_TentacleTrap.description>
   
   <!-- EN: Amorphous trap -->
-  <Cinder_TrapIED_HighExplosive.label>无形陷阱</Cinder_TrapIED_HighExplosive.label>
+  <Cinder_TrapIED_HighExplosive.label>無形陷阱</Cinder_TrapIED_HighExplosive.label>
   <!-- EN: A pair of high-explosive shells connected to a trigger which detonates on touch or bullet impact. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm. -->
-  <Cinder_TrapIED_HighExplosive.description>小型触手炸弹陷阱，它会像地雷一样爆炸，然后会在数小时后填装完毕。</Cinder_TrapIED_HighExplosive.description>
+  <Cinder_TrapIED_HighExplosive.description>小型觸手炸彈陷阱，它會像地雷一樣爆炸，然後會在數小時後填裝完畢。</Cinder_TrapIED_HighExplosive.description>
   
   <!-- EN: war attacker(Not Started) -->
-  <Cinder_WarAttackerBuliding.label>战争打击者（未启动）</Cinder_WarAttackerBuliding.label>
+  <Cinder_WarAttackerBuliding.label>戰爭打擊者（未啟動）</Cinder_WarAttackerBuliding.label>
   <!-- EN: A three meter high heavy armored assault walking machine with astonishing ammunition carrying capacity, like a walking armed helicopter, capable of leveling enemy positions with eight Hellfire missiles.\n\nNeed a Mechanitor to activate it. -->
-  <Cinder_WarAttackerBuliding.description>一种三米高量级的重装甲突击步行机器，拥有惊人的弹药携带量，就像是一个步行的武装直升机，能够用八发地狱火导弹将敌人的阵地夷为平地。\n\n需要机械师来启动</Cinder_WarAttackerBuliding.description>
+  <Cinder_WarAttackerBuliding.description>一種三米高量級的重裝甲突擊步行機器，擁有驚人的彈藥攜帶量，就像是一個步行的武裝直升機，能夠用八發地獄火導彈將敵人的陣地夷為平地。\n\n需要機械師來啟動</Cinder_WarAttackerBuliding.description>
   <!-- EN: Activate the unit -->
-  <Cinder_WarAttackerBuliding.comps.CompUsable.useLabel>启动该单位</Cinder_WarAttackerBuliding.comps.CompUsable.useLabel>
+  <Cinder_WarAttackerBuliding.comps.CompUsable.useLabel>啟動該單位</Cinder_WarAttackerBuliding.comps.CompUsable.useLabel>
   
   <!-- EN: war sweeper(Not Started) -->
-  <Cinder_WarSweeperBuliding.label>战争清扫者（未启动）</Cinder_WarSweeperBuliding.label>
+  <Cinder_WarSweeperBuliding.label>戰爭清掃者（未啟動）</Cinder_WarSweeperBuliding.label>
   <!-- EN: A heavy armored anti-aircraft walking machine on the order of three meters high, equipped with anti-aircraft firepower of different calibers and abundant ammunition to accompany infantry in anti-aircraft operations.\n\nNeed a Mechanitor to activate it. -->
-  <Cinder_WarSweeperBuliding.description>一种三米高量级的重装甲防空步行机器，拥有不同口径的防空火力武装，充沛的弹药量能够伴随步兵进行防空作业。\n\n需要机械师来启动</Cinder_WarSweeperBuliding.description>
+  <Cinder_WarSweeperBuliding.description>一種三米高量級的重裝甲防空步行機器，擁有不同口徑的防空火力武裝，充沛的彈藥量能夠伴隨步兵進行防空作業。\n\n需要機械師來啟動</Cinder_WarSweeperBuliding.description>
   <!-- EN: Activate the unit -->
-  <Cinder_WarSweeperBuliding.comps.CompUsable.useLabel>启动该单位</Cinder_WarSweeperBuliding.comps.CompUsable.useLabel>
+  <Cinder_WarSweeperBuliding.comps.CompUsable.useLabel>啟動該單位</Cinder_WarSweeperBuliding.comps.CompUsable.useLabel>
   
    <!-- EN: war sweeper(Not Started) -->
-  <Cinder_erodedKrepostBuliding.label>被侵蚀的棱堡（未启动）</Cinder_erodedKrepostBuliding.label>
+  <Cinder_erodedKrepostBuliding.label>被侵蝕的稜堡（未啟動）</Cinder_erodedKrepostBuliding.label>
   <!-- EN: A heavy armored anti-aircraft walking machine on the order of three meters high, equipped with anti-aircraft firepower of different calibers and abundant ammunition to accompany infantry in anti-aircraft operations.\n\nNeed a Mechanitor to activate it. -->
-  <Cinder_erodedKrepostBuliding.description>庞大且笨重的步行堡垒，作为维持正面战场火力的桥头堡，其巨大的体积与装甲也足够在后援抵达之前持续的抵挡住任何的来犯之敌，这个棱堡上长满了奇怪的触手，看起来让人十分不安。\n\n需要机械师来启动</Cinder_erodedKrepostBuliding.description>
+  <Cinder_erodedKrepostBuliding.description>龐大且笨重的步行堡壘，作為維持正面戰場火力的橋頭堡，其巨大的體積與裝甲也足夠在後援抵達之前持續的抵擋住任何的來犯之敵，這個稜堡上長滿了奇怪的觸手，看起來讓人十分不安。\n\n需要機械師來啟動</Cinder_erodedKrepostBuliding.description>
   <!-- EN: Activate the unit -->
-  <Cinder_erodedKrepostBuliding.comps.CompUsable.useLabel>启动该单位</Cinder_erodedKrepostBuliding.comps.CompUsable.useLabel>
+  <Cinder_erodedKrepostBuliding.comps.CompUsable.useLabel>啟動該單位</Cinder_erodedKrepostBuliding.comps.CompUsable.useLabel>
   
   <!-- EN: erosion trap -->
-  <CinderTrapIED_Erosion.label>侵蚀陷阱</CinderTrapIED_Erosion.label>
+  <CinderTrapIED_Erosion.label>侵蝕陷阱</CinderTrapIED_Erosion.label>
   <!-- EN: A pair of erosion shells connected to a trigger which detonates on touch or bullet impact. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm. -->
-  <CinderTrapIED_Erosion.description>由一个侵蚀弹和自制的触发机关组成的陷阱，当机关被生物触发或子弹击中后，陷阱会引发爆炸并造成伤害。由于它隐藏在周围的地形中，因此不能与其他陷阱相邻。动物可以在非狂暴状态下感知陷阱。</CinderTrapIED_Erosion.description>
+  <CinderTrapIED_Erosion.description>由一個侵蝕彈和自制的觸發機關組成的陷阱，當機關被生物觸發或子彈擊中後，陷阱會引發爆炸並造成傷害。由於它隱藏在周圍的地形中，因此不能與其他陷阱相鄰。動物可以在非狂暴狀態下感知陷阱。</CinderTrapIED_Erosion.description>
   
 </LanguageData>
