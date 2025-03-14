@@ -335,7 +335,7 @@
 	   <li>
         <!-- 尸鬼单位 -->
         <kindDef>Combat</kindDef>
-        <commonality>15</commonality>
+        <commonality>25</commonality>
         <options>
 		  <Cinder_Ghoul>4</Cinder_Ghoul>
 		  <Cinder_EliteGhoul>4</Cinder_EliteGhoul>
@@ -378,7 +378,7 @@
 	  <li>
         <!-- 主战单位 -->
         <kindDef>Combat</kindDef>
-        <commonality>150</commonality>
+        <commonality>25</commonality>
         <options>
 		 <Cinder_Mech_ErodedEXO>1000</Cinder_Mech_ErodedEXO>
 		 <Cinder_Mech_Krepost>1200</Cinder_Mech_Krepost>

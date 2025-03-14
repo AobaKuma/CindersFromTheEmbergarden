@@ -4,8 +4,7 @@
   <ThingDef ParentName="Cinder_BaseMechaWalker">
     <defName>Cinder_Mech_Krepost</defName>
     <label>Tombstone</label>
-    <!--扭曲猙獰可怖的戰爭兵器與寄宿於兵器遺骸中的異常之物。那曾經是同一邊的夥伴，如今是只有一架也足以對武裝探索小隊造成重大傷亡的存在。他們是被侵蝕的城塞，一座座蹣跚行軍的，緩慢而致命的墓碑。 -->
-    <description>Twisted, staggering, hideous and terrifying war machine and those creatures living in the remains of the chassis. They were once partners on the same side, but now even a single one of them was enough to cause heavy casualties to an armed exploration team.\n\nThey are eroded citadels, tombstones that slowly and deadly marching.</description>
+    <description>Twisted, ferocious, and terrifying war weapons, as well as abnormal objects residing in the remains of the weapons. That was once a partner on the same side, but now there is only one aircraft that can cause significant casualties to the armed exploration team. They are eroded fortresses, stumbling and marching slowly, with deadly tombstones..</description>
     <statBases>
       <MoveSpeed>3.0</MoveSpeed>
       <ArmorRating_Sharp>1.20</ArmorRating_Sharp>
