@@ -289,6 +289,243 @@
 			</parts>
 		</corePart>
 	</BodyDef>
+	
+	
+	<BodyDef>
+		<defName>Cinder_ErodedKrepost</defName>
+		<label>Eroded Krepost</label>
+		<corePart>
+			<def>Cinder_MechanicalThorax</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<groups>
+				<li MayRequire="ceteam.combatextended">CoveredByNaturalArmor</li>
+			</groups>
+			<parts>
+				<li>
+					<def>Cinder_ArmoredRing</def>
+					<coverage>0.05</coverage>
+					<height>Top</height>
+					<groups>
+						<li MayRequire="ceteam.combatextended">CoveredByNaturalArmor</li>
+					</groups>
+					<parts>
+						<li>
+							<def>MechanicalHead</def>
+							<coverage>0.80</coverage>
+							<groups>
+								<li MayRequire="ceteam.combatextended">CoveredByNaturalArmor</li>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>SightSensor</def>
+									<customLabel>left sight sensor</customLabel>
+									<coverage>0.13</coverage>
+								</li>
+								<li>
+									<def>SightSensor</def>
+									<customLabel>right sight sensor</customLabel>
+									<coverage>0.13</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>left hearing sensor</customLabel>
+									<coverage>0.10</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>right hearing sensor</customLabel>
+									<coverage>0.10</coverage>
+								</li>
+								<li>
+									<def>SmellSensor</def>
+									<coverage>0.10</coverage>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Cinder_TentacleLeg</def>
+					<customLabel>Tentacle</customLabel>
+					<coverage>0.075</coverage>
+					<groups>
+						<li MayRequire="ceteam.combatextended">CoveredByNaturalArmor</li>
+					</groups>
+					<parts>
+						<li>
+							<def>Cinder_Tentacle</def>
+							<customLabel>tentacle</customLabel>
+							<coverage>0.2</coverage>
+							<height>Bottom</height>
+							<groups>
+								<li MayRequire="ceteam.combatextended">CoveredByNaturalArmor</li>
+							</groups>
+						</li>
+						<li>
+							<def>Cinder_Tentacle</def>
+							<customLabel>tentacle</customLabel>
+							<coverage>0.2</coverage>
+							<height>Bottom</height>
+							<groups>
+								<li MayRequire="ceteam.combatextended">CoveredByNaturalArmor</li>
+							</groups>
+						</li>
+						<li>
+							<def>Cinder_Tentacle</def>
+							<customLabel>tentacle</customLabel>
+							<coverage>0.2</coverage>
+							<height>Bottom</height>
+							<groups>
+								<li MayRequire="ceteam.combatextended">CoveredByNaturalArmor</li>
+							</groups>
+						</li>
+						<li>
+							<def>Cinder_Tentacle</def>
+							<customLabel>tentacle</customLabel>
+							<coverage>0.2</coverage>
+							<height>Bottom</height>
+							<groups>
+								<li MayRequire="ceteam.combatextended">CoveredByNaturalArmor</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Cinder_TentacleLeg</def>
+					<customLabel>Tentacle</customLabel>
+					<coverage>0.075</coverage>
+					<groups>
+						<li MayRequire="ceteam.combatextended">CoveredByNaturalArmor</li>
+					</groups>
+					<parts>
+						<li>
+							<def>Cinder_Tentacle</def>
+							<customLabel>tentacle</customLabel>
+							<coverage>0.2</coverage>
+							<height>Bottom</height>
+							<groups>
+								<li MayRequire="ceteam.combatextended">CoveredByNaturalArmor</li>
+							</groups>
+						</li>
+						<li>
+							<def>Cinder_Tentacle</def>
+							<customLabel>tentacle</customLabel>
+							<coverage>0.2</coverage>
+							<height>Bottom</height>
+							<groups>
+								<li MayRequire="ceteam.combatextended">CoveredByNaturalArmor</li>
+							</groups>
+						</li>
+						<li>
+							<def>Cinder_Tentacle</def>
+							<customLabel>tentacle</customLabel>
+							<coverage>0.2</coverage>
+							<height>Bottom</height>
+							<groups>
+								<li MayRequire="ceteam.combatextended">CoveredByNaturalArmor</li>
+							</groups>
+						</li>
+						<li>
+							<def>Cinder_Tentacle</def>
+							<customLabel>tentacle</customLabel>
+							<coverage>0.2</coverage>
+							<height>Bottom</height>
+							<groups>
+								<li MayRequire="ceteam.combatextended">CoveredByNaturalArmor</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>left leg</customLabel>
+					<coverage>0.1</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li MayRequire="ceteam.combatextended">CoveredByNaturalArmor</li>
+					</groups>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>left foot</customLabel>
+							<coverage>0.2</coverage>
+							<groups>
+								<li MayRequire="ceteam.combatextended">CoveredByNaturalArmor</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>right leg</customLabel>
+					<coverage>0.1</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li MayRequire="ceteam.combatextended">CoveredByNaturalArmor</li>
+					</groups>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>right foot</customLabel>
+							<coverage>0.2</coverage>
+							<groups>
+								<li MayRequire="ceteam.combatextended">CoveredByNaturalArmor</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Cinder_ArmourPlate</def>
+					<customLabel>left armour plate</customLabel>
+					<coverage>0.1</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li MayRequire="ceteam.combatextended">CoveredByNaturalArmor</li>
+					</groups>
+				</li>
+				<li>
+					<def>Cinder_ArmourPlate</def>
+					<customLabel>right armour plate</customLabel>
+					<coverage>0.1</coverage>
+					<height>Bottom</height>
+					<groups>
+						<li MayRequire="ceteam.combatextended">CoveredByNaturalArmor</li>
+					</groups>
+				</li>
+				<li>
+					<def>Cinder_ArmourPlate</def>
+					<customLabel>forward armour plate</customLabel>
+					<coverage>0.2</coverage>
+					<height>Top</height>
+					<groups>
+						<li MayRequire="ceteam.combatextended">CoveredByNaturalArmor</li>
+					</groups>
+				</li>
+				<li>
+					<def>Cinder_ArtificialBrain</def>
+					<coverage>0.01</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Cinder_NeuralSpine</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Cinder_Ganglion</def>
+					<coverage>0.02</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Cinder_Ganglion</def>
+					<coverage>0.02</coverage>
+					<depth>Inside</depth>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
 
 	<BodyDef>
 		<defName>Cinder_TurretWalker</defName>

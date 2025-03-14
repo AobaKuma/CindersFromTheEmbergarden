@@ -3,7 +3,7 @@
   <BodyPartDef>
     <defName>Cinder_MechanicalThorax</defName>
     <label>armored chassis</label>
-    <hitPoints>50</hitPoints>
+    <hitPoints>70</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <solid>true</solid>
@@ -14,7 +14,7 @@
   <BodyPartDef>
     <defName>Cinder_NeuralSpine</defName>
     <label>neural spine</label>
-    <hitPoints>30</hitPoints>
+    <hitPoints>20</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <solid>true</solid>
@@ -30,7 +30,7 @@
   <BodyPartDef>
     <defName>Cinder_ArmoredRing</defName>
     <label>Armored seat ring</label>
-    <hitPoints>30</hitPoints>
+    <hitPoints>15</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <solid>true</solid>
@@ -41,7 +41,7 @@
   <BodyPartDef>
     <defName>Cinder_Tentacle</defName>
     <label>tentacle</label>
-    <hitPoints>30</hitPoints>
+    <hitPoints>15</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <solid>true</solid>
@@ -52,7 +52,7 @@
   <BodyPartDef>
     <defName>Cinder_ArmourPlate</defName>
     <label>armour plate</label>
-    <hitPoints>30</hitPoints>
+    <hitPoints>16</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <solid>true</solid>
@@ -63,7 +63,7 @@
   <BodyPartDef>
     <defName>Cinder_IntegratedSensors</defName>
     <label>integrated sensors</label>
-    <hitPoints>20</hitPoints>
+    <hitPoints>10</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <solid>true</solid>
@@ -100,7 +100,7 @@
   <BodyPartDef>
     <defName>Cinder_Ganglion</defName>
     <label>fluid ganglion</label>
-    <hitPoints>35</hitPoints>
+    <hitPoints>15</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <solid>true</solid>

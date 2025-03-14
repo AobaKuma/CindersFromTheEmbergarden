@@ -15,17 +15,61 @@
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">8</BandwidthCost>        <!--帶寬消耗-->
       <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">6</WastepacksPerRecharge><!--充電/培養時產出廢料-->
     </statBases>
-	<damageMultipliers>
+	<damageMultipliers Inherit="False">
 			<li>
 				<damageDef>EMP</damageDef>
-				<multiplier>0.60</multiplier>
+				<multiplier>0.40</multiplier>
+			</li>
+			<li>
+				<damageDef>Arrow</damageDef>
+				<multiplier>0.20</multiplier>
+			</li>
+			<li>
+				<damageDef>Cut</damageDef>
+				<multiplier>0.30</multiplier>
+			</li>
+			<li>
+				<damageDef>Burn</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>0.45</multiplier>
+			</li>
+			<li>
+				<damageDef>Stab</damageDef>
+				<multiplier>0.20</multiplier>
+			</li>
+			<li>
+				<damageDef>Poke</damageDef>
+				<multiplier>0.20</multiplier>
+			</li>
+			<li>
+				<damageDef>Bite</damageDef>
+				<multiplier>0.1</multiplier>
+			</li>
+			<li>
+				<damageDef>Blunt</damageDef>
+				<multiplier>0.2</multiplier>
+			</li>
+			<li>
+				<damageDef>ArrowHighVelocity</damageDef>
+				<multiplier>0.2</multiplier>
+			</li>
+			<li>
+				<damageDef>RangedStab</damageDef>
+				<multiplier>0.2</multiplier>
+			</li>
+			<li>
+				<damageDef>Stun</damageDef>
+				<multiplier>0</multiplier>
 			</li>
 	</damageMultipliers>
     <race>
       <mechFixedSkillLevel>12</mechFixedSkillLevel>
-      <body>Cinder_ErodedEXO</body>
+      <body>Cinder_ErodedKrepost</body>
       <baseBodySize>4</baseBodySize>
-      <baseHealthScale>14</baseHealthScale>
+      <baseHealthScale>12</baseHealthScale>
       <mechWeightClass>UltraHeavy</mechWeightClass>
       <detritusLeavings>
         <li>
@@ -98,7 +142,7 @@
             <ID>top machinegun</ID>
             <turret>Cinder_Mounted_KPVTurret</turret>
             <autoAttack>true</autoAttack>
-            <warmingTime>8</warmingTime>
+            <warmingTime>5</warmingTime>
             <angleOffset>-90</angleOffset>
             <renderNodeProperties>
               <li>
@@ -214,7 +258,7 @@
         </capacities>
         <power>24</power>
         <cooldownTime>4</cooldownTime>
-        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
         <chanceFactor>0.2</chanceFactor>
@@ -239,7 +283,7 @@
         </capacities>
         <power>24</power>
         <cooldownTime>4</cooldownTime>
-        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
         <chanceFactor>0.2</chanceFactor>
@@ -306,8 +350,6 @@
     </lifeStages>
     <weaponMoney>9999~9999</weaponMoney>
     <weaponTags>
-      <li>DMS_MechWeaponTankGun</li>
-      <li>DMS_DragoonGun</li>
       <li>Cinder_MechGun_AnvilDiscipline</li>
     </weaponTags>
     <techHediffsChance>1</techHediffsChance>

@@ -109,7 +109,7 @@
 			<drawSize>4</drawSize>
 		</graphicData>
 		<weaponTags>
-			<li>Cinder_AnvilDiscipline</li>
+			<li>Cinder_MechGun_AnvilDiscipline</li>
 			<li>NoSwitch</li>
 			<li>DMS_MechWeaponUltraHeavy</li>
 			<li>DMS_MechWeaponTankGun</li>
@@ -131,7 +131,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>CinderBullet_AnvilDiscipline</defaultProjectile>
 				<warmupTime>6</warmupTime>
-				<range>58</range>
+				<range>50</range>
 				<ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
 				<burstShotCount>1</burstShotCount>
 				<soundCast>Cinder_MBTCannonSound</soundCast>
@@ -152,18 +152,18 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Cinder_Bomb</damageDef>
-			<damageAmountBase>120</damageAmountBase>
-			<armorPenetrationBase>1.5</armorPenetrationBase>
-			<speed>75</speed>
-			<explosionRadius>6</explosionRadius>
+			<damageAmountBase>100</damageAmountBase>
+			<armorPenetrationBase>1.1</armorPenetrationBase>
+			<speed>65</speed>
+			<explosionRadius>4</explosionRadius>
 			<screenShakeFactor>1.5</screenShakeFactor>
 		</projectile>
 		<comps>
 			<li Class="CompProperties_Explosive">
-				<explosiveRadius>3.2</explosiveRadius>
+				<explosiveRadius>3</explosiveRadius>
 				<explosiveDamageType>Cinder_BombB</explosiveDamageType>
-				<damageAmountBase>80</damageAmountBase>
-				<armorPenetrationBase>1.5</armorPenetrationBase>
+				<damageAmountBase>50</damageAmountBase>
+				<armorPenetrationBase>10</armorPenetrationBase>
 				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
 				<wickTicks>15</wickTicks>
 				<startWickOnDamageTaken>
@@ -177,7 +177,7 @@
 		</comps>
 		<modExtensions>
 			<li Class="Embergarden.DefModExtension_ConeExplosion">
-				<angle>10</angle>
+				<angle>12</angle>
 				<invert>false</invert>
 			</li>
 		</modExtensions>
@@ -296,7 +296,7 @@
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
 		<impactSoundType>Blunt</impactSoundType>
 		<armorCategory>Heat</armorCategory>
-		<minDamageToFragment>150</minDamageToFragment>
+		<minDamageToFragment>50</minDamageToFragment>
 		<defaultDamage>500</defaultDamage>
 		<defaultStoppingPower>0.5</defaultStoppingPower>
 		<defaultArmorPenetration>0.10</defaultArmorPenetration>
@@ -326,7 +326,7 @@
 		<expolosionPropagationSpeed>0.4</expolosionPropagationSpeed>
 		<additionalHediffs>
 			<li>
-				<hediff>Cinder_Erosion</hediff>
+				<hediff>Cinder_ErosionDisability</hediff>
 				<severityPerDamageDealt>5</severityPerDamageDealt>
 				<inverseStatScaling>true</inverseStatScaling>
 				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
