@@ -36,6 +36,7 @@
         <li>Corpse_Cinder_Mech_ErodedEXO</li>
         <li>Corpse_Cinder_Mech_WarSweeper</li>
         <li>Corpse_Cinder_Mech_WarAttacker</li>
+		<li>Corpse_Cinder_Mech_Krepost</li>
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>

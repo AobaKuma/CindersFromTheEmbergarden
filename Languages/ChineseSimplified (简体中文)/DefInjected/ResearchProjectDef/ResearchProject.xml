@@ -119,4 +119,9 @@
   <!-- EN: A self disciplined war machine with powerful firepower that can guide Hellfire missiles to destroy heavily armored targets. -->
   <Cinder_WarMachinery.description>一种具有强大火力的自律战争机器，可以引导地狱火导弹摧毁重型装甲目标。</Cinder_WarMachinery.description>
   
+  <!-- EN: War machinery -->
+  <Cinder_MainBattleWalker.label>主站兵器</Cinder_MainBattleWalker.label>
+  <!-- EN: A self disciplined war machine with powerful firepower that can guide Hellfire missiles to destroy heavily armored targets. -->
+  <Cinder_MainBattleWalker.description>通过逆向工程，构建殖民地自己的主战坦克级别的步行者。</Cinder_MainBattleWalker.description>
+  
 </LanguageData>

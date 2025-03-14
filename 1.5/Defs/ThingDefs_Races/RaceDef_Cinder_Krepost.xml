@@ -45,6 +45,7 @@
 	  <li Class="Embergarden.CompProperties_AddHediff">
 				<hediffDefs>
 					<li>Cinder_PolymerActivation</li>
+					<li>Cinder_Regen</li>
 				</hediffDefs>
 	  </li>
       <li Class="Embergarden.CompProperties_VehicleWeapon">
