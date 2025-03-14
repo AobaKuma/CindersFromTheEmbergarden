@@ -124,4 +124,11 @@
   <!-- EN: active -->
   <Cinder_UncontrollableTentacles.stages.active.label>活动</Cinder_UncontrollableTentacles.stages.active.label>
   
+    <!-- EN: polymer activation -->
+  <Cinder_PolymerActivation.label>聚合物活化</Cinder_PolymerActivation.label>
+  <!-- EN: The amorphous polymer inside this unit has been activated, resulting in a significant increase in armor strength. -->
+  <Cinder_PolymerActivation.description>这个单位身上的无定形聚合物被活化了，显著的增加了它的装甲强度</Cinder_PolymerActivation.description>
+  <!-- EN: polymer activation -->
+  <Cinder_PolymerActivation.labelNoun>聚合物活化</Cinder_PolymerActivation.labelNoun>
+  
 </LanguageData>

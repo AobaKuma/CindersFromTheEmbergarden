@@ -40,6 +40,13 @@
   <!-- EN: Activate the unit -->
   <Cinder_WarSweeperBuliding.comps.CompUsable.useLabel>启动该单位</Cinder_WarSweeperBuliding.comps.CompUsable.useLabel>
   
+   <!-- EN: war sweeper(Not Started) -->
+  <Cinder_erodedKrepostBuliding.label>被侵蚀的棱堡（未启动）</Cinder_erodedKrepostBuliding.label>
+  <!-- EN: A heavy armored anti-aircraft walking machine on the order of three meters high, equipped with anti-aircraft firepower of different calibers and abundant ammunition to accompany infantry in anti-aircraft operations.\n\nNeed a Mechanitor to activate it. -->
+  <Cinder_erodedKrepostBuliding.description>庞大且笨重的步行堡垒，作为维持正面战场火力的桥头堡，其巨大的体积与装甲也足够在后援抵达之前持续的抵挡住任何的来犯之敌，这个棱堡上长满了奇怪的触手，看起来让人十分不安。\n\n需要机械师来启动</Cinder_erodedKrepostBuliding.description>
+  <!-- EN: Activate the unit -->
+  <Cinder_erodedKrepostBuliding.comps.CompUsable.useLabel>启动该单位</Cinder_erodedKrepostBuliding.comps.CompUsable.useLabel>
+  
   <!-- EN: erosion trap -->
   <CinderTrapIED_Erosion.label>侵蚀陷阱</CinderTrapIED_Erosion.label>
   <!-- EN: A pair of erosion shells connected to a trigger which detonates on touch or bullet impact. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm. -->

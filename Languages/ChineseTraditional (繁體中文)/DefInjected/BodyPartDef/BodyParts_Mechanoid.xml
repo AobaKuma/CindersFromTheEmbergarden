@@ -28,4 +28,8 @@
   <!-- EN: Tentacle leg -->
   <Cinder_TentacleLeg.label>触手腿</Cinder_TentacleLeg.label>
   
+    
+  <!-- EN: armored chassis -->
+  <Cinder_MechanicalThoraxB.label>主体结构</Cinder_MechanicalThoraxB.label>
+  
 </LanguageData>

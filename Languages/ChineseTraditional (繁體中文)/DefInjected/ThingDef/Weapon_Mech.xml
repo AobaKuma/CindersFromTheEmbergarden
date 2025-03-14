@@ -34,6 +34,15 @@
   <!-- EN: Hellfire Missile -->
   <CinderBullet_Hellfire.label>地狱火导弹</CinderBullet_Hellfire.label>
   
+    
+  <!-- EN: 2A46M “Anvil of Discipline” -->
+  <Cinder_MechGun_AnvilDiscipline.label>惩戒铁砧</Cinder_MechGun_AnvilDiscipline.label>
+  <!-- EN: A semi-automatic anti-tank cannon carried by ultra-heavy automatrons, known for its simple and reliable structure. It is widely used on various armored platforms to engage heavily armed and armored targets such as tanks and heavy mechs. -->
+  <Cinder_MechGun_AnvilDiscipline.description>一种由超重型机兵搭载的半自动反坦克加农炮，结构简单可靠。被广泛用于各类装甲平台来对付如战车与大型机甲等具有重武装与重装甲的大型目标，它的炮身上长满了触手。</Cinder_MechGun_AnvilDiscipline.description>
+  <!-- EN: 2A46M “Anvil of Discipline” -->
+  <Cinder_MechGun_AnvilDiscipline.verbs.Verb_Shoot.label>2A46M “惩戒铁砧”</Cinder_MechGun_AnvilDiscipline.verbs.Verb_Shoot.label>
   
+    <!-- EN: HEAT shell -->
+  <CinderBullet_AnvilDiscipline.label>炮射侵蚀导弹</CinderBullet_AnvilDiscipline.label>
   
 </LanguageData>

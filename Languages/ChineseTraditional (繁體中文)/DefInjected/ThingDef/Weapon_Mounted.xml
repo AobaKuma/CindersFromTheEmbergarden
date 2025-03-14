@@ -17,6 +17,15 @@
   <!-- UNUSED -->
   <Cinder_Mounted_AA.verbs.Verb_Shoot.label>霰弹武器舱</Cinder_Mounted_AA.verbs.Verb_Shoot.label>
   
+    <Cinder_Mounted_KPVTurret.label>被侵蚀的重机枪</Cinder_Mounted_KPVTurret.label>
+  <!-- EN: TODO -->
+  <Cinder_Mounted_KPVTurret.description>一种大口径重机枪炮塔，上面长了奇怪的触手。</Cinder_Mounted_KPVTurret.description>
+  <!-- EN: anti air turret -->
+  <Cinder_Mounted_KPVTurret.verbs.Verb_ShootCE.label>被侵蚀的重机枪</Cinder_Mounted_KPVTurret.verbs.Verb_ShootCE.label>
+  <Cinder_Mounted_KPVTurret.verbs.Verb_Shoot.label>被侵蚀的重机枪</Cinder_Mounted_KPVTurret.verbs.Verb_Shoot.label>
+  <!-- UNUSED -->
+  <Cinder_Mounted_KPVTurret.verbs.Verb_Shoot.label>被侵蚀的重机枪</Cinder_Mounted_KPVTurret.verbs.Verb_Shoot.label>
+  
   <!-- EN: exoskeleton minigun -->
   <Cinder_Mounted_EXOminigun.label>速射机枪</Cinder_Mounted_EXOminigun.label>
   <!-- EN: TODO -->

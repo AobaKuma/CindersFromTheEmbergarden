@@ -98,4 +98,50 @@
   <!-- EN: forward armour plate -->
   <Cinder_TurretWalker.corePart.parts.forward_armour_plate.customLabel>正面装甲板</Cinder_TurretWalker.corePart.parts.forward_armour_plate.customLabel>
   
+  
+  
+  <!-- EN: Eroded Krepost -->
+  <Cinder_ErodedKrepost.label>被侵蚀的“棱堡”</Cinder_ErodedKrepost.label>
+  <!-- EN: left sight sensor -->
+  <Cinder_ErodedKrepost.corePart.parts.Cinder_ArmoredRing.parts.MechanicalHead.parts.left_sight_sensor.customLabel>左光电球</Cinder_ErodedKrepost.corePart.parts.Cinder_ArmoredRing.parts.MechanicalHead.parts.left_sight_sensor.customLabel>
+  <!-- EN: right sight sensor -->
+  <Cinder_ErodedKrepost.corePart.parts.Cinder_ArmoredRing.parts.MechanicalHead.parts.right_sight_sensor.customLabel>右光电球</Cinder_ErodedKrepost.corePart.parts.Cinder_ArmoredRing.parts.MechanicalHead.parts.right_sight_sensor.customLabel>
+  <!-- EN: left hearing sensor -->
+  <Cinder_ErodedKrepost.corePart.parts.Cinder_ArmoredRing.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>左听觉传感器</Cinder_ErodedKrepost.corePart.parts.Cinder_ArmoredRing.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+  <!-- EN: right hearing sensor -->
+  <Cinder_ErodedKrepost.corePart.parts.Cinder_ArmoredRing.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>右听觉传感器</Cinder_ErodedKrepost.corePart.parts.Cinder_ArmoredRing.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+  <!-- EN: Tentacle -->
+  <Cinder_ErodedKrepost.corePart.parts.Tentacle-0.customLabel>触手</Cinder_ErodedKrepost.corePart.parts.Tentacle-0.customLabel>
+  <!-- EN: tentacle -->
+  <Cinder_ErodedKrepost.corePart.parts.Tentacle-0.parts.tentacle-0.customLabel>触手</Cinder_ErodedKrepost.corePart.parts.Tentacle-0.parts.tentacle-0.customLabel>
+  <!-- EN: tentacle -->
+  <Cinder_ErodedKrepost.corePart.parts.Tentacle-0.parts.tentacle-1.customLabel>触手</Cinder_ErodedKrepost.corePart.parts.Tentacle-0.parts.tentacle-1.customLabel>
+  <!-- EN: tentacle -->
+  <Cinder_ErodedKrepost.corePart.parts.Tentacle-0.parts.tentacle-2.customLabel>触手</Cinder_ErodedKrepost.corePart.parts.Tentacle-0.parts.tentacle-2.customLabel>
+  <!-- EN: tentacle -->
+  <Cinder_ErodedKrepost.corePart.parts.Tentacle-0.parts.tentacle-3.customLabel>触手</Cinder_ErodedKrepost.corePart.parts.Tentacle-0.parts.tentacle-3.customLabel>
+  <!-- EN: Tentacle -->
+  <Cinder_ErodedKrepost.corePart.parts.Tentacle-1.customLabel>触手</Cinder_ErodedKrepost.corePart.parts.Tentacle-1.customLabel>
+  <!-- EN: tentacle -->
+  <Cinder_ErodedKrepost.corePart.parts.Tentacle-1.parts.tentacle-0.customLabel>触手</Cinder_ErodedKrepost.corePart.parts.Tentacle-1.parts.tentacle-0.customLabel>
+  <!-- EN: tentacle -->
+  <Cinder_ErodedKrepost.corePart.parts.Tentacle-1.parts.tentacle-1.customLabel>触手</Cinder_ErodedKrepost.corePart.parts.Tentacle-1.parts.tentacle-1.customLabel>
+  <!-- EN: tentacle -->
+  <Cinder_ErodedKrepost.corePart.parts.Tentacle-1.parts.tentacle-2.customLabel>触手</Cinder_ErodedKrepost.corePart.parts.Tentacle-1.parts.tentacle-2.customLabel>
+  <!-- EN: tentacle -->
+  <Cinder_ErodedKrepost.corePart.parts.Tentacle-1.parts.tentacle-3.customLabel>触手</Cinder_ErodedKrepost.corePart.parts.Tentacle-1.parts.tentacle-3.customLabel>
+  <!-- EN: left leg -->
+  <Cinder_ErodedKrepost.corePart.parts.left_leg.customLabel>左腿</Cinder_ErodedKrepost.corePart.parts.left_leg.customLabel>
+  <!-- EN: left foot -->
+  <Cinder_ErodedKrepost.corePart.parts.left_leg.parts.left_foot.customLabel>左行走机构</Cinder_ErodedKrepost.corePart.parts.left_leg.parts.left_foot.customLabel>
+  <!-- EN: right leg -->
+  <Cinder_ErodedKrepost.corePart.parts.right_leg.customLabel>右腿</Cinder_ErodedKrepost.corePart.parts.right_leg.customLabel>
+  <!-- EN: right foot -->
+  <Cinder_ErodedKrepost.corePart.parts.right_leg.parts.right_foot.customLabel>右行走机构</Cinder_ErodedKrepost.corePart.parts.right_leg.parts.right_foot.customLabel>
+  <!-- EN: left armour plate -->
+  <Cinder_ErodedKrepost.corePart.parts.left_armour_plate.customLabel>左装甲板</Cinder_ErodedKrepost.corePart.parts.left_armour_plate.customLabel>
+  <!-- EN: right armour plate -->
+  <Cinder_ErodedKrepost.corePart.parts.right_armour_plate.customLabel>右装甲板</Cinder_ErodedKrepost.corePart.parts.right_armour_plate.customLabel>
+  <!-- EN: forward armour plate -->
+  <Cinder_ErodedKrepost.corePart.parts.forward_armour_plate.customLabel>正面装甲板</Cinder_ErodedKrepost.corePart.parts.forward_armour_plate.customLabel>
 </LanguageData>

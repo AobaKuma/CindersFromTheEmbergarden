@@ -4,7 +4,7 @@
   <ThingDef ParentName="Cinder_BaseMechaWalker">
     <defName>Cinder_Mech_Krepost</defName>
     <label>Krepost</label>
-    <description>6M41 / BR-6 "Krepost" NATO nicknamed "TankHead". Huge and bulky walker, used as a bridgehead and mobile battery to maintain frontal battlefield firepower, Krepost is equipped with several active protection system and reactive armors to resist incoming projectiles. Even if the shields are exhausted, its huge size and weapon systems are sufficient at holding off incoming enemies until reinforcements arrive.</description>
+    <description>Twisted, ferocious, and terrifying war weapons, as well as abnormal objects residing in the remains of the weapons. That was once a partner on the same side, but now there is only one aircraft that can cause significant casualties to the armed exploration team. They are eroded fortresses, stumbling and marching slowly, with deadly tombstones..</description>
     <statBases>
       <MoveSpeed>3.0</MoveSpeed>
       <ArmorRating_Sharp>1.20</ArmorRating_Sharp><!--銳抗-->
