@@ -128,7 +128,6 @@
 			<colorB>(0.9,0.9,0.9)</colorB>
 		</projectile>
 	</ThingDef>
-	
 
 	<ThingDef ParentName="Cinder_MountedGun">
 		<defName>Cinder_Mounted_Rocket</defName>
@@ -185,7 +184,7 @@
 			<AccuracyShort>0.6</AccuracyShort>
 			<AccuracyMedium>0.6</AccuracyMedium>
 			<AccuracyLong>0.2</AccuracyLong>
-      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
 			<li>
@@ -222,11 +221,11 @@
 			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>
-			 <AccuracyTouch>0.80</AccuracyTouch>
-      <AccuracyShort>0.87</AccuracyShort>
-      <AccuracyMedium>0.77</AccuracyMedium>
-      <AccuracyLong>0.64</AccuracyLong>
-      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.87</AccuracyShort>
+			<AccuracyMedium>0.77</AccuracyMedium>
+			<AccuracyLong>0.64</AccuracyLong>
+			<RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
 			<li>

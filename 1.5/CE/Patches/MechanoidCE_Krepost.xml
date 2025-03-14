@@ -5,8 +5,8 @@
 		<value>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
-					<min>8</min>
-					<max>10</max>
+					<min>15</min>
+					<max>18</max>
 				</primaryMagazineCount>
 			</li>
 		</value>
@@ -38,7 +38,7 @@
 					</capacities>
 					<power>40.0</power>
 					<cooldownTime>1</cooldownTime>
-					<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 					<armorPenetrationBlunt>50</armorPenetrationBlunt>
 					<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
 				</li>
@@ -50,7 +50,7 @@
 					</capacities>
 					<power>40.0</power>
 					<cooldownTime>1</cooldownTime>
-					<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 					<armorPenetrationBlunt>50</armorPenetrationBlunt>
 					<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
 				</li>
@@ -70,17 +70,51 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/statBases</xpath>
-		<value>
-			<ArmorRating_Blunt>357</ArmorRating_Blunt>
-		</value>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>The Dead Man's Switch</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]</xpath>
+					<value>
+						<thingClass>DMS.WeaponUsableMech</thingClass>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/comps</xpath>
+					<value>
+						<li MayRequire="Ludeon.Rimworld.Biotech" Class="DMS.CompProperties_DeadManSwitch">
+							<minDelayUntilDMS>12000</minDelayUntilDMS>
+							<wakingChance>0.5</wakingChance>
+							<nameRule>DMS_MechAwaken</nameRule>
+						</li>
+						<li Class="DMS.CompPropertiesInteracte">
+							<interacteChance>0.01</interacteChance>
+							<interacte>Chitchat</interacte>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/statBases</xpath>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
-			<ArmorRating_Sharp>60</ArmorRating_Sharp>
+			<ArmorRating_Blunt>330</ArmorRating_Blunt>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>59</ArmorRating_Sharp>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/statBases/ArmorRating_Heat</xpath>
+		<value>
 			<ArmorRating_Heat>1.2</ArmorRating_Heat>
 			<ArmorRating_Electric>1.5</ArmorRating_Electric>
 		</value>
