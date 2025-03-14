@@ -3,25 +3,26 @@
 
   <ThingDef ParentName="Cinder_BaseMechaWalker">
     <defName>Cinder_Mech_Krepost</defName>
-    <label>Krepost</label>
-    <description>6M41 / BR-6 "Krepost" NATO nicknamed "TankHead". Huge and bulky walker, used as a bridgehead and mobile battery to maintain frontal battlefield firepower, Krepost is equipped with several active protection system and reactive armors to resist incoming projectiles. Even if the shields are exhausted, its huge size and weapon systems are sufficient at holding off incoming enemies until reinforcements arrive.</description>
+    <label>Tombstone</label>
+    <!--扭曲猙獰可怖的戰爭兵器與寄宿於兵器遺骸中的異常之物。那曾經是同一邊的夥伴，如今是只有一架也足以對武裝探索小隊造成重大傷亡的存在。他們是被侵蝕的城塞，一座座蹣跚行軍的，緩慢而致命的墓碑。 -->
+    <description>Twisted, staggering, hideous and terrifying war machine and those creatures living in the remains of the chassis. They were once partners on the same side, but now even a single one of them was enough to cause heavy casualties to an armed exploration team.\n\nThey are eroded citadels, tombstones that slowly and deadly marching.</description>
     <statBases>
       <MoveSpeed>3.0</MoveSpeed>
-      <ArmorRating_Sharp>1.20</ArmorRating_Sharp><!--銳抗-->
-      <ArmorRating_Blunt>0.8</ArmorRating_Blunt><!--鈍抗-->
-      <ArmorRating_Heat>1.5</ArmorRating_Heat>  <!--能抗-->
+      <ArmorRating_Sharp>1.20</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+      <ArmorRating_Heat>1.5</ArmorRating_Heat>
       <StaggerDurationFactor>0</StaggerDurationFactor>
-	  <PsychicSensitivity>0</PsychicSensitivity>
+      <PsychicSensitivity>0</PsychicSensitivity>
       <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
-      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">8</BandwidthCost>        <!--帶寬消耗-->
-      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">6</WastepacksPerRecharge><!--充電/培養時產出廢料-->
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">8</BandwidthCost>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">6</WastepacksPerRecharge>
     </statBases>
-	<damageMultipliers>
-			<li>
-				<damageDef>EMP</damageDef>
-				<multiplier>0.40</multiplier>
-			</li>
-	</damageMultipliers>
+    <damageMultipliers>
+      <li>
+        <damageDef>EMP</damageDef>
+        <multiplier>0.40</multiplier>
+      </li>
+    </damageMultipliers>
     <race>
       <mechFixedSkillLevel>12</mechFixedSkillLevel>
       <body>Cinder_ErodedKrepost</body>
@@ -42,12 +43,12 @@
       </detritusLeavings>
     </race>
     <comps>
-	  <li Class="Embergarden.CompProperties_AddHediff">
-				<hediffDefs>
-					<li>Cinder_PolymerActivation</li>
-					<li>Cinder_Regen</li>
-				</hediffDefs>
-	  </li>
+      <li Class="Embergarden.CompProperties_AddHediff">
+        <hediffDefs>
+          <li>Cinder_PolymerActivation</li>
+          <li>Cinder_Regen</li>
+        </hediffDefs>
+      </li>
       <li Class="Embergarden.CompProperties_VehicleWeapon">
         <drawData>
           <dataEast>
@@ -80,7 +81,7 @@
                 <nodeClass>Embergarden.PawnRenderNode_SubTurretGun</nodeClass>
                 <workerClass>Embergarden.PawnRenderNodeWorker_SubTurretGun</workerClass>
                 <parentTagDef>Body</parentTagDef>
-								<drawSize>1.25</drawSize>
+                <drawSize>1.25</drawSize>
                 <baseLayer>-5</baseLayer>
                 <pawnType>Any</pawnType>
                 <drawData>
@@ -112,7 +113,7 @@
                 <nodeClass>Embergarden.PawnRenderNode_SubTurretGun</nodeClass>
                 <workerClass>Embergarden.PawnRenderNodeWorker_SubTurretGun</workerClass>
                 <parentTagDef>Body</parentTagDef>
-								<drawSize>2</drawSize>
+                <drawSize>2</drawSize>
                 <baseLayer>20</baseLayer>
                 <pawnType>Any</pawnType>
                 <drawData>
@@ -223,7 +224,7 @@
         <cooldownTime>4</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
         <chanceFactor>0.2</chanceFactor>
         <surpriseAttack>
           <extraMeleeDamages>
@@ -231,11 +232,11 @@
               <def>Stun</def>
               <amount>15</amount>
             </li>
-			<li>
-				<def>Cider_CutB</def>
-				<amount>5</amount>
-				<chance>1</chance>
-			</li>
+            <li>
+              <def>Cider_CutB</def>
+              <amount>5</amount>
+              <chance>1</chance>
+            </li>
           </extraMeleeDamages>
         </surpriseAttack>
       </li>
@@ -248,7 +249,7 @@
         <cooldownTime>4</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
         <chanceFactor>0.2</chanceFactor>
         <surpriseAttack>
           <extraMeleeDamages>
@@ -256,11 +257,11 @@
               <def>Stun</def>
               <amount>15</amount>
             </li>
-			<li>
-				<def>Cider_CutB</def>
-				<amount>5</amount>
-				<chance>1</chance>
-			</li>
+            <li>
+              <def>Cider_CutB</def>
+              <amount>5</amount>
+              <chance>1</chance>
+            </li>
           </extraMeleeDamages>
         </surpriseAttack>
       </li>
@@ -278,8 +279,8 @@
 
   <PawnKindDef ParentName="BaseMechanoidKind" Name="DMS_BaseKrepostKind">
     <defName>Cinder_Mech_Krepost</defName>
-    <label>eroded"Krepost"</label>
-	<allowInMechClusters>false</allowInMechClusters>
+    <label>Tombstone</label>
+    <allowInMechClusters>false</allowInMechClusters>
     <race>Cinder_Mech_Krepost</race>
     <isFighter>true</isFighter>
     <combatPower>1800</combatPower>                                               <!--威脅點數-->
@@ -318,8 +319,8 @@
     <techHediffsChance>1</techHediffsChance>
     <techHediffsMoney>9999~9999</techHediffsMoney>
     <abilities>
-	  <li>Cinder_AmorphousIED</li>
-	  <li>Cinder_EternalFearAbility</li>
+      <li>Cinder_AmorphousIED</li>
+      <li>Cinder_EternalFearAbility</li>
       <li MayRequire="Aoba.DeadManSwitch.AncientCorps">DMSAC_APS</li>
     </abilities>
   </PawnKindDef>
