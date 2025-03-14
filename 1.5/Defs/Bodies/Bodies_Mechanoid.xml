@@ -295,7 +295,7 @@
 		<defName>Cinder_ErodedKrepost</defName>
 		<label>Eroded Krepost</label>
 		<corePart>
-			<def>Cinder_MechanicalThorax</def>
+			<def>Cinder_MechanicalThoraxB</def>
 			<height>Middle</height>
 			<depth>Outside</depth>
 			<groups>

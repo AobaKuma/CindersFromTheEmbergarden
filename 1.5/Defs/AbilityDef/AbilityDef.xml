@@ -94,6 +94,7 @@
 		<warmupStartSound></warmupStartSound>
 		<warmupEffecter></warmupEffecter>
 		<hostile>false</hostile>
+		 <hotKey>Misc4</hotKey>
 		<aiCanUse>true</aiCanUse>
 		<groupAbility>true</groupAbility>
 		<targetRequired>false</targetRequired>
@@ -124,6 +125,7 @@
 		<warmupStartSound></warmupStartSound>
 		<warmupEffecter></warmupEffecter>
 		<hostile>false</hostile>
+		 <hotKey>Misc4</hotKey>
 		<aiCanUse>true</aiCanUse>
 		<groupAbility>true</groupAbility>
 		<targetRequired>false</targetRequired>
@@ -155,6 +157,7 @@
 		<warmupEffecter></warmupEffecter>
 		<hostile>false</hostile>
 		<aiCanUse>true</aiCanUse>
+		 <hotKey>Misc4</hotKey>
 		<groupAbility>true</groupAbility>
 		<targetRequired>false</targetRequired>
 		<verbProperties>
@@ -184,6 +187,7 @@
 		<warmupStartSound></warmupStartSound>
 		<warmupEffecter></warmupEffecter>
 		<hostile>false</hostile>
+		 <hotKey>Misc4</hotKey>
 		<aiCanUse>true</aiCanUse>
 		<groupAbility>true</groupAbility>
 		<targetRequired>false</targetRequired>

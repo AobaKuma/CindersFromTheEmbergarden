@@ -591,7 +591,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="Cinder_ArmorHelmetBase">
+	<ThingDef ParentName="Cinder_HatBase">
 		<defName>Cinder_HeadGear_BrokenMask</defName>
 		<label>broken mask</label>
 		<description>The damaged mask recovered from the battlefield is already worn out, but there is still a little protective ability.</description>
@@ -600,6 +600,22 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
+		<smeltable>false</smeltable>
+		<thingCategories Inherit="false">
+			<li>ArmorHeadgear</li>
+		</thingCategories>
+		<techLevel>Industrial</techLevel>
+		<tradeTags>
+			<li>Clothing</li>
+			<li>Armor</li>
+		</tradeTags>
+		
+		<recipeMaker>
+		    <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		
 		<costList>
 			<Cinder_HeadGear_FullyEnclosedMask>1</Cinder_HeadGear_FullyEnclosedMask>
 		</costList>
@@ -637,6 +653,9 @@
 				<li>Cinder_MilitaryMedium</li>
 				<li>Cinder_Cult</li>
 			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
 		</apparel>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-1</ShootingAccuracyPawn>

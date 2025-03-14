@@ -237,6 +237,51 @@
 			</li>
 		</stages>
 	</HediffDef>
+	
+	<HediffDef>
+		<defName>Cinder_PolymerActivation</defName>
+		<label>polymer activation</label>
+		<labelNoun>polymer activation</labelNoun>
+		<description>The amorphous polymer inside this unit has been activated, resulting in a significant increase in armor strength.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<statFactors>
+					<IncomingDamageFactor>0.5</IncomingDamageFactor>
+					<StaggerDurationFactor>0</StaggerDurationFactor>
+					<MeleeCooldownFactor>0.6</MeleeCooldownFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+					<ArmorRating_Heat>1</ArmorRating_Heat>
+					<MoveSpeed>-0.5</MoveSpeed>
+				</statOffsets>
+				<damageFactors>
+					<Cut>0.5</Cut>
+					<Crush>0.5</Crush>
+					<Blunt>0.5</Blunt>
+					<Poke>0.5</Poke>
+					<Demolish>0.5</Demolish>
+					<Stab>0.5</Stab>
+					<RangedStab>0.5</RangedStab>
+					<Arrow>0.5</Arrow>
+					<ArrowHighVelocity>0.5</ArrowHighVelocity>
+				</damageFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.5</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+	</HediffDef>
 
 	<HediffDef>
 		<defName>Cinder_LongDream</defName>
@@ -265,6 +310,7 @@
 				<statFactors>
 					<IncomingDamageFactor>0.85</IncomingDamageFactor>
 					<WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+					<MeleeCooldownFactor>0.6</MeleeCooldownFactor>
 				</statFactors>
 				<statOffsets>
 					<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
@@ -472,7 +518,7 @@
 				<capMods>
 					<li>
 						<capacity>Sight</capacity>
-						<setMax>0.8</setMax>
+						<setMax>0.95</setMax>
 					</li>
 					<li>
 						<capacity>Moving</capacity>
@@ -494,7 +540,7 @@
 				<capMods>
 					<li>
 						<capacity>Sight</capacity>
-						<setMax>0.4</setMax>
+						<setMax>0.9</setMax>
 					</li>
 					<li>
 						<capacity>Moving</capacity>
@@ -514,7 +560,7 @@
 				<capMods>
 					<li>
 						<capacity>Sight</capacity>
-						<setMax>0</setMax>
+						<setMax>0.8</setMax>
 					</li>
 					<li>
 						<capacity>Moving</capacity>
@@ -534,7 +580,7 @@
 				<capMods>
 					<li>
 						<capacity>Sight</capacity>
-						<setMax>0</setMax>
+						<setMax>0.75</setMax>
 					</li>
 					<li>
 						<capacity>Moving</capacity>

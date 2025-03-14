@@ -75,6 +75,7 @@
 						  <Flammability>0</Flammability>
 						  <InjuryHealingFactor>4</InjuryHealingFactor>
 						  <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+						  <MeleeCooldownFactor>0.75</MeleeCooldownFactor>
 				        </statFactors>
 				        <damageFactors>
 					       <Cut>0.4</Cut>

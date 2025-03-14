@@ -707,7 +707,7 @@
 
 	<!-- Cinder_Apparel_BrokenGhoulUnitGear -->
 	<ThingDef
-	  ParentName="Cinder_ApparelArmorBase">
+	  ParentName="Cinder_ApparelBase">
 		<defName>Cinder_Apparel_BrokenGhoulUnitGear</defName>
 		<label>broken ghoul unit gear</label>
 		<description>A set of broken Ghoul unit gear, with armor full of holes and weaker defense than before, and will slow down the wearer's movement speedIt can be obtained by dismantling the Ghoul unit gear, the only benefit is that this thing is worthless, and the raiders won't even glance at it.</description>
@@ -716,7 +716,17 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
+		<smeltable>false</smeltable>
+		<thingCategories Inherit="false">
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>	
 		<recipeMaker>
+		<effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+				<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 			<researchPrerequisite>FlakArmor</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>

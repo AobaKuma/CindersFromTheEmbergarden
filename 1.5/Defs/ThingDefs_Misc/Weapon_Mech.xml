@@ -131,7 +131,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>CinderBullet_AnvilDiscipline</defaultProjectile>
 				<warmupTime>6</warmupTime>
-				<range>50</range>
+				<range>46</range>
 				<ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
 				<burstShotCount>1</burstShotCount>
 				<soundCast>Cinder_MBTCannonSound</soundCast>
@@ -143,7 +143,7 @@
 	
 	<ThingDef ParentName="BaseBullet">
 		<defName>CinderBullet_AnvilDiscipline</defName>
-		<label>HEAT shell</label>
+		<label>Erosion missile</label>
 		<thingClass>Embergarden.Projectile_ConeExplosion</thingClass>
 		<graphicData>
 			<texPath>Things/Weapons/Bullet_RPG</texPath>
@@ -153,14 +153,14 @@
 		<projectile>
 			<damageDef>Cinder_Bomb</damageDef>
 			<damageAmountBase>100</damageAmountBase>
-			<armorPenetrationBase>1.1</armorPenetrationBase>
+			<armorPenetrationBase>0.72</armorPenetrationBase>
 			<speed>65</speed>
-			<explosionRadius>4</explosionRadius>
+			<explosionRadius>3</explosionRadius>
 			<screenShakeFactor>1.5</screenShakeFactor>
 		</projectile>
 		<comps>
 			<li Class="CompProperties_Explosive">
-				<explosiveRadius>3</explosiveRadius>
+				<explosiveRadius>2.5</explosiveRadius>
 				<explosiveDamageType>Cinder_BombB</explosiveDamageType>
 				<damageAmountBase>50</damageAmountBase>
 				<armorPenetrationBase>10</armorPenetrationBase>
@@ -300,8 +300,8 @@
 		<defaultDamage>500</defaultDamage>
 		<defaultStoppingPower>0.5</defaultStoppingPower>
 		<defaultArmorPenetration>0.10</defaultArmorPenetration>
-		<buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
-		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+		<buildingDamageFactorImpassable>2</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>1.5</buildingDamageFactorPassable>
 		<plantDamageFactor>4</plantDamageFactor>
 		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
 		<explosionCellFleck>Fleck_Vaporize</explosionCellFleck>

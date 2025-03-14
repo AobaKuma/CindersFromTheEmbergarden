@@ -202,6 +202,58 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	<ThingDef ParentName="Cinder_NonfunctionalBuilding_Impassable">
+		<defName>Cinder_erodedKrepostBuliding</defName>
+		<label>eroded krepost(Not Started)</label>
+		<description>6M41 / BR-6 "Krepost" NATO nicknamed "TankHead". Huge and bulky walker, used as a bridgehead and mobile battery to maintain frontal battlefield firepower, Krepost is equipped with several active protection system and reactive armors to resist incoming projectiles. Even if the shields are exhausted, its huge size and weapon systems are sufficient at holding off incoming enemies until reinforcements arrive.\n\nNeed a Mechanitor to activate it.</description>
+		<rotatable>true</rotatable>
+		<graphicData>
+			<texPath>Things/Pawn/Mech/erodedKrepost</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>4.2</drawSize>
+			<shadowData>
+				<volume>(1.1, 1.0, 1.1)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(2,2)</size>
+		<costList>
+			<Steel>240</Steel>
+			<Cinder_AmorphousPolymer>400</Cinder_AmorphousPolymer>
+			<Uranium>90</Uranium>
+			<ComponentSpacer>10</ComponentSpacer>
+			<Cinder_ErodedMechComponent>4</Cinder_ErodedMechComponent>
+			<Cinder_AmorphousNeuralSpine>2</Cinder_AmorphousNeuralSpine>
+		</costList>
+		<researchPrerequisites>
+			<li>Cinder_MainBattleWalker</li>
+		</researchPrerequisites>
+		<statBases>
+			<WorkToBuild>170000</WorkToBuild>
+			<MaxHitPoints>1500</MaxHitPoints>
+			<Mass>100</Mass>
+		</statBases>
+		<killedLeavingsRanges>
+			<Cinder_ChunkSlag>2~4</Cinder_ChunkSlag>
+			<Cinder_ErodedMechComponent>1</Cinder_ErodedMechComponent>
+			<Cinder_AmorphousNeuralSpine>1</Cinder_AmorphousNeuralSpine>
+		</killedLeavingsRanges>
+		<designationCategory MayRequire="Ludeon.RimWorld.Biotech">Biotech</designationCategory>
+		<comps>
+			<li Class="CompProperties_Usable" MayRequire="Ludeon.RimWorld.Biotech">
+				<useJob>TriggerObject</useJob>
+				<useLabel>Activate the unit</useLabel>
+			</li>
+			<li Class="Embergarden.CompProperties_UseEffect_ActivateMech" MayRequire="Ludeon.RimWorld.Biotech">
+				<compClass>Embergarden.CompUseEffect_ActivateMech</compClass>
+				<pawnKindDef>Cinder_Mech_Krepost</pawnKindDef>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf" MayRequire="Ludeon.RimWorld.Biotech">
+				<delayTicks>120</delayTicks>
+				<spawnKilledLeavings>false</spawnKilledLeavings>
+			</li>
+		</comps>
+	</ThingDef>
 
 	<ThingDef Name="Cinder_TrapIEDBase" ParentName="BuildingBase" Abstract="True">
 		<thingClass>Embergarden.Building_TrapExplosive_Rechargeable</thingClass>

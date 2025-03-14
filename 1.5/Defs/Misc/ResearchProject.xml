@@ -206,4 +206,20 @@
     <researchViewX>4.00</researchViewX>
     <researchViewY>2.70</researchViewY>
   </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="Cinder_BaseTech">
+    <defName>Cinder_MainBattleWalker</defName>
+    <label>main battle walker</label>
+    <description>Build the colony's own main battle tank level walker through reverse engineering.</description>
+    <baseCost>5500</baseCost>
+    <techLevel>Industrial</techLevel>
+	<prerequisites>
+	  <li>Cinder_WarAttacker</li>
+    </prerequisites>
+	<requiredAnalyzed>
+      <li>Cinder_AmorphousNeuralSpine</li>
+    </requiredAnalyzed>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>2.70</researchViewY>
+  </ResearchProjectDef>
 </Defs>

@@ -235,6 +235,65 @@
 		</comps>
 	</ThingDef>
 
+    <ThingDef ParentName="ResourceBase">
+		<defName>Cinder_AmorphousNeuralSpine</defName>
+		<label>amorphous neural spine</label>
+		<description>A component containing unknown biological neural structures that can make self judgments and provide responses based on collected data, completely different from the technological route of artificial intelligence, and appears to be the core component of some kind of autonomous machinery.</description>
+		<possessionCount>2</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/AmorphousNeuralSpine/AmorphousNeuralSpine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<techLevel>Archotech</techLevel>
+		<thingCategories>
+			<li>Cinder_Amorphous</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>5000</MaxHitPoints>
+			<MarketValue>500</MarketValue>
+			<Mass>1.5</Mass>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<allowedArchonexusCount>5</allowedArchonexusCount>
+		<comps>
+			<li Class="CompProperties_CompAnalyzableUnlockResearch">
+				<analysisID>122249072</analysisID>
+
+				<!-- Analyzable -->
+
+				<analysisDurationHours>0.25</analysisDurationHours>
+				<destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+				<completedLetterLabel>Amorphous neural spine: {RESEARCH} unlocked</completedLetterLabel>
+				<completedLetter>By studying the amorphous neural spine, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+
+				<!-- Interactable -->
+
+				<activateTexPath>UI/Icons/Study</activateTexPath>
+
+				<activateLabelString>Analyze...</activateLabelString>
+				<activateDescString>Analyze the amorphous neural spine.</activateDescString>
+				<jobString>analyze amorphous neural spine</jobString>
+				<guiLabelString>Choose who should analyze this</guiLabelString>
+				<inspectString>Can be analyzed by a colonist.</inspectString>
+
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
+			</li>
+		</comps>
+	</ThingDef>
+
+
 	<RecipeDef>
 		<defName>Make_Cinder_ErosionAgent</defName>
 		<label>make erosion agent</label>
