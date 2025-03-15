@@ -25,6 +25,7 @@
 		<li>ceteam.combatextended</li>
 		<li>Dubwise.DubsBadHygiene</li>
 		<li>Dubwise.DubsBadHygiene.Lite</li>
+		<li>Aoba.DeadManSwitch.Core</li>
 	</loadAfter>
 	<forceLoadBefore>
     <li>Aoba.DeadManSwitch.MobileDragoon</li>

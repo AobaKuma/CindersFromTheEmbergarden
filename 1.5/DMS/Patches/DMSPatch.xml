@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+		    
+		<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/thingClass</xpath>
+					<value>
+                    <thingClass>DMS.WeaponUsableMech</thingClass>
+				</value>
+		</Operation>
+	
+        <Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/race/thinkTreeMain</xpath>
+					<value>
+                    <thinkTreeMain>DMS_Mechanoid</thinkTreeMain>
+				</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/comps</xpath>
+					<value>
+                       <li MayRequire="Ludeon.Rimworld.Biotech" Class="DMS.CompProperties_DeadManSwitch" />
+					</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Cinder_MechGun_AnvilDiscipline"]/destroyOnDrop</xpath>
+					<value>
+                       <destroyOnDrop>false</destroyOnDrop>
+					</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Cinder_MechGun_AnvilDiscipline"]/smeltable</xpath>
+					<value>
+                       <smeltable>true</smeltable>
+					   <smeltProducts>
+			              <Steel>120</Steel>
+		               </smeltProducts>
+					</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Cinder_MechGun_AnvilDiscipline"]/useHitPoints</xpath>
+					<value>
+                       <useHitPoints>true</useHitPoints>
+					</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Cinder_MechGun_AnvilDiscipline"]/statBases</xpath>
+					<value>
+                       <MaxHitPoints>300</MaxHitPoints>
+					</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Cinder_MechGun_AnvilDiscipline"]</xpath>
+					<value>
+			               <li Class="DMS.HeavyEquippableExtension">
+			              	<EquippableDef>UltraHeavyAutomatroid</EquippableDef>
+			               </li>
+					</value>
+		</Operation>
+</Patch>

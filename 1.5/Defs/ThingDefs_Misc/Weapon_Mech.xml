@@ -102,6 +102,9 @@
 
     <ThingDef ParentName="Cinder_MechGun">
 		<defName>Cinder_MechGun_AnvilDiscipline</defName>
+		<destroyOnDrop>true</destroyOnDrop>
+		<smeltable>false</smeltable>
+		<useHitPoints>false</useHitPoints>
 		<label>2A46M “Anvil of Discipline”</label>
 		<description>A semi-automatic anti-tank cannon carried by ultra-heavy automatrons, known for its simple and reliable structure. It is widely used on various armored platforms to engage heavily armed and armored targets such as tanks and heavy mechs.</description>
 		<graphicData>
@@ -112,10 +115,9 @@
 			<li>Cinder_MechGun_AnvilDiscipline</li>
 			<li>NoSwitch</li>
 			<li>DMS_MechWeaponUltraHeavy</li>
-			<li>DMS_MechWeaponTankGun</li>
 		</weaponTags>
 		<uiIconPath>Things/Pawn/Mech/AnvilDiscipline</uiIconPath>
-		<uiIconScale>2</uiIconScale>
+		<uiIconScale>4</uiIconScale>
 		<statBases>
 			<Mass>265</Mass>
 		    <AccuracyTouch>0.89</AccuracyTouch>
@@ -139,6 +141,25 @@
 				<muzzleFlashScale>30</muzzleFlashScale>
 			</li>
 		</verbs>
+		<tools Inherit="False">
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+		</tools>
 	</ThingDef>
 	
 	<ThingDef ParentName="BaseBullet">
@@ -153,9 +174,9 @@
 		<projectile>
 			<damageDef>Cinder_Bomb</damageDef>
 			<damageAmountBase>100</damageAmountBase>
-			<armorPenetrationBase>0.72</armorPenetrationBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
 			<speed>65</speed>
-			<explosionRadius>3</explosionRadius>
+			<explosionRadius>4</explosionRadius>
 			<screenShakeFactor>1.5</screenShakeFactor>
 		</projectile>
 		<comps>
@@ -177,7 +198,7 @@
 		</comps>
 		<modExtensions>
 			<li Class="Embergarden.DefModExtension_ConeExplosion">
-				<angle>12</angle>
+				<angle>10</angle>
 				<invert>false</invert>
 			</li>
 		</modExtensions>

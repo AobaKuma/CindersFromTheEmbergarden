@@ -10,5 +10,6 @@
 		<li IfModActive="nals.facialanimation">1.5/Mod/FacialAnimation</li>
 		<li IfModActive="erdelf.HumanoidAlienRaces">1.5/Har</li>
 		<li IfModNotActive="Ludeon.RimWorld.Biotech">1.5/NonBiotechPatch</li>
+		<li IfModActive="Aoba.DeadManSwitch.Core">1.5/DMS</li>
 	</v1.5>
 </loadFolders>

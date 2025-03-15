@@ -3,6 +3,7 @@
 
   <ThingDef ParentName="Cinder_BaseMechaWalker">
     <defName>Cinder_Mech_Krepost</defName>
+	<thingClass>Pawn</thingClass>
     <label>Tombstone</label>
     <description>Twisted, ferocious, and terrifying war weapons, as well as abnormal objects residing in the remains of the weapons. That was once a partner on the same side, but now there is only one aircraft that can cause significant casualties to the armed exploration team. They are eroded fortresses, stumbling and marching slowly, with deadly tombstones..</description>
     <statBases>
@@ -24,6 +25,7 @@
     </damageMultipliers>
     <race>
       <mechFixedSkillLevel>12</mechFixedSkillLevel>
+	  <thinkTreeMain>Mechanoid</thinkTreeMain>
       <body>Cinder_ErodedKrepost</body>
       <baseBodySize>4</baseBodySize>
       <baseHealthScale>5.5</baseHealthScale>
@@ -187,6 +189,7 @@
           <li>DMS_DragoonGun</li>
           <li>DMS_VladimirovMachineGun</li>
           <li>DMS_MechWeaponTankGun</li>
+		  <li>Cinder_MechGun_AnvilDiscipline</li>
         </UsableWeaponTags>
         <EnableTechLevelFilter>true</EnableTechLevelFilter>
         <UsableTechLevels>
