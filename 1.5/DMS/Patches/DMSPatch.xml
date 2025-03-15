@@ -61,4 +61,53 @@
 			               </li>
 					</value>
 		</Operation>
+		
+		<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Cinder_MechGun_AnvilDiscipline"]/tools</xpath>
+				<value>
+                   	<tools>
+				    <li Class="CombatExtended.ToolCE">
+					<label>stock</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>28</power>
+					<cooldownTime>1.55</cooldownTime>
+					<chanceFactor>1.5</chanceFactor>
+					<armorPenetrationBlunt>27.55</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+				    </li>
+				     <li Class="CombatExtended.ToolCE">
+					<label>barrel</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>25</power>
+					<cooldownTime>2.02</cooldownTime>
+					<armorPenetrationBlunt>16.30</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+				    </li>
+				    <li Class="CombatExtended.ToolCE">
+					<label>muzzle</label>
+					<capacities>
+						<li>Poke</li>
+					</capacities>
+					<power>28</power>
+					<cooldownTime>1.55</cooldownTime>
+					<armorPenetrationBlunt>27.55</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+				    </li>
+			     </tools>
+				</value>
+			</li>
+			</operations>
+		</match>
+	</Operation>
 </Patch>

@@ -176,7 +176,7 @@
 			<damageAmountBase>100</damageAmountBase>
 			<armorPenetrationBase>1</armorPenetrationBase>
 			<speed>65</speed>
-			<explosionRadius>4</explosionRadius>
+			<explosionRadius>3</explosionRadius>
 			<screenShakeFactor>1.5</screenShakeFactor>
 		</projectile>
 		<comps>

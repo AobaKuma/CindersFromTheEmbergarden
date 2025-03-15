@@ -75,7 +75,7 @@
             <ID>forward machinegun</ID>
             <turret>Cinder_Mounted_Tentacle</turret>
             <autoAttack>true</autoAttack>
-            <warmingTime>0.75</warmingTime>
+            <warmingTime>0.7</warmingTime>
             <angleOffset>-90</angleOffset>
             <renderNodeProperties>
               <li>
@@ -301,7 +301,7 @@
           </shadowData>
         </bodyGraphicData>
       </li>
-      <li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">
         <bodyGraphicData>
           <texPath>Things/Pawn/Mech/erodedKrepost</texPath>
           <shaderType>CutoutComplex</shaderType>

@@ -78,7 +78,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Cinder_TentacleGourdProj</defaultProjectile>
+				<defaultProjectile>Cinder_TentacleGourdProjB</defaultProjectile>
 				<warmupTime>0</warmupTime>
 				<range>15.9</range>
 				<ticksBetweenBurstShots>24</ticksBetweenBurstShots>
@@ -111,7 +111,7 @@
 		</graphicData>
 		<projectile Class="Embergarden.ProjectileProperties_Tentacle">
 			<damageDef>Cider_CutB</damageDef>
-			<damageAmountBase>2</damageAmountBase>
+			<damageAmountBase>5</damageAmountBase>
 			<stoppingPower>3</stoppingPower>
 			<armorPenetrationBase>10</armorPenetrationBase>
 			<speed>65</speed>

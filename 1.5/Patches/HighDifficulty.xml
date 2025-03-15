@@ -291,22 +291,10 @@
 					</value>
 				</li>
 				
-				
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Cinder_Mounted_Tentacle"]/verbs/li[1]</xpath>
+					<xpath>Defs/ThingDef[defName="Cinder_TentacleGourdProjB"]/projectile/damageAmountBase</xpath>
 					<value>
-                      <li>
-				        <verbClass>Verb_Shoot</verbClass>
-				         <hasStandardCommand>true</hasStandardCommand>
-				         <defaultProjectile>Cinder_TentacleGourdProjB</defaultProjectile>
-				         <warmupTime>0</warmupTime>
-				         <range>15.9</range>
-				         <ticksBetweenBurstShots>24</ticksBetweenBurstShots>
-				         <burstShotCount>1</burstShotCount>
-				         <soundCast>Cinder_TentacleShot</soundCast>
-				         <soundCastTail>GunTail_Heavy</soundCastTail>
-				         <muzzleFlashScale>9</muzzleFlashScale>
-			            </li> 
+                      <damageAmountBase>2.5</damageAmountBase>
 					</value>
 				</li>
 				

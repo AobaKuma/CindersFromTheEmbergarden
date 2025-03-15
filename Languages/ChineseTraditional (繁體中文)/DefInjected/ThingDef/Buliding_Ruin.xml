@@ -41,7 +41,7 @@
   <Cinder_WarSweeperBuliding.comps.CompUsable.useLabel>啟動該單位</Cinder_WarSweeperBuliding.comps.CompUsable.useLabel>
   
    <!-- EN: war sweeper(Not Started) -->
-  <Cinder_erodedKrepostBuliding.label>被侵蝕的稜堡（未啟動）</Cinder_erodedKrepostBuliding.label>
+  <Cinder_erodedKrepostBuliding.label>墓碑（未啟動）</Cinder_erodedKrepostBuliding.label>
   <!-- EN: A heavy armored anti-aircraft walking machine on the order of three meters high, equipped with anti-aircraft firepower of different calibers and abundant ammunition to accompany infantry in anti-aircraft operations.\n\nNeed a Mechanitor to activate it. -->
   <Cinder_erodedKrepostBuliding.description>龐大且笨重的步行堡壘，作為維持正面戰場火力的橋頭堡，其巨大的體積與裝甲也足夠在後援抵達之前持續的抵擋住任何的來犯之敵，這個稜堡上長滿了奇怪的觸手，看起來讓人十分不安。\n\n需要機械師來啟動</Cinder_erodedKrepostBuliding.description>
   <!-- EN: Activate the unit -->
