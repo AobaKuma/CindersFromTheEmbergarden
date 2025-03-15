@@ -48,6 +48,7 @@
         <hediffDefs>
           <li>Cinder_PolymerActivation</li>
           <li>Cinder_Regen</li>
+		  <li>Cinder_IntrinsicPropertiesOfPolymers</li>
         </hediffDefs>
       </li>
       <li Class="Embergarden.CompProperties_VehicleWeapon">
