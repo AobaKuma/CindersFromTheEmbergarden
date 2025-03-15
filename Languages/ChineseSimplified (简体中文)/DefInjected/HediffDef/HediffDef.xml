@@ -131,4 +131,10 @@
   <!-- EN: polymer activation -->
   <Cinder_PolymerActivation.labelNoun>聚合物活化</Cinder_PolymerActivation.labelNoun>
   
+  <Cinder_IntrinsicPropertiesOfPolymers.label>聚合物内禀</Cinder_IntrinsicPropertiesOfPolymers.label>
+  <!-- EN: The amorphous polymer inside this unit has been activated, resulting in a significant increase in armor strength. -->
+  <Cinder_IntrinsicPropertiesOfPolymers.description>无定形聚合物的固有属性，这种材料是无法被任何方式直接切割的，动能在一定阈值的射弹或是缓慢的移动能够将它们加工。</Cinder_IntrinsicPropertiesOfPolymers.description>
+  <!-- EN: polymer activation -->
+  <Cinder_IntrinsicPropertiesOfPolymers.labelNoun>聚合物内禀</Cinder_IntrinsicPropertiesOfPolymers.labelNoun>
+  
 </LanguageData>
