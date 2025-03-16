@@ -276,13 +276,6 @@
 				</li>
 				
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Cinder_Apparel_HeavyArmorDress"]/statBases/StuffEffectMultiplierArmor</xpath>
-					<value>
-                      <StuffEffectMultiplierArmor>0.95</StuffEffectMultiplierArmor>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="Cinder_Mech_ErodedEXO"]/statBases</xpath>
 					<value>
                       <statBases>

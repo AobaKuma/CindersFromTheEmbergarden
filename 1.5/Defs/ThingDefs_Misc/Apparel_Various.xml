@@ -302,7 +302,7 @@
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.9</ArmorRating_Heat>
-			<StuffEffectMultiplierArmor>1.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.95</StuffEffectMultiplierArmor>
 			<Insulation_Cold>14.4</Insulation_Cold>
 			<Insulation_Heat>3</Insulation_Heat>
 			<EquipDelay>13</EquipDelay>

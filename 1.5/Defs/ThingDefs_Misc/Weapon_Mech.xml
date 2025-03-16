@@ -284,7 +284,7 @@
 				<explosiveRadius>4.9</explosiveRadius>
 				<explosiveDamageType>Cinder_BombB</explosiveDamageType>
 				<damageAmountBase>150</damageAmountBase>
-				<armorPenetrationBase>1.5</armorPenetrationBase>
+				<armorPenetrationBase>15</armorPenetrationBase>
 				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
 				<wickTicks>15</wickTicks>
 				<startWickOnDamageTaken>
