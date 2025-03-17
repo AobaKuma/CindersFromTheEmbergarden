@@ -111,10 +111,16 @@
 		</graphicData>
 		<projectile Class="Embergarden.ProjectileProperties_Tentacle">
 			<damageDef>Cider_CutB</damageDef>
-			<damageAmountBase>5</damageAmountBase>
+			<damageAmountBase>4</damageAmountBase>
 			<stoppingPower>3</stoppingPower>
 			<armorPenetrationBase>10</armorPenetrationBase>
 			<speed>65</speed>
+			<extraDamages>
+				<li>
+					<def>Cut</def>
+					<amount>2</amount>
+				</li>
+			</extraDamages>
 
 			<effecterDef>Cinder_TentacleProj</effecterDef>
 			<tickPerTentacle>2</tickPerTentacle>

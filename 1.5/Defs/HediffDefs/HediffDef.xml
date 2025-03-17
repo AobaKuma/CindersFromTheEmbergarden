@@ -264,8 +264,8 @@
 				</statOffsets>
 				<damageFactors>
 					<Cut>0.25</Cut>
-					<Crush>0.5</Crush>
-					<Blunt>0.5</Blunt>
+					<Crush>0</Crush>
+					<Blunt>0</Blunt>
 					<Poke>0.5</Poke>
 					<Demolish>0.5</Demolish>
 					<Stab>0.5</Stab>

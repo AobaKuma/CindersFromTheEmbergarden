@@ -90,7 +90,7 @@
 					<texPath>Things/Building/WalkerTacticalTurret/WalkerTacticalTurret</texPath>
 					<shaderType>CutoutComplex</shaderType>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(1.2, 1.2)</drawSize>
+					<drawSize>(1.8, 1.8)</drawSize>
 					<shadowData>
 						<volume>(0.27,0.25,0.27)</volume>
 						<offset>(0,0,0)</offset>
@@ -103,7 +103,7 @@
 					<texPath>Things/Building/WalkerTacticalTurret/WalkerTacticalTurret</texPath>
 					<shaderType>CutoutComplex</shaderType>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>(1.2, 1.2)</drawSize>
+					<drawSize>(1.8, 1.8)</drawSize>
 					<shadowData>
 						<volume>(0.27,0.25,0.27)</volume>
 						<offset>(0,0,0)</offset>

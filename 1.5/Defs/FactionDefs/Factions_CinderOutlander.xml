@@ -92,6 +92,7 @@
         <li>(200, 100)</li>
 		<li>(2300, 120)</li>
 		<li>(3000,400)</li>
+		<li>(8000,2000)</li>
         <li>(100000, 10000)</li>
       </points>
     </maxPawnCostPerTotalPointsCurve>
@@ -139,6 +140,21 @@
           <Cinder_EliteCult>10</Cinder_EliteCult>
           <Cinder_OutlanderElite>1</Cinder_OutlanderElite>
           <Cinder_Mech_MiniTurretWalker>60</Cinder_Mech_MiniTurretWalker>
+        </options>
+      </li>
+	   <li>
+        <!-- 装甲部队 -->
+        <kindDef>Combat</kindDef>
+        <commonality>25</commonality>
+        <options>
+		  <Cinder_Mech_Krepost>1200</Cinder_Mech_Krepost>
+		  <Cinder_Outlander>1.5</Cinder_Outlander>
+		  <Cinder_Cult>1.5</Cinder_Cult>
+          <Cinder_EliteCult>1</Cinder_EliteCult>
+          <Cinder_OutlanderElite>1</Cinder_OutlanderElite>
+          <Cinder_Mech_WalkerSniper>12</Cinder_Mech_WalkerSniper>
+		  <Cinder_Mech_MiniTurretWalker>40</Cinder_Mech_MiniTurretWalker>
+		  <Cinder_Mech_WalkerAutoCannon>5</Cinder_Mech_WalkerAutoCannon>
         </options>
       </li>
       <li>

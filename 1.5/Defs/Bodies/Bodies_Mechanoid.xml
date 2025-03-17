@@ -23,6 +23,7 @@
 						<li>
 							<def>MechanicalHead</def>
 							<coverage>0.80</coverage>
+							<depth>Inside</depth>
 							<groups>
 								<li MayRequire="ceteam.combatextended">CoveredByNaturalArmor</li>
 								<li>HeadAttackTool</li>

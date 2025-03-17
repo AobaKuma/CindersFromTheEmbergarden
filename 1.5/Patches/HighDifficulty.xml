@@ -264,7 +264,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="Cinder_Trailer"]/race/baseHungerRate</xpath>
 					<value>
-                       <baseHungerRate>2</baseHungerRate>
+                       <baseHungerRate>0.8</baseHungerRate>
 					</value>
 				</li>
 				

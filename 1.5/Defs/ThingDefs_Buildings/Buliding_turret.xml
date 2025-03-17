@@ -506,7 +506,7 @@
 				<volume>(0.27,0.25,0.27)</volume>
 				<offset>(0,0,0)</offset>
 			</shadowData>
-			<drawSize>(1.2, 1.2)</drawSize>
+			<drawSize>(1.8, 1.8)</drawSize>
 		</graphicData>
 		<altitudeLayer>Item</altitudeLayer>
 		<minifiedDef>MinifiedThing</minifiedDef>
@@ -593,7 +593,7 @@
 			<turretBurstCooldownTime>2.4</turretBurstCooldownTime>
 			<claimable>false</claimable>
 			<expandHomeArea>false</expandHomeArea>
-			<turretTopDrawSize>1.2</turretTopDrawSize>
+			<turretTopDrawSize>1.8</turretTopDrawSize>
 		</building>
 		<placeWorkers>
 			<li>PlaceWorker_TurretTop</li>
@@ -614,6 +614,7 @@
 		<graphicData>
 			<texPath>Things/Building/WalkerTacticalTurret/WalkerTacticalTurret_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5, 1.5)</drawSize>
 		</graphicData>
 		<statBases>
 			<AccuracyTouch>0.77</AccuracyTouch>
