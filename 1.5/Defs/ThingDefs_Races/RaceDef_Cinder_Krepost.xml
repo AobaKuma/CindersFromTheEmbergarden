@@ -71,7 +71,7 @@
       <mechFixedSkillLevel>12</mechFixedSkillLevel>
 	  <thinkTreeMain>Mechanoid</thinkTreeMain>
       <body>Cinder_ErodedKrepost</body>
-      <baseBodySize>5.1</baseBodySize>
+      <baseBodySize>4</baseBodySize>
       <baseHealthScale>5.5</baseHealthScale>
       <mechWeightClass>UltraHeavy</mechWeightClass>
       <detritusLeavings>

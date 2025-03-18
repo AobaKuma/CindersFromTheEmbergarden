@@ -780,7 +780,7 @@
 		<isFighter>true</isFighter>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<biocodeWeaponChance>0.7</biocodeWeaponChance>
-		<initialWillRange>10~30</initialWillRange>
+		<initialWillRange>8</initialWillRange>
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>35</maxGenerationAge>
@@ -872,7 +872,7 @@
 		<isFighter>true</isFighter>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<biocodeWeaponChance>0.15</biocodeWeaponChance>
-		<initialWillRange>10~30</initialWillRange>
+		<initialWillRange>10~15</initialWillRange>
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>35</maxGenerationAge>
@@ -947,7 +947,7 @@
 		<isFighter>true</isFighter>
 		<itemQuality>Excellent</itemQuality>
 		<biocodeWeaponChance>0.7</biocodeWeaponChance>
-		<initialWillRange>10~30</initialWillRange>
+		<initialWillRange>10~20</initialWillRange>
 		<canBeSapper>true</canBeSapper>
 		<isGoodBreacher>true</isGoodBreacher>
 		<invNutrition>1</invNutrition>
@@ -1036,7 +1036,7 @@
 		<isFighter>true</isFighter>
 		<itemQuality>Excellent</itemQuality>
 		<biocodeWeaponChance>0.7</biocodeWeaponChance>
-		<initialWillRange>10~30</initialWillRange>
+		<initialWillRange>10~20</initialWillRange>
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>35</maxGenerationAge>
@@ -1129,7 +1129,7 @@
 		<itemQuality>Poor</itemQuality>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<isFighter>true</isFighter>
-		<initialWillRange>10</initialWillRange>
+		<initialWillRange>5</initialWillRange>
 		<initialResistanceRange>0</initialResistanceRange>
 		<maxGenerationAge>30</maxGenerationAge>
 		<minGenerationAge>19</minGenerationAge>
@@ -1186,7 +1186,7 @@
 		<itemQuality>Poor</itemQuality>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<isFighter>true</isFighter>
-		<initialWillRange>10</initialWillRange>
+		<initialWillRange>5</initialWillRange>
 		<initialResistanceRange>0</initialResistanceRange>
 		<maxGenerationAge>30</maxGenerationAge>
 		<minGenerationAge>19</minGenerationAge>
