@@ -850,9 +850,9 @@
 		<projectile>
 			<damageDef>Cinder_BombD</damageDef>
 			<explosionRadius>2.5</explosionRadius>
-			<damageAmountBase>80</damageAmountBase>
+			<damageAmountBase>60</damageAmountBase>
 			<armorPenetrationBase>0.25</armorPenetrationBase>
-			<explosionDelay>200</explosionDelay>
+			<explosionDelay>300</explosionDelay>
 			<explosionChanceToStartFire>0.1</explosionChanceToStartFire>
 		</projectile>
 	</ThingDef>
