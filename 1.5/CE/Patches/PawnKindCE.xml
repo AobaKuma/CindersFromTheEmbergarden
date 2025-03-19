@@ -2,7 +2,7 @@
 <Patch>
 	
     <Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="Cinder_Grenadier" or defName="Cinder_OutlanderElite" or defName="Cinder_BreakUnit" or defName="Cinder_HeavySoliderUnit" or defName="Cinder_SoliderUnit"]</xpath>
+		<xpath>Defs/PawnKindDef[defName="Cinder_OutlanderElite" or defName="Cinder_HeavySoliderUnit" or defName="Cinder_SoliderUnit"]</xpath>
 		<value>
 		    <li Class="CombatExtended.LoadoutPropertiesExtension">
 			    <primaryMagazineCount>
@@ -27,6 +27,44 @@
 					</li>
 			    </sidearms>
 			</li>
+		</value>
+	</Operation>
+	
+	 <Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/PawnKindDef[defName="Cinder_Grenadier" or defName="Cinder_BreakUnit"]</xpath>
+		<value>
+		    <li Class="CombatExtended.LoadoutPropertiesExtension">
+			    <primaryMagazineCount>
+					<min>8</min>
+					<max>10</max>
+				</primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>1</generateChance>
+						<sidearmMoney>
+							<min>550</min>
+							<max>570</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>CinderSimpleGuns</li>
+							<li>CinderPDW</li>
+						</weaponTags>
+						<magazineCount>
+							<min>2</min>
+							<max>3</max>
+						</magazineCount>
+					</li>
+			    </sidearms>
+			</li>
+		</value>
+	</Operation>
+	
+	 <Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_Grenadier" or defName="Cinder_BreakUnit"]/weaponTags</xpath>
+		<value>
+		   <weaponTags>
+			<li>CinderDestructiveCE</li>
+		   </weaponTags>
 		</value>
 	</Operation>
 	

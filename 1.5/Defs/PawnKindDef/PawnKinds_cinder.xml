@@ -487,9 +487,9 @@
 			<max>2200</max>
 		</apparelMoney>
 		<weaponTags>
-			<li>EmpireGrenadeDestructive</li>
+			<li>CinderDestructive</li>
 		</weaponTags>
-		<weaponMoney>300~1000</weaponMoney>
+		<weaponMoney>1000~1000</weaponMoney>
 		<modExtensions>
 			<li Class="Embergarden.ModExtension_RandomOneAbility">
 				<abilities>
@@ -1001,8 +1001,7 @@
 			<max>15900</max>
 		</apparelMoney>
 		<weaponTags>
-			<li>CinderHeavy</li>
-			<li>EmpireGrenadeDestructive</li>
+			<li>CinderDestructive</li>
 		</weaponTags>
 		<weaponMoney>3500~3900</weaponMoney>
 		<modExtensions>

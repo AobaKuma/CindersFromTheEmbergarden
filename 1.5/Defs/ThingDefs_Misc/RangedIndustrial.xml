@@ -775,4 +775,85 @@
 			<colorB>(0.9,0.9,0.9)</colorB>
 		</projectile>
 	</ThingDef>
+	
+	
+	 <ThingDef ParentName="Cinder_Gun">
+    <defName>Cinder_PlasticGrenades</defName>
+    <label>plastic explosive</label>
+    <description>A high-energy explosive made of polymer that can effectively destroy facilities and defensive buildings.</description>
+    <recipeMaker>
+	  <researchPrerequisites Inherit="False">
+				<li>Cinder_ShapedCharges</li>
+	   </researchPrerequisites>
+    </recipeMaker>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Weapons/PlasticExplosives/PlasticExplosives_a</texPath>
+	  <drawSize>1.1</drawSize>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+      <WorkToMake>12000</WorkToMake>
+    </statBases>
+    <costList>
+      <Cinder_AmorphousPolymer>50</Cinder_AmorphousPolymer>
+      <Chemfuel>120</Chemfuel>
+    </costList>
+    <weaponTags>
+      <li>CinderDestructive</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Grenades</li>
+    </thingCategories>
+    <smeltable>true</smeltable>
+    <verbs>
+      <li>
+        <label>throw plastic explosive</label>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>12.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>2</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Cinder_PlasticExplosives</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.66</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+	
+	
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Cinder_PlasticExplosives</defName>
+		<label>plastic explosive</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Weapons/PlasticExplosives_Proj</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Cinder_BombD</damageDef>
+			<explosionRadius>2.5</explosionRadius>
+			<damageAmountBase>80</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<explosionDelay>200</explosionDelay>
+			<explosionChanceToStartFire>0.1</explosionChanceToStartFire>
+		</projectile>
+	</ThingDef>
 </Defs>

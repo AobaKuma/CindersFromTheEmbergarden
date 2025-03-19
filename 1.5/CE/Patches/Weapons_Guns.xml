@@ -257,7 +257,7 @@
 			<SightsEfficiency>1.00</SightsEfficiency>
 			<ShotSpread>0.14</ShotSpread>
 			<SwayFactor>0.94</SwayFactor>
-			<Bulk>4.50</Bulk>
+			<Bulk>2</Bulk>
 		</statBases>
 		<Properties>
 			<recoilAmount>1.79</recoilAmount>
@@ -299,7 +299,7 @@
 			<SightsEfficiency>1.1</SightsEfficiency>
 			<ShotSpread>0.15</ShotSpread>
 			<SwayFactor>1.8</SwayFactor>
-			<Bulk>10</Bulk>
+			<Bulk>5</Bulk>
 		</statBases>
 		<Properties>
 			<recoilAmount>0.97</recoilAmount>
@@ -377,5 +377,35 @@
 	
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/ThingDef[defName="Cinder_Dragonslayer"]/equippedStatOffsets</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_PlasticExplosives"]/projectile</xpath>
+		<value>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Cinder_BombD</damageDef>
+			<explosionRadius>2.5</explosionRadius>
+			<damageAmountBase>400</damageAmountBase>
+			<armorPenetrationBase>200</armorPenetrationBase>
+			<explosionDelay>300</explosionDelay>
+			<explosionChanceToStartFire>0.1</explosionChanceToStartFire>
+			<speed>12</speed>
+			<screenShakeFactor>0.5</screenShakeFactor>
+			<suppressionFactor>4.0</suppressionFactor>
+			<dangerFactor>2.5</dangerFactor>
+			<airborneSuppressionFactor>0.5</airborneSuppressionFactor>
+		</projectile>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_PlasticExplosives"]/thingClass</xpath>
+		<value>
+			<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="Cinder_PlasticGrenades"]</xpath>
 	</Operation>
 </Patch>

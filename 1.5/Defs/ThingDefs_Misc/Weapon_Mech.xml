@@ -319,7 +319,7 @@
 		<armorCategory>Heat</armorCategory>
 		<minDamageToFragment>50</minDamageToFragment>
 		<defaultDamage>500</defaultDamage>
-		<defaultStoppingPower>0.5</defaultStoppingPower>
+		<defaultStoppingPower>4</defaultStoppingPower>
 		<defaultArmorPenetration>0.10</defaultArmorPenetration>
 		<buildingDamageFactorImpassable>2</buildingDamageFactorImpassable>
 		<buildingDamageFactorPassable>1.5</buildingDamageFactorPassable>
@@ -373,6 +373,23 @@
 				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
 			</li>
 		</additionalHediffs>
+	</DamageDef>
+	
+	<DamageDef ParentName="Cinder_Bomb">
+		<defName>Cinder_BombD</defName>
+		<label>bomb</label>
+		<isExplosive>False</isExplosive>
+		<defaultDamage>80</defaultDamage>
+		<minDamageToFragment>15</minDamageToFragment>
+		<armorCategory>Blunt</armorCategory>
+		<defaultStoppingPower>3</defaultStoppingPower>
+		<defaultArmorPenetration>0.5</defaultArmorPenetration>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<hasForcefulImpact>true</hasForcefulImpact>
+		<explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+		<expolosionPropagationSpeed>0.4</expolosionPropagationSpeed>
+		<buildingDamageFactorImpassable>10</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>5</buildingDamageFactorPassable>
 	</DamageDef>
 
 	<DamageDef ParentName="Bullet">

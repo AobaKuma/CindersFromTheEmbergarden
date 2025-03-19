@@ -38,6 +38,14 @@
 				<damageDef>Bullet</damageDef>
 				<multiplier>0.4</multiplier>
 			</li>
+			<li>
+				<damageDef>Cinder_BombD</damageDef>
+				<multiplier>4</multiplier>
+			</li>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>2.5</multiplier>
+			</li>
 		</damageMultipliers>
 		<receivesSignals>true</receivesSignals>
 		<tradeability>None</tradeability>
