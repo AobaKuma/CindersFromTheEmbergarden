@@ -34,7 +34,7 @@
   </RecipeDef>
 
   <RecipeDef>
-    <defName>DMS_ExtractCompFromSlag</defName>
+    <defName>Cinder_ExtractCompFromSlag</defName>
     <label>disassemble eroded walker debris</label>
     <description>Disassemble eroded walker debris to extract useful component.</description>
     <jobString>disassembling eroded walker debris.</jobString>
