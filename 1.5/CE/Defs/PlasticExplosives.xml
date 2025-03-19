@@ -35,7 +35,7 @@
         <hasStandardCommand>true</hasStandardCommand>
 				<range>7</range>
 				<minRange>1.9</minRange>
-				<warmupTime>1.5</warmupTime>
+				<warmupTime>2</warmupTime>
 				<noiseRadius>8</noiseRadius>
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 				<soundCast>ThrowGrenade</soundCast>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: plastic explosive -->
+  <Cinder_PEG.label>塑胶炸弹</Cinder_PEG.label>
+  <!-- EN: A high-energy explosive made of polymer that can effectively destroy facilities and defensive buildings. -->
+  <Cinder_PEG.description>一种由无定形聚合物制成的高能炸弹，能够有效的摧毁设施与建筑。</Cinder_PEG.description>
+  <!-- EN: Body -->
+  <Cinder_PEG.tools.Body.label>弹体</Cinder_PEG.tools.Body.label>
+  
+</LanguageData>

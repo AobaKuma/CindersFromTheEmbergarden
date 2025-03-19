@@ -31,4 +31,8 @@
   <!-- EN: {0} has died in an explosion. -->
   <Cinder_BombC.deathMessage>{0}死于爆炸。</Cinder_BombC.deathMessage>
   
+    <Cinder_BombD.label>爆炸</Cinder_BombD.label>
+  <!-- EN: {0} has died in an explosion. -->
+  <Cinder_BombD.deathMessage>{0}死于爆炸。</Cinder_BombD.deathMessage>
+  
 </LanguageData>

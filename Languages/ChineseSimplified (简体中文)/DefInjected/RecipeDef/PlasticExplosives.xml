@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make plastic explosive x5 -->
+  <MakeWeapon_PEG.label>制作塑胶炸弹 x5</MakeWeapon_PEG.label>
+  <!-- EN: Craft 5 plastic explosive. -->
+  <MakeWeapon_PEG.description>制作5个塑胶炸弹</MakeWeapon_PEG.description>
+  <!-- EN: Making plastic explosive. -->
+  <MakeWeapon_PEG.jobString>正在制作塑胶炸弹</MakeWeapon_PEG.jobString>
+  
+</LanguageData>

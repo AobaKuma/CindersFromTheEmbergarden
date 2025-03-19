@@ -109,4 +109,12 @@
   <!-- EN: Tentacle -->
   <Cinder_TentacleGourdProj.label>触手</Cinder_TentacleGourdProj.label>
   
+    <Cinder_PlasticGrenades.label>塑胶炸弹</Cinder_PlasticGrenades.label>
+  <!-- EN: An ancient Hi-Power rifle,The actual damage it causes is not as simple as it seems.Its special warhead will shatter upon hitting the target, causing serious damage,Not clearing what twisted it, occasionally this gun grows some strange tentacles. -->
+  <Cinder_PlasticGrenades.description>一种由无定形聚合物制成的高能炸弹，能够有效的摧毁设施与建筑。</Cinder_PlasticGrenades.description>
+  
+    <!-- EN: plastic explosive -->
+  <Cinder_PlasticExplosives.label>塑胶炸弹</Cinder_PlasticExplosives.label>
+  
+  
 </LanguageData>

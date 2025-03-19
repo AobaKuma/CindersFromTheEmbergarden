@@ -35,8 +35,8 @@
 		<value>
 		    <li Class="CombatExtended.LoadoutPropertiesExtension">
 			    <primaryMagazineCount>
-					<min>8</min>
-					<max>10</max>
+					<min>10</min>
+					<max>12</max>
 				</primaryMagazineCount>
 				<sidearms>
 					<li>
