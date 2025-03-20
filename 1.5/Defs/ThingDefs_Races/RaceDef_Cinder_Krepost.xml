@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <ThingDef ParentName="Cinder_BaseMechaWalker">
+  <ThingDef ParentName="Cinder_BaseMechaWalker" Name="Cinder_BaseKrepost">
     <defName>Cinder_Mech_Krepost</defName>
 	<thingClass>Pawn</thingClass>
     <label>Tombstone</label>
     <description>Twisted, ferocious, and terrifying war weapons, as well as abnormal objects residing in the remains of the weapons. That was once a partner on the same side, but now there is only one aircraft that can cause significant casualties to the armed exploration team. They are eroded fortresses, stumbling and marching slowly, with deadly tombstones..</description>
     <statBases>
-      <MoveSpeed>3.0</MoveSpeed>
+      <MoveSpeed>2.7</MoveSpeed>
       <ArmorRating_Sharp>1.20</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
       <ArmorRating_Heat>1.5</ArmorRating_Heat>
@@ -31,10 +31,6 @@
 				<multiplier>0.70</multiplier>
 			</li>
 			<li>
-				<damageDef>Burn</damageDef>
-				<multiplier>0</multiplier>
-			</li>
-			<li>
 				<damageDef>Bomb</damageDef>
 				<multiplier>0.75</multiplier>
 			</li>
@@ -51,10 +47,6 @@
 				<multiplier>0.1</multiplier>
 			</li>
 			<li>
-				<damageDef>Blunt</damageDef>
-				<multiplier>0.2</multiplier>
-			</li>
-			<li>
 				<damageDef>ArrowHighVelocity</damageDef>
 				<multiplier>0.2</multiplier>
 			</li>
@@ -62,17 +54,13 @@
 				<damageDef>RangedStab</damageDef>
 				<multiplier>0.2</multiplier>
 			</li>
-			<li>
-				<damageDef>Stun</damageDef>
-				<multiplier>0</multiplier>
-			</li>
     </damageMultipliers>
     <race>
       <mechFixedSkillLevel>12</mechFixedSkillLevel>
 	  <thinkTreeMain>Mechanoid</thinkTreeMain>
       <body>Cinder_ErodedKrepost</body>
       <baseBodySize>4</baseBodySize>
-      <baseHealthScale>5.5</baseHealthScale>
+      <baseHealthScale>5.45</baseHealthScale>
       <mechWeightClass>UltraHeavy</mechWeightClass>
       <detritusLeavings>
         <li>
@@ -90,9 +78,7 @@
     <comps>
       <li Class="Embergarden.CompProperties_AddHediff">
         <hediffDefs>
-          <li>Cinder_PolymerActivation</li>
           <li>Cinder_Regen</li>
-		  <li>Cinder_IntrinsicPropertiesOfPolymers</li>
         </hediffDefs>
       </li>
       <li Class="Embergarden.CompProperties_VehicleWeapon">
@@ -101,14 +87,14 @@
             <offset>(0.6,0,-0.6)</offset>
           </dataEast>
           <dataWest>
-            <offset>(-0.4,0,1.1)</offset>
+            <offset>(-0.6,0,1.1)</offset>
             <layer>-20</layer>
           </dataWest>
           <dataSouth>
             <offset>(-1.1,0,-0.2)</offset>
           </dataSouth>
           <dataNorth>
-            <offset>(1.1,0,0.2)</offset>
+            <offset>(1.1,0,0.5)</offset>
           </dataNorth>
         </drawData>
         <turretRotationFollowPawn>true</turretRotationFollowPawn>
@@ -201,14 +187,14 @@
                 <pawnType>Any</pawnType>
                 <drawData>
                   <dataEast>
-                    <offset>(1.4,0,-0.05)</offset>
+                    <offset>(1,0,-0.05)</offset>
                   </dataEast>
                   <dataWest>
-                    <offset>(-1.4,0,-0.05)</offset>
+                    <offset>(-1,0,-0.05)</offset>
                     <rotationOffset>180</rotationOffset>
                   </dataWest>
                   <dataSouth>
-                    <offset>(0.15,0,-1.30)</offset>
+                    <offset>(0.15,0,-1)</offset>
                   </dataSouth>
                   <dataNorth>
                     <offset>(-0.15,0,0.65)</offset>
@@ -324,8 +310,8 @@
     <castEdgeShadows>false</castEdgeShadows>
     <staticSunShadowHeight>0</staticSunShadowHeight>
   </ThingDef>
-
-  <PawnKindDef ParentName="BaseMechanoidKind" Name="DMS_BaseKrepostKind">
+  
+  <PawnKindDef ParentName="BaseMechanoidKind" Name="Cinder_BaseKrepostKind">
     <defName>Cinder_Mech_Krepost</defName>
     <label>Tombstone</label>
     <allowInMechClusters>false</allowInMechClusters>
@@ -368,8 +354,22 @@
     <techHediffsMoney>9999~9999</techHediffsMoney>
     <abilities>
       <li>Cinder_AmorphousIED</li>
-      <li>Cinder_EternalFearAbility</li>
-      <li MayRequire="Aoba.DeadManSwitch.AncientCorps">DMSAC_APS</li>
+	  <li>Cinder_EternalFearAbility</li>
     </abilities>
+	
+	<startingHediffs>
+			<li>
+				<def>Cinder_ERA</def>
+				<chance>1</chance>
+			</li>
+			<li>
+				<def>Cinder_PolymerActivation</def>
+				<chance>1</chance>
+			</li>
+			<li>
+				<def>Cinder_IntrinsicPropertiesOfPolymers</def>
+				<chance>1</chance>
+			</li>
+		</startingHediffs>
   </PawnKindDef>
 </Defs>

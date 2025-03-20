@@ -45,10 +45,14 @@
   <!-- EN: Installed additional amorphous polymer armor plates to protect users from injury.\n\nAlthough it is an excellent protective armor, it must be completely replaced once damaged. -->
   <Cinder_ExtraArmourPlate.description>安装了额外的无定形聚合物装甲板，以保护使用者免受伤害。\n\n虽然它是一种出色的防护装甲，但一旦损坏，必须完全更换。</Cinder_ExtraArmourPlate.description>
   
-  <!-- EN: heavy armour Plates -->
   <Cinder_ExtraArmourPlateII.label>重型装甲板</Cinder_ExtraArmourPlateII.label>
   <!-- EN: Installed additional amorphous polymer armor plates to protect users from injury.\n\nAlthough it is an excellent protective armor, it must be completely replaced once damaged. -->
   <Cinder_ExtraArmourPlateII.description>安装了额外的无定形聚合物装甲板，以保护使用者免受伤害。\n\n虽然它是一种出色的防护装甲，但一旦损坏，必须完全更换。</Cinder_ExtraArmourPlateII.description>
+  
+  <!-- EN: heavy armour Plates -->
+  <Cinder_ERA.label>爆炸反应装甲</Cinder_ERA.label>
+  <!-- EN: Installed additional amorphous polymer armor plates to protect users from injury.\n\nAlthough it is an excellent protective armor, it must be completely replaced once damaged. -->
+  <Cinder_ERA.description>安装了额外的爆炸反应装甲，可以有效的抵抗破甲弹伤害，一旦损坏，就无法再补充。</Cinder_ERA.description>
   
   <!-- EN: eroded eyes -->
   <Cinder_EyeHediff.label>侵蚀眼</Cinder_EyeHediff.label>

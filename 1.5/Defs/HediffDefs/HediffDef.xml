@@ -252,9 +252,9 @@
 			<li>
 				<minSeverity>0</minSeverity>
 				<statFactors>
-					<IncomingDamageFactor>0.5</IncomingDamageFactor>
-					<StaggerDurationFactor>0.4</StaggerDurationFactor>
-					<MeleeCooldownFactor>0.6</MeleeCooldownFactor>
+					<IncomingDamageFactor>0.45</IncomingDamageFactor>
+					<StaggerDurationFactor>0</StaggerDurationFactor>
+					<MeleeCooldownFactor>0.5</MeleeCooldownFactor>
 				</statFactors>
 				<statOffsets>
 					<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
@@ -823,6 +823,54 @@
 				</statOffsets>
 			</li>
 		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Cinder_ERA</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>ERA</label>
+		<description>Heavy reactive armor, capable of effectively resisting explosive damage.</description>
+		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+		<isBad>false</isBad>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<comps>
+			<li Class="Embergarden.HediffCompProperties_ProtectiveShield">
+				<hitpoints>200</hitpoints>
+				<filthOnDamaged>Filth_MachineBits</filthOnDamaged>
+				<effectOnDamaged>Deflect_Metal</effectOnDamaged>
+			</li>
+			<li Class="Embergarden.HediffCompProperties_EexclusiveHediff">
+				<exclusiveHediff>
+					<li>Cinder_ExtraArmourPlate</li>
+				</exclusiveHediff>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<damageFactors>
+					<Bullet>0.45</Bullet>
+					<Bomb>0.1</Bomb>
+					<Cinder_Bomb>0.5</Cinder_Bomb>
+					<Cinder_BombB>0.25</Cinder_BombB>
+					<Cinder_BombC>0.25</Cinder_BombC>
+					<Cinder_BombD>0.25</Cinder_BombD>
+			    </damageFactors>
+				<statOffsets>
+					<ArmorRating_Heat>0.5</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+		
+		<renderNodeProperties>
+        <li Class="PawnRenderNodeProperties">
+        <debugLabel>ERA</debugLabel>
+        <workerClass>PawnRenderNodeWorker</workerClass>
+         <texPath>Things/Pawn/Mech/erodedKrepostA</texPath>
+		  <overrideMeshSize>(4.2, 4.2)</overrideMeshSize>
+        <baseLayer>2</baseLayer>
+		<pawnType>Any</pawnType>
+      </li>
+    </renderNodeProperties>
 	</HediffDef>
 
 	<HediffDef>

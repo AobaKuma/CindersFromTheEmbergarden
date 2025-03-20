@@ -14,7 +14,7 @@
    <BodyPartDef>
     <defName>Cinder_MechanicalThoraxB</defName>
     <label>armored chassis</label>
-    <hitPoints>125</hitPoints>
+    <hitPoints>120</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <solid>true</solid>

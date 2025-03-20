@@ -303,11 +303,11 @@
 	<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
     <writeCombatLog>true</writeCombatLog>
 	<aiCanUse>true</aiCanUse>
-    <charges>2</charges>
+    <charges>1</charges>
     <cooldownPerCharge>true</cooldownPerCharge>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 	 <statBases>
-	  <Ability_Duration>180</Ability_Duration>
+	  <Ability_Duration>120</Ability_Duration>
     </statBases>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
@@ -352,7 +352,7 @@
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <statBases>
       <Ability_EffectRadius>10.9</Ability_EffectRadius>
-	  <Ability_Duration>120</Ability_Duration>
+	  <Ability_Duration>60</Ability_Duration>
     </statBases>
     <verbProperties>
 	<verbClass>Verb_CastAbility</verbClass>
