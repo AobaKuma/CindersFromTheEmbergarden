@@ -856,6 +856,7 @@
 					<Cinder_BombD>0.25</Cinder_BombD>
 			    </damageFactors>
 				<statOffsets>
+					<MoveSpeed>-0.4</MoveSpeed>
 					<ArmorRating_Heat>0.5</ArmorRating_Heat>
 				</statOffsets>
 			</li>
