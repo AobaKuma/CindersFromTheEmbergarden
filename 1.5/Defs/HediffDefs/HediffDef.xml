@@ -854,6 +854,7 @@
 					<Cinder_BombB>0.25</Cinder_BombB>
 					<Cinder_BombC>0.25</Cinder_BombC>
 					<Cinder_BombD>0.25</Cinder_BombD>
+					<Stun>0</Stun>
 			    </damageFactors>
 				<statOffsets>
 					<MoveSpeed>-0.4</MoveSpeed>

@@ -244,4 +244,40 @@
 		</value>
 	</Operation>
 	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_HeavySoliderUnit" or defName="Cinder_BreakUnit"]/apparelRequired</xpath>
+		<value>
+			<apparelRequired>
+			<li>Cinder_Apparel_HeavyArmorDress</li>
+			<li>Cinder_HeadGear_FullyEnclosedMask</li>
+			<li>Cinder_HeadGear_AssaultHelmet</li>
+		</apparelRequired>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_SoliderUnit"]/apparelRequired</xpath>
+		<value>
+			<apparelRequired>
+			<li>Cinder_Apparel_LowVisibilityDress</li>
+			<li>Cinder_HeadGear_FullyEnclosedMask</li>
+			<li>Apparel_SmokepopBelt</li>
+			<li>Cinder_HeadGear_AssaultHelmet</li>
+		</apparelRequired>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Cinder_SoliderUnit" or defName="Cinder_BreakUnit" or defName="Cinder_HeavySoliderUnit"]/specificApparelRequirements</xpath>
+		<value>
+			<li>
+				<bodyPartGroup>Shoulders</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialMilitaryBasic</requiredTag>
+				<apparelLayer>Backpack</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+		</value>
+	</Operation>
+	
 </Patch>

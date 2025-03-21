@@ -54,6 +54,10 @@
 				<damageDef>RangedStab</damageDef>
 				<multiplier>0.2</multiplier>
 			</li>
+			<li>
+				<damageDef>Stun</damageDef>
+				<multiplier>0</multiplier>
+			</li>
     </damageMultipliers>
     <race>
       <mechFixedSkillLevel>12</mechFixedSkillLevel>

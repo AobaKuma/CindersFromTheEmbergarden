@@ -29,7 +29,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_AssaultHelmet"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
-			<ArmorRating_Sharp>15</ArmorRating_Sharp>
+			<ArmorRating_Sharp>12</ArmorRating_Sharp>
 		</value>
 	</Operation>
 
@@ -39,12 +39,21 @@
 			<ArmorRating_Blunt>18</ArmorRating_Blunt>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_AssaultHelmet"]/stuffCategories</xpath>
+		<value>
+			<stuffCategories>
+			<li>Steeled</li>
+		</stuffCategories>
+		</value>
+	</Operation>
 
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_AssaultHelmetTan"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
-			<ArmorRating_Sharp>25</ArmorRating_Sharp>
+			<ArmorRating_Sharp>18</ArmorRating_Sharp>
 		</value>
 	</Operation>
 
@@ -60,14 +69,14 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_GhoulUnitHelmet"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
-			<ArmorRating_Sharp>14</ArmorRating_Sharp>
+			<ArmorRating_Sharp>6</ArmorRating_Sharp>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_GhoulUnitHelmet"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
-			<ArmorRating_Blunt>30</ArmorRating_Blunt>
+			<ArmorRating_Blunt>20</ArmorRating_Blunt>
 		</value>
 	</Operation>
 
@@ -84,7 +93,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_FullyEnclosedMask"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
-			<ArmorRating_Sharp>18</ArmorRating_Sharp>
+			<ArmorRating_Sharp>8</ArmorRating_Sharp>
 		</value>
 	</Operation>
 
@@ -98,16 +107,27 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_FullyEnclosedMask"]/statBases/StuffEffectMultiplierArmor</xpath>
 		<value>
-			<StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
 			<Bulk>5</Bulk>
 			<WornBulk>1</WornBulk>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_FullyEnclosedMask"]/apparel/layers</xpath>
 		<value>
-			<li>StrappedHead</li>
+			<layers>
+				<li>StrappedHead</li>
+			</layers>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_FullyEnclosedMask"]/stuffCategories</xpath>
+		<value>
+			<stuffCategories>
+			<li>Steeled</li>
+		</stuffCategories>
 		</value>
 	</Operation>
 
@@ -122,7 +142,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Cinder_HeadGear_BrokenMask"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
-			<ArmorRating_Blunt>8</ArmorRating_Blunt>
+			<ArmorRating_Blunt>12</ArmorRating_Blunt>
 		</value>
 	</Operation>
 
