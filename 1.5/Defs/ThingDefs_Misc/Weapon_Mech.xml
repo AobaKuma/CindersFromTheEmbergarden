@@ -407,6 +407,7 @@
 	<DamageDef ParentName="CutBase">
     <defName>Cider_Cut</defName>
 	<armorCategory>Blunt</armorCategory>
+    <isRanged>true</isRanged>
     <additionalHediffs>
 			<li>
 				<hediff>Cinder_BlindnessLow</hediff>
@@ -420,6 +421,7 @@
   <DamageDef ParentName="CutBase">
     <defName>Cider_CutB</defName>
 	<armorCategory>Heat</armorCategory>
+    <isRanged>true</isRanged>
 	<externalViolence>false</externalViolence>
     <additionalHediffs>
 			<li>

@@ -91,7 +91,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/PawnKindDef[defName="Cinder_HeavySoliderUnit" or defName="Cinder_BreakUnit"]/combatPower</xpath>
 		<value>
-			<combatPower>240</combatPower>
+			<combatPower>340</combatPower>
 		</value>
 	</Operation>
 	
@@ -105,7 +105,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/PawnKindDef[defName="Cinder_Outlander" or defName="Cinder_EliteCult"]/combatPower</xpath>
 		<value>
-			<combatPower>100</combatPower>
+			<combatPower>150</combatPower>
 		</value>
 	</Operation>
 	

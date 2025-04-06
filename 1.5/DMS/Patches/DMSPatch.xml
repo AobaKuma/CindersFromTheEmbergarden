@@ -29,6 +29,29 @@
 					</value>
 		</Operation>
 		
+		<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Cinder_MechGun_AnvilDiscipline"]</xpath>
+					<value>
+                        <recipeMaker>
+			                <recipeUsers Inherit="false">
+				               <li>Cinder_AncientWorkstation</li>
+			                </recipeUsers>
+							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+                            <workSkill>Crafting</workSkill>
+                            <effectWorking>Smith</effectWorking>
+                            <soundWorking>Recipe_Smith</soundWorking>
+							<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+                            <researchPrerequisite>Cinder_MainBattleWalker</researchPrerequisite>
+		                </recipeMaker>
+						<costList>
+		                   	<Steel>100</Steel>
+			                <Cinder_AmorphousPolymer>200</Cinder_AmorphousPolymer>
+			                <ComponentIndustrial>15</ComponentIndustrial>
+							<Cinder_ErodedMechComponent>1</Cinder_ErodedMechComponent>
+	                   	</costList>
+					</value>
+		</Operation>
+		
 		<Operation Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Cinder_MechGun_AnvilDiscipline"]/smeltable</xpath>
 					<value>

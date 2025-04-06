@@ -31,7 +31,7 @@
 			<extraDamages>
 				<li>
 					<def>Cinder_ExtraBullet</def>
-					<amount>3</amount>
+					<amount>2</amount>
 				</li>
 			</extraDamages>
 			<speed>65</speed>
@@ -95,7 +95,7 @@
 			<extraDamages>
 				<li>
 					<def>Cinder_ExtraBullet</def>
-					<amount>15</amount>
+					<amount>10</amount>
 				</li>
 			</extraDamages>
 		</projectile>
@@ -409,7 +409,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Cinder_Bullet_308APE</defaultProjectile>
 				<warmupTime>0.45</warmupTime>
-				<range>29.9</range>
+				<range>28.9</range>
 				<burstShotCount>3</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<soundCast>Cinder_Shot_33A</soundCast>

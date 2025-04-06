@@ -11,14 +11,21 @@
 				            <label>active</label>
 				            <minSeverity>0</minSeverity>
 				            <statFactors>
-				               <Flammability>0.75</Flammability>
 					           <MeleeCooldownFactor>1.4</MeleeCooldownFactor>
-					           <IncomingDamageFactor>0.95</IncomingDamageFactor>
+							    <ShootingAccuracyFactor_Long>0.1</ShootingAccuracyFactor_Long>
 				            </statFactors>
 				            <statOffsets>
-					          <MeleeDamageFactor>0.3</MeleeDamageFactor>
+					           <MeleeDamageFactor>0.4</MeleeDamageFactor>
+							   <MoveSpeed>-0.1</MoveSpeed>
 				            </statOffsets>
 			             </li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_UncontrollableTentacles"]/modExtensions/li[@Class="Embergarden.RandomCapacityModifier"]/range</xpath>
+					<value>
+						<range>0.85~1.02</range>
 					</value>
 				</li>
 				
@@ -27,8 +34,24 @@
 					<value>
 						<li>
 						<painOffset>-0.3</painOffset>
-				        <totalBleedFactor>0.95</totalBleedFactor>
+						<statFactors>
+					       <IncomingDamageFactor>0.95</IncomingDamageFactor>
+				        </statFactors>
 		              	</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/HediffDef[defName="Cinder_Resurrect"]</xpath>
+					<value>
+						<stages>
+			               <li>
+				            <totalBleedFactor>0.95</totalBleedFactor>
+				            <statFactors>
+				              <Flammability>0.75</Flammability>
+				            </statFactors>
+			               </li>
+		                </stages>
 					</value>
 				</li>
 				
@@ -248,16 +271,16 @@
 				</li>
 				
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Cinder_Trailer"]/statBases</xpath>
+					<xpath>Defs/ThingDef[defName="Cinder_Trailer"]/statBases/ComfyTemperatureMin</xpath>
 					<value>
-                        <statBases>
-		                  	<MoveSpeed>3.5</MoveSpeed>
-			                <MarketValue>1000</MarketValue>
 			                <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Trailer"]/statBases/ComfyTemperatureMax</xpath>
+					<value>
 			                <ComfyTemperatureMax>60</ComfyTemperatureMax>
-			                <FilthRate>1</FilthRate>
-			                <CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
-		                </statBases>
 					</value>
 				</li>
 				
@@ -268,19 +291,11 @@
 					</value>
 				</li>
 				
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Cinder_Apparel_ScavHeavyCoat"]/statBases/ArmorRating_Sharp</xpath>
-					<value>
-                      <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
-					</value>
-				</li>
 				
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Cinder_Mech_ErodedEXO"]/statBases</xpath>
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_ErodedEXO"]/statBases/BandwidthCost</xpath>
 					<value>
-                      <statBases>
 			            <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">4</BandwidthCost>
-		              </statBases>
 					</value>
 				</li>
 				

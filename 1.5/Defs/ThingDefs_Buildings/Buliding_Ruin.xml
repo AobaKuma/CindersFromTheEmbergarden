@@ -22,6 +22,7 @@
 	<ThingDef ParentName="Cinder_NonfunctionalBuilding" Name ="Cinder_NonfunctionalBuilding_Impassable" Abstract="True">
 		<passability>Impassable</passability>
 		<blockWind>true</blockWind>
+		<tradeability>None</tradeability>
 		<building>
 			<alwaysDeconstructible>false</alwaysDeconstructible>
 		</building>
@@ -77,8 +78,9 @@
 			<li>Cinder_WarMachinery</li>
 		</researchPrerequisites>
 		<statBases>
+		    <MarketValue>180</MarketValue>
 			<WorkToBuild>150000</WorkToBuild>
-			<MaxHitPoints>1500</MaxHitPoints>
+			<MaxHitPoints>5000</MaxHitPoints>
 			<Mass>100</Mass>
 		</statBases>
 		<killedLeavingsRanges>
@@ -128,8 +130,9 @@
 			<li>Cinder_WarAttacker</li>
 		</researchPrerequisites>
 		<statBases>
-			<WorkToBuild>180000</WorkToBuild>
-			<MaxHitPoints>1500</MaxHitPoints>
+		    <MarketValue>300</MarketValue>
+		 	<WorkToBuild>180000</WorkToBuild>
+			<MaxHitPoints>10000</MaxHitPoints>
 			<Mass>100</Mass>
 		</statBases>
 		<killedLeavingsRanges>
@@ -178,8 +181,9 @@
 			<li>Cinder_WarAttacker</li>
 		</researchPrerequisites>
 		<statBases>
+		    <MarketValue>200</MarketValue>
 			<WorkToBuild>170000</WorkToBuild>
-			<MaxHitPoints>1500</MaxHitPoints>
+			<MaxHitPoints>8000</MaxHitPoints>
 			<Mass>100</Mass>
 		</statBases>
 		<killedLeavingsRanges>
@@ -229,8 +233,9 @@
 			<li>Cinder_MainBattleWalker</li>
 		</researchPrerequisites>
 		<statBases>
+		    <MarketValue>500</MarketValue>
 			<WorkToBuild>170000</WorkToBuild>
-			<MaxHitPoints>1500</MaxHitPoints>
+			<MaxHitPoints>15000</MaxHitPoints>
 			<Mass>100</Mass>
 		</statBases>
 		<killedLeavingsRanges>

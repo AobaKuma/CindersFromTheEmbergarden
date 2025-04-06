@@ -102,17 +102,19 @@
 		<costList>
 			<Cloth>90</Cloth>
 			<Steel>40</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<statBases>
-			<MaxHitPoints>250</MaxHitPoints>
+		    <MarketValue>200</MarketValue>
+		 	<MaxHitPoints>250</MaxHitPoints>
 			<WorkToMake>5000</WorkToMake>
 			<Mass>0.5</Mass>
-			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.4</ArmorRating_Heat>
 			<Insulation_Cold>17.4</Insulation_Cold>
 			<Insulation_Heat>3</Insulation_Heat>
-			<EquipDelay>3</EquipDelay>
+			<EquipDelay>6</EquipDelay>
 		</statBases>
 		<apparel>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/ScavHeavyCoat/ScavHeavyCoat</wornGraphicPath>
@@ -157,14 +159,14 @@
 		</recipeMaker>
 		<costList>
 			<Cloth>80</Cloth>
-			<Steel>30</Steel>
+			<Steel>50</Steel>
 		</costList>
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
 			<WorkToMake>5000</WorkToMake>
 			<Mass>0.5</Mass>
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.4</ArmorRating_Heat>
 			<Insulation_Cold>7.4</Insulation_Cold>
 			<Insulation_Heat>13</Insulation_Heat>
@@ -229,7 +231,7 @@
 			<WorkToMake>9000</WorkToMake>
 			<Mass>5.5</Mass>
 			<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.5</ArmorRating_Heat>
 			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
 			<Insulation_Cold>10.4</Insulation_Cold>
@@ -300,7 +302,7 @@
 			<Mass>10</Mass>
 			<Flammability>0.3</Flammability>
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.9</ArmorRating_Heat>
 			<StuffEffectMultiplierArmor>0.95</StuffEffectMultiplierArmor>
 			<Insulation_Cold>14.4</Insulation_Cold>
@@ -368,7 +370,7 @@
 			<WorkToMake>25000</WorkToMake>
 			<Mass>7.5</Mass>
 			<ArmorRating_Sharp>1.02</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.5</ArmorRating_Heat>
 			<EquipDelay>13</EquipDelay>
 			<Insulation_Cold>14.4</Insulation_Cold>

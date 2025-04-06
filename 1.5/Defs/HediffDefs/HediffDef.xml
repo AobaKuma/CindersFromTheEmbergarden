@@ -22,9 +22,7 @@
 				<label>active</label>
 				<minSeverity>0</minSeverity>
 				<statFactors>
-				    <Flammability>0.5</Flammability>
 					<MeleeCooldownFactor>1.3</MeleeCooldownFactor>
-					<IncomingDamageFactor>0.8</IncomingDamageFactor>
 				</statFactors>
 				<statOffsets>
 					<MeleeDamageFactor>0.5</MeleeDamageFactor>
@@ -51,6 +49,10 @@
 					<Burn>0.5</Burn>
 				</damageFactors>
 				<totalBleedFactor>0.9</totalBleedFactor>
+				<statFactors>
+				    <Flammability>0.5</Flammability>
+					<IncomingDamageFactor>0.8</IncomingDamageFactor>
+				</statFactors>
 			</li>
 		</stages>
 		<comps>

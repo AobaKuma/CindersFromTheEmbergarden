@@ -669,7 +669,7 @@
 			<Mass>8</Mass>
 			<StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
 			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.5</ArmorRating_Heat>
 			<Insulation_Cold>30.4</Insulation_Cold>
 			<Insulation_Heat>13</Insulation_Heat>
@@ -752,7 +752,7 @@
 			<Mass>7.5</Mass>
 			<StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.4</ArmorRating_Heat>
 			<Insulation_Cold>20.4</Insulation_Cold>
 			<Insulation_Heat>3</Insulation_Heat>

@@ -356,6 +356,7 @@
 				</apparelList>
 				<whiteXenotypeList>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Cinder_Xenotype</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
 				</whiteXenotypeList>
 			</raceRestriction>
 		</alienRace>
