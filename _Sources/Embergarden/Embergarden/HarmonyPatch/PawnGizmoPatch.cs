@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using RimWorld;
 using Verse.AI.Group;
+using System.Linq;
 
 namespace Embergarden
 {
@@ -31,6 +32,16 @@ namespace Embergarden
                     }
                 }
             }
+        }
+    }
+    [StaticConstructorOnStartup]
+    [HarmonyPatch(typeof(RitualOutcomeEffectWorker_Blinding), "ApplyExtraOutcome")]
+    public static class RitualOutcomeEffectWorker_BlindingPatch
+    {
+        public static void Postfix(LordJob_Ritual jobRitual)
+        {
+            Pawn pawn = ((LordJob_Ritual_Mutilation)jobRitual).mutilatedPawns[0];
+            if (pawn.health.hediffSet.GetHediffComps<HediffComp_Regen>().Any()) pawn.health.GetOrAddHediff(Cider_DefOf.Cinder_EyeRegenInhibited);
         }
     }
 }
