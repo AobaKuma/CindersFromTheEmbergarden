@@ -9,10 +9,10 @@
   <Cinder_ExtractMetalFromSlag.jobString>正在从被侵蚀的步行机残骸中熔炼金属</Cinder_ExtractMetalFromSlag.jobString>
   
   <!-- EN: disassemble eroded walker debris -->
-  <Cinder_ExtractCompFromSlag.label>分解步行机残骸</DMS_ExtractCompFromSlag.label>
+  <Cinder_ExtractCompFromSlag.label>分解步行机残骸</Cinder_ExtractCompFromSlag.label>
   <!-- EN: Disassemble eroded walker debris to extract useful component. -->
-  <Cinder_ExtractCompFromSlag.description>分解步行机残骸</DMS_ExtractCompFromSlag.description>
+  <Cinder_ExtractCompFromSlag.description>分解步行机残骸</Cinder_ExtractCompFromSlag.description>
   <!-- EN: disassembling eroded walker debris. -->
-  <Cinder_ExtractCompFromSlag.jobString>正在分解步行机残骸</DMS_ExtractCompFromSlag.jobString>
+  <Cinder_ExtractCompFromSlag.jobString>正在分解步行机残骸</Cinder_ExtractCompFromSlag.jobString>
   
 </LanguageData>
