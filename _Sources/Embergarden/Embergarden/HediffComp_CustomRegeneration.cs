@@ -44,7 +44,9 @@ namespace Embergarden
                     }
                     if (hediff.def == Cider_DefOf.Cinder_EyeRegenInhibited)
                     {
+                        Log.Message("1");
                         eyeRegenInhibit = true;
+                        continue;
                     }
                     if (hediff is Hediff_Injury)
                     {
@@ -56,6 +58,7 @@ namespace Embergarden
                         hediffsToHeal.Add(hediff);
                     }
                 }
+                Log.Message(eyeRegenInhibit);
                 if (hediffsToHeal.Any())
                 {
                     float heals = healPerCycle;
@@ -63,7 +66,11 @@ namespace Embergarden
                     foreach (var hediffToHeal in hediffsToHeal)
                     {
                         if (heals <= 0) break;
-                        if (eyeRegenInhibit && hediffToHeal.Part.def.tags.Contains(BodyPartTagDefOf.SightSource)) continue;
+                        if (hediffToHeal.Part.def.tags.Contains(BodyPartTagDefOf.SightSource))
+                        {
+                            Log.Message("1");
+                            if (eyeRegenInhibit) continue;
+                        }
                         if (hediffToHeal is Hediff_Injury)
                         {
                             float actualHeal = Math.Min(heals / count, hediffToHeal.Severity);
