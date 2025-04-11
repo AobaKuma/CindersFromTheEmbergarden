@@ -103,4 +103,19 @@
 		<label>roti</label>
 		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Roti</texPath>
 	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairT</defName>
+		<label>big cake</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_BigCake</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairU</defName>
+		<label>charming</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Charming</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairV</defName>
+		<label>dirty bread</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_DirtyBread</texPath>
+	</HairDef>
 </Defs>
