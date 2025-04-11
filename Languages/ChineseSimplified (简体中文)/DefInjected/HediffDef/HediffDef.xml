@@ -141,4 +141,10 @@
   <!-- EN: polymer activation -->
   <Cinder_IntrinsicPropertiesOfPolymers.labelNoun>聚合物内禀</Cinder_IntrinsicPropertiesOfPolymers.labelNoun>
   
+  <Cinder_EyeRegenInhibited.label>眼睛再生受到抑制</Cinder_EyeRegenInhibited.label>
+  <!-- EN: The amorphous polymer inside this unit has been activated, resulting in a significant increase in armor strength. -->
+  <Cinder_EyeRegenInhibited.description>盲眼仪式取走了此人的眼睛，与灵能共鸣的尝试暂时阻断了眼睛的再生。</Cinder_EyeRegenInhibited.description>
+  <!-- EN: polymer activation -->
+  <Cinder_EyeRegenInhibited.labelNoun>眼睛再生受到抑制</Cinder_EyeRegenInhibited.labelNoun>
+  
 </LanguageData>

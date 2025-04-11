@@ -136,4 +136,10 @@
   <!-- EN: polymer activation -->
   <Cinder_PolymerActivation.labelNoun>聚合物活化</Cinder_PolymerActivation.labelNoun>
   
+  <Cinder_EyeRegenInhibited.label>眼睛再生受到抑制</Cinder_EyeRegenInhibited.label>
+  <!-- EN: The amorphous polymer inside this unit has been activated, resulting in a significant increase in armor strength. -->
+  <Cinder_EyeRegenInhibited.description>盲眼儀式取走了此人的眼睛，與靈能共鳴的嘗試暫時阻斷了眼睛的再生。</Cinder_EyeRegenInhibited.description>
+  <!-- EN: polymer activation -->
+  <Cinder_EyeRegenInhibited.labelNoun>眼睛再生受到抑制</Cinder_EyeRegenInhibited.labelNoun>
+  
 </LanguageData>

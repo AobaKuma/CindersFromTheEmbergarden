@@ -976,28 +976,28 @@
 	
 	<HediffDef>
 		<defName>Cinder_EyeRegenInhibited</defName>
-		<label>Eye regen inhibited</label>
-		<labelNoun>Eye regen inhibited</labelNoun>
-		<description>The inherent properties of amorphous polymers are that they cannot be directly cut in any way, and can be processed by projectiles or slow movements with kinetic energy at a certain threshold.</description>
+		<label>eye regen inhibited</label>
+		<labelNoun>eye regen inhibited</labelNoun>
+		<description>Blind Ritual took away this person's eyes. The attempt to resonate with psylink blocked eye regeneration.</description>
 		<hediffClass>HediffWithComps</hediffClass>
-		<defaultLabelColor>(0, 0, 0)</defaultLabelColor>
+		<defaultLabelColor>(0.8, 0.8, 0.8)</defaultLabelColor>
 		<maxSeverity>1</maxSeverity>
 		<initialSeverity>1</initialSeverity>
 		<isBad>false</isBad>
 		<stages>
 			<li>
-				<becomeVisible>false</becomeVisible>
 				<minSeverity>0</minSeverity>
-				<damageFactors>
-					<Cut>0</Cut>
-					<Poke>0</Poke>
-					<Stab>0</Stab>
-				</damageFactors>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<setMax>0.01</setMax>
+					</li>
+				</capMods>
 			</li>
 		</stages>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-0.1</severityPerDay>
+				<severityPerDay>-0.05</severityPerDay>
 				<showDaysToRecover>true</showDaysToRecover>
 			</li>
 		</comps>
