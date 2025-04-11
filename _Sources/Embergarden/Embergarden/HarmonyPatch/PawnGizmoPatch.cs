@@ -35,12 +35,11 @@ namespace Embergarden
         }
     }
     [StaticConstructorOnStartup]
-    [HarmonyPatch(typeof(RitualOutcomeEffectWorker_Blinding), "ApplyExtraOutcome")]
-    public static class RitualOutcomeEffectWorker_BlindingPatch
+    [HarmonyPatch(typeof(JobDriver_Blind), "Blind")]
+    public static class JobDriver_BlindPatch
     {
-        public static void Postfix(LordJob_Ritual jobRitual)
+        public static void Postfix(Pawn pawn)
         {
-            Pawn pawn = ((LordJob_Ritual_Mutilation)jobRitual).mutilatedPawns[0];
             if (pawn.health.hediffSet.GetHediffComps<HediffComp_Regen>().Any()) pawn.health.GetOrAddHediff(Cider_DefOf.Cinder_EyeRegenInhibited);
         }
     }
