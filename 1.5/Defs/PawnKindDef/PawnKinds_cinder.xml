@@ -669,6 +669,7 @@
 					<li>Cinder_AmorphousIED</li>
 					<li>Cinder_AmorphousWinding</li>
 					<li>Cinder_ErodedBomb</li>
+					<li>Cinder_ErosionSkip</li>
 				</abilities>
 			</li>
 		</modExtensions>
@@ -858,6 +859,7 @@
 					<li>Cinder_FearPulse</li>
 					<li>Cinder_AmorphousIED</li>
 					<li>Cinder_ErodedBomb</li>
+					<li>Cinder_ErosionSkip</li>
 				</abilities>
 			</li>
 		</modExtensions>
@@ -1101,6 +1103,7 @@
 					<li>Cinder_AmorphousIED</li>
 					<li>Cinder_AmorphousWinding</li>
 					<li>Cinder_ErodedBomb</li>
+					<li>Cinder_ErosionSkip</li>
 				</abilities>
 			</li>
 		</modExtensions>

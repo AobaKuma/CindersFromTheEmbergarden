@@ -501,6 +501,7 @@
 		</stages>
 	</HediffDef>
 	
+	
 	<HediffDef>
 		<defName>Cinder_ErosionDisability</defName>
 		<label>Erosion disability</label>
