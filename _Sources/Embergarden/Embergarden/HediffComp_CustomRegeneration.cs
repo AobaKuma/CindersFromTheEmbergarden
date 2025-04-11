@@ -32,6 +32,7 @@ namespace Embergarden
             {
                 hediffsToHeal.Clear();
                 ignoreParts.Clear();
+                bool eyeRegenInhibit = false;
                 foreach (Hediff hediff in Pawn.health.hediffSet.hediffs.InRandomOrder())
                 {
                     if (hediff is Hediff_AddedPart)
@@ -40,6 +41,10 @@ namespace Embergarden
                         {
                             ignoreParts.Add(child);
                         }
+                    }
+                    if (hediff.def == Cider_DefOf.Cinder_EyeRegenInhibited)
+                    {
+                        eyeRegenInhibit = true;
                     }
                     if (hediff is Hediff_Injury)
                     {
@@ -58,6 +63,7 @@ namespace Embergarden
                     foreach (var hediffToHeal in hediffsToHeal)
                     {
                         if (heals <= 0) break;
+                        if (eyeRegenInhibit && hediffToHeal.Part.def.tags.Contains(BodyPartTagDefOf.SightSource)) continue;
                         if (hediffToHeal is Hediff_Injury)
                         {
                             float actualHeal = Math.Min(heals / count, hediffToHeal.Severity);
