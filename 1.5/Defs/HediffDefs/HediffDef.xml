@@ -973,4 +973,33 @@
       </li>
     </comps>
 	</HediffDef>
+	
+	<HediffDef>
+		<defName>Cinder_EyeRegenInhibited</defName>
+		<label>Eye regen inhibited</label>
+		<labelNoun>Intrinsic properties of polymers</labelNoun>
+		<description>The inherent properties of amorphous polymers are that they cannot be directly cut in any way, and can be processed by projectiles or slow movements with kinetic energy at a certain threshold.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0, 0, 0)</defaultLabelColor>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<minSeverity>0</minSeverity>
+				<damageFactors>
+					<Cut>0</Cut>
+					<Poke>0</Poke>
+					<Stab>0</Stab>
+				</damageFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.5</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+	</HediffDef>
 </Defs>
