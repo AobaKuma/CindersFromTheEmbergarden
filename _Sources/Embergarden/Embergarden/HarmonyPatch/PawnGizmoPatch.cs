@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using RimWorld;
 using Verse.AI.Group;
+using System.Linq;
 
 namespace Embergarden
 {
@@ -40,7 +41,7 @@ namespace Embergarden
         public static void Postfix(LordJob_Ritual jobRitual)
         {
             Pawn pawn = ((LordJob_Ritual_Mutilation)jobRitual).mutilatedPawns[0];
-            pawn.health.GetOrAddHediff(Cider_DefOf.Cinder_EyeRegenInhibited);
+            if (pawn.health.hediffSet.GetHediffComps<HediffComp_Regen>().Any()) pawn.health.GetOrAddHediff(Cider_DefOf.Cinder_EyeRegenInhibited);
         }
     }
 }
