@@ -101,11 +101,11 @@
 		</recipeMaker>
 		<costList>
 			<Cloth>90</Cloth>
-			<Steel>40</Steel>
+			<Steel>75</Steel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<statBases>
-		    <MarketValue>200</MarketValue>
+		    <MarketValue>350</MarketValue>
 		 	<MaxHitPoints>250</MaxHitPoints>
 			<WorkToMake>5000</WorkToMake>
 			<Mass>0.5</Mass>
@@ -158,10 +158,12 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<Cloth>80</Cloth>
-			<Steel>50</Steel>
+			<Cloth>60</Cloth>
+			<Steel>75</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<statBases>
+		    <MarketValue>300</MarketValue>
 			<MaxHitPoints>250</MaxHitPoints>
 			<WorkToMake>5000</WorkToMake>
 			<Mass>0.5</Mass>

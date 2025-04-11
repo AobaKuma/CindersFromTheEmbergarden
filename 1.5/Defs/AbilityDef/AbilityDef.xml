@@ -380,6 +380,61 @@
     </comps>
   </AbilityDef>
   
+  <AbilityDef>
+    <defName>Cinder_ErosionSkip</defName>
+    <label>erosion skip</label>
+    <description>Forcefully teleporting the target from a location to a random distance, and make them fall into the state of fear. Objects above a certain size cannot be teleported.</description>
+    <iconPath>UI/Abilities/FearSkip</iconPath>
+    <cooldownTicksRange>90000</cooldownTicksRange> <!-- 36 hours -->
+    <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+	<warmupEffecter>CinderMote_Amorphous</warmupEffecter>
+    <writeCombatLog>true</writeCombatLog>
+	<aiCanUse>true</aiCanUse>
+    <charges>2</charges>
+    <cooldownPerCharge>true</cooldownPerCharge>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	 <statBases>
+	  <Ability_Duration>4.5</Ability_Duration>
+    </statBases>
+    <verbProperties>
+	   <verbClass>Verb_CastAbility</verbClass>
+       <warmupTime>0.5</warmupTime>
+      <range>24.9</range>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+        <canTargetAnimals>True</canTargetAnimals>
+        <canTargetItems>True</canTargetItems>
+		 <canTargetBuildings>False</canTargetBuildings>
+        <thingCategory>Item</thingCategory>
+        <mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+      </targetParams>
+	  <soundAiming>Cinder_TentacleAiming</soundAiming>
+    </verbProperties>
+    <comps>
+	   <li Class = "CompProperties_AbilityGiveMentalState">
+        <compClass>CompAbilityEffect_GiveMentalState</compClass>
+        <stateDef>Cinder_EternalFear</stateDef>
+        <goodwillImpact>-15</goodwillImpact>
+		 <forced>true</forced>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+	   <li Class="CompProperties_AbilityTeleport">
+        <compClass>CompAbilityEffect_Teleport</compClass>
+        <destination>RandomInRange</destination>
+        <randomRange>12.9~24.9</randomRange>
+        <clamorType>Ability</clamorType>
+        <clamorRadius>10</clamorRadius>
+        <destClamorType>Ability</destClamorType>
+        <destClamorRadius>10</destClamorRadius>
+        <stunTicks>70~120</stunTicks>
+        <goodwillImpact>-15</goodwillImpact>
+        <applyGoodwillImpactToLodgers>False</applyGoodwillImpactToLodgers>
+      </li>
+    </comps>
+  </AbilityDef>
+  
    <AbilityDef>
     <defName>Cinder_AmorphousWall</defName>
     <label>amorphous wall</label>

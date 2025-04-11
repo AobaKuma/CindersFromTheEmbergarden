@@ -155,6 +155,7 @@
 			<texPath>Things/Weapons/Magistrate/MagistrateA</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<uiIconPath>Things/Weapons/Magistrate/MagistrateUI</uiIconPath>
 		<soundInteract>Interact_Shotgun</soundInteract>
 		<weaponClasses>
 			<li>ShortShots</li>
@@ -243,6 +244,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.3</drawSize>
 		</graphicData>
+		<uiIconPath>Things/Weapons/MP12/MP12UI</uiIconPath>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
 			<li>RangedLight</li>
@@ -355,10 +357,11 @@
 		<label>Ouroboros rifle</label>
 		<description>An ancient Hi-Power rifle,The actual damage it causes is not as simple as it seems.Its special warhead will shatter upon hitting the target, causing serious damage,Not clearing what twisted it, occasionally this gun grows some strange tentacles.</description>
 		<graphicData>
-			<texPath>Things/Weapons/PCX33/PCX33A</texPath>
+			<texPath>Things/Weapons/PCX33/PCX33C</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.2</drawSize>
 		</graphicData>
+		<uiIconPath>Things/Weapons/PCX33/PCX33UI</uiIconPath>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
 			<li>RangedHeavy</li>
@@ -447,10 +450,11 @@
 		<label>Flint anti material rifle</label>
 		<description>An ancient anti material assault rifle that uses large caliber bullets and can effectively destroy lightly armored targets or military equipment, with a recoil that is difficult to withstand, occasionally this gun grows some strange tentacles.</description>
 		<graphicData>
-			<texPath>Things/Weapons/Flint50/Flint50D</texPath>
+			<texPath>Things/Weapons/Flint50/Flint50B</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.24</drawSize>
 		</graphicData>
+		<uiIconPath>Things/Weapons/Flint50/Flint50UI</uiIconPath>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
 			<li>RangedHeavy</li>

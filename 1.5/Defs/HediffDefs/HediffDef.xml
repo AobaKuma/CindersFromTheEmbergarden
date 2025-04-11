@@ -50,7 +50,7 @@
 				</damageFactors>
 				<totalBleedFactor>0.9</totalBleedFactor>
 				<statFactors>
-					<Flammability>0.5</Flammability>
+				    <Flammability>0.5</Flammability>
 					<IncomingDamageFactor>0.8</IncomingDamageFactor>
 				</statFactors>
 			</li>
@@ -110,7 +110,7 @@
 			</li>
 		</stages>
 		<renderNodeProperties>
-			<li Class="PawnRenderNodeProperties_Eye">
+			               <li Class="PawnRenderNodeProperties_Eye">
 				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
 				<texPath>UI/Gene/Eyes/Bread_Eye</texPath>
 				<parentTagDef>Head</parentTagDef>
@@ -123,9 +123,9 @@
 					<dataWest>
 						<flip>true</flip>
 					</dataWest>
-				</drawData>
-			</li>
-		</renderNodeProperties>
+				          </drawData>
+			            </li>
+	  </renderNodeProperties>
 	</HediffDef>
 
 	<HediffDef>
@@ -157,12 +157,12 @@
 					</li>
 				</capMods>
 				<statFactors>
-					<Flammability>0</Flammability>
+				    <Flammability>0</Flammability>
 					<IncomingDamageFactor>0.1</IncomingDamageFactor>
 					<RestFallRateFactor>0.01</RestFallRateFactor>
 					<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 					<NecrotionResistance MayRequire="BlackMarket420.TAOFC">2.0</NecrotionResistance>
-					<NecrotionEnvironmentResistance MayRequire="BlackMarket420.TAOFC">2.0</NecrotionEnvironmentResistance>
+	                <NecrotionEnvironmentResistance MayRequire="BlackMarket420.TAOFC">2.0</NecrotionEnvironmentResistance>
 					<StaggerDurationFactor>0</StaggerDurationFactor>
 				</statFactors>
 				<damageFactors>
@@ -239,7 +239,7 @@
 			</li>
 		</stages>
 	</HediffDef>
-
+	
 	<HediffDef>
 		<defName>Cinder_PolymerActivation</defName>
 		<label>polymer activation</label>
@@ -500,7 +500,8 @@
 			</li>
 		</stages>
 	</HediffDef>
-
+	
+	
 	<HediffDef>
 		<defName>Cinder_ErosionDisability</defName>
 		<label>Erosion disability</label>
@@ -516,7 +517,7 @@
 			</li>
 		</comps>
 		<stages>
-			<li>
+		    <li>
 				<capMods>
 					<li>
 						<capacity>Sight</capacity>
@@ -528,7 +529,7 @@
 					</li>
 				</capMods>
 				<statFactors>
-					<MeleeCooldownFactor>1.1</MeleeCooldownFactor>
+				    <MeleeCooldownFactor>1.1</MeleeCooldownFactor>
 					<MeleeHitChance>0.75</MeleeHitChance>
 					<MeleeDamageFactor>0.8</MeleeDamageFactor>
 					<MeleeDodgeChance>0.2</MeleeDodgeChance>
@@ -538,7 +539,7 @@
 				</statOffsets>
 			</li>
 			<li>
-				<minSeverity>0.5</minSeverity>
+			   <minSeverity>0.5</minSeverity>
 				<capMods>
 					<li>
 						<capacity>Sight</capacity>
@@ -557,8 +558,8 @@
 				</statFactors>
 			</li>
 			<li>
-				<minSeverity>0.8</minSeverity>
-				<painOffset>0.3</painOffset>
+			     <minSeverity>0.8</minSeverity>
+				  <painOffset>0.3</painOffset>
 				<capMods>
 					<li>
 						<capacity>Sight</capacity>
@@ -577,8 +578,8 @@
 				</statFactors>
 			</li>
 			<li>
-				<minSeverity>1</minSeverity>
-				<painOffset>0.5</painOffset>
+			     <minSeverity>1</minSeverity>
+				  <painOffset>0.5</painOffset>
 				<capMods>
 					<li>
 						<capacity>Sight</capacity>
@@ -598,7 +599,7 @@
 			</li>
 		</stages>
 	</HediffDef>
-
+	
 	<HediffDef>
 		<defName>Cinder_BlindnessLow</defName>
 		<label>entanglement of tentacles</label>
@@ -614,7 +615,7 @@
 			</li>
 		</comps>
 		<stages>
-			<li>
+		    <li>
 				<capMods>
 					<li>
 						<capacity>Sight</capacity>
@@ -627,7 +628,7 @@
 				</capMods>
 			</li>
 			<li>
-				<minSeverity>0.5</minSeverity>
+			   <minSeverity>0.5</minSeverity>
 				<capMods>
 					<li>
 						<capacity>Sight</capacity>
@@ -640,9 +641,9 @@
 				</capMods>
 			</li>
 			<li>
-				<minSeverity>0.8</minSeverity>
-				<painOffset>0.2</painOffset>
-				<capMods>
+               <minSeverity>0.8</minSeverity>
+               <painOffset>0.2</painOffset>
+                <capMods>
 					<li>
 						<capacity>Sight</capacity>
 						<setMax>0.1</setMax>
@@ -656,11 +657,11 @@
 						<setMax>0.8</setMax>
 					</li>
 				</capMods>
-			</li>
-			<li>
-				<minSeverity>1</minSeverity>
-				<painOffset>0.6</painOffset>
-				<capMods>
+           </li>
+		   <li>
+               <minSeverity>1</minSeverity>
+               <painOffset>0.6</painOffset>
+                <capMods>
 					<li>
 						<capacity>Sight</capacity>
 						<setMax>0.01</setMax>
@@ -674,10 +675,10 @@
 						<setMax>0.6</setMax>
 					</li>
 				</capMods>
-			</li>
+           </li>
 		</stages>
 	</HediffDef>
-
+	
 	<HediffDef>
 		<defName>Cinder_Erosion</defName>
 		<label>erosion</label>
@@ -707,13 +708,13 @@
 					<Flammability>0.9</Flammability>
 				</statOffsets>
 				<statFactors>
-					<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
-					<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
-				</statFactors>
+				<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+			    </statFactors>
 			</li>
 		</stages>
 	</HediffDef>
-
+	
 	<HediffDef>
 		<defName>Cinder_Erosion_Bullet</defName>
 		<label>erosion</label>
@@ -736,16 +737,16 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<ToxicEnvironmentResistance>-0.5</ToxicEnvironmentResistance>
-					<ArmorRating_Heat>-1</ArmorRating_Heat>
-				</statOffsets>
+				<ToxicEnvironmentResistance>-0.5</ToxicEnvironmentResistance>
+				<ArmorRating_Heat>-1</ArmorRating_Heat>
+			    </statOffsets>
 				<statFactors>
-					<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
-					<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
-					<IncomingDamageFactor>1.20</IncomingDamageFactor>
-				</statFactors>
-				<painFactor>1.5</painFactor>
-				<painOffset>0.1</painOffset>
+				<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+				<IncomingDamageFactor>1.20</IncomingDamageFactor>
+			</statFactors>
+		    <painFactor>1.5</painFactor>
+			<painOffset>0.1</painOffset>
 			</li>
 		</stages>
 	</HediffDef>
@@ -815,9 +816,9 @@
 					<Arrow>0.65</Arrow>
 					<Bomb>0.25</Bomb>
 					<Cut>0.65</Cut>
-					<Stab>0.65</Stab>
-					<Thump>0.65</Thump>
-					<Scratch>0.65</Scratch>
+                    <Stab>0.65</Stab>
+				    <Thump>0.65</Thump>
+				    <Scratch>0.65</Scratch>
 					<Stun>0</Stun>
 				</damageFactors>
 				<statOffsets>
@@ -826,7 +827,7 @@
 			</li>
 		</stages>
 	</HediffDef>
-
+	
 	<HediffDef>
 		<defName>Cinder_ERA</defName>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -857,24 +858,24 @@
 					<Cinder_BombC>0.25</Cinder_BombC>
 					<Cinder_BombD>0.25</Cinder_BombD>
 					<Stun>0</Stun>
-				</damageFactors>
+			    </damageFactors>
 				<statOffsets>
 					<MoveSpeed>-0.4</MoveSpeed>
 					<ArmorRating_Heat>0.5</ArmorRating_Heat>
 				</statOffsets>
 			</li>
 		</stages>
-
+		
 		<renderNodeProperties>
-			<li Class="PawnRenderNodeProperties">
-				<debugLabel>ERA</debugLabel>
-				<workerClass>PawnRenderNodeWorker</workerClass>
-				<texPath>Things/Pawn/Mech/erodedKrepostA</texPath>
-				<overrideMeshSize>(4.2, 4.2)</overrideMeshSize>
-				<baseLayer>2</baseLayer>
-				<pawnType>Any</pawnType>
-			</li>
-		</renderNodeProperties>
+        <li Class="PawnRenderNodeProperties">
+        <debugLabel>ERA</debugLabel>
+        <workerClass>PawnRenderNodeWorker</workerClass>
+         <texPath>Things/Pawn/Mech/erodedKrepostA</texPath>
+		  <overrideMeshSize>(4.2, 4.2)</overrideMeshSize>
+        <baseLayer>2</baseLayer>
+		<pawnType>Any</pawnType>
+      </li>
+    </renderNodeProperties>
 	</HediffDef>
 
 	<HediffDef>
@@ -900,7 +901,7 @@
 			</li>
 		</comps>
 	</HediffDef>
-
+	
 	<HediffDef>
 		<defName>Cinder_ArtificiaLife</defName>
 		<label>artificial life</label>
@@ -914,12 +915,12 @@
 			<li>
 				<becomeVisible>false</becomeVisible>
 				<statFactors>
-					<Fertility  MayRequire="Ludeon.RimWorld.Biotech">0</Fertility>
-				</statFactors>
+                  <Fertility  MayRequire="Ludeon.RimWorld.Biotech">0</Fertility>
+                </statFactors>
 			</li>
 		</stages>
 	</HediffDef>
-
+	
 	<HediffDef>
 		<defName>Cinder_IntrinsicPropertiesOfPolymers</defName>
 		<label>Intrinsic properties of polymers</label>
@@ -932,7 +933,7 @@
 		<isBad>false</isBad>
 		<stages>
 			<li>
-				<becomeVisible>false</becomeVisible>
+			    <becomeVisible>false</becomeVisible>
 				<minSeverity>0</minSeverity>
 				<damageFactors>
 					<Cut>0</Cut>
@@ -948,9 +949,9 @@
 			</li>
 		</comps>
 	</HediffDef>
-
+	
 	<HediffDef>
-		<defName>Cinder_SrangeSolution</defName>
+	<defName>Cinder_SrangeSolution</defName>
 		<label>strange solution</label>
 		<description>A harmless medication that often distracts people and makes them feel uncontrollable libido.</description>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -958,21 +959,21 @@
 		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
 		<isBad>false</isBad>
 		<everCurableByItem>false</everCurableByItem>
-		<stages>
-			<li>
-				<statFactors>
-					<WorkSpeedGlobal>0.8</WorkSpeedGlobal>
-				</statFactors>
-			</li>
-		</stages>
-		<comps>
-			<li Class="HediffCompProperties_RemoveIfApparelDropped" />
-			<li Class="HediffCompProperties_GiveLovinMTBFactor">
-				<lovinMTBFactor>0.5</lovinMTBFactor>
-			</li>
-		</comps>
+    <stages>
+      <li>
+        <statFactors>
+          <WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+        </statFactors>
+      </li>
+    </stages>
+    <comps>
+	 <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+      <li Class="HediffCompProperties_GiveLovinMTBFactor">
+        <lovinMTBFactor>0.5</lovinMTBFactor>
+      </li>
+    </comps>
 	</HediffDef>
-
+	
 	<HediffDef>
 		<defName>Cinder_EyeRegenInhibited</defName>
 		<label>Eye regen inhibited</label>

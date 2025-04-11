@@ -56,6 +56,11 @@
   <!-- EN: Erodes the spirit of nearby animals, causing them to fall into the state of fear. -->
   <Cinder_FearPulse.description>侵蚀周围动物的精神，使它们疯狂逃跑。</Cinder_FearPulse.description>
   
+   <!-- EN: fear pulse -->
+  <Cinder_ErosionSkip.label>侵蚀折跃</Cinder_ErosionSkip.label>
+  <!-- EN: Erodes the spirit of nearby animals, causing them to fall into the state of fear. -->
+  <Cinder_ErosionSkip.description>将目标从一个位置强行传送到随机的远处，使其看到超越现实的景象而陷入巨大的恐惧之中。可以折跃物体，而体型过大的目标则无法被折跃。</Cinder_ErosionSkip.description>
+  
   <!-- EN: Hellfire Missile -->
   <Cinder_LaunchHellfireMissile.label>地狱火导弹</Cinder_LaunchHellfireMissile.label>
   <!-- EN: Launch Missile -->
