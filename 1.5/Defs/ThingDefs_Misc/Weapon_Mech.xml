@@ -81,7 +81,7 @@
 			<AccuracyShort>0.7</AccuracyShort>
 			<AccuracyMedium>0.8</AccuracyMedium>
 			<AccuracyLong>0.8</AccuracyLong>
-			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
 			<li>
@@ -89,8 +89,8 @@
 				<forcedMissRadius>0.5</forcedMissRadius>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Cinder_Bullet_RPG</defaultProjectile>
-				<warmupTime>3.5</warmupTime>
-				<range>33.9</range>
+				<warmupTime>4.5</warmupTime>
+				<range>30.9</range>
 				<burstShotCount>2</burstShotCount>
 				<ticksBetweenBurstShots>50</ticksBetweenBurstShots>
 				<soundCast>InfernoCannon_Fire</soundCast>

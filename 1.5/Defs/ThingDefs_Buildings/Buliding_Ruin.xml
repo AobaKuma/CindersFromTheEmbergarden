@@ -66,6 +66,9 @@
 				<volume>(1.1, 1.0, 1.1)</volume>
 			</shadowData>
 		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<uiIconPath>Things/Pawn/Mech/EXObuliding/ErodedEXO_south</uiIconPath>
+		<uiIconScale>1.25</uiIconScale>
 		<size>(2,2)</size>
 		<costList>
 			<Steel>240</Steel>
@@ -118,6 +121,9 @@
 				<volume>(1.1, 1.0, 1.1)</volume>
 			</shadowData>
 		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<uiIconPath>Things/Pawn/Mech/WarAttacker_south</uiIconPath>
+		<uiIconScale>1.5</uiIconScale>
 		<size>(2,2)</size>
 		<costList>
 			<Steel>340</Steel>
@@ -169,6 +175,9 @@
 				<volume>(1.1, 1.0, 1.1)</volume>
 			</shadowData>
 		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<uiIconPath>Things/Pawn/Mech/WarSweeper_south</uiIconPath>
+		<uiIconScale>1.5</uiIconScale>
 		<size>(2,2)</size>
 		<costList>
 			<Steel>240</Steel>
@@ -220,7 +229,10 @@
 				<volume>(1.1, 1.0, 1.1)</volume>
 			</shadowData>
 		</graphicData>
-		<size>(2,2)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<uiIconPath>Things/Pawn/Mech/erodedKrepostA_south</uiIconPath>
+		<uiIconScale>1.75</uiIconScale>
+		<size>(2,3)</size>
 		<costList>
 			<Steel>240</Steel>
 			<Cinder_AmorphousPolymer>400</Cinder_AmorphousPolymer>

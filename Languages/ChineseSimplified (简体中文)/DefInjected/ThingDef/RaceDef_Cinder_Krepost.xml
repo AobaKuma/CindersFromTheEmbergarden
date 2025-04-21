@@ -12,4 +12,15 @@
   <!-- EN: Right Leg -->
   <Cinder_Mech_Krepost.tools.Right_Leg.label>右腿</Cinder_Mech_Krepost.tools.Right_Leg.label>
   
+  <!-- EN: Krepost -->
+  <Cinder_Mech_Tombstone.label>仿制墓碑</Cinder_Mech_Tombstone.label>
+  <!-- EN: 6M41 / BR-6 "Krepost" NATO nicknamed "TankHead". Huge and bulky walker, used as a bridgehead and mobile battery to maintain frontal battlefield firepower, Krepost is equipped with several active protection system and reactive armors to resist incoming projectiles. Even if the shields are exhausted, its huge size and weapon systems are sufficient at holding off incoming enemies until reinforcements arrive. -->
+  <Cinder_Mech_Tombstone.description>扭曲狰狞可怖的战争兵器与野蛮生长的异常之物。这种遮蔽区内的主战机兵被侵蚀扭曲，如今是只有一架也足以对武装探索小队造成重大伤亡的存在。他们是被侵蚀的城塞，一座座蹒跚行军的，缓慢而致命的墓碑。这种造物是对敌军版本的不完全逆向工程的仿制品，实际表现很难令人满意。</Cinder_Mech_Tombstone.description>
+  <!-- EN: Front tentacle -->
+  <Cinder_Mech_Tombstone.tools.Front_tentacle.label>前触手</Cinder_Mech_Tombstone.tools.Front_tentacle.label>
+  <!-- EN: Left Leg -->
+  <Cinder_Mech_Tombstone.tools.Left_Leg.label>左腿</Cinder_Mech_Tombstone.tools.Left_Leg.label>
+  <!-- EN: Right Leg -->
+  <Cinder_Mech_Tombstone.tools.Right_Leg.label>右腿</Cinder_Mech_Tombstone.tools.Right_Leg.label>
+  
 </LanguageData>

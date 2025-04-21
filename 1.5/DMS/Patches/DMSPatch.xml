@@ -8,6 +8,13 @@
 				</value>
 		</Operation>
 	
+	    <Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_Tombstone"]/thingClass</xpath>
+					<value>
+                    <thingClass>DMS.WeaponUsableMech</thingClass>
+				</value>
+		</Operation>
+	
         <Operation Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/race/thinkTreeMain</xpath>
 					<value>
@@ -15,8 +22,22 @@
 				</value>
 		</Operation>
 		
+		<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_Tombstone"]/race/thinkTreeMain</xpath>
+					<value>
+                    <thinkTreeMain>DMS_Mechanoid</thinkTreeMain>
+				</value>
+		</Operation>
+		
 		<Operation Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/comps</xpath>
+					<value>
+                       <li MayRequire="Ludeon.Rimworld.Biotech" Class="DMS.CompProperties_DeadManSwitch" />
+					</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Cinder_Mech_Tombstone"]/comps</xpath>
 					<value>
                        <li MayRequire="Ludeon.Rimworld.Biotech" Class="DMS.CompProperties_DeadManSwitch" />
 					</value>

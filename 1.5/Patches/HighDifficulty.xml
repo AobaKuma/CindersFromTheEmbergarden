@@ -188,20 +188,6 @@
 				</li>
 				
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AbilityDef[defName="Cinder_LaunchHellfireMissile"]/verbProperties/range</xpath>
-					<value>
-						    <range>27</range>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/AbilityDef[defName="Cinder_LaunchHellfireMissileB"]/verbProperties/range</xpath>
-					<value>
-						    <range>30</range>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="Cinder_Bullet_RPG"]/projectile</xpath>
 					<value>
                         <projectile>
@@ -214,19 +200,6 @@
 					</value>
 				</li>
 				
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Cinder_MechGun_GiantHEATRifle"]/verbs/li[1]/range</xpath>
-					<value>
-                        <range>29</range>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Cinder_MechGun_GiantHEATRifle"]/verbs/li[1]/warmupTime</xpath>
-					<value>
-                        <warmupTime>4.5</warmupTime>
-					</value>
-				</li>
 				
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="CinderBullet_Hellfire"]/projectile</xpath>
@@ -357,6 +330,32 @@
 					</li>
 					</value>
 				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_erodedKrepostBuliding"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Pawn/Mech/erodedKrepost</texPath>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_erodedKrepostBuliding"]/uiIconPath</xpath>
+					<value>
+						<uiIconPath>Things/Pawn/Mech/erodedKrepost_south</uiIconPath>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_erodedKrepostBuliding"]/comps/li[@Class="Embergarden.CompProperties_UseEffect_ActivateMech"]</xpath>
+					<value>
+					<li Class="Embergarden.CompProperties_UseEffect_ActivateMech" MayRequire="Ludeon.RimWorld.Biotech">
+				         <compClass>Embergarden.CompUseEffect_ActivateMech</compClass>
+				         <pawnKindDef>Cinder_Mech_Tombstone</pawnKindDef>
+			         </li>
+					</value>
+				</li>
+				
+
 			</operations>
 		</match>
 	</Operation>			

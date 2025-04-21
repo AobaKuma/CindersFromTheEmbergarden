@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="Cinder_Mech_Krepost"]</xpath>
+		<xpath>Defs/PawnKindDef[defName="Cinder_Mech_Krepost" or defName="Cinder_Mech_Tombstone"]</xpath>
 		<value>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
@@ -11,8 +11,9 @@
 			</li>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/statBases/ShootingAccuracyPawn</xpath>
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost" or defName="Cinder_Mech_Tombstone"]/statBases/ShootingAccuracyPawn</xpath>
 		<value>
 			<CarryWeight>200</CarryWeight> <!--ridiculously overweight and over bulk weapon system and ammo :(-->
 			<CarryBulk>150</CarryBulk>
@@ -26,8 +27,9 @@
 			<ReloadSpeed>1.25</ReloadSpeed>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/tools</xpath>
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost" or defName="Cinder_Mech_Tombstone"]/tools</xpath>
 		<value>
 			<tools>
 				<li Class="CombatExtended.ToolCE">
@@ -72,19 +74,19 @@
 
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/statBases/ArmorRating_Blunt</xpath>
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost" or defName="Cinder_Mech_Tombstone"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
 			<ArmorRating_Blunt>330</ArmorRating_Blunt>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/statBases/ArmorRating_Sharp</xpath>
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost" or defName="Cinder_Mech_Tombstone"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
 			<ArmorRating_Sharp>59</ArmorRating_Sharp>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/statBases/ArmorRating_Heat</xpath>
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost" or defName="Cinder_Mech_Tombstone"]/statBases/ArmorRating_Heat</xpath>
 		<value>
 			<ArmorRating_Heat>1.2</ArmorRating_Heat>
 			<ArmorRating_Electric>1.5</ArmorRating_Electric>
@@ -92,7 +94,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost" or defName="Cinder_Mech_Tombstone"]/comps</xpath>
 		<value>
 			<li Class="CombatExtended.CompProperties_ArmorDurability">
 				<Durability>4650</Durability>
@@ -114,7 +116,7 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]</xpath>
+				<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost" or defName="Cinder_Mech_Tombstone"]</xpath>
 				<value>
 					<li Class="CombatExtended.PartialArmorExt">
 						<stats>					

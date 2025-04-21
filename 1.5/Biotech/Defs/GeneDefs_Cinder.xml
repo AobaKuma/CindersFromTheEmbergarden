@@ -141,7 +141,7 @@
   <GeneDef>
     <defName>Cinder_UncontrollableTentacle</defName>
     <label>uncontrollable tentacle</label>
-    <description>Carriers of this gene will grow uncontrollable tentacle.</description>
+    <description>Carriers of this gene will grow uncontrollable tentacle，manipulation will be affected by a random value, and both melee damage and melee cooldown will increase.</description>
 	 <displayCategory>Miscellaneous</displayCategory>
     <randomChosen>true</randomChosen>
 	<geneClass>Embergarden.Gene_AddHediff</geneClass>

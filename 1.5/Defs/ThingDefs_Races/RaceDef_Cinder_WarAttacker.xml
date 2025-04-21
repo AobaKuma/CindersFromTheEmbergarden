@@ -105,7 +105,7 @@
 			<renderTree>Cinder_WarAttacker</renderTree>
 			<body>Cinder_ErodedEXO</body>
 			<baseBodySize>3.4</baseBodySize>
-			<baseHealthScale>6.5</baseHealthScale>
+			<baseHealthScale>6</baseHealthScale>
 			<detritusLeavings>
 				<li>
 					<def>Cinder_ChunkSlag</def>
@@ -156,7 +156,7 @@
 						<ID>rocket pod</ID>
 						<turret>Cinder_Mounted_Rocket</turret>
 						<autoAttack>true</autoAttack>
-						<warmingTime>5</warmingTime>
+						<warmingTime>12</warmingTime>
 						<angleOffset>-90</angleOffset>
 						<renderNodeProperties>
 							<li>

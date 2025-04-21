@@ -98,7 +98,7 @@
 			<renderTree>Cinder_WarSweeper</renderTree>
 			<body>Cinder_ErodedEXO</body>
 			<baseBodySize>3.4</baseBodySize>
-			<baseHealthScale>6.25</baseHealthScale>
+			<baseHealthScale>5.8</baseHealthScale>
 			<detritusLeavings>
 				<li>
 					<def>Cinder_ChunkSlag</def>

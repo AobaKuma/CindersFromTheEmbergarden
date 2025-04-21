@@ -11,7 +11,7 @@
 		<aiCanUse>true</aiCanUse>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
-			<range>32.9</range>
+			<range>29.9</range>
 			<warmupTime>11</warmupTime>
 			<soundCast>InfernoCannon_Fire</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -53,7 +53,7 @@
 		<aiCanUse>true</aiCanUse>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
-			<range>34.9</range>
+			<range>30.9</range>
 			<warmupTime>11</warmupTime>
 			<soundCast>InfernoCannon_Fire</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
