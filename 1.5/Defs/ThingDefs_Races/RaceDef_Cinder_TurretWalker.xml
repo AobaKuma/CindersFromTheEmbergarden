@@ -51,8 +51,8 @@
 		<defName>Cinder_Mech_WalkerAutoCannon</defName>
 		<label>Autocannon walker</label>
 		<race>Cinder_Mech_WalkerAutoCannon</race>
-		<combatPower>350</combatPower>
-		<maxPerGroup>8</maxPerGroup>
+		<combatPower>300</combatPower>
+		<maxPerGroup>10</maxPerGroup>
 		<allowInMechClusters>false</allowInMechClusters>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
@@ -227,7 +227,7 @@
 		<race>Cinder_Mech_WalkerSniper</race>
 		<combatPower>400</combatPower>
 		<allowInMechClusters>false</allowInMechClusters>
-		<maxPerGroup>4</maxPerGroup>
+		<maxPerGroup>6</maxPerGroup>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<bodyGraphicData>

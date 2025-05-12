@@ -622,7 +622,7 @@
 					<defaultProjectile>Bullet_Minigun</defaultProjectile>
 					<warmupTime>0.5</warmupTime>
 					<range>30.9</range>
-					<burstShotCount>25</burstShotCount>
+					<burstShotCount>20</burstShotCount>
 					<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 					<soundCast>Shot_Minigun</soundCast>
 					<soundCastTail>GunTail_Medium</soundCastTail>

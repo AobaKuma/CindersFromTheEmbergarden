@@ -319,7 +319,7 @@
    <ThingDef ParentName="Cinder_BaseMechaWalker">
     <defName>Cinder_Mech_Tombstone</defName>
 	<thingClass>Pawn</thingClass>
-	 <description>Twisted, ferocious, and terrifying war weapons, as well as abnormal objects residing in the remains of the weapons. That was once a partner on the same side, but now there is only one aircraft that can cause significant casualties to the armed exploration team. They are eroded fortresses, stumbling and marching slowly, with deadly tombstones.This kind of creation is an incomplete reverse engineered replica of the enemy version, and its actual performance is difficult to satisfy.</description>
+	 <description>Twisted, ferocious, and terrifying war weapons, as well as abnormal objects residing in the remains of the weapons. That was once a partner on the same side, but now there is only one aircraft that can cause significant casualties to the armed exploration team. They are eroded fortresses, stumbling and marching slowly, with deadly tombstones.This version of the tombstone is an imperfect mass-produced replica, and its actual performance is difficult to satisfy.</description>
     <label>Imitation Tombstone</label>
     <statBases>
       <MoveSpeed>2.5</MoveSpeed>
@@ -566,7 +566,8 @@
       <Cinder_ChunkSlag>8</Cinder_ChunkSlag>
     </butcherProducts>
     <killedLeavingsPlayerHostile>
-      <Cinder_AmorphousNeuralSpine>1</Cinder_AmorphousNeuralSpine>
+      <Cinder_ChunkSlag>2</Cinder_ChunkSlag>
+	  <Cinder_ErodedMechComponent>1</Cinder_ErodedMechComponent>
     </killedLeavingsPlayerHostile>
     <castEdgeShadows>false</castEdgeShadows>
     <staticSunShadowHeight>0</staticSunShadowHeight>
@@ -678,5 +679,62 @@
     <abilities>
       <li>Cinder_AmorphousIED</li>
     </abilities>
+  </PawnKindDef>
+  
+    <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>Cinder_Mech_MPTombstone</defName>
+    <label>Mass production Tombstone</label>
+    <allowInMechClusters>false</allowInMechClusters>
+    <race>Cinder_Mech_Tombstone</race>
+    <isFighter>true</isFighter>
+    <combatPower>1400</combatPower>                                               <!--威脅點數-->
+    <maxPerGroup>2</maxPerGroup>                                                 <!--單個集群內的數量-->
+    <isBoss>true</isBoss>
+    <weaponMoney>9999~9999</weaponMoney>
+	<lifeStages>                                                                 <!--身體圖片-->
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mech/erodedKrepost</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.2</drawSize>
+          <shadowData>
+            <volume>(1.25,1,1.25)</volume>
+            <offset>(0,0,-0.5)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mech/erodedKrepost</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.2</drawSize>
+          <shadowData>
+            <volume>(1.25,1,1.25)</volume>
+            <offset>(0,0,-0.5)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags>
+      <li>Cinder_HEATRifle</li>
+    </weaponTags>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+    <abilities>
+      <li>Cinder_AmorphousIED</li>
+    </abilities>
+	
+	<startingHediffs>
+			<li>
+				<def>Cinder_ERA</def>
+				<chance>1</chance>
+			</li>
+			<li>
+				<def>Cinder_IntrinsicPropertiesOfPolymers</def>
+				<chance>1</chance>
+			</li>
+		</startingHediffs>
   </PawnKindDef>
 </Defs>

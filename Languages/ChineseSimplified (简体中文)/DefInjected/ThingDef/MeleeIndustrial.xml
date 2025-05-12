@@ -6,7 +6,7 @@
   <!-- EN: An electric ultrasonic sickle used for rapid cutting of flesh and blood, and can also be used for harvesting crops. -->
   <Cinder_ElectricScythe.description>一种用于快速切割血肉的电超声镰刀，也可用于收割作物。</Cinder_ElectricScythe.description>
   <!-- EN: handle -->
-  <Cinder_ElectricScythe.tools.handle.label>TODO</Cinder_ElectricScythe.tools.handle.label>
+  <Cinder_ElectricScythe.tools.handle.label>把手</Cinder_ElectricScythe.tools.handle.label>
   <!-- EN: edge -->
   <Cinder_ElectricScythe.tools.edge.label>刀刃</Cinder_ElectricScythe.tools.edge.label>
   
@@ -20,4 +20,12 @@
   <!-- EN: head -->
   <Cinder_ImpactBreaker.tools.head.label>头</Cinder_ImpactBreaker.tools.head.label>
   
+    <!-- EN: impact breaker -->
+  <Cinder_HighFrequencySaw.label>高频锯</Cinder_HighFrequencySaw.label>
+  <!-- EN: A breaking hammer used for heavy armored targets and can also be used to smash stones. -->
+  <Cinder_HighFrequencySaw.description>一把轻便，坚固，锋利的高频震动锯，是用于战争的小型动力武器，也是一把趁手的工具，锯体由无定形聚合物制成，可以承受住大力劈砍，锯刃会在挥动时锯开轻型装甲。</Cinder_HighFrequencySaw.description>
+  <!-- EN: head -->
+   <Cinder_HighFrequencySaw.tools.edge.label>锯刃</Cinder_HighFrequencySaw.tools.edge.label>
+  
+  <Cinder_HighFrequencySaw.tools.point.label>锯刃尖端</Cinder_HighFrequencySaw.tools.point.label>
 </LanguageData>

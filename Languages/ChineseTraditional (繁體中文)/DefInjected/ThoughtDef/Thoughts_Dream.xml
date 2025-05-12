@@ -2,18 +2,22 @@
 <LanguageData>
   
   <!-- EN: Long Dream -->
-  <Cinder_LongDreamStageA.stages.Long_Dream.label>长梦</Cinder_LongDreamStageA.stages.Long_Dream.label>
+  <Cinder_LongDreamStageA.stages.Long_Dream.label>長夢</Cinder_LongDreamStageA.stages.Long_Dream.label>
   <!-- EN: No more pain... -->
   <Cinder_LongDreamStageA.stages.Long_Dream.description>不再痛苦....</Cinder_LongDreamStageA.stages.Long_Dream.description>
   
   <!-- EN: Long Dream -->
-  <Cinder_LongDreamStageB.stages.Long_Dream.label>长梦</Cinder_LongDreamStageB.stages.Long_Dream.label>
+  <Cinder_LongDreamStageB.stages.Long_Dream.label>長夢</Cinder_LongDreamStageB.stages.Long_Dream.label>
   <!-- EN: relaxed... -->
-  <Cinder_LongDreamStageB.stages.Long_Dream.description>感到放松..</Cinder_LongDreamStageB.stages.Long_Dream.description>
+  <Cinder_LongDreamStageB.stages.Long_Dream.description>感到放鬆..</Cinder_LongDreamStageB.stages.Long_Dream.description>
   
   <!-- EN: Mesmerised -->
-  <Cinder_StrangeSolutionEffect.stages.Mesmerised.label>意乱情迷</Cinder_StrangeSolutionEffect.stages.Mesmerised.label>
+  <Cinder_StrangeSolutionEffect.stages.Mesmerised.label>意亂情迷</Cinder_StrangeSolutionEffect.stages.Mesmerised.label>
   <!-- EN: Strange ideas keep popping up... -->
   <Cinder_StrangeSolutionEffect.stages.Mesmerised.description>奇怪的想法不停的冒出来....</Cinder_StrangeSolutionEffect.stages.Mesmerised.description>
   
+  
+  <Cinder_NCD.stages.crystallization_dissociation.label>晶化解離</Cinder_NCD.stages.crystallization_dissociation.label>
+  <!-- EN: Strange ideas keep popping up... -->
+  <Cinder_NCD.stages.crystallization_dissociation.description>我無法完全控制自己的身體，每一個聲音都讓我分不清具體方向...</Cinder_NCD.stages.crystallization_dissociation.description>
 </LanguageData>

@@ -54,7 +54,7 @@
   <!-- EN: uncontrollable tentacle -->
   <Cinder_UncontrollableTentacle.label>不可控触手</Cinder_UncontrollableTentacle.label>
   <!-- EN: Carriers of this gene will grow uncontrollable tentacle. -->
-  <Cinder_UncontrollableTentacle.description>携带者会长出不可控制的触手，操作能力被一个随机值影响，而近战伤害与近战冷却都有所增加</Cinder_UncontrollableTentacle.description>
+  <Cinder_UncontrollableTentacle.description>携带者体内的无定形聚合物会以一种触手的方式出现在身体表面，这种不可控的触手没有影响携带者本身的生物结构，携带者的操作能力被一个随机值影响，而近战伤害与近战冷却都有所增加</Cinder_UncontrollableTentacle.description>
   
   <!-- EN: white hair -->
   <Cinder_WhiteHair.label>白发</Cinder_WhiteHair.label>

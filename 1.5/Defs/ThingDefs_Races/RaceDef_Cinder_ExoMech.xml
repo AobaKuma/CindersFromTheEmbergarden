@@ -174,7 +174,7 @@
 			</detritusLeavings>
 		</race>
 		<statBases>
-			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">3</BandwidthCost>
+			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">4</BandwidthCost>
 		</statBases>
 		<comps>
 			<li Class="Embergarden.CompProperties_VehicleWeapon">
@@ -276,7 +276,7 @@
 		<defName>Cinder_Mech_ErodedEXO</defName>
 		<label>eroded exoskeleton</label>
 		<race>Cinder_Mech_ErodedEXO</race>
-		<combatPower>1200</combatPower>
+		<combatPower>900</combatPower>
          <maxPerGroup>3</maxPerGroup>
 		 <allowInMechClusters>false</allowInMechClusters>
          <isBoss>true</isBoss>

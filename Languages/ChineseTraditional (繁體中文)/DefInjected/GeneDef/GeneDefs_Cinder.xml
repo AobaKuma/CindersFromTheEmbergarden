@@ -52,9 +52,9 @@
   <Cinder_Revive.labelShortAdj>复苏</Cinder_Revive.labelShortAdj>
   
   <!-- EN: uncontrollable tentacle -->
-  <Cinder_UncontrollableTentacle.label>不可控触手</Cinder_UncontrollableTentacle.label>
+  <Cinder_UncontrollableTentacle.label>不可控觸手</Cinder_UncontrollableTentacle.label>
   <!-- EN: Carriers of this gene will grow uncontrollable tentacle. -->
-  <Cinder_UncontrollableTentacle.description>携带者会长出不可控制的触手，操作能力被一个随机值影响，而近战伤害与近战冷却都有所增加</Cinder_UncontrollableTentacle.description>
+  <Cinder_UncontrollableTentacle.description>攜帶者體內的無定形聚合物會以一種觸手的形式出現在身體表面，這種不可控的觸手沒有影響攜帶者本身的生物結構，操作能力被一個隨機值影響，而近戰傷害與近戰冷卻都有所增加</Cinder_UncontrollableTentacle.description>
   
   <!-- EN: white hair -->
   <Cinder_WhiteHair.label>白发</Cinder_WhiteHair.label>

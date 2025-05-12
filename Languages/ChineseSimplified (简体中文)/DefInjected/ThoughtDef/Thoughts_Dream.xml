@@ -16,4 +16,8 @@
   <!-- EN: Strange ideas keep popping up... -->
   <Cinder_StrangeSolutionEffect.stages.Mesmerised.description>奇怪的想法不停的冒出来....</Cinder_StrangeSolutionEffect.stages.Mesmerised.description>
   
+    <Cinder_NCD.stages.crystallization_dissociation.label>晶化解离</Cinder_NCD.stages.crystallization_dissociation.label>
+  <!-- EN: Strange ideas keep popping up... -->
+  <Cinder_NCD.stages.crystallization_dissociation.description>我无法完全控制自己的身体，每一个声音都让我分不清具体方向...</Cinder_NCD.stages.crystallization_dissociation.description>
+  
 </LanguageData>

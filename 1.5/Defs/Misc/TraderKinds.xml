@@ -55,7 +55,7 @@
 	  <li Class="StockGenerator_SingleDef">
         <thingDef>Cinder_EmptyAgentBottle</thingDef>
         <countRange>1</countRange>
-		<price>Expensive</price>
+		<price>Exorbitant</price>
       </li>
 	  
 	   <li Class="StockGenerator_Animals">
@@ -219,8 +219,8 @@
       </li>
 	  <li Class="StockGenerator_SingleDef">
         <thingDef>Cinder_EmptyAgentBottle</thingDef>
-        <countRange>1~2</countRange>
-		<price>Expensive</price>
+        <countRange>1</countRange>
+		<price>Exorbitant</price>
       </li>
 	  <li Class="StockGenerator_Tag">
         <tradeTag>Cinder_Gun</tradeTag>

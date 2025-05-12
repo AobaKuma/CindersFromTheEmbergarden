@@ -21,7 +21,7 @@
 	<equippedAngleOffset>-25</equippedAngleOffset>
     <recipeMaker Inherit="false">
       <researchPrerequisites>
-				<li>Cinder_WarMachinery</li>
+	            <li>Cinder_PowerTools</li>
 	</researchPrerequisites>
       <skillRequirements>
         <Crafting>4</Crafting>
@@ -32,7 +32,7 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
 			<Steel>40</Steel>
             <Cinder_AmorphousPolymer>40</Cinder_AmorphousPolymer>
 	</costList>
@@ -55,8 +55,8 @@
       </li>
     </tools>
 	<equippedStatOffsets>
-         <DeepDrillingSpeed>0.2</DeepDrillingSpeed>
-		 <MiningSpeed>0.5</MiningSpeed>
+         <DeepDrillingSpeed>0.4</DeepDrillingSpeed>
+		 <MiningSpeed>0.8</MiningSpeed>
     </equippedStatOffsets>
   </ThingDef>
 
@@ -78,12 +78,12 @@
     </weaponTags>
     <statBases>
       <WorkToMake>12000</WorkToMake>
-      <Mass>5.85</Mass>
+      <Mass>3.85</Mass>
     </statBases>
     <equippedAngleOffset>-65</equippedAngleOffset>
    <recipeMaker Inherit="false">
      <researchPrerequisites>
-				<li>Cinder_WarMachinery</li>
+	            <li>Cinder_PowerTools</li>
 	</researchPrerequisites>
       <skillRequirements>
         <Crafting>4</Crafting>
@@ -94,9 +94,9 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
 			<Steel>40</Steel>
-            <Cinder_AmorphousPolymer>40</Cinder_AmorphousPolymer>
+            <Cinder_AmorphousPolymer>75</Cinder_AmorphousPolymer>
 	</costList>
     <tools>
       <li>
@@ -119,10 +119,113 @@
       </li>
     </tools>
 	<equippedStatOffsets>
-        <PlantWorkSpeed>0.60</PlantWorkSpeed>
+        <PlantWorkSpeed>0.80</PlantWorkSpeed>
     </equippedStatOffsets>
   </ThingDef>
 
 
-  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Cinder_HighFrequencySaw</defName>
+    <label>high frequency saw</label>
+    <description>A lightweight, sturdy, and sharp high-frequency vibration saw is a small power weapon used in warfare and a handy tool. The saw body is made of amorphous polymer and can withstand strong chopping. The saw blade will cut open light armor when swung.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Weapons/HighFrequencySaw/HighFrequencySawA</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.05</drawSize>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Industrial</techLevel>
+    <costStuffCount>50</costStuffCount>
+    <weaponTags>
+      <li>Cinder_IndustrialMelee</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>1.5</Mass>
+    </statBases>
+    <equippedAngleOffset>-35</equippedAngleOffset>
+   <recipeMaker Inherit="false">
+     <researchPrerequisites>
+				<li>Cinder_PowerTools</li>
+	</researchPrerequisites>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+	  <recipeUsers>
+        <li>Cinder_AncientWorkstation</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+			<ComponentIndustrial>7</ComponentIndustrial>
+			<Steel>40</Steel>
+            <Cinder_AmorphousPolymer>75</Cinder_AmorphousPolymer>
+	</costList>
+	
+	<randomStyleChance>1</randomStyleChance>
+		<randomStyle>
+			<li>
+				<styleDef>CinderStyle_HighFrequencySawA</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_HighFrequencySawB</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_HighFrequencySawC</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_HighFrequencySawD</styleDef>
+			</li>
+		</randomStyle>
+	
+    <tools>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.5</cooldownTime>
+		 <armorPenetration>0.4</armorPenetration>
+		 <extraMeleeDamages>
+            <li>
+              <def>Cut</def>
+              <amount>4</amount>
+			  <chance>1</chance>
+            </li>
+          </extraMeleeDamages>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.5</cooldownTime>
+		 <armorPenetration>0.4</armorPenetration>
+		 <extraMeleeDamages>
+            <li>
+              <def>Cut</def>
+              <amount>4</amount>
+			  <chance>1</chance>
+            </li>
+            <li>
+              <def>Cut</def>
+              <amount>4</amount>
+              <chance>1</chance>
+            </li>
+			 <li>
+              <def>Cut</def>
+              <amount>4</amount>
+			  <chance>1</chance>
+            </li>
+          </extraMeleeDamages>
+      </li>
+    </tools>
+	<equippedStatOffsets>
+        <PlantWorkSpeed>0.30</PlantWorkSpeed>
+		<ButcheryFleshSpeed>0.15</ButcheryFleshSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
 </Defs>

@@ -154,7 +154,7 @@
 		<initialWillRange>10~30</initialWillRange>
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-		<maxPerGroup>5</maxPerGroup>
+		<maxPerGroup>4</maxPerGroup>
 		<maxGenerationAge>45</maxGenerationAge>
 		<minGenerationAge>13</minGenerationAge>
 		<backstoryFiltersOverride>
@@ -284,7 +284,7 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>45</maxGenerationAge>
 		<minGenerationAge>19</minGenerationAge>
-		<maxPerGroup>6</maxPerGroup>
+		<maxPerGroup>4</maxPerGroup>
 		<startingHediffs>
 			<li>
 				<def>Cinder_ExtraArmourPlate</def>
@@ -355,7 +355,7 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>45</maxGenerationAge>
 		<minGenerationAge>19</minGenerationAge>
-		<maxPerGroup>6</maxPerGroup>
+		<maxPerGroup>4</maxPerGroup>
 		<startingHediffs>
 			<li>
 				<def>Cinder_ExtraArmourPlate</def>
@@ -431,7 +431,7 @@
 		<isGoodBreacher>true</isGoodBreacher>
 		<maxGenerationAge>45</maxGenerationAge>
 		<minGenerationAge>19</minGenerationAge>
-		<maxPerGroup>2</maxPerGroup>
+		<maxPerGroup>4</maxPerGroup>
 		<startingHediffs>
 			<li>
 				<def>Cinder_ExtraArmourPlateII</def>
@@ -504,6 +504,7 @@
 		<defName>Cinder_Cult</defName>
 		<label>cult follower</label>
 		<combatPower>100</combatPower>
+		<maxPerGroup>4</maxPerGroup>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<initialWillRange>10~30</initialWillRange>
@@ -595,7 +596,7 @@
 		<defName>Cinder_EliteCult</defName>
 		<label>cult guard</label>
 		<combatPower>180</combatPower>
-		<maxPerGroup>6</maxPerGroup>
+		<maxPerGroup>4</maxPerGroup>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<initialWillRange>10~30</initialWillRange>
@@ -782,6 +783,7 @@
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<biocodeWeaponChance>0.7</biocodeWeaponChance>
 		<initialWillRange>8</initialWillRange>
+		<initialResistanceRange>8~10</initialResistanceRange>
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>35</maxGenerationAge>
@@ -869,12 +871,13 @@
 		<defName>Cinder_SoliderUnit</defName>
 		<label>solider unit</label>
 		<combatPower>190</combatPower>
-		<maxPerGroup>10</maxPerGroup>
+		<maxPerGroup>2</maxPerGroup>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
 		<isFighter>true</isFighter>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<biocodeWeaponChance>0.15</biocodeWeaponChance>
 		<initialWillRange>10~15</initialWillRange>
+		<initialResistanceRange>8~10</initialResistanceRange>
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>35</maxGenerationAge>
@@ -943,13 +946,14 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_BreakUnit</defName>
 		<label>break through unit</label>
-		<combatPower>300</combatPower>
+		<combatPower>250</combatPower>
 		<maxPerGroup>4</maxPerGroup>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
 		<isFighter>true</isFighter>
 		<itemQuality>Excellent</itemQuality>
 		<biocodeWeaponChance>0.7</biocodeWeaponChance>
 		<initialWillRange>10~20</initialWillRange>
+		<initialResistanceRange>8~10</initialResistanceRange>
 		<canBeSapper>true</canBeSapper>
 		<isGoodBreacher>true</isGoodBreacher>
 		<invNutrition>1</invNutrition>
@@ -1031,13 +1035,14 @@
 	<PawnKindDef ParentName="Cinder_BasePawn">
 		<defName>Cinder_HeavySoliderUnit</defName>
 		<label>Bombing unit</label>
-		<combatPower>320</combatPower>
+		<combatPower>250</combatPower>
 		<maxPerGroup>4</maxPerGroup>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
 		<isFighter>true</isFighter>
 		<itemQuality>Excellent</itemQuality>
 		<biocodeWeaponChance>0.7</biocodeWeaponChance>
 		<initialWillRange>10~20</initialWillRange>
+		<initialResistanceRange>8~10</initialResistanceRange>
 		<invNutrition>1</invNutrition>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<maxGenerationAge>35</maxGenerationAge>
@@ -1126,7 +1131,7 @@
 		<defName>Cinder_Ghoul</defName>
 		<label>ghoul unit</label>
 		<combatPower>95</combatPower>
-		<maxPerGroup>15</maxPerGroup>
+		<maxPerGroup>2</maxPerGroup>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
 		<itemQuality>Poor</itemQuality>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
@@ -1184,7 +1189,7 @@
 		<label>ghoul unit</label>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
 		<combatPower>210</combatPower>
-		<maxPerGroup>8</maxPerGroup>
+		<maxPerGroup>2</maxPerGroup>
 		<itemQuality>Poor</itemQuality>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<isFighter>true</isFighter>

@@ -252,6 +252,46 @@
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_HighFrequencySawA</defName>
+    <graphicData>
+      <texPath>Things/Weapons/HighFrequencySaw/HighFrequencySawA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.05</drawSize>
+    </graphicData>
+	<uiIconPath>Things/Weapons/HighFrequencySaw/HighFrequencySawC</uiIconPath>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_HighFrequencySawB</defName>
+    <graphicData>
+      <texPath>Things/Weapons/HighFrequencySaw/HighFrequencySawB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.05</drawSize>
+    </graphicData>
+	<uiIconPath>Things/Weapons/HighFrequencySaw/HighFrequencySawC</uiIconPath>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_HighFrequencySawC</defName>
+    <graphicData>
+      <texPath>Things/Weapons/HighFrequencySaw/HighFrequencySawC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.05</drawSize>
+    </graphicData>
+	<uiIconPath>Things/Weapons/HighFrequencySaw/HighFrequencySawC</uiIconPath>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_HighFrequencySawD</defName>
+    <graphicData>
+      <texPath>Things/Weapons/HighFrequencySaw/HighFrequencySawD</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.05</drawSize>
+    </graphicData>
+	<uiIconPath>Things/Weapons/HighFrequencySaw/HighFrequencySawC</uiIconPath>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
     <defName>CinderStyle_BrokenMask</defName>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/BrokenMask/Icon</texPath>

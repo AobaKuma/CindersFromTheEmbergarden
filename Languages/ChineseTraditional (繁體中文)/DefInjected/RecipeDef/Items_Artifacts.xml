@@ -29,4 +29,17 @@
   <!-- EN: Making regenerated enhanced serum. -->
   <Make_Cinder_RegeneratedEnhancedSerum.jobString>正在调制再生血清</Make_Cinder_RegeneratedEnhancedSerum.jobString>
   
+     <!-- EN: make regenerated enhanced serum -->
+  <Make_5Cinder_RegeneratedEnhancedSerum.label>用机械液制作再生血清</Make_5Cinder_RegeneratedEnhancedSerum.label>
+  <!-- EN: Make regenerated enhanced serum. -->
+  <Make_5Cinder_RegeneratedEnhancedSerum.description>用机械液制作再生血清</Make_5Cinder_RegeneratedEnhancedSerum.description>
+  <!-- EN: Making regenerated enhanced serum. -->
+  <Make_5Cinder_RegeneratedEnhancedSerum.jobString>正在用机械液制作再生血清</Make_5Cinder_RegeneratedEnhancedSerum.jobString>
+  
+       <!-- EN: make regenerated enhanced serum -->
+  <Make_Cinder_BurntStrangeMeat.label>剁碎无定形聚合物来获得烧焦怪肉</Make_Cinder_BurntStrangeMeat.label>
+  <!-- EN: Make regenerated enhanced serum. -->
+  <Make_Cinder_BurntStrangeMeat.description>从聚合物中分离烧焦怪肉</Make_Cinder_BurntStrangeMeat.description>
+  <!-- EN: Making regenerated enhanced serum. -->
+  <Make_Cinder_BurntStrangeMeat.jobString>正在从聚合物中分离烧焦怪肉</Make_Cinder_BurntStrangeMeat.jobString>
 </LanguageData>

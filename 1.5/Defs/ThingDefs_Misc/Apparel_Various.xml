@@ -275,7 +275,8 @@
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>Fabrication</li>
+			    <li>Bionics</li>
+				<li>AdvancedFabrication</li>
 				<li>Cinder_HeavyArmor</li>
 			</researchPrerequisites>
 			<skillRequirements>
@@ -338,6 +339,9 @@
 			<tags Inherit="false">
 				<li>Cinder_Military_Heavy</li>
 			</tags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <soundWear>Wear_PowerArmor</soundWear>
+            <soundRemove>Remove_PowerArmor</soundRemove>
 		</apparel>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.5</MoveSpeed>
@@ -355,7 +359,7 @@
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>FlakArmor</li>
+				<li>Fabrication</li>
 				<li>Cinder_HeavyArmor</li>
 			</researchPrerequisites>
 			<skillRequirements>
@@ -364,7 +368,7 @@
 		</recipeMaker>
 		<costList>
 			<Cloth>80</Cloth>
-			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentIndustrial>15</ComponentIndustrial>
 			<Cinder_AmorphousPolymer>125</Cinder_AmorphousPolymer>
 		</costList>
 		<statBases>

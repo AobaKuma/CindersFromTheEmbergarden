@@ -71,6 +71,7 @@
     <labelShortAdj>revive</labelShortAdj>
     <description>Carriers of this gene will resurrect upon death.</description>
     <iconPath>UI/Gene/Revive</iconPath>
+	<prerequisite>Cinder_Regeneration</prerequisite>
     <displayOrderInCategory>0</displayOrderInCategory>
 	 <biostatCpx>4</biostatCpx>
 	 <biostatMet>-2</biostatMet>
@@ -89,6 +90,7 @@
     <labelShortAdj>regeneration</labelShortAdj>
     <description>Carriers of this gene when injured,will regenerate according to its original body structure.</description>
     <iconPath>UI/Gene/AmorphousRegeneration</iconPath>
+	<prerequisite>Cinder_UncontrollableTentacle</prerequisite>
     <displayOrderInCategory>0</displayOrderInCategory>
 	 <biostatCpx>4</biostatCpx>
 	 <biostatMet>-2</biostatMet>
@@ -141,7 +143,7 @@
   <GeneDef>
     <defName>Cinder_UncontrollableTentacle</defName>
     <label>uncontrollable tentacle</label>
-    <description>Carriers of this gene will grow uncontrollable tentacle，manipulation will be affected by a random value, and both melee damage and melee cooldown will increase.</description>
+    <description>The amorphous polymer in the carrier's body will appear on the surface of the body in a tentacle like manner, this uncontrollable tentacle does not affect the carrier's own biological structure，carrier's manipulation will be affected by a random value, and both melee damage and melee cooldown will increase.</description>
 	 <displayCategory>Miscellaneous</displayCategory>
     <randomChosen>true</randomChosen>
 	<geneClass>Embergarden.Gene_AddHediff</geneClass>

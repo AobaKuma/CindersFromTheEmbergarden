@@ -139,7 +139,8 @@
 		</tradeTags>
 		<statBases>
 			<MaxHitPoints>2000</MaxHitPoints>
-			<MarketValue>500</MarketValue>
+			<MarketValue>900</MarketValue>
+			<SellPriceFactor>0.1</SellPriceFactor>
 			<Mass>1.5</Mass>
 			<Flammability>0</Flammability>
 			<DeteriorationRate>0</DeteriorationRate>
@@ -320,7 +321,7 @@
 						<li>Neutroamine</li>
 					</thingDefs>
 				</filter>
-				<count>45</count>
+				<count>65</count>
 			</li>
 			<li>
 				<filter>
@@ -391,7 +392,7 @@
 						<li>Neutroamine</li>
 					</thingDefs>
 				</filter>
-				<count>50</count>
+				<count>75</count>
 			</li>
 			<li>
 				<filter>
@@ -420,6 +421,69 @@
 		<workSkill>Medicine</workSkill>
 		<displayPriority>0</displayPriority>
 	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Make_5Cinder_RegeneratedEnhancedSerum</defName>
+		<label>make regenerated enhanced serum from mech serum</label>
+		<description>Make regenerated enhanced serum from mech serum.</description>
+		<jobString>Making regenerated enhanced serum from mech serum.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>12000</workAmount>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_EmptyAgentBottle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MechSerumResurrector</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MechSerumHealer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Gold</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Cinder_RegeneratedEnhancedSerum>4</Cinder_RegeneratedEnhancedSerum>
+		</products>
+		<recipeUsers>
+			<li>Cinder_AncientWorkstation</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Medicine>6</Medicine>
+		</skillRequirements>
+		<workSkill>Medicine</workSkill>
+		<displayPriority>0</displayPriority>
+	</RecipeDef>
+	
 
 	<ThingDef ParentName="ResourceBase" Name="Cinder_BaseModificationItem" Abstract="True">
 		<thingClass>ThingWithComps</thingClass>
@@ -626,6 +690,41 @@
 			<Crafting>6</Crafting>
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
+		<displayPriority>0</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Make_Cinder_BurntStrangeMeat</defName>
+		<label>Chop amorphous polymer to obtain burnt strange meat</label>
+		<description>Separate burnt strange meat from amorphous polymer.</description>
+		<jobString>Separating burnt strange meat from amorphous polymer.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<workAmount>1800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<products>
+			<Cinder_BurntStrangeMeat>150</Cinder_BurntStrangeMeat>
+		</products>
+		<recipeUsers>
+			<li>Cinder_AncientWorkstation</li>
+			<li>ButcherSpot</li>
+			<li>TableButcher</li>
+		</recipeUsers>
+		<researchPrerequisite>Cinder_Separation</researchPrerequisite>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
 		<displayPriority>0</displayPriority>
 	</RecipeDef>
 </Defs>

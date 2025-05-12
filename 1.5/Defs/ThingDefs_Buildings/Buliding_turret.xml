@@ -412,7 +412,7 @@
 		<fillPercent>0.4</fillPercent>
 		<hasTooltip>true</hasTooltip>
 		<costList>
-			<Plasteel>20</Plasteel>
+			<Cinder_AmorphousPolymer>40</Cinder_AmorphousPolymer>
 			<Steel>200</Steel>
 			<ComponentIndustrial>2</ComponentIndustrial>
 			<Chemfuel>180</Chemfuel>
@@ -578,9 +578,9 @@
 		<fillPercent>0.4</fillPercent>
 		<hasTooltip>true</hasTooltip>
 		<costList>
-			<Steel>50</Steel>
-			<Cinder_AmorphousPolymer>20</Cinder_AmorphousPolymer>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>70</Steel>
+			<Cinder_AmorphousPolymer>30</Cinder_AmorphousPolymer>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<clearBuildingArea>false</clearBuildingArea>

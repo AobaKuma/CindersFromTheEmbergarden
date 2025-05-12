@@ -641,7 +641,7 @@
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>FlakArmor</li>
+				<li>Fabrication</li>
 				<li>Cinder_HeavyArmor</li>
 			</researchPrerequisites>
 			<skillRequirements>
@@ -662,12 +662,12 @@
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>40</costStuffCount>
+		<costStuffCount>75</costStuffCount>
 		<statBases>
 			<MaxHitPoints>400</MaxHitPoints>
 			<WorkToMake>25000</WorkToMake>
 			<Mass>8</Mass>
-			<StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.47</StuffEffectMultiplierArmor>
 			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.5</ArmorRating_Heat>
@@ -700,7 +700,8 @@
 		</apparel>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
-			<ToxicEnvironmentResistance>0.75</ToxicEnvironmentResistance>
+			<ToxicEnvironmentResistance>0.55</ToxicEnvironmentResistance>
+			<RestFallRateFactor>0.1</RestFallRateFactor>
 			<PainShockThreshold>0.50</PainShockThreshold>
 		</equippedStatOffsets>
 	</ThingDef>
@@ -750,7 +751,7 @@
 			<MaxHitPoints>400</MaxHitPoints>
 			<WorkToMake>1600</WorkToMake>
 			<Mass>7.5</Mass>
-			<StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.42</StuffEffectMultiplierArmor>
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.4</ArmorRating_Heat>
@@ -784,7 +785,8 @@
 			<ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
 			<ToxicEnvironmentResistance>0.25</ToxicEnvironmentResistance>
 			<MoveSpeed>-0.3</MoveSpeed>
-			<RestFallRateFactor>0.25</RestFallRateFactor>
+			<WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
+			<RestFallRateFactor>0.35</RestFallRateFactor>
 			<PainShockThreshold>0.50</PainShockThreshold>
 		</equippedStatOffsets>
 	</ThingDef>

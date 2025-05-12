@@ -44,4 +44,19 @@
       </li>
     </stages>
   </ThoughtDef>
+  
+   <ThoughtDef>
+    <defName>Cinder_NCD</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Cinder_NeuralCrystallizationDissociation</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>crystallization dissociation</label>
+        <description>I cannot fully control my body, every sound makes it difficult for me to distinguish the specific direction...</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 </Defs>

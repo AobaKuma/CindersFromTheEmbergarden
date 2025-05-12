@@ -219,6 +219,7 @@
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>Bullet_20x102mmNATO_AP</defaultProjectile>
 			<warmupTime>2.3</warmupTime>
+			<minRange>2</minRange>
 			<range>78</range>
 			<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 			<burstShotCount>10</burstShotCount>

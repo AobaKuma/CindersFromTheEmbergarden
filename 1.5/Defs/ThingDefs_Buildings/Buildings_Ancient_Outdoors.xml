@@ -5,7 +5,6 @@
             <graphicClass>Graphic_Multi</graphicClass>
         </graphicData>
         <rotatable>true</rotatable>
-        <randomizeRotationOnSpawn>true</randomizeRotationOnSpawn>
         <passability>Impassable</passability>
 		<blockWind>true</blockWind>
 		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>

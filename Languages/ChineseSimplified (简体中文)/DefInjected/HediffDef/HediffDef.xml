@@ -141,6 +141,12 @@
   <!-- EN: polymer activation -->
   <Cinder_IntrinsicPropertiesOfPolymers.labelNoun>聚合物内禀</Cinder_IntrinsicPropertiesOfPolymers.labelNoun>
   
+   <Cinder_NeuralCrystallizationDissociation.label>神经晶化解离</Cinder_NeuralCrystallizationDissociation.label>
+  <!-- EN: The amorphous polymer inside this unit has been activated, resulting in a significant increase in armor strength. -->
+  <Cinder_NeuralCrystallizationDissociation.description>重塑身体的晶化聚合物逐渐开始相变，但身体各处还残留有部分晶体。由无定形聚合物重塑的神经尚未完全有效，因此这个人目前无法控制自己的身体和情绪</Cinder_NeuralCrystallizationDissociation.description>
+  <!-- EN: polymer activation -->
+  <Cinder_NeuralCrystallizationDissociation.labelNoun>神经晶化解离</Cinder_NeuralCrystallizationDissociation.labelNoun>
+  
   <Cinder_EyeRegenInhibited.label>眼睛再生受到抑制</Cinder_EyeRegenInhibited.label>
   <!-- EN: The amorphous polymer inside this unit has been activated, resulting in a significant increase in armor strength. -->
   <Cinder_EyeRegenInhibited.description>盲眼仪式取走了此人的眼睛，与灵能共鸣的尝试暂时阻断了眼睛的再生。</Cinder_EyeRegenInhibited.description>

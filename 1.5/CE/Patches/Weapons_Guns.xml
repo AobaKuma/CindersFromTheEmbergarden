@@ -217,7 +217,7 @@
 			<ShotSpread>0.03</ShotSpread>
 			<SwayFactor>2.07</SwayFactor>
 			<Bulk>12.40</Bulk>
-			<Mass>14.50</Mass>
+			<Mass>4.50</Mass>
 			<RangedWeapon_Cooldown>1.38</RangedWeapon_Cooldown>
 		</statBases>
 		<Properties>
@@ -225,8 +225,8 @@
 			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
-			<warmupTime>3.4</warmupTime>
-			<burstShotCount>3</burstShotCount>
+			<warmupTime>2</warmupTime>
+			<burstShotCount>4</burstShotCount>
 			<ticksBetweenBurstShots>18</ticksBetweenBurstShots>
 			<range>66</range>
 			<soundCast>Shot_SniperRifle</soundCast>
@@ -239,12 +239,11 @@
 			<ammoSet>AmmoSet_50BMG</ammoSet>
 		</AmmoUser>
 		<FireModes>
-		    <aimedBurstShotCount>2</aimedBurstShotCount>
+		    <aimedBurstShotCount>3</aimedBurstShotCount>
 			<aiUseBurstMode>TRUE</aiUseBurstMode>
 			<aiAimMode>AimedShot</aiAimMode>
 		</FireModes>
 		<weaponTags>
-			<li>Bipod_AMR</li>
 			<li>CE_AI_SR</li>
 		</weaponTags>
 		<researchPrerequisite>PrecisionRifling</researchPrerequisite>
@@ -258,9 +257,9 @@
 		<statBases>
 			<Mass>1.80</Mass>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
-			<SightsEfficiency>1.00</SightsEfficiency>
+			<SightsEfficiency>1.10</SightsEfficiency>
 			<ShotSpread>0.14</ShotSpread>
-			<SwayFactor>0.94</SwayFactor>
+			<SwayFactor>0.9</SwayFactor>
 			<Bulk>2</Bulk>
 		</statBases>
 		<Properties>
@@ -289,6 +288,7 @@
 		<weaponTags>
 			<li>CE_SMG</li>
 			<li>CE_AI_BROOM</li>
+			<li>CE_OneHandedWeapon</li>
 		</weaponTags>
 		<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 	</Operation>

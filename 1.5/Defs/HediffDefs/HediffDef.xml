@@ -133,19 +133,33 @@
 		<label>crystallization coma</label>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
-		<initialSeverity>1</initialSeverity>
 		<description>The amorphous polymer completely crystallized this person's body, This person is now almost identical to a cluster of high hardness polymer rather than a biological entity，making them indestructible.</description>
 		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<maxSeverity>4</maxSeverity>
+		<initialSeverity>4</initialSeverity>
+		<disablesNeeds>
+			<li>Beauty</li>
+			<li>Outdoors</li>
+			<li>Rest</li>
+			<li>Comfort</li>
+			<li>Joy</li>
+			<li>RoomSize</li>
+			<li>Indoors</li>
+			<li>DrugDesire</li>
+		</disablesNeeds>
 		<comps>
-			<li Class="HediffCompProperties_Disappears">
-				<disappearsAfterTicks>120000~120000</disappearsAfterTicks>
-				<showRemainingTime>true</showRemainingTime>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.0</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+			<li Class="Embergarden.HediffCompProperties_NewHediffAfterDisappear">
+				<hediffDef>Cinder_NeuralCrystallizationDissociation</hediffDef>
 			</li>
 		</comps>
 		<stages>
 			<li>
+			    <hungerRateFactor>0</hungerRateFactor>
 				<totalBleedFactor>0</totalBleedFactor>
-				<hungerRateFactor>0.01</hungerRateFactor>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
@@ -159,7 +173,6 @@
 				<statFactors>
 				    <Flammability>0</Flammability>
 					<IncomingDamageFactor>0.1</IncomingDamageFactor>
-					<RestFallRateFactor>0.01</RestFallRateFactor>
 					<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 					<NecrotionResistance MayRequire="BlackMarket420.TAOFC">2.0</NecrotionResistance>
 	                <NecrotionEnvironmentResistance MayRequire="BlackMarket420.TAOFC">2.0</NecrotionEnvironmentResistance>
@@ -199,6 +212,17 @@
 					<Psychic MayRequire="Ludeon.RimWorld.Anomaly">0</Psychic>
 					<NociosphereVaporize MayRequire="Ludeon.RimWorld.Anomaly">0</NociosphereVaporize>
 				</damageFactors>
+				<statOffsets>
+					<ComfyTemperatureMin>-273</ComfyTemperatureMin>
+					<ComfyTemperatureMax>1250</ComfyTemperatureMax>
+					<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+					<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.72</ArmorRating_Blunt>
+					<ArmorRating_Heat>2</ArmorRating_Heat>
+					<BladderRateMultiplier MayRequire="Dubwise.DubsBadHygiene">-1</BladderRateMultiplier>
+					<ThirstRateMultiplier MayRequire="Dubwise.DubsBadHygiene">-1</ThirstRateMultiplier>
+					<HygieneRateMultiplier MayRequire="Dubwise.DubsBadHygiene">-1</HygieneRateMultiplier>
+				</statOffsets>
 			</li>
 		</stages>
 	</HediffDef>
@@ -971,6 +995,42 @@
       <li Class="HediffCompProperties_GiveLovinMTBFactor">
         <lovinMTBFactor>0.5</lovinMTBFactor>
       </li>
+    </comps>
+	</HediffDef>
+	
+	<HediffDef>
+	<defName>Cinder_NeuralCrystallizationDissociation</defName>
+		<label>neural crystallization dissociation</label>
+		<description>The crystalline polymer that reshapes the body gradually begins to undergo phase transition, but there are still some crystals remaining throughout the body. The nerves reshaped by amorphous polymers are not yet fully effective, so this person is currently unable to control their body and emotions.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<maxSeverity>3</maxSeverity>
+		<initialSeverity>3</initialSeverity>
+		<isBad>true</isBad>
+    <stages>
+      <li>
+        <statFactors>
+          <WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+		  <IncomingDamageFactor>1.25</IncomingDamageFactor>
+        </statFactors>
+		<capMods>
+			<li>
+				<capacity>Moving</capacity>
+				<setMax>0.99</setMax>
+			</li>
+			<li>
+				<capacity>Manipulation</capacity>
+				<setMax>0.8</setMax>
+			</li>
+		</capMods>
+      </li>
+    </stages>
+    <comps>
+	    <li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.0</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+		</li>
     </comps>
 	</HediffDef>
 	

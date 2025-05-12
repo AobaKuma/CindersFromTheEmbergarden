@@ -69,19 +69,87 @@
 				</li>
 				
 			    <li Class="PatchOperationReplace">
-					<xpath>Defs/HediffDef[defName="Cinder_Resurrect"]/comps/li[@Class="Embergarden.HediffCompProperties_Resurrect"]</xpath>
+					<xpath>Defs/HediffDef[defName="Cinder_ResurrectComa"]/maxSeverity</xpath>
 					<value>
-						<li Class="Embergarden.HediffCompProperties_Resurrect">
-				          <afterEffectHediff>Cinder_ResurrectComa</afterEffectHediff>
-						  <afterEffectTick>240000</afterEffectTick>
-				          <disabledString>lose efficacy</disabledString>
-				          <regenHediffs>
-					        <li>
-						        <hediff>Cinder_EyeHediff</hediff>
-						        <bodyPart>Head</bodyPart>
-					        </li>
-				          </regenHediffs>
-			          </li>
+						<maxSeverity>8</maxSeverity>
+					</value>
+				</li>
+				
+				 <li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_ResurrectComa"]/initialSeverity</xpath>
+					<value>
+						<initialSeverity>8</initialSeverity>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_NeuralCrystallizationDissociation"]/stages/li[1]/statFactors</xpath>
+					<value>
+						<statFactors>
+                           <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+		                   <IncomingDamageFactor>1.055</IncomingDamageFactor>
+                        </statFactors>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_NeuralCrystallizationDissociation"]/maxSeverity</xpath>
+					<value>
+						<maxSeverity>8</maxSeverity>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_NeuralCrystallizationDissociation"]/initialSeverity</xpath>
+					<value>
+						<initialSeverity>8</initialSeverity>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="Make_Cinder_RegeneratedEnhancedSerum"]/ingredients</xpath>
+					<value>
+						<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_EmptyAgentBottle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>150</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThoughtDef[defName="Cinder_NCD"]/stages/li[label="crystallization dissociation"]/baseMoodEffect</xpath>
+					<value>
+						 <baseMoodEffect>-12</baseMoodEffect>
 					</value>
 				</li>
 				

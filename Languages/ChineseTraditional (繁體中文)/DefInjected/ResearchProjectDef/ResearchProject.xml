@@ -124,4 +124,8 @@
   <!-- EN: A self disciplined war machine with powerful firepower that can guide Hellfire missiles to destroy heavily armored targets. -->
   <Cinder_MainBattleWalker.description>通過逆向工程，構建殖民地自己的主力戰車級別的步行者。</Cinder_MainBattleWalker.description>
   
+    <!-- EN: War machinery -->
+  <Cinder_PowerTools.label>聚合物動力工具</Cinder_PowerTools.label>
+  <!-- EN: A self disciplined war machine with powerful firepower that can guide Hellfire missiles to destroy heavily armored targets. -->
+  <Cinder_PowerTools.description>一些由無定形聚合物肌肉驅動的動力工具武器，可以很有效的在近戰中擊潰敵人。 平時也能當作趁手的生產工具使用。</Cinder_PowerTools.description>
 </LanguageData>
