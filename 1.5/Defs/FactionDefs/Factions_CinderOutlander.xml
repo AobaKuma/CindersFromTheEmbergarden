@@ -349,7 +349,7 @@
 		  <Cinder_Mech_WalkerAutoCannon>15</Cinder_Mech_WalkerAutoCannon>
           <Cinder_Mech_WalkerSniper>15</Cinder_Mech_WalkerSniper>
 		   <Cinder_Mech_ErodedEXO>100</Cinder_Mech_ErodedEXO>
-		   <Cinder_Mech_Tombstone>1200</Cinder_Mech_Tombstone>
+		    <Cinder_Mech_MPTombstone>1200</Cinder_Mech_MPTombstone>
         </options>
       </li>
 	   <li>
