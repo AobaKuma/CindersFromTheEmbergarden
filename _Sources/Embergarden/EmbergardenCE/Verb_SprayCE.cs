@@ -30,7 +30,7 @@ namespace EmbergardenCE
         public override bool TryCastShot()
         {
             currentTarget = new LocalTargetInfo(path[ShotsPerBurst - burstShotsLeft]);
-            ShiftTarget(ShiftVecReportFor(currentTarget), false, false, false);
+            ShiftTarget(ShiftVecReportFor(currentTarget), false, false);
             shotAngle = targetShotAngle;
             originalTargetTemp = originalTarget;
 
@@ -40,10 +40,9 @@ namespace EmbergardenCE
 
             return b;
         }
-
-        public override bool TryFindCEShootLineFromTo(IntVec3 root, LocalTargetInfo targ, out ShootLine resultingLine)
+        public override bool TryFindCEShootLineFromTo(IntVec3 root, LocalTargetInfo targ, out ShootLine resultingLine, out Vector3 targetPos)
         {
-            return base.TryFindCEShootLineFromTo(root, originalTargetTemp.IsValid ? originalTarget : targ, out resultingLine);
+            return base.TryFindCEShootLineFromTo(root, originalTargetTemp.IsValid ? originalTarget : targ, out resultingLine, out targetPos);
         }
 
         public override void WarmupComplete()
@@ -54,7 +53,7 @@ namespace EmbergardenCE
 
             base.WarmupComplete();
 
-            ShiftTarget(ShiftVecReportFor(currentTarget), false, false, false);
+            ShiftTarget(ShiftVecReportFor(currentTarget), false, false);
             targetShotAngle = shotAngle;
             state = VerbState.Bursting;
             TryCastNextBurstShot();
