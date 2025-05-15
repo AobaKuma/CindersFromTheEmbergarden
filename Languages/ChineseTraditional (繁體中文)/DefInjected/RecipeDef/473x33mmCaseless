@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make 4.73x33mm Caseless (Erosion) cartridge x500 -->
+  <MakeAmmo_473x33mmCaseless_Erosion.label>製作4.73x33mm 無殼彈(侵蝕彈)x500</MakeAmmo_473x33mmCaseless_Erosion.label>
+  <!-- EN: Craft 500 4.73x33mm Caseless (Erosion) cartridges. -->
+  <MakeAmmo_473x33mmCaseless_Erosion.description>製作4.73x33mm 無殼彈(侵蝕彈)</MakeAmmo_473x33mmCaseless_Erosion.description>
+  <!-- EN: Making 4.73x33mm Caseless (Erosion) cartridges. -->
+  <MakeAmmo_473x33mmCaseless_Erosion.jobString>正在製作4.73x33mm 無殼彈(侵蝕彈)x500</MakeAmmo_473x33mmCaseless_Erosion.jobString>
+  
+</LanguageData>

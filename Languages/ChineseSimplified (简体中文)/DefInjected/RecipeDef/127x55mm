@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make 12.7x55mm (Erosion) cartridge x200 -->
+  <MakeAmmo_127x55mm_Erosion.label>制作12.7x55mm 步枪弹 (侵蚀弹)x200</MakeAmmo_127x55mm_Erosion.label>
+  <!-- EN: Craft 200 12.7x55mm (Erosion) cartridges. -->
+  <MakeAmmo_127x55mm_Erosion.description>制作12.7x55mm 步枪弹 (侵蚀弹)</MakeAmmo_127x55mm_Erosion.description>
+  <!-- EN: Making 12.7x55mm (Erosion) cartridges. -->
+  <MakeAmmo_127x55mm_Erosion.jobString>正在制作12.7x55mm 步枪弹 (侵蚀弹)</MakeAmmo_127x55mm_Erosion.jobString>
+  
+</LanguageData>
