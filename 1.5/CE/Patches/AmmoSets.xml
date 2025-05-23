@@ -62,6 +62,13 @@
 	</Operation>
 
 
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_473x33mmCaseless"]/ammoTypes</xpath>
+		<value>
+			<Ammo_473x33mmCaseless_Erosion>Bullet_473x33mmCaseless_Erosion</Ammo_473x33mmCaseless_Erosion>
+		</value>
+	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_58x42mmDBP10"]/ammoTypes</xpath>
@@ -120,6 +127,20 @@
 		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_762x51mmNATO"]/ammoTypes</xpath>
 		<value>
 			<Ammo_762x51mmNATO_Erosion>Bullet_762x51mmNATO_Erosion</Ammo_762x51mmNATO_Erosion>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_762x54mmR"]/ammoTypes</xpath>
+		<value>
+			<Ammo_762x54mmR_Erosion>Bullet_762x54mmR_Erosion</Ammo_762x54mmR_Erosion>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_127x55mm"]/ammoTypes</xpath>
+		<value>
+			<Ammo_127x55mm_Erosion>Bullet_127x55mm_Erosion</Ammo_127x55mm_Erosion>
 		</value>
 	</Operation>
 

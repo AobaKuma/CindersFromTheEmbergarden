@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 12.7x55mm cartridge (Erosion) -->
+  <Ammo_127x55mm_Erosion.label>12.7x55mm 步枪弹 (侵蚀弹)</Ammo_127x55mm_Erosion.label>
+  <!-- EN: High caliber subsonic assault rifle cartridge designed for suppressed fire. -->
+  <Ammo_127x55mm_Erosion.description>专为压制火力设计的大口径亚音速突击步枪子弹。</Ammo_127x55mm_Erosion.description>
+  
+  <!-- EN: 12.7x55mm bullet (Erosion) -->
+  <Bullet_127x55mm_Erosion.label>12.7x55mm 步枪弹 (侵蚀弹)</Bullet_127x55mm_Erosion.label>
+
+</LanguageData>

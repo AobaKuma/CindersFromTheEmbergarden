@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 7.62x54mmR cartridge (Erosion) -->
+  <Ammo_762x54mmR_Erosion.label>7.62x54mmR 步槍彈 (侵蝕彈)</Ammo_762x54mmR_Erosion.label>
+  <!-- EN: Rimmed rifle cartridge used by many machine guns, bolt-action and sniper rifles. -->
+  <Ammo_762x54mmR_Erosion.description>用於許多機槍、手動栓式槍械和狙擊步槍的凸緣式步槍子彈。</Ammo_762x54mmR_Erosion.description>
+  
+  <!-- EN: 7.62x54mmR bullet (Erosion) -->
+  <Bullet_762x54mmR_Erosion.label>7.62x54mmR 步槍彈 (侵蝕彈)</Bullet_762x54mmR_Erosion.label>
+
+</LanguageData>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 4.73x33mm Caseless (Erosion) -->
+  <Ammo_473x33mmCaseless_Erosion.label>4.73x33mm 無殼彈 (侵蝕彈)</Ammo_473x33mmCaseless_Erosion.label>
+  <!-- EN: Caseless bullet with a solid propellant enveloping the projectile. -->
+  <Ammo_473x33mmCaseless_Erosion.description>用固體推進劑包裹彈丸的無殼子彈。</Ammo_473x33mmCaseless_Erosion.description>
+  
+  <!-- EN: 4.73x33mm Caseless bullet (Erosion) -->
+  <Bullet_473x33mmCaseless_Erosion.label>4.73x33mm 無殼彈 (侵蝕彈)</Bullet_473x33mmCaseless_Erosion.label>
+
+</LanguageData>
