@@ -14,6 +14,9 @@
 		</statBases>
 		<ammoClass>Cinder_Erosion</ammoClass>
 		<cookOffProjectile>Bullet_556x45mmNATO_Erosion</cookOffProjectile>
+		<descriptionHyperlinks>
+			<HediffDef>Cinder_Erosion_Bullet</HediffDef>
+		</descriptionHyperlinks>
 	</ThingDef>
 
 	<ThingDef ParentName="Base556x45mmNATOBullet">
