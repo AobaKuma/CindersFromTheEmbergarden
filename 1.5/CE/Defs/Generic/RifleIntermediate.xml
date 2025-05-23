@@ -13,6 +13,9 @@
 		</statBases>
 		<ammoClass>Cinder_Erosion</ammoClass>
 		<cookOffProjectile>Bullet_556x45mmNATO_Erosion</cookOffProjectile>
+		<descriptionHyperlinks>
+			<HediffDef>Cinder_Erosion_Bullet</HediffDef>
+		</descriptionHyperlinks>
 	</ThingDef>
 
 	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
@@ -40,7 +43,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>FSX</li>
+						<li>Prometheum</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
