@@ -28,7 +28,7 @@
 			</li>
 			<li MayRequire="CETeam.CombatExtended">
 				<damageDef>Thermobaric</damageDef>
-				<multiplier>0.5</multiplier>
+				<multiplier>2.5</multiplier>
 			</li>
 			<li MayRequire="CETeam.CombatExtended">
 				<damageDef>Electrical</damageDef>
@@ -36,15 +36,23 @@
 			</li>
 			<li MayRequire="CETeam.CombatExtended">
 				<damageDef>Bullet</damageDef>
-				<multiplier>0.4</multiplier>
+				<multiplier>0.25</multiplier>
 			</li>
 			<li>
 				<damageDef>Cinder_BombD</damageDef>
-				<multiplier>4</multiplier>
+				<multiplier>10</multiplier>
 			</li>
 			<li>
 				<damageDef>Bomb</damageDef>
-				<multiplier>2.5</multiplier>
+				<multiplier>4</multiplier>
+			</li>
+			<li>
+				<damageDef>Demolish</damageDef>
+				<multiplier>7.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>7.5</multiplier>
 			</li>
 		</damageMultipliers>
 		<receivesSignals>true</receivesSignals>

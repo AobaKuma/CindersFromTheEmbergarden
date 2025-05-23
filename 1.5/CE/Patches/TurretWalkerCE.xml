@@ -18,7 +18,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[@Name="Cinder_BaseTurretWalker"]/statBases/ArmorRating_Heat</xpath>
 		<value>
-			<ArmorRating_Heat>1.00</ArmorRating_Heat>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
 		</value>
 	</Operation>
 
@@ -117,14 +117,14 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[@Name="Cinder_BaseTurretWalker"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
-			<ArmorRating_Blunt>50</ArmorRating_Blunt>
+			<ArmorRating_Blunt>3</ArmorRating_Blunt>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[@Name="Cinder_BaseTurretWalker"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
-			<ArmorRating_Sharp>16</ArmorRating_Sharp>
+			<ArmorRating_Sharp>12</ArmorRating_Sharp>
 		</value>
 	</Operation>
 
@@ -200,7 +200,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[@Name="Cinder_MiniTurretWalker"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
-			<ArmorRating_Blunt>6</ArmorRating_Blunt>
+			<ArmorRating_Blunt>3</ArmorRating_Blunt>
 		</value>
 	</Operation>
 

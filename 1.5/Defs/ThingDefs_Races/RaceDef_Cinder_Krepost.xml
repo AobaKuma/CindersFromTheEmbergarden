@@ -642,7 +642,7 @@
     <race>Cinder_Mech_Tombstone</race>
     <isFighter>true</isFighter>
     <combatPower>1200</combatPower>                                               <!--威脅點數-->
-    <maxPerGroup>4</maxPerGroup>                                                 <!--單個集群內的數量-->
+    <maxPerGroup>3</maxPerGroup>                                                 <!--單個集群內的數量-->
     <isBoss>true</isBoss>
     <weaponMoney>9999~9999</weaponMoney>
 	<lifeStages>                                                                 <!--身體圖片-->
@@ -688,7 +688,7 @@
     <race>Cinder_Mech_Tombstone</race>
     <isFighter>true</isFighter>
     <combatPower>1400</combatPower>                                               <!--威脅點數-->
-    <maxPerGroup>2</maxPerGroup>                                                 <!--單個集群內的數量-->
+    <maxPerGroup>3</maxPerGroup>                                                 <!--單個集群內的數量-->
     <isBoss>true</isBoss>
     <weaponMoney>9999~9999</weaponMoney>
 	<lifeStages>                                                                 <!--身體圖片-->

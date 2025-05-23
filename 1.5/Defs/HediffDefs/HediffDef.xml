@@ -172,7 +172,7 @@
 				</capMods>
 				<statFactors>
 				    <Flammability>0</Flammability>
-					<IncomingDamageFactor>0.1</IncomingDamageFactor>
+					<IncomingDamageFactor>0.25</IncomingDamageFactor>
 					<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 					<NecrotionResistance MayRequire="BlackMarket420.TAOFC">2.0</NecrotionResistance>
 	                <NecrotionEnvironmentResistance MayRequire="BlackMarket420.TAOFC">2.0</NecrotionEnvironmentResistance>
@@ -197,15 +197,10 @@
 					<Cinder_BombB>0</Cinder_BombB>
 					<Vaporize>0</Vaporize>
 					<Cinder_BombC>0</Cinder_BombC>
-					<Bullet>0.5</Bullet>
 					<Bomb>0</Bomb>
-					<BombSuper>0.5</BombSuper>
 					<Thump>0</Thump>
 					<AcidBurn>0</AcidBurn>
 					<Decayed>0</Decayed>
-					<RangedStab>0.5</RangedStab>
-					<Arrow>0.5</Arrow>
-					<ArrowHighVelocity>0.5</ArrowHighVelocity>
 					<ElectricalBurn MayRequire="Ludeon.RimWorld.Anomaly">0</ElectricalBurn>
 					<Digested MayRequire="Ludeon.RimWorld.Anomaly">0</Digested>
 					<Nerve MayRequire="Ludeon.RimWorld.Anomaly">0</Nerve>
