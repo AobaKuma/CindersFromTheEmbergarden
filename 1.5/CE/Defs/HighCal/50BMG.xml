@@ -13,6 +13,9 @@
 		</statBases>
 		<ammoClass>Cinder_Erosion</ammoClass>
 		<cookOffProjectile>Bullet_50BMG_Erosion</cookOffProjectile>
+		<descriptionHyperlinks>
+			<HediffDef>Cinder_Erosion_Bullet</HediffDef>
+		</descriptionHyperlinks>
 	</ThingDef>
 
 	<!-- ================== Projectiles ================== -->
@@ -51,12 +54,12 @@
 						<li>Cinder_AmorphousPolymer</li>
 					</thingDefs>
 				</filter>
-				<count>30</count>
+				<count>38</count>
 			</li>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>FSX</li>
+						<li>Prometheum</li>
 					</thingDefs>
 				</filter>
 				<count>2</count>
@@ -64,10 +67,10 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Gold</li>
+						<li>Plasteel</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>29</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
