@@ -51,7 +51,7 @@
 						<li>Cinder_AmorphousPolymer</li>
 					</thingDefs>
 				</filter>
-				<count>7</count>
+				<count>24</count>
 			</li>
 			<li>
 				<filter>
@@ -64,10 +64,10 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Gold</li>
+						<li>Plasteel</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>19</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
