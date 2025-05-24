@@ -6,6 +6,44 @@
 			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
 		</statBases>
+		<damageMultipliers Inherit="false">
+			<li MayRequire="CETeam.CombatExtended">
+				<damageDef>Fragment</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li MayRequire="CETeam.CombatExtended">
+				<damageDef>Bomb_Secondary</damageDef>
+				<multiplier>0.2</multiplier>
+			</li>
+			<li MayRequire="CETeam.CombatExtended">
+				<damageDef>Thermobaric</damageDef>
+				<multiplier>2.5</multiplier>
+			</li>
+			<li MayRequire="CETeam.CombatExtended">
+				<damageDef>Electrical</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li MayRequire="CETeam.CombatExtended">
+				<damageDef>Bullet</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li>
+				<damageDef>Cinder_BombD</damageDef>
+				<multiplier>10</multiplier>
+			</li>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>4</multiplier>
+			</li>
+			<li>
+				<damageDef>Demolish</damageDef>
+				<multiplier>7.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>7.5</multiplier>
+			</li>
+		</damageMultipliers>
 		<race>
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Cinder_WalkerTurret</thinkTreeMain>
