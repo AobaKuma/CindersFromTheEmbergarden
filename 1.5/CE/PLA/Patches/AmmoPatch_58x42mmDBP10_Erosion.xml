@@ -11,7 +11,7 @@
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_58x42mmDBP191"]/ammoTypes</xpath>
                     <value>
-                        <Ammo_58x42mmDBP10_Erosion>Bullet_545x39mmSoviet_Erosion</Ammo_58x42mmDBP10_Erosion>
+                        <Ammo_58x42mmDBP10_Erosion>Bullet_58x42mmDBP10_Erosion</Ammo_58x42mmDBP10_Erosion>
                     </value>
                 </li>
             </operations>   
