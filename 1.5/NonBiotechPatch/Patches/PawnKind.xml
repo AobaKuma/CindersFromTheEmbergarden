@@ -39,6 +39,8 @@
         <texPaths>
 		<li>Things/Pawn/Humanlike/Body/CinderFin/CinderFin</li>
 		<li>Things/Pawn/Humanlike/Body/Biotech/CinderFinA</li>
+		<li>Things/Pawn/Humanlike/Body/Biotech/CinderFinB</li>
+		<li>Things/Pawn/Humanlike/Body/Biotech/CinderFinC</li>
 		</texPaths>
         <colorType>Hair</colorType>
         <parentTagDef>Head</parentTagDef>

@@ -114,7 +114,7 @@
     <iconPath>UI/Gene/Fin</iconPath>
 	<selectionWeight>1.5</selectionWeight>
     <displayOrderInCategory>0</displayOrderInCategory>
-	<minAgeActive>0</minAgeActive>
+	<minAgeActive>3</minAgeActive>
 	 <exclusionTags>
       <li>CinderFin</li>
     </exclusionTags>
@@ -125,6 +125,8 @@
         <texPaths>
 		<li>Things/Pawn/Humanlike/Body/CinderFin/CinderFin</li>
 		<li>Things/Pawn/Humanlike/Body/Biotech/CinderFinA</li>
+		<li>Things/Pawn/Humanlike/Body/Biotech/CinderFinB</li>
+		<li>Things/Pawn/Humanlike/Body/Biotech/CinderFinC</li>
 		</texPaths>
         <colorType>Hair</colorType>
         <parentTagDef>Head</parentTagDef>
@@ -150,6 +152,7 @@
     <iconPath>UI/Gene/UncontrollableTentacle</iconPath>
 	<selectionWeight>1.5</selectionWeight>
     <displayOrderInCategory>0</displayOrderInCategory>
+	<minAgeActive>3</minAgeActive>
     <biostatCpx>4</biostatCpx>
     <biostatMet>4</biostatMet>
 	 <exclusionTags>
@@ -188,7 +191,6 @@
         </drawData>
       </li>
     </renderNodeProperties>
-	<minAgeActive>0</minAgeActive>
 	<modExtensions>
 			<li Class="Embergarden.ModExtension_GeneAddHediff">
 				<HediffDef>Cinder_UncontrollableTentacles</HediffDef>

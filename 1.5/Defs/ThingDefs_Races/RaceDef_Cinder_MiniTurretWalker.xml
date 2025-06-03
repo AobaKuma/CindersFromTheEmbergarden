@@ -25,7 +25,7 @@
 			</li>
 			<li MayRequire="CETeam.CombatExtended">
 				<damageDef>Bullet</damageDef>
-				<multiplier>0.75</multiplier>
+				<multiplier>0.7</multiplier>
 			</li>
 			<li>
 				<damageDef>Cinder_BombD</damageDef>
