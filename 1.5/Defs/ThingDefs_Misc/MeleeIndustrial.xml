@@ -30,6 +30,11 @@
 	  <recipeUsers>
         <li>Cinder_AncientWorkstation</li>
       </recipeUsers>
+	   <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+	   <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
     </recipeMaker>
     <costList>
 			<ComponentSpacer>1</ComponentSpacer>
@@ -92,6 +97,11 @@
 	  <recipeUsers>
         <li>Cinder_AncientWorkstation</li>
       </recipeUsers>
+	   <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+	   <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
     </recipeMaker>
     <costList>
 			<ComponentSpacer>1</ComponentSpacer>
@@ -156,6 +166,11 @@
 	  <recipeUsers>
         <li>Cinder_AncientWorkstation</li>
       </recipeUsers>
+	   <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+	   <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
     </recipeMaker>
     <costList>
 			<ComponentIndustrial>7</ComponentIndustrial>
