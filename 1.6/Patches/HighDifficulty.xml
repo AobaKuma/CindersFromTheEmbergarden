@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="Embergarden.PatchOperationConditionalSettings">
+		<key>Nerf</key>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_UncontrollableTentacles"]/stages/li[label="active"]</xpath>
+					<value>
+						<li>
+				            <label>active</label>
+				            <minSeverity>0</minSeverity>
+				            <statFactors>
+					           <MeleeCooldownFactor>1.4</MeleeCooldownFactor>
+							    <ShootingAccuracyFactor_Long>0.1</ShootingAccuracyFactor_Long>
+				            </statFactors>
+				            <statOffsets>
+					           <MeleeDamageFactor>0.4</MeleeDamageFactor>
+							   <MoveSpeed>-0.1</MoveSpeed>
+				            </statOffsets>
+			             </li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_UncontrollableTentacles"]/modExtensions/li[@Class="Embergarden.RandomCapacityModifier"]/range</xpath>
+					<value>
+						<range>0.85~1.02</range>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_Regen"]/stages/li[1]</xpath>
+					<value>
+						<li>
+						<painOffset>-0.3</painOffset>
+						<statFactors>
+					       <IncomingDamageFactor>0.95</IncomingDamageFactor>
+				        </statFactors>
+		              	</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/HediffDef[defName="Cinder_Resurrect"]</xpath>
+					<value>
+						<stages>
+			               <li>
+				            <totalBleedFactor>0.95</totalBleedFactor>
+				            <statFactors>
+				              <Flammability>0.75</Flammability>
+				            </statFactors>
+			               </li>
+		                </stages>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_Regen"]/comps/li[@Class="Embergarden.HediffCompProperties_Regen"]</xpath>
+					<value>
+						<li Class="Embergarden.HediffCompProperties_Regen">
+			           	<healPerDay>2</healPerDay>
+				        <checkInterval>600</checkInterval>
+				        <healPerDayUnlocked>50</healPerDayUnlocked>
+				        <maxPartHpForLocked>10</maxPartHpForLocked>
+				        <unlockedString>unlocked</unlockedString>
+			            </li>
+					</value>
+				</li>
+				
+			    <li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_ResurrectComa"]/maxSeverity</xpath>
+					<value>
+						<maxSeverity>8</maxSeverity>
+					</value>
+				</li>
+				
+				 <li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_ResurrectComa"]/initialSeverity</xpath>
+					<value>
+						<initialSeverity>8</initialSeverity>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_NeuralCrystallizationDissociation"]/stages/li[1]/statFactors</xpath>
+					<value>
+						<statFactors>
+                           <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+		                   <IncomingDamageFactor>1.055</IncomingDamageFactor>
+                        </statFactors>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_NeuralCrystallizationDissociation"]/maxSeverity</xpath>
+					<value>
+						<maxSeverity>8</maxSeverity>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_NeuralCrystallizationDissociation"]/initialSeverity</xpath>
+					<value>
+						<initialSeverity>8</initialSeverity>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="Make_Cinder_RegeneratedEnhancedSerum"]/ingredients</xpath>
+					<value>
+						<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_EmptyAgentBottle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>150</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThoughtDef[defName="Cinder_NCD"]/stages/li[label="crystallization dissociation"]/baseMoodEffect</xpath>
+					<value>
+						 <baseMoodEffect>-12</baseMoodEffect>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="Cinder_LongDream"]/stages/li[label="long dream"]</xpath>
+					<value>
+                        <li>
+						<totalBleedFactor>0.5</totalBleedFactor>
+				        <painFactor>0</painFactor>
+				        <hungerRateFactor>0.5</hungerRateFactor>
+				        <minSeverity>0</minSeverity>
+				        <label>long dream</label>
+				        <statFactors>
+						  <Flammability>0</Flammability>
+						  <InjuryHealingFactor>4</InjuryHealingFactor>
+						  <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+						  <MeleeCooldownFactor>0.75</MeleeCooldownFactor>
+				        </statFactors>
+				        <damageFactors>
+					       <Cut>0.4</Cut>
+						   <Bomb>0.75</Bomb>
+						   <Flame>0</Flame>
+						   <Burn>0.1</Burn>
+					       <Crush>0.4</Crush>
+					       <Blunt>0.4</Blunt>
+					       <Poke>0.4</Poke>
+					       <Demolish>0.4</Demolish>
+					       <Stab>0.4</Stab>
+					       <Arrow>0.55</Arrow>
+					       <ArrowHighVelocity>0.55</ArrowHighVelocity>
+				        </damageFactors>
+			            </li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_EternalFearAbility"]/cooldownTicksRange</xpath>
+					<value>
+						   <cooldownTicksRange>150000</cooldownTicksRange>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_EternalFearAbility"]/charges</xpath>
+					<value>
+						   <charges>1</charges>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_FearPulse"]/cooldownTicksRange</xpath>
+					<value>
+						    <cooldownTicksRange>300000</cooldownTicksRange>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_BurnHemostasis"]/cooldownTicksRange</xpath>
+					<value>
+						    <cooldownTicksRange>120000</cooldownTicksRange>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_AmorphousIED"]/cooldownTicksRange</xpath>
+					<value>
+						    <cooldownTicksRange>270000</cooldownTicksRange>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_AmorphousWinding"]/cooldownTicksRange</xpath>
+					<value>
+						    <cooldownTicksRange>600000</cooldownTicksRange>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_ErodedBomb"]/cooldownTicksRange</xpath>
+					<value>
+						    <cooldownTicksRange>180000</cooldownTicksRange>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_SuffocatingWhispers"]/cooldownTicksRange</xpath>
+					<value>
+						    <cooldownTicksRange>240000</cooldownTicksRange>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_LaunchHellfireMissile"]/cooldownTicksRange</xpath>
+					<value>
+						    <cooldownTicksRange>600000</cooldownTicksRange>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AbilityDef[defName="Cinder_LaunchHellfireMissileB"]/cooldownTicksRange</xpath>
+					<value>
+						    <cooldownTicksRange>600000</cooldownTicksRange>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Bullet_RPG"]/projectile</xpath>
+					<value>
+                        <projectile>
+			              <damageDef>Cinder_Bomb</damageDef>
+			              <damageAmountBase>100</damageAmountBase>
+			              <armorPenetrationBase>1.2</armorPenetrationBase>
+		                  <speed>75</speed>
+			              <explosionRadius>3</explosionRadius>
+		                </projectile>
+					</value>
+				</li>
+				
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="CinderBullet_Hellfire"]/projectile</xpath>
+					<value>
+                        <projectile>
+			            <damageDef>Cinder_Bomb</damageDef>
+			            <damageAmountBase>250</damageAmountBase>
+			            <armorPenetrationBase>4</armorPenetrationBase>
+			            <speed>65</speed>
+			            <explosionRadius>10</explosionRadius>
+			            <screenShakeFactor>1.5</screenShakeFactor>
+		                </projectile>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="CinderBullet_Hellfire"]/comps/li[@Class="CompProperties_Explosive"]</xpath>
+					<value>
+                        <li Class="CompProperties_Explosive">
+				            <explosiveRadius>4.5</explosiveRadius>
+				            <explosiveDamageType>Cinder_BombB</explosiveDamageType>
+				            <damageAmountBase>100</damageAmountBase>
+				            <armorPenetrationBase>1.5</armorPenetrationBase>
+				            <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+				            <wickTicks>15</wickTicks>
+				            <startWickOnDamageTaken>
+					          <li>Bullet</li>
+					          <li>Arrow</li>
+					          <li>ArrowHighVelocity</li>
+				            </startWickOnDamageTaken>
+				            <destroyThingOnExplosionSize>9999</destroyThingOnExplosionSize>
+				            <propagationSpeed>0.5</propagationSpeed>
+		             	</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/DamageDef[defName="Cinder_BombB"]/externalViolence</xpath>
+					<value>
+                        <externalViolence>false</externalViolence>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Trailer"]/statBases/ComfyTemperatureMin</xpath>
+					<value>
+			                <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Trailer"]/statBases/ComfyTemperatureMax</xpath>
+					<value>
+			                <ComfyTemperatureMax>60</ComfyTemperatureMax>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Trailer"]/race/baseHungerRate</xpath>
+					<value>
+                       <baseHungerRate>0.8</baseHungerRate>
+					</value>
+				</li>
+				
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_ErodedEXO"]/statBases/BandwidthCost</xpath>
+					<value>
+			            <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">4</BandwidthCost>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_TentacleGourdProjB"]/projectile/damageAmountBase</xpath>
+					<value>
+                      <damageAmountBase>2.5</damageAmountBase>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_WarAttacker"]/comps/li[@Class="Embergarden.CompProperties_MultipleTurretGun"]/subTurrets/li[ID="anti air turret"]/warmingTime</xpath>
+					<value>
+                      <warmingTime>0.6</warmingTime>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_WarSweeper"]/comps/li[@Class="Embergarden.CompProperties_MultipleTurretGun"]/subTurrets/li[ID="anti air turret"]/warmingTime</xpath>
+					<value>
+                      <warmingTime>0.6</warmingTime>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_ErodedEXO"]/comps/li[@Class="Embergarden.CompProperties_MultipleTurretGun"]/subTurrets/li[ID="exo turret"]</xpath>
+					<value>
+                      <li>
+						<ID>exo turret</ID>
+						<turret>Cinder_Mounted_Tentacle</turret>
+						<autoAttack>true</autoAttack>
+						<warmingTime>0.75</warmingTime>
+						<angleOffset>-90</angleOffset>
+						<renderNodeProperties>
+							<li>
+								<nodeClass>Embergarden.PawnRenderNode_SubTurretGun</nodeClass>
+								<workerClass>Embergarden.PawnRenderNodeWorker_SubTurretGun</workerClass>
+								<parentTagDef>Body</parentTagDef>
+								<drawSize>1.1</drawSize>
+								<baseLayer>5</baseLayer>
+								<pawnType>Any</pawnType>
+								<drawData>
+									<dataEast>
+										<offset>(0.25,0,1.2)</offset>
+									</dataEast>
+									<dataWest>
+										<offset>(-0.35,0,0)</offset>
+										<rotationOffset>180</rotationOffset>
+									</dataWest>
+									<dataSouth>
+										<offset>(0.75,0,0.65)</offset>
+									</dataSouth>
+									<dataNorth>
+										<offset>(-0.75,0,0.9)</offset>
+									</dataNorth>
+								</drawData>
+							</li>
+						</renderNodeProperties>
+					</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_erodedKrepostBuliding"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Pawn/Mech/erodedKrepost</texPath>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_erodedKrepostBuliding"]/uiIconPath</xpath>
+					<value>
+						<uiIconPath>Things/Pawn/Mech/erodedKrepost_south</uiIconPath>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_erodedKrepostBuliding"]/comps/li[@Class="Embergarden.CompProperties_UseEffect_ActivateMech"]</xpath>
+					<value>
+					<li Class="Embergarden.CompProperties_UseEffect_ActivateMech" MayRequire="Ludeon.RimWorld.Biotech">
+				         <compClass>Embergarden.CompUseEffect_ActivateMech</compClass>
+				         <pawnKindDef>Cinder_Mech_Tombstone</pawnKindDef>
+			         </li>
+					</value>
+				</li>
+				
+
+			</operations>
+		</match>
+	</Operation>			
+</Patch>

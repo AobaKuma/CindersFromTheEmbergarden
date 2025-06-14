@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<modExtensions>
+			<li Class="Embergarden.RandomCapacityModifier">
+				<capacity>Manipulation</capacity>
+				<range>0.85~1.05</range>
+				<offset>false</offset>
+			</li>
+		</modExtensions>
+		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+		<defName>Cinder_UncontrollableTentacles</defName>
+		<label>Uncontrollable tentacles</label>
+		<description>This tentacle will randomly hinder or assist in manipulation.</description>
+		<hediffClass>Embergarden.Hediff_DynamicCap</hediffClass>
+		<isBad>false</isBad>
+		<initialSeverity>0.5</initialSeverity>
+		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<stages>
+			<li>
+				<label>active</label>
+				<minSeverity>0</minSeverity>
+				<statFactors>
+					<MeleeCooldownFactor>1.3</MeleeCooldownFactor>
+				</statFactors>
+				<statOffsets>
+					<MeleeDamageFactor>0.5</MeleeDamageFactor>
+				</statOffsets>
+			</li>
+		</stages>
+		<renderNodeProperties />
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Cinder_Regen</defName>
+		<label>regeneration</label>
+		<description>Amorphous polymer is used to repair this person's body</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<painOffset>-0.3</painOffset>
+				<damageFactors>
+					<Flame>0.5</Flame>
+					<Burn>0.5</Burn>
+				</damageFactors>
+				<totalBleedFactor>0.9</totalBleedFactor>
+				<statFactors>
+				    <Flammability>0.5</Flammability>
+					<IncomingDamageFactor>0.8</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="Embergarden.HediffCompProperties_Regen">
+				<healPerDay>10</healPerDay>
+				<checkInterval>600</checkInterval>
+				<healPerDayUnlocked>50</healPerDayUnlocked>
+				<maxPartHpForLocked>10</maxPartHpForLocked>
+				<unlockedString>unlocked</unlockedString>
+			</li>
+		</comps>
+		<renderNodeProperties />
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Cinder_Resurrect</defName>
+		<label>resurrect</label>
+		<description>When dealing fatal injuries, the amorphous polymer in the body quickly generates missing organs, reviving the carrier</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="Embergarden.HediffCompProperties_Resurrect">
+				<afterEffectHediff>Cinder_ResurrectComa</afterEffectHediff>
+				<disabledString>lose efficacy</disabledString>
+				<regenHediffs>
+					<li>
+						<hediff>Cinder_EyeHediff</hediff>
+						<bodyPart>Head</bodyPart>
+					</li>
+				</regenHediffs>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Cinder_EyeHediff</defName>
+		<label>eroded eyes</label>
+		<description>Eyes blessed by unknown</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.01</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			               <li Class="PawnRenderNodeProperties_Eye">
+				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+				<texPath>UI/Gene/Eyes/Bread_Eye</texPath>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>1</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>56</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+					<dataWest>
+						<flip>true</flip>
+					</dataWest>
+				          </drawData>
+			            </li>
+	  </renderNodeProperties>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Cinder_ResurrectComa</defName>
+		<label>crystallization coma</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<description>The amorphous polymer completely crystallized this person's body, This person is now almost identical to a cluster of high hardness polymer rather than a biological entity，making them indestructible.</description>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<maxSeverity>4</maxSeverity>
+		<initialSeverity>4</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.0</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+			<li Class="Embergarden.HediffCompProperties_NewHediffAfterDisappear">
+				<hediffDef>Cinder_NeuralCrystallizationDissociation</hediffDef>
+			</li>
+		</comps>
+		<stages>
+			<li>
+			    <hungerRateFactor>0</hungerRateFactor>
+				<totalBleedFactor>0</totalBleedFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.01</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0</setMax>
+					</li>
+				</capMods>
+				<statFactors>
+				    <Flammability>0</Flammability>
+					<IncomingDamageFactor>0.25</IncomingDamageFactor>
+					<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+					<NecrotionResistance MayRequire="BlackMarket420.TAOFC">2.0</NecrotionResistance>
+	                <NecrotionEnvironmentResistance MayRequire="BlackMarket420.TAOFC">2.0</NecrotionEnvironmentResistance>
+					<StaggerDurationFactor>0</StaggerDurationFactor>
+				</statFactors>
+				<damageFactors>
+					<Flame>0</Flame>
+					<Burn>0</Burn>
+					<Frostbite>0</Frostbite>
+					<TornadoScratch>0</TornadoScratch>
+					<Cut>0</Cut>
+					<Crush>0</Crush>
+					<Blunt>0</Blunt>
+					<Poke>0</Poke>
+					<Demolish>0</Demolish>
+					<Stab>0</Stab>
+					<Scratch>0</Scratch>
+					<ScratchToxic>0</ScratchToxic>
+					<Bite>0</Bite>
+					<ToxicBite>0</ToxicBite>
+					<Cinder_Bomb>0</Cinder_Bomb>
+					<Cinder_BombB>0</Cinder_BombB>
+					<Vaporize>0</Vaporize>
+					<Cinder_BombC>0</Cinder_BombC>
+					<Bomb>0</Bomb>
+					<Thump>0</Thump>
+					<AcidBurn>0</AcidBurn>
+					<Decayed>0</Decayed>
+					<ElectricalBurn MayRequire="Ludeon.RimWorld.Anomaly">0</ElectricalBurn>
+					<Digested MayRequire="Ludeon.RimWorld.Anomaly">0</Digested>
+					<Nerve MayRequire="Ludeon.RimWorld.Anomaly">0</Nerve>
+					<Psychic MayRequire="Ludeon.RimWorld.Anomaly">0</Psychic>
+					<NociosphereVaporize MayRequire="Ludeon.RimWorld.Anomaly">0</NociosphereVaporize>
+				</damageFactors>
+				<statOffsets>
+					<ComfyTemperatureMin>-273</ComfyTemperatureMin>
+					<ComfyTemperatureMax>1250</ComfyTemperatureMax>
+					<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+					<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.72</ArmorRating_Blunt>
+					<ArmorRating_Heat>2</ArmorRating_Heat>
+					<BladderRateMultiplier MayRequire="Dubwise.DubsBadHygiene">-1</BladderRateMultiplier>
+					<ThirstRateMultiplier MayRequire="Dubwise.DubsBadHygiene">-1</ThirstRateMultiplier>
+					<HygieneRateMultiplier MayRequire="Dubwise.DubsBadHygiene">-1</HygieneRateMultiplier>
+				</statOffsets>
+				<disablesNeeds>
+					<li>Beauty</li>
+					<li>Outdoors</li>
+					<li>Rest</li>
+					<li>Comfort</li>
+					<li>Joy</li>
+					<li>RoomSize</li>
+					<li>Indoors</li>
+					<li>DrugDesire</li>
+				</disablesNeeds>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Cinder_Suffocation</defName>
+		<label>suffocation coma</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<description>coma caused by suffocation.</description>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.0</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.01</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0</setMax>
+					</li>
+				</capMods>
+				<statFactors>
+					<IncomingDamageFactor>0</IncomingDamageFactor>
+					<RestFallRateFactor>0</RestFallRateFactor>
+					<Flammability>0</Flammability>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Cinder_PolymerActivation</defName>
+		<label>polymer activation</label>
+		<labelNoun>polymer activation</labelNoun>
+		<description>The amorphous polymer inside this unit has been activated, resulting in a significant increase in armor strength.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<statFactors>
+					<IncomingDamageFactor>0.45</IncomingDamageFactor>
+					<StaggerDurationFactor>0</StaggerDurationFactor>
+					<MeleeCooldownFactor>0.5</MeleeCooldownFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+					<ArmorRating_Heat>1</ArmorRating_Heat>
+					<MoveSpeed>-0.5</MoveSpeed>
+				</statOffsets>
+				<damageFactors>
+					<Cut>0.25</Cut>
+					<Crush>0</Crush>
+					<Blunt>0</Blunt>
+					<Poke>0.5</Poke>
+					<Demolish>0.5</Demolish>
+					<Stab>0.5</Stab>
+					<RangedStab>0.5</RangedStab>
+					<Arrow>0.5</Arrow>
+					<ArrowHighVelocity>0.5</ArrowHighVelocity>
+				</damageFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.5</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Cinder_LongDream</defName>
+		<label>long dream</label>
+		<labelNoun>long dream</labelNoun>
+		<description>A gentle long dream, the consciousness of this unit has been taken over and there will be no pain or sadness.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+				<hungerRateFactor>0.5</hungerRateFactor>
+				<minSeverity>0</minSeverity>
+				<label>long dream</label>
+				<statFactors>
+					<IncomingDamageFactor>0.85</IncomingDamageFactor>
+					<WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+					<MeleeCooldownFactor>0.6</MeleeCooldownFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+					<ArmorRating_Heat>1</ArmorRating_Heat>
+				</statOffsets>
+				<damageFactors>
+					<Cut>0.8</Cut>
+					<Crush>0.8</Crush>
+					<Blunt>0.8</Blunt>
+					<Poke>0.8</Poke>
+					<Demolish>0.8</Demolish>
+					<Stab>0.8</Stab>
+					<Bullet>0.95</Bullet>
+					<RangedStab>0.75</RangedStab>
+					<Arrow>0.55</Arrow>
+					<ArrowHighVelocity>0.55</ArrowHighVelocity>
+				</damageFactors>
+				<disablesNeeds>
+					<li>Beauty</li>
+					<li>Outdoors</li>
+					<li>Rest</li>
+					<li>Comfort</li>
+					<li>Joy</li>
+					<li>RoomSize</li>
+				</disablesNeeds>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+			<li Class="Embergarden.HediffCompProperties_NewHediffAfterDisappear">
+				<hediffDef>Cinder_DeepSleep</hediffDef>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Cinder_DeepSleep</defName>
+		<label>deep sleep</label>
+		<labelNoun>deep sleep</labelNoun>
+		<description>Being taken over consciousness, still sleeping soundly.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<painFactor>0.2</painFactor>
+				<hungerRateFactor>0.5</hungerRateFactor>
+				<minSeverity>0</minSeverity>
+				<label>deep sleep</label>
+				<statFactors>
+					<IncomingDamageFactor>0.95</IncomingDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+					<ArmorRating_Heat>1</ArmorRating_Heat>
+				</statOffsets>
+				<damageFactors>
+					<RangedStab>0.85</RangedStab>
+					<Arrow>0.75</Arrow>
+					<ArrowHighVelocity>0.75</ArrowHighVelocity>
+				</damageFactors>
+				<disablesNeeds>
+					<li>Beauty</li>
+					<li>Outdoors</li>
+					<li>Rest</li>
+					<li>Joy</li>
+					<li>RoomSize</li>
+				</disablesNeeds>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+			<li Class="Embergarden.HediffCompProperties_NewHediffAfterDisappear">
+				<hediffDef>Cinder_LightSleep</hediffDef>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Cinder_LightSleep</defName>
+		<label>light sleep</label>
+		<labelNoun>light sleep</labelNoun>
+		<description>Consciousness gradually recovers, blurring the gap between reality and dreams.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<painFactor>0.4</painFactor>
+				<hungerRateFactor>0.8</hungerRateFactor>
+				<minSeverity>0</minSeverity>
+				<label>light sleep</label>
+				<statFactors>
+					<IncomingDamageFactor>0.9</IncomingDamageFactor>
+				</statFactors>
+				<statOffsets>
+					<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.75</ArmorRating_Heat>
+				</statOffsets>
+				<disablesNeeds>
+					<li>Beauty</li>
+					<li>Outdoors</li>
+					<li>Joy</li>
+					<li>RoomSize</li>
+				</disablesNeeds>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+			<li Class="Embergarden.HediffCompProperties_NewHediffAfterDisappear">
+				<hediffDef>Cinder_GraduallyAwakening</hediffDef>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Cinder_GraduallyAwakening</defName>
+		<label>gradually awakening</label>
+		<labelNoun>gradually awakening</labelNoun>
+		<description>The dream scene is almost no longer visible, gradually waking up to face reality.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<painFactor>0.8</painFactor>
+				<minSeverity>0</minSeverity>
+				<label>gradually awakening</label>
+				<statOffsets>
+					<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.6</ArmorRating_Heat>
+				</statOffsets>
+				<disablesNeeds>
+					<li>Beauty</li>
+					<li>Outdoors</li>
+					<li>RoomSize</li>
+				</disablesNeeds>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Cinder_Blindness</defName>
+		<label>entanglement of tentacles</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<initialSeverity>1</initialSeverity>
+		<description>Entangled by tentacles on the ground, affecting vision and mobility.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>1200</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<setMax>0.01</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.3</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	
+	<HediffDef>
+		<defName>Cinder_ErosionDisability</defName>
+		<label>Erosion disability</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<initialSeverity>0.1</initialSeverity>
+		<description>Disabled due to erosion by strange substances.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>6000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+		    <li>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<setMax>0.95</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>1</setMax>
+					</li>
+				</capMods>
+				<statFactors>
+				    <MeleeCooldownFactor>1.1</MeleeCooldownFactor>
+					<MeleeHitChance>0.75</MeleeHitChance>
+					<MeleeDamageFactor>0.8</MeleeDamageFactor>
+					<MeleeDodgeChance>0.2</MeleeDodgeChance>
+				</statFactors>
+				<statOffsets>
+					<MeleeDamageFactor>-0.2</MeleeDamageFactor>
+				</statOffsets>
+			</li>
+			<li>
+			   <minSeverity>0.5</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<setMax>0.9</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.85</setMax>
+					</li>
+				</capMods>
+				<statFactors>
+					<MeleeCooldownFactor>1.5</MeleeCooldownFactor>
+					<MeleeDamageFactor>0.6</MeleeDamageFactor>
+					<MeleeHitChance>0.5</MeleeHitChance>
+					<MeleeDodgeChance>0.1</MeleeDodgeChance>
+				</statFactors>
+			</li>
+			<li>
+			     <minSeverity>0.8</minSeverity>
+				  <painOffset>0.3</painOffset>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<setMax>0.8</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.8</setMax>
+					</li>
+				</capMods>
+				<statFactors>
+					<MeleeCooldownFactor>2</MeleeCooldownFactor>
+					<MeleeDamageFactor>0.4</MeleeDamageFactor>
+					<MeleeHitChance>0.3</MeleeHitChance>
+					<MeleeDodgeChance>0</MeleeDodgeChance>
+				</statFactors>
+			</li>
+			<li>
+			     <minSeverity>1</minSeverity>
+				  <painOffset>0.5</painOffset>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<setMax>0.75</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.75</setMax>
+					</li>
+				</capMods>
+				<statFactors>
+					<MeleeCooldownFactor>2.5</MeleeCooldownFactor>
+					<MeleeDamageFactor>0.1</MeleeDamageFactor>
+					<MeleeHitChance>0.1</MeleeHitChance>
+					<MeleeDodgeChance>0</MeleeDodgeChance>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Cinder_BlindnessLow</defName>
+		<label>entanglement of tentacles</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<initialSeverity>0.1</initialSeverity>
+		<description>Entangled by tentacles on the ground, affecting vision and mobility.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>1200</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+		    <li>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<setMax>0.8</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.8</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+			   <minSeverity>0.5</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<setMax>0.4</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.6</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+               <minSeverity>0.8</minSeverity>
+               <painOffset>0.2</painOffset>
+                <capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<setMax>0.1</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.3</setMax>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<setMax>0.8</setMax>
+					</li>
+				</capMods>
+           </li>
+		   <li>
+               <minSeverity>1</minSeverity>
+               <painOffset>0.6</painOffset>
+                <capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<setMax>0.01</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.2</setMax>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<setMax>0.6</setMax>
+					</li>
+				</capMods>
+           </li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Cinder_Erosion</defName>
+		<label>erosion</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<initialSeverity>1</initialSeverity>
+		<description>This person's body has been eroded.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>3000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="Embergarden.HediffCompProperties_EexclusiveHediff">
+				<exclusiveHediff>
+					<li>Cinder_Erosion_Bullet</li>
+				</exclusiveHediff>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ToxicEnvironmentResistance>-0.5</ToxicEnvironmentResistance>
+					<ArmorRating_Sharp>-0.2</ArmorRating_Sharp>
+					<ArmorRating_Blunt>-0.25</ArmorRating_Blunt>
+					<ArmorRating_Heat>-1</ArmorRating_Heat>
+					<Flammability>0.9</Flammability>
+				</statOffsets>
+				<statFactors>
+				<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+			    </statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Cinder_Erosion_Bullet</defName>
+		<label>erosion</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<initialSeverity>1</initialSeverity>
+		<description>This person's body has been eroded.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>3000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="Embergarden.HediffCompProperties_EexclusiveHediff">
+				<exclusiveHediff>
+					<li>Cinder_Erosion</li>
+				</exclusiveHediff>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+				<ToxicEnvironmentResistance>-0.5</ToxicEnvironmentResistance>
+				<ArmorRating_Heat>-1</ArmorRating_Heat>
+			    </statOffsets>
+				<statFactors>
+				<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+				<IncomingDamageFactor>1.20</IncomingDamageFactor>
+			</statFactors>
+		    <painFactor>1.5</painFactor>
+			<painOffset>0.1</painOffset>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Cinder_ExtraArmourPlate</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>armour Plates</label>
+		<description>Installed additional amorphous polymer armor plates to protect users from injury.\n\nAlthough it is an excellent protective armor, it must be completely replaced once damaged.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Cinder_ExtraArmour</ThingDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+		<isBad>false</isBad>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<comps>
+			<li Class="Embergarden.HediffCompProperties_ProtectiveShield">
+				<hitpoints>20</hitpoints>
+				<filthOnDamaged>Filth_MachineBits</filthOnDamaged>
+				<effectOnDamaged>Deflect_Metal</effectOnDamaged>
+			</li>
+			<li Class="Embergarden.HediffCompProperties_EexclusiveHediff">
+				<exclusiveHediff>
+					<li>Cinder_ExtraArmourPlateII</li>
+				</exclusiveHediff>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<damageFactors>
+					<Bullet>0.75</Bullet>
+					<Arrow>0.75</Arrow>
+					<Bomb>0.25</Bomb>
+				</damageFactors>
+				<statOffsets>
+					<MoveSpeed>-0.1</MoveSpeed>
+					<ArmorRating_Heat>0.5</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Cinder_ExtraArmourPlateII</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>heavy armour Plates</label>
+		<description>Installed additional amorphous polymer armor plates to protect users from injury.\n\nAlthough it is an excellent protective armor, it must be completely replaced once damaged.</description>
+		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+		<isBad>false</isBad>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<comps>
+			<li Class="Embergarden.HediffCompProperties_ProtectiveShield">
+				<hitpoints>50</hitpoints>
+				<filthOnDamaged>Filth_MachineBits</filthOnDamaged>
+				<effectOnDamaged>Deflect_Metal</effectOnDamaged>
+			</li>
+			<li Class="Embergarden.HediffCompProperties_EexclusiveHediff">
+				<exclusiveHediff>
+					<li>Cinder_ExtraArmourPlate</li>
+				</exclusiveHediff>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<damageFactors>
+					<Bullet>0.65</Bullet>
+					<Arrow>0.65</Arrow>
+					<Bomb>0.25</Bomb>
+					<Cut>0.65</Cut>
+                    <Stab>0.65</Stab>
+				    <Thump>0.65</Thump>
+				    <Scratch>0.65</Scratch>
+					<Stun>0</Stun>
+				</damageFactors>
+				<statOffsets>
+					<ArmorRating_Heat>0.5</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Cinder_ERA</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>ERA</label>
+		<description>Heavy reactive armor, capable of effectively resisting explosive damage.</description>
+		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
+		<isBad>false</isBad>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<comps>
+			<li Class="Embergarden.HediffCompProperties_ProtectiveShield">
+				<hitpoints>200</hitpoints>
+				<filthOnDamaged>Filth_MachineBits</filthOnDamaged>
+				<effectOnDamaged>Deflect_Metal</effectOnDamaged>
+			</li>
+			<li Class="Embergarden.HediffCompProperties_EexclusiveHediff">
+				<exclusiveHediff>
+					<li>Cinder_ExtraArmourPlate</li>
+				</exclusiveHediff>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<damageFactors>
+					<Bullet>0.45</Bullet>
+					<Bomb>0.1</Bomb>
+					<Cinder_Bomb>0.5</Cinder_Bomb>
+					<Cinder_BombB>0.25</Cinder_BombB>
+					<Cinder_BombC>0.25</Cinder_BombC>
+					<Cinder_BombD>0.25</Cinder_BombD>
+					<Stun>0</Stun>
+			    </damageFactors>
+				<statOffsets>
+					<MoveSpeed>-0.4</MoveSpeed>
+					<ArmorRating_Heat>0.5</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+		
+		<renderNodeProperties>
+        <li Class="PawnRenderNodeProperties">
+        <debugLabel>ERA</debugLabel>
+        <workerClass>PawnRenderNodeWorker</workerClass>
+         <texPath>Things/Pawn/Mech/erodedKrepostA</texPath>
+		  <overrideMeshSize>(4.2, 4.2)</overrideMeshSize>
+        <baseLayer>2</baseLayer>
+		<pawnType>Any</pawnType>
+      </li>
+    </renderNodeProperties>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Cinder_MusicStopper</defName>
+		<label>stop music when downed</label>
+		<description>Hidden hediff that stops current boss music when downed or dead. Should be invisible and remove on activation.</description>
+		<hediffClass>Embergarden.Hediff_DownedAction</hediffClass>
+		<defaultLabelColor>(0, 0, 0)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="Embergarden.CompProperties_HediffStopMusicIfDowned">
+				<songDefs>
+					<li>Cinder_SongA</li>
+					<li>Cinder_SongB</li>
+				</songDefs>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Cinder_ArtificiaLife</defName>
+		<label>artificial life</label>
+		<description>Unable to conceive.</description>
+		<hediffClass>Embergarden.Hediff_DownedAction</hediffClass>
+		<defaultLabelColor>(0, 0, 0)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<statFactors>
+                  <Fertility  MayRequire="Ludeon.RimWorld.Biotech">0</Fertility>
+                </statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Cinder_IntrinsicPropertiesOfPolymers</defName>
+		<label>Intrinsic properties of polymers</label>
+		<labelNoun>Intrinsic properties of polymers</labelNoun>
+		<description>The inherent properties of amorphous polymers are that they cannot be directly cut in any way, and can be processed by projectiles or slow movements with kinetic energy at a certain threshold.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0, 0, 0)</defaultLabelColor>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+			    <becomeVisible>false</becomeVisible>
+				<minSeverity>0</minSeverity>
+				<damageFactors>
+					<Cut>0</Cut>
+					<Poke>0</Poke>
+					<Stab>0</Stab>
+				</damageFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.5</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef>
+	<defName>Cinder_SrangeSolution</defName>
+		<label>strange solution</label>
+		<description>A harmless medication that often distracts people and makes them feel uncontrollable libido.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(254, 60, 164)</defaultLabelColor>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <statFactors>
+          <WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+        </statFactors>
+      </li>
+    </stages>
+    <comps>
+	 <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+      <li Class="HediffCompProperties_GiveLovinMTBFactor">
+        <lovinMTBFactor>0.5</lovinMTBFactor>
+      </li>
+    </comps>
+	</HediffDef>
+	
+	<HediffDef>
+	<defName>Cinder_NeuralCrystallizationDissociation</defName>
+		<label>neural crystallization dissociation</label>
+		<description>The crystalline polymer that reshapes the body gradually begins to undergo phase transition, but there are still some crystals remaining throughout the body. The nerves reshaped by amorphous polymers are not yet fully effective, so this person is currently unable to control their body and emotions.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
+		<maxSeverity>3</maxSeverity>
+		<initialSeverity>3</initialSeverity>
+		<isBad>true</isBad>
+    <stages>
+      <li>
+        <statFactors>
+          <WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+		  <IncomingDamageFactor>1.25</IncomingDamageFactor>
+        </statFactors>
+		<capMods>
+			<li>
+				<capacity>Moving</capacity>
+				<setMax>0.99</setMax>
+			</li>
+			<li>
+				<capacity>Manipulation</capacity>
+				<setMax>0.8</setMax>
+			</li>
+		</capMods>
+      </li>
+    </stages>
+    <comps>
+	    <li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.0</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+		</li>
+    </comps>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Cinder_EyeRegenInhibited</defName>
+		<label>eye regen inhibited</label>
+		<labelNoun>eye regen inhibited</labelNoun>
+		<description>Blind Ritual took away this person's eyes. The attempt to resonate with psylink blocked eye regeneration.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.8, 0.8, 0.8)</defaultLabelColor>
+		<maxSeverity>1</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<setMax>0.01</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.05</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

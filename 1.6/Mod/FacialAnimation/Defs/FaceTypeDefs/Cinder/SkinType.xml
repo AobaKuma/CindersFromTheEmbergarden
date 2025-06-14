@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FacialAnimation.SkinTypeDef>
+	  <defName>Cinder_SkinNormal</defName>
+	  <texPath>Things/Pawn/Cinder/Skins/Normal</texPath>
+	  <shader>Map/CutoutSkin</shader>
+	  <raceName>Alien_Cinder</raceName>
+  </FacialAnimation.SkinTypeDef>
+
+  <FacialAnimation.SkinTypeDef>
+	  <defName>Cinder_SkinRightEye</defName>
+	  <texPath>Things/Pawn/Cinder/Skins/RightEye</texPath>
+	  <shader>Map/Transparent</shader>
+    <probability>0.05</probability>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.SkinTypeDef>
+
+  <FacialAnimation.SkinTypeDef>
+    <defName>Cinder_SkinLeftChin</defName>
+    <texPath>Things/Pawn/Cinder/Skins/LeftChin</texPath>
+    <shader>Map/Transparent</shader>
+    <probability>0.05</probability>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.SkinTypeDef>
+
+  <FacialAnimation.SkinTypeDef>
+    <defName>Cinder_SkinFreckled</defName>
+    <texPath>Things/Pawn/Cinder/Skins/Freckled</texPath>
+    <shader>Map/Transparent</shader>
+    <probability>0.2</probability>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.SkinTypeDef>
+
+  <FacialAnimation.SkinTypeDef>
+    <defName>Cinder_SkinFreckledCheek</defName>
+    <texPath>Things/Pawn/Cinder/Skins/FreckledCheek</texPath>
+    <shader>Map/Transparent</shader>
+    <probability>0.2</probability>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.SkinTypeDef>
+
+
+</Defs>

@@ -1,5 +1,4 @@
-﻿using Mono.Unix.Native;
-using RimWorld;
+﻿using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -26,7 +25,7 @@ namespace Embergarden
             Scribe_Collections.Look(ref tentacles, "tentacles", LookMode.Value);
         }
 
-        public override void Tick()
+        protected override void Tick()
         {
             if (AllComps != null)
             {
@@ -118,9 +117,9 @@ namespace Embergarden
                         }
                     }
                 }
-                if (Rand.Chance(def.projectile.bulletChanceToStartFire) && (pawn2 == null || Rand.Chance(FireUtility.ChanceToAttachFireFromEvent(pawn2))))
+                if (Rand.Chance(def.projectile.explosionChanceToStartFire) && (pawn2 == null || Rand.Chance(FireUtility.ChanceToAttachFireFromEvent(pawn2))))
                 {
-                    hitThing.TryAttachFire(def.projectile.bulletFireSizeRange.RandomInRange, launcher);
+                    hitThing.TryAttachFire(Rand.Range(0, def.projectile.explosionChanceToStartFire), launcher);
                 }
             }
             base.Impact(hitThing, blockedByShield);

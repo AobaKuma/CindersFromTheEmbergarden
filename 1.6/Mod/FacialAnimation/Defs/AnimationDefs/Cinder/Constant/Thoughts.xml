@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>Thought_Naked_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>1</duration>
+        <headShapeDef>blush</headShapeDef>
+        <browShapeDef>s-shaped</browShapeDef>
+      </li>
+    </animationFrames>
+    <priority>200</priority>
+    <targetThoughtDefs>
+      <li>Naked</li>
+      <li>GroinUncovered_Disapproved_Male</li>
+      <li>GroinUncovered_Disapproved_Female</li>
+      <li>GroinOrChestUncovered_Disapproved_Male</li>
+      <li>GroinOrChestUncovered_Disapproved_Female</li>
+      <li>GroinChestOrHairUncovered_Disapproved_Male</li>
+      <li>GroinChestOrHairUncovered_Disapproved_Female</li>
+      <li>GroinChestHairOrFaceUncovered_Disapproved_Male</li>
+      <li>GroinChestHairOrFaceUncovered_Disapproved_Female</li>
+    </targetThoughtDefs>
+  </FacialAnimation.FaceAnimationDef>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>Thought_Hot_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>1</duration>
+        <headShapeDef>hot</headShapeDef>
+      </li>
+    </animationFrames>
+    <priority>20000</priority>
+    <targetThoughtDefs>
+      <li>EnvironmentHot</li>
+    </targetThoughtDefs>
+  </FacialAnimation.FaceAnimationDef>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>Thought_Cold_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>1</duration>
+        <headShapeDef>cold</headShapeDef>
+      </li>
+    </animationFrames>
+    <priority>20000</priority>
+    <targetThoughtDefs>
+      <li>EnvironmentCold</li>
+      <li>Sick</li>
+    </targetThoughtDefs>
+  </FacialAnimation.FaceAnimationDef>
+
+</Defs>

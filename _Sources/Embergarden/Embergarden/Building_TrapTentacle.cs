@@ -7,7 +7,7 @@ using Verse.Sound;
 
 namespace Embergarden
 {
-    public class Building_TrapTentacle : Building
+    public class Building_TrapTentacle : Building , IPathFindCostProvider
     {
 
         ModExtension_TentacleTrap ext => def.GetModExtension<ModExtension_TentacleTrap>();
@@ -33,7 +33,7 @@ namespace Embergarden
             }
         }
 
-        public override void Tick()
+        protected override void Tick()
         {
             if (base.Spawned)
             {
@@ -79,7 +79,7 @@ namespace Embergarden
                 {
                     num = ((p.Faction != base.Faction) ? 0f : 0.005f);
                 }
-                else if (p.IsNonMutantAnimal)
+                else if (!p.IsSubhuman)
                 {
                     num = 0.2f;
                     num *= def.building.trapPeacefulWildAnimalsSpringChanceFactor;
@@ -99,7 +99,7 @@ namespace Embergarden
             {
                 return true;
             }
-            if (p.Faction == null && p.IsNonMutantAnimal && !p.InAggroMentalState)
+            if (p.Faction == null && !p.IsSubhuman && !p.InAggroMentalState)
             {
                 return true;
             }
@@ -125,8 +125,7 @@ namespace Embergarden
             }
             return false;
         }
-
-        public override ushort PathFindCostFor(Pawn p)
+        public ushort PathFindCostFor(Pawn p)
         {
             if (!KnowsOfTrap(p))
             {
@@ -143,6 +142,7 @@ namespace Embergarden
             }
             return 40;
         }
+
 
         public override bool IsDangerousFor(Pawn p)
         {
@@ -170,6 +170,11 @@ namespace Embergarden
         {
             if (Map.terrainGrid.TerrainAt(Position) == ext.terrainDef) Map.terrainGrid.Notify_TerrainDestroyed(Position);
             base.DeSpawn(mode);
+        }
+
+        public CellRect GetOccupiedRect()
+        {
+            return this.OccupiedRect();
         }
     }
 

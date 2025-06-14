@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>Cinder_Trailer</defName>
+		<label>trailer</label>
+		<devNote>insect</devNote>
+		<description>An artificial life form assembled from discarded armored vehicle components and amorphous polymers, which can be used as a transport truck and can replace freight vehicles on rough roads.</description>
+		<statBases>
+			<MoveSpeed>4</MoveSpeed>
+			<MarketValue>1000</MarketValue>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<ComfyTemperatureMax>70</ComfyTemperatureMax>
+			<FilthRate>1</FilthRate>
+			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+		</statBases>
+		<uiIconScale>1.35</uiIconScale>
+		<comps>
+			<li Class="Embergarden.CompProperties_AddHediff">
+				<hediffDefs>
+					<li>Cinder_Regen</li>
+					<li>Cinder_ArtificiaLife</li>
+				</hediffDefs>
+			</li>
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>Cinder_AmorphousPolymer</thingToSpawn>
+				<spawnCount>20</spawnCount>
+				<spawnIntervalRange>
+					<min>600000</min>
+					<max>800000</max>
+				</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			</li>
+		</comps>
+		<race>
+			<hasGenders>false</hasGenders>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<herdAnimal>false</herdAnimal>
+			<body>Cinder_TurretWalker</body>
+			<baseBodySize>4</baseBodySize>
+			<baseHealthScale>3</baseHealthScale>
+			<baseHungerRate>0.8</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<specificMeatDef>Cinder_BurntStrangeMeat</specificMeatDef>
+			<gestationPeriodDays>16.66</gestationPeriodDays>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<trainability>Advanced</trainability>
+			<packAnimal>true</packAnimal>
+			<lifeExpectancy>1000</lifeExpectancy>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Cinder_Transform</soundWounded>
+					<soundDeath>Cinder_TentacleGround</soundDeath>
+					<soundCall>Cinder_Transform</soundCall>
+					<soundAngry>Cinder_Transform</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<soundEating>Herbivore_Eat</soundEating>
+			<headPosPerRotation>
+				<li>(0.0, 0, 0.05)</li>
+				<li>(0.285, 0, 0.02)</li>
+				<li>(0.0, 0, -0.12)</li>
+				<li>(-0.285, 0, 0.02)</li>
+			</headPosPerRotation>
+		</race>
+		<tradeTags>
+			<li>AnimalCinder</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>Left tentacle</label>
+				<labelNoLocation>tentacle</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10.0</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>right tentacle</label>
+				<labelNoLocation>tentacle</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10.0</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>Front tentacle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15.5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>Cinder_Trailer</defName>
+		<label>trailer</label>
+		<race>Cinder_Trailer</race>
+		<combatPower>75</combatPower>
+		<ecoSystemWeight>0.25</ecoSystemWeight>
+		<wildGroupSize>1~1</wildGroupSize>
+		<fixedGender>None</fixedGender>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mech/Trailer</texPath>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Mech/Trailer</texPath>
+					<drawSize>3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+
+</Defs>

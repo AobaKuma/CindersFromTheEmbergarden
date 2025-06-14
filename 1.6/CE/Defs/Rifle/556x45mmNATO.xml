@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="556x45mmNATOBase">
+		<defName>Ammo_556x45mmNATO_Erosion</defName>
+		<label>5.56x45mm NATO (Erosion)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Rifle/Ero</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.07</MarketValue>
+			<Mass>0.011</Mass>
+		</statBases>
+		<ammoClass>Cinder_Erosion</ammoClass>
+		<cookOffProjectile>Bullet_556x45mmNATO_Erosion</cookOffProjectile>
+		<descriptionHyperlinks>
+			<HediffDef>Cinder_Erosion_Bullet</HediffDef>
+		</descriptionHyperlinks>
+	</ThingDef>
+
+	<ThingDef ParentName="Base556x45mmNATOBullet">
+		<defName>Bullet_556x45mmNATO_Erosion</defName>
+		<label>5.56mm NATO bullet (Erosion)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Cider_ErosionBullet</damageDef>
+			<damageAmountBase>7</damageAmountBase>
+			<armorPenetrationSharp>21</armorPenetrationSharp>
+			<armorPenetrationBlunt>44.18</armorPenetrationBlunt>
+			<speed>227</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base556x45mmNATOBullet">
+		<defName>Bullet_556x45mmNATO_Erosion_SB</defName>
+		<label>5.56mm NATO bullet (Erosion)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Cider_ErosionBullet</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<armorPenetrationSharp>19</armorPenetrationSharp>
+			<armorPenetrationBlunt>28.42</armorPenetrationBlunt>
+			<speed>193</speed>
+		</projectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
+		<defName>MakeAmmo_556x45mmNATO_Erosion</defName>
+		<label>make 5.56x45mm NATO (Erosion) cartridge x500</label>
+		<description>Craft 500 5.56x45mm NATO (Erosion) cartridges.</description>
+		<jobString>Making 5.56x45mm NATO (Erosion) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>27</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>19</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Cinder_AmorphousPolymer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_556x45mmNATO_Erosion>500</Ammo_556x45mmNATO_Erosion>
+		</products>
+		<recipeUsers Inherit="false">
+			<li>Cinder_AncientWorkstation</li>
+		</recipeUsers>
+		<workAmount>2000</workAmount>
+	</RecipeDef>
+
+</Defs>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="Cinder_Erosion"]/stages/li[1]/statOffsets</xpath>
+		<value>
+			<statOffsets>
+				    <ArmorRating_Sharp>-4</ArmorRating_Sharp>
+					<ArmorRating_Blunt>-20</ArmorRating_Blunt>
+					<ArmorRating_Heat>-1</ArmorRating_Heat>
+					<Flammability>0.9</Flammability>
+					<ToxicEnvironmentResistance>-1</ToxicEnvironmentResistance>
+			</statOffsets>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="Cinder_Erosion"]/stages/li[1]/statFactors</xpath>
+		<value>
+			<statFactors>
+				<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+				<IncomingDamageFactor>1.25</IncomingDamageFactor>
+			</statFactors>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="Cinder_Erosion"]/stages/li[1]</xpath>
+		<value>
+			<painFactor>1.5</painFactor>
+			<painOffset>0.2</painOffset>
+		</value>
+	</Operation>
+	
+		<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="Cinder_Regen"]/stages</xpath>
+		<value>
+		   <stages>
+			<li>
+				<painOffset>-0.3</painOffset>
+				<damageFactors>
+					<Flame>0.1</Flame>
+					<Burn>0.1</Burn>
+					<Flame>0</Flame>
+				  <Burn>0</Burn>
+				</damageFactors>
+				<totalBleedFactor>0.9</totalBleedFactor>
+				<statFactors>
+					<Suppressability>0.25</Suppressability>
+			</statFactors>
+			</li>
+		  </stages>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="Cinder_LongDream"]/stages/li[1]/statOffsets</xpath>
+		<value>
+			<statOffsets>
+				<ArmorRating_Sharp>2</ArmorRating_Sharp>
+					<ArmorRating_Blunt>15</ArmorRating_Blunt>
+					<ArmorRating_Heat>2</ArmorRating_Heat>
+			</statOffsets>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="Cinder_LongDream"]/stages/li[1]/statFactors</xpath>
+		<value>
+			<statFactors>
+					<Suppressability>0</Suppressability>
+					 <PsychicSensitivity>0</PsychicSensitivity>
+			</statFactors>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="Cinder_DeepSleep"]/stages/li[1]/statOffsets</xpath>
+		<value>
+			<statOffsets>
+				<ArmorRating_Sharp>1</ArmorRating_Sharp>
+					<ArmorRating_Blunt>10</ArmorRating_Blunt>
+					<ArmorRating_Heat>2</ArmorRating_Heat>
+			</statOffsets>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="Cinder_DeepSleep"]/stages/li[1]/statFactors</xpath>
+		<value>
+			<statFactors>
+					<Suppressability>0</Suppressability>
+					 <PsychicSensitivity>0</PsychicSensitivity>
+			</statFactors>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="Cinder_LightSleep"]/stages/li[1]/statOffsets</xpath>
+		<value>
+			<statOffsets>
+				<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+					<ArmorRating_Blunt>8</ArmorRating_Blunt>
+					<ArmorRating_Heat>1.5</ArmorRating_Heat>
+			</statOffsets>
+		</value>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="Cinder_LightSleep"]/stages/li[1]/statFactors</xpath>
+		<value>
+			<statFactors>
+					<Suppressability>0</Suppressability>
+					 <PsychicSensitivity>0</PsychicSensitivity>
+			</statFactors>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="Cinder_GraduallyAwakening"]/stages/li[1]/statOffsets</xpath>
+		<value>
+			<statOffsets>
+				<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+					<ArmorRating_Blunt>4</ArmorRating_Blunt>
+					<ArmorRating_Heat>1</ArmorRating_Heat>
+			</statOffsets>
+			<statFactors>
+					<Suppressability>0</Suppressability>
+					 <PsychicSensitivity>0</PsychicSensitivity>
+			</statFactors>
+		</value>
+	</Operation>
+</Patch>

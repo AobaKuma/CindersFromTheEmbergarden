@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>Cinders of the Embergarden</name>
-	<author>BreadMoAOBA</author>
+	<author>BreadMo AOBA</author>
 	<supportedVersions>
 		<li>1.5</li>
+		<li>1.6</li>
 	</supportedVersions>
 	<packageId>BreadMo.Cinders</packageId>
 	<description>This mod adds genes, items, abilities, factions, and unique mechanisms related to the Cinder race, and is compatible with CE and FA facial animations</description>
 	<modDependencies>
-		
 		<li>
 			<packageId>brrainz.harmony</packageId>
 			<displayName>Harmony</displayName>
@@ -28,6 +28,6 @@
 		<li>Aoba.DeadManSwitch.Core</li>
 	</loadAfter>
 	<forceLoadBefore>
-    <li>Aoba.DeadManSwitch.MobileDragoon</li>
-  </forceLoadBefore>
+		<li>Aoba.DeadManSwitch.MobileDragoon</li>
+	</forceLoadBefore>
 </ModMetaData>

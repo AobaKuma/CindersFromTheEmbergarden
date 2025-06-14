@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FacialAnimation.FaceAnimationDef>
+    <defName>Goto_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>1</duration>
+        <browShapeDef>angled</browShapeDef>
+        <mouthShapeDef>tight</mouthShapeDef>
+        <headOffset>(0.0,0,-0.0025)</headOffset>
+      </li>
+    </animationFrames>
+    <targetJobs>
+      <li>Goto</li>
+    </targetJobs>
+    <priority>10300</priority>
+  </FacialAnimation.FaceAnimationDef>
+</Defs>

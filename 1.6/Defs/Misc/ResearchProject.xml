@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchTabDef>
+    <defName>Cinder_Tab</defName>
+    <label>Application of polymer</label>
+    <generalTitle>Application of amorphous polymers</generalTitle>
+    <generalDescription>Investigation and study of the bizarre technologies from the ancient Earth's occlusion zones.</generalDescription>
+  </ResearchTabDef>
+
+  <ResearchProjectDef Name="Cinder_BaseTech" Abstract="True">
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <techLevel>Industrial</techLevel>
+    <tab>Cinder_Tab</tab>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="Cinder_BaseTech">
+    <defName>Cinder_Separation</defName>
+    <label>Amorphous polymer separation</label>
+    <description>Attempt to separate the solid phase from the biological part in amorphous polymers.</description>
+    <baseCost>200</baseCost>
+    <requiredResearchBuilding Inherit="False"/>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Machining</li>
+    </prerequisites>
+	<requiredAnalyzed>
+      <li>Cinder_ExtraArmour</li>
+    </requiredAnalyzed>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>1.60</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->Separation</li>
+
+        <li>subject_story->separate armor plates from this strange twisted mixed substance</li>
+        <li>subject_story->separate some meat with a burnt smell from amorphous polymers</li>
+        <li>subject_story->exploring the Applications of Amorphous Polymers</li>
+
+        <li>subject_gerund->separat amorphous polymer</li>
+      </rulesStrings>
+    </generalRules>
+	<discoveredLetterTitle>About: empty agent bottle</discoveredLetterTitle>
+    <discoveredLetterText>Some hostile army units sometimes carry empty bottles like this, which can be obtained by defeating them.You can also obtain it through purchase.</discoveredLetterText>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="Cinder_BaseTech">
+    <defName>Cinder_TentacleMechanism</defName>
+    <label>Tentacle mechanism application</label>
+    <description>Attempt to artificially cultivate tentacle walking mechanisms using amorphous polymers and install them on mechanical structures.</description>
+    <baseCost>500</baseCost>
+    <requiredResearchBuilding Inherit="False"/>
+    <prerequisites>
+      <li>Cinder_Separation</li>
+    </prerequisites>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.70</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->Tentacle mechanism</li>
+        <li>subject->Walking mechanism</li>
+        <li>subject->military-Tentacle application</li>
+
+        <li>subject_story->modify some frontline turrets to enable them to change their deployment positions on their own, so that the turrets can accompany the troops' attacks</li>
+        <li>subject_story->a completely different way of movement from wheeled, tracked, and mechanical walking, with low noise and strong passability</li>
+
+        <li>subject_gerund->make some immovable buildings move automatically</li>
+      </rulesStrings>
+    </generalRules>
+	<discoveredLetterTitle>About: burnt strange meat</discoveredLetterTitle>
+    <discoveredLetterText>This is a bioactive part extracted from amorphous polymers with a burnt odor, strangely it does not decay.</discoveredLetterText>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="Cinder_BaseTech">
+    <defName>Cinder_TentacleWalkingMechanism</defName>
+    <label>Large walking mechanism</label>
+    <description>A larger tentacle walking mechanism requires further research on the bioactive parts in amorphous polymers to prepare for heavier platforms.</description>
+    <baseCost>1000</baseCost>
+    <prerequisites>
+      <li>Cinder_TentacleMechanism</li>
+    </prerequisites>
+	<requiredAnalyzed>
+      <li>Cinder_BurntStrangeMeat</li>
+    </requiredAnalyzed>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>2.70</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="Cinder_BaseTech">
+    <defName>Cinder_TwistedPharmacology</defName>
+    <label>Twisted pharmacology</label>
+    <description>Research on the medicinal value of amorphous polymers and the production of agent that enable people to acquire various abilities.</description>
+    <baseCost>3600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Cinder_Separation</li>
+    </prerequisites>
+	<requiredAnalyzed>
+      <li>Cinder_EmptyAgentBottle</li>
+    </requiredAnalyzed>
+      <researchViewX>1.00</researchViewX>
+      <researchViewY>1.60</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->Twisted pharmacology</li>
+        <li>subject->Erosion agent</li>
+
+        <li>subject_story->study the influence of different material ratios on the efficacy of pharmaceuticals</li>
+        <li>subject_story->explore the sources of special skills on Caster</li>
+        <li>subject_story->find ways to improve the regeneration ability of amorphous polymers</li>
+
+        <li>subject_gerund->Can manufacture erosion and regeneration agents with unstable effects</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="Cinder_BaseTech">
+    <defName>Cinder_HeavyArmor</defName>
+    <label>Heavy armor application</label>
+    <description>Further strengthen amorphous polymers for application on heavy defensive armor clothing or other armor.</description>
+    <baseCost>4500</baseCost>
+    <techLevel>Industrial</techLevel>
+	<prerequisites>
+      <li>Cinder_TentacleMechanism</li>
+    </prerequisites>
+      <researchViewX>2.00</researchViewX>
+      <researchViewY>1.60</researchViewY>
+  </ResearchProjectDef>
+ 
+  <ResearchProjectDef ParentName="Cinder_BaseTech">
+    <defName>Cinder_MultipleWarheads</defName>
+    <label>Multiple warheads</label>
+    <description>An improvement to firearms and ammunition that can cause more damage when bullets hit enemies.</description>
+	 <requiredResearchBuilding Inherit="False"/>
+    <baseCost>150</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>3.90</researchViewY>
+  </ResearchProjectDef>
+  
+    <ResearchProjectDef ParentName="Cinder_BaseTech">
+    <defName>Cinder_PowerTools</defName>
+    <label>Polymer tools</label>
+    <description>Some power tool weapons driven by amorphous polymer muscles can effectively defeat enemies in close combat. It can also be used as a handy production tool in daily life.</description>
+	 <requiredResearchBuilding Inherit="False"/>
+	<prerequisites>
+      <li>Machining</li>
+    </prerequisites>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>2.70</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="Cinder_BaseTech">
+    <defName>Cinder_ShapedCharges</defName>
+    <label>Shaped charges</label>
+    <description>Research on a bomb based on the principle of energy gathering using conical charges, which focuses a high-temperature and high-pressure metal jet into a line to penetrate thick armor.</description>
+    <baseCost>1500</baseCost>
+	<prerequisites>
+      <li>Cinder_MultipleWarheads</li>
+    </prerequisites>
+    <techLevel>Industrial</techLevel>
+      <researchViewX>1.00</researchViewX>
+      <researchViewY>3.90</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->Shaped charges</li>
+        <li>subject->HEAT warhead</li>
+
+        <li>subject_story->analyzing the Principle of the Monroe Effect</li>
+        <li>subject_story->manufacturing powerful HEAT armor piercing bombs</li>
+		
+        <li>subject_gerund->manufacturing Shaped Charges</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="Cinder_BaseTech">
+    <defName>Cinder_HellfireMissile</defName>
+    <label>hellfire missile</label>
+    <description>Further application of the Monroe effect.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Cinder_ShapedCharges</li>
+    </prerequisites>
+      <researchViewX>2.00</researchViewX>
+      <researchViewY>3.90</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="Cinder_BaseTech">
+    <defName>Cinder_WarMachinery</defName>
+    <label>War machinery</label>
+    <description>A self disciplined war machine with powerful firepower that can guide Hellfire missiles to destroy heavily armored targets.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+	<prerequisites>
+	  <li>Cinder_HeavyArmor</li>
+	  <li>Cinder_TentacleWalkingMechanism</li>
+	  <li>Cinder_HellfireMissile</li>
+	  <li>Cinder_PowerTools</li>
+    </prerequisites>
+	<requiredAnalyzed>
+      <li>Cinder_ErodedMechComponent</li>
+    </requiredAnalyzed>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>2.70</researchViewY>
+  </ResearchProjectDef>
+  
+    <ResearchProjectDef ParentName="Cinder_BaseTech">
+    <defName>Cinder_WarAttacker</defName>
+    <label>War attacker</label>
+    <description>Reverse engineer an ancient heavy attack mecha to create a usable heavy armed walking machine.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Industrial</techLevel>
+	<prerequisites>
+	  <li>Cinder_WarMachinery</li>
+    </prerequisites>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>2.70</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="Cinder_BaseTech">
+    <defName>Cinder_MainBattleWalker</defName>
+    <label>main battle walker</label>
+    <description>Build the colony's own main battle tank level walker through reverse engineering.</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Industrial</techLevel>
+	<prerequisites>
+	  <li>Cinder_WarAttacker</li>
+    </prerequisites>
+	<requiredAnalyzed>
+      <li>Cinder_AmorphousNeuralSpine</li>
+    </requiredAnalyzed>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>2.70</researchViewY>
+  </ResearchProjectDef>
+</Defs>

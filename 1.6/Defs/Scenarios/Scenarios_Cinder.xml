@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>Cinder_Scenario</defName>
+		<label>Logistics Supply Station</label>
+		<description>The Lantern Fleet conducted an assessment of the region on the planet. Due to repeated attacks on transport convoys in this area, it is necessary to establish a new militarized supply station to control the region. You have been assigned to carry out this task, and once established, full command of the area will be yours.Unfortunately, the vehicle you were driving was damaged due to its old age.</description>
+		<scenario>
+			<summary>Two staff members who were ordered to establish a new supply station on the planet.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>Cinder_PlayerFaction</factionDef>
+			</playerFaction>
+			<parts>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>3</pawnCount>
+					<pawnChoiceCount>8</pawnChoiceCount>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>500</count>
+				</li>
+				 <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <count>30</count>
+                </li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Cinder_Magistrate</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Cinder_HeadGear_BrokenMask</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MeleeWeapon_Knife</thingDef>
+                    <stuff>Plasteel</stuff>
+                </li>
+	 			<li Class="ScenPart_StartingResearch">
+				   <def>StartingResearch</def>
+				   <project>GunTurrets</project>
+			    </li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Cinder_TacticalTurret</thingDef>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Cinder_AncientBaseVehicle</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>25</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>350</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>150</count>
+				</li>
+				<li Class="ScenPart_GameStartDialog">
+				<def>GameStartDialog</def>
+				<text>The vehicle you were driving was too old and lost a tire. Fortunately, when you opened the map to confirm, you found that your deviation from the designated area was less than one hundred meters. You decided to establish the supply station on the spot, with the primary goal now being to establish communication with the fleet.</text>
+				<closeSound>GameStartSting</closeSound>
+			</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+	
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>Cinder_ScenarioB</defName>
+		<label>Long dream gradually awakens</label>
+		<description>The intense sense of dissonance caused a crack in the dream. You didn’t know what was happening as the serene everyday imagery suddenly intertwined and collapsed with reality, until that gentle long dream completely vanished... You opened your eyes to an unfamiliar scene, with destroyed transport vehicles and scattered supplies around you. You looked at your hands; this was caused by you.</description>
+		<scenario>
+			<summary>A ghoul unit that unexpectedly woke up from a long dream.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>Cinder_PlayerFactionB</factionDef>
+			</playerFaction>
+			<parts>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>1</pawnCount>
+					<pawnChoiceCount>8</pawnChoiceCount>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Cinder_Magistrate</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Cinder_HeadGear_BrokenMask</thingDef>
+					<count>1</count>
+				</li>
+	 			<li Class="ScenPart_StartingResearch">
+				   <def>StartingResearch</def>
+				   <project>GunTurrets</project>
+			    </li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Cinder_AncientRustedChunk_A</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>5</count>
+				</li>
+				<li Class="ScenPart_GameStartDialog">
+				<def>GameStartDialog</def>
+				<text>The survivors of the convoy seemed to have fled, leaving you with a deep sense of confusion. Having departed from the familiar dream, what else could you do?</text>
+				<closeSound>GameStartSting</closeSound>
+			</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+</Defs>

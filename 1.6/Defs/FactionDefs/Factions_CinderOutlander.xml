@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	 <FactionDef ParentName="FactionBase">
+	 <defName>Cinder_OutlanderCivil</defName>
+    <label>lantern fleet</label>
+    <description>These people are fleets fleeing from ancient Earth in all directions of the universe. Their assault landing ship encountered fierce combat near the orbit of this planet, so they made an emergency landing on the planet and re established themselves here.</description>
+    <colorSpectrum>
+      <li>(0.45, 0.45, 0.45)</li>
+    </colorSpectrum>
+    <classicIdeo>true</classicIdeo>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>10</configurationListOrderPriority>
+    <pawnSingular>crew</pawnSingular>
+    <pawnsPlural>crews</pawnsPlural>
+    <categoryTag>Cinder</categoryTag>
+    <listOrderPriority>30</listOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+	<canUseAvoidGrid>true</canUseAvoidGrid>
+	<autoFlee>false</autoFlee>
+	
+    <leaderTitle>Lantern Bearer</leaderTitle>
+	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+	<fixedLeaderKinds>
+      <li>Cinder_Leader</li>
+    </fixedLeaderKinds>
+	
+    <factionIconPath>UI/Icon/fleetIcon</factionIconPath>
+    <techLevel>Spacer</techLevel>
+    <factionNameMaker>Cinder_LanternFleet</factionNameMaker>
+    <settlementNameMaker>Cinder_LanternFleetBase</settlementNameMaker>
+    <allowedCultures><li>Cinder_Culture</li></allowedCultures>
+	 <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+    </requiredMemes>
+	<allowedMemes>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+	   <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+    </allowedMemes>
+	<disallowedPrecepts>
+      <li>Slavery_Classic</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
+    </disallowedPrecepts>
+    <structureMemeWeights>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_Ideological>
+	   <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">0.3</Structure_OriginChristian>
+    </structureMemeWeights>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Cinder_Xenotype MayRequire="Ludeon.RimWorld.Biotech">1</Cinder_Xenotype>
+      </xenotypeChances>
+    </xenotypeSet>
+    <backstoryFilters>
+      <li>
+			<categories>
+			        <li>CinderStory</li>
+					<li>CinderStory_Refugee_Child</li>
+					<li>CinderStory_Refugee</li>
+					<li>CinderStory_DefenseCouncil_Child</li>
+					<li>CinderStory_DefenseCouncil</li>
+					<li>CinderStory_DefenseCouncil_CultChild</li>
+					<li>CinderStory_DefenseCouncil_Cult</li>
+					<li>CinderStory_ESDSP_Worker</li>
+					<li>CinderStory_DefenseCouncil_Agitator_Child</li>
+					<li>CinderStory_DefenseCouncil_Agitator</li>
+				</categories>
+		  </li>
+    </backstoryFilters>
+    <caravanTraderKinds>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+      <li>Cinder_LogisticsTransportationUnit</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>CinderBase_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>-60~65</allowedArrivalTemperatureRange>
+    <raidLootMaker>Cinder_OutlanderRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,80)</li>
+        <li>(200, 100)</li>
+		<li>(2300, 120)</li>
+		<li>(3000,400)</li>
+		<li>(8000,2000)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <!-- 常规部队 -->
+        <kindDef>Combat</kindDef>
+		<commonality>100</commonality>
+        <options>
+		  <Cinder_Cult>1</Cinder_Cult>
+		  <Cinder_OutlanderCivilan>3</Cinder_OutlanderCivilan>
+		  <Cinder_OutlanderSecond>6</Cinder_OutlanderSecond>
+		  <Cinder_Mech_MiniTurretWalker>60</Cinder_Mech_MiniTurretWalker>
+          <Cinder_Outlander>6</Cinder_Outlander>
+          <Cinder_Mech_WalkerAutoCannon>8</Cinder_Mech_WalkerAutoCannon>
+          <Cinder_EliteCult>10</Cinder_EliteCult>
+          <Cinder_OutlanderElite>1</Cinder_OutlanderElite>
+          <Cinder_Mech_WalkerSniper>12</Cinder_Mech_WalkerSniper>
+		  <Cinder_Mech_Tombstone>1200</Cinder_Mech_Tombstone>
+        </options>
+      </li>
+      <li>
+        <!-- 法术部队 -->
+        <kindDef>Combat</kindDef>
+        <commonality>80</commonality>
+        <options>
+          <Cinder_Cult>8</Cinder_Cult>
+          <Cinder_Mech_MiniTurretWalker>60</Cinder_Mech_MiniTurretWalker>
+          <Cinder_EliteCult>25</Cinder_EliteCult>
+		  <Cinder_OutlanderSecond>1</Cinder_OutlanderSecond>
+		  <Cinder_OutlanderElite>1</Cinder_OutlanderElite>
+          <Cinder_Mech_WalkerAutoCannon>12</Cinder_Mech_WalkerAutoCannon>
+		  <Cinder_Mech_WalkerSniper>12</Cinder_Mech_WalkerSniper>
+		  <Cinder_Mech_Tombstone>1200</Cinder_Mech_Tombstone>
+        </options>
+      </li>
+	  <li>
+        <!-- 破墙部队 -->
+        <kindDef>Combat</kindDef>
+		<commonality>10</commonality>
+        <options>
+          <Cinder_Cult>2.5</Cinder_Cult>
+		  <Cinder_OutlanderSecond>8</Cinder_OutlanderSecond>
+          <Cinder_Outlander>8</Cinder_Outlander>
+          <Cinder_Mech_WalkerAutoCannon>12</Cinder_Mech_WalkerAutoCannon>
+		  <Cinder_Grenadier>2</Cinder_Grenadier>
+          <Cinder_EliteCult>10</Cinder_EliteCult>
+          <Cinder_OutlanderElite>1</Cinder_OutlanderElite>
+          <Cinder_Mech_MiniTurretWalker>60</Cinder_Mech_MiniTurretWalker>
+		  <Cinder_Mech_Tombstone>1200</Cinder_Mech_Tombstone>
+        </options>
+      </li>
+	   <li>
+        <!-- 装甲部队 -->
+        <kindDef>Combat</kindDef>
+        <commonality>25</commonality>
+        <options>
+		  <Cinder_Mech_Krepost>1200</Cinder_Mech_Krepost>
+		  <Cinder_Outlander>1.5</Cinder_Outlander>
+		  <Cinder_Cult>1.5</Cinder_Cult>
+          <Cinder_EliteCult>1</Cinder_EliteCult>
+          <Cinder_OutlanderElite>1</Cinder_OutlanderElite>
+          <Cinder_Mech_WalkerSniper>12</Cinder_Mech_WalkerSniper>
+		  <Cinder_Mech_MiniTurretWalker>40</Cinder_Mech_MiniTurretWalker>
+		  <Cinder_Mech_WalkerAutoCannon>5</Cinder_Mech_WalkerAutoCannon>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Cinder_OutlanderCivilan>20</Cinder_OutlanderCivilan>
+          <Cinder_Outlander>10</Cinder_Outlander>
+          <Cinder_Mech_MiniTurretWalker>2</Cinder_Mech_MiniTurretWalker>
+		  <Cinder_Leader>1</Cinder_Leader>
+        </options>
+      </li>
+     <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Cinder_SupplyOfficer>1</Cinder_SupplyOfficer>
+        </traders>
+        <carriers>
+          <Cinder_Trailer>2</Cinder_Trailer>
+        </carriers>
+        <guards>
+          <Cinder_OutlanderCivilan>2.5</Cinder_OutlanderCivilan>
+		  <Cinder_OutlanderSecond>10</Cinder_OutlanderSecond>
+          <Cinder_Outlander>10</Cinder_Outlander>
+          <Cinder_Mech_MiniTurretWalker>5</Cinder_Mech_MiniTurretWalker>
+          <Cinder_Grenadier>1.5</Cinder_Grenadier>
+		  <Cinder_Cult>4</Cinder_Cult>
+          <Cinder_EliteCult>2</Cinder_EliteCult>
+        </guards>
+      </li>	
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Cinder_OutlanderCivilan>5</Cinder_OutlanderCivilan>
+          <Cinder_Outlander>5</Cinder_Outlander>
+		   <Cinder_OutlanderSecond>5</Cinder_OutlanderSecond>
+          <Cinder_Grenadier>1.5</Cinder_Grenadier>
+          <Cinder_OutlanderElite>3</Cinder_OutlanderElite>
+		  <Cinder_EliteCult>3</Cinder_EliteCult>
+		  <Cinder_Leader>1</Cinder_Leader>
+		  <Cinder_Mech_WalkerAutoCannon>2</Cinder_Mech_WalkerAutoCannon>
+          <Cinder_Mech_MiniTurretWalker>8</Cinder_Mech_MiniTurretWalker>
+          <Cinder_Mech_WalkerSniper>2</Cinder_Mech_WalkerSniper>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Cinder_OutlanderCivilan>1</Cinder_OutlanderCivilan>
+		   <Cinder_OutlanderSecond>0.5</Cinder_OutlanderSecond>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Cinder_Outlander>1</Cinder_Outlander>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Cinder_OutlanderCivilan>1</Cinder_OutlanderCivilan>
+		   <Cinder_OutlanderSecond>0.5</Cinder_OutlanderSecond>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Cinder_OutlanderCivilan>1</Cinder_OutlanderCivilan>
+		   <Cinder_OutlanderSecond>0.5</Cinder_OutlanderSecond>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>UI/Icon/CinderSettlement</settlementTexturePath>
+  </FactionDef>
+  
+  <ThingSetMakerDef>
+    <defName>Cinder_OutlanderRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+            <li>MedicineIndustrial</li>
+            <li>ComponentIndustrial</li>
+            <li>MealSurvivalPack</li>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+  
+  
+
+   <FactionDef ParentName="FactionBase">
+	 <defName>Cinder_ESDSP</defName>
+    <label>cradle</label>
+    <description>Driven to a dead end by the war, the cinders entrusted everything they had, including their own bodies, to DI in an attempt to end the conflict. However, the underlying logic of DI is chaotic, stemming from the Other god's blood and flesh remnants, rendering it incapable of making a correct judgment on whether the war has ended. Even thousands of years later, after the enclosed area dissipated and the so-called enemies were overthrown and disintegrated, it still cannot determine that the war is over. Instead, it gazes into the boundless starry sky and begins an endless war against any armed threat that has yet to surrender.</description>
+    <colorSpectrum>
+      <li>(1, 1, 1)</li>
+    </colorSpectrum>
+    <classicIdeo>true</classicIdeo>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>10</configurationListOrderPriority>
+    <pawnSingular>combat unit</pawnSingular>
+    <pawnsPlural>combat units</pawnsPlural>
+    <categoryTag>CinderESDSP</categoryTag>
+    <listOrderPriority>35</listOrderPriority>
+    <hidden>true</hidden>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+	<canUseAvoidGrid>true</canUseAvoidGrid>
+	<autoFlee>false</autoFlee>
+	
+    <factionIconPath>UI/Icon/Culture_Icon</factionIconPath>
+    <techLevel>Archotech</techLevel>
+	<earliestRaidDays>60</earliestRaidDays>
+    <permanentEnemy>true</permanentEnemy>
+    <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+	
+    <factionNameMaker>Cinder_Cradle</factionNameMaker>
+    <settlementNameMaker>Cinder_LanternFleetBase</settlementNameMaker>
+    <allowedCultures><li>Cinder_Culture</li></allowedCultures>
+	 <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+    </requiredMemes>
+	<allowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+	   <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+    </allowedMemes>
+	<disallowedPrecepts>
+      <li>Slavery_Classic</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
+    </disallowedPrecepts>
+    <structureMemeWeights>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_Ideological>
+      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">0.3</Structure_OriginChristian>
+    </structureMemeWeights>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Cinder_Xenotype MayRequire="Ludeon.RimWorld.Biotech">1</Cinder_Xenotype>
+      </xenotypeChances>
+    </xenotypeSet>
+    <backstoryFilters>
+      <li>
+			<categories>
+			        <li>CinderStory</li>
+					<li>CinderStory_Refugee_Child</li>
+					<li>CinderStory_ESDSP_Child</li>
+					<li>CinderStory_ESDSP_Worker</li>
+					<li>CinderStory_ESDSP_Ghoul</li>
+					<li>CinderStory_ESDSP_Soldier</li>
+			</categories>
+	  </li>
+    </backstoryFilters>
+    <raidLootMaker>Cinder_OutlanderRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(1500,180)</li>
+        <li>(2000,205)</li>
+		<li>(3000,400)</li>
+		<li>(5000,420)</li>
+		<li>(7000,1000)</li>
+		<li>(8000,2000)</li>
+		<li>(9000,2500)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <!-- 常规战斗单位 -->
+        <kindDef>Combat</kindDef>
+		<commonality>100</commonality>
+        <options>
+		  <Cinder_Ghoul>2</Cinder_Ghoul>
+		  <Cinder_SoliderUnit>2</Cinder_SoliderUnit>
+		   <Cinder_Mech_MiniTurretWalker>40</Cinder_Mech_MiniTurretWalker>
+		  <Cinder_EliteGhoul>2</Cinder_EliteGhoul>
+		  <Cinder_HeavySoliderUnit>10</Cinder_HeavySoliderUnit>
+		  <Cinder_Mech_WalkerAutoCannon>15</Cinder_Mech_WalkerAutoCannon>
+          <Cinder_Mech_WalkerSniper>15</Cinder_Mech_WalkerSniper>
+		   <Cinder_Mech_ErodedEXO>100</Cinder_Mech_ErodedEXO>
+		    <Cinder_Mech_MPTombstone>1200</Cinder_Mech_MPTombstone>
+        </options>
+      </li>
+	   <li>
+        <!-- 尸鬼单位 -->
+        <kindDef>Combat</kindDef>
+        <commonality>25</commonality>
+        <options>
+		  <Cinder_Ghoul>4</Cinder_Ghoul>
+		  <Cinder_EliteGhoul>4</Cinder_EliteGhoul>
+		  <Cinder_HeavySoliderUnit>2</Cinder_HeavySoliderUnit>
+		  <Cinder_Mech_WalkerAutoCannon>5</Cinder_Mech_WalkerAutoCannon>
+          <Cinder_Mech_MiniTurretWalker>40</Cinder_Mech_MiniTurretWalker>
+		  <Cinder_Mech_ErodedEXO>100</Cinder_Mech_ErodedEXO>
+		   <Cinder_Mech_MPTombstone>1200</Cinder_Mech_MPTombstone>
+        </options>
+      </li>
+      <li>
+        <!-- 装甲扫荡单位 -->
+        <kindDef>Combat</kindDef>
+        <commonality>75</commonality>
+        <options>
+		  <Cinder_EliteGhoul>2</Cinder_EliteGhoul>
+		   <Cinder_Ghoul>0.1</Cinder_Ghoul>
+		   <Cinder_SoliderUnit>0.1</Cinder_SoliderUnit>
+		  <Cinder_HeavySoliderUnit>10</Cinder_HeavySoliderUnit>
+		  <Cinder_Mech_MiniTurretWalker>40</Cinder_Mech_MiniTurretWalker>
+		   <Cinder_Mech_WalkerAutoCannon>15</Cinder_Mech_WalkerAutoCannon>
+          <Cinder_Mech_ErodedEXO>1000</Cinder_Mech_ErodedEXO>
+		  <Cinder_Mech_WarSweeper>1000</Cinder_Mech_WarSweeper>
+		  <Cinder_Mech_MPTombstone>1200</Cinder_Mech_MPTombstone>
+        </options>
+      </li>		
+	  <li>
+        <!-- 重装甲突破单位 -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+		 <Cinder_Mech_WarAttacker>1000</Cinder_Mech_WarAttacker>
+		   <Cinder_Mech_ErodedEXO>500</Cinder_Mech_ErodedEXO>
+		  <Cinder_EliteGhoul>2</Cinder_EliteGhoul>
+		   <Cinder_Ghoul>0.1</Cinder_Ghoul>
+		   <Cinder_SoliderUnit>0.1</Cinder_SoliderUnit>
+		  <Cinder_HeavySoliderUnit>2</Cinder_HeavySoliderUnit>
+		  <Cinder_Mech_MiniTurretWalker>40</Cinder_Mech_MiniTurretWalker>
+		  <Cinder_Mech_WalkerAutoCannon>5</Cinder_Mech_WalkerAutoCannon>
+		  <Cinder_Mech_MPTombstone>1200</Cinder_Mech_MPTombstone>
+        </options>
+      </li>
+	  <li>
+        <!-- 主战单位 -->
+        <kindDef>Combat</kindDef>
+        <commonality>25</commonality>
+        <options>
+		 <Cinder_Mech_ErodedEXO>1000</Cinder_Mech_ErodedEXO>
+		 <Cinder_Mech_Krepost>1200</Cinder_Mech_Krepost>
+		 <Cinder_Mech_MPTombstone>800</Cinder_Mech_MPTombstone>
+		  <Cinder_EliteGhoul>2</Cinder_EliteGhoul>
+		   <Cinder_Ghoul>0.1</Cinder_Ghoul>
+		   <Cinder_SoliderUnit>0.1</Cinder_SoliderUnit>
+		  <Cinder_HeavySoliderUnit>2</Cinder_HeavySoliderUnit>
+		  <Cinder_Mech_MiniTurretWalker>40</Cinder_Mech_MiniTurretWalker>
+		  <Cinder_Mech_WalkerAutoCannon>5</Cinder_Mech_WalkerAutoCannon>
+        </options>
+      </li>
+	  <li>
+        <!-- 破墙单位 -->
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+		  <Cinder_BreakUnit>2</Cinder_BreakUnit>
+		   <Cinder_Ghoul>0.1</Cinder_Ghoul>
+		  <Cinder_SoliderUnit>2</Cinder_SoliderUnit>
+		  <Cinder_HeavySoliderUnit>2</Cinder_HeavySoliderUnit>
+		  <Cinder_Mech_MiniTurretWalker>40</Cinder_Mech_MiniTurretWalker>
+		   <Cinder_Mech_WalkerAutoCannon>15</Cinder_Mech_WalkerAutoCannon>
+		  <Cinder_Mech_ErodedEXO>100</Cinder_Mech_ErodedEXO>
+		  <Cinder_Mech_MPTombstone>1200</Cinder_Mech_MPTombstone>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>UI/Icon/CinderSettlement</settlementTexturePath>
+	<modExtensions>
+			<li Class="Embergarden.ModExtension_FactionBehavior">
+				<steal>false</steal>
+				<canKidnap>false</canKidnap>
+				<timeoutFlee>false</timeoutFlee>
+			</li>
+		</modExtensions>
+  </FactionDef>
+</Defs>

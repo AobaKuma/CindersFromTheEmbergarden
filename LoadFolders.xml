@@ -4,7 +4,7 @@
 	<v1.5>
 		<li>/</li>
 		<li>1.5</li>
-        <li IfModActive="Ludeon.RimWorld.Royalty">1.5/Royalty</li>
+		<li IfModActive="Ludeon.RimWorld.Royalty">1.5/Royalty</li>
 		<li IfModActive="Ludeon.RimWorld.Biotech">1.5/Biotech</li>
 		<li IfModActive="IssacZhuang.PLA.Armory">1.5/CE/PLA</li>
 		<li IfModActive="CETeam.CombatExtended,CETeam.CombatExtended_steam">1.5/CE</li>
@@ -14,4 +14,16 @@
 		<li IfModActive="Aoba.DeadManSwitch.Core,Aoba.DeadManSwitch.Core_steam">1.5/DMS</li>
 		<li IfModActive="rim.job.world">1.5/RJW</li>
 	</v1.5>
+	<v1.6>
+		<li>/</li>
+		<li>1.6</li>
+		<li IfModActive="Ludeon.RimWorld.Royalty">1.6/Royalty</li>
+		<li IfModActive="Ludeon.RimWorld.Biotech">1.6/Biotech</li>
+		<li IfModActive="IssacZhuang.PLA.Armory">1.6/CE/PLA</li>
+		<li IfModActive="CETeam.CombatExtended,CETeam.CombatExtended_steam">1.6/CE</li>
+		<li IfModActive="nals.facialanimation">1.6/Mod/FacialAnimation</li>
+		<li IfModActive="erdelf.HumanoidAlienRaces,erdelf.HumanoidAlienRaces_steam">1.6/Har</li>
+		<li IfModNotActive="Ludeon.RimWorld.Biotech">1.6/NonBiotechPatch</li>
+		<li IfModActive="Aoba.DeadManSwitch.Core,Aoba.DeadManSwitch.Core_steam">1.6/DMS</li>
+	</v1.6>
 </loadFolders>

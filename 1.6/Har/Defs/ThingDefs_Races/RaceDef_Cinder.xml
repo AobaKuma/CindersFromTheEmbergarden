@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+		<defName>Alien_Cinder</defName>
+		<label>Cinder</label>
+		<description>“However, as prosperity inevitably leads to decline, this civilization did not escape the fate of destruction.” The Thucydides Trap led to a great war between two totalitarian regimes on this planet. The outcome of this war has long been lost to history, but one of its most direct consequences was a series of explosions at a nuclear power plant cluster in Siberia, part of the 'Eurasian Common Defense Agreement Alliance.' The massive energy and radioactive materials released from the explosions accidentally awakened a dormant avatar of an Other god deep within the planet (note: to be verified). The awakening of this Other god resulted in two chain reactions: first, the entire Siberian region and parts of Central Asia transformed into enclosed area, making them inaccessible and unobservable from the outside; second, those who were trapped inside the enclosed area, fortunate enough to have survived the war and the 'awakening,' underwent inhuman mutations. The modern scientific community unanimously agrees that these mutated humans are the original 'cinders.'</description>
+		<alienRace>
+			<generalSettings>
+				<maleGenderProbability>0.45</maleGenderProbability>
+				<immuneToAge>true</immuneToAge>
+				<canLayDown>true</canLayDown>
+				<maxDamageForSocialfight>8</maxDamageForSocialfight>
+				<humanRecipeImport>true</humanRecipeImport>
+				<disallowedTraits>
+					<li>
+						<defName>Wimp</defName>
+					</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">
+						<defName>Delicate</defName>
+					</li>
+				</disallowedTraits>
+				<forcedRaceTraitEntries>
+					<li>
+						<defName>Cinder_Coke</defName>
+					</li>
+				</forcedRaceTraitEntries>
+				<alienPartGenerator>
+					<!-- 컬러채널 -->
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="AlienRace.ColorGenerator_SkinColorMelanin">
+								<minMelanin>0</minMelanin>
+								<maxMelanin>0</maxMelanin>
+							</first>
+							<second Class="AlienRace.ColorGenerator_CustomAlienChannel">
+								<colorChannel>skin_1</colorChannel>
+							</second>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>8</weight>
+										<only>(0.26,0.24,0.20)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>(0.3,0.3,0.3)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>(0.2,0.2,0.2)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>(0.8,0.8,0.8)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+
+					<atlasScale>4</atlasScale>
+					<borderScale>1</borderScale>
+					<headTypes Inherit="False">
+						<li>Cinder_AverageNormal_A</li>
+						<li>Cinder_AverageNormal_B</li>
+						<li>Cinder_AverageNormal_C</li>
+						<li>Cinder_AverageNormal_D</li>
+						<li>Cinder_AverageNormal_E</li>
+						<li>Cinder_AverageNormal_F</li>
+						<li>Cinder_AverageNormal_G</li>
+					</headTypes>
+					<bodyTypes Inherit="False">
+						<li>Female</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodyTypes>
+					<oldHairAgeRange>75~95</oldHairAgeRange>
+					<oldHairColorGen Class="ColorGenerator_Options">
+						<options>
+							<li>
+								<min>(0.65,0.65,0.65)</min>
+								<max>(0.85,0.85,0.85)</max>
+							</li>
+						</options>
+					</oldHairColorGen>
+					<headOffset>(0.00, 0.015)</headOffset>
+					<headOffsetDirectional>
+						<north>
+							<offset>(0.0,0)</offset>
+						</north>
+						<south>
+							<offset>(0.0,0)</offset>
+						</south>
+					</headOffsetDirectional>
+					<offsetDefaults>
+						<li>
+							<name>CinderTentacles</name>
+							<offsets>
+								<south>
+									<layerOffset>-0.31</layerOffset>
+									<bodyTypes>
+										<Female>(0.0, 0.0)</Female>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0.0, 0.0)</Baby>
+										<Child MayRequire="ludeon.rimworld.biotech">(0.0, 0.0)</Child>
+									</bodyTypes>
+								</south>
+								<north>
+									<layerOffset>0</layerOffset>
+									<bodyTypes>
+										<Female>(0.0, 0.0)</Female>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0.0, 0.0)</Baby>
+										<Child MayRequire="ludeon.rimworld.biotech">(0.0, 0.0)</Child>
+									</bodyTypes>
+								</north>
+								<east>
+									<layerOffset>-0.31</layerOffset>
+									<bodyTypes>
+										<Female>(0.0, 0.0)</Female>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0.1,-0.04)</Baby>
+										<Child MayRequire="ludeon.rimworld.biotech">(0.1,-0.04)</Child>
+									</bodyTypes>
+								</east>
+								<west>
+									<layerOffset>-0.31</layerOffset>
+									<bodyTypes>
+										<Female>(0.0, 0.0)</Female>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0.1,-0.04)</Baby>
+										<Child MayRequire="ludeon.rimworld.biotech">(0.1,-0.04)</Child>
+									</bodyTypes>
+								</west>
+							</offsets>
+						</li>
+						<li>
+							<name>CinderFin</name>
+							<offsets>
+								<south>
+									<layerOffset>0</layerOffset>
+									<bodyTypes>
+										<Female>(0.0, 0.0)</Female>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0.0, 0.0)</Baby>
+										<Child MayRequire="ludeon.rimworld.biotech">(0.0, 0.0)</Child>
+									</bodyTypes>
+								</south>
+								<north>
+									<layerOffset>0</layerOffset>
+									<bodyTypes>
+										<Female>(0.0, 0.0)</Female>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0.0, 0.0)</Baby>
+										<Child MayRequire="ludeon.rimworld.biotech">(0.0, 0.0)</Child>
+									</bodyTypes>
+								</north>
+								<east>
+									<layerOffset>0</layerOffset>
+									<bodyTypes>
+										<Female>(0.0, 0.05)</Female>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0,0.04)</Baby>
+										<Child MayRequire="ludeon.rimworld.biotech">(0,0.04)</Child>
+									</bodyTypes>
+								</east>
+								<west>
+									<layerOffset>0</layerOffset>
+									<bodyTypes>
+										<Female>(0.0, 0.05)</Female>
+										<Baby MayRequire="ludeon.rimworld.biotech">(0,0.04)</Baby>
+										<Child MayRequire="ludeon.rimworld.biotech">(0,0.04)</Child>
+									</bodyTypes>
+								</west>
+							</offsets>
+						</li>
+					</offsetDefaults>
+					<bodyAddons>
+						<li>
+							<name>cinderFin</name>
+							<path>Things/Pawn/Humanlike/Body/CinderFin/CinderFin</path>
+							<shaderType>Cutout</shaderType>
+							<colorChannel>hair</colorChannel>
+							<alignWithHead>true</alignWithHead>
+							<!-- - -->
+							<conditions>
+								<RotStage>Fresh,Rotting</RotStage>
+							</conditions>
+							<offsets>
+								<north>
+									<layerOffset>0.0</layerOffset>
+								</north>
+								<south>
+									<layerOffset>0.0</layerOffset>
+								</south>
+								<east>
+									<layerOffset>0.0</layerOffset>
+								</east>
+								<west>
+									<layerOffset>0.0</layerOffset>
+								</west>
+							</offsets>
+							<!-- - -->
+							<inFrontOfBody>true</inFrontOfBody>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<defaultOffset>CinderFin</defaultOffset>
+							<userCustomizable>false</userCustomizable>
+						</li>
+						<li>
+							<name>tentacles</name>
+							<path>Things/Pawn/Humanlike/Body/CinderTentacle/CinderTentacle</path>
+							<shaderType>Cutout</shaderType>
+							<!-- - -->
+							<conditions>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+									<drawnInBed>false</drawnInBed>
+								</Posture>
+							</conditions>
+							<!-- - -->
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<defaultOffset>CinderTentacles</defaultOffset>
+							<!-- - -->
+							<userCustomizable>false</userCustomizable>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<head>
+					<path>Things/Pawn/Humanlike/Heads/CinderHead/CinderHead</path>
+					<extendedGraphics>
+						<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
+							Things/Pawn/Humanlike/Heads/GhoulHead/GhoulHead
+						</Hediff>
+					</extendedGraphics>
+				</head>
+				<body>
+					<path>Things/Pawn/Humanlike/Body/CinderNaked_Female</path>
+					<extendedGraphics>
+						<Age For="HumanlikeBaby" MayRequire="Ludeon.RimWorld.Biotech">
+							Things/Pawn/Humanlike/Body/CinderNaked_Child
+						</Age>
+						<Age For="HumanlikeChild" MayRequire="Ludeon.RimWorld.Biotech">
+							<path>Things/Pawn/Humanlike/Body/CinderNaked_Child</path>
+							<extendedGraphics>
+								<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
+									Things/Pawn/Humanlike/Body/GhoulNaked_Child
+								</Hediff>
+							</extendedGraphics>
+						</Age>
+						<Age For="HumanlikePreTeenager" MayRequire="Ludeon.RimWorld.Biotech">
+							Things/Pawn/Humanlike/Body/CinderNaked_Child
+						</Age>
+						<Age For="HumanlikeTeenager" MayRequire="Ludeon.RimWorld.Biotech">
+							Things/Pawn/Humanlike/Body/CinderNaked_Male
+						</Age>
+						<Age For="HumanlikeAdult">
+							<path>Things/Pawn/Humanlike/Body/CinderNaked_Female</path>
+							<extendedGraphics>
+								<Gender For="Female">
+									<extendedGraphics>
+										<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Things/Pawn/Humanlike/Body/GhoulNaked_Female</Hediff>
+									</extendedGraphics>
+								</Gender>
+								<Gender For="Male">
+									<path>Things/Pawn/Humanlike/Body/CinderNaked_Male</path>
+									<extendedGraphics>
+										<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Things/Pawn/Humanlike/Body/GhoulNaked_Male</Hediff>
+									</extendedGraphics>
+								</Gender>
+							</extendedGraphics>
+						</Age>
+					</extendedGraphics>
+				</body>
+				<skull>Things/Pawn/Humanlike/Heads/None_Average_Skull</skull>
+				<skeleton>Things/Pawn/Humanlike/HumanoidDessicated</skeleton>
+				<skinShader>Cutout</skinShader>
+				<apparel>
+					<bodyTypeFallback>Female</bodyTypeFallback>
+					<femaleBodyTypeFallback>Female</femaleBodyTypeFallback>
+				</apparel>
+			</graphicPaths>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTagsOverride>
+							<li>Cinder_Hair</li>
+						</styleTagsOverride>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+			<raceRestriction>
+				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
+				<onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
+				<blackEndoCategories>
+					<li>Melanin</li>
+					<li>BodyType</li>
+					<li>Ears</li>
+					<li>Nose</li>
+					<li>Voice</li>
+					<li>Headbone</li>
+					<li>Head</li>
+					<li>Jaw</li>
+					<li>HairColor</li>
+				</blackEndoCategories>
+				<blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
+					<li MayRequire="Ludeon.RimWorld.Biotech">HairStyle</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">EyeColor</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">BeardStyle</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Fur</li>
+				</blackGeneTags>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Furskin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+				</blackGeneList>
+				<blackXenotypeList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Dirtmole</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Genie</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Neanderthal</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pigskin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Impid</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Waster</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Highmate</li>
+				</blackXenotypeList>
+				<apparelList>
+					<li>Cinder_Apparel_Commemorative</li>
+					<li>Cinder_Apparel_SnowyNightShawl</li>
+					<li>Cinder_Apparel_SnowyNight</li>
+					<li>Cinder_Apparel_StarryShawl</li>
+					<li>Cinder_Apparel_Starry</li>
+					<li>Cinder_Apparel_GhoulUnitGear</li>
+					<li>Cinder_Apparel_BrokenGhoulUnitGear</li>
+					<li>Cinder_Apparel_Exotic</li>
+					<li>Cinder_Apparel_GhostCloak</li>
+					<li>Cinder_Apparel_GhostUnderwear</li>
+					<li>Cinder_Apparel_NightService</li>
+					<li>Cinder_Apparel_MaidCostume</li>
+					<li>Cinder_Apparel_Projection</li>
+				</apparelList>
+				<whiteXenotypeList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Cinder_Xenotype</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
+				</whiteXenotypeList>
+			</raceRestriction>
+		</alienRace>
+		<!--=============================================================================================================================-->
+		<race>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>100</lifeExpectancy>
+			<bloodDef>Filth_Blood</bloodDef>
+			<bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
+			<!-- 피 -->
+			<leatherDef>Leather_Human</leatherDef>
+			<nameCategory>HumanStandard</nameCategory>
+			<body>Cinder</body>
+			<!-- 피 -->
+			<renderTree>Humanlike</renderTree>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<baseHungerRate>1</baseHungerRate>
+			<foodType>OmnivoreHuman</foodType>
+			<gestationPeriodDays>18</gestationPeriodDays>
+			<meatMarketValue>0.8</meatMarketValue>
+			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+			<soundCallIntervalRange>2000~5000</soundCallIntervalRange>
+			<canBecomeShambler>true</canBecomeShambler>
+			<knowledgeCategory MayRequire="Ludeon.RimWorld.Anomaly">Basic</knowledgeCategory>
+			<anomalyKnowledge>1</anomalyKnowledge>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0.02)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>HumanlikeBaby</def>
+					<minAge>0</minAge>
+					<headOffset>(0, -0.03)</headOffset>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>HumanlikeChild</def>
+					<minAge>3</minAge>
+					<headOffset>(0, -0.015)</headOffset>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien" MayRequire="Ludeon.RimWorld.Biotech">
+					<def>HumanlikePreTeenager</def>
+					<minAge>9</minAge>
+					<headOffset>(0, -0.02)</headOffset>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>HumanlikeTeenager</def>
+					<minAge>13</minAge>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>HumanlikeAdult</def>
+					<minAge>18</minAge>
+				</li>
+			</lifeStageAges>
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+				<PatientBedRest>0</PatientBedRest>
+				<Patient>0</Patient>
+				<Hauling>3</Hauling>
+				<Cleaning>3</Cleaning>
+				<BasicWorker>3</BasicWorker>
+				<Firefighter>7</Firefighter>
+				<Handling>7</Handling>
+				<Cooking>7</Cooking>
+				<Hunting>7</Hunting>
+				<Growing>7</Growing>
+				<Mining>7</Mining>
+				<Crafting>7</Crafting>
+				<Tailoring>7</Tailoring>
+				<PlantCutting>7</PlantCutting>
+				<Doctor>10</Doctor>
+				<Warden>10</Warden>
+				<Construction>10</Construction>
+				<Art>10</Art>
+				<Smithing>13</Smithing>
+				<Research>13</Research>
+				<DarkStudy MayRequire="Ludeon.RimWorld.Anomaly">13</DarkStudy>
+			</lifeStageWorkSettings>
+			<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>
+					<!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to
+					becoming adults -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li>
+					<!-- End exclude -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+					<li>(14,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
+					<li>(16,100)</li>
+					<li>(50,100)</li>
+					<li>(60,30)</li>
+					<li>(70,18)</li>
+					<li>(80,10)</li>
+					<li>(90,3)</li>
+					<li>(100,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+				<li>Human</li>
+			</hediffGiverSets>
+		</race>
+		<statBases>
+			<MarketValue>1750</MarketValue>
+			<RoyalFavorValue>4</RoyalFavorValue>
+			<Mass>75</Mass>
+			<MoveSpeed>4.6</MoveSpeed>
+			<Flammability>1</Flammability>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<ComfyTemperatureMin>6</ComfyTemperatureMin>
+			<MeatAmount>80</MeatAmount>
+			<LeatherAmount>75</LeatherAmount>
+			<CarryingCapacity>75</CarryingCapacity>
+			<ImmunityGainSpeed>1.1</ImmunityGainSpeed>
+			<PsychicSensitivity>1</PsychicSensitivity>
+			<MeleeDodgeChance>1</MeleeDodgeChance>
+			<WorkSpeedGlobal>1</WorkSpeedGlobal>
+			<DrugSynthesisSpeed>1</DrugSynthesisSpeed>
+			<ResearchSpeed>1</ResearchSpeed>
+			<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">1.15</HackingSpeed>
+			<MedicalTendSpeed>1</MedicalTendSpeed>
+			<MedicalTendQuality>1</MedicalTendQuality>
+			<MedicalSurgerySuccessChance>1</MedicalSurgerySuccessChance>
+		</statBases>
+		<butcherProducts>
+			<Steel>2</Steel>
+		</butcherProducts>
+		<recipes>
+		</recipes>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.07</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="Embergarden.CompProperties_AddHediff">
+				<hediffDefs>
+					<li>Cinder_UncontrollableTentacles</li>
+					<li>Cinder_Regen</li>
+					<li>Cinder_EyeHediff</li>
+					<li>Cinder_Resurrect</li>
+				</hediffDefs>
+
+				<skipPawnKindDefs>
+					<li MayRequire="xmb.ancientthreat.mo">BreadMo_AAT_BasePawnKind</li>
+				</skipPawnKindDefs>
+			</li>
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>Cinder_AmorphousPolymer</thingToSpawn>
+				<spawnCount>15</spawnCount>
+				<spawnIntervalRange>
+					<min>1000000</min>
+					<max>1400000</max>
+				</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			</li>
+		</comps>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

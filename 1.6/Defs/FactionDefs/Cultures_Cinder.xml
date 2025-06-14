@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <CultureDef>
+    <defName>Cinder_Culture</defName>
+    <label>Firewood</label>
+    <description>On the home planet of Cinder, Earth, this ancient planet, there are harsh environments, scarce resources, recurring hatred, and endless wars. All of this has shaped their ideology today.</description>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">Cinder_NamerIdeo</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityAstropolitan</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerAstropolitan</deityTypeMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">Cinder_NamerLeader</leaderTitleMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+    <allowedPlaceTags>
+      <li>OriginSpacer</li>
+    </allowedPlaceTags>
+    <iconPath>UI/Icon/Culture_Icon</iconPath>
+    <iconColor>(1, 1, 1)</iconColor>
+    <thingStyleCategories>
+      <li MayRequire="XMB.AmorphousStylePack.MO">
+        <category>BreadMo_AAT_Amorphous</category>
+        <priority>2</priority>
+      </li>
+    </thingStyleCategories>
+    <styleItemTags>
+      <li>
+        <tag>Cinder_Hair</tag>
+         <baseWeight>10</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+	  <li>
+        <tag>Urban</tag>
+        <baseWeight>5</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoBeard</tag>
+        <baseWeight>10</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoTattoo</tag>
+        <baseWeight>10</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+  </CultureDef>
+  
+   <StyleItemCategoryDef>
+    <defName>CinderHair</defName>
+    <label>cinder</label>
+  </StyleItemCategoryDef>
+</Defs>

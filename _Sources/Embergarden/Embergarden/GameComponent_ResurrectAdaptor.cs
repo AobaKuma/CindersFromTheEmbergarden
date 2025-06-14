@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using RimWorld.Planet;
 using System.Collections.Generic;
 using Verse;
 
@@ -31,7 +32,7 @@ namespace Embergarden
             if (def != null && Find.FactionManager.FirstFactionOfDef(def) == null)
             {
                 Log.Warning("[Cinder from the Embergarden] Cradle faction missing. Recreating");
-                FactionGenerator.GenerateFactionsIntoWorld([def]);
+                FactionGenerator.GenerateFactionsIntoWorldLayer(Find.World.grid.Surface, [def]);
             }
         }
     }

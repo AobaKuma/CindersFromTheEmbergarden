@@ -3,16 +3,44 @@
   "WorkspaceRootPath": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C47413C3-A576-41C0-A30E-8DB98C8B9406}|EmbergardenCE\\EmbergardenCE.csproj|d:\\steam\\steamapps\\common\\rimworld\\mods\\_cindersfromtheembergarden\\_sources\\embergarden\\embergardence\\verb_sprayce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C47413C3-A576-41C0-A30E-8DB98C8B9406}|EmbergardenCE\\EmbergardenCE.csproj|solutionrelative:embergardence\\verb_sprayce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|d:\\steam\\steamapps\\common\\rimworld\\mods\\_cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\gamecomponent_resurrectadaptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\gamecomponent_resurrectadaptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|d:\\steam\\steamapps\\common\\rimworld\\mods\\_cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\hediffcomp_eexclusivehediff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\hediffcomp_eexclusivehediff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|d:\\steam\\steamapps\\common\\rimworld\\mods\\_cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\comp_turrettransformable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\comp_turrettransformable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\embergarden\\coneexplosionutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\coneexplosionutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|d:\\steam\\steamapps\\common\\rimworld\\mods\\_cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\building_traptentacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\building_traptentacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|d:\\steam\\steamapps\\common\\rimworld\\mods\\_cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\building_trapexplosive_rechargeable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\building_trapexplosive_rechargeable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|d:\\steam\\steamapps\\common\\rimworld\\mods\\_cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\comptentaclespreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\comptentaclespreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\embergarden\\multiturrets\\compvehicleweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\multiturrets\\compvehicleweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|d:\\steam\\steamapps\\common\\rimworld\\mods\\_cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\projectile_tentacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\projectile_tentacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C47413C3-A576-41C0-A30E-8DB98C8B9406}|EmbergardenCE\\EmbergardenCE.csproj|d:\\steam\\steamapps\\common\\rimworld\\mods\\_cindersfromtheembergarden\\_sources\\embergarden\\embergardence\\verb_sprayce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C47413C3-A576-41C0-A30E-8DB98C8B9406}|EmbergardenCE\\EmbergardenCE.csproj|solutionrelative:embergardence\\verb_sprayce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\embergarden\\hediffcomp_eexclusivehediff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\hediffcomp_eexclusivehediff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C47413C3-A576-41C0-A30E-8DB98C8B9406}|EmbergardenCE\\EmbergardenCE.csproj|D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\embergardence\\projectile_coneexplosionce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\embergarden\\harmonypatch\\harmonyentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\harmonypatch\\harmonyentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\embergarden\\coneexplosionutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\coneexplosionutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\embergarden\\harmonypatch\\pawngizmopatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,19 +98,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 327,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Verb_SprayCE.cs",
-              "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\EmbergardenCE\\Verb_SprayCE.cs",
-              "RelativeDocumentMoniker": "EmbergardenCE\\Verb_SprayCE.cs",
-              "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\EmbergardenCE\\Verb_SprayCE.cs",
-              "RelativeToolTip": "EmbergardenCE\\Verb_SprayCE.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAIwDIAAAArAAAAAAAAAA==",
+              "Title": "GameComponent_ResurrectAdaptor.cs",
+              "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\GameComponent_ResurrectAdaptor.cs",
+              "RelativeDocumentMoniker": "Embergarden\\GameComponent_ResurrectAdaptor.cs",
+              "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\GameComponent_ResurrectAdaptor.cs",
+              "RelativeToolTip": "Embergarden\\GameComponent_ResurrectAdaptor.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA1wCIAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T05:39:28.751Z",
+              "WhenOpened": "2025-06-14T13:19:05.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Comp_TurretTransformable.cs",
+              "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Comp_TurretTransformable.cs",
+              "RelativeDocumentMoniker": "Embergarden\\Comp_TurretTransformable.cs",
+              "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Comp_TurretTransformable.cs",
+              "RelativeToolTip": "Embergarden\\Comp_TurretTransformable.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwCYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T13:18:44.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Building_TrapTentacle.cs",
+              "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Building_TrapTentacle.cs",
+              "RelativeDocumentMoniker": "Embergarden\\Building_TrapTentacle.cs",
+              "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Building_TrapTentacle.cs",
+              "RelativeToolTip": "Embergarden\\Building_TrapTentacle.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAAAH4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T13:14:08.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Building_TrapExplosive_Rechargeable.cs",
+              "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Building_TrapExplosive_Rechargeable.cs",
+              "RelativeDocumentMoniker": "Embergarden\\Building_TrapExplosive_Rechargeable.cs",
+              "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Building_TrapExplosive_Rechargeable.cs",
+              "RelativeToolTip": "Embergarden\\Building_TrapExplosive_Rechargeable.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T13:12:21.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CompTentacleSpreader.cs",
+              "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\CompTentacleSpreader.cs",
+              "RelativeDocumentMoniker": "Embergarden\\CompTentacleSpreader.cs",
+              "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\CompTentacleSpreader.cs",
+              "RelativeToolTip": "Embergarden\\CompTentacleSpreader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T13:12:17.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Projectile_Tentacle.cs",
+              "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Projectile_Tentacle.cs",
+              "RelativeDocumentMoniker": "Embergarden\\Projectile_Tentacle.cs",
+              "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Projectile_Tentacle.cs",
+              "RelativeToolTip": "Embergarden\\Projectile_Tentacle.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA2wBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T13:10:32.976Z",
               "EditorCaption": ""
             },
             {
@@ -94,12 +187,21 @@
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Verb_SprayCE.cs",
+              "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\EmbergardenCE\\Verb_SprayCE.cs",
+              "RelativeDocumentMoniker": "EmbergardenCE\\Verb_SprayCE.cs",
+              "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\EmbergardenCE\\Verb_SprayCE.cs",
+              "RelativeToolTip": "EmbergardenCE\\Verb_SprayCE.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAiwGwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T05:39:28.751Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "HediffComp_EexclusiveHediff.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\HediffComp_EexclusiveHediff.cs",
               "RelativeDocumentMoniker": "Embergarden\\HediffComp_EexclusiveHediff.cs",
@@ -112,19 +214,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "CompVehicleWeapon.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\MultiTurrets\\CompVehicleWeapon.cs",
               "RelativeDocumentMoniker": "Embergarden\\MultiTurrets\\CompVehicleWeapon.cs",
               "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\MultiTurrets\\CompVehicleWeapon.cs",
               "RelativeToolTip": "Embergarden\\MultiTurrets\\CompVehicleWeapon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAqwFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T10:16:15.415Z"
+              "WhenOpened": "2025-02-11T10:16:15.415Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "Projectile_ConeExplosionCE.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\EmbergardenCE\\Projectile_ConeExplosionCE.cs",
               "RelativeDocumentMoniker": "EmbergardenCE\\Projectile_ConeExplosionCE.cs",
@@ -132,11 +235,12 @@
               "RelativeToolTip": "EmbergardenCE\\Projectile_ConeExplosionCE.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T10:15:19.672Z"
+              "WhenOpened": "2025-02-11T10:15:19.672Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "HediffComp_ProtectiveShield.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\HediffComp_ProtectiveShield.cs",
               "RelativeDocumentMoniker": "Embergarden\\HediffComp_ProtectiveShield.cs",
@@ -144,11 +248,12 @@
               "RelativeToolTip": "Embergarden\\HediffComp_ProtectiveShield.cs",
               "ViewState": "AgIAAFkAAAAAAAAAAAAUwFcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T23:18:50.23Z"
+              "WhenOpened": "2025-01-28T23:18:50.23Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "Gizmo_AttachmentShieldStatus.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Gizmo_AttachmentShieldStatus.cs",
               "RelativeDocumentMoniker": "Embergarden\\Gizmo_AttachmentShieldStatus.cs",
@@ -156,11 +261,12 @@
               "RelativeToolTip": "Embergarden\\Gizmo_AttachmentShieldStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T23:18:47.596Z"
+              "WhenOpened": "2025-01-28T23:18:47.596Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "Projectile_ConeExplosive.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\ConeExplosion\\Projectile_ConeExplosive.cs",
               "RelativeDocumentMoniker": "Embergarden\\ConeExplosion\\Projectile_ConeExplosive.cs",
@@ -168,11 +274,12 @@
               "RelativeToolTip": "Embergarden\\ConeExplosion\\Projectile_ConeExplosive.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T17:36:41.103Z"
+              "WhenOpened": "2025-01-20T17:36:41.103Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "Pawn_DraftController_Postfix.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\HarmonyPatch\\Pawn_DraftController_Postfix.cs",
               "RelativeDocumentMoniker": "Embergarden\\HarmonyPatch\\Pawn_DraftController_Postfix.cs",
@@ -180,11 +287,12 @@
               "RelativeToolTip": "Embergarden\\HarmonyPatch\\Pawn_DraftController_Postfix.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T12:26:54.279Z"
+              "WhenOpened": "2025-01-19T12:26:54.279Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "PawnGizmoPatch.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\HarmonyPatch\\PawnGizmoPatch.cs",
               "RelativeDocumentMoniker": "Embergarden\\HarmonyPatch\\PawnGizmoPatch.cs",
@@ -192,11 +300,12 @@
               "RelativeToolTip": "Embergarden\\HarmonyPatch\\PawnGizmoPatch.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwC8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T05:10:54.19Z"
+              "WhenOpened": "2025-01-19T05:10:54.19Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "Patch_DrawVehicleTurret.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\HarmonyPatch\\Patch_DrawVehicleTurret.cs",
               "RelativeDocumentMoniker": "Embergarden\\HarmonyPatch\\Patch_DrawVehicleTurret.cs",
@@ -204,11 +313,12 @@
               "RelativeToolTip": "Embergarden\\HarmonyPatch\\Patch_DrawVehicleTurret.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T04:55:59.082Z"
+              "WhenOpened": "2025-01-19T04:55:59.082Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "Projectile_CompExplosive.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Projectile_CompExplosive.cs",
               "RelativeDocumentMoniker": "Embergarden\\Projectile_CompExplosive.cs",
@@ -216,11 +326,12 @@
               "RelativeToolTip": "Embergarden\\Projectile_CompExplosive.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T10:50:19.324Z"
+              "WhenOpened": "2025-01-19T10:50:19.324Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "Projectile_ConeExplosion.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Projectile_ConeExplosion.cs",
               "RelativeDocumentMoniker": "Embergarden\\Projectile_ConeExplosion.cs",
@@ -228,23 +339,25 @@
               "RelativeToolTip": "Embergarden\\Projectile_ConeExplosion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T10:46:16.205Z"
+              "WhenOpened": "2025-01-19T10:46:16.205Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "ConeExplosionUtility.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\ConeExplosionUtility.cs",
               "RelativeDocumentMoniker": "Embergarden\\ConeExplosionUtility.cs",
               "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\ConeExplosionUtility.cs",
               "RelativeToolTip": "Embergarden\\ConeExplosionUtility.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAowCoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T10:39:28.005Z"
+              "WhenOpened": "2025-01-19T10:39:28.005Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "Hediff_DynamicCap.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Hediff_DynamicCap.cs",
               "RelativeDocumentMoniker": "Embergarden\\Hediff_DynamicCap.cs",
@@ -252,11 +365,12 @@
               "RelativeToolTip": "Embergarden\\Hediff_DynamicCap.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T07:05:59.294Z"
+              "WhenOpened": "2025-01-19T07:05:59.294Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "HarmonyEntry.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\HarmonyPatch\\HarmonyEntry.cs",
               "RelativeDocumentMoniker": "Embergarden\\HarmonyPatch\\HarmonyEntry.cs",
@@ -264,11 +378,12 @@
               "RelativeToolTip": "Embergarden\\HarmonyPatch\\HarmonyEntry.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T05:10:07.378Z"
+              "WhenOpened": "2025-01-19T05:10:07.378Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "ThingClass_AltGraphic.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\ThingClass_AltGraphic.cs",
               "RelativeDocumentMoniker": "Embergarden\\ThingClass_AltGraphic.cs",
@@ -276,7 +391,8 @@
               "RelativeToolTip": "Embergarden\\ThingClass_AltGraphic.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAiwDoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T10:38:40.982Z"
+              "WhenOpened": "2025-01-18T10:38:40.982Z",
+              "EditorCaption": ""
             }
           ]
         }

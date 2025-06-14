@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FacialAnimation.MouthTypeDef>
+	  <defName>Cinder_MouthNormal</defName>
+	  <texPath>Things/Pawn/Cinder/Mouth/Normal</texPath>
+	  <shader>Map/Transparent</shader>
+	  <raceName>Alien_Cinder</raceName>
+  </FacialAnimation.MouthTypeDef>
+</Defs>

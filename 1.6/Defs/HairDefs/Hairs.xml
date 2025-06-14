@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>	
+	<HairDef Abstract="True" Name="BaseCinderHair">
+		<styleTags>
+			<li>Cinder_Hair</li>
+			<li>HairLong</li>
+		</styleTags>
+		<category>CinderHair</category>
+	</HairDef>
+
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairA</defName>
+		<label>bread</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Bread</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairB</defName>
+		<label>bun</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Bun</texPath>
+	</HairDef>
+		<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairC</defName>
+		<label>chiffon</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Chiffon</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairD</defName>
+		<label>cinnamon</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Cinnamon</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairE</defName>
+		<label>cookies</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Cookies</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairF</defName>
+		<label>croissant</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Croissant</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairG</defName>
+		<label>laurel</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Laurel</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairH</defName>
+		<label>licorice</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Licorice</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairI</defName>
+		<label>loaf</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Loaf</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairJ</defName>
+		<label>lowDoublePony</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_LowDoublePony</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairK</defName>
+		<label>midPony</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_MidPony</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairL</defName>
+		<label>muse</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Muse</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairM</defName>
+		<label>rumple</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Rumple</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairN</defName>
+		<label>sideTail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_SideTail</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairO</defName>
+		<label>solemn</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Solemn</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairP</defName>
+		<label>wheat</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Wheat</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairQ</defName>
+		<label>twilight</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Twilight</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairR</defName>
+		<label>flour</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Flour</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairS</defName>
+		<label>roti</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Roti</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairT</defName>
+		<label>big cake</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_BigCake</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairU</defName>
+		<label>charming</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Charming</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairV</defName>
+		<label>dirty bread</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_DirtyBread</texPath>
+	</HairDef>
+</Defs>
