@@ -16,6 +16,8 @@
 			<MeatAmount>0</MeatAmount>
 			<ArmorRating_Heat>2.00</ArmorRating_Heat>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+			<NecrotionResistance MayRequireAnyOf="BlackMarket420.TAOFC,BlackMarket420.TAOFC.1.5">2.0</NecrotionResistance>
+	        <NecrotionEnvironmentResistance MayRequireAnyOf="BlackMarket420.TAOFC,BlackMarket420.TAOFC.1.5">2.0</NecrotionEnvironmentResistance>
 		</statBases>
 		<damageMultipliers>
 			<li MayRequire="CETeam.CombatExtended">
@@ -53,6 +55,10 @@
 			<li>
 				<damageDef>Thump</damageDef>
 				<multiplier>7.5</multiplier>
+			</li>
+			<li MayRequire="BlackMarket420.TAOFC.1.5">
+				<damageDef>Damage_ExtremeInfection</damageDef>
+				<multiplier>0</multiplier>
 			</li>
 		</damageMultipliers>
 		<receivesSignals>true</receivesSignals>

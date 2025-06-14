@@ -43,6 +43,10 @@
 				<damageDef>Thump</damageDef>
 				<multiplier>7.5</multiplier>
 			</li>
+			<li MayRequire="BlackMarket420.TAOFC.1.5">
+				<damageDef>Damage_ExtremeInfection</damageDef>
+				<multiplier>0</multiplier>
+			</li>
 		</damageMultipliers>
 		<race>
 			<intelligence>ToolUser</intelligence>
