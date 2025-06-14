@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FacialAnimation.EyeballTypeDef>  
+  	<defName>Cinder_EyeNormal1</defName>
+  	<texPath>Things/Pawn/Cinder/Eyes/Normal1</texPath>
+  	<altMaskPath>Things/Pawn/Cinder/Eyes/Common</altMaskPath>
+    <shader>Map/CutoutSkinOverlay</shader>
+    <minColor>RGB(250,250,250)</minColor>
+    <maxColor>RGB(255,255,255)</maxColor>
+	<!-- <probability>100</probability> --><!-- 出現率 -->
+	<raceName>Alien_Cinder</raceName><!-- 將圖檔指定給該種族用 -->
+  </FacialAnimation.EyeballTypeDef>
+
+  <FacialAnimation.EyeballTypeDef>  
+  	<defName>Cinder_EyeNormal2</defName>
+  	<texPath>Things/Pawn/Cinder/Eyes/Normal2</texPath>
+  	<altMaskPath>Things/Pawn/Cinder/Eyes/Common</altMaskPath>
+    <shader>Map/CutoutSkinOverlay</shader>
+    <minColor>RGB(250,250,250)</minColor>
+    <maxColor>RGB(255,255,255)</maxColor>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.EyeballTypeDef>
+
+  <FacialAnimation.EyeballTypeDef>  
+  	<defName>Cinder_EyeNormal3</defName>
+  	<texPath>Things/Pawn/Cinder/Eyes/Normal3</texPath>
+  	<altMaskPath>Things/Pawn/Cinder/Eyes/Common</altMaskPath>
+    <shader>Map/CutoutSkinOverlay</shader>
+    <minColor>RGB(250,250,250)</minColor>
+    <maxColor>RGB(255,255,255)</maxColor>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.EyeballTypeDef>
+  
+  <FacialAnimation.EyeballTypeDef>  
+  	<defName>Cinder_EyeNormal4</defName>
+  	<texPath>Things/Pawn/Cinder/Eyes/Normal4</texPath>
+  	<altMaskPath>Things/Pawn/Cinder/Eyes/Common</altMaskPath>
+    <shader>Map/CutoutSkinOverlay</shader>
+    <minColor>RGB(250,250,250)</minColor>
+    <maxColor>RGB(255,255,255)</maxColor>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.EyeballTypeDef>
+
+  <FacialAnimation.EyeballTypeDef>  
+  	<defName>Cinder_EyeNormal5</defName>
+  	<texPath>Things/Pawn/Cinder/Eyes/Normal5</texPath>
+  	<altMaskPath>Things/Pawn/Cinder/Eyes/Common</altMaskPath>
+    <shader>Map/CutoutSkinOverlay</shader>
+    <minColor>RGB(250,250,250)</minColor>
+    <maxColor>RGB(255,255,255)</maxColor>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.EyeballTypeDef>
+
+  <FacialAnimation.EyeballTypeDef>  
+  	<defName>Cinder_EyeNormal6</defName>
+  	<texPath>Things/Pawn/Cinder/Eyes/Normal6</texPath>
+  	<altMaskPath>Things/Pawn/Cinder/Eyes/Common</altMaskPath>
+    <shader>Map/CutoutSkinOverlay</shader>
+    <minColor>RGB(250,250,250)</minColor>
+    <maxColor>RGB(255,255,255)</maxColor>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.EyeballTypeDef>
+
+  <FacialAnimation.EyeballTypeDef>  
+  	<defName>Cinder_EyeNormal7</defName>
+  	<texPath>Things/Pawn/Cinder/Eyes/Normal7</texPath>
+  	<altMaskPath>Things/Pawn/Cinder/Eyes/Common</altMaskPath>
+    <shader>Map/CutoutSkinOverlay</shader>
+    <minColor>RGB(250,250,250)</minColor>
+    <maxColor>RGB(255,255,255)</maxColor>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.EyeballTypeDef>
+
+</Defs>

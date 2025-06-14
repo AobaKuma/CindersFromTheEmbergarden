@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FacialAnimation.FaceAnimationDef>
+    <defName>RemoveApparel_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>10</duration>
+        <lidOffset>(0,0,0.0)</lidOffset>
+        <eyeballOffset>(-0.005,0,0.005)</eyeballOffset>
+        <mouthShapeDef>open</mouthShapeDef>
+        <headShapeDef>blush</headShapeDef>
+      </li>
+      <li>
+        <duration>10</duration>
+        <lidOffset>(0,0,0.0)</lidOffset>
+        <eyeballOffset>(0.005,0,0.005)</eyeballOffset>
+        <mouthShapeDef>open</mouthShapeDef>
+        <headShapeDef>blush</headShapeDef>
+      </li>
+      <li>
+        <duration>10</duration>
+        <lidOffset>(0,0,0.0)</lidOffset>
+        <eyeballOffset>(0,0,0.005)</eyeballOffset>
+        <mouthShapeDef>open</mouthShapeDef>
+        <headShapeDef>blush</headShapeDef>
+      </li>
+    </animationFrames>
+    <targetJobs>
+      <li>RemoveApparel</li>
+    </targetJobs>
+    <priority>105</priority>
+    <applyWhenStandingOnly>true</applyWhenStandingOnly>
+    <roopIntervalMin>30 </roopIntervalMin>
+    <roopIntervalMax>300</roopIntervalMax>
+  </FacialAnimation.FaceAnimationDef>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>RemoveApparel2_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>1</duration>
+        <browShapeDef>s-shaped</browShapeDef>
+        <lidShapeDef>normal</lidShapeDef>
+        <eyeballOffset>(0.0,0,0.005)</eyeballOffset>
+        <headShapeDef>blush</headShapeDef>
+      </li>
+    </animationFrames>
+    <targetJobs>
+      <li>RemoveApparel</li>
+    </targetJobs>
+    <priority>104</priority>
+    <applyWhenStandingOnly>true</applyWhenStandingOnly>
+  </FacialAnimation.FaceAnimationDef>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>RemoveApparel3_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>120</duration>
+        <browShapeDef>flat</browShapeDef>
+        <lidShapeDef>close</lidShapeDef>
+        <headOffset>(0.0,0,0.005)</headOffset>
+        <headShapeDef>blush</headShapeDef>
+      </li>
+    </animationFrames>
+    <targetJobs>
+      <li>RemoveApparel</li>
+    </targetJobs>
+    <priority>110</priority>
+    <applyWhenStandingOnly>true</applyWhenStandingOnly>
+    <roopIntervalMin>30 </roopIntervalMin>
+    <roopIntervalMax>300</roopIntervalMax>
+  </FacialAnimation.FaceAnimationDef>
+</Defs>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FacialAnimation.FaceAnimationDef>
+    <defName>painHigh_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>1</duration>
+        <lidOptionShapeDef>tear</lidOptionShapeDef>
+      </li>
+    </animationFrames>
+    <targetPainMin>0.4</targetPainMin>
+    <targetPainMax>1.0</targetPainMax>
+    <priority>100000</priority>
+  </FacialAnimation.FaceAnimationDef>
+
+
+</Defs>

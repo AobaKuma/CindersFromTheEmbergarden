@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<PawnRenderTreeDef>
+		<defName>Cinder_ErodedExo</defName>
+		<root Class="PawnRenderNodeProperties_Parent">
+			<debugLabel>Root</debugLabel>
+			<tagDef>Root</tagDef>
+			<children>
+				<li>
+					<debugLabel>Body</debugLabel>
+					<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+					<workerClass>PawnRenderNodeWorker_Body</workerClass>
+					<tagDef>Body</tagDef>
+					<skipFlag>Body</skipFlag>
+					<colorType>Skin</colorType>
+					<useRottenColor>true</useRottenColor>
+					<useSkinShader>true</useSkinShader>
+					<children>
+						<li Class="PawnRenderNodeProperties_Parent">
+							<debugLabel>Apparel root</debugLabel>
+							<tagDef>ApparelBody</tagDef>
+							<baseLayer>20</baseLayer>
+							<drawSize>1.1</drawSize>
+						</li>
+						<li Class="PawnRenderNodeProperties_Overlay">
+							<debugLabel>Firefoam</debugLabel>
+							<workerClass>PawnRenderNodeWorker_OverlayFirefoam</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<baseLayer>40</baseLayer>
+						</li>
+					</children>
+				</li>
+				<li Class="PawnRenderNodeProperties_Carried">
+					<debugLabel>Weapon/carried thing</debugLabel>
+					<workerClass>PawnRenderNodeWorker_Carried</workerClass>
+				</li>
+			</children>
+		</root>
+	</PawnRenderTreeDef>
+
+	<ThingDef ParentName="BaseMechanoid" Name="Cinder_BaseMechaWalker" Abstract="True">
+		<statBases>
+			<MoveSpeed>5.3</MoveSpeed>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<StaggerDurationFactor>0</StaggerDurationFactor>
+			<EMPResistance MayRequire="Ludeon.RimWorld.Biotech">0.6</EMPResistance>
+			 <MechEnergyLossPerHP MayRequire="Ludeon.RimWorld.Biotech">0.15</MechEnergyLossPerHP>
+		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>Arrow</damageDef>
+				<multiplier>0.20</multiplier>
+			</li>
+			<li>
+				<damageDef>Cut</damageDef>
+				<multiplier>0.70</multiplier>
+			</li>
+			<li>
+				<damageDef>Burn</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li>
+				<damageDef>Stab</damageDef>
+				<multiplier>0.70</multiplier>
+			</li>
+			<li>
+				<damageDef>Poke</damageDef>
+				<multiplier>0.70</multiplier>
+			</li>
+			<li>
+				<damageDef>Bite</damageDef>
+				<multiplier>0.1</multiplier>
+			</li>
+			<li>
+				<damageDef>Blunt</damageDef>
+				<multiplier>0.7</multiplier>
+			</li>
+			<li>
+				<damageDef>ArrowHighVelocity</damageDef>
+				<multiplier>0.2</multiplier>
+			</li>
+			<li>
+				<damageDef>RangedStab</damageDef>
+				<multiplier>0.2</multiplier>
+			</li>
+			<li>
+				<damageDef>Stun</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<baseBodySize>2</baseBodySize>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					  <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+                      <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+                      <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+                      <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+                      <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<butcherProducts>
+			<Cinder_AmorphousPolymer>75</Cinder_AmorphousPolymer>
+		</butcherProducts>
+	</ThingDef>
+
+	<ThingDef ParentName="Cinder_BaseMechaWalker">
+		<defName>Cinder_Mech_ErodedEXO</defName>
+		<label>eroded exoskeleton</label>
+		<description>A three meter high mass-produced main attack armored mecha, used to fill the gap between infantry and tanks, carrying many weapons and anti tank missiles, and is a component of the armored torrent.</description>
+		<tools>
+			<li>
+				<label>Left tentacle</label>
+				<labelNoLocation>tentacle</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20.0</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>right tentacle</label>
+				<labelNoLocation>tentacle</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20.0</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>Front tentacle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>35.5</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<renderTree>Cinder_ErodedExo</renderTree>
+			<body>Cinder_ErodedEXO</body>
+			<baseHealthScale>4</baseHealthScale>
+			<detritusLeavings>
+				<li>
+					<def>Cinder_ChunkSlag</def>
+					<spawnChance>0.5</spawnChance>
+				</li>
+				<li>
+					<def>Cinder_ChunkSlag</def>
+					<spawnChance>0.5</spawnChance>
+				</li>
+			</detritusLeavings>
+		</race>
+		<statBases>
+			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">4</BandwidthCost>
+		</statBases>
+		<comps>
+			<li Class="Embergarden.CompProperties_VehicleWeapon">
+				<drawData>
+					<dataEast>
+						<offset>(0.4,0,-0.85)</offset>
+					</dataEast>
+					<dataWest>
+						<offset>(-0.4,0,1.2)</offset>
+						<layer>-3</layer>
+					</dataWest>
+					<dataSouth>
+						<offset>(-1.1,0,-0.25)</offset>
+					</dataSouth>
+					<dataNorth>
+						<offset>(1.1,0,0.25)</offset>
+					</dataNorth>
+				</drawData>
+				<turretRotationFollowPawn>true</turretRotationFollowPawn>
+				<rotationSmoothTime>0.12</rotationSmoothTime>
+			</li>
+			<li Class="Embergarden.CompProperties_MultipleTurretGun">
+				<subTurrets>
+					<li>
+						<ID>exo turret</ID>
+						<turret>Cinder_Mounted_EXOturret</turret>
+						<autoAttack>true</autoAttack>
+						<warmingTime>0.9</warmingTime>
+						<angleOffset>-90</angleOffset>
+						<renderNodeProperties>
+							<li>
+								<nodeClass>Embergarden.PawnRenderNode_SubTurretGun</nodeClass>
+								<workerClass>Embergarden.PawnRenderNodeWorker_SubTurretGun</workerClass>
+								<parentTagDef>Body</parentTagDef>
+								<drawSize>0.5</drawSize>
+								<baseLayer>5</baseLayer>
+								<pawnType>Any</pawnType>
+								<drawData>
+									<dataEast>
+										<offset>(0.25,0,1.2)</offset>
+									</dataEast>
+									<dataWest>
+										<offset>(-0.35,0,0)</offset>
+										<rotationOffset>180</rotationOffset>
+									</dataWest>
+									<dataSouth>
+										<offset>(0.75,0,0.65)</offset>
+									</dataSouth>
+									<dataNorth>
+										<offset>(-0.75,0,0.9)</offset>
+									</dataNorth>
+								</drawData>
+							</li>
+						</renderNodeProperties>
+					</li>
+					<li>
+						<ID>exo minigun</ID>
+						<turret>Cinder_Mounted_EXOminigun</turret>
+						<autoAttack>true</autoAttack>
+						<warmingTime>1.2</warmingTime>
+						<angleOffset>-90</angleOffset>
+						<renderNodeProperties>
+							<li>
+								<nodeClass>Embergarden.PawnRenderNode_SubTurretGun</nodeClass>
+								<workerClass>Embergarden.PawnRenderNodeWorker_SubTurretGun</workerClass>
+								<parentTagDef>Body</parentTagDef>
+								<drawSize>0.75</drawSize>
+								<baseLayer>5</baseLayer>
+								<pawnType>Any</pawnType>
+								<drawData>
+									<dataEast>
+										<offset>(0.95,0,-0.85)</offset>
+									</dataEast>
+									<dataWest>
+										<offset>(-1.1,0,0.5)</offset>
+										<layer>-5</layer>
+										<rotationOffset>180</rotationOffset>
+									</dataWest>
+									<dataSouth>
+										<offset>(-1.05,0,-0.7)</offset>
+									</dataSouth>
+									<dataNorth>
+										<offset>(1.05,0,1.05)</offset>
+									</dataNorth>
+								</drawData>
+							</li>
+						</renderNodeProperties>
+					</li>
+				</subTurrets>
+			</li>
+		</comps>
+		 <killedLeavings>
+            <Cinder_ChunkSlag>2</Cinder_ChunkSlag>
+			<Cinder_ErodedMechComponent>1</Cinder_ErodedMechComponent>
+        </killedLeavings>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>Cinder_Mech_ErodedEXO</defName>
+		<label>eroded exoskeleton</label>
+		<race>Cinder_Mech_ErodedEXO</race>
+		<combatPower>900</combatPower>
+         <maxPerGroup>3</maxPerGroup>
+		 <allowInMechClusters>false</allowInMechClusters>
+         <isBoss>true</isBoss>
+		<lifeStages>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mech/ErodedEXO</texPath>
+					<shaderType>CutoutComplex</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(1.1, 1.0, 1.1)</volume>
+					</shadowData>
+					<drawOffset>(0,0,0.25)</drawOffset>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mech/ErodedEXO</texPath>
+					<shaderType>CutoutComplex</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(1.1, 1.0, 1.1)</volume>
+					</shadowData>
+					<drawOffset>(0,0,0.25)</drawOffset>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<abilities>
+      <li>Cinder_LaunchHellfireMissile</li>
+    </abilities>
+		<weaponMoney>9999~9999</weaponMoney>
+		<weaponTags>
+			<li>Cinder_EXOGun</li>
+		</weaponTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+	</PawnKindDef>
+
+</Defs>

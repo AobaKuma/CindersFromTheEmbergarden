@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FacialAnimation.FaceAnimationDef>
+    <defName>Mine_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>10</duration>
+        <lidOffset>(0,0,0.005)</lidOffset>
+        <headOffset>(0,0,0)</headOffset>
+        <browShapeDef>angled</browShapeDef>
+        <mouthOffset>(0,0,0.0025)</mouthOffset>
+        <mouthShapeDef>open</mouthShapeDef>
+      </li>
+      <li>
+        <duration>5</duration>
+        <lidOffset>(0,0,0.01)</lidOffset>
+        <headOffset>(0,0,-0.01)</headOffset>
+        <browShapeDef>angled</browShapeDef>
+        <mouthOffset>(0,0,-0.0025)</mouthOffset>
+        <mouthShapeDef>open</mouthShapeDef>
+      </li>
+    </animationFrames>
+    <roopIntervalMin>0</roopIntervalMin>
+    <roopIntervalMax>0</roopIntervalMax>
+    <targetJobs>
+      <li>Mine</li>
+    </targetJobs>
+    <priority>10000</priority>
+    <applyWhenStandingOnly>true</applyWhenStandingOnly>
+  </FacialAnimation.FaceAnimationDef>
+</Defs>

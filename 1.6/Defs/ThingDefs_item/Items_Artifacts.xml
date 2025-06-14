@@ -1,0 +1,730 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase" Name="Cinder_ArtifactBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<techLevel>Archotech</techLevel>
+		<thingCategories>
+			<li>Cinder_Amorphous</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Cinder_Artifact</li>
+		</tradeTags>
+		<statBases>
+			<Mass>0.5</Mass>
+		</statBases>
+		<comps>
+			<li Class="Embergarden.CompProperties_UsableTargetable">
+				<useJob>UseItem</useJob>
+				<targetingJobDef>Cinder_UseSerum</targetingJobDef>
+				<useLabel>Use {0_label}</useLabel>
+				<showUseGizmo>true</showUseGizmo>
+				<useDuration>132</useDuration>
+				<targetingFloatMenuLabel>Inject serum for others</targetingFloatMenuLabel>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf" />
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>Cinder_ErosionAgent</defName>
+		<label>erosion agent</label>
+		<description>A drug containing large amount of amorphous polymer, which imparts special abilities after injection.</description>
+		<tradeability>None</tradeability>
+		<graphicData>
+			<texPath>Things/Item/ErosionAgent</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<thingClass>ThingWithComps</thingClass>
+		<techLevel>Archotech</techLevel>
+		<thingCategories>
+			<li>Cinder_Amorphous</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Cinder_Artifact</li>
+		</tradeTags>
+		<stealable>false</stealable>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>5</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>true</useHitPoints>
+		<relicChance>0</relicChance>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<Mass>0.5</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<thingSetMakerTags IsNull="true"/>
+		<comps>
+		    <li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Use {0_label}</useLabel>
+				<useDuration>40</useDuration>
+				<showUseGizmo>true</showUseGizmo>
+			</li>
+			<li Class="Embergarden.CompProperties_UseEffect_RandomAbilityGain">
+				<abilityDefs>
+					<li>Cinder_BurnHemostasis</li>
+					<li>Cinder_SuffocatingWhispers</li>
+					<li>Cinder_EternalFearAbility</li>
+					<li>Cinder_FearPulse</li>
+					<li>Cinder_ErosionSkip</li>
+					<li>Cinder_AmorphousWall</li>
+					<li>Cinder_AmorphousIED</li>
+					<li>Cinder_AmorphousWinding</li>
+					<li>Cinder_ErodedBomb</li>
+				</abilityDefs>
+				<compClass>Embergarden.CompUseEffect_RandomAbilityGain</compClass>
+			</li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>MechSerumUsed</soundOnUsed>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf" />
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Cinder_ArtifactBase">
+		<defName>Cinder_RegeneratedEnhancedSerum</defName>
+		<label>regeneration enhanced serum</label>
+		<description>A type of eroded golden serum, injected into the human body, enhances the regeneration ability of amorphous polymers and gives the user the ability to come back to life after death.</description>
+		<tradeability>None</tradeability>
+		<graphicData>
+			<texPath>Things/Item/RegeneratedEnhancedSerum/RegeneratedEnhancedSerum</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stealable>false</stealable>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>5</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>true</useHitPoints>
+		<relicChance>0</relicChance>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<MaxHitPoints>2000</MaxHitPoints>
+		</statBases>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<thingSetMakerTags IsNull="true"/>
+		<comps>
+			<li Class="CompProperties_UseEffect">
+				<compClass>Embergarden.CompUseEffect_ActivateHediffs</compClass>
+			</li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>MechSerumUsed</soundOnUsed>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>Cinder_EmptyAgentBottle</defName>
+		<label>empty agent bottle</label>
+		<description>An empty agent bottle with a mysterious structure, when filled with corresponding materials, will automatically mix and release nanomechanics to transform the contents into corresponding drugs.</description>
+		<possessionCount>2</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/RegeneratedEnhancedSerum/EmptyAgentBottle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<techLevel>Archotech</techLevel>
+		<thingCategories>
+			<li>Cinder_Amorphous</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Cinder_Artifact</li>
+		</tradeTags>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<MarketValue>900</MarketValue>
+			<SellPriceFactor>0.1</SellPriceFactor>
+			<Mass>1.5</Mass>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<allowedArchonexusCount>5</allowedArchonexusCount>
+		<comps>
+			<li Class="CompProperties_CompAnalyzableUnlockResearch">
+				<analysisID>122249063</analysisID>
+
+				<!-- Analyzable -->
+
+				<analysisDurationHours>0.25</analysisDurationHours>
+				<destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+				<completedLetterLabel>Empty agent bottle studied: {RESEARCH} unlocked</completedLetterLabel>
+				<completedLetter>By studying the empty agent bottle, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+
+				<!-- Interactable -->
+
+				<activateTexPath>UI/Icons/Study</activateTexPath>
+
+				<activateLabelString>Analyze...</activateLabelString>
+				<activateDescString>Analyze the empty agent bottle.</activateDescString>
+				<jobString>analyze empty agent bottle</jobString>
+				<guiLabelString>Choose who should analyze this</guiLabelString>
+				<inspectString>Can be analyzed by a colonist.</inspectString>
+
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>Cinder_ErodedMechComponent</defName>
+		<label>eroded mech component</label>
+		<description>A special mechanical component, which may be some kind of photoelectric sensor or advanced chip, a signal transmission and reception device connected to DI. The technology for manufacturing it has not been mastered and can only be obtained by defeating combat units or from ancient ruins.</description>
+		<possessionCount>2</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/ErodedMechComponent/ErodedMechComponent</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<techLevel>Archotech</techLevel>
+		<thingCategories>
+			<li>Cinder_Amorphous</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>500</MarketValue>
+			<Mass>1.5</Mass>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<allowedArchonexusCount>5</allowedArchonexusCount>
+		<comps>
+			<li Class="CompProperties_CompAnalyzableUnlockResearch">
+				<analysisID>122249069</analysisID>
+
+				<!-- Analyzable -->
+
+				<analysisDurationHours>0.25</analysisDurationHours>
+				<destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+				<completedLetterLabel>Eroded mech component studied: {RESEARCH} unlocked</completedLetterLabel>
+				<completedLetter>By studying the eroded mech component, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+
+				<!-- Interactable -->
+
+				<activateTexPath>UI/Icons/Study</activateTexPath>
+
+				<activateLabelString>Analyze...</activateLabelString>
+				<activateDescString>Analyze the eroded mech component.</activateDescString>
+				<jobString>analyze eroded mech component</jobString>
+				<guiLabelString>Choose who should analyze this</guiLabelString>
+				<inspectString>Can be analyzed by a colonist.</inspectString>
+
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
+			</li>
+		</comps>
+	</ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+		<defName>Cinder_AmorphousNeuralSpine</defName>
+		<label>amorphous neural spine</label>
+		<description>A component containing unknown biological neural structures that can make self judgments and provide responses based on collected data, completely different from the technological route of artificial intelligence, and appears to be the core component of some kind of autonomous machinery.</description>
+		<possessionCount>2</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/AmorphousNeuralSpine/AmorphousNeuralSpine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<techLevel>Archotech</techLevel>
+		<thingCategories>
+			<li>Cinder_Amorphous</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>5000</MaxHitPoints>
+			<MarketValue>500</MarketValue>
+			<Mass>1.5</Mass>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<allowedArchonexusCount>5</allowedArchonexusCount>
+		<comps>
+			<li Class="CompProperties_CompAnalyzableUnlockResearch">
+				<analysisID>122249072</analysisID>
+
+				<!-- Analyzable -->
+
+				<analysisDurationHours>0.25</analysisDurationHours>
+				<destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+				<completedLetterLabel>Amorphous neural spine: {RESEARCH} unlocked</completedLetterLabel>
+				<completedLetter>By studying the amorphous neural spine, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+
+				<!-- Interactable -->
+
+				<activateTexPath>UI/Icons/Study</activateTexPath>
+
+				<activateLabelString>Analyze...</activateLabelString>
+				<activateDescString>Analyze the amorphous neural spine.</activateDescString>
+				<jobString>analyze amorphous neural spine</jobString>
+				<guiLabelString>Choose who should analyze this</guiLabelString>
+				<inspectString>Can be analyzed by a colonist.</inspectString>
+
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+	<RecipeDef>
+		<defName>Make_Cinder_ErosionAgent</defName>
+		<label>make erosion agent</label>
+		<description>Make erosion agent.</description>
+		<jobString>Making erosion agent.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>6000</workAmount>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_EmptyAgentBottle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>65</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_BurntStrangeMeat</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cinder_AmorphousPolymer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Cinder_ErosionAgent>1</Cinder_ErosionAgent>
+		</products>
+		<recipeUsers>
+			<li>Cinder_AncientWorkstation</li>
+		</recipeUsers>
+		<researchPrerequisite>Cinder_TwistedPharmacology</researchPrerequisite>
+		<skillRequirements>
+			<Medicine>6</Medicine>
+		</skillRequirements>
+		<workSkill>Medicine</workSkill>
+		<displayPriority>0</displayPriority>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>Make_Cinder_RegeneratedEnhancedSerum</defName>
+		<label>make regenerated enhanced serum</label>
+		<description>Make regenerated enhanced serum.</description>
+		<jobString>Making regenerated enhanced serum.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>6000</workAmount>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_EmptyAgentBottle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Gold</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Cinder_RegeneratedEnhancedSerum>1</Cinder_RegeneratedEnhancedSerum>
+		</products>
+		<recipeUsers>
+			<li>Cinder_AncientWorkstation</li>
+		</recipeUsers>
+		<researchPrerequisite>Cinder_TwistedPharmacology</researchPrerequisite>
+		<skillRequirements>
+			<Medicine>6</Medicine>
+		</skillRequirements>
+		<workSkill>Medicine</workSkill>
+		<displayPriority>0</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Make_5Cinder_RegeneratedEnhancedSerum</defName>
+		<label>make regenerated enhanced serum from mech serum</label>
+		<description>Make regenerated enhanced serum from mech serum.</description>
+		<jobString>Making regenerated enhanced serum from mech serum.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>12000</workAmount>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_EmptyAgentBottle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MechSerumResurrector</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MechSerumHealer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Gold</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Cinder_RegeneratedEnhancedSerum>4</Cinder_RegeneratedEnhancedSerum>
+		</products>
+		<recipeUsers>
+			<li>Cinder_AncientWorkstation</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Medicine>6</Medicine>
+		</skillRequirements>
+		<workSkill>Medicine</workSkill>
+		<displayPriority>0</displayPriority>
+	</RecipeDef>
+	
+
+	<ThingDef ParentName="ResourceBase" Name="Cinder_BaseModificationItem" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<useHitPoints>true</useHitPoints>
+		<tradeTags>
+			<li>Serum</li>
+		</tradeTags>
+		<tradeability>Buyable</tradeability>
+		<stackLimit>10</stackLimit>
+		<thingCategories>
+			<li>Manufactured</li>
+			<li>Cinder_Amorphous</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Use {0_label}</useLabel>
+				<useDuration>40</useDuration>
+				<showUseGizmo>true</showUseGizmo>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Cinder_BaseModificationItem">
+		<defName>Cinder_ExtraArmour</defName>
+		<label>extra armour plates</label>
+		<description>A sturdy metal plate separated from amorphous polymer. Once damaged, the armor plating must be completely replaced.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Cinder_ExtraArmourPlate</HediffDef>
+			<RecipeDef>Make_Cinder_ExtraArmour</RecipeDef>
+			<ThingDef>Cinder_AncientWorkstation</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/ExtraArmour</texPath>
+			<graphicClass>Graphic_Stackcount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>460</MaxHitPoints>
+			<MarketValue>60</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.7</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_UseEffectAddHediff">
+				<hediffDef>Cinder_ExtraArmourPlate</hediffDef>
+				<allowRepeatedUse>true</allowRepeatedUse>
+			</li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>Cinder_Transform</soundOnUsed>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf" />
+			<li Class="CompProperties_CompAnalyzableUnlockResearch">
+				<analysisID>122249062</analysisID>
+
+				<!-- Analyzable -->
+
+				<analysisDurationHours>0.25</analysisDurationHours>
+				<destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+				<completedLetterLabel>Extra armour plate studied: {RESEARCH} unlocked</completedLetterLabel>
+				<completedLetter>By studying the extra armour plate, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+
+				<!-- Interactable -->
+
+				<activateTexPath>UI/Icons/Study</activateTexPath>
+
+				<activateLabelString>Analyze...</activateLabelString>
+				<activateDescString>Analyze the extra armour plate.</activateDescString>
+				<jobString>analyze extra armour plate</jobString>
+				<guiLabelString>Choose who should analyze this</guiLabelString>
+				<inspectString>Can be analyzed by a colonist.</inspectString>
+
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="Cinder_BaseModificationItem">
+		<defName>Cinder_HeavyExtraArmour</defName>
+		<label>heavy armour plates</label>
+		<description>A heavy sturdy metal plate separated from amorphous polymer. Once damaged, the armor plating must be completely replaced.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Cinder_ExtraArmourPlateII</HediffDef>
+			<RecipeDef>Make_Cinder_HeavyExtraArmour</RecipeDef>
+			<ThingDef>Cinder_AncientWorkstation</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/HeavyArmour</texPath>
+			<graphicClass>Graphic_Stackcount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>460</MaxHitPoints>
+			<MarketValue>120</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.7</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_UseEffectAddHediff">
+				<hediffDef>Cinder_ExtraArmourPlateII</hediffDef>
+				<allowRepeatedUse>true</allowRepeatedUse>
+			</li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>Cinder_Transform</soundOnUsed>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf" />
+		</comps>
+	</ThingDef>
+
+	<RecipeDef>
+		<defName>Make_Cinder_ExtraArmour</defName>
+		<label>make extra armour plates</label>
+		<description>Make extra armour plates.</description>
+		<jobString>Making extra armour plates.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>6000</workAmount>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Gold</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Cinder_ExtraArmour>3</Cinder_ExtraArmour>
+			<Cinder_BurntStrangeMeat>75</Cinder_BurntStrangeMeat>
+		</products>
+		<recipeUsers>
+			<li>Cinder_AncientWorkstation</li>
+		</recipeUsers>
+		<researchPrerequisite>Cinder_Separation</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<displayPriority>0</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Make_Cinder_HeavyExtraArmour</defName>
+		<label>make extra armour plates</label>
+		<description>Make extra armour plates.</description>
+		<jobString>Making extra armour plates.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>6000</workAmount>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>120</count>
+		    </li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>	
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Cinder_HeavyExtraArmour>2</Cinder_HeavyExtraArmour>
+			<Cinder_BurntStrangeMeat>120</Cinder_BurntStrangeMeat>
+		</products>
+		<recipeUsers>
+			<li>Cinder_AncientWorkstation</li>
+		</recipeUsers>
+		<researchPrerequisite>Cinder_HeavyArmor</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<displayPriority>0</displayPriority>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Make_Cinder_BurntStrangeMeat</defName>
+		<label>Chop amorphous polymer to obtain burnt strange meat</label>
+		<description>Separate burnt strange meat from amorphous polymer.</description>
+		<jobString>Separating burnt strange meat from amorphous polymer.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<workAmount>1800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<products>
+			<Cinder_BurntStrangeMeat>150</Cinder_BurntStrangeMeat>
+		</products>
+		<recipeUsers>
+			<li>Cinder_AncientWorkstation</li>
+			<li>ButcherSpot</li>
+			<li>TableButcher</li>
+		</recipeUsers>
+		<researchPrerequisite>Cinder_Separation</researchPrerequisite>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+		<displayPriority>0</displayPriority>
+	</RecipeDef>
+</Defs>

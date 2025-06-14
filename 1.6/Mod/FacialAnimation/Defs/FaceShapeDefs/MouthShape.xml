@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FacialAnimation.MouthShapeDef>
+  	<defName>normal</defName>
+  </FacialAnimation.MouthShapeDef>
+  
+  <FacialAnimation.MouthShapeDef>
+    <defName>open</defName>
+  </FacialAnimation.MouthShapeDef>
+
+  <FacialAnimation.MouthShapeDef>
+    <defName>smile</defName>
+    <altShapeDef>normal</altShapeDef>
+  </FacialAnimation.MouthShapeDef>
+
+  <FacialAnimation.MouthShapeDef>
+    <defName>sad</defName>
+    <altShapeDef>normal</altShapeDef>
+  </FacialAnimation.MouthShapeDef>
+
+  <FacialAnimation.MouthShapeDef>
+    <defName>tight</defName>
+    <altShapeDef>normal</altShapeDef>
+  </FacialAnimation.MouthShapeDef>
+
+  <FacialAnimation.MouthShapeDef>
+    <defName>surprise</defName>
+    <altShapeDef>open</altShapeDef>
+  </FacialAnimation.MouthShapeDef>
+
+  <FacialAnimation.MouthShapeDef>
+    <defName>puzzle</defName>
+    <altShapeDef>open</altShapeDef>
+  </FacialAnimation.MouthShapeDef>
+  
+  <!-- customized -->
+  <FacialAnimation.MouthShapeDef>
+    <defName>lovin</defName>
+  </FacialAnimation.MouthShapeDef>
+</Defs>

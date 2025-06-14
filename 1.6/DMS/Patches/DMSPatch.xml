@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+		    
+		<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/thingClass</xpath>
+					<value>
+                    <thingClass>DMS.WeaponUsableMech</thingClass>
+				</value>
+		</Operation>
+	
+	    <Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_Tombstone"]/thingClass</xpath>
+					<value>
+                    <thingClass>DMS.WeaponUsableMech</thingClass>
+				</value>
+		</Operation>
+	
+        <Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/race/thinkTreeMain</xpath>
+					<value>
+                    <thinkTreeMain>DMS_Mechanoid</thinkTreeMain>
+				</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_Tombstone"]/race/thinkTreeMain</xpath>
+					<value>
+                    <thinkTreeMain>DMS_Mechanoid</thinkTreeMain>
+				</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/comps</xpath>
+					<value>
+                       <li MayRequire="Ludeon.Rimworld.Biotech" Class="DMS.CompProperties_DeadManSwitch" />
+					</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Cinder_Mech_Tombstone"]/comps</xpath>
+					<value>
+                       <li MayRequire="Ludeon.Rimworld.Biotech" Class="DMS.CompProperties_DeadManSwitch" />
+					</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Cinder_MechGun_AnvilDiscipline"]/destroyOnDrop</xpath>
+					<value>
+                       <destroyOnDrop>false</destroyOnDrop>
+					</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Cinder_MechGun_AnvilDiscipline"]</xpath>
+					<value>
+                        <recipeMaker>
+			                <recipeUsers Inherit="false">
+				               <li>Cinder_AncientWorkstation</li>
+			                </recipeUsers>
+							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+                            <workSkill>Crafting</workSkill>
+                            <effectWorking>Smith</effectWorking>
+                            <soundWorking>Recipe_Smith</soundWorking>
+							<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+                            <researchPrerequisite>Cinder_MainBattleWalker</researchPrerequisite>
+		                </recipeMaker>
+						<costList>
+		                   	<Steel>100</Steel>
+			                <Cinder_AmorphousPolymer>200</Cinder_AmorphousPolymer>
+			                <ComponentIndustrial>15</ComponentIndustrial>
+							<Cinder_ErodedMechComponent>1</Cinder_ErodedMechComponent>
+	                   	</costList>
+					</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Cinder_MechGun_AnvilDiscipline"]/smeltable</xpath>
+					<value>
+                       <smeltable>true</smeltable>
+					   <smeltProducts>
+			              <Steel>120</Steel>
+		               </smeltProducts>
+					</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Cinder_MechGun_AnvilDiscipline"]/useHitPoints</xpath>
+					<value>
+                       <useHitPoints>true</useHitPoints>
+					</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Cinder_MechGun_AnvilDiscipline"]/statBases</xpath>
+					<value>
+                       <MaxHitPoints>300</MaxHitPoints>
+					</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Cinder_MechGun_AnvilDiscipline"]</xpath>
+					<value>
+			               <li Class="DMS.HeavyEquippableExtension">
+			              	<EquippableDef>UltraHeavyAutomatroid</EquippableDef>
+			               </li>
+					</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Cinder_MechGun_AnvilDiscipline"]/tools</xpath>
+				<value>
+                   	<tools>
+				    <li Class="CombatExtended.ToolCE">
+					<label>stock</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>28</power>
+					<cooldownTime>1.55</cooldownTime>
+					<chanceFactor>1.5</chanceFactor>
+					<armorPenetrationBlunt>27.55</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+				    </li>
+				     <li Class="CombatExtended.ToolCE">
+					<label>barrel</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>25</power>
+					<cooldownTime>2.02</cooldownTime>
+					<armorPenetrationBlunt>16.30</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+				    </li>
+				    <li Class="CombatExtended.ToolCE">
+					<label>muzzle</label>
+					<capacities>
+						<li>Poke</li>
+					</capacities>
+					<power>28</power>
+					<cooldownTime>1.55</cooldownTime>
+					<armorPenetrationBlunt>27.55</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+				    </li>
+			     </tools>
+				</value>
+			</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

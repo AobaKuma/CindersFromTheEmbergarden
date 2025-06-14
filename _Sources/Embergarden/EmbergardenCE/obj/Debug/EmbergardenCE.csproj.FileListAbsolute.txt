@@ -12,3 +12,5 @@ D:\Steam\steamapps\common\RimWorld\Mods\_CindersFromTheEmbergarden\1.5\CE\Assemb
 D:\Steam\steamapps\common\RimWorld\Mods\_CindersFromTheEmbergarden\1.5\CE\Assemblies\EmbergardenCE.pdb
 D:\Steam\steamapps\common\RimWorld\Mods\_CindersFromTheEmbergarden\_Sources\Embergarden\EmbergardenCE\obj\Debug\Embergar.E4F93D7A.Up2Date
 D:\Steam\steamapps\common\RimWorld\Mods\_CindersFromTheEmbergarden\_Sources\Embergarden\EmbergardenCE\obj\Debug\EmbergardenCE.pdb
+D:\Steam\steamapps\common\RimWorld\Mods\_CindersFromTheEmbergarden\1.6\CE\Assemblies\EmbergardenCE.dll
+D:\Steam\steamapps\common\RimWorld\Mods\_CindersFromTheEmbergarden\1.6\CE\Assemblies\EmbergardenCE.pdb

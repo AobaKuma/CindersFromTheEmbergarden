@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FacialAnimation.FaceAnimationDef>
+    <defName>Strip_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>10</duration>
+        <lidOffset>(0,0,0.0)</lidOffset>
+        <eyeballOffset>(-0.005,0,0.005)</eyeballOffset>
+        <headShapeDef>blush</headShapeDef>
+      </li>
+      <li>
+        <duration>10</duration>
+        <lidOffset>(0,0,0.0)</lidOffset>
+        <eyeballOffset>(0.005,0,0.005)</eyeballOffset>
+        <headShapeDef>blush</headShapeDef>
+      </li>
+      <li>
+        <duration>10</duration>
+        <lidOffset>(0,0,0.0)</lidOffset>
+        <eyeballOffset>(0,0,0.005)</eyeballOffset>
+        <headShapeDef>blush</headShapeDef>
+      </li>
+    </animationFrames>
+    <targetJobs>
+      <li>Strip</li>
+    </targetJobs>
+    <priority>105</priority>
+    <applyWhenStandingOnly>true</applyWhenStandingOnly>
+    <roopIntervalMin>30 </roopIntervalMin>
+    <roopIntervalMax>300</roopIntervalMax>
+  </FacialAnimation.FaceAnimationDef>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>Strip2_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>1</duration>
+        <browShapeDef>s-shaped</browShapeDef>
+        <lidShapeDef>normal</lidShapeDef>
+        <mouthShapeDef>puzzle</mouthShapeDef>
+        <headShapeDef>blush</headShapeDef>
+      </li>
+    </animationFrames>
+    <targetJobs>
+      <li>Strip</li>
+    </targetJobs>
+    <priority>106</priority>
+    <applyWhenStandingOnly>true</applyWhenStandingOnly>
+  </FacialAnimation.FaceAnimationDef>
+</Defs>

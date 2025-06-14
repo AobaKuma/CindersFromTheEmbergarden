@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/MapGeneratorDef[@Name = "MapCommonBase"]/genSteps</xpath>
+		<value>
+			<li>Cinder_GenGarbage</li>
+			<li>Cinder_GenGarbageA</li>
+			<li>Cinder_GenGarbageB</li>
+			<li>Cinder_GenGarbageC</li>
+			<li>Cinder_AncientWarStrikerRemains</li>
+		</value>
+	</Operation>
+</Patch>

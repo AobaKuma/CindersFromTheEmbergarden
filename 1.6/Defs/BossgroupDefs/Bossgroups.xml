@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<BossgroupDef Abstract="True" Name="Cinder_BaseBossgroup">
+		<quest>Cinder_Boss</quest>
+		<repeatWaveStartIndex>6</repeatWaveStartIndex>
+		<modExtensions>
+			<li Class="Embergarden.FuckMechanitor"/>
+		</modExtensions>
+	</BossgroupDef>
+
+	<!-- Diabolus -->
+
+	<BossDef>
+		<defName>Cinder_CombatUnitGroup</defName>
+		<kindDef>Cinder_CasterUnit</kindDef>
+		<appearAfterTicks>7200000</appearAfterTicks>
+		<!-- 2 years -->
+	</BossDef>
+
+	<BossgroupDef ParentName="Cinder_BaseBossgroup">
+		<defName>Cinder_CombatUnitGroup</defName>
+		<boss>Cinder_CombatUnitGroup</boss>
+		<waves>
+			<li>
+				<!-- 0 -->
+				<bossCount>1</bossCount>
+				<escorts>
+					<Cinder_Mech_MiniTurretWalker>8</Cinder_Mech_MiniTurretWalker>
+				</escorts>
+			</li>
+			<li>
+				<!-- 1 -->
+				<bossCount>1</bossCount>
+				<escorts>
+					<Cinder_Ghoul>1</Cinder_Ghoul>
+					<Cinder_Mech_MiniTurretWalker>8</Cinder_Mech_MiniTurretWalker>
+					<Cinder_Mech_WalkerAutoCannon>2</Cinder_Mech_WalkerAutoCannon>
+				</escorts>
+			</li>
+			<li>
+				<!-- 2 - Repeat starts here -->
+				<bossCount>1</bossCount>
+				<escorts>
+					<Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
+					<Cinder_Mech_WalkerAutoCannon>4</Cinder_Mech_WalkerAutoCannon>
+				</escorts>
+			</li>
+			<li>
+				<!-- 3 -->
+				<bossCount>1</bossCount>
+				<escorts>
+					<Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
+					<Cinder_Mech_WalkerAutoCannon>4</Cinder_Mech_WalkerAutoCannon>
+					<Cinder_Mech_WalkerSniper>1</Cinder_Mech_WalkerSniper>
+				</escorts>
+			</li>
+			<li>
+				<!-- 4 -->
+				<bossCount>1</bossCount>
+				<escorts>
+					<Cinder_Mech_MiniTurretWalker>12</Cinder_Mech_MiniTurretWalker>
+					<Cinder_Mech_WalkerAutoCannon>6</Cinder_Mech_WalkerAutoCannon>
+					<Cinder_Mech_WalkerSniper>2</Cinder_Mech_WalkerSniper>
+				</escorts>
+			</li>
+			<li>
+				<!-- 5 -->
+				<bossCount>1</bossCount>
+				<escorts>
+					<Cinder_HeavySoliderUnit>1</Cinder_HeavySoliderUnit>
+					<Cinder_Mech_ErodedEXO>1</Cinder_Mech_ErodedEXO>
+					<Cinder_Mech_MiniTurretWalker>8</Cinder_Mech_MiniTurretWalker>
+					<Cinder_Mech_WalkerAutoCannon>4</Cinder_Mech_WalkerAutoCannon>
+				</escorts>
+			</li>
+			<li>
+				<!-- 6 -->
+				<bossCount>1</bossCount>
+				<escorts>
+					<Cinder_Mech_ErodedEXO>1</Cinder_Mech_ErodedEXO>
+					<Cinder_HeavySoliderUnit>1</Cinder_HeavySoliderUnit>
+					<Cinder_Mech_WalkerAutoCannon>8</Cinder_Mech_WalkerAutoCannon>
+					<Cinder_Mech_MiniTurretWalker>10</Cinder_Mech_MiniTurretWalker>
+				</escorts>
+			</li>
+			<li>
+				<!-- 7 -->
+				<bossCount>1</bossCount>
+				<escorts>
+					<Cinder_Mech_ErodedEXO>2</Cinder_Mech_ErodedEXO>
+					<Cinder_HeavySoliderUnit>1</Cinder_HeavySoliderUnit>
+					<Cinder_Mech_Krepost>1</Cinder_Mech_Krepost>
+					<Cinder_Mech_WalkerAutoCannon>6</Cinder_Mech_WalkerAutoCannon>
+					<Cinder_Mech_MiniTurretWalker>12</Cinder_Mech_MiniTurretWalker>
+					<Cinder_Mech_WalkerSniper>4</Cinder_Mech_WalkerSniper>
+				</escorts>
+			</li>
+			<li>
+				<!-- 8 -->
+				<bossCount>1</bossCount>
+				<escorts>
+					<Cinder_Mech_ErodedEXO>2</Cinder_Mech_ErodedEXO>
+					<Cinder_Mech_WarSweeper>1</Cinder_Mech_WarSweeper>
+					<Cinder_Mech_Krepost>1</Cinder_Mech_Krepost>
+					<Cinder_HeavySoliderUnit>1</Cinder_HeavySoliderUnit>
+					<Cinder_Mech_WalkerAutoCannon>6</Cinder_Mech_WalkerAutoCannon>
+					<Cinder_Mech_MiniTurretWalker>12</Cinder_Mech_MiniTurretWalker>
+					<Cinder_Mech_WalkerSniper>2</Cinder_Mech_WalkerSniper>
+				</escorts>
+			</li>
+			<li>
+				<!-- 9 -->
+				<bossCount>1</bossCount>
+				<escorts>
+					<Cinder_Mech_ErodedEXO>3</Cinder_Mech_ErodedEXO>
+					<Cinder_Mech_WarAttacker>1</Cinder_Mech_WarAttacker>
+					<Cinder_Mech_Krepost>1</Cinder_Mech_Krepost>
+					<Cinder_HeavySoliderUnit>1</Cinder_HeavySoliderUnit>
+					<Cinder_Mech_WalkerAutoCannon>8</Cinder_Mech_WalkerAutoCannon>
+					<Cinder_Mech_MiniTurretWalker>12</Cinder_Mech_MiniTurretWalker>
+					<Cinder_Mech_WalkerSniper>4</Cinder_Mech_WalkerSniper>
+				</escorts>
+			</li>
+			<li>
+				<!-- 10 -->
+				<bossCount>1</bossCount>
+				<escorts>
+					<Cinder_Mech_ErodedEXO>3</Cinder_Mech_ErodedEXO>
+					<Cinder_Mech_WarAttacker>1</Cinder_Mech_WarAttacker>
+					<Cinder_Mech_Krepost>1</Cinder_Mech_Krepost>
+					<Cinder_HeavySoliderUnit>1</Cinder_HeavySoliderUnit>
+					<Cinder_Mech_WalkerSniper>4</Cinder_Mech_WalkerSniper>
+					<Cinder_Mech_WalkerAutoCannon>8</Cinder_Mech_WalkerAutoCannon>
+					<Cinder_Mech_MiniTurretWalker>12</Cinder_Mech_MiniTurretWalker>
+				</escorts>
+			</li>
+			<li>
+				<!-- 11 -->
+				<bossCount>1</bossCount>
+				<escorts>
+					<Cinder_Mech_ErodedEXO>3</Cinder_Mech_ErodedEXO>
+					<Cinder_Mech_Krepost>2</Cinder_Mech_Krepost>
+					<Cinder_HeavySoliderUnit>3</Cinder_HeavySoliderUnit>
+					<Cinder_Mech_WalkerSniper>4</Cinder_Mech_WalkerSniper>
+					<Cinder_Mech_WalkerAutoCannon>8</Cinder_Mech_WalkerAutoCannon>
+					<Cinder_Mech_MiniTurretWalker>24</Cinder_Mech_MiniTurretWalker>
+				</escorts>
+			</li>
+		</waves>
+		<leaderDescription>Standard combat unit group, units with consciousness taken over by DI will independently assess threats and engage in combat.</leaderDescription>
+		<rewardDef>Cinder_ExtraArmour</rewardDef>
+		<modExtensions>
+			<li Class="Embergarden.ModExtension_BossSong">
+				<songDefs>
+					<li>Cinder_SongA</li>
+					<li>Cinder_SongB</li>
+				</songDefs>
+			</li>
+		</modExtensions>
+	</BossgroupDef>
+
+</Defs>

@@ -79,7 +79,7 @@ namespace Embergarden
             cachedVehicldesPawns.Add((Pawn)parent, this);
         }
 
-        public override void PostDeSpawn(Map map)
+        public override void PostDeSpawn(Map map, DestroyMode destroyMode = DestroyMode.Vanish)
         {
             base.PostDeSpawn(map);
             cachedVehicles.Remove(((Pawn)parent).Drawer.renderer);

@@ -38,7 +38,7 @@ namespace Embergarden
             {
                 NewPawn();
             }
-            pawnOwner.ThingOwnerTick();
+            pawnOwner.DoTick();
 
             if (needCheckRepair && parent.HitPoints >= parent.MaxHitPoints)
             {

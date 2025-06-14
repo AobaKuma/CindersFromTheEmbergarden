@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName="CinderShell_Erosion"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="CinderTrapIED_Erosion"]/costList/CinderShell_Erosion</xpath>
+		<value>
+			<Cinder_AmorphousPolymer>25</Cinder_AmorphousPolymer>
+		</value>
+	</Operation>
+</Patch>

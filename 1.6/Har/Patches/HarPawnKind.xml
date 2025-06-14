@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[@Name="Cinder_BasePawn"]/race</xpath>
+		<value>
+			<race>Alien_Cinder</race>
+		</value>
+	</Operation>
+				
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="Cinder_EyeHediff"]/renderNodeProperties</xpath>
+		<value>
+			 <renderNodeProperties />
+		</value>
+	</Operation>			
+</Patch>
