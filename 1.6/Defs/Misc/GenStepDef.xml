@@ -2,16 +2,16 @@
 <Defs>
 	<GenStepDef>
 		<defName>Cinder_GenGarbage</defName>
-		<order>520</order>
+		<order>960</order>
 		<genStep Class="GenStep_ScatterGroup">
 			<allowInWaterBiome>false</allowInWaterBiome>
-			<minSpacing>80</minSpacing>
+		<minSpacing>50</minSpacing>
 			<countPer10kCellsRange>0.2~0.35</countPer10kCellsRange>
 			<spotMustBeStandable>true</spotMustBeStandable>
 			<allowRoofed>false</allowRoofed>
 			<validators>
 				<li Class="ScattererValidator_Buildable">
-					<radius>7</radius>
+					<radius>5</radius>
 					<affordance>Heavy</affordance>
 				</li>
 			</validators>
@@ -36,7 +36,7 @@
 	
 	<GenStepDef>
 		<defName>Cinder_GenGarbageA</defName>
-		<order>530</order>
+		<order>960</order>
 		<genStep Class="GenStep_ScatterGroup">
 			<allowInWaterBiome>false</allowInWaterBiome>
 			<minSpacing>80</minSpacing>
@@ -69,7 +69,7 @@
 	
     <GenStepDef>
 		<defName>Cinder_GenGarbageB</defName>
-		<order>540</order>
+		<order>960</order>
 		<genStep Class="GenStep_ScatterGroup">
 			<allowInWaterBiome>false</allowInWaterBiome>
 			<minSpacing>80</minSpacing>
@@ -114,7 +114,7 @@
 	
   <GenStepDef>
     <defName>Cinder_AncientWarStrikerRemains</defName>
-    <order>1610</order><!-- after fogged -->
+    <order>1700</order><!-- after fogged -->
     <genStep Class="GenStep_ScatterLayout">
       <count>1</count>
       <allowMechanoidDatacoreReadOrLost>false</allowMechanoidDatacoreReadOrLost>
@@ -164,7 +164,7 @@
   
   <GenStepDef>
     <defName>Cinder_GenGarbageC</defName>
-    <order>1620</order><!-- after fogged -->
+    <order>960</order><!-- after fogged -->
     <genStep Class="GenStep_ScatterLayout">
       <count>1</count>
       <allowMechanoidDatacoreReadOrLost>false</allowMechanoidDatacoreReadOrLost>

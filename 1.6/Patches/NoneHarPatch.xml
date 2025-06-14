@@ -21,5 +21,24 @@
 		</nomatch>
 	</Operation>
 	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Humanoid Alien Races ~ Dev</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Cinder_Ghoul" or defName="Cinder_EliteGhoul"]/apparelRequired</xpath>
+					<value>
+                    <apparelRequired>
+			              <li>Cinder_HeadGear_GhoulUnitHelmet</li>
+			              <li>Cinder_Apparel_BulletproofEquipment</li>
+		            </apparelRequired>
+				</value>
+			</li>
+			</operations>
+		</nomatch>
+	</Operation>
 
 </Patch>
