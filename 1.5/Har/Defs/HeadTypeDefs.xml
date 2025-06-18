@@ -2,33 +2,33 @@
 <Defs>
   <HeadTypeDef ParentName="AverageBase">
     <defName>Cinder_AverageNormal_A</defName>
-    <graphicPath>Things/Pawn/Humanlike/Heads/CinderHead/CinderHead7</graphicPath>
+    <graphicPath>Things/Pawn/Humanlike/Heads/CinderHead/Cinder_AverageNormal_A</graphicPath>
   </HeadTypeDef>
 
   <HeadTypeDef ParentName="AverageBase">
     <defName>Cinder_AverageNormal_B</defName>
-    <graphicPath>Things/Pawn/Humanlike/Heads/CinderHead/CinderHead1</graphicPath>
+    <graphicPath>Things/Pawn/Humanlike/Heads/CinderHead/Cinder_AverageNormal_B</graphicPath>
   </HeadTypeDef>
 
   <HeadTypeDef ParentName="AverageBase">
     <defName>Cinder_AverageNormal_C</defName>
-    <graphicPath>Things/Pawn/Humanlike/Heads/CinderHead/CinderHead2</graphicPath>
+    <graphicPath>Things/Pawn/Humanlike/Heads/CinderHead/Cinder_AverageNormal_C</graphicPath>
   </HeadTypeDef>
 
   <HeadTypeDef ParentName="AverageBase">
     <defName>Cinder_AverageNormal_D</defName>
-    <graphicPath>Things/Pawn/Humanlike/Heads/CinderHead/CinderHead3</graphicPath>
+    <graphicPath>Things/Pawn/Humanlike/Heads/CinderHead/Cinder_AverageNormal_D</graphicPath>
   </HeadTypeDef>
   <HeadTypeDef ParentName="AverageBase">
     <defName>Cinder_AverageNormal_E</defName>
-    <graphicPath>Things/Pawn/Humanlike/Heads/CinderHead/CinderHead4</graphicPath>
+    <graphicPath>Things/Pawn/Humanlike/Heads/CinderHead/Cinder_AverageNormal_E</graphicPath>
   </HeadTypeDef>
   <HeadTypeDef ParentName="AverageBase">
     <defName>Cinder_AverageNormal_F</defName>
-    <graphicPath>Things/Pawn/Humanlike/Heads/CinderHead/CinderHead5</graphicPath>
+    <graphicPath>Things/Pawn/Humanlike/Heads/CinderHead/Cinder_AverageNormal_F</graphicPath>
   </HeadTypeDef>
   <HeadTypeDef ParentName="AverageBase">
     <defName>Cinder_AverageNormal_G</defName>
-    <graphicPath>Things/Pawn/Humanlike/Heads/CinderHead/CinderHead6</graphicPath>
+    <graphicPath>Things/Pawn/Humanlike/Heads/CinderHead/Cinder_AverageNormal_G</graphicPath>
   </HeadTypeDef>
 </Defs>
