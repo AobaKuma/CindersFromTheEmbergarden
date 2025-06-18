@@ -12,6 +12,7 @@ namespace Embergarden
         private Verb verbInt;
         private CompEquippable compEquippableInt;
         private bool isSecondaryVerbSelected;
+        private FieldInfo cachedBurstShotCountInfo;
 
         public CompProperties_SecondaryVerb Props => (CompProperties_SecondaryVerb)props;
 
@@ -131,7 +132,8 @@ namespace Embergarden
                 EquipmentSource.PrimaryVerb.verbProps = parent.def.Verbs[0];
                 isSecondaryVerbSelected = false;
             }
-
+            if (cachedBurstShotCountInfo == null) cachedBurstShotCountInfo = typeof(Verb).GetField("cachedBurstShotCount", BindingFlags.NonPublic | BindingFlags.Instance);
+            cachedBurstShotCountInfo.SetValue(EquipmentSource.PrimaryVerb, null);
             Props.sound?.PlayOneShot(new TargetInfo(CasterPawn.Position, CasterPawn.Map));
         }
 
