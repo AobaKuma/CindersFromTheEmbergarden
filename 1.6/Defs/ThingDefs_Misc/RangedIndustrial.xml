@@ -590,6 +590,7 @@
 				<soundCast>InfernoCannon_Fire</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
+				<aimingTargetMote>CinderMote_Eroded_Locked</aimingTargetMote>
 			</li>
 		</verbs>
 		<weaponTags>

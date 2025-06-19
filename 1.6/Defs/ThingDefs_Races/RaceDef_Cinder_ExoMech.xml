@@ -113,6 +113,7 @@
                       <soundCall>Pawn_Mech_Centipede_Call</soundCall>
 				</li>
 			</lifeStageAges>
+			<mechWeightClass>Heavy</mechWeightClass>
 		</race>
 		<butcherProducts>
 			<Cinder_AmorphousPolymer>75</Cinder_AmorphousPolymer>

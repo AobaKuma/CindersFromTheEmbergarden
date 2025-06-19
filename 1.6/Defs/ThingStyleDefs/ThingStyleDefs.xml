@@ -310,4 +310,104 @@
 	<wornGraphicPath>Things/Pawn/Humanlike/Apparel/BrokenMask/BrokenFlakMask</wornGraphicPath>
 	<useWornGraphicMask>true</useWornGraphicMask>
   </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_FumeGreatswordA</defName>
+    <graphicData>
+      <texPath>Things/Weapons/FumeGreatsword/FumeGreatswordA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.3</drawSize>
+    </graphicData>
+	<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatswordUI</uiIconPath>
+  </ThingStyleDef>
+  
+   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_FumeGreatswordB</defName>
+    <graphicData>
+      <texPath>Things/Weapons/FumeGreatsword/FumeGreatswordB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.3</drawSize>
+    </graphicData>
+	<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatswordUI</uiIconPath>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_FumeGreatswordC</defName>
+    <graphicData>
+      <texPath>Things/Weapons/FumeGreatsword/FumeGreatswordC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.3</drawSize>
+    </graphicData>
+	<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatswordUI</uiIconPath>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_FumeGreatswordD</defName>
+    <graphicData>
+      <texPath>Things/Weapons/FumeGreatsword/FumeGreatswordD</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.3</drawSize>
+    </graphicData>
+	<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatswordUI</uiIconPath>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_FumeGreatswordE</defName>
+    <graphicData>
+      <texPath>Things/Weapons/FumeGreatsword/FumeGreatswordE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.3</drawSize>
+    </graphicData>
+	<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatswordUI</uiIconPath>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_FumeGreatsword_MA</defName>
+    <graphicData>
+      <texPath>Things/Weapons/FumeGreatsword/FumeGreatsword_MA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.3</drawSize>
+    </graphicData>
+	<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatsword_MC</uiIconPath>
+  </ThingStyleDef>
+  
+   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_FumeGreatsword_MB</defName>
+    <graphicData>
+      <texPath>Things/Weapons/FumeGreatsword/FumeGreatsword_MB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.3</drawSize>
+    </graphicData>
+	<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatsword_MC</uiIconPath>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_FumeGreatsword_MC</defName>
+    <graphicData>
+      <texPath>Things/Weapons/FumeGreatsword/FumeGreatsword_MC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.3</drawSize>
+    </graphicData>
+	<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatsword_MC</uiIconPath>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_FumeGreatsword_MD</defName>
+    <graphicData>
+      <texPath>Things/Weapons/FumeGreatsword/FumeGreatsword_MD</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.3</drawSize>
+    </graphicData>
+	<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatsword_MC</uiIconPath>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
+    <defName>CinderStyle_FumeGreatsword_ME</defName>
+    <graphicData>
+      <texPath>Things/Weapons/FumeGreatsword/FumeGreatsword_ME</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	 <drawSize>1.3</drawSize>
+    </graphicData>
+	<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatsword_MC</uiIconPath>
+  </ThingStyleDef>
 </Defs>

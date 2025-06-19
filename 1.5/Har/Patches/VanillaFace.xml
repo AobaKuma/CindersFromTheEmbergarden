@@ -10,8 +10,65 @@
 						<head>
 					    <path>Things/Pawn/Humanlike/Heads/Vanilla/CinderHead</path>
 					<extendedGraphics>
-						<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
-							Things/Pawn/Humanlike/Heads/Vanilla/GhoulHead</Hediff>
+					    <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
+							Things/Pawn/Humanlike/Heads/Vanilla/GhoulHead
+						</Hediff>
+						<HeadType For="Cinder_AverageNormal_A">
+							<path>Things/Pawn/Humanlike/Heads/Vanilla/CinderHead</path>
+							<extendedGraphics>
+								<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
+									Things/Pawn/Humanlike/Heads/Vanilla/GhoulHead
+								</Hediff>
+							</extendedGraphics>
+						</HeadType>
+						<HeadType For="Cinder_AverageNormal_B">
+							<path>Things/Pawn/Humanlike/Heads/Vanilla/CinderHead</path>
+							<extendedGraphics>
+								<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
+									Things/Pawn/Humanlike/Heads/Vanilla/GhoulHead
+								</Hediff>
+							</extendedGraphics>
+						</HeadType>
+						<HeadType For="Cinder_AverageNormal_C">
+							<path>Things/Pawn/Humanlike/Heads/Vanilla/CinderHead</path>
+							<extendedGraphics>
+								<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
+									Things/Pawn/Humanlike/Heads/Vanilla/GhoulHead
+								</Hediff>
+							</extendedGraphics>
+						</HeadType>
+						<HeadType For="Cinder_AverageNormal_D">
+							<path>Things/Pawn/Humanlike/Heads/Vanilla/CinderHead</path>
+							<extendedGraphics>
+								<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
+									Things/Pawn/Humanlike/Heads/Vanilla/GhoulHead
+								</Hediff>
+							</extendedGraphics>
+						</HeadType>
+						<HeadType For="Cinder_AverageNormal_E">
+							<path>Things/Pawn/Humanlike/Heads/Vanilla/CinderHead</path>
+							<extendedGraphics>
+								<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
+									Things/Pawn/Humanlike/Heads/Vanilla/GhoulHead
+								</Hediff>
+							</extendedGraphics>
+						</HeadType>
+						<HeadType For="Cinder_AverageNormal_F">
+							<path>Things/Pawn/Humanlike/Heads/Vanilla/CinderHead</path>
+							<extendedGraphics>
+								<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
+									Things/Pawn/Humanlike/Heads/Vanilla/GhoulHead
+								</Hediff>
+							</extendedGraphics>
+						</HeadType>
+						<HeadType For="Cinder_AverageNormal_G">
+							<path>Things/Pawn/Humanlike/Heads/Vanilla/CinderHead</path>
+							<extendedGraphics>
+								<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
+									Things/Pawn/Humanlike/Heads/Vanilla/GhoulHead
+								</Hediff>
+							</extendedGraphics>
+						</HeadType>
 					</extendedGraphics>
 				        </head>
 					</value>

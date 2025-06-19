@@ -28,6 +28,25 @@
 			<drawSize>(3, 0.9)</drawSize>
 		</graphicData>
 	</ThingDef>
+	
+	<ThingDef ParentName="MoteBase">
+	<defName>CinderMote_Eroded_Locked</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+	<tickerType>Normal</tickerType>
+    <mote>
+      <fadeInTime>0</fadeInTime>
+      <fadeOutTime>0</fadeOutTime>
+      <solidTime>999999</solidTime>
+      <needsMaintenance>True</needsMaintenance>
+	  <fadeOutUnmaintained>True</fadeOutUnmaintained>
+    </mote>
+	<graphicData>
+	  <drawSize>1.2</drawSize>
+      <texPath>Things/Mote/Eroded_Target</texPath>
+      <color>(1, 1, 1, 1)</color>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+  </ThingDef>
 
 	<ThingDef ParentName="MoteBase">
 		<defName>CinderMote_HellfireMissile_Charge</defName>
