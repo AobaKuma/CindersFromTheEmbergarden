@@ -275,9 +275,7 @@
 			<li Class="HediffCompProperties_Disappears">
 				<showRemainingTime>true</showRemainingTime>
 			</li>
-			<li Class="WeaponSwitch.HediffCompPropertiesSwitch">
-				<abilityDef>Cinder_Deactivate</abilityDef>
-			</li>
+			<li Class="WeaponSwitch.HediffCompPropertiesSwitch"/>
 		</comps>
 	</HediffDef>
 	
@@ -285,8 +283,6 @@
 		<defName>Cinder_Deactivate</defName>
 		<label>Deactivate</label>
 		<description>Deactivate amorphous polymers blades.</description>
-		<!-- 让它显示在武器变换后面。-->
-        <displayOrder>1</displayOrder>
 		<cooldownTicksRange>0</cooldownTicksRange>
 		<iconPath>UI/Icon/FumeGun</iconPath>
 		<hostile>false</hostile>
