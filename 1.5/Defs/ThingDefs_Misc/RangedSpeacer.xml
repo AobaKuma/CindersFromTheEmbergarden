@@ -10,16 +10,10 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>8</damageAmountBase>
-			<stoppingPower>2.5</stoppingPower>
-			<armorPenetrationBase>0.35</armorPenetrationBase>
+			<damageAmountBase>13</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<armorPenetrationBase>0.40</armorPenetrationBase>
 			<speed>65</speed>
-			<extraDamages>
-				<li>
-					<def>Cinder_ExtraBullet</def>
-					<amount>4</amount>
-				</li>
-			</extraDamages>
 		</projectile>
 	</ThingDef>
   
@@ -40,12 +34,15 @@
 		
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
-			<Mass>3.0</Mass>
-			<AccuracyTouch>0.60</AccuracyTouch>
-			<AccuracyShort>0.75</AccuracyShort>
-			<AccuracyMedium>0.75</AccuracyMedium>
-			<AccuracyLong>0.75</AccuracyLong>
-			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+			<Mass>2.2</Mass>
+			<AccuracyTouch>0.52</AccuracyTouch>
+			<AccuracyShort>0.52</AccuracyShort>
+			<AccuracyMedium>0.52</AccuracyMedium>
+			<AccuracyLong>0.52</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+			<MaxHitPoints>500</MaxHitPoints>
+            <Flammability>0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 
 		<randomStyleChance>1</randomStyleChance>
@@ -80,6 +77,7 @@
 			<researchPrerequisite Inherit="False"/>
 			<researchPrerequisites Inherit="False">
 				<li>PrecisionRifling</li>
+				<li>Fabrication</li>
 				<li>Cinder_TwistedPharmacology</li>
 			</researchPrerequisites>
 		</recipeMaker>
@@ -88,11 +86,11 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Cinder_Bullet_FGS</defaultProjectile>
-				<warmupTime>1.15</warmupTime>
+				<warmupTime>1.5</warmupTime>
 				<range>29.9</range>
 				<burstShotCount>6</burstShotCount>
-				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<soundCast>Cinder_Shot_33A</soundCast>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<soundCast>Cinder_Shot_Fume</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 				<aimingTargetMote>CinderMote_Eroded_Locked</aimingTargetMote>
@@ -108,22 +106,15 @@
           <li>Cut</li>
         </capacities>
         <power>10</power>
-        <cooldownTime>1.2</cooldownTime>
-		<extraMeleeDamages>
-          <li>
-            <def>Cut</def>
-            <amount>5</amount>
-          </li>
-        </extraMeleeDamages>
+        <cooldownTime>1.5</cooldownTime>
       </li>
       <li>
         <label>tentacle point</label>
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>15</power>
-        <cooldownTime>2</cooldownTime>
-		 <armorPenetration>0.9</armorPenetration>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
       </li>
     </tools>
 	
@@ -135,7 +126,7 @@
 		</comps>
 		
 	<equippedStatOffsets>
-        <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+        <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
     </equippedStatOffsets>
 	</ThingDef>
   
@@ -157,7 +148,10 @@
       <li>Cinder_FumeMelee</li>
     </weaponTags>
     <statBases>
-      <Mass>3.85</Mass>
+      <Mass>2.2</Mass>
+	  <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0</Flammability>
+	  <DeteriorationRate>0</DeteriorationRate>
     </statBases>
 	
 	<randomStyleChance>1</randomStyleChance>
@@ -179,7 +173,7 @@
 			</li>
 	</randomStyle>
 	
-    <equippedAngleOffset>-40</equippedAngleOffset>
+    <equippedAngleOffset>-25</equippedAngleOffset>
    <recipeMaker Inherit="false"/>
     <costList>
 			<Cinder_AmorphousPolymer>250</Cinder_AmorphousPolymer>
@@ -192,14 +186,8 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>10</power>
+        <power>15</power>
         <cooldownTime>1</cooldownTime>
-		<extraMeleeDamages>
-          <li>
-            <def>Cut</def>
-            <amount>5</amount>
-          </li>
-        </extraMeleeDamages>
 		 <armorPenetration>0.5</armorPenetration>
       </li>
       <li>
@@ -207,8 +195,8 @@
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>20</power>
-        <cooldownTime>4</cooldownTime>
+        <power>25</power>
+        <cooldownTime>3</cooldownTime>
 		<extraMeleeDamages>
           <li>
             <def>Stab</def>
@@ -232,7 +220,7 @@
 		<defName>Cinder_ActivateTentacles</defName>
 		<label>Activate tentacles</label>
 		<description>Activate the amorphous polymer tentacles on the gun body, extending them into sword blades</description>
-		<cooldownTicksRange>601</cooldownTicksRange>
+		<cooldownTicksRange>3600</cooldownTicksRange>
 		<iconPath>UI/Icon/GreatSword</iconPath>
 		<hostile>false</hostile>
 		<showOnCharacterCard>false</showOnCharacterCard>
@@ -240,7 +228,7 @@
 		<targetRequired>false</targetRequired>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<statBases>
-			<Ability_Duration>600</Ability_Duration>
+			<Ability_Duration>120</Ability_Duration>
 		</statBases>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
@@ -251,6 +239,7 @@
 			<targetParams>
 				<canTargetSelf>true</canTargetSelf>
 			</targetParams>
+			 <soundAiming>Cinder_TentacleTransform</soundAiming>
 		</verbProperties>
 		<comps>
 			<li Class="CompProperties_AbilityEffect">
@@ -275,9 +264,7 @@
 			<li Class="HediffCompProperties_Disappears">
 				<showRemainingTime>true</showRemainingTime>
 			</li>
-			<li Class="WeaponSwitch.HediffCompPropertiesSwitch">
-				<abilityDef>Cinder_Deactivate</abilityDef>
-			</li>
+			<li Class="WeaponSwitch.HediffCompPropertiesSwitch"/>
 		</comps>
 	</HediffDef>
 	
@@ -285,8 +272,6 @@
 		<defName>Cinder_Deactivate</defName>
 		<label>Deactivate</label>
 		<description>Deactivate amorphous polymers blades.</description>
-		<!-- 让它显示在武器变换后面。-->
-        <displayOrder>1</displayOrder>
 		<cooldownTicksRange>0</cooldownTicksRange>
 		<iconPath>UI/Icon/FumeGun</iconPath>
 		<hostile>false</hostile>
@@ -303,6 +288,7 @@
 			<targetParams>
 				<canTargetSelf>true</canTargetSelf>
 			</targetParams>
+			 <soundAiming>Cinder_TentacleTransform</soundAiming>
 		</verbProperties>
 		<comps>
 			<li Class="CompProperties_AbilityEffect">

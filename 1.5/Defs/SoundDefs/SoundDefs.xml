@@ -26,6 +26,31 @@
             </li>
         </subSounds>
     </SoundDef>
+	
+		<SoundDef>
+        <defName>Cinder_Shot_Fume</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/Fume</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34.2941</min>
+                    <max>40.2941</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>1.191765</min>
+                    <max>1.231435</max>
+                </pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
 
   <SoundDef>
         <defName>Cinder_Shot_12J</defName>
@@ -174,6 +199,33 @@
       </li>
     </subSounds>
   </SoundDef>
+  
+  <SoundDef>
+        <defName>Cinder_TentacleTransform</defName>
+		<sustain>true</sustain>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/Transform</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+                    <min>49.2941</min>
+                    <max>54.2941</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>1.191765</min>
+                    <max>1.231435</max>
+                </pitchRange>
+		 <repeatMode>NeverTwice</repeatMode>
+      </li>
+    </subSounds>
+    </SoundDef>
   
    <SoundDef>
     <defName>Cinder_MBTCannonSound</defName>

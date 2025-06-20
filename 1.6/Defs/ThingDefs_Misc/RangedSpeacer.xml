@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+    <ThingDef ParentName="BaseBullet">
+		<defName>Cinder_Bullet_FGS</defName>
+		<label>caseless bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<armorPenetrationBase>0.40</armorPenetrationBase>
+			<speed>65</speed>
+		</projectile>
+	</ThingDef>
+  
+  <ThingDef ParentName="Cinder_Gun">
+		<defName>Cinder_FumeGreatsword</defName>
+		<label>fume greatsword</label>
+		<description>A comprehensive weapon platform designed for combat in space environments. It utilizes specialized caseless ammunition and features a rudimentary targeting system within the weapon body, driven by amorphous polymer, which automatically aligns the weapon with targets. Tentacles near the muzzle can activate to transform the entire weapon into a large sword for use.</description>
+		<graphicData>
+			<texPath>Things/Weapons/FumeGreatsword/FumeGreatswordC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatswordUI</uiIconPath>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>RangedLight</li>
+		</weaponClasses>
+		
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2.2</Mass>
+			<AccuracyTouch>0.52</AccuracyTouch>
+			<AccuracyShort>0.52</AccuracyShort>
+			<AccuracyMedium>0.52</AccuracyMedium>
+			<AccuracyLong>0.52</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+			<MaxHitPoints>500</MaxHitPoints>
+            <Flammability>0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+
+		<randomStyleChance>1</randomStyleChance>
+		<randomStyle>
+			<li>
+				<styleDef>CinderStyle_FumeGreatswordA</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_FumeGreatswordB</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_FumeGreatswordC</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_FumeGreatswordD</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_FumeGreatswordE</styleDef>
+			</li>
+		</randomStyle>
+
+		<costList>
+			<Cinder_AmorphousPolymer>250</Cinder_AmorphousPolymer>
+			<ComponentIndustrial>5</ComponentIndustrial>
+            <ComponentSpacer>4</ComponentSpacer>
+		</costList>
+
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<researchPrerequisite Inherit="False"/>
+			<researchPrerequisites Inherit="False">
+				<li>PrecisionRifling</li>
+				<li>Fabrication</li>
+				<li>Cinder_TwistedPharmacology</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Cinder_Bullet_FGS</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>29.9</range>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<soundCast>Cinder_Shot_Fume</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<aimingTargetMote>CinderMote_Eroded_Locked</aimingTargetMote>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>CinderElite</li>
+		</weaponTags>
+		 <tools>
+      <li>
+        <label>tentacle blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>tentacle point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	
+	    <comps>
+			<li Class="WeaponSwitch.CompProperties_Switch">
+				<changeTo>Cinder_FumeGreatswordM</changeTo>
+				<abilityDef>Cinder_ActivateTentacles</abilityDef>
+			</li>
+		</comps>
+		
+	<equippedStatOffsets>
+        <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+	</ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Cinder_FumeGreatswordM</defName>
+    <label>fume greatsword</label>
+    <description>The Fume Greatsword with the tentacle blade activated. The gun body is now wrapped in hardened activated tentacles, functioning as a sharp greatsword.</description>
+    <possessionCount>1</possessionCount>
+	<tickerType>Normal</tickerType>
+	<generateCommonality>0</generateCommonality>
+    <graphicData>
+      <texPath>Things/Weapons/FumeGreatsword/FumeGreatsword_MC</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.3</drawSize>
+    </graphicData>
+	<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatsword_MC</uiIconPath>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>Cinder_FumeMelee</li>
+    </weaponTags>
+    <statBases>
+      <Mass>2.2</Mass>
+	  <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0</Flammability>
+	  <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+	
+	<randomStyleChance>1</randomStyleChance>
+		<randomStyle>
+			<li>
+				<styleDef>CinderStyle_FumeGreatsword_MA</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_FumeGreatsword_MB</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_FumeGreatsword_MC</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_FumeGreatsword_MD</styleDef>
+			</li>
+			<li>
+				<styleDef>CinderStyle_FumeGreatsword_ME</styleDef>
+			</li>
+	</randomStyle>
+	
+    <equippedAngleOffset>-25</equippedAngleOffset>
+   <recipeMaker Inherit="false"/>
+    <costList>
+			<Cinder_AmorphousPolymer>250</Cinder_AmorphousPolymer>
+			<ComponentIndustrial>5</ComponentIndustrial>
+            <ComponentSpacer>4</ComponentSpacer>
+	</costList>
+     <tools>
+      <li>
+        <label>tentacle blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1</cooldownTime>
+		 <armorPenetration>0.5</armorPenetration>
+      </li>
+      <li>
+        <label>tentacle point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>3</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stab</def>
+            <amount>20</amount>
+          </li>
+        </extraMeleeDamages>
+		 <armorPenetration>0.9</armorPenetration>
+      </li>
+    </tools>
+	
+		<comps>
+			<li Class="WeaponSwitch.CompProperties_Switch">
+				<changeTo>Cinder_FumeGreatsword</changeTo>
+				<abilityDef>Cinder_Deactivate</abilityDef>
+			</li>
+		</comps>
+  </ThingDef>
+
+  
+	<AbilityDef>
+		<defName>Cinder_ActivateTentacles</defName>
+		<label>Activate tentacles</label>
+		<description>Activate the amorphous polymer tentacles on the gun body, extending them into sword blades</description>
+		<cooldownTicksRange>3600</cooldownTicksRange>
+		<iconPath>UI/Icon/GreatSword</iconPath>
+		<hostile>false</hostile>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<aiCanUse>true</aiCanUse>
+		<targetRequired>false</targetRequired>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>120</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.5</warmupTime>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<targetable>false</targetable>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+			 <soundAiming>Cinder_TentacleTransform</soundAiming>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityEffect">
+				<compClass>WeaponSwitch.CompAbilityEffect_Switch</compClass>
+			</li>
+			<!-- 如果不需要限时，可以把这玩意删了-->
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Cinder_ActivateTentaclesDuration</hediffDef>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+	<HediffDef>
+		<defName>Cinder_ActivateTentaclesDuration</defName>
+		<label>Tentacle activation</label>
+		<description>Remaining time for activation of amorphous polymers.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="WeaponSwitch.HediffCompPropertiesSwitch"/>
+		</comps>
+	</HediffDef>
+	
+	<AbilityDef>
+		<defName>Cinder_Deactivate</defName>
+		<label>Deactivate</label>
+		<description>Deactivate amorphous polymers blades.</description>
+		<cooldownTicksRange>0</cooldownTicksRange>
+		<iconPath>UI/Icon/FumeGun</iconPath>
+		<hostile>false</hostile>
+		<showOnCharacterCard>false</showOnCharacterCard>
+		<aiCanUse>false</aiCanUse>
+		<targetRequired>false</targetRequired>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.5</warmupTime>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<targetable>false</targetable>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+			 <soundAiming>Cinder_TentacleTransform</soundAiming>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityEffect">
+				<compClass>WeaponSwitch.CompAbilityEffect_RemoveHediff</compClass>
+			</li>
+		</comps>
+	</AbilityDef>
+
+</Defs>
