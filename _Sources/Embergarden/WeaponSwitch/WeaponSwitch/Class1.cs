@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -10,16 +11,18 @@ using Verse;
 
 namespace WeaponSwitch
 {
-    public class CompProperties_Switch : CompProperties_EquippableAbility
+    public class CompProperties_Switch : CompProperties
     {
         public ThingDef changeTo;
+
+        public AbilityDef abilityDef;
         public CompProperties_Switch()
         {
             compClass = typeof(CompSwitch);
         }
     }
 
-    public class CompSwitch : CompEquippableAbility
+    public class CompSwitch : ThingComp
     {
         public CompProperties_Switch Props => (CompProperties_Switch)props;
 
@@ -28,6 +31,10 @@ namespace WeaponSwitch
         public override void Notify_Equipped(Pawn pawn)
         {
             base.Notify_Equipped(pawn);
+            if (Props.abilityDef != null)
+            {
+                pawn.abilities.GainAbility(Props.abilityDef);
+            }
             if (hediff != null)
             {
                 pawn.health.AddHediff(hediff);
@@ -37,6 +44,10 @@ namespace WeaponSwitch
         public override void Notify_Unequipped(Pawn pawn)
         {
             base.Notify_Unequipped(pawn);
+            if (Props.abilityDef != null)
+            {
+                pawn.abilities.RemoveAbility(Props.abilityDef);
+            }
             if (hediff != null)
             {
                 pawn.health.RemoveHediff(hediff);
@@ -124,18 +135,6 @@ namespace WeaponSwitch
             }
             ThingWithComps newThing = (ThingWithComps)ThingMaker.MakeThing(changeTo, stuff);
             newThing.HitPoints = hitPoints;
-            for (int i = 0; i < newThing.AllComps.Count; i++)
-            {
-                CompProperties Index = newThing.AllComps[i].props;
-                ThingComp baseComp = baseForm.GetCompByDefType(Index);
-                if (baseComp != null)
-                {
-                    baseComp.parent = newThing;
-                    newThing.AllComps[i] = baseComp;
-                }
-            }
-            CompSwitch compSwitch = newThing.GetComp<CompSwitch>();
-            compSwitch.Initialize(newThing.def.comps.Find(x => x.compClass == typeof(CompSwitch)));
             ThingStyleDef styleDef = baseForm.StyleDef;
             if (baseForm.def.randomStyle != null && newThing.def.randomStyle != null)
             {
@@ -146,12 +145,34 @@ namespace WeaponSwitch
             return newThing;
         }
 
+        public static void CopyComps(ThingWithComps baseForm, ThingWithComps switchForm)
+        {
+            List<ThingComp> comps = switchForm.AllComps.ListFullCopy();
+            CompSwitch compSwitch = switchForm.GetComp<CompSwitch>();
+            comps.Remove(compSwitch);
+            comps.Remove(comps.Find(x => x is CompEquippable));
+            comps.Remove(comps.Find(x => x is CompStyleable));
+            for (int i = 0; i < comps.Count; i++)
+            {
+                ThingComp comp = comps[i];
+                CompProperties Index = comp.props;
+                ThingComp baseComp = baseForm.GetCompByDefType(Index);
+                if (baseComp != null)
+                {
+                    baseComp.parent = switchForm;
+                    switchForm.AllComps[switchForm.AllComps.IndexOf(comp)] = baseComp;
+                }
+            }
+            compSwitch.hediff = baseForm.GetComp<CompSwitch>().hediff;
+        }
+
         public static void ChangeOldThing(ThingWithComps baseForm, ThingDef changeTo)
         {
             ThingWithComps newThing = ChangeThing(baseForm, changeTo);
             IntVec3 intVec3 = baseForm.Position;
             Map map = baseForm.Map;
             baseForm.Destroy();
+            CopyComps(baseForm, newThing);
             GenSpawn.Spawn(newThing, intVec3, map);
         }
 
@@ -160,19 +181,20 @@ namespace WeaponSwitch
             ThingWithComps newThing = ChangeThing(baseForm, changeTo);
             pawn.equipment.DestroyEquipment(baseForm);
             baseForm.Notify_Unequipped(pawn);
+            CopyComps(baseForm, newThing);
             pawn.equipment.MakeRoomFor(newThing);
             pawn.equipment.AddEquipment(newThing);
         }
     }
 
-    public class HediffCompPropertiesSwitch : HediffCompProperties_GiveAbility
+    public class HediffCompPropertiesSwitch : HediffCompProperties
     {
         public HediffCompPropertiesSwitch()
         {
             compClass = typeof(SwitchWhenDisappear);
         }
     }
-    public class SwitchWhenDisappear : HediffComp_GiveAbility
+    public class SwitchWhenDisappear : HediffComp
     {
         public HediffCompPropertiesSwitch Props => (HediffCompPropertiesSwitch)props;
         public override void CompPostMake()
@@ -194,6 +216,9 @@ namespace WeaponSwitch
                     if (compSwitch != null)
                     {
                         Pawn.ChangeEquipThing(thing, compSwitch.Props.changeTo);
+                        compSwitch = Pawn.equipment.Primary.GetComp<CompSwitch>();
+                        Ability ability = Pawn.abilities.GetAbility(compSwitch.Props.abilityDef);
+                        ability.StartCooldown(ability.def.cooldownTicksRange.RandomInRange);
                     }
                 }
             }
