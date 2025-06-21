@@ -5,7 +5,7 @@
 		<defName>Cinder_Bullet_FGS</defName>
 		<label>caseless bullet</label>
 		<graphicData>
-			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<texPath>Things/Mote/Bullet_Eroed</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
@@ -89,9 +89,9 @@
 				<warmupTime>1.5</warmupTime>
 				<range>29.9</range>
 				<burstShotCount>6</burstShotCount>
-				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<soundCast>Cinder_Shot_Fume</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
+				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 				<aimingTargetMote>CinderMote_Eroded_Locked</aimingTargetMote>
 			</li>

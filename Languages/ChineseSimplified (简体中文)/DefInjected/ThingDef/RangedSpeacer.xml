@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Multiple bullet -->
+  <Cinder_Bullet_FGS.label>无壳弹</Cinder_Bullet_FGS.label>
+  
+  
+  <!-- EN: Ouroboros rifle -->
+  <Cinder_FumeGreatsword.label>漫烟大剑</Cinder_FumeGreatsword.label>
+  <!-- EN: An ancient Hi-Power rifle,The actual damage it causes is not as simple as it seems.Its special warhead will shatter upon hitting the target, causing serious damage,Not clearing what twisted it, occasionally this gun grows some strange tentacles. -->
+  <Cinder_FumeGreatsword.description>一种用于太空环境作战的综合性武器平台。使用特殊的无壳弹，在枪身内部有一个由无定形聚合物驱动的简易瞄准装置，会自动将武器指向目标。枪口处的触手可以激活以将整把枪变成大剑使用。</Cinder_FumeGreatsword.description>
+  <!-- EN: stock -->
+  <Cinder_FumeGreatsword.tools.tentacle_blade.label>触手剑刃</Cinder_FumeGreatsword.tools.tentacle_blade.label>
+  <!-- EN: barrel -->
+  <Cinder_FumeGreatsword.tools.tentacle_point.label>触手剑尖</Cinder_FumeGreatsword.tools.tentacle_point.label>
+
+  <Cinder_FumeGreatsword.verbs.Verb_ShootCE.label>漫烟大剑</Cinder_FumeGreatsword.verbs.Verb_ShootCE.label>
+  
+  <!-- UNUSED -->
+  <Cinder_FumeGreatsword.verbs.Verb_Shoot.label>漫烟大剑</Cinder_FumeGreatsword.verbs.Verb_Shoot.label>
+  
+ 
+   <!-- EN: Ouroboros rifle -->
+  <Cinder_FumeGreatswordM.label>漫烟大剑</Cinder_FumeGreatswordM.label>
+  <!-- EN: An ancient Hi-Power rifle,The actual damage it causes is not as simple as it seems.Its special warhead will shatter upon hitting the target, causing serious damage,Not clearing what twisted it, occasionally this gun grows some strange tentacles. -->
+  <Cinder_FumeGreatswordM.description>激活了触手剑刃的漫烟大剑。现在枪身上缠满了活化的坚硬触手，可以作为一把锋利的大剑使用。</Cinder_FumeGreatswordM.description>
+  <!-- EN: stock -->
+  <Cinder_FumeGreatswordM.tools.tentacle_blade.label>触手剑刃</Cinder_FumeGreatswordM.tools.tentacle_blade.label>
+  <!-- EN: barrel -->
+  <Cinder_FumeGreatswordM.tools.tentacle_point.label>触手剑尖</Cinder_FumeGreatswordM.tools.tentacle_point.label>
+
+</LanguageData>

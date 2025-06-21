@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+
+
+   <!-- EN: Transformation -->
+  <Cinder_ActivateTentacles.label>剑刃活化</Cinder_ActivateTentacles.label>
+  <!-- EN: Transform to a turret. -->
+  <Cinder_ActivateTentacles.description>激活枪身上的无定形聚合物触手，使枪口的剑刃变长。</Cinder_ActivateTentacles.description>
+  
+    <!-- EN: Transformation -->
+  <Cinder_Deactivate.label>解除活化</Cinder_Deactivate.label>
+  <!-- EN: Transform to a turret. -->
+  <Cinder_Deactivate.description>解除触手剑刃的活化状态。</Cinder_Deactivate.description>
+
+</LanguageData>

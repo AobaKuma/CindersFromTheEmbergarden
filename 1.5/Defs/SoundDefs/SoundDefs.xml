@@ -27,7 +27,7 @@
         </subSounds>
     </SoundDef>
 	
-		<SoundDef>
+	<SoundDef>
         <defName>Cinder_Shot_Fume</defName>
         <context>MapOnly</context>
         <eventNames/>
@@ -35,17 +35,17 @@
         <subSounds>
             <li>
                 <grains>
-                    <li Class="AudioGrain_Clip">
-                        <clipPath>Weapons/Fume</clipPath>
-                    </li>
+					 <li Class="AudioGrain_Folder">
+                     <clipFolderPath>Weapons/Fume</clipFolderPath>
+                     </li>
                 </grains>
                 <volumeRange>
-                    <min>34.2941</min>
-                    <max>40.2941</max>
+                    <min>25.2941</min>
+                    <max>29.2941</max>
                 </volumeRange>
                 <pitchRange>
-                    <min>1.191765</min>
-                    <max>1.231435</max>
+                    <min>0.736413</min>
+                    <max>0.823915</max>
                 </pitchRange>
                 <sustainLoop>False</sustainLoop>
             </li>
