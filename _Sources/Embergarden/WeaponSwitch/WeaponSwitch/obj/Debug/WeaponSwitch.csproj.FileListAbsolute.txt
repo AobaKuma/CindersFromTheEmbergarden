@@ -22,7 +22,6 @@ C:\Users\Administrator\source\repos\WeaponSwitch\WeaponSwitch\bin\Debug\UnityEng
 C:\Users\Administrator\source\repos\WeaponSwitch\WeaponSwitch\bin\Debug\UnityEngine.UI.dll
 C:\Users\Administrator\source\repos\WeaponSwitch\WeaponSwitch\bin\Debug\UnityEngine.SharedInternalsModule.dll
 C:\Users\Administrator\source\repos\WeaponSwitch\WeaponSwitch\bin\Debug\Unity.Burst.Unsafe.dll
-C:\Users\Administrator\source\repos\WeaponSwitch\WeaponSwitch\bin\Debug\UnityEngine.TextCoreModule.dll
 C:\Users\Administrator\source\repos\WeaponSwitch\WeaponSwitch\bin\Debug\UnityEngine.UIModule.dll
 C:\Users\Administrator\source\repos\WeaponSwitch\WeaponSwitch\bin\Debug\UnityEngine.Physics2DModule.dll
 C:\Users\Administrator\source\repos\WeaponSwitch\WeaponSwitch\bin\Debug\UnityEngine.AnimationModule.dll
@@ -31,3 +30,10 @@ C:\Users\Administrator\source\repos\WeaponSwitch\WeaponSwitch\obj\Debug\WeaponSw
 C:\Users\Administrator\source\repos\WeaponSwitch\WeaponSwitch\obj\Debug\WeaponSw.737FB7CF.Up2Date
 C:\Users\Administrator\source\repos\WeaponSwitch\WeaponSwitch\obj\Debug\WeaponSwitch.dll
 C:\Users\Administrator\source\repos\WeaponSwitch\WeaponSwitch\obj\Debug\WeaponSwitch.pdb
+C:\Users\Administrator\source\repos\WeaponSwitch\WeaponSwitch\bin\Debug\Unity.Collections.dll
+C:\Users\Administrator\source\repos\WeaponSwitch\WeaponSwitch\bin\Debug\netstandard.dll
+C:\Users\Administrator\source\repos\WeaponSwitch\WeaponSwitch\bin\Debug\UnityEngine.TextCoreTextEngineModule.dll
+C:\Users\Administrator\source\repos\WeaponSwitch\WeaponSwitch\bin\Debug\UnityEngine.PropertiesModule.dll
+C:\Users\Administrator\source\repos\WeaponSwitch\WeaponSwitch\bin\Debug\Unity.Collections.LowLevel.ILSupport.dll
+C:\Users\Administrator\source\repos\WeaponSwitch\WeaponSwitch\bin\Debug\UnityEngine.TextCoreFontEngineModule.dll
+C:\Users\Administrator\source\repos\WeaponSwitch\WeaponSwitch\bin\Debug\UnityEngine.SpriteShapeModule.dll

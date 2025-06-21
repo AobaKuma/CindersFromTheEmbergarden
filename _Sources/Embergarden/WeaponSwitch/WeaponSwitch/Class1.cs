@@ -2,7 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.Remoting.Messaging;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -10,59 +12,109 @@ using Verse;
 
 namespace WeaponSwitch
 {
-    public class CompProperties_Switch : CompProperties_EquippableAbility
+    public static class Extensions
+    {
+        public static void SwitchFormTo(this Pawn pawn,ThingWithComps thing,CompSwitch comp)
+        {
+            pawn.ChangeEquipThing(thing, comp.Props.changeTo);
+            comp = pawn.equipment.Primary.GetComp<CompSwitch>();
+            Ability ability = pawn.abilities.GetAbility(comp.Props.abilityDef);
+            ability.StartCooldown(ability.def.cooldownTicksRange.RandomInRange);
+        }
+    }
+
+    public class CompProperties_Switch : CompProperties
     {
         public ThingDef changeTo;
+
+        public AbilityDef abilityDef;
+
         public CompProperties_Switch()
         {
             compClass = typeof(CompSwitch);
         }
     }
 
-    public class CompSwitch : CompEquippableAbility
+    public class CompSwitch : ThingComp
     {
         public CompProperties_Switch Props => (CompProperties_Switch)props;
 
-        public HediffWithComps hediff;
-        public HediffComp_Disappears Disappears => hediff.GetComp<HediffComp_Disappears>();
+        public HediffDef hediffDef;
+        public int ticks;
+        public Pawn Holder => (parent?.ParentHolder as Pawn_EquipmentTracker)?.pawn;
+
         public override void Notify_Equipped(Pawn pawn)
         {
             base.Notify_Equipped(pawn);
-            if (hediff != null)
+            if (Props.abilityDef != null)
             {
-                pawn.health.AddHediff(hediff);
+                pawn.abilities.GainAbility(Props.abilityDef);
+            }
+            if (ticks > 0)
+            {
+                if (hediffDef != null)
+                {
+                    HediffWithComps hediffWithComps = (HediffWithComps)HediffMaker.MakeHediff(hediffDef, pawn);
+                    hediffWithComps.GetComp<HediffComp_Disappears>().ticksToDisappear = ticks;
+                    pawn.health.AddHediff(hediffWithComps);
+                }
+                ticks = 0;
             }
         }
 
         public override void Notify_Unequipped(Pawn pawn)
         {
             base.Notify_Unequipped(pawn);
-            if (hediff != null)
+            if (Props.abilityDef != null)
             {
-                pawn.health.RemoveHediff(hediff);
+                pawn.abilities.RemoveAbility(Props.abilityDef);
+            }
+            if (hediffDef != null)
+            {
+                HediffWithComps hediffWithComps = (HediffWithComps)pawn.health.hediffSet.GetFirstHediffOfDef(hediffDef);
+                if (hediffWithComps != null)
+                {
+                    ticks = hediffWithComps.GetComp<HediffComp_Disappears>().ticksToDisappear;
+                    pawn.health.RemoveHediff(pawn.health.hediffSet.GetFirstHediffOfDef(hediffDef));
+                }
             }
         }
 
         public override string CompInspectStringExtra()
         {
             string text = "";
-            if (hediff != null)
+            if (ticks > 0)
             {
-                text += hediff.LabelBase + ": " + Disappears.ticksToDisappear.ToStringSecondsFromTicks("F0");
+                text += hediffDef.label + ": " + ticks.ToStringSecondsFromTicks("F0");
             }
             return text;
         }
+
         public override void CompTick()
         {
             base.CompTick();
-            if (hediff != null)
+            if (ticks > 0)
             {
-                float severityAdjustment = 0f;
-                Disappears.CompPostTick(ref severityAdjustment);
-                if (Disappears.ticksToDisappear <= 0)
+                ticks--;
+                if (ticks <= 0)
                 {
-                    hediff = null;
-                    Extension.ChangeOldThing(parent, Props.changeTo);
+                    hediffDef = null;
+                    if (Holder != null)
+                    {
+                        Pawn pawn = Holder;
+                        pawn.SwitchFormTo(parent, this);
+                    }
+                    else
+                    {
+                        if (parent.Spawned)
+                        {
+                            Extension.ChangeOldThing(parent, Props.changeTo);
+                        }
+                        else
+                        {
+                            ticks = 1;
+                        }
+                    }
                 }
             }
         }
@@ -70,7 +122,8 @@ namespace WeaponSwitch
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_References.Look(ref hediff, "hediff", true);
+            Scribe_Defs.Look(ref hediffDef, "hediffDef");
+            Scribe_Values.Look(ref ticks, "ticks");
         }
     }
 
@@ -85,6 +138,7 @@ namespace WeaponSwitch
             base.Apply(target, dest);
             Pawn.ChangeEquipThing(BaseForm, ChangeTo);
         }
+
         public override bool AICanTargetNow(LocalTargetInfo target)
         {
             return true;
@@ -95,17 +149,30 @@ namespace WeaponSwitch
     {
         public Pawn Pawn => parent.pawn;
         public ThingWithComps BaseForm => Pawn.equipment.Primary;
+
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             base.Apply(target, dest);
             CompSwitch comp = BaseForm.GetComp<CompSwitch>();
-            if (comp.hediff != null)
+            if (comp.hediffDef != null)
             {
-                comp.Disappears.ticksToDisappear = 0;
-                Pawn.health.RemoveHediff(comp.hediff);
-                comp.hediff = null;
+                HediffWithComps hediffWithComps = (HediffWithComps)Pawn.health.hediffSet.GetFirstHediffOfDef(comp.hediffDef);
+                if (hediffWithComps != null)
+                {
+                    hediffWithComps.GetComp<HediffComp_Disappears>().ticksToDisappear = 0;
+                    Pawn.health.RemoveHediff(hediffWithComps);
+                }
+                else
+                {
+                    Pawn.SwitchFormTo(BaseForm, BaseForm.GetComp<CompSwitch>());
+                }
+            }
+            else
+            {
+                Pawn.SwitchFormTo(BaseForm,BaseForm.GetComp<CompSwitch>());
             }
         }
+
         public override bool AICanTargetNow(LocalTargetInfo target)
         {
             return true;
@@ -124,18 +191,6 @@ namespace WeaponSwitch
             }
             ThingWithComps newThing = (ThingWithComps)ThingMaker.MakeThing(changeTo, stuff);
             newThing.HitPoints = hitPoints;
-            for (int i = 0; i < newThing.AllComps.Count; i++)
-            {
-                CompProperties Index = newThing.AllComps[i].props;
-                ThingComp baseComp = baseForm.GetCompByDefType(Index);
-                if (baseComp != null)
-                {
-                    baseComp.parent = newThing;
-                    newThing.AllComps[i] = baseComp;
-                }
-            }
-            CompSwitch compSwitch = newThing.GetComp<CompSwitch>();
-            compSwitch.Initialize(newThing.def.comps.Find(x => x.compClass == typeof(CompSwitch)));
             ThingStyleDef styleDef = baseForm.StyleDef;
             if (baseForm.def.randomStyle != null && newThing.def.randomStyle != null)
             {
@@ -146,12 +201,22 @@ namespace WeaponSwitch
             return newThing;
         }
 
+        public static void CopyQuality(ThingWithComps baseForm, ThingWithComps switchForm)
+        {
+            CompQuality quality = switchForm.GetComp<CompQuality>();
+            if (baseForm.TryGetQuality(out QualityCategory q))
+            {
+                quality.SetQuality(q, null);
+            }
+        }
+
         public static void ChangeOldThing(ThingWithComps baseForm, ThingDef changeTo)
         {
             ThingWithComps newThing = ChangeThing(baseForm, changeTo);
             IntVec3 intVec3 = baseForm.Position;
             Map map = baseForm.Map;
             baseForm.Destroy();
+            CopyQuality(baseForm, newThing);
             GenSpawn.Spawn(newThing, intVec3, map);
         }
 
@@ -160,27 +225,31 @@ namespace WeaponSwitch
             ThingWithComps newThing = ChangeThing(baseForm, changeTo);
             pawn.equipment.DestroyEquipment(baseForm);
             baseForm.Notify_Unequipped(pawn);
+            CopyQuality(baseForm, newThing);
             pawn.equipment.MakeRoomFor(newThing);
             pawn.equipment.AddEquipment(newThing);
         }
     }
 
-    public class HediffCompPropertiesSwitch : HediffCompProperties_GiveAbility
+    public class HediffCompPropertiesSwitch : HediffCompProperties
     {
         public HediffCompPropertiesSwitch()
         {
             compClass = typeof(SwitchWhenDisappear);
         }
     }
-    public class SwitchWhenDisappear : HediffComp_GiveAbility
+
+    public class SwitchWhenDisappear : HediffComp
     {
         public HediffCompPropertiesSwitch Props => (HediffCompPropertiesSwitch)props;
+
         public override void CompPostMake()
         {
             base.CompPostMake();
             CompSwitch compSwitch = Pawn.equipment.Primary.GetComp<CompSwitch>();
-            compSwitch.hediff = parent;
+            compSwitch.hediffDef = parent.def;
         }
+
         public override void CompPostPostRemoved()
         {
             base.CompPostPostRemoved();
@@ -190,10 +259,9 @@ namespace WeaponSwitch
                 if (thing != null)
                 {
                     CompSwitch compSwitch = thing.GetComp<CompSwitch>();
-                    compSwitch.hediff = null;
                     if (compSwitch != null)
                     {
-                        Pawn.ChangeEquipThing(thing, compSwitch.Props.changeTo);
+                        Pawn.SwitchFormTo(thing, compSwitch);
                     }
                 }
             }
