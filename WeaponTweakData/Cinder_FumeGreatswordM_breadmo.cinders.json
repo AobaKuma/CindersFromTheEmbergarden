@@ -1,0 +1,14 @@
+{
+  "TextureModID": "breadmo.cinders",
+  "ItemDefName": "Cinder_FumeGreatswordM",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.190476388,
+  "OffY": 0.0129140345,
+  "Rotation": 45.0,
+  "ScaleX": 1.3,
+  "ScaleY": 1.3,
+  "BladeStart": 0.20117946,
+  "BladeEnd": 0.893875957,
+  "MeleeWeaponType": 6
+}

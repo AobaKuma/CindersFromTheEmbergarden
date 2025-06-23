@@ -1,0 +1,15 @@
+{
+  "TextureModID": "breadmo.cinders",
+  "ItemDefName": "Cinder_HighFrequencySaw",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.3761732,
+  "OffY": 0.0465116277,
+  "Rotation": 45.0,
+  "ScaleX": 1.05,
+  "ScaleY": 1.05,
+  "HandsMode": 1,
+  "BladeStart": 0.5566008,
+  "BladeEnd": 0.9968504,
+  "MeleeWeaponType": 52
+}

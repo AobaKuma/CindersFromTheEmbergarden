@@ -1,0 +1,13 @@
+{
+  "TextureModID": "breadmo.cinders",
+  "ItemDefName": "Cinder_ImpactBreaker",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": -0.143677816,
+  "OffY": -0.02586207,
+  "ScaleX": 1.4,
+  "ScaleY": 1.4,
+  "BladeStart": 0.1839793,
+  "BladeEnd": 0.490611762,
+  "MeleeWeaponType": 13
+}

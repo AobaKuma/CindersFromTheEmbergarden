@@ -1,0 +1,13 @@
+{
+  "TextureModID": "breadmo.cinders",
+  "ItemDefName": "Cinder_ElectricScythe",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.0966922641,
+  "OffY": 0.03816794,
+  "ScaleX": 1.6,
+  "ScaleY": 1.6,
+  "BladeStart": 0.546012163,
+  "BladeEnd": 0.823033,
+  "MeleeWeaponType": 6
+}

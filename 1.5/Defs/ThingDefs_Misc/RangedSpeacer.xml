@@ -228,7 +228,7 @@
 		<targetRequired>false</targetRequired>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<statBases>
-			<Ability_Duration>120</Ability_Duration>
+			<Ability_Duration>200</Ability_Duration>
 		</statBases>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
