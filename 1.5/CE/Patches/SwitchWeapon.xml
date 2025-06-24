@@ -2,13 +2,13 @@
 <Patch>
 
 	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ThingDef[defName="Cinder_FumeGreatsword" or defName="Cinder_FumeGreatswordM"]/comps/li[@Class="WeaponSwitch.CompProperties_Switch"]</xpath>
+		<xpath>Defs/ThingDef[defName="Cinder_FumeGreatsword" or defName="Cinder_FumeGreatswordM"]/comps/li[@Class="CinderWeaponSwitch.CompProperties_Switch"]</xpath>
 		<attribute>Class</attribute>
 		<value>WeaponSwitchCE.CompProperties_Switch</value>
 	</Operation>
 	
 		<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/HediffDef[defName="Cinder_ActivateTentaclesDuration"]/comps/li[@Class="WeaponSwitch.HediffCompPropertiesSwitch"]</xpath>
+		<xpath>Defs/HediffDef[defName="Cinder_ActivateTentaclesDuration"]/comps/li[@Class="CinderWeaponSwitch.HediffCompPropertiesSwitch"]</xpath>
 		<attribute>Class</attribute>
 		<value>WeaponSwitchCE.HediffCompPropertiesSwitch</value>
 	</Operation>

@@ -119,7 +119,7 @@
     </tools>
 	
 	    <comps>
-			<li Class="WeaponSwitch.CompProperties_Switch">
+			<li Class="CinderWeaponSwitch.CompProperties_Switch">
 				<changeTo>Cinder_FumeGreatswordM</changeTo>
 				<abilityDef>Cinder_ActivateTentacles</abilityDef>
 			</li>
@@ -208,7 +208,7 @@
     </tools>
 	
 		<comps>
-			<li Class="WeaponSwitch.CompProperties_Switch">
+			<li Class="CinderWeaponSwitch.CompProperties_Switch">
 				<changeTo>Cinder_FumeGreatsword</changeTo>
 				<abilityDef>Cinder_Deactivate</abilityDef>
 			</li>
@@ -243,7 +243,7 @@
 		</verbProperties>
 		<comps>
 			<li Class="CompProperties_AbilityEffect">
-				<compClass>WeaponSwitch.CompAbilityEffect_Switch</compClass>
+				<compClass>CinderWeaponSwitch.CompAbilityEffect_Switch</compClass>
 			</li>
 			<!-- 如果不需要限时，可以把这玩意删了-->
 			<li Class="CompProperties_AbilityGiveHediff">
@@ -264,7 +264,7 @@
 			<li Class="HediffCompProperties_Disappears">
 				<showRemainingTime>true</showRemainingTime>
 			</li>
-			<li Class="WeaponSwitch.HediffCompPropertiesSwitch"/>
+			<li Class="CinderWeaponSwitch.HediffCompPropertiesSwitch"/>
 		</comps>
 	</HediffDef>
 	
@@ -292,7 +292,7 @@
 		</verbProperties>
 		<comps>
 			<li Class="CompProperties_AbilityEffect">
-				<compClass>WeaponSwitch.CompAbilityEffect_RemoveHediff</compClass>
+				<compClass>CinderWeaponSwitch.CompAbilityEffect_RemoveHediff</compClass>
 			</li>
 		</comps>
 	</AbilityDef>
