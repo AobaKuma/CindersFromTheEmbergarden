@@ -11,6 +11,11 @@
   <!-- EN: Carriers of this gene have a particular hair color. With multiple hair color genes, one is randomly selected. -->
   <Cinder_BrownHair.description>携带者会长出特定颜色的头发</Cinder_BrownHair.description>
   
+    <!-- EN: dark brown hair -->
+  <Cinder_LightTanHair.label>浅茶发</Cinder_LightTanHair.label>
+  <!-- EN: Carriers of this gene have a particular hair color. With multiple hair color genes, one is randomly selected. -->
+  <Cinder_LightTanHair.description>携带者会长出特定颜色的头发</Cinder_LightTanHair.description>
+  
   <!-- EN: erosion eyes -->
   <Cinder_ErosionEyes.label>侵蚀眼</Cinder_ErosionEyes.label>
   <!-- EN: Carriers of this gene have deeply erosion eyes. -->

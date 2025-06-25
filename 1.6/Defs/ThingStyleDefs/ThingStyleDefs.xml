@@ -15,6 +15,7 @@
 	 <drawSize>1.2</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/PCX33/PCX33UI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -25,6 +26,7 @@
 	 <drawSize>1.13</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/PCX33/PCX33UI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -35,6 +37,7 @@
 	 <drawSize>1.2</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/PCX33/PCX33UI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -45,6 +48,7 @@
 	 <drawSize>1.2</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/PCX33/PCX33UI</uiIconPath>
+	 
   </ThingStyleDef>
   
   
@@ -57,6 +61,7 @@
 	 <drawSize>1.2</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/Magistrate/MagistrateUI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -67,6 +72,7 @@
 	 <drawSize>1.2</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/Magistrate/MagistrateUI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -77,6 +83,7 @@
 	 <drawSize>1.2</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/Magistrate/MagistrateUI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -87,6 +94,7 @@
 	 <drawSize>1.2</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/Magistrate/MagistrateUI</uiIconPath>
+	 
   </ThingStyleDef>
   
   
@@ -99,6 +107,7 @@
 	 <drawSize>1.3</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/MP12/MP12UI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -109,6 +118,7 @@
 	 <drawSize>1.4</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/MP12/MP12UI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -119,6 +129,7 @@
 	 <drawSize>1.3</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/MP12/MP12UI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -129,6 +140,7 @@
 	 <drawSize>1.3</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/MP12/MP12UI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -139,6 +151,7 @@
 	 <drawSize>1.3</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/MP12/MP12UI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -149,6 +162,7 @@
 	 <drawSize>1.3</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/MP12/MP12UI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -159,6 +173,7 @@
 	 <drawSize>1.4</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/MP12/MP12UI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -169,6 +184,7 @@
 	 <drawSize>1.3</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/MP12/MP12UI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -179,6 +195,7 @@
 	 <drawSize>1.4</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/MP12/MP12UI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -189,6 +206,7 @@
 	 <drawSize>1.3</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/MP12/MP12UI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -199,6 +217,7 @@
 	 <drawSize>1.3</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/MP12/MP12UI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -209,6 +228,7 @@
 	 <drawSize>1.3</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/MP12/MP12UI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -219,6 +239,7 @@
 	 <drawSize>1.24</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/Flint50/Flint50UI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -229,6 +250,7 @@
 	 <drawSize>1.24</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/Flint50/Flint50UI</uiIconPath>
+	 
   </ThingStyleDef>
   
    <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -239,6 +261,7 @@
 	 <drawSize>1.24</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/Flint50/Flint50UI</uiIconPath>
+	 
   </ThingStyleDef>
   
    <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -249,6 +272,7 @@
 	 <drawSize>1.24</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/Flint50/Flint50UI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -259,6 +283,7 @@
 	 <drawSize>1.05</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/HighFrequencySaw/HighFrequencySawC</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -269,6 +294,7 @@
 	 <drawSize>1.05</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/HighFrequencySaw/HighFrequencySawC</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -279,6 +305,7 @@
 	 <drawSize>1.05</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/HighFrequencySaw/HighFrequencySawC</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -289,6 +316,7 @@
 	 <drawSize>1.05</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/HighFrequencySaw/HighFrequencySawC</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -319,6 +347,7 @@
 	 <drawSize>1.3</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatswordUI</uiIconPath>
+	 
   </ThingStyleDef>
   
    <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -329,6 +358,7 @@
 	 <drawSize>1.3</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatswordUI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -339,6 +369,7 @@
 	 <drawSize>1.3</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatswordUI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -349,6 +380,7 @@
 	 <drawSize>1.3</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatswordUI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -359,6 +391,7 @@
 	 <drawSize>1.3</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatswordUI</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -369,6 +402,7 @@
 	 <drawSize>1.3</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatsword_MC</uiIconPath>
+	 
   </ThingStyleDef>
   
    <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -379,6 +413,7 @@
 	 <drawSize>1.3</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatsword_MC</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -389,6 +424,7 @@
 	 <drawSize>1.3</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatsword_MC</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -399,6 +435,7 @@
 	 <drawSize>1.3</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatsword_MC</uiIconPath>
+	 
   </ThingStyleDef>
   
   <ThingStyleDef ParentName="CinderStyle_RotateWeapons">
@@ -409,5 +446,6 @@
 	 <drawSize>1.3</drawSize>
     </graphicData>
 	<uiIconPath>Things/Weapons/FumeGreatsword/FumeGreatsword_MC</uiIconPath>
+	 
   </ThingStyleDef>
 </Defs>

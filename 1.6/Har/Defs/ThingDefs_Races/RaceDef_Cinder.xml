@@ -46,6 +46,10 @@
 										<only>(0.26,0.24,0.20)</only>
 									</li>
 									<li>
+										<weight>8</weight>
+										<only>(0.45,0.43,0.38)</only>
+									</li>
+									<li>
 										<weight>5</weight>
 										<only>(0.3,0.3,0.3)</only>
 									</li>

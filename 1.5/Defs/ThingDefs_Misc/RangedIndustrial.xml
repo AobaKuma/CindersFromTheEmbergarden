@@ -155,6 +155,7 @@
 			<texPath>Things/Weapons/Magistrate/MagistrateA</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<uiIconScale>1.1</uiIconScale>
 		<uiIconPath>Things/Weapons/Magistrate/MagistrateUI</uiIconPath>
 		<soundInteract>Interact_Shotgun</soundInteract>
 		<weaponClasses>
@@ -244,6 +245,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.3</drawSize>
 		</graphicData>
+		<uiIconScale>1.35</uiIconScale>
 		<uiIconPath>Things/Weapons/MP12/MP12UI</uiIconPath>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
@@ -361,6 +363,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.2</drawSize>
 		</graphicData>
+		<uiIconScale>1.3</uiIconScale>
 		<uiIconPath>Things/Weapons/PCX33/PCX33UI</uiIconPath>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
@@ -454,6 +457,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.24</drawSize>
 		</graphicData>
+		<uiIconScale>1.24</uiIconScale>
 		<uiIconPath>Things/Weapons/Flint50/Flint50UI</uiIconPath>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
@@ -549,6 +553,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.24</drawSize>
 		</graphicData>
+		<uiIconScale>1.05</uiIconScale>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
 			<li>RangedHeavy</li>
@@ -668,6 +673,7 @@
 			<texPath>Things/Weapons/ErosionGourd/ErosionGourd</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<uiIconScale>1.1</uiIconScale>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
 			<li>RangedHeavy</li>

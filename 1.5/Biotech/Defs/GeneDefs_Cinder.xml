@@ -40,6 +40,14 @@
     <displayOrderInCategory>110</displayOrderInCategory>
   </GeneDef>
   
+    <GeneDef ParentName="GeneHairColorBase">
+    <defName>Cinder_LightTanHair</defName>
+    <label>light tan hair</label>
+    <hairColorOverride>(0.45,0.43,0.38)</hairColorOverride>
+    <selectionWeight>1.8</selectionWeight>
+    <displayOrderInCategory>110</displayOrderInCategory>
+  </GeneDef>
+  
   <GeneDef ParentName="GeneHairColorBase">
     <defName>Cinder_BlackHair</defName>
     <label>black hair</label>
