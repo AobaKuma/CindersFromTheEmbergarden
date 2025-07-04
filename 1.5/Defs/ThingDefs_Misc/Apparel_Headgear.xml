@@ -551,7 +551,7 @@
 			</defaultIngredientFilter>
 		</recipeMaker>
 		<costList>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
 			<Cloth>30</Cloth>
 			<Cinder_AmorphousPolymer>30</Cinder_AmorphousPolymer>
 		</costList>

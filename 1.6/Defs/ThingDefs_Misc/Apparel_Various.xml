@@ -345,6 +345,7 @@
 		</apparel>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.5</MoveSpeed>
+			 <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
 		</equippedStatOffsets>
 	</ThingDef>
 

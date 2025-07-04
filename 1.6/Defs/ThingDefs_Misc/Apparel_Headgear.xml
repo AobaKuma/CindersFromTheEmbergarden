@@ -551,7 +551,7 @@
 			</defaultIngredientFilter>
 		</recipeMaker>
 		<costList>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
 			<Cloth>30</Cloth>
 			<Cinder_AmorphousPolymer>30</Cinder_AmorphousPolymer>
 		</costList>
@@ -587,6 +587,7 @@
 			<ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
 			<ToxicEnvironmentResistance>0.75</ToxicEnvironmentResistance>
 			<PainShockThreshold>0.20</PainShockThreshold>
+			 <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.68</VacuumResistance>
 		</equippedStatOffsets>
 	</ThingDef>
 
@@ -660,6 +661,7 @@
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
 			<ToxicEnvironmentResistance>0.35</ToxicEnvironmentResistance>
+			 <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.35</VacuumResistance>
 		</equippedStatOffsets>
 	</ThingDef>
 </Defs>

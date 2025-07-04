@@ -703,6 +703,7 @@
 			<ToxicEnvironmentResistance>0.55</ToxicEnvironmentResistance>
 			<RestFallRateFactor>0.1</RestFallRateFactor>
 			<PainShockThreshold>0.50</PainShockThreshold>
+			 <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.25</VacuumResistance>
 		</equippedStatOffsets>
 	</ThingDef>
 
@@ -788,6 +789,7 @@
 			<WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
 			<RestFallRateFactor>0.35</RestFallRateFactor>
 			<PainShockThreshold>0.50</PainShockThreshold>
+			 <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.2</VacuumResistance>
 		</equippedStatOffsets>
 	</ThingDef>
 
