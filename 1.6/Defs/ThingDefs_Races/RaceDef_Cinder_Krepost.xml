@@ -209,10 +209,9 @@
           </li>
         </subTurrets>
        </li>
-	  
     </comps>
     <modExtensions>
-      <li MayRequire="aoba.deadmanswitch.core" Class="DMS.MechWeaponExtension">
+      <li MayRequire="aoba.deadmanswitch.core" Class="Fortified.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li MayRequire="vanillaexpanded.vwehw">HeavyGun</li><!--重型武器拓展-->
@@ -468,7 +467,7 @@
        </li>
     </comps>
 	<modExtensions>
-      <li MayRequire="aoba.deadmanswitch.core" Class="DMS.MechWeaponExtension">
+      <li MayRequire="aoba.deadmanswitch.core" Class="Fortified.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
           <li MayRequire="vanillaexpanded.vwehw">HeavyGun</li><!--重型武器拓展-->

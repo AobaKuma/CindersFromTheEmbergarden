@@ -4,14 +4,14 @@
 		<Operation Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/thingClass</xpath>
 					<value>
-                    <thingClass>DMS.WeaponUsableMech</thingClass>
+                    <thingClass>Fortified.WeaponUsableMech</thingClass>
 				</value>
 		</Operation>
 	
 	    <Operation Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="Cinder_Mech_Tombstone"]/thingClass</xpath>
 					<value>
-                    <thingClass>DMS.WeaponUsableMech</thingClass>
+                    <thingClass>Fortified.WeaponUsableMech</thingClass>
 				</value>
 		</Operation>
 	
@@ -32,14 +32,14 @@
 		<Operation Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/comps</xpath>
 					<value>
-                       <li MayRequire="Ludeon.Rimworld.Biotech" Class="DMS.CompProperties_DeadManSwitch" />
+                       <li MayRequire="Ludeon.Rimworld.Biotech" Class="Fortified.CompProperties_DeadManSwitch" />
 					</value>
 		</Operation>
 		
 		<Operation Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="Cinder_Mech_Tombstone"]/comps</xpath>
 					<value>
-                       <li MayRequire="Ludeon.Rimworld.Biotech" Class="DMS.CompProperties_DeadManSwitch" />
+                       <li MayRequire="Ludeon.Rimworld.Biotech" Class="Fortified.CompProperties_DeadManSwitch" />
 					</value>
 		</Operation>
 		
@@ -100,7 +100,7 @@
 		<Operation Class="PatchOperationAddModExtension">
 					<xpath>Defs/ThingDef[defName="Cinder_MechGun_AnvilDiscipline"]</xpath>
 					<value>
-			               <li Class="DMS.HeavyEquippableExtension">
+			               <li Class="Fortified.HeavyEquippableExtension">
 			              	<EquippableDef>UltraHeavyAutomatroid</EquippableDef>
 			               </li>
 					</value>
