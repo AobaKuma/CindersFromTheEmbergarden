@@ -120,9 +120,6 @@
 						<layer>56</layer>
 						<offset>(0, 0, 0)</offset>
 					</defaultData>
-					<dataWest>
-						<flip>true</flip>
-					</dataWest>
 				          </drawData>
 			            </li>
 	  </renderNodeProperties>
