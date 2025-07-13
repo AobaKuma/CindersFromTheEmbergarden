@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Bread Mo's Valentine's Day apparel</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			<li Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Cinder"]/alienRace/graphicPaths/apparel/individualPaths</xpath>
+					<value>
+					    <li>
+							<key>H_Cloth_First</key>
+							<value>Things/Pawn/Humanlike/Apparel/ExtraTexture/BreadSA/h_cloth1</value>
+						</li>
+						<li>
+							<key>H_Cloth_Second</key>
+							<value>Things/Pawn/Humanlike/Apparel/ExtraTexture/BreadSA/h_cloth2</value>
+						</li>
+						<li>
+							<key>H_Cloth_Third</key>
+							<value>Things/Pawn/Humanlike/Apparel/ExtraTexture/BreadSA/h_cloth3</value>
+						</li>
+						<li>
+							<key>H_Cloth_Forth</key>
+							<value>Things/Pawn/Humanlike/Apparel/ExtraTexture/BreadSA/h_cloth4</value>
+						</li>
+						<li>
+							<key>H_Cloth_Fifth</key>
+							<value>Things/Pawn/Humanlike/Apparel/ExtraTexture/BreadSA/h_cloth5</value>
+						</li>
+						<li>
+							<key>H_Cloth_Sixth</key>
+							<value>Things/Pawn/Humanlike/Apparel/ExtraTexture/BreadSA/h_cloth6</value>
+						</li>
+						<li>
+							<key>H_Cloth_seven</key>
+							<value>Things/Pawn/Humanlike/Apparel/ExtraTexture/BreadSA/h_cloth7</value>
+						</li>
+						<li>
+							<key>H_Cloth_Zoombie</key>
+							<value>Things/Pawn/Humanlike/Apparel/ExtraTexture/BreadSA/h_cloth_zoombie</value>
+						</li>
+						<li>
+							<key>H_Cloth_Ghost</key>
+							<value>Things/Pawn/Humanlike/Apparel/ExtraTexture/BreadSA/h_cloth_ghost</value>
+						</li>
+						<li>
+							<key>H_Cloth_Weddingdress</key>
+							<value>Things/Pawn/Humanlike/Apparel/ExtraTexture/BreadSA/h_cloth_weddingdress</value>
+						</li>
+				</value>
+			</li>
+			</operations>
+		</match>
+	</Operation>		
+</Patch>

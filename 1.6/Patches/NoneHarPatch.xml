@@ -5,40 +5,58 @@
 		<mods>
 			<li>Humanoid Alien Races</li>
 		</mods>
-		<nomatch Class="PatchOperationSequence">
+		<match Class="PatchOperationSequence">
 			<operations>
 				
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/PawnKindDef[defName="Cinder_Ghoul" or defName="Cinder_EliteGhoul"]/apparelRequired</xpath>
+					<xpath>Defs/PawnKindDef[defName="Cinder_Ghoul"]/apparelRequired</xpath>
 					<value>
                     <apparelRequired>
 			              <li>Cinder_HeadGear_GhoulUnitHelmet</li>
-			              <li>Cinder_Apparel_BulletproofEquipment</li>
+			              <li>Cinder_Apparel_BrokenGhoulUnitGear</li>
+		            </apparelRequired>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Cinder_EliteGhoul"]/apparelRequired</xpath>
+					<value>
+                    <apparelRequired>
+			              <li>Cinder_HeadGear_GhoulUnitHelmet</li>
+			              <li>Cinder_Apparel_GhoulUnitGear</li>
 		            </apparelRequired>
 				</value>
 			</li>
 			</operations>
-		</nomatch>
+		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Humanoid Alien Races ~ Dev</li>
 		</mods>
-		<nomatch Class="PatchOperationSequence">
+		<match Class="PatchOperationSequence">
 			<operations>
 				
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/PawnKindDef[defName="Cinder_Ghoul" or defName="Cinder_EliteGhoul"]/apparelRequired</xpath>
+					<xpath>Defs/PawnKindDef[defName="Cinder_Ghoul"]/apparelRequired</xpath>
 					<value>
                     <apparelRequired>
 			              <li>Cinder_HeadGear_GhoulUnitHelmet</li>
-			              <li>Cinder_Apparel_BulletproofEquipment</li>
+			              <li>Cinder_Apparel_BrokenGhoulUnitGear</li>
+		            </apparelRequired>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Cinder_EliteGhoul"]/apparelRequired</xpath>
+					<value>
+                    <apparelRequired>
+			              <li>Cinder_HeadGear_GhoulUnitHelmet</li>
+			              <li>Cinder_Apparel_GhoulUnitGear</li>
 		            </apparelRequired>
 				</value>
 			</li>
 			</operations>
-		</nomatch>
+		</match>
 	</Operation>
 
 </Patch>

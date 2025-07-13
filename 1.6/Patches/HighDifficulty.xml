@@ -37,6 +37,9 @@
 						<statFactors>
 					       <IncomingDamageFactor>0.95</IncomingDamageFactor>
 				        </statFactors>
+						<statOffsets>
+					       <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.25</VacuumResistance>
+				        </statOffsets>
 		              	</li>
 					</value>
 				</li>
@@ -181,6 +184,9 @@
 					       <Arrow>0.55</Arrow>
 					       <ArrowHighVelocity>0.55</ArrowHighVelocity>
 				        </damageFactors>
+						<statOffsets>
+					       <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.95</VacuumResistance>
+				        </statOffsets>
 			            </li>
 					</value>
 				</li>

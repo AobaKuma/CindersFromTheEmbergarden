@@ -31,4 +31,33 @@
   <!-- EN: A sturdy jacket with embedded metal plates to prevent accidental injuries. -->
   <Cinder_Apparel_WorkwearJacket.description>带有嵌入式金属板的坚固夹克，可防止意外伤害。</Cinder_Apparel_WorkwearJacket.description>
   
+  <!-- EN: exotic -->
+  <Cinder_Apparel_Exotic.label>异域</Cinder_Apparel_Exotic.label>
+  <!-- EN: A exotic dancer costume, completely defenseless.It seems that there is some strange device installed on it, and the person wearing it will enter a state of heightened libido. -->
+  <Cinder_Apparel_Exotic.description>一条异域风情的舞娘服装，完全没有防御力，上面似乎安装有一种奇怪的药物散发设备，穿着它的人会不受控制的性欲高涨。</Cinder_Apparel_Exotic.description>
+  
+  <!-- EN: ghost clock -->
+  <Cinder_Apparel_GhostCloak.label>幽灵斗篷</Cinder_Apparel_GhostCloak.label>
+  <!-- EN: A strange cloak, completely defenseless, looks like some kind of Halloween costume. -->
+  <Cinder_Apparel_GhostCloak.description>一件奇怪的斗篷，看起来像是某种万圣节服装。</Cinder_Apparel_GhostCloak.description>
+  
+  <!-- EN: ghost -->
+  <Cinder_Apparel_GhostUnderwear.label>幽灵</Cinder_Apparel_GhostUnderwear.label>
+  <!-- EN: A strange hollow out skirt underwear, completely defenseless, but very capable of adorning the body.It seems that there is some strange device installed on it, and the person wearing it will enter a state of heightened libido. -->
+  <Cinder_Apparel_GhostUnderwear.description>一件奇怪的镂空内衣，完全没有防御力，但很能修饰身体曲线。上面似乎安装有一种奇怪的药物散发设备，穿着它的人会不受控制的性欲高涨。</Cinder_Apparel_GhostUnderwear.description>
+  
+   <!-- EN: maid -->
+  <Cinder_Apparel_MaidCostume.label>女仆</Cinder_Apparel_MaidCostume.label>
+  <!-- EN: A delicate special maid outfit, using very little fabric, completely defenseless.It seems that there is some strange device installed on it, and the person wearing it will enter a state of heightened libido. -->
+  <Cinder_Apparel_MaidCostume.description>一套精致的特殊女仆装，布料很少，完全没有防御力，上面似乎安装有一种奇怪的药物散发设备，穿着它的人会不受控制的性欲高涨。</Cinder_Apparel_MaidCostume.description>
+  
+  <!-- EN: night service -->
+  <Cinder_Apparel_NightService.label>夜间服务</Cinder_Apparel_NightService.label>
+  <!-- EN: A silk tight fitting garment that covers the whole body, the touch alone makes one daydream, completely defenseless.It seems that there is some strange device installed on it, and the person wearing it will enter a state of heightened libido. -->
+  <Cinder_Apparel_NightService.description>一件覆盖全身的丝质紧身衣，只需要摸一下质感就能让人想入非非，完全没有防御力，上面似乎安装有一种奇怪的药物散发设备，穿着它的人会不受控制的性欲高涨。</Cinder_Apparel_NightService.description>
+  
+  <!-- EN: projection -->
+  <Cinder_Apparel_Projection.label>投影</Cinder_Apparel_Projection.label>
+  <!-- EN: A futuristic projection costume, but strangely enough, the semi transparent projection doesn't seem to cover anything.It seems that there is some strange device installed on it, and the person wearing it will enter a state of heightened libido. -->
+  <Cinder_Apparel_Projection.description>一套富有科技感的投影服，但奇怪的是，半透明的投影没有遮住任何东西。上面似乎安装有一种奇怪的药物散发设备，穿着它的人会不受控制的性欲高涨。</Cinder_Apparel_Projection.description>
 </LanguageData>

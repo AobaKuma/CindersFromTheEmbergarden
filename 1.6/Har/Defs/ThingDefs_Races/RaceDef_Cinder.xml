@@ -208,6 +208,24 @@
 				<apparel>
 					<bodyTypeFallback>Female</bodyTypeFallback>
 					<femaleBodyTypeFallback>Female</femaleBodyTypeFallback>
+					<individualPaths>
+						<li>
+							<key>Cinder_Apparel_Exotic</key>
+							<value>Things/Pawn/Humanlike/Apparel/ExtraTexture/Exotic/Exotic</value>
+						</li>
+						<li>
+							<key>Cinder_Apparel_NightService</key>
+							<value>Things/Pawn/Humanlike/Apparel/ExtraTexture/NightService/NightService</value>
+						</li>
+						<li>
+							<key>Cinder_Apparel_MaidCostume</key>
+							<value>Things/Pawn/Humanlike/Apparel/ExtraTexture/Maid/MaidCostume</value>
+						</li>
+						<li>
+							<key>Cinder_Apparel_Projection</key>
+							<value>Things/Pawn/Humanlike/Apparel/ExtraTexture/Projection/Projection</value>
+						</li>
+					</individualPaths>
 				</apparel>
 			</graphicPaths>
 			<styleSettings>
@@ -277,12 +295,6 @@
 					<li>Cinder_Apparel_Starry</li>
 					<li>Cinder_Apparel_GhoulUnitGear</li>
 					<li>Cinder_Apparel_BrokenGhoulUnitGear</li>
-					<li>Cinder_Apparel_Exotic</li>
-					<li>Cinder_Apparel_GhostCloak</li>
-					<li>Cinder_Apparel_GhostUnderwear</li>
-					<li>Cinder_Apparel_NightService</li>
-					<li>Cinder_Apparel_MaidCostume</li>
-					<li>Cinder_Apparel_Projection</li>
 				</apparelList>
 				<whiteXenotypeList>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Cinder_Xenotype</li>

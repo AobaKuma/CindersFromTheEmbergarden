@@ -96,7 +96,7 @@
     <label>amorphous regeneration</label>
 	<geneClass>Embergarden.Gene_AddHediff</geneClass>
     <labelShortAdj>regeneration</labelShortAdj>
-    <description>Carriers of this gene when injured,will regenerate according to its original body structure.</description>
+    <description>Carriers of this gene when injured,will regenerate according to its original body structure，simultaneously reducing the negative impact of vacuum.</description>
     <iconPath>UI/Gene/AmorphousRegeneration</iconPath>
 	<prerequisite>Cinder_UncontrollableTentacle</prerequisite>
     <displayOrderInCategory>0</displayOrderInCategory>

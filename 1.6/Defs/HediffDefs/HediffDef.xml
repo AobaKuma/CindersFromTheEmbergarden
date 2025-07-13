@@ -53,6 +53,9 @@
 				    <Flammability>0.5</Flammability>
 					<IncomingDamageFactor>0.8</IncomingDamageFactor>
 				</statFactors>
+				<statOffsets>
+					<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.25</VacuumResistance>
+				</statOffsets>
 			</li>
 		</stages>
 		<comps>
@@ -204,6 +207,7 @@
 					<BladderRateMultiplier MayRequire="Dubwise.DubsBadHygiene">-1</BladderRateMultiplier>
 					<ThirstRateMultiplier MayRequire="Dubwise.DubsBadHygiene">-1</ThirstRateMultiplier>
 					<HygieneRateMultiplier MayRequire="Dubwise.DubsBadHygiene">-1</HygieneRateMultiplier>
+					<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
 				</statOffsets>
 				<disablesNeeds>
 					<li>Beauty</li>
@@ -326,6 +330,7 @@
 					<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
 					<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 					<ArmorRating_Heat>1</ArmorRating_Heat>
+					<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
 				</statOffsets>
 				<damageFactors>
 					<Cut>0.8</Cut>
@@ -383,6 +388,7 @@
 					<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
 					<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 					<ArmorRating_Heat>1</ArmorRating_Heat>
+					<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.99</VacuumResistance>
 				</statOffsets>
 				<damageFactors>
 					<RangedStab>0.85</RangedStab>
@@ -432,6 +438,7 @@
 					<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 					<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
 					<ArmorRating_Heat>0.75</ArmorRating_Heat>
+					<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.95</VacuumResistance>
 				</statOffsets>
 				<disablesNeeds>
 					<li>Beauty</li>
@@ -471,6 +478,7 @@
 					<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
 					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
 					<ArmorRating_Heat>0.6</ArmorRating_Heat>
+					<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.90</VacuumResistance>
 				</statOffsets>
 				<disablesNeeds>
 					<li>Beauty</li>
@@ -933,6 +941,9 @@
 				<statFactors>
                   <Fertility  MayRequire="Ludeon.RimWorld.Biotech">0</Fertility>
                 </statFactors>
+				<statOffsets>
+					<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+		        </statOffsets>
 			</li>
 		</stages>
 	</HediffDef>

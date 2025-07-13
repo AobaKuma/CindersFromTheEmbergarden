@@ -45,7 +45,7 @@
   <!-- EN: amorphous regeneration -->
   <Cinder_Regeneration.label>无定形再生</Cinder_Regeneration.label>
   <!-- EN: Carriers of this gene when injured,will regenerate according to its original body structure. -->
-  <Cinder_Regeneration.description>当携带者受到伤害时，体内的无定形聚合物会按照原来的身体结构再生</Cinder_Regeneration.description>
+  <Cinder_Regeneration.description>当携带者受到伤害时，体内的无定形聚合物会按照原来的身体结构再生，同时能够减轻真空带来的负面影响</Cinder_Regeneration.description>
   <!-- EN: regeneration -->
   <Cinder_Regeneration.labelShortAdj>再生</Cinder_Regeneration.labelShortAdj>
   
