@@ -155,7 +155,7 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationAdd">
-                  <xpath>Defs/ThingDef[defName="DMS_MechGestatorSamll"]/recipes</xpath>
+                  <xpath>Defs/ThingDef[defName="DMS_MechGestatorSmall"]/recipes</xpath>
                  <order>Prepend</order>
                   <value>
 	                <li>Cinder_ResurrectUltraheavyMech</li>
