@@ -1167,7 +1167,7 @@
 		</apparelTags>
 		<apparelRequired>
 			<li>Cinder_HeadGear_GhoulUnitHelmet</li>
-			<li>Cinder_Apparel_BrokenGhoulUnitGear</li>
+			<li>Cinder_Apparel_BulletproofEquipment</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>1200</min>
@@ -1222,7 +1222,7 @@
 		</apparelTags>
 		<apparelRequired>
 			<li>Cinder_HeadGear_GhoulUnitHelmet</li>
-			<li>Cinder_Apparel_GhoulUnitGear</li>
+			<li>Cinder_Apparel_BulletproofEquipment</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2200</min>
