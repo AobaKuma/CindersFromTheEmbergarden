@@ -54,6 +54,7 @@
 		<combatPower>300</combatPower>
 		<maxPerGroup>10</maxPerGroup>
 		<allowInMechClusters>false</allowInMechClusters>
+		<forceNoDeathNotification>true</forceNoDeathNotification>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<bodyGraphicData>
@@ -141,6 +142,7 @@
 		<race>Cinder_Mech_WalkerRocket</race>
 		<combatPower>650</combatPower>
 		<allowInMechClusters>false</allowInMechClusters>
+		<forceNoDeathNotification>true</forceNoDeathNotification>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<bodyGraphicData>
@@ -228,6 +230,7 @@
 		<combatPower>400</combatPower>
 		<allowInMechClusters>false</allowInMechClusters>
 		<maxPerGroup>6</maxPerGroup>
+		<forceNoDeathNotification>true</forceNoDeathNotification>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<bodyGraphicData>
