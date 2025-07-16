@@ -4,17 +4,20 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Verse;
+using Verse.Noise;
 
 namespace Embergarden
 {
     public class AbilityCompEffect_Transform : CompAbilityEffect, IThingHolder
     {
         public CompProperties_Transform Prop => (CompProperties_Transform)props;
+
         public AbilityCompEffect_Transform()
         {
             turretOwner = new ThingOwner<Building>(this, true);
         }
-        ThingOwner<Building> turretOwner;
+
+        private ThingOwner<Building> turretOwner;
 
         public Building Turret
         {
@@ -40,16 +43,16 @@ namespace Embergarden
         {
             return turretOwner;
         }
+
         public override void PostExposeData()
         {
             base.PostExposeData();
             Scribe_Deep.Look(ref turretOwner, "turret", [this]);
         }
-
         public static bool TryFindCellNearWith(IntVec3 near, Predicate<IntVec3> validator, Map map, out IntVec3 result)
         {
             result = near;
-            foreach (IntVec3 cell in GenRadial.RadialCellsAround(near, 56, true))
+            foreach (IntVec3 cell in GenRadial.RadialCellsAround(near,13,true))
             {
                 if (validator(cell))
                 {
@@ -59,6 +62,19 @@ namespace Embergarden
             }
             return false;
         }
+
+        public static bool CanSpawnAt(IntVec3 c, Map map)
+        {
+            if (!c.InBounds(map))
+            {
+                return false;
+            }
+            if (c.GetFirstBuilding(map) != null)
+            {
+                return false;
+            }
+            return true;
+        }
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             base.Apply(target, dest);
@@ -66,38 +82,49 @@ namespace Embergarden
             {
                 if (Turret == null)
                 {
-                    Building t = (Building)ThingMaker.MakeThing(Prop.buildingDef);
-                    t.SetFaction(parent.pawn.Faction);
-                    turretOwner.TryAdd(t);
+                    Building building = (Building)ThingMaker.MakeThing(Prop.buildingDef);
+                    building.SetFaction(parent.pawn.Faction);
+                    turretOwner.TryAdd(building);
                 }
-
-                var pawn = parent.pawn;
-                var turretCache = Turret;
+                Pawn pawn = parent.pawn;
+                Building turret = Turret;
                 Map map = pawn.Map;
-
-                if (TryFindCellNearWith(pawn.Position, c => GenSpawn.CanSpawnAt(Turret.def, c, map), map, out var result))
+                bool succeed = false;
+                if (TryFindCellNearWith(pawn.Position, c => GenSpawn.CanSpawnAt(Prop.buildingDef, c, map), map, out var result))
+                {
+                    GenPlace.TryPlaceThing(Turret, result, map, ThingPlaceMode.Direct);
+                    succeed = true;
+                }
+                else
+                {
+                    if (TryFindCellNearWith(pawn.Position, c => CanSpawnAt(c, map), map, out var result2))
                     {
-                        GenPlace.TryPlaceThing(Turret, result, map, ThingPlaceMode.Direct);
+                        GenPlace.TryPlaceThing(Turret, result2, map, ThingPlaceMode.Direct);
+                        succeed = true;
                     }
-
-                pawn.DeSpawn(DestroyMode.WillReplace);
-
-                turretCache.TryGetComp<Comp_TurretTransformableAbstract>().pawnOwner.TryAdd(pawn);
+                }
+                if (succeed)
+                {
+                    pawn.DeSpawn(DestroyMode.WillReplace);
+                    turret.TryGetComp<Comp_TurretTransformableAbstract>().pawnOwner.TryAdd(pawn);
+                }
             }
         }
     }
+
     public class CompProperties_Transform : CompProperties_AbilityEffect
     {
         public CompProperties_Transform()
         {
             compClass = typeof(AbilityCompEffect_Transform);
         }
+
         public ThingDef buildingDef;
     }
 
     public class CompTransformWhenDowned : ThingComp
     {
-        Ability ability;
+        private Ability ability;
 
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
