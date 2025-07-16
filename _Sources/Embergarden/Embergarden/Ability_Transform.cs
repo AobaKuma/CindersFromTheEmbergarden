@@ -1,6 +1,8 @@
 ﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 using Verse;
 
 namespace Embergarden
@@ -43,6 +45,20 @@ namespace Embergarden
             base.PostExposeData();
             Scribe_Deep.Look(ref turretOwner, "turret", [this]);
         }
+
+        public static bool TryFindCellNearWith(IntVec3 near, Predicate<IntVec3> validator, Map map, out IntVec3 result)
+        {
+            result = near;
+            foreach (IntVec3 cell in GenRadial.RadialCellsAround(near, 56, true))
+            {
+                if (validator(cell))
+                {
+                    result = cell;
+                    return true;
+                }
+            }
+            return false;
+        }
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             base.Apply(target, dest);
@@ -57,7 +73,13 @@ namespace Embergarden
 
                 var pawn = parent.pawn;
                 var turretCache = Turret;
-                GenPlace.TryPlaceThing(Turret, pawn.Position, pawn.Map, ThingPlaceMode.Near);
+                Map map = pawn.Map;
+
+                if (TryFindCellNearWith(pawn.Position, c => GenSpawn.CanSpawnAt(Turret.def, c, map), map, out var result))
+                    {
+                        GenPlace.TryPlaceThing(Turret, result, map, ThingPlaceMode.Direct);
+                    }
+
                 pawn.DeSpawn(DestroyMode.WillReplace);
 
                 turretCache.TryGetComp<Comp_TurretTransformableAbstract>().pawnOwner.TryAdd(pawn);
