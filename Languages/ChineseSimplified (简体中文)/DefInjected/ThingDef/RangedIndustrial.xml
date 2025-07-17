@@ -20,25 +20,46 @@
   <Cinder_Dragonslayer.label>猎龙大弓</Cinder_Dragonslayer.label>
   <!-- EN: An ancient extended range anti armor rocket launcher that destroys heavy armor by launching tentacle shaped charge bombs inside. It can also transform into a minigun to deal with cluster targets. -->
   <Cinder_Dragonslayer.description>一种古老的远程反装甲火箭发射器，通过在内部发射触手形装药炸弹来摧毁重型装甲。它还可以变成速射机枪来处理集群目标。</Cinder_Dragonslayer.description>
+  <!-- EN: Switch weapon form -->
+  <Cinder_Dragonslayer.comps.CompSecondaryVerb.description>切换武器形态</Cinder_Dragonslayer.comps.CompSecondaryVerb.description>
+  <!-- EN: Rocket -->
+  <Cinder_Dragonslayer.comps.CompSecondaryVerb.mainWeaponLabel>火箭</Cinder_Dragonslayer.comps.CompSecondaryVerb.mainWeaponLabel>
+  <!-- EN: Minigun -->
+  <Cinder_Dragonslayer.comps.CompSecondaryVerb.secondaryWeaponLabel>速射机枪</Cinder_Dragonslayer.comps.CompSecondaryVerb.secondaryWeaponLabel>
+  <!-- EN: Dragon slayer -->
+  <Cinder_Dragonslayer.comps.CompUniqueWeapon.namerLabels.0>猎龙者</Cinder_Dragonslayer.comps.CompUniqueWeapon.namerLabels.0>
+  <!-- EN: longbow -->
+  <Cinder_Dragonslayer.comps.CompUniqueWeapon.namerLabels.1>大弓</Cinder_Dragonslayer.comps.CompUniqueWeapon.namerLabels.1>
+  <!-- EN: RPG -->
+  <Cinder_Dragonslayer.comps.CompUniqueWeapon.namerLabels.2>RPG</Cinder_Dragonslayer.comps.CompUniqueWeapon.namerLabels.2>
+  <!-- EN: Great Bow -->
+  <Cinder_Dragonslayer.comps.CompUniqueWeapon.namerLabels.3>重弓</Cinder_Dragonslayer.comps.CompUniqueWeapon.namerLabels.3>
+  <!-- EN: stock -->
+  <Cinder_Dragonslayer.tools.stock.label>枪托</Cinder_Dragonslayer.tools.stock.label>
   <!-- EN: barrel -->
   <Cinder_Dragonslayer.tools.barrel.label>枪管</Cinder_Dragonslayer.tools.barrel.label>
   <!-- EN: Dragon slayer Bow -->
-  <Cinder_Dragonslayer.verbs.Verb_ShootCE.label>猎龙大弓</Cinder_Dragonslayer.verbs.Verb_ShootCE.label>
+  <Cinder_Dragonslayer.verbs.Verb_Shoot.label>猎龙大弓</Cinder_Dragonslayer.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <Cinder_Dragonslayer.comps.CompSecondaryVerb.description>切换武器形态</Cinder_Dragonslayer.comps.CompSecondaryVerb.description>
-  <Cinder_Dragonslayer.comps.CompSecondaryVerb.mainWeaponLabel>火箭</Cinder_Dragonslayer.comps.CompSecondaryVerb.mainWeaponLabel>
-  <Cinder_Dragonslayer.comps.CompSecondaryVerb.secondaryWeaponLabel>速射机枪</Cinder_Dragonslayer.comps.CompSecondaryVerb.secondaryWeaponLabel>
-  <Cinder_Dragonslayer.tools.stock.label>枪托</Cinder_Dragonslayer.tools.stock.label>
-  <Cinder_Dragonslayer.verbs.Verb_Shoot.label>猎龙大弓</Cinder_Dragonslayer.verbs.Verb_Shoot.label>
+  <Cinder_Dragonslayer.verbs.Verb_ShootCE.label>猎龙大弓</Cinder_Dragonslayer.verbs.Verb_ShootCE.label>
   
   <!-- EN: erosion gourd -->
   <Cinder_ErosionGourd.label>侵蚀葫芦</Cinder_ErosionGourd.label>
-  <!-- EN: A strange gourd,Can release tentacles to stab enemies in the distance,occasionally this thing grows some strange tentacles. \n CE data：  damage：20  AP：80Mpa -->
+  <!-- EN: A strange gourd,Can release tentacles to stab enemies in the distance,occasionally this thing grows some strange tentacles. -->
   <Cinder_ErosionGourd.description>一个奇怪的葫芦，能够放出巨大的触手远距离刺击敌人，这个葫芦的头部不知道为什么缠绕着触手 \nCE数据：  伤害：20  钝器穿透：80Mpa</Cinder_ErosionGourd.description>
+  <!-- EN: gourd -->
+  <Cinder_ErosionGourd.comps.CompUniqueWeapon.namerLabels.0>葫芦</Cinder_ErosionGourd.comps.CompUniqueWeapon.namerLabels.0>
+  <!-- EN: medicine tank -->
+  <Cinder_ErosionGourd.comps.CompUniqueWeapon.namerLabels.1>药罐</Cinder_ErosionGourd.comps.CompUniqueWeapon.namerLabels.1>
+  <!-- EN: ritual implements -->
+  <Cinder_ErosionGourd.comps.CompUniqueWeapon.namerLabels.2>法器</Cinder_ErosionGourd.comps.CompUniqueWeapon.namerLabels.2>
+  <!-- EN: calabash -->
+  <Cinder_ErosionGourd.comps.CompUniqueWeapon.namerLabels.3>瓢</Cinder_ErosionGourd.comps.CompUniqueWeapon.namerLabels.3>
   <!-- EN: Tentacle blade -->
   <Cinder_ErosionGourd.tools.Tentacle_blade.label>触手剑刃</Cinder_ErosionGourd.tools.Tentacle_blade.label>
-   <Cinder_ErosionGourd.tools.Tentacle_stab.label>触手剑尖</Cinder_ErosionGourd.tools.Tentacle_stab.label>
+  <!-- EN: Tentacle stab -->
+  <Cinder_ErosionGourd.tools.Tentacle_stab.label>触手剑尖</Cinder_ErosionGourd.tools.Tentacle_stab.label>
   <!-- EN: erosion gourd -->
   <Cinder_ErosionGourd.verbs.Verb_Shoot.label>侵蚀葫芦</Cinder_ErosionGourd.verbs.Verb_Shoot.label>
   
@@ -46,75 +67,111 @@
   <Cinder_Flint50A.label>火石反器材步枪</Cinder_Flint50A.label>
   <!-- EN: An ancient anti material assault rifle that uses large caliber bullets and can effectively destroy lightly armored targets or military equipment, with a recoil that is difficult to withstand, occasionally this gun grows some strange tentacles. -->
   <Cinder_Flint50A.description>一种古老的反器材突击步枪，使用大口径子弹，能有效摧毁轻装甲目标或军事装备，后坐力难以承受，这把枪偶尔会长出一些奇怪的触手。</Cinder_Flint50A.description>
+  <!-- EN: Flint -->
+  <Cinder_Flint50A.comps.CompUniqueWeapon.namerLabels.0>火石</Cinder_Flint50A.comps.CompUniqueWeapon.namerLabels.0>
+  <!-- EN: Jingall -->
+  <Cinder_Flint50A.comps.CompUniqueWeapon.namerLabels.1>九头铳</Cinder_Flint50A.comps.CompUniqueWeapon.namerLabels.1>
+  <!-- EN: Wallgun -->
+  <Cinder_Flint50A.comps.CompUniqueWeapon.namerLabels.2>城墙铳</Cinder_Flint50A.comps.CompUniqueWeapon.namerLabels.2>
+  <!-- EN: startler -->
+  <Cinder_Flint50A.comps.CompUniqueWeapon.namerLabels.3>惊骇者</Cinder_Flint50A.comps.CompUniqueWeapon.namerLabels.3>
   <!-- EN: stock -->
   <Cinder_Flint50A.tools.stock.label>枪托</Cinder_Flint50A.tools.stock.label>
   <!-- EN: barrel -->
   <Cinder_Flint50A.tools.barrel.label>枪管</Cinder_Flint50A.tools.barrel.label>
-  <!-- EN: muzzle -->
-  <Cinder_Flint50A.tools.muzzle.label>枪口</Cinder_Flint50A.tools.muzzle.label>
   <!-- EN: Flint anti material rifle -->
-  <Cinder_Flint50A.verbs.Verb_ShootCE.label>火石反器材步枪</Cinder_Flint50A.verbs.Verb_ShootCE.label>
+  <Cinder_Flint50A.verbs.Verb_Shoot.label>火石反器材步枪</Cinder_Flint50A.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <Cinder_Flint50A.verbs.Verb_Shoot.label>火石反器材步枪</Cinder_Flint50A.verbs.Verb_Shoot.label>
+  <Cinder_Flint50A.tools.muzzle.label>枪口</Cinder_Flint50A.tools.muzzle.label>
+  <Cinder_Flint50A.verbs.Verb_ShootCE.label>火石反器材步枪</Cinder_Flint50A.verbs.Verb_ShootCE.label>
   
   <!-- EN: Magistrate shotgun -->
   <Cinder_Magistrate.label>判官霰弹枪</Cinder_Magistrate.label>
   <!-- EN: An ancient design of shotgun that use special dart bullets. Deadly, but short range.Sometimes tentacles grow on the muzzle of a gun. -->
   <Cinder_Magistrate.description>一种使用特殊飞镖子弹的古老霰弹枪设计。致命，但射程短。有时，枪口上会长出触手。</Cinder_Magistrate.description>
+  <!-- EN: revolver shotgun -->
+  <Cinder_Magistrate.comps.CompUniqueWeapon.namerLabels.0>转轮霰弹</Cinder_Magistrate.comps.CompUniqueWeapon.namerLabels.0>
+  <!-- EN: five-shooter -->
+  <Cinder_Magistrate.comps.CompUniqueWeapon.namerLabels.1>五发射手</Cinder_Magistrate.comps.CompUniqueWeapon.namerLabels.1>
+  <!-- EN: Magistrate -->
+  <Cinder_Magistrate.comps.CompUniqueWeapon.namerLabels.2>治安官</Cinder_Magistrate.comps.CompUniqueWeapon.namerLabels.2>
+  <!-- EN: justice judge -->
+  <Cinder_Magistrate.comps.CompUniqueWeapon.namerLabels.3>正义判官</Cinder_Magistrate.comps.CompUniqueWeapon.namerLabels.3>
   <!-- EN: stock -->
   <Cinder_Magistrate.tools.stock.label>枪托</Cinder_Magistrate.tools.stock.label>
   <!-- EN: barrel -->
   <Cinder_Magistrate.tools.barrel.label>枪管</Cinder_Magistrate.tools.barrel.label>
-  <!-- EN: muzzle -->
-  <Cinder_Magistrate.tools.muzzle.label>枪口</Cinder_Magistrate.tools.muzzle.label>
   <!-- EN: Magistrate shotgun -->
-  <Cinder_Magistrate.verbs.Verb_ShootCE.label>判官霰弹枪</Cinder_Magistrate.verbs.Verb_ShootCE.label>
+  <Cinder_Magistrate.verbs.Verb_Shoot.label>判官霰弹枪</Cinder_Magistrate.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <Cinder_Magistrate.verbs.Verb_Shoot.label>判官霰弹枪</Cinder_Magistrate.verbs.Verb_Shoot.label>
+  <Cinder_Magistrate.tools.muzzle.label>枪口</Cinder_Magistrate.tools.muzzle.label>
+  <Cinder_Magistrate.verbs.Verb_ShootCE.label>判官霰弹枪</Cinder_Magistrate.verbs.Verb_ShootCE.label>
   
   <!-- EN: Needle PDW -->
   <Cinder_MP12A.label>针式PDW</Cinder_MP12A.label>
   <!-- EN: An ancient rapid fire armor piercing submachine gun/short rifle that uses armor piercing ammunition and was used as a weapon for vehicle crew members or operators to confront armed soldiers, occasionally this gun grows some strange tentacles. -->
   <Cinder_MP12A.description>一种古老的速射穿甲冲锋枪/短步枪，使用穿甲弹药，被用作车组乘员或操作员对抗前线武装士兵的武器，偶尔这种枪会长出一些奇怪的触手。</Cinder_MP12A.description>
+  <!-- EN: pdw -->
+  <Cinder_MP12A.comps.CompUniqueWeapon.namerLabels.0>个人防卫武器</Cinder_MP12A.comps.CompUniqueWeapon.namerLabels.0>
+  <!-- EN: rapier -->
+  <Cinder_MP12A.comps.CompUniqueWeapon.namerLabels.1>轻剑</Cinder_MP12A.comps.CompUniqueWeapon.namerLabels.1>
+  <!-- EN: dagger -->
+  <Cinder_MP12A.comps.CompUniqueWeapon.namerLabels.2>短剑</Cinder_MP12A.comps.CompUniqueWeapon.namerLabels.2>
+  <!-- EN: sbr -->
+  <Cinder_MP12A.comps.CompUniqueWeapon.namerLabels.3>短步枪</Cinder_MP12A.comps.CompUniqueWeapon.namerLabels.3>
+  <!-- EN: smg -->
+  <Cinder_MP12A.comps.CompUniqueWeapon.namerLabels.4>冲锋枪</Cinder_MP12A.comps.CompUniqueWeapon.namerLabels.4>
   <!-- EN: stock -->
   <Cinder_MP12A.tools.stock.label>枪托</Cinder_MP12A.tools.stock.label>
   <!-- EN: barrel -->
   <Cinder_MP12A.tools.barrel.label>枪管</Cinder_MP12A.tools.barrel.label>
-  <!-- EN: muzzle -->
-  <Cinder_MP12A.tools.muzzle.label>枪口</Cinder_MP12A.tools.muzzle.label>
   <!-- EN: Needle PDW -->
-  <Cinder_MP12A.verbs.Verb_ShootCE.label>针式PDW</Cinder_MP12A.verbs.Verb_ShootCE.label>
+  <Cinder_MP12A.verbs.Verb_Shoot.label>针式PDW</Cinder_MP12A.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <Cinder_MP12A.verbs.Verb_Shoot.label>针式PDW</Cinder_MP12A.verbs.Verb_Shoot.label>
+  <Cinder_MP12A.tools.muzzle.label>枪口</Cinder_MP12A.tools.muzzle.label>
+  <Cinder_MP12A.verbs.Verb_ShootCE.label>针式PDW</Cinder_MP12A.verbs.Verb_ShootCE.label>
   
   <!-- EN: Ouroboros rifle -->
   <Cinder_PCX33A.label>衔尾蛇步枪</Cinder_PCX33A.label>
   <!-- EN: An ancient Hi-Power rifle,The actual damage it causes is not as simple as it seems.Its special warhead will shatter upon hitting the target, causing serious damage,Not clearing what twisted it, occasionally this gun grows some strange tentacles. -->
   <Cinder_PCX33A.description>一支古老的高威力步枪，它造成的实际伤害并不像看起来那么简单。它的特殊弹头在击中目标时会粉碎，造成严重伤害，不清楚是什么扭曲了它，偶尔这把枪会长出一些奇怪的触手。</Cinder_PCX33A.description>
+  <!-- EN: Ouroboros -->
+  <Cinder_PCX33A.comps.CompUniqueWeapon.namerLabels.0>衔尾蛇</Cinder_PCX33A.comps.CompUniqueWeapon.namerLabels.0>
+  <!-- EN: rattle -->
+  <Cinder_PCX33A.comps.CompUniqueWeapon.namerLabels.1>响尾蛇</Cinder_PCX33A.comps.CompUniqueWeapon.namerLabels.1>
+  <!-- EN: snake -->
+  <Cinder_PCX33A.comps.CompUniqueWeapon.namerLabels.2>蛇</Cinder_PCX33A.comps.CompUniqueWeapon.namerLabels.2>
+  <!-- EN: short rifle -->
+  <Cinder_PCX33A.comps.CompUniqueWeapon.namerLabels.3>火铳</Cinder_PCX33A.comps.CompUniqueWeapon.namerLabels.3>
+  <!-- EN: fusil -->
+  <Cinder_PCX33A.comps.CompUniqueWeapon.namerLabels.4>燧枪</Cinder_PCX33A.comps.CompUniqueWeapon.namerLabels.4>
+  <!-- EN: line gun -->
+  <Cinder_PCX33A.comps.CompUniqueWeapon.namerLabels.5>线列枪</Cinder_PCX33A.comps.CompUniqueWeapon.namerLabels.5>
   <!-- EN: stock -->
   <Cinder_PCX33A.tools.stock.label>枪托</Cinder_PCX33A.tools.stock.label>
   <!-- EN: barrel -->
   <Cinder_PCX33A.tools.barrel.label>枪管</Cinder_PCX33A.tools.barrel.label>
-  <!-- EN: muzzle -->
-  <Cinder_PCX33A.tools.muzzle.label>枪口</Cinder_PCX33A.tools.muzzle.label>
   <!-- EN: Ouroboros rifle -->
-  <Cinder_PCX33A.verbs.Verb_ShootCE.label>衔尾蛇步枪</Cinder_PCX33A.verbs.Verb_ShootCE.label>
+  <Cinder_PCX33A.verbs.Verb_Shoot.label>衔尾蛇步枪</Cinder_PCX33A.verbs.Verb_Shoot.label>
   
   <!-- UNUSED -->
-  <Cinder_PCX33A.verbs.Verb_Shoot.label>衔尾蛇步枪</Cinder_PCX33A.verbs.Verb_Shoot.label>
+  <Cinder_PCX33A.tools.muzzle.label>枪口</Cinder_PCX33A.tools.muzzle.label>
+  <Cinder_PCX33A.verbs.Verb_ShootCE.label>衔尾蛇步枪</Cinder_PCX33A.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: plastic explosive -->
+  <Cinder_PlasticExplosives.label>塑胶炸弹</Cinder_PlasticExplosives.label>
+  
+  <!-- EN: plastic explosive -->
+  <Cinder_PlasticGrenades.label>塑胶炸弹</Cinder_PlasticGrenades.label>
+  <!-- EN: A high-energy explosive made of polymer that can effectively destroy facilities and defensive buildings. -->
+  <Cinder_PlasticGrenades.description>一种由无定形聚合物制成的高能炸弹，能够有效的摧毁设施与建筑。</Cinder_PlasticGrenades.description>
+  <!-- EN: throw plastic explosive -->
+  <Cinder_PlasticGrenades.verbs.throw_plastic_explosive.label>投掷塑胶炸弹</Cinder_PlasticGrenades.verbs.throw_plastic_explosive.label>
   
   <!-- EN: Tentacle -->
   <Cinder_TentacleGourdProj.label>触手</Cinder_TentacleGourdProj.label>
-  
-    <Cinder_PlasticGrenades.label>塑胶炸弹</Cinder_PlasticGrenades.label>
-  <!-- EN: An ancient Hi-Power rifle,The actual damage it causes is not as simple as it seems.Its special warhead will shatter upon hitting the target, causing serious damage,Not clearing what twisted it, occasionally this gun grows some strange tentacles. -->
-  <Cinder_PlasticGrenades.description>一种由无定形聚合物制成的高能炸弹，能够有效的摧毁设施与建筑。</Cinder_PlasticGrenades.description>
-  
-    <!-- EN: plastic explosive -->
-  <Cinder_PlasticExplosives.label>塑胶炸弹</Cinder_PlasticExplosives.label>
-  
   
 </LanguageData>

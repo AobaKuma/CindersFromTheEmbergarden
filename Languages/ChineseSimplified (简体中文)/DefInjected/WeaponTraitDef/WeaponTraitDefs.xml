@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Anti slip grip piece -->
+  <Cinder_AntiSlipGripPiece.label>防滑握把</Cinder_AntiSlipGripPiece.label>
+  <!-- EN: This weapon is equipped with anti slip grip blades, which allows for faster firing speed. -->
+  <Cinder_AntiSlipGripPiece.description>这把武器配备防滑握把，可实现更快的开火速度</Cinder_AntiSlipGripPiece.description>
+  <!-- EN: custom -->
+  <Cinder_AntiSlipGripPiece.traitAdjectives.0>定制</Cinder_AntiSlipGripPiece.traitAdjectives.0>
+  <!-- EN: customized -->
+  <Cinder_AntiSlipGripPiece.traitAdjectives.1>定制的</Cinder_AntiSlipGripPiece.traitAdjectives.1>
+  <!-- EN: gripped -->
+  <Cinder_AntiSlipGripPiece.traitAdjectives.2>紧握</Cinder_AntiSlipGripPiece.traitAdjectives.2>
+  <!-- EN: hi-grip -->
+  <Cinder_AntiSlipGripPiece.traitAdjectives.3>高级握把</Cinder_AntiSlipGripPiece.traitAdjectives.3>
+  
+  <!-- EN: choke -->
+  <Cinder_Choke.label>喉缩</Cinder_Choke.label>
+  <!-- EN: This type of firearm is equipped with a throat constriction, which makes the distribution of bullets denser and more accurate. -->
+  <Cinder_Choke.description>这把武器配备了喉缩装置，使子弹的分布更密集、更准确。</Cinder_Choke.description>
+  <!-- EN: Low-spread -->
+  <Cinder_Choke.traitAdjectives.0>低散布</Cinder_Choke.traitAdjectives.0>
+  <!-- EN: accurate -->
+  <Cinder_Choke.traitAdjectives.1>精确</Cinder_Choke.traitAdjectives.1>
+  <!-- EN: precise -->
+  <Cinder_Choke.traitAdjectives.2>准确</Cinder_Choke.traitAdjectives.2>
+  
+  <!-- EN: cumbersome -->
+  <Cinder_Cumbersome.label>笨重</Cinder_Cumbersome.label>
+  <!-- EN: This weapon is unwieldy to use, making it slower to aim. -->
+  <Cinder_Cumbersome.description>这把武器大而笨重，难以瞄准</Cinder_Cumbersome.description>
+  <!-- EN: cumbersome -->
+  <Cinder_Cumbersome.traitAdjectives.0>笨重</Cinder_Cumbersome.traitAdjectives.0>
+  <!-- EN: bulky -->
+  <Cinder_Cumbersome.traitAdjectives.1>庞大</Cinder_Cumbersome.traitAdjectives.1>
+  <!-- EN: awkward -->
+  <Cinder_Cumbersome.traitAdjectives.2>笨拙</Cinder_Cumbersome.traitAdjectives.2>
+  
+  <!-- EN: EMP rounds -->
+  <Cinder_EMPRounds.label>EMP弹药</Cinder_EMPRounds.label>
+  <!-- EN: This weapon fires rounds with embedded EMP capacitors, which will temporarily disable electronics and mechanoids. -->
+  <Cinder_EMPRounds.description>这把武器发射带有嵌入式EMP电容器的子弹，这将暂时禁用电子设备和击晕机械族。</Cinder_EMPRounds.description>
+  <!-- EN: EMP -->
+  <Cinder_EMPRounds.traitAdjectives.0>EMP</Cinder_EMPRounds.traitAdjectives.0>
+  <!-- EN: electric -->
+  <Cinder_EMPRounds.traitAdjectives.1>电磁</Cinder_EMPRounds.traitAdjectives.1>
+  <!-- EN: shocking -->
+  <Cinder_EMPRounds.traitAdjectives.2>震撼</Cinder_EMPRounds.traitAdjectives.2>
+  
+  <!-- EN: erosion medication -->
+  <Cinder_ErosionMedication.label>侵蚀药剂</Cinder_ErosionMedication.label>
+  <!-- EN: This gourd contains a potion that can disable the target's erosion. -->
+  <Cinder_ErosionMedication.description>这个葫芦装着侵蚀药剂，它会使目标侵蚀失能</Cinder_ErosionMedication.description>
+  <!-- EN: erosive -->
+  <Cinder_ErosionMedication.traitAdjectives.0>侵蚀性</Cinder_ErosionMedication.traitAdjectives.0>
+  <!-- EN: erosion -->
+  <Cinder_ErosionMedication.traitAdjectives.1>侵蚀</Cinder_ErosionMedication.traitAdjectives.1>
+  
+  <!-- EN: erosion rounds -->
+  <Cinder_ErosionRounds.label>侵蚀弹</Cinder_ErosionRounds.label>
+  <!-- EN: This weapon uses erosion rounds to reduce the target's armor. -->
+  <Cinder_ErosionRounds.description>这把武器发射带有侵蚀弹，会减少目标的装甲。</Cinder_ErosionRounds.description>
+  <!-- EN: erosive -->
+  <Cinder_ErosionRounds.traitAdjectives.0>侵蚀性</Cinder_ErosionRounds.traitAdjectives.0>
+  <!-- EN: Anti-armor -->
+  <Cinder_ErosionRounds.traitAdjectives.1>反装甲</Cinder_ErosionRounds.traitAdjectives.1>
+  <!-- EN: erosion -->
+  <Cinder_ErosionRounds.traitAdjectives.2>侵蚀</Cinder_ErosionRounds.traitAdjectives.2>
+  
+  <!-- EN: extended magazine -->
+  <Cinder_ExtendedMagazine.label>扩容弹匣</Cinder_ExtendedMagazine.label>
+  <!-- EN: This weapon fires 20% more shots in a single burst than normal. -->
+  <Cinder_ExtendedMagazine.description>这把武器一次发射的子弹比正常情况多20%。</Cinder_ExtendedMagazine.description>
+  <!-- EN: high-capacity -->
+  <Cinder_ExtendedMagazine.traitAdjectives.0>高容量</Cinder_ExtendedMagazine.traitAdjectives.0>
+  <!-- EN: extendo-clip -->
+  <Cinder_ExtendedMagazine.traitAdjectives.1>额外弹匣</Cinder_ExtendedMagazine.traitAdjectives.1>
+  
+  <!-- EN: extra great sword -->
+  <Cinder_ExtraGreatSword.label>特大剑</Cinder_ExtraGreatSword.label>
+  <!-- EN: This weapon is equipped with the "extra great sword" large caliber ammunition, which greatly enhances its power while reducing its firing rate. -->
+  <Cinder_ExtraGreatSword.description>这把武器配备了“特大剑”超大口径弹药，极大提高了它的威力，同时降低了它的射速。</Cinder_ExtraGreatSword.description>
+  <!-- EN: extra -->
+  <Cinder_ExtraGreatSword.traitAdjectives.0>特大</Cinder_ExtraGreatSword.traitAdjectives.0>
+  <!-- EN: extra-large -->
+  <Cinder_ExtraGreatSword.traitAdjectives.1>巨大</Cinder_ExtraGreatSword.traitAdjectives.1>
+  
+  <!-- EN: flechette -->
+  <Cinder_Flechette.label>箭弹</Cinder_Flechette.label>
+  <!-- EN: This weapon uses flechette with stronger penetration power. -->
+  <Cinder_Flechette.description>这把武器使用箭弹，穿透力更强</Cinder_Flechette.description>
+  <!-- EN: dart-shaped -->
+  <Cinder_Flechette.traitAdjectives.0>镖弹</Cinder_Flechette.traitAdjectives.0>
+  <!-- EN: flechette -->
+  <Cinder_Flechette.traitAdjectives.1>箭弹</Cinder_Flechette.traitAdjectives.1>
+  
+  <!-- EN: grid tentacle -->
+  <Cinder_GridTentacle.label>护手触手</Cinder_GridTentacle.label>
+  <!-- EN: The tentacles of this weapon can flexibly strike enemies. -->
+  <Cinder_GridTentacle.description>这把武器的触手可以灵活地打击敌人。</Cinder_GridTentacle.description>
+  <!-- EN: terrifying -->
+  <Cinder_GridTentacle.traitAdjectives.0>恐怖</Cinder_GridTentacle.traitAdjectives.0>
+  <!-- EN: agile -->
+  <Cinder_GridTentacle.traitAdjectives.1>敏捷</Cinder_GridTentacle.traitAdjectives.1>
+  
+  <!-- EN: heavy ammunition -->
+  <Cinder_HeavyAmmunition.label>重型弹药</Cinder_HeavyAmmunition.label>
+  <!-- EN: This weapon uses heavier rocket and machine gun rounds, which can cause higher damage and armor piercing, but the weight of the weapon has increased. -->
+  <Cinder_HeavyAmmunition.description>这把武器使用更重的火箭和机枪子弹，可以造成更高的伤害和穿甲，但武器的重量增加了。</Cinder_HeavyAmmunition.description>
+  <!-- EN: heavy-duty -->
+  <Cinder_HeavyAmmunition.traitAdjectives.0>重型</Cinder_HeavyAmmunition.traitAdjectives.0>
+  <!-- EN: high-powered -->
+  <Cinder_HeavyAmmunition.traitAdjectives.1>高威力</Cinder_HeavyAmmunition.traitAdjectives.1>
+  
+  <!-- EN: heavy pellets -->
+  <Cinder_HeavyPellets.label>重霰弹</Cinder_HeavyPellets.label>
+  <!-- EN: This gun fires high-powered heavy multi headed bullets. -->
+  <Cinder_HeavyPellets.description>这把武器发射更重的多头弹</Cinder_HeavyPellets.description>
+  <!-- EN: heavyshot -->
+  <Cinder_HeavyPellets.traitAdjectives.0>重型射击</Cinder_HeavyPellets.traitAdjectives.0>
+  <!-- EN: high-powered -->
+  <Cinder_HeavyPellets.traitAdjectives.1>高威力</Cinder_HeavyPellets.traitAdjectives.1>
+  
+  <!-- EN: heavy receiver -->
+  <Cinder_HeavyReceiver.label>重型机匣</Cinder_HeavyReceiver.label>
+  <!-- EN: This weapon uses a heavy receiver, which slows down the firing rate but is beneficial for firearm control. -->
+  <Cinder_HeavyReceiver.description>这把武器使用重型机匣，这会降低射击速度，但有利于枪支控制。</Cinder_HeavyReceiver.description>
+  <!-- EN: slow -->
+  <Cinder_HeavyReceiver.traitAdjectives.0>慢速</Cinder_HeavyReceiver.traitAdjectives.0>
+  <!-- EN: Steady -->
+  <Cinder_HeavyReceiver.traitAdjectives.1>稳定</Cinder_HeavyReceiver.traitAdjectives.1>
+  
+  <!-- EN: hollow-point rounds -->
+  <Cinder_HollowPointRounds.label>空尖弹</Cinder_HollowPointRounds.label>
+  <!-- EN: This weapon fires bullets that expand on impact, dealing more damage than normal.But the armor piercing ability has decreased. -->
+  <Cinder_HollowPointRounds.description>这把武器发射的子弹在击中时弹头扩张，造成的伤害比常规弹药更高。但穿甲能力下降了。</Cinder_HollowPointRounds.description>
+  <!-- EN: shredding -->
+  <Cinder_HollowPointRounds.traitAdjectives.0>撕裂</Cinder_HollowPointRounds.traitAdjectives.0>
+  <!-- EN: hollowpoint -->
+  <Cinder_HollowPointRounds.traitAdjectives.1>空尖</Cinder_HollowPointRounds.traitAdjectives.1>
+  <!-- EN: hardpunch -->
+  <Cinder_HollowPointRounds.traitAdjectives.2>重拳</Cinder_HollowPointRounds.traitAdjectives.2>
+  <!-- EN: meatrip -->
+  <Cinder_HollowPointRounds.traitAdjectives.3>撕肉</Cinder_HollowPointRounds.traitAdjectives.3>
+  <!-- EN: grinder -->
+  <Cinder_HollowPointRounds.traitAdjectives.4>粉碎</Cinder_HollowPointRounds.traitAdjectives.4>
+  
+  <!-- EN: Improved loading system -->
+  <Cinder_ImprovedLoadingSystem.label>先进装填系统</Cinder_ImprovedLoadingSystem.label>
+  <!-- EN: The loading system of this weapon has been improved, and whether in rocket or rapid fire machine gun mode, it can complete enemy reconnaissance and reloading faster. -->
+  <Cinder_ImprovedLoadingSystem.description>这把武器的装弹系统得到了改进，无论是在火箭还是速射机枪模式下，都可以更快地完成索敌和装弹。</Cinder_ImprovedLoadingSystem.description>
+  <!-- EN: light -->
+  <Cinder_ImprovedLoadingSystem.traitAdjectives.0>快速</Cinder_ImprovedLoadingSystem.traitAdjectives.0>
+  <!-- EN: quickloading -->
+  <Cinder_ImprovedLoadingSystem.traitAdjectives.1>快速装填</Cinder_ImprovedLoadingSystem.traitAdjectives.1>
+  
+  <!-- EN: tactical sight -->
+  <Cinder_ImprovedSights.label>战术瞄具</Cinder_ImprovedSights.label>
+  <!-- EN: This weapon has a custom sight, increasing its accuracy at long range. -->
+  <Cinder_ImprovedSights.description>这把武器有一个定制的瞄准器，可以提高其远距离的精度。</Cinder_ImprovedSights.description>
+  <!-- EN: accurate -->
+  <Cinder_ImprovedSights.traitAdjectives.0>准确</Cinder_ImprovedSights.traitAdjectives.0>
+  <!-- EN: precise -->
+  <Cinder_ImprovedSights.traitAdjectives.1>精准</Cinder_ImprovedSights.traitAdjectives.1>
+  
+  <!-- EN: light barrel -->
+  <Cinder_LightBarrel.label>轻枪管</Cinder_LightBarrel.label>
+  <!-- EN: This weapon uses a lightweight barrel, effectively speeding up the firing time but sacrificing accuracy. -->
+  <Cinder_LightBarrel.description>这把武器使用轻质枪管，有效地加快了射击时间，但牺牲了准确性。</Cinder_LightBarrel.description>
+  <!-- EN: light -->
+  <Cinder_LightBarrel.traitAdjectives.0>轻型</Cinder_LightBarrel.traitAdjectives.0>
+  <!-- EN: light-weight -->
+  <Cinder_LightBarrel.traitAdjectives.1>轻量化</Cinder_LightBarrel.traitAdjectives.1>
+  
+  <!-- EN: light stock -->
+  <Cinder_LightStock.label>轻枪托</Cinder_LightStock.label>
+  <!-- EN: This weapon uses a lightweight stock, which can effectively reduce weapon loading time, but it can cause difficulty in controlling recoil. -->
+  <Cinder_LightStock.description>这把武器使用轻质枪托，可以有效减少武器装填时间，但会导致难以控制后坐力。</Cinder_LightStock.description>
+  <!-- EN: light -->
+  <Cinder_LightStock.traitAdjectives.0>轻型</Cinder_LightStock.traitAdjectives.0>
+  <!-- EN: light-weight -->
+  <Cinder_LightStock.traitAdjectives.1>轻量化</Cinder_LightStock.traitAdjectives.1>
+  
+  <!-- EN: lightweight -->
+  <Cinder_Lightweight.label>轻量化</Cinder_Lightweight.label>
+  <!-- EN: This weapon is much lighter than normal, lowering its aiming time. -->
+  <Cinder_Lightweight.description>这把武器比普通武器轻得多，缩短了瞄准时间。</Cinder_Lightweight.description>
+  <!-- EN: light -->
+  <Cinder_Lightweight.traitAdjectives.0>轻型</Cinder_Lightweight.traitAdjectives.0>
+  <!-- EN: quickdraw -->
+  <Cinder_Lightweight.traitAdjectives.1>快速瞄准</Cinder_Lightweight.traitAdjectives.1>
+  
+  <!-- EN: tentacle sword blade -->
+  <Cinder_LongTentacleBlade.label>触手剑刃</Cinder_LongTentacleBlade.label>
+  <!-- EN: This weapon has a tentacle sword blade that can effectively strike targets. -->
+  <Cinder_LongTentacleBlade.description>这把武器有一个触手剑刃，可以有效地打击目标。</Cinder_LongTentacleBlade.description>
+  <!-- EN: tentacle -->
+  <Cinder_LongTentacleBlade.traitAdjectives.0>触手</Cinder_LongTentacleBlade.traitAdjectives.0>
+  <!-- EN: twisted -->
+  <Cinder_LongTentacleBlade.traitAdjectives.1>扭曲</Cinder_LongTentacleBlade.traitAdjectives.1>
+  
+  <!-- EN: multi headed rounds -->
+  <Cinder_MultiHeadedRounds.label>多头弹</Cinder_MultiHeadedRounds.label>
+  <!-- EN: This weapon fires multiple headed bullets, which will cause additional wounds. -->
+  <Cinder_MultiHeadedRounds.description>这把武器发射多头子弹，会造成额外的伤害。</Cinder_MultiHeadedRounds.description>
+  <!-- EN: multi-headed -->
+  <Cinder_MultiHeadedRounds.traitAdjectives.0>多头</Cinder_MultiHeadedRounds.traitAdjectives.0>
+  <!-- EN: divisive -->
+  <Cinder_MultiHeadedRounds.traitAdjectives.1>分裂</Cinder_MultiHeadedRounds.traitAdjectives.1>
+  <!-- EN: multiple -->
+  <Cinder_MultiHeadedRounds.traitAdjectives.2>多头</Cinder_MultiHeadedRounds.traitAdjectives.2>
+  
+  <!-- EN: ornamental -->
+  <Cinder_Ornamental.label>装饰件</Cinder_Ornamental.label>
+  <!-- EN: This weapon was crafted for aesthetics over functionality. It deals less damage but looks great. -->
+  <Cinder_Ornamental.description>这把武器是为了美观而非功能而设计的。它造成的伤害较小，但看起来很棒。</Cinder_Ornamental.description>
+  <!-- EN: beautiful -->
+  <Cinder_Ornamental.traitAdjectives.0>美观</Cinder_Ornamental.traitAdjectives.0>
+  <!-- EN: elegant -->
+  <Cinder_Ornamental.traitAdjectives.1>优雅</Cinder_Ornamental.traitAdjectives.1>
+  <!-- EN: ornamental -->
+  <Cinder_Ornamental.traitAdjectives.2>装饰性</Cinder_Ornamental.traitAdjectives.2>
+  
+  <!-- EN: Polymer pointer -->
+  <Cinder_PolymerPointer.label>聚合物指向器</Cinder_PolymerPointer.label>
+  <!-- EN: This weapon is equipped with a simple polymer pointer that automatically aligns the muzzle with the target at close range, but due to its resolution issue, it can affect long-range accuracy. -->
+  <Cinder_PolymerPointer.description>这把武器配备了一个简单的聚合物指向器，可以在近距离自动将枪口与目标对齐，但由于其分辨率问题，它可能会影响远程精度。</Cinder_PolymerPointer.description>
+  <!-- EN: seeking -->
+  <Cinder_PolymerPointer.traitAdjectives.0>索敌</Cinder_PolymerPointer.traitAdjectives.0>
+  <!-- EN: accurate -->
+  <Cinder_PolymerPointer.traitAdjectives.1>准确</Cinder_PolymerPointer.traitAdjectives.1>
+  <!-- EN: precise -->
+  <Cinder_PolymerPointer.traitAdjectives.2>精确</Cinder_PolymerPointer.traitAdjectives.2>
+  <!-- EN: automatic-pointing -->
+  <Cinder_PolymerPointer.traitAdjectives.3>自动指向</Cinder_PolymerPointer.traitAdjectives.3>
+  <!-- EN: self-aim -->
+  <Cinder_PolymerPointer.traitAdjectives.4>自动瞄准</Cinder_PolymerPointer.traitAdjectives.4>
+  
+  <!-- EN: tracking scope -->
+  <Cinder_PrecisionScope.label>索敌瞄具</Cinder_PrecisionScope.label>
+  <!-- EN: This weapon's scope uses target recognition software to automate target tracking, making it faster to fire.But it will reduce the range slightly -->
+  <Cinder_PrecisionScope.description>这把武器的瞄准镜使用目标识别软件自动跟踪目标，使射击速度更快。但它会稍微减小射程</Cinder_PrecisionScope.description>
+  <!-- EN: trackscope -->
+  <Cinder_PrecisionScope.traitAdjectives.0>追踪镜</Cinder_PrecisionScope.traitAdjectives.0>
+  <!-- EN: fastfire -->
+  <Cinder_PrecisionScope.traitAdjectives.1>快速开火</Cinder_PrecisionScope.traitAdjectives.1>
+  
+  <!-- EN: Precision sight -->
+  <Cinder_PrecisionSights.label>精密瞄准镜</Cinder_PrecisionSights.label>
+  <!-- EN: This weapon is equipped with bulky long-range sights, increasing its accuracy at long range.But it's difficult to aim at the target at close range. -->
+  <Cinder_PrecisionSights.description>这把武器配备了笨重的远程瞄准器，提高了其远程精度。但很难近距离瞄准目标。</Cinder_PrecisionSights.description>
+  <!-- EN: farsighted -->
+  <Cinder_PrecisionSights.traitAdjectives.0>远视</Cinder_PrecisionSights.traitAdjectives.0>
+  <!-- EN: accurate -->
+  <Cinder_PrecisionSights.traitAdjectives.1>准确</Cinder_PrecisionSights.traitAdjectives.1>
+  
+  <!-- EN: quick reload -->
+  <Cinder_QuickMagazine.label>快速装填</Cinder_QuickMagazine.label>
+  <!-- EN: This firearm uses a quick loading magazine. -->
+  <Cinder_QuickMagazine.description>这把武器使用了快速弹匣</Cinder_QuickMagazine.description>
+  <!-- EN: quick -->
+  <Cinder_QuickMagazine.traitAdjectives.0>快速</Cinder_QuickMagazine.traitAdjectives.0>
+  <!-- EN: nimble -->
+  <Cinder_QuickMagazine.traitAdjectives.1>灵活</Cinder_QuickMagazine.traitAdjectives.1>
+  <!-- EN: quickload -->
+  <Cinder_QuickMagazine.traitAdjectives.2>快速装填</Cinder_QuickMagazine.traitAdjectives.2>
+  <!-- EN: quickshot -->
+  <Cinder_QuickMagazine.traitAdjectives.3>快速射击</Cinder_QuickMagazine.traitAdjectives.3>
+  <!-- EN: fastload -->
+  <Cinder_QuickMagazine.traitAdjectives.4>速装器</Cinder_QuickMagazine.traitAdjectives.4>
+  
+  <!-- EN: rangefinder -->
+  <Cinder_RangefinderScope.label>测距仪</Cinder_RangefinderScope.label>
+  <!-- EN: This weapon's scope contains an advanced rangefinder, allowing it to fire further. -->
+  <Cinder_RangefinderScope.description>这把武器的瞄准镜包含一个先进的测距仪，提高了射程。</Cinder_RangefinderScope.description>
+  <!-- EN: eagle -->
+  <Cinder_RangefinderScope.traitAdjectives.0>鹰眼</Cinder_RangefinderScope.traitAdjectives.0>
+  <!-- EN: farsight -->
+  <Cinder_RangefinderScope.traitAdjectives.1>远视</Cinder_RangefinderScope.traitAdjectives.1>
+  
+  <!-- EN: rapid fire -->
+  <Cinder_RapidFire.label>速射组件</Cinder_RapidFire.label>
+  <!-- EN: This weapon contains an improved self-loading mechanism. When firing bursts of multiple rounds, the time between each round is dramatically reduced.But making weapons difficult to control. -->
+  <Cinder_RapidFire.description>这把武器包含一种改进的自装弹机制。当发射多发子弹时，每发子弹之间的时间会大大缩短。但使武器难以控制。</Cinder_RapidFire.description>
+  <!-- EN: rapid -->
+  <Cinder_RapidFire.traitAdjectives.0>速射</Cinder_RapidFire.traitAdjectives.0>
+  <!-- EN: burst -->
+  <Cinder_RapidFire.traitAdjectives.1>爆发</Cinder_RapidFire.traitAdjectives.1>
+  <!-- EN: rapid-fire -->
+  <Cinder_RapidFire.traitAdjectives.2>速射型</Cinder_RapidFire.traitAdjectives.2>
+  
+  <!-- EN: rapid medication -->
+  <Cinder_RapidMedication.label>速射药剂</Cinder_RapidMedication.label>
+  <!-- EN: This gourd contains a fast potion that can make tentacles attack faster. -->
+  <Cinder_RapidMedication.description>这个葫芦里有一种快速药水，可以让触手攻击得更快。</Cinder_RapidMedication.description>
+  <!-- EN: rapid -->
+  <Cinder_RapidMedication.traitAdjectives.0>速射</Cinder_RapidMedication.traitAdjectives.0>
+  <!-- EN: burst -->
+  <Cinder_RapidMedication.traitAdjectives.1>爆发</Cinder_RapidMedication.traitAdjectives.1>
+  <!-- EN: rapid-fire -->
+  <Cinder_RapidMedication.traitAdjectives.2>速射型</Cinder_RapidMedication.traitAdjectives.2>
+  
+  <!-- EN: shoddy sights -->
+  <Cinder_ShoddySights.label>劣质瞄具</Cinder_ShoddySights.label>
+  <!-- EN: Defects in this weapon's sights decrease its accuracy at long ranges. -->
+  <Cinder_ShoddySights.description>这把武器粗制滥造瞄准器的缺陷降低了其远距离的精度。</Cinder_ShoddySights.description>
+  <!-- EN: inaccurate -->
+  <Cinder_ShoddySights.traitAdjectives.0>不准确</Cinder_ShoddySights.traitAdjectives.0>
+  <!-- EN: imprecise -->
+  <Cinder_ShoddySights.traitAdjectives.1>不精确</Cinder_ShoddySights.traitAdjectives.1>
+  
+  <!-- EN: shorted magazine -->
+  <Cinder_ShortedMagazine.label>短弹匣</Cinder_ShortedMagazine.label>
+  <!-- EN: This weapon fires 33% less shots in a single burst than normal.But it can improve the loading speed. -->
+  <Cinder_ShortedMagazine.description>这把武器一次射击的子弹量比正常情况少33%。但它可以提高再装填速度。</Cinder_ShortedMagazine.description>
+  <!-- EN: low-capacity -->
+  <Cinder_ShortedMagazine.traitAdjectives.0>低容量</Cinder_ShortedMagazine.traitAdjectives.0>
+  <!-- EN: tactical -->
+  <Cinder_ShortedMagazine.traitAdjectives.1>战术</Cinder_ShortedMagazine.traitAdjectives.1>
+  
+  <!-- EN: strengthening medication -->
+  <Cinder_StrengtheningMedication.label>强力药剂</Cinder_StrengtheningMedication.label>
+  <!-- EN: The tentacles of this gourd will be stronger. -->
+  <Cinder_StrengtheningMedication.description>这个葫芦的触手会更强壮。</Cinder_StrengtheningMedication.description>
+  <!-- EN: strengthening -->
+  <Cinder_StrengtheningMedication.traitAdjectives.0>强力</Cinder_StrengtheningMedication.traitAdjectives.0>
+  <!-- EN: high-powered -->
+  <Cinder_StrengtheningMedication.traitAdjectives.1>高威力</Cinder_StrengtheningMedication.traitAdjectives.1>
+  
+  <!-- EN: strong charge -->
+  <Cinder_StrongCharge.label>强装药</Cinder_StrongCharge.label>
+  <!-- EN: The amount of gunpowder used in this gun is significantly higher than the standard, increasing its power, but it will make the firearm more difficult to control. -->
+  <Cinder_StrongCharge.description>这把枪使用的火药量明显高于标准，增加了其威力，但会使枪支更难控制。</Cinder_StrongCharge.description>
+  <!-- EN: strong-charged -->
+  <Cinder_StrongCharge.traitAdjectives.0>强装药</Cinder_StrongCharge.traitAdjectives.0>
+  <!-- EN: drug-cannon -->
+  <Cinder_StrongCharge.traitAdjectives.1>嗑药炮</Cinder_StrongCharge.traitAdjectives.1>
+  
+  <!-- EN: swift sword -->
+  <Cinder_SwiftSword.label>迅捷剑</Cinder_SwiftSword.label>
+  <!-- EN: This weapon is equipped with a lightweight structure called "Swift Sword" and uses reduced charge ammunition, which can shoot faster and more accurately, but its power has been reduced. -->
+  <Cinder_SwiftSword.description>这把武器配备了一种称为“迅捷剑”的轻质结构，并使用了减装弹药，可以更快、更准确地射击，但其威力降低了。</Cinder_SwiftSword.description>
+  <!-- EN: swift -->
+  <Cinder_SwiftSword.traitAdjectives.0>迅捷</Cinder_SwiftSword.traitAdjectives.0>
+  <!-- EN: sensitive -->
+  <Cinder_SwiftSword.traitAdjectives.1>敏捷</Cinder_SwiftSword.traitAdjectives.1>
+  
+  <!-- EN: tactical front grip -->
+  <Cinder_TacticalFrontGrip.label>战术前握把</Cinder_TacticalFrontGrip.label>
+  <!-- EN: The tactical front grip on this weapon can accelerate aiming and enhance aiming accuracy, but it will also make the weapon heavier. -->
+  <Cinder_TacticalFrontGrip.description>这把武器的战术前握把可以加速瞄准并提高瞄准精度，但也会使武器更重。</Cinder_TacticalFrontGrip.description>
+  <!-- EN: custom -->
+  <Cinder_TacticalFrontGrip.traitAdjectives.0>定制</Cinder_TacticalFrontGrip.traitAdjectives.0>
+  <!-- EN: customized -->
+  <Cinder_TacticalFrontGrip.traitAdjectives.1>改装</Cinder_TacticalFrontGrip.traitAdjectives.1>
+  <!-- EN: gripped -->
+  <Cinder_TacticalFrontGrip.traitAdjectives.2>紧握</Cinder_TacticalFrontGrip.traitAdjectives.2>
+  <!-- EN: hi-grip -->
+  <Cinder_TacticalFrontGrip.traitAdjectives.3>高级握把</Cinder_TacticalFrontGrip.traitAdjectives.3>
+  
+  <!-- EN: ugly -->
+  <Cinder_Ugly.label>丑陋</Cinder_Ugly.label>
+  <!-- EN: This weapon was crafted with no respect for aesthetics. It looks like junk but gets the job done. Traders will pay less for it. -->
+  <Cinder_Ugly.description>这把武器的制作不尊重美学。它看起来一把废品，但依旧能开火。</Cinder_Ugly.description>
+  <!-- EN: monstrous -->
+  <Cinder_Ugly.traitAdjectives.0>可怕</Cinder_Ugly.traitAdjectives.0>
+  <!-- EN: crude -->
+  <Cinder_Ugly.traitAdjectives.1>简陋</Cinder_Ugly.traitAdjectives.1>
+  <!-- EN: ugly -->
+  <Cinder_Ugly.traitAdjectives.2>丑陋</Cinder_Ugly.traitAdjectives.2>
+  
+  <!-- EN: uncontrollable tentacle blade -->
+  <Cinder_UncontrollableTentacleBlade.label>不可控触手</Cinder_UncontrollableTentacleBlade.label>
+  <!-- EN: Uncontrollable tentacles have grown on this weapon, and waving them randomly affects accuracy. -->
+  <Cinder_UncontrollableTentacleBlade.description>这把武器上长出了无法控制的触手，随意挥舞触手会影响准确性</Cinder_UncontrollableTentacleBlade.description>
+  <!-- EN: tentacle -->
+  <Cinder_UncontrollableTentacleBlade.traitAdjectives.0>触手</Cinder_UncontrollableTentacleBlade.traitAdjectives.0>
+  <!-- EN: twisted -->
+  <Cinder_UncontrollableTentacleBlade.traitAdjectives.1>扭曲</Cinder_UncontrollableTentacleBlade.traitAdjectives.1>
+  
+</LanguageData>
