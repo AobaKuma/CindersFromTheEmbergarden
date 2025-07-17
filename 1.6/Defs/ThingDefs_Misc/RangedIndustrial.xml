@@ -235,7 +235,7 @@
 			</li>
 		</tools>
 	<comps>
-        <li Class="CompProperties_UniqueWeapon">
+        <li Class="Embergarden.CompProperties_UniqueWeapon">
         <weaponCategories>
           <li>Cinder_Gun</li>
           <li>Cinder_Tentacle</li>
@@ -372,7 +372,7 @@
 			</li>
 		</tools>
 	<comps>
-        <li Class="CompProperties_UniqueWeapon">
+        <li Class="Embergarden.CompProperties_UniqueWeapon">
         <weaponCategories>
           <li>Cinder_Gun</li>
           <li>Cinder_Tentacle</li>
@@ -487,7 +487,7 @@
 			</li>
 		</tools>
 	<comps>
-        <li Class="CompProperties_UniqueWeapon">
+        <li Class="Embergarden.CompProperties_UniqueWeapon">
         <weaponCategories>
           <li>Cinder_Gun</li>
           <li>Cinder_Tentacle</li>
@@ -604,7 +604,7 @@
 			</li>
 		</tools>
 	<comps>
-        <li Class="CompProperties_UniqueWeapon">
+        <li Class="Embergarden.CompProperties_UniqueWeapon">
         <weaponCategories>
           <li>Cinder_Gun</li>
           <li>Cinder_Tentacle</li>
@@ -729,7 +729,7 @@
 				<description>Switch weapon form</description>
 				<sound>Cinder_Transform</sound>
 			</li>
-	  <li Class="CompProperties_UniqueWeapon">
+	  <li Class="Embergarden.CompProperties_UniqueWeapon">
         <weaponCategories>
           <li>Cinder_Gun</li>
           <li>Cinder_Tentacle</li>
@@ -856,7 +856,7 @@
 			</li>
 		</tools>
 	<comps>
-        <li Class="CompProperties_UniqueWeapon">
+        <li Class="Embergarden.CompProperties_UniqueWeapon">
         <weaponCategories>
           <li>Cinder_Tentacle</li>
           <li>Cinder_Ranged</li>

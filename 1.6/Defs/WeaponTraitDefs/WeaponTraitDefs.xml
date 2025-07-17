@@ -558,7 +558,7 @@
  <WeaponTraitDef ParentName="CinderWeaponTraitBase">
     <defName>Cinder_ShortedMagazine</defName>
     <label>shorted magazine</label>
-    <description>This weapon fires 10% less shots in a single burst than normal.But it can improve the loading speed.</description>
+    <description>This weapon fires 33% less shots in a single burst than normal.But it can improve the loading speed.</description>
     <commonality>1</commonality>
     <weaponCategory>Cinder_BurstFire</weaponCategory>
     <burstShotCountMultiplier>0.66</burstShotCountMultiplier>
@@ -566,7 +566,7 @@
       <MarketValue>20</MarketValue>
     </statOffsets>
 	 <statFactors>
-      <RangedWeapon_Cooldown>0.70</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.65</RangedWeapon_Cooldown>
     </statFactors>
     <traitAdjectives>
       <li>low-capacity</li>

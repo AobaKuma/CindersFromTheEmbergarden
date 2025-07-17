@@ -58,7 +58,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.6.4490-beta</Version>
+      <Version>1.6.4523</Version>
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
       <Version>2.3.6</Version>
@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ability_Transform.cs" />
+    <Compile Include="CompSwitch.cs" />
     <Compile Include="CompTentacleSpreader.cs" />
     <Compile Include="Building_TrapExplosive_Rechargeable.cs" />
     <Compile Include="Building_TrapTentacle.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="CompAddHediff.cs" />
     <Compile Include="CompProperties_Transformable.cs" />
     <Compile Include="CompSecondaryVerb.cs" />
+    <Compile Include="CompUniqueWeapon.cs" />
     <Compile Include="CompUseableTargetable.cs" />
     <Compile Include="CompUseEffect_ActivateHediffs.cs" />
     <Compile Include="CompUseEffect_ActivateMech.cs" />

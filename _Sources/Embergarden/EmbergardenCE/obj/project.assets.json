@@ -16,7 +16,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.6.4490-beta": {
+      "Krafs.Rimworld.Ref/1.6.4523": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -144,7 +144,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
-          "Krafs.Rimworld.Ref": "1.6.4490-beta",
+          "Krafs.Rimworld.Ref": "1.6.4523",
           "Lib.Harmony": "2.3.6"
         },
         "compile": {
@@ -170,7 +170,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.6.4490-beta": {
+      "Krafs.Rimworld.Ref/1.6.4523": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -298,7 +298,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
-          "Krafs.Rimworld.Ref": "1.6.4490-beta",
+          "Krafs.Rimworld.Ref": "1.6.4523",
           "Lib.Harmony": "2.3.6"
         },
         "compile": {
@@ -324,7 +324,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.6.4490-beta": {
+      "Krafs.Rimworld.Ref/1.6.4523": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -452,7 +452,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
-          "Krafs.Rimworld.Ref": "1.6.4490-beta",
+          "Krafs.Rimworld.Ref": "1.6.4523",
           "Lib.Harmony": "2.3.6"
         },
         "compile": {
@@ -478,7 +478,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.6.4490-beta": {
+      "Krafs.Rimworld.Ref/1.6.4523": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -606,7 +606,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
-          "Krafs.Rimworld.Ref": "1.6.4490-beta",
+          "Krafs.Rimworld.Ref": "1.6.4523",
           "Lib.Harmony": "2.3.6"
         },
         "compile": {
@@ -632,7 +632,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.6.4490-beta": {
+      "Krafs.Rimworld.Ref/1.6.4523": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -760,7 +760,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
-          "Krafs.Rimworld.Ref": "1.6.4490-beta",
+          "Krafs.Rimworld.Ref": "1.6.4523",
           "Lib.Harmony": "2.3.6"
         },
         "compile": {
@@ -791,17 +791,17 @@
         "krafs.publicizer.nuspec"
       ]
     },
-    "Krafs.Rimworld.Ref/1.6.4490-beta": {
-      "sha512": "CUGtRidqlYInCmUNonvkAJPSEIRaSLt+KSn+wgmikYQNgHJNwfNWSGeoFH7mf4A/LWI67owsvk/sqXhwCZSPrQ==",
+    "Krafs.Rimworld.Ref/1.6.4523": {
+      "sha512": "HctRgCN04CKGbfk3eBtpLs5gSku/628e76y90PDhV7+fgb7KKqscwOeKGJaLgGvwkU5a9cRWp8XGjBhXcs+uuQ==",
       "type": "package",
-      "path": "krafs.rimworld.ref/1.6.4490-beta",
+      "path": "krafs.rimworld.ref/1.6.4523",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
         "README.md",
         "icon.png",
-        "krafs.rimworld.ref.1.6.4490-beta.nupkg.sha512",
+        "krafs.rimworld.ref.1.6.4523.nupkg.sha512",
         "krafs.rimworld.ref.nuspec",
         "ref/net472/Assembly-CSharp-firstpass.dll",
         "ref/net472/Assembly-CSharp.dll",
@@ -969,7 +969,7 @@
     ".NETFramework,Version=v4.8": [
       "Embergarden >= 1.0.0",
       "Krafs.Publicizer >= 2.3.0",
-      "Krafs.Rimworld.Ref >= 1.6.4490-beta",
+      "Krafs.Rimworld.Ref >= 1.6.4523",
       "Lib.Harmony >= 2.3.6"
     ]
   },
@@ -1029,7 +1029,7 @@
           },
           "Krafs.Rimworld.Ref": {
             "target": "Package",
-            "version": "[1.6.4490-beta, )"
+            "version": "[1.6.4523, )"
           },
           "Lib.Harmony": {
             "target": "Package",

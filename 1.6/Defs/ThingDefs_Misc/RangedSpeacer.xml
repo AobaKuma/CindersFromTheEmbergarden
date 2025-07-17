@@ -121,11 +121,11 @@
     </tools>
 	
 	    <comps>
-			<li Class="CinderWeaponSwitch.CompProperties_Switch">
+			<li Class="Embergarden.CompProperties_Switch">
 				<changeTo>Cinder_FumeGreatswordM</changeTo>
 				<abilityDef>Cinder_ActivateTentacles</abilityDef>
 			</li>
-		<li Class="CompProperties_UniqueWeapon">
+		<li Class="Embergarden.CompProperties_UniqueWeapon">
         <weaponCategories>
           <li>Cinder_Gun</li>
           <li>Cinder_Tentacle</li>
@@ -229,11 +229,11 @@
     </tools>
 	
 		<comps>
-			<li Class="CinderWeaponSwitch.CompProperties_Switch">
+			<li Class="Embergarden.CompProperties_Switch">
 				<changeTo>Cinder_FumeGreatsword</changeTo>
 				<abilityDef>Cinder_Deactivate</abilityDef>
 			</li>
-		<li Class="CompProperties_UniqueWeapon">
+		<li Class="Embergarden.CompProperties_UniqueWeapon">
         <weaponCategories>
           <li>Cinder_Melee</li>
           <li>Cinder_Tentacle</li>
@@ -276,7 +276,7 @@
 		</verbProperties>
 		<comps>
 			<li Class="CompProperties_AbilityEffect">
-				<compClass>CinderWeaponSwitch.CompAbilityEffect_Switch</compClass>
+				<compClass>Embergarden.CompAbilityEffect_Switch</compClass>
 			</li>
 			<!-- 如果不需要限时，可以把这玩意删了-->
 			<li Class="CompProperties_AbilityGiveHediff">
@@ -297,7 +297,7 @@
 			<li Class="HediffCompProperties_Disappears">
 				<showRemainingTime>true</showRemainingTime>
 			</li>
-			<li Class="CinderWeaponSwitch.HediffCompPropertiesSwitch"/>
+			<li Class="Embergarden.HediffCompPropertiesSwitch"/>
 		</comps>
 	</HediffDef>
 	
@@ -325,7 +325,7 @@
 		</verbProperties>
 		<comps>
 			<li Class="CompProperties_AbilityEffect">
-				<compClass>CinderWeaponSwitch.CompAbilityEffect_RemoveHediff</compClass>
+				<compClass>Embergarden.CompAbilityEffect_RemoveHediff</compClass>
 			</li>
 		</comps>
 	</AbilityDef>
