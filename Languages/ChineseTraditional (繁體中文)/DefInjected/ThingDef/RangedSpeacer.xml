@@ -9,7 +9,16 @@
   <Cinder_FumeGreatsword.label>漫烟大劍</Cinder_FumeGreatsword.label>
   <!-- EN: An ancient Hi-Power rifle,The actual damage it causes is not as simple as it seems.Its special warhead will shatter upon hitting the target, causing serious damage,Not clearing what twisted it, occasionally this gun grows some strange tentacles. -->
   <Cinder_FumeGreatsword.description>一種用於太空環境作戰的綜合性武器平臺。 使用特殊的無殼彈，在槍身內部有一個由無定形聚合物驅動的簡易瞄準裝置，會自動將武器指向目標。 槍口處的觸手可以啟動以將整把槍變成大劍使用。</Cinder_FumeGreatsword.description>
-  <!-- EN: stock -->
+   <!-- EN: greatsword -->
+  <Cinder_FumeGreatsword.comps.CompUniqueWeapon.namerLabels.0>巨劍</Cinder_FumeGreatsword.comps.CompUniqueWeapon.namerLabels.0>
+  <!-- EN: fume -->
+  <Cinder_FumeGreatsword.comps.CompUniqueWeapon.namerLabels.1>煙塵</Cinder_FumeGreatsword.comps.CompUniqueWeapon.namerLabels.1>
+  <!-- EN: Huge sword -->
+  <Cinder_FumeGreatsword.comps.CompUniqueWeapon.namerLabels.2>大劍</Cinder_FumeGreatsword.comps.CompUniqueWeapon.namerLabels.2>
+  <!-- EN: Epee -->
+  <Cinder_FumeGreatsword.comps.CompUniqueWeapon.namerLabels.3>重劍</Cinder_FumeGreatsword.comps.CompUniqueWeapon.namerLabels.3>
+
+ <!-- EN: stock -->
   <Cinder_FumeGreatsword.tools.tentacle_blade.label>觸手劍刃</Cinder_FumeGreatsword.tools.tentacle_blade.label>
   <!-- EN: barrel -->
   <Cinder_FumeGreatsword.tools.tentacle_point.label>觸手劍尖</Cinder_FumeGreatsword.tools.tentacle_point.label>
@@ -24,6 +33,15 @@
   <Cinder_FumeGreatswordM.label>漫烟大劍</Cinder_FumeGreatswordM.label>
   <!-- EN: An ancient Hi-Power rifle,The actual damage it causes is not as simple as it seems.Its special warhead will shatter upon hitting the target, causing serious damage,Not clearing what twisted it, occasionally this gun grows some strange tentacles. -->
   <Cinder_FumeGreatswordM.description>啟動了觸手劍刃的漫烟大劍。 現在槍身上纏滿了活化的堅硬觸手，可以作為一把鋒利的大劍使用。</Cinder_FumeGreatswordM.description>
+  
+   <!-- EN: greatsword -->
+  <Cinder_FumeGreatswordM.comps.CompUniqueWeapon.namerLabels.0>巨劍</Cinder_FumeGreatswordM.comps.CompUniqueWeapon.namerLabels.0>
+  <!-- EN: fume -->
+  <Cinder_FumeGreatswordM.comps.CompUniqueWeapon.namerLabels.1>煙塵</Cinder_FumeGreatswordM.comps.CompUniqueWeapon.namerLabels.1>
+  <!-- EN: Huge sword -->
+  <Cinder_FumeGreatswordM.comps.CompUniqueWeapon.namerLabels.2>大劍</Cinder_FumeGreatswordM.comps.CompUniqueWeapon.namerLabels.2>
+  <!-- EN: Epee -->
+  <Cinder_FumeGreatswordM.comps.CompUniqueWeapon.namerLabels.3>重劍</Cinder_FumeGreatswordM.comps.CompUniqueWeapon.namerLabels.3>
   <!-- EN: stock -->
   <Cinder_FumeGreatswordM.tools.tentacle_blade.label>觸手劍刃</Cinder_FumeGreatswordM.tools.tentacle_blade.label>
   <!-- EN: barrel -->

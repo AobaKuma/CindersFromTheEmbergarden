@@ -8,14 +8,30 @@
   <!-- EN: Replace face and body with vanilla style comma face and vanilla body(Need to restart game) -->
   <Cinder_CommaEyesDesc>将脸部与身体替换为原版风格的逗号脸与原版身体（需要重启游戏）</Cinder_CommaEyesDesc>
   
+  <!-- EN: Vanilla style rebalance(High difficulty) -->
   <Cinder_NerfLabel>原版平衡模式(高难度)</Cinder_NerfLabel>
-  
+  <!-- EN: The characteristics of race, weapon damage, range, and mortality rate have all decreased to the level of vanilla core games.but the gap between the enemy and us is more pronounced and the difficulty is higher.(Need to restart game) -->
   <Cinder_NerfDesc>玩家的种族数值将会被平衡到无dlc原版水平，武器伤害，射程，致死率均有所下降，但敌我差距更为明显，难度更高（需要重启游戏）</Cinder_NerfDesc>
   
   <!-- EN: People with amorphous regeneration ability are required to use it -->
   <Cinder_NeedResurrectOrRegen>需要具有无定形再生能力的人使用</Cinder_NeedResurrectOrRegen>
   <!-- EN: Already acquired all abilities -->
   <Cinder_AllAbilityGained>已经获得所有能力了</Cinder_AllAbilityGained>
-  <!-- EN: The armor plate on {0}'s body has been completely damaged -->
+  <!-- EN: Remaining armor -->
   <Embergarden_PlatingTooltip>剩余装甲</Embergarden_PlatingTooltip>
+  
+  <!-- EN: Traits -->
+  <Stat_ThingUniqueWeaponTrait_Label>武器特性</Stat_ThingUniqueWeaponTrait_Label>
+  <!-- EN: This weapon's individual traits. -->
+  <Stat_ThingUniqueWeaponTrait_Desc>此武器的独特特性。</Stat_ThingUniqueWeaponTrait_Desc>
+
+   <WeaponTraits>武器特性</WeaponTraits>
+  <!-- EN: Weapon traits -->
+  <StatsReport_WeaponTraits>武器特性</StatsReport_WeaponTraits>
+  <!-- EN: Burst shot count multiplier -->
+  <StatsReport_BurstShotCountMultiplier>连射倍率</StatsReport_BurstShotCountMultiplier>
+  <!-- EN: Fire rate multiplier -->
+  <StatsReport_BurstShotSpeedMultiplier>射速倍率</StatsReport_BurstShotSpeedMultiplier>
+  <!-- EN: Stopping power offset -->
+  <StatsReport_AdditionalStoppingPower>抑止能力偏移</StatsReport_AdditionalStoppingPower>
 </LanguageData>

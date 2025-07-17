@@ -18,4 +18,19 @@
   <Cinder_AllAbilityGained>已經獲得所有能力了</Cinder_AllAbilityGained>
   <!-- EN: The armor plate on {0}'s body has been completely damaged -->
   <Embergarden_PlatingTooltip>剩餘裝甲</Embergarden_PlatingTooltip>
+  
+   <WeaponTraits>武器特質</WeaponTraits>
+     <!-- EN: Traits -->
+  <Stat_ThingUniqueWeaponTrait_Label>特質</Stat_ThingUniqueWeaponTrait_Label>
+  <!-- EN: This weapon's individual traits. -->
+  <Stat_ThingUniqueWeaponTrait_Desc>此武器的個別特質。</Stat_ThingUniqueWeaponTrait_Desc>
+
+  <!-- EN: Weapon traits -->
+  <StatsReport_WeaponTraits>武器特質</StatsReport_WeaponTraits>
+  <!-- EN: Burst shot count multiplier -->
+  <StatsReport_BurstShotCountMultiplier>連發射擊數倍率</StatsReport_BurstShotCountMultiplier>
+  <!-- EN: Fire rate multiplier -->
+  <StatsReport_BurstShotSpeedMultiplier>射擊頻率倍率</StatsReport_BurstShotSpeedMultiplier>
+  <!-- EN: Stopping power offset -->
+  <StatsReport_AdditionalStoppingPower>制動力偏移</StatsReport_AdditionalStoppingPower>
 </LanguageData>

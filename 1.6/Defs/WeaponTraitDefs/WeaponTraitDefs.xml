@@ -315,7 +315,7 @@
     </exclusionTags>
     <statOffsets>
       <RangedWeapon_DamageMultiplier>0.20</RangedWeapon_DamageMultiplier>
-	  <RangedWeapon_ArmorPenetrationMultiplier>-0.07</RangedWeapon_ArmorPenetrationMultiplier>
+	  <RangedWeapon_ArmorPenetrationMultiplier>-0.20</RangedWeapon_ArmorPenetrationMultiplier>
       <MarketValue>85</MarketValue>
     </statOffsets>
     <traitAdjectives>
@@ -681,7 +681,7 @@
     <weaponCategory>Cinder_Rocket</weaponCategory>
     <statOffsets>
       <MarketValue>80</MarketValue>
-      <RangedWeapon_ArmorPenetrationMultiplier>0.10</RangedWeapon_ArmorPenetrationMultiplier>
+      <RangedWeapon_ArmorPenetrationMultiplier>0.20</RangedWeapon_ArmorPenetrationMultiplier>
 	  <RangedWeapon_DamageMultiplier>0.2</RangedWeapon_DamageMultiplier>
     </statOffsets>
     <equippedStatOffsets>
