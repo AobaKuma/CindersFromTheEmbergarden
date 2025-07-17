@@ -1,0 +1,871 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <WeaponTraitDef Name="CinderWeaponTraitBase" Abstract="True">
+      <forcedColor>Cinder_UniqueWeapon</forcedColor>
+  </WeaponTraitDef>
+
+  <!-- Cinder_Gun -->
+  
+  <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_QuickMagazine</defName>
+    <label>quick reload</label>
+    <description>This firearm uses a quick loading magazine.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_Gun</weaponCategory>
+    <statOffsets>
+      <MarketValue>20</MarketValue>
+    </statOffsets>
+    <statFactors>
+      <RangedWeapon_Cooldown>0.95</RangedWeapon_Cooldown>
+    </statFactors>
+    <traitAdjectives>
+      <li>quick</li>
+      <li>nimble</li>
+      <li>quickload</li>
+      <li>quickshot</li>
+      <li>fastload</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+  <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_PolymerPointer</defName>
+    <label>Polymer pointer</label>
+    <description>This weapon is equipped with a simple polymer pointer that automatically aligns the muzzle with the target at close range, but due to its resolution issue, it can affect long-range accuracy.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_Gun</weaponCategory>
+    <statFactors>
+      <AccuracyTouch>1.05</AccuracyTouch>
+      <AccuracyShort>1.05</AccuracyShort>
+      <AccuracyMedium>1.05</AccuracyMedium>
+      <AccuracyLong>0.95</AccuracyLong>
+    </statFactors>
+    <statOffsets>
+      <MarketValue>20</MarketValue>
+    </statOffsets>
+    <traitAdjectives>
+      <li>seeking</li>
+      <li>accurate</li>
+      <li>precise</li>
+      <li>automatic-pointing</li>
+      <li>self-aim</li>
+    </traitAdjectives>
+    <ignoresAccuracyMaluses>true</ignoresAccuracyMaluses>
+  </WeaponTraitDef>
+  
+  <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_AntiSlipGripPiece</defName>
+    <label>Anti slip grip piece</label>
+    <description>This weapon is equipped with anti slip grip blades, which allows for faster firing speed.</description>
+    <commonality>1</commonality>
+    <canGenerateAlone>false</canGenerateAlone>
+    <weaponCategory>Cinder_Gun</weaponCategory>
+    <statFactors>
+       <RangedWeapon_WarmupMultiplier>0.95</RangedWeapon_WarmupMultiplier>
+    </statFactors>
+    <statOffsets>
+      <MarketValue>10</MarketValue>
+    </statOffsets>
+    <traitAdjectives>
+      <li>custom</li>
+      <li>customized</li>
+      <li>gripped</li>
+      <li>hi-grip</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+  
+   <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_TacticalFrontGrip</defName>
+    <label>tactical front grip</label>
+    <description>The tactical front grip on this weapon can accelerate aiming and enhance aiming accuracy, but it will also make the weapon heavier.</description>
+    <commonality>1</commonality>
+    <canGenerateAlone>false</canGenerateAlone>
+    <weaponCategory>Cinder_Gun</weaponCategory>
+    <statFactors>
+       <RangedWeapon_WarmupMultiplier>0.95</RangedWeapon_WarmupMultiplier>
+	   <AccuracyMedium>1.05</AccuracyMedium>
+       <AccuracyLong>1.05</AccuracyLong>
+	   <Mass>1.05</Mass>
+    </statFactors>
+    <statOffsets>
+      <MarketValue>10</MarketValue>
+    </statOffsets>
+    <traitAdjectives>
+      <li>custom</li>
+      <li>customized</li>
+      <li>gripped</li>
+      <li>hi-grip</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+  
+  
+    <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_LightBarrel</defName>
+    <label>light barrel</label>
+    <description>This weapon uses a lightweight barrel, effectively speeding up the firing time but sacrificing accuracy.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_Gun</weaponCategory>
+    <exclusionTags>
+      <li>Barrel</li>
+    </exclusionTags>
+	<statFactors>
+	  <AccuracyMedium>0.95</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+	   <RangedWeapon_WarmupMultiplier>0.9</RangedWeapon_WarmupMultiplier>
+	   <Mass>0.95</Mass>
+    </statFactors>
+    <traitAdjectives>
+      <li>light</li>
+      <li>light-weight</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+  
+  <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_LightStock</defName>
+    <label>light stock</label>
+    <description>This weapon uses a lightweight stock, which can effectively reduce weapon loading time, but it can cause difficulty in controlling recoil.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_Gun</weaponCategory>
+    <statOffsets>
+      <RangedWeapon_Cooldown>-0.1</RangedWeapon_Cooldown>
+    </statOffsets>
+	<statFactors>
+      <AccuracyLong>0.95</AccuracyLong>
+	  <Mass>0.95</Mass>
+    </statFactors>
+    <traitAdjectives>
+      <li>light</li>
+      <li>light-weight</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+  
+   <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_LongTentacleBlade</defName>
+    <label>tentacle sword blade</label>
+    <description>This weapon has a tentacle sword blade that can effectively strike targets.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_Tentacle</weaponCategory>
+	<exclusionTags>
+      <li>Tentacle</li>
+    </exclusionTags>
+	 <extraDamages>
+      <li>
+        <def>Cider_Cut</def>
+        <amount>2</amount>
+      </li>
+    </extraDamages>
+    <traitAdjectives>
+      <li>tentacle</li>
+      <li>twisted</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+  
+  <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_UncontrollableTentacleBlade</defName>
+    <label>uncontrollable tentacle blade</label>
+    <description>Uncontrollable tentacles have grown on this weapon, and waving them randomly affects accuracy.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_Ranged</weaponCategory>
+	<exclusionTags>
+      <li>Tentacle</li>
+    </exclusionTags>
+	<statFactors>
+	  <AccuracyMedium>0.95</AccuracyMedium>
+      <AccuracyLong>0.95</AccuracyLong>
+    </statFactors>
+	 <extraDamages>
+      <li>
+        <def>Cider_Cut</def>
+        <amount>1</amount>
+      </li>
+    </extraDamages>
+    <traitAdjectives>
+      <li>tentacle</li>
+      <li>twisted</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+  
+  <!-- Magistrate -->
+  
+  <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_Choke</defName>
+    <label>choke</label>
+    <description>This type of firearm is equipped with a throat constriction, which makes the distribution of bullets denser and more accurate.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_Shotgun</weaponCategory>
+    <statFactors>
+      <AccuracyTouch>1.1</AccuracyTouch>
+      <AccuracyShort>1.1</AccuracyShort>
+      <AccuracyMedium>1.05</AccuracyMedium>
+      <AccuracyLong>1.05</AccuracyLong>
+    </statFactors>
+    <statOffsets>
+      <MarketValue>35</MarketValue>
+    </statOffsets>
+    <traitAdjectives>
+      <li>Low-spread</li>
+      <li>accurate</li>
+      <li>precise</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+  
+  <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_StrongCharge</defName>
+    <label>strong charge</label>
+    <description>The amount of gunpowder used in this gun is significantly higher than the standard, increasing its power, but it will make the firearm more difficult to control.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_Shotgun</weaponCategory>
+    <statFactors>
+      <AccuracyTouch>0.8</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.8</AccuracyMedium>
+      <AccuracyLong>0.8</AccuracyLong>
+    </statFactors>
+    <statOffsets>
+      <RangedWeapon_DamageMultiplier>0.6</RangedWeapon_DamageMultiplier>
+      <RangedWeapon_ArmorPenetrationMultiplier>0.15</RangedWeapon_ArmorPenetrationMultiplier>
+      <MarketValue>50</MarketValue>
+    </statOffsets>
+    <traitAdjectives>
+      <li>strong-charged</li>
+      <li>drug-cannon</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+  
+  <!-- Cinder BulletFiring -->
+
+  <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_ErosionRounds</defName>
+    <label>erosion rounds</label>
+    <description>This weapon uses erosion rounds to reduce the target's armor.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_BulletFiring</weaponCategory>
+    <exclusionTags>
+      <li>AmmoType</li>
+    </exclusionTags>
+    <damageDefOverride>Cider_ErosionBullet</damageDefOverride>
+    <statOffsets>
+      <MarketValue>75</MarketValue>
+    </statOffsets>
+    <traitAdjectives>
+      <li>erosive</li>
+      <li>Anti-armor</li>
+      <li>erosion</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+   <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_MultiHeadedRounds</defName>
+    <label>multi headed rounds</label>
+    <description>This weapon fires multiple headed bullets, which will cause additional wounds.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_BulletFiring</weaponCategory>
+    <exclusionTags>
+      <li>AmmoType</li>
+    </exclusionTags>
+    <extraDamages>
+      <li>
+        <def>Cinder_ExtraBullet</def>
+        <amount>3</amount>
+      </li>
+    </extraDamages>
+    <statOffsets>
+      <MarketValue>45</MarketValue>
+    </statOffsets>
+    <traitAdjectives>
+      <li>multi-headed</li>
+      <li>divisive</li>
+      <li>multiple</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+ <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_EMPRounds</defName>
+    <label>EMP rounds</label>
+    <description>This weapon fires rounds with embedded EMP capacitors, which will temporarily disable electronics and mechanoids.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_BulletFiring</weaponCategory>
+    <exclusionTags>
+      <li>AmmoType</li>
+    </exclusionTags>
+    <extraDamages>
+      <li>
+        <def>EMP</def>
+        <amount>4</amount>
+      </li>
+    </extraDamages>
+    <statOffsets>
+      <MarketValue>75</MarketValue>
+    </statOffsets>
+    <traitAdjectives>
+      <li>EMP</li>
+      <li>electric</li>
+      <li>shocking</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+ <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_HollowPointRounds</defName>
+    <label>hollow-point rounds</label>
+    <description>This weapon fires bullets that expand on impact, dealing more damage than normal.But the armor piercing ability has decreased.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_BulletFiring</weaponCategory>
+    <exclusionTags>
+      <li>AmmoType</li>
+    </exclusionTags>
+    <statOffsets>
+      <RangedWeapon_DamageMultiplier>0.20</RangedWeapon_DamageMultiplier>
+	  <RangedWeapon_ArmorPenetrationMultiplier>-0.07</RangedWeapon_ArmorPenetrationMultiplier>
+      <MarketValue>85</MarketValue>
+    </statOffsets>
+    <traitAdjectives>
+      <li>shredding</li>
+      <li>hollowpoint</li>
+      <li>hardpunch</li>
+      <li>meatrip</li>
+      <li>grinder</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+  <!-- Cinder PelletFiring -->
+
+ <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_Flechette</defName>
+    <label>flechette</label>
+    <description>This weapon uses flechette with stronger penetration power.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_PelletFiring</weaponCategory>
+    <exclusionTags>
+      <li>AmmoType</li>
+    </exclusionTags>
+    <damageDefOverride>Stab</damageDefOverride>
+	 <statOffsets>
+	  <RangedWeapon_ArmorPenetrationMultiplier>0.15</RangedWeapon_ArmorPenetrationMultiplier>
+      <MarketValue>85</MarketValue>
+    </statOffsets>
+    <statOffsets>
+      <MarketValue>50</MarketValue>
+    </statOffsets>
+    <traitAdjectives>
+      <li>dart-shaped</li>
+      <li>flechette</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+  
+ <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_HeavyPellets</defName>
+    <label>heavy pellets</label>
+    <description>This gun fires high-powered heavy multi headed bullets.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_PelletFiring</weaponCategory>
+    <canGenerateAlone>false</canGenerateAlone>
+    <exclusionTags>
+      <li>AmmoType</li>
+    </exclusionTags>
+    <statOffsets>
+      <MarketValue>10</MarketValue>
+      <RangedWeapon_ArmorPenetrationMultiplier>0.05</RangedWeapon_ArmorPenetrationMultiplier>
+	  <RangedWeapon_DamageMultiplier>0.15</RangedWeapon_DamageMultiplier>
+    </statOffsets>
+	 <statFactors>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+    </statFactors>
+    <traitAdjectives>
+      <li>heavyshot</li>
+      <li>high-powered</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+  <!-- Sighted -->
+
+ <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_ImprovedSights</defName>
+    <label>tactical sight</label>
+    <description>This weapon has a custom sight, increasing its accuracy at long range.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_Sighted</weaponCategory>
+    <exclusionTags>
+      <li>Sights</li>
+    </exclusionTags>
+    <statFactors>
+      <AccuracyMedium>1.05</AccuracyMedium>
+      <AccuracyLong>1.05</AccuracyLong>
+    </statFactors>
+    <statOffsets>
+      <MarketValue>25</MarketValue>
+    </statOffsets>
+    <traitAdjectives>
+      <li>accurate</li>
+      <li>precise</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+  
+ <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_PrecisionSights</defName>
+    <label>Precision sight</label>
+    <description>This weapon is equipped with bulky long-range sights, increasing its accuracy at long range.But it's difficult to aim at the target at close range.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_Sighted</weaponCategory>
+    <exclusionTags>
+      <li>Sights</li>
+    </exclusionTags>
+    <statFactors>
+      <AccuracyMedium>1.15</AccuracyMedium>
+      <AccuracyLong>1.15</AccuracyLong>
+	  <AccuracyTouch>0.9</AccuracyTouch>
+      <AccuracyShort>0.9</AccuracyShort>
+    </statFactors>
+    <statOffsets>
+      <MarketValue>25</MarketValue>
+    </statOffsets>
+    <traitAdjectives>
+      <li>farsighted</li>
+      <li>accurate</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+ <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_ShoddySights</defName>
+    <label>shoddy sights</label>
+    <description>Defects in this weapon's sights decrease its accuracy at long ranges.</description>
+    <commonality>1</commonality>
+    <canGenerateAlone>false</canGenerateAlone>
+    <weaponCategory>Cinder_Sighted</weaponCategory>
+    <exclusionTags>
+      <li>Sights</li>
+    </exclusionTags>
+    <statFactors>
+      <MarketValue>0.85</MarketValue>
+      <AccuracyMedium>0.8</AccuracyMedium>
+      <AccuracyLong>0.8</AccuracyLong>
+    </statFactors>
+    <traitAdjectives>
+      <li>inaccurate</li>
+      <li>imprecise</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+  <!-- Scoped -->
+
+ <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_PrecisionScope</defName>
+    <label>tracking scope</label>
+    <description>This weapon's scope uses target recognition software to automate target tracking, making it faster to fire.But it will reduce the range slightly</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_Scoped</weaponCategory>
+    <exclusionTags>
+      <li>Scope</li>
+    </exclusionTags>
+    <statOffsets>
+      <RangedWeapon_WarmupMultiplier>-0.15</RangedWeapon_WarmupMultiplier>
+	  <RangedWeapon_RangeMultiplier>-0.05</RangedWeapon_RangeMultiplier>
+      <MarketValue>60</MarketValue>
+    </statOffsets>
+    <traitAdjectives>
+      <li>trackscope</li>
+      <li>fastfire</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+ <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_RangefinderScope</defName>
+    <label>rangefinder</label>
+    <description>This weapon's scope contains an advanced rangefinder, allowing it to fire further.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_Scoped</weaponCategory>
+    <exclusionTags>
+      <li>Scope</li>
+    </exclusionTags>
+    <statOffsets>
+      <RangedWeapon_RangeMultiplier>0.05</RangedWeapon_RangeMultiplier>
+      <MarketValue>20</MarketValue>
+    </statOffsets>
+    <traitAdjectives>
+      <li>eagle</li>
+      <li>farsight</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+  
+
+  <!-- Burst Fire -->
+
+ <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_RapidFire</defName>
+    <label>rapid fire</label>
+    <description>This weapon contains an improved self-loading mechanism. When firing bursts of multiple rounds, the time between each round is dramatically reduced.But making weapons difficult to control.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_BurstFire</weaponCategory>
+	<exclusionTags>
+      <li>Receiver</li>
+    </exclusionTags>
+    <burstShotSpeedMultiplier>1.5</burstShotSpeedMultiplier>
+    <statOffsets>
+      <MarketValue>15</MarketValue>
+    </statOffsets>
+	<statFactors>
+	  <AccuracyMedium>0.9</AccuracyMedium>
+      <AccuracyLong>0.9</AccuracyLong>
+	  <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+    </statFactors>
+    <traitAdjectives>
+      <li>rapid</li>
+      <li>burst</li>
+      <li>rapid-fire</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+  
+  <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_HeavyReceiver</defName>
+    <label>heavy receiver</label>
+    <description>This weapon uses a heavy receiver, which slows down the firing rate but is beneficial for firearm control.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_BurstFire</weaponCategory>
+	<exclusionTags>
+      <li>Receiver</li>
+    </exclusionTags>
+	<burstShotSpeedMultiplier>0.80</burstShotSpeedMultiplier>
+	<statFactors>
+	  <AccuracyMedium>1.1</AccuracyMedium>
+      <AccuracyLong>1.1</AccuracyLong>
+	  <AccuracyTouch>1.1</AccuracyTouch>
+      <AccuracyShort>1.1</AccuracyShort>
+    </statFactors>
+    <traitAdjectives>
+      <li>slow</li>
+      <li>Steady</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+ <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_ExtendedMagazine</defName>
+    <label>extended magazine</label>
+    <description>This weapon fires 20% more shots in a single burst than normal.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_BurstFire</weaponCategory>
+    <burstShotCountMultiplier>1.2</burstShotCountMultiplier>
+    <statOffsets>
+      <MarketValue>60</MarketValue>
+    </statOffsets>
+    <traitAdjectives>
+      <li>high-capacity</li>
+      <li>extendo-clip</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+  
+ <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_ShortedMagazine</defName>
+    <label>shorted magazine</label>
+    <description>This weapon fires 10% less shots in a single burst than normal.But it can improve the loading speed.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_BurstFire</weaponCategory>
+    <burstShotCountMultiplier>0.66</burstShotCountMultiplier>
+    <statOffsets>
+      <MarketValue>20</MarketValue>
+    </statOffsets>
+	 <statFactors>
+      <RangedWeapon_Cooldown>0.70</RangedWeapon_Cooldown>
+    </statFactors>
+    <traitAdjectives>
+      <li>low-capacity</li>
+      <li>tactical</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+
+
+  <!-- Cinder Gourd -->
+
+
+ <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_RapidMedication</defName>
+    <label>rapid medication</label>
+    <description>This gourd contains a fast potion that can make tentacles attack faster.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_Gourd</weaponCategory>
+	<exclusionTags>
+      <li>Receiver</li>
+    </exclusionTags>
+    <burstShotSpeedMultiplier>1.5</burstShotSpeedMultiplier>
+	<burstShotCountMultiplier>2</burstShotCountMultiplier>
+    <statOffsets>
+      <MarketValue>15</MarketValue>
+    </statOffsets>
+	<statFactors>
+	  <AccuracyMedium>0.9</AccuracyMedium>
+      <AccuracyLong>0.9</AccuracyLong>
+	  <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+    </statFactors>
+    <traitAdjectives>
+      <li>rapid</li>
+      <li>burst</li>
+      <li>rapid-fire</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+  
+ <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_ErosionMedication</defName>
+    <label>erosion medication</label>
+    <description>This gourd contains a potion that can disable the target's erosion.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_Gourd</weaponCategory>
+	<exclusionTags>
+      <li>Receiver</li>
+    </exclusionTags>
+    <damageDefOverride>Cider_CutB</damageDefOverride>
+    <statOffsets>
+      <MarketValue>75</MarketValue>
+    </statOffsets>
+    <traitAdjectives>
+      <li>erosive</li>
+      <li>erosion</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+  
+ <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_StrengtheningMedication</defName>
+    <label>strengthening medication</label>
+    <description>The tentacles of this gourd will be stronger.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_Gourd</weaponCategory>
+	<exclusionTags>
+      <li>Receiver</li>
+    </exclusionTags>
+    <statOffsets>
+      <MarketValue>80</MarketValue>
+      <RangedWeapon_ArmorPenetrationMultiplier>0.10</RangedWeapon_ArmorPenetrationMultiplier>
+	  <RangedWeapon_DamageMultiplier>0.25</RangedWeapon_DamageMultiplier>
+    </statOffsets>
+	 <statFactors>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+    </statFactors>
+    <traitAdjectives>
+      <li>strengthening</li>
+      <li>high-powered</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+  
+   <!-- Cinder_Rocket -->
+
+   <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_ImprovedLoadingSystem</defName>
+    <label>Improved loading system</label>
+    <description>The loading system of this weapon has been improved, and whether in rocket or rapid fire machine gun mode, it can complete enemy reconnaissance and reloading faster.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_Rocket</weaponCategory>
+    <exclusionTags>
+      <li>Weight</li>
+    </exclusionTags>
+    <statOffsets>
+      <RangedWeapon_WarmupMultiplier>-0.10</RangedWeapon_WarmupMultiplier>
+      <MarketValue>80</MarketValue>
+    </statOffsets>
+    <statFactors>
+	  <RangedWeapon_Cooldown>0.80</RangedWeapon_Cooldown>
+    </statFactors>
+    <traitAdjectives>
+      <li>light</li>
+      <li>quickloading</li>
+    </traitAdjectives>
+    </WeaponTraitDef>
+	
+	<WeaponTraitDef>
+    <defName>Cinder_HeavyAmmunition</defName>
+    <label>heavy ammunition</label>
+    <description>This weapon uses heavier rocket and machine gun rounds, which can cause higher damage and armor piercing, but the weight of the weapon has increased.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_Rocket</weaponCategory>
+    <statOffsets>
+      <MarketValue>80</MarketValue>
+      <RangedWeapon_ArmorPenetrationMultiplier>0.10</RangedWeapon_ArmorPenetrationMultiplier>
+	  <RangedWeapon_DamageMultiplier>0.2</RangedWeapon_DamageMultiplier>
+    </statOffsets>
+    <equippedStatOffsets>
+	  <MoveSpeed>-0.1</MoveSpeed>
+    </equippedStatOffsets>
+    <traitAdjectives>
+      <li>heavy-duty</li>
+      <li>high-powered</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+  <!-- Cinder Caseless -->
+   <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_ExtraGreatSword</defName>
+    <label>extra great sword</label>
+    <description>This weapon is equipped with the "extra great sword" large caliber ammunition, which greatly enhances its power while reducing its firing rate.</description>
+    <commonality>1.5</commonality>
+	<exclusionTags>
+      <li>GreatSword</li>
+    </exclusionTags>
+    <weaponCategory>Cinder_Caseless</weaponCategory>
+	<burstShotSpeedMultiplier>0.6</burstShotSpeedMultiplier>
+	<burstShotCountMultiplier>0.66</burstShotCountMultiplier>
+    <statOffsets>
+      <MarketValue>80</MarketValue>
+      <RangedWeapon_ArmorPenetrationMultiplier>0.15</RangedWeapon_ArmorPenetrationMultiplier>
+	  <RangedWeapon_DamageMultiplier>0.66</RangedWeapon_DamageMultiplier>
+    </statOffsets>
+    <traitAdjectives>
+      <li>extra</li>
+      <li>extra-large</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+  
+ <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_SwiftSword</defName>
+    <label>swift sword</label>
+    <description>This weapon is equipped with a lightweight structure called "Swift Sword" and uses reduced charge ammunition, which can shoot faster and more accurately, but its power has been reduced.</description>
+    <commonality>1.5</commonality>
+	<exclusionTags>
+      <li>GreatSword</li>
+    </exclusionTags>
+    <weaponCategory>Cinder_Caseless</weaponCategory>
+	<burstShotSpeedMultiplier>1.2</burstShotSpeedMultiplier>
+    <statOffsets>
+      <MarketValue>80</MarketValue>
+	  <RangedWeapon_WarmupMultiplier>-0.10</RangedWeapon_WarmupMultiplier>
+	  <RangedWeapon_DamageMultiplier>-0.2</RangedWeapon_DamageMultiplier>
+    </statOffsets>
+	 <statFactors>
+      <AccuracyMedium>1.05</AccuracyMedium>
+      <AccuracyLong>1.05</AccuracyLong>
+	   <Mass>0.85</Mass>
+    </statFactors>
+    <traitAdjectives>
+      <li>swift</li>
+      <li>sensitive</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+
+  <!-- Generic Ranged -->
+
+ <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_Ornamental</defName>
+    <label>ornamental</label>
+    <description>This weapon was crafted for aesthetics over functionality. It deals less damage but looks great.</description>
+    <commonality>0.5</commonality>
+    <canGenerateAlone>false</canGenerateAlone>
+    <weaponCategory>Cinder_Ranged</weaponCategory>
+    <exclusionTags>
+      <li>Appearance</li>
+    </exclusionTags>
+    <statOffsets>
+      <RangedWeapon_DamageMultiplier>-0.05</RangedWeapon_DamageMultiplier>
+      <Beauty>2</Beauty>
+      <MarketValue>40</MarketValue>
+    </statOffsets>
+    <traitAdjectives>
+      <li>beautiful</li>
+      <li>elegant</li>
+      <li>ornamental</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+  
+ <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_Ugly</defName>
+    <label>ugly</label>
+    <description>This weapon was crafted with no respect for aesthetics. It looks like junk but gets the job done. Traders will pay less for it.</description>
+    <commonality>0.5</commonality>
+    <canGenerateAlone>false</canGenerateAlone>
+    <weaponCategory>Cinder_Ranged</weaponCategory>
+    <exclusionTags>
+      <li>Appearance</li>
+    </exclusionTags>
+    <statOffsets>
+      <Beauty>-6</Beauty>
+    </statOffsets>
+    <statFactors>
+      <MarketValue>0.7</MarketValue>
+    </statFactors>
+    <traitAdjectives>
+      <li>monstrous</li>
+      <li>crude</li>
+      <li>ugly</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+ <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_Lightweight</defName>
+    <label>lightweight</label>
+    <description>This weapon is much lighter than normal, lowering its aiming time.</description>
+    <commonality>1</commonality>
+    <weaponCategory>Cinder_Ranged</weaponCategory>
+    <exclusionTags>
+      <li>Weight</li>
+    </exclusionTags>
+    <statOffsets>
+      <RangedWeapon_WarmupMultiplier>-0.10</RangedWeapon_WarmupMultiplier>
+      <MarketValue>80</MarketValue>
+    </statOffsets>
+    <statFactors>
+      <Mass>0.75</Mass>
+    </statFactors>
+    <traitAdjectives>
+      <li>light</li>
+      <li>quickdraw</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+ <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_Cumbersome</defName>
+    <label>cumbersome</label>
+    <description>This weapon is unwieldy to use, making it slower to aim.</description>
+    <commonality>1</commonality>
+    <canGenerateAlone>false</canGenerateAlone>
+    <weaponCategory>Cinder_Ranged</weaponCategory>
+    <exclusionTags>
+      <li>Weight</li>
+    </exclusionTags>
+    <statOffsets>
+      <RangedWeapon_WarmupMultiplier>0.2</RangedWeapon_WarmupMultiplier>
+    </statOffsets>
+    <statFactors>
+      <MarketValue>0.8</MarketValue>
+    </statFactors>
+    <traitAdjectives>
+      <li>cumbersome</li>
+      <li>bulky</li>
+      <li>awkward</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+
+
+   <!-- Generic melee -->
+
+
+  <WeaponTraitDef ParentName="CinderWeaponTraitBase">
+    <defName>Cinder_GridTentacle</defName>
+    <label>grid tentacle</label>
+    <description>The tentacles of this weapon can flexibly strike enemies.</description>
+    <commonality>1</commonality>
+    <canGenerateAlone>false</canGenerateAlone>
+    <weaponCategory>Cinder_Melee</weaponCategory>
+    <statOffsets>
+      <MarketValue>40</MarketValue>
+    </statOffsets>
+	 <extraDamages>
+      <li>
+        <def>Cider_Cut</def>
+        <amount>2</amount>
+      </li>
+    </extraDamages>
+    <traitAdjectives>
+      <li>terrifying</li>
+      <li>agile</li>
+    </traitAdjectives>
+  </WeaponTraitDef>
+  
+  <ColorDef>
+    <defName>Cinder_UniqueWeapon</defName>
+    <color>(255, 255, 255)</color>
+    <randomlyPickable>false</randomlyPickable>
+	<colorType>Weapon</colorType>
+  </ColorDef>
+  
+</Defs>

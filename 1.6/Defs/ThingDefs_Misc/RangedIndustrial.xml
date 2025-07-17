@@ -154,6 +154,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/Magistrate/MagistrateA</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconScale>1.1</uiIconScale>
 		<uiIconPath>Things/Weapons/Magistrate/MagistrateUI</uiIconPath>
@@ -233,6 +234,23 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+	<comps>
+        <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Cinder_Gun</li>
+          <li>Cinder_Tentacle</li>
+          <li>Cinder_Ranged</li>
+          <li>Cinder_Shotgun</li>
+          <li>Cinder_PelletFiring</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>revolver shotgun</li>
+          <li>five-shooter</li>
+          <li>Magistrate</li>
+          <li>justice judge</li>
+        </namerLabels>
+      </li>
+    </comps>
 	</ThingDef>
 
 
@@ -243,6 +261,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/MP12/MP12J</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.3</drawSize>
 		</graphicData>
 		<uiIconScale>1.35</uiIconScale>
@@ -352,6 +371,26 @@
 				<cooldownTime>1.5</cooldownTime>
 			</li>
 		</tools>
+	<comps>
+        <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Cinder_Gun</li>
+          <li>Cinder_Tentacle</li>
+          <li>Cinder_Ranged</li>
+          <li>Cinder_BulletFiring</li>
+          <li>Cinder_Sighted</li>
+		  <li>Cinder_Scoped</li>
+		  <li>Cinder_BurstFire</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>pdw</li>
+          <li>rapier</li>
+          <li>dagger</li>
+          <li>sbr</li>
+		  <li>smg</li>
+        </namerLabels>
+      </li>
+    </comps>
 	</ThingDef>
 
 	<ThingDef ParentName="Cinder_Gun">
@@ -361,6 +400,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/PCX33/PCX33C</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<uiIconScale>1.3</uiIconScale>
@@ -446,6 +486,27 @@
 				<cooldownTime>1.5</cooldownTime>
 			</li>
 		</tools>
+	<comps>
+        <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Cinder_Gun</li>
+          <li>Cinder_Tentacle</li>
+          <li>Cinder_Ranged</li>
+          <li>Cinder_BulletFiring</li>
+          <li>Cinder_Sighted</li>
+		  <li>Cinder_Scoped</li>
+		  <li>Cinder_BurstFire</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>Ouroboros</li>
+          <li>rattle</li>
+          <li>snake</li>
+          <li>short rifle</li>
+		  <li>fusil</li>
+		  <li>line gun</li>
+        </namerLabels>
+      </li>
+    </comps>
 	</ThingDef>
 
 	<ThingDef ParentName="Cinder_Gun">
@@ -455,6 +516,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/Flint50/Flint50B</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.24</drawSize>
 		</graphicData>
 		<uiIconScale>1.24</uiIconScale>
@@ -541,6 +603,25 @@
 				<cooldownTime>1.5</cooldownTime>
 			</li>
 		</tools>
+	<comps>
+        <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Cinder_Gun</li>
+          <li>Cinder_Tentacle</li>
+          <li>Cinder_Ranged</li>
+          <li>Cinder_BulletFiring</li>
+          <li>Cinder_Sighted</li>
+		  <li>Cinder_Scoped</li>
+		  <li>Cinder_BurstFire</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>Flint</li>
+          <li>Jingall</li>
+          <li>Wallgun</li>
+          <li>startler</li>
+        </namerLabels>
+      </li>
+    </comps>
 	</ThingDef>
 
 	<ThingDef ParentName="Cinder_Gun">
@@ -551,6 +632,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/DragonslayerBow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.24</drawSize>
 		</graphicData>
 		<uiIconScale>1.05</uiIconScale>
@@ -647,6 +729,22 @@
 				<description>Switch weapon form</description>
 				<sound>Cinder_Transform</sound>
 			</li>
+	  <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Cinder_Gun</li>
+          <li>Cinder_Tentacle</li>
+          <li>Cinder_Ranged</li>
+          <li>Cinder_Sighted</li>
+		  <li>Cinder_Scoped</li>
+		  <li>Cinder_Rocket</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>Dragon slayer</li>
+          <li>longbow</li>
+          <li>RPG</li>
+          <li>Great Bow</li>
+        </namerLabels>
+      </li>
 		</comps>
 
 		<equippedStatOffsets>
@@ -672,6 +770,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/ErosionGourd/ErosionGourd</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconScale>1.1</uiIconScale>
 		<soundInteract>Interact_Rifle</soundInteract>
@@ -756,6 +855,21 @@
 				</extraMeleeDamages>
 			</li>
 		</tools>
+	<comps>
+        <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Cinder_Tentacle</li>
+          <li>Cinder_Ranged</li>
+		  <li>Cinder_Gourd</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>gourd</li>
+          <li>medicine tank</li>
+          <li>ritual implements</li>
+          <li>calabash</li>
+        </namerLabels>
+      </li>
+    </comps>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">

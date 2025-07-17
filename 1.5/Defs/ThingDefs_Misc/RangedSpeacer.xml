@@ -68,7 +68,7 @@
 		<costList>
 			<Cinder_AmorphousPolymer>250</Cinder_AmorphousPolymer>
 			<ComponentIndustrial>5</ComponentIndustrial>
-            <ComponentSpacer>4</ComponentSpacer>
+            <ComponentSpacer>3</ComponentSpacer>
 		</costList>
 
 		<recipeMaker>
@@ -180,7 +180,7 @@
     <costList>
 			<Cinder_AmorphousPolymer>250</Cinder_AmorphousPolymer>
 			<ComponentIndustrial>5</ComponentIndustrial>
-            <ComponentSpacer>4</ComponentSpacer>
+            <ComponentSpacer>3</ComponentSpacer>
 	</costList>
      <tools>
       <li>

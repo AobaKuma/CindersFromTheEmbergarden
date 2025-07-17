@@ -9,6 +9,7 @@
     <graphicData>
       <texPath>Things/Weapons/ImpactBreaker</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
 	  <drawSize>1.4</drawSize>
     </graphicData>
     <uiIconScale>1.2</uiIconScale>
@@ -72,6 +73,7 @@
     <graphicData>
       <texPath>Things/Weapons/ElectricScythe</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
 	  <drawSize>1.6</drawSize>
     </graphicData>
     <uiIconScale>1.2</uiIconScale>
@@ -140,6 +142,7 @@
     <graphicData>
       <texPath>Things/Weapons/HighFrequencySaw/HighFrequencySawA</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
 	  <drawSize>1.05</drawSize>
     </graphicData>
     <uiIconScale>1.2</uiIconScale>
