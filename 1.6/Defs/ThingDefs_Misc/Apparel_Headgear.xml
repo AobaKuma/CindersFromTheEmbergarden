@@ -21,6 +21,7 @@
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		    <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			<canBeGeneratedToSatisfyVacuumResistance>false</canBeGeneratedToSatisfyVacuumResistance>
 		</apparel>
 		<recipeMaker>
 		     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>

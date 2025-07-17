@@ -43,6 +43,7 @@
 		<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		<canBeGeneratedToSatisfyVacuumResistance>false</canBeGeneratedToSatisfyVacuumResistance>
 			<tags>
 				<li>Cinder_Civilan</li>
 			</tags>
