@@ -125,7 +125,7 @@
 				<changeTo>Cinder_FumeGreatswordM</changeTo>
 				<abilityDef>Cinder_ActivateTentacles</abilityDef>
 			</li>
-		<li Class="Embergarden.CompProperties_UniqueWeapon">
+		<li Class="CompProperties_UniqueWeapon" MayRequire="Ludeon.RimWorld.Odyssey">
         <weaponCategories>
           <li>Cinder_Gun</li>
           <li>Cinder_Tentacle</li>
@@ -233,7 +233,7 @@
 				<changeTo>Cinder_FumeGreatsword</changeTo>
 				<abilityDef>Cinder_Deactivate</abilityDef>
 			</li>
-		<li Class="Embergarden.CompProperties_UniqueWeapon">
+		<li Class="CompProperties_UniqueWeapon" MayRequire="Ludeon.RimWorld.Odyssey">
         <weaponCategories>
           <li>Cinder_Melee</li>
           <li>Cinder_Tentacle</li>

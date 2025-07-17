@@ -48,6 +48,7 @@
 			</tools>
 		</value>
 	</Operation>
+	
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Cinder_Dragonslayer"]/tools</xpath>
