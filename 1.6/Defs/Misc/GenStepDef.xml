@@ -22,7 +22,8 @@
 					<things>
 						<AncientWheel MayRequire="Ludeon.RimWorld.Ideology">2</AncientWheel>
 						<AncientGiantWheel MayRequire="Ludeon.RimWorld.Ideology">1</AncientGiantWheel>
-						<Cinder_AncientRustedChunk_A>2</Cinder_AncientRustedChunk_A>
+						<Cinder_AncientRustedChunk_A>1</Cinder_AncientRustedChunk_A>
+						<Cinder_AncientRustedChunk_None>1</Cinder_AncientRustedChunk_None>
 					</things>
 					<indoorRuin>false</indoorRuin>
 					<coveredCellsPer10Cells>0.25~0.5</coveredCellsPer10Cells>
@@ -35,7 +36,7 @@
 					<things>
 						<AncientWheel MayRequire="Ludeon.RimWorld.Ideology">2</AncientWheel>
 						<Cinder_AncientFastArmoredVehicle>1</Cinder_AncientFastArmoredVehicle>
-						<Cinder_AncientWheeledTank>1</Cinder_AncientWheeledTank>
+						<Cinder_AncientFastArmoredVehicle_None>1</Cinder_AncientFastArmoredVehicle_None>
 					</things>
 					<indoorRuin>false</indoorRuin>
 					<coveredCellsPer10Cells>0.25~0.5</coveredCellsPer10Cells>
@@ -48,6 +49,7 @@
 					<things>
 						<AncientWheel MayRequire="Ludeon.RimWorld.Ideology">1</AncientWheel>
 						<Cinder_AncientWheeledTank>1</Cinder_AncientWheeledTank>
+						<Cinder_AncientWheeledTank_None>1</Cinder_AncientWheeledTank_None>
 					</things>
 					<indoorRuin>false</indoorRuin>
 					<coveredCellsPer10Cells>0.25~0.5</coveredCellsPer10Cells>

@@ -11,6 +11,21 @@
   <!-- EN: An ancient, broken chunk.There seems to be some useful things inside. -->
   <Cinder_AncientFastArmoredVehicle.description>一個古老的快速裝甲車殘骸。裡面似乎有一些有用的東西。</Cinder_AncientFastArmoredVehicle.description>
   
+     <!-- EN: ancient fast armored vehicle -->
+  <Cinder_AncientFastArmoredVehicle_None.label>遠古快速裝甲車</Cinder_AncientFastArmoredVehicle_None.label>
+  <!-- EN: An ancient, broken chunk.There seems to be some useful things inside. -->
+  <Cinder_AncientFastArmoredVehicle_None.description>一個古老的快速裝甲車殘骸。裡面空无一物。</Cinder_AncientFastArmoredVehicle_None.description>
+  
+      <!-- EN: ancient wheeled tank -->
+  <Cinder_AncientWheeledTank_None.label>遠古輪式戰車</Cinder_AncientWheeledTank_None.label>
+  <!-- EN: An ancient, broken chunk.There seems to be some useful things inside. -->
+  <Cinder_AncientWheeledTank_None.description>一個古老的輪式戰車殘骸。裡面空无一物。</Cinder_AncientWheeledTank_None.description>
+  
+    <!-- EN: ancient automatic truck -->
+  <Cinder_AncientRustedChunk_None.label>遠古自動卡車</Cinder_AncientRustedChunk_None.label>
+  <!-- EN: An ancient, broken chunk.There seems to be some useful things inside. -->
+  <Cinder_AncientRustedChunk_None.description>一個古老的自動卡車殘骸。裡面空无一物。</Cinder_AncientRustedChunk_None.description>
+  
   <!-- EN: ancient giant cargo -->
   <Cinder_AncientGiantCargo.label>遠古巨型貨箱</Cinder_AncientGiantCargo.label>
   <!-- EN: An ancient, broken chunk.There seems to be some useful things inside. -->

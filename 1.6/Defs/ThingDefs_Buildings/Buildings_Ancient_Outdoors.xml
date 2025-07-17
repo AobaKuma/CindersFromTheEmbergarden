@@ -35,6 +35,29 @@
         </killedLeavings>
     </ThingDef>
 	
+	<ThingDef ParentName="Cinder_AncientBuildingBase">
+        <defName>Cinder_AncientRustedChunk_None</defName>
+        <label>ancient automatic truck</label>
+        <description>An ancient, broken chunk.There seems to be nothing inside.</description>
+        <graphicData>
+            <texPath>Things/Building/AncientAutomaticTruck/building</texPath>
+            <drawSize>(4,8)</drawSize>
+            <shadowData>
+                <volume>(2, 2, 5)</volume>
+            </shadowData>
+        </graphicData>
+        <size>(2,6)</size>
+		<pathCost>50</pathCost>
+		<passability>PassThroughOnly</passability>
+        <fillPercent>0.9</fillPercent>
+        <statBases>
+            <MaxHitPoints>720</MaxHitPoints>
+        </statBases>
+        <killedLeavings>
+            <ChunkSlagSteel>6</ChunkSlagSteel>
+        </killedLeavings>
+    </ThingDef>
+	
 	
 
     <ThingDef ParentName="Cinder_AncientBuildingBase">
@@ -163,6 +186,30 @@
             <Cinder_AmorphousPolymer>50</Cinder_AmorphousPolymer>
         </killedLeavings>
     </ThingDef>
+	
+	<ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
+        <defName>Cinder_AncientWheeledTank_None</defName>
+        <label>ancient wheeled tank</label>
+        <description>An ancient, broken chunk.There seems to be nothing inside.</description>
+        <graphicData>
+            <texPath>Things/Building/AncientWheeledTank/AncientWheeledTank_east</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(6,4.2)</drawSize>
+            <shadowData>
+                <volume>(5, 4, 2.5)</volume>
+            </shadowData>
+        </graphicData>
+		<rotatable>false</rotatable>
+        <randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
+        <size>(5,3)</size>
+        <fillPercent>0.9</fillPercent>
+        <statBases>
+            <MaxHitPoints>900</MaxHitPoints>
+        </statBases>
+        <killedLeavings>
+            <ChunkSlagSteel>5</ChunkSlagSteel>
+        </killedLeavings>
+    </ThingDef>
 
     <ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
         <defName>Cinder_AncientFastArmoredVehicle</defName>
@@ -187,6 +234,30 @@
             <ChunkSlagSteel>4</ChunkSlagSteel>
 			<ComponentIndustrial>2</ComponentIndustrial>
             <Cinder_AmorphousPolymer>30</Cinder_AmorphousPolymer>
+        </killedLeavings>
+    </ThingDef>
+	
+	 <ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
+        <defName>Cinder_AncientFastArmoredVehicle_None</defName>
+        <label>ancient fast armored vehicle</label>
+        <description>An ancient, broken chunk.There seems to be northing inside.</description>
+        <graphicData>
+            <texPath>Things/Building/AncientFastArmoredVehicle/AncientFastArmoredVehicle_east</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(5,3)</drawSize>
+            <shadowData>
+                <volume>(4, 3, 2)</volume>
+            </shadowData>
+        </graphicData>
+		<rotatable>false</rotatable>
+        <randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
+        <size>(4,2)</size>
+        <fillPercent>0.9</fillPercent>
+        <statBases>
+            <MaxHitPoints>480</MaxHitPoints>
+        </statBases>
+        <killedLeavings>
+            <ChunkSlagSteel>4</ChunkSlagSteel>
         </killedLeavings>
     </ThingDef>
 
