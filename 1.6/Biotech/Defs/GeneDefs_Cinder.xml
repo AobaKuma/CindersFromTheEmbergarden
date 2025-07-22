@@ -121,7 +121,7 @@
     <iconPath>UI/Gene/Fin</iconPath>
 	<selectionWeight>1.5</selectionWeight>
     <displayOrderInCategory>0</displayOrderInCategory>
-	<minAgeActive>3</minAgeActive>
+	<minAgeActive>0</minAgeActive>
 	 <exclusionTags>
       <li>CinderFin</li>
     </exclusionTags>
@@ -158,7 +158,7 @@
     <iconPath>UI/Gene/UncontrollableTentacle</iconPath>
 	<selectionWeight>1.5</selectionWeight>
     <displayOrderInCategory>0</displayOrderInCategory>
-	<minAgeActive>3</minAgeActive>
+	<minAgeActive>0</minAgeActive>
     <biostatCpx>4</biostatCpx>
     <biostatMet>4</biostatMet>
 	 <exclusionTags>
