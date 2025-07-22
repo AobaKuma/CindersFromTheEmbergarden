@@ -7,7 +7,7 @@ namespace Embergarden
         ModExtension_GeneAddHediff ext => def.GetModExtension<ModExtension_GeneAddHediff>();
         public override void PostAdd()
         {
-            if (ext != null)
+            if (ext != null && pawn.health != null)
             {
                 pawn.health.AddHediff(ext.HediffDef);
             }
@@ -15,7 +15,7 @@ namespace Embergarden
 
         public override void PostRemove()
         {
-            if (ext != null)
+            if (ext != null && pawn.health!=null)
             {
                 for (int i = pawn.health.hediffSet.hediffs.Count; i > 0; i--)
                 {
