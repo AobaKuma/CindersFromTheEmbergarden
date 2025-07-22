@@ -16,7 +16,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.6.4523": {
+      "Krafs.Rimworld.Ref/1.6.4528-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -170,7 +170,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.6.4523": {
+      "Krafs.Rimworld.Ref/1.6.4528-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -324,7 +324,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.6.4523": {
+      "Krafs.Rimworld.Ref/1.6.4528-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -478,7 +478,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.6.4523": {
+      "Krafs.Rimworld.Ref/1.6.4528-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -632,7 +632,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.6.4523": {
+      "Krafs.Rimworld.Ref/1.6.4528-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -791,17 +791,17 @@
         "krafs.publicizer.nuspec"
       ]
     },
-    "Krafs.Rimworld.Ref/1.6.4523": {
-      "sha512": "HctRgCN04CKGbfk3eBtpLs5gSku/628e76y90PDhV7+fgb7KKqscwOeKGJaLgGvwkU5a9cRWp8XGjBhXcs+uuQ==",
+    "Krafs.Rimworld.Ref/1.6.4528-beta": {
+      "sha512": "08KcJ0Kt0sjSSuf7iq/NgVC06Z0sqGqSLhnAF0xIYaE2dZEZw/O521L3MM9PaamZsFO0VUIv45AZoXoz5UJVrg==",
       "type": "package",
-      "path": "krafs.rimworld.ref/1.6.4523",
+      "path": "krafs.rimworld.ref/1.6.4528-beta",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
         "README.md",
         "icon.png",
-        "krafs.rimworld.ref.1.6.4523.nupkg.sha512",
+        "krafs.rimworld.ref.1.6.4528-beta.nupkg.sha512",
         "krafs.rimworld.ref.nuspec",
         "ref/net472/Assembly-CSharp-firstpass.dll",
         "ref/net472/Assembly-CSharp.dll",
@@ -969,45 +969,38 @@
     ".NETFramework,Version=v4.8": [
       "Embergarden >= 1.0.0",
       "Krafs.Publicizer >= 2.3.0",
-      "Krafs.Rimworld.Ref >= 1.6.4523",
+      "Krafs.Rimworld.Ref >= 1.6.4528-beta",
       "Lib.Harmony >= 2.3.6"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
-    "E:\\Shared\\NuGetPackages": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden-main\\_Sources\\Embergarden\\EmbergardenCE\\EmbergardenCE.csproj",
+      "projectUniqueName": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\EmbergardenCE\\EmbergardenCE.csproj",
       "projectName": "EmbergardenCE",
-      "projectPath": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden-main\\_Sources\\Embergarden\\EmbergardenCE\\EmbergardenCE.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden-main\\_Sources\\Embergarden\\EmbergardenCE\\obj\\",
+      "projectPath": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\EmbergardenCE\\EmbergardenCE.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\EmbergardenCE\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "UsingMicrosoftNETSdk": false,
-      "fallbackFolders": [
-        "E:\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net48"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net48": {
           "projectReferences": {
-            "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden-main\\_Sources\\Embergarden\\Embergarden\\Embergarden.csproj": {
-              "projectPath": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden-main\\_Sources\\Embergarden\\Embergarden\\Embergarden.csproj"
+            "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Embergarden.csproj": {
+              "projectPath": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Embergarden.csproj"
             }
           }
         }
@@ -1029,7 +1022,7 @@
           },
           "Krafs.Rimworld.Ref": {
             "target": "Package",
-            "version": "[1.6.4523, )"
+            "version": "[1.6.4528-beta, )"
           },
           "Lib.Harmony": {
             "target": "Package",

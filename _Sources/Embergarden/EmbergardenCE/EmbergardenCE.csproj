@@ -32,8 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CombatExtended">
-      <HintPath>..\..\..\..\CombatExtended\Assemblies\CombatExtended.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\3495749827\Assemblies\CombatExtended.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -54,7 +53,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.6.4523</Version>
+      <Version>1.6.4528-beta</Version>
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
       <Version>2.3.6</Version>

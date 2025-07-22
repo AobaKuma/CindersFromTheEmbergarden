@@ -51,7 +51,6 @@ namespace Embergarden
             }
         }
     }
-
     public class ModExtension_GeneAddHediff : DefModExtension
     {
         public HediffDef HediffDef;

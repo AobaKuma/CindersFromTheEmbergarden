@@ -25,17 +25,12 @@ namespace Embergarden
                     else
                     {
                         targetPos = busy.focusTarg.Cell.ToVector3Shifted();
-                    }
-
-                        
+                    } 
 					return (targetPos - pawn.DrawPos).AngleFlat();
-                    
                 }
-
                 return _turretFollowingAngle;
             }
         }
-
 
         private float _turretFollowingAngle = 0f;
 
@@ -79,14 +74,11 @@ namespace Embergarden
             base.PostDeSpawn(map);
             cachedVehicldesPawns.Remove((Pawn)parent);
         }
-
-
         public override void PostDestroy(DestroyMode mode, Map previousMap)
         {
             base.PostDestroy(mode, previousMap);
             cachedVehicldesPawns.Remove((Pawn)parent);
         }
-
         public override void CompTick()
         {
             base.CompTick();
@@ -110,13 +102,11 @@ namespace Embergarden
             _currentAngle = Mathf.SmoothDampAngle(_currentAngle, TargetAngle, ref _rotationSpeed, Props.rotationSmoothTime);
 
         }
-
         public override void CompTickRare()
         {
             base.CompTickRare();
             _turretAnglePerFrame = Rand.Range(-0.5f, 0.5f);
         }
-
         public Vector3 GetOffsetByRot()
         {
             if (Props.drawData != null)
