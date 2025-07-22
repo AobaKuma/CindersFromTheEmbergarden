@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using Verse;
 using UnityEngine;
+using System.ComponentModel.Composition.Primitives;
 using Embergarden;
 using RimWorld;
+using static UnityEngine.GraphicsBuffer;
 
 namespace EmbergardenCE
 {
