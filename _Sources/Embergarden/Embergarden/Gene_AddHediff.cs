@@ -1,28 +1,51 @@
-﻿using Verse;
+﻿using HarmonyLib;
+using RimWorld;
+using Verse;
 
 namespace Embergarden
 {
+    [HarmonyPatch(typeof(CompStatue), "InitFakePawn")]
+    public static class Patch_InitFakePawn
+    {
+        public static bool statue = false;
+        public static void Prefix()
+        {
+            statue = true;
+        }
+
+        public static void Postfix()
+        {
+            statue = false;
+        }
+    }
     public class Gene_AddHediff : Gene
     {
-        ModExtension_GeneAddHediff ext => def.GetModExtension<ModExtension_GeneAddHediff>();
+        private ModExtension_GeneAddHediff ext => def.GetModExtension<ModExtension_GeneAddHediff>();
+
         public override void PostAdd()
         {
-            if (ext != null)
+            if (!Patch_InitFakePawn.statue)
             {
-                pawn.health.AddHediff(ext.HediffDef);
+                if (ext != null)
+                {
+                    pawn.health?.AddHediff(ext.HediffDef);
+                }
             }
         }
 
         public override void PostRemove()
         {
-            if (ext != null)
+            if (!Patch_InitFakePawn.statue)
             {
-                for (int i = pawn.health.hediffSet.hediffs.Count; i > 0; i--)
+                if (ext != null)
                 {
-                    var h = pawn.health.hediffSet.hediffs[i - 1];
-                    if (h.def == ext.HediffDef)
+                    for (int i = pawn.health.hediffSet.hediffs.Count; i > 0; i--)
                     {
-                        pawn.health.RemoveHediff(h);
+                        var h = pawn.health.hediffSet.hediffs[i - 1];
+                        if (h.def == ext.HediffDef)
+                        {
+                            pawn.health.RemoveHediff(h);
+                        }
                     }
                 }
             }

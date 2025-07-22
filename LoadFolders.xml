@@ -22,7 +22,11 @@
 		<li IfModActive="Ludeon.RimWorld.Biotech">1.6/Biotech</li>
 		<li IfModActive="IssacZhuang.PLA.Armory">1.6/CE/PLA</li>
 		<li IfModActive="CETeam.CombatExtended,CETeam.CombatExtended_steam">1.6/CE</li>
-		<li IfModActive="nals.facialanimation">1.6/Mod/FacialAnimation</li>
+		<li IfModActiveAll="nals.facialanimation,erdelf.HumanoidAlienRaces">1.6/Mod/FacialAnimation</li>
+		<li IfModActiveAll="nals.facialanimation,erdelf.HumanoidAlienRaces_steam">1.6/Mod/FacialAnimation</li>
+		<li IfModActiveAll="nals.facialanimation,erdelf.HumanoidAlienRaces.dev">1.6/Mod/FacialAnimation</li>
+		<li IfModActiveAll="nals.facialanimation,erdelf.HumanoidAlienRaces.dev_steam">1.6/Mod/FacialAnimation</li>
+		<li IfModActive="nals.facialanimation">1.6/FA</li>
 		<li IfModActive="nals.facialanimation">FA/FacialAnimation</li>
 		<li IfModActive="erdelf.HumanoidAlienRaces,erdelf.HumanoidAlienRaces_steam,erdelf.HumanoidAlienRaces.dev,erdelf.HumanoidAlienRaces.dev_steam">1.6/Har</li>
 		<li IfModNotActive="Ludeon.RimWorld.Biotech">1.6/NonBiotechPatch</li>

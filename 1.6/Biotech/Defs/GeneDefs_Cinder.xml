@@ -118,7 +118,6 @@
 	 <biostatCpx>0</biostatCpx>
     <displayCategory>Cosmetic</displayCategory>
     <iconColor>(0.75, 0.75, 0.75)</iconColor>
-    <randomChosen>true</randomChosen>
     <iconPath>UI/Gene/Fin</iconPath>
 	<selectionWeight>1.5</selectionWeight>
     <displayOrderInCategory>0</displayOrderInCategory>
@@ -155,7 +154,6 @@
     <label>uncontrollable tentacle</label>
     <description>The amorphous polymer in the carrier's body will appear on the surface of the body in a tentacle like manner, this uncontrollable tentacle does not affect the carrier's own biological structure，carrier's manipulation will be affected by a random value, and both melee damage and melee cooldown will increase.</description>
 	 <displayCategory>Miscellaneous</displayCategory>
-    <randomChosen>true</randomChosen>
 	<geneClass>Embergarden.Gene_AddHediff</geneClass>
     <iconPath>UI/Gene/UncontrollableTentacle</iconPath>
 	<selectionWeight>1.5</selectionWeight>

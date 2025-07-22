@@ -147,6 +147,20 @@
   </value>
    </Operation>
    
+    <Operation Class="PatchOperationConditional">
+		<xpath>Defs/HediffDef[defName="Cinder_Regen"]/renderNodeProperties</xpath>
+		<match Class="PatchOperationRemove">
+		<xpath>Defs/HediffDef[defName="Cinder_Regen"]/renderNodeProperties</xpath>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/HediffDef[defName="Cinder_UncontrollableTentacles"]/renderNodeProperties</xpath>
+		<match Class="PatchOperationRemove">
+		<xpath>Defs/HediffDef[defName="Cinder_UncontrollableTentacles"]/renderNodeProperties</xpath>
+		</match>
+	</Operation>
+   
    
    <Operation Class="PatchOperationFindMod">
 		<mods>
