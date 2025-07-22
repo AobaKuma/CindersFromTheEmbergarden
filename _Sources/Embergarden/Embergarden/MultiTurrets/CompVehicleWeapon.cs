@@ -46,8 +46,6 @@ namespace Embergarden
 
         private Rot4 _lastRotation;
 
-        public static readonly Dictionary<PawnRenderer, CompVehicleWeapon> cachedVehicles = new Dictionary<PawnRenderer, CompVehicleWeapon>();
-        public static readonly Dictionary<CompVehicleWeapon, Pawn> cachedPawns = new Dictionary<CompVehicleWeapon, Pawn>();
         public static readonly Dictionary<Pawn, CompVehicleWeapon> cachedVehicldesPawns = new Dictionary<Pawn, CompVehicleWeapon>();
 
         public CompProperties_VehicleWeapon Props
@@ -73,16 +71,12 @@ namespace Embergarden
                 Thing weapon = ThingMaker.MakeThing(Props.defaultWeapon);
                 pawn.equipment.AddEquipment((ThingWithComps)weapon);
             }
-            if (!cachedVehicles.ContainsKey((parent as Pawn).Drawer.renderer)) cachedVehicles.Add(((Pawn)parent).Drawer.renderer, this);
-            if (!cachedPawns.ContainsKey(this)) cachedPawns.Add(this, (Pawn)parent);
-            if (!cachedVehicldesPawns.ContainsKey((Pawn)parent)) cachedVehicldesPawns.Add((Pawn)parent, this);
+            cachedVehicldesPawns.Add((Pawn)parent, this);
         }
 
         public override void PostDeSpawn(Map map, DestroyMode destroyMode = DestroyMode.Vanish)
         {
             base.PostDeSpawn(map);
-            cachedVehicles.Remove(((Pawn)parent).Drawer.renderer);
-            cachedPawns.Remove(this);
             cachedVehicldesPawns.Remove((Pawn)parent);
         }
 
@@ -90,8 +84,6 @@ namespace Embergarden
         public override void PostDestroy(DestroyMode mode, Map previousMap)
         {
             base.PostDestroy(mode, previousMap);
-            cachedVehicles.Remove(((Pawn)parent).Drawer.renderer);
-            cachedPawns.Remove(this);
             cachedVehicldesPawns.Remove((Pawn)parent);
         }
 
