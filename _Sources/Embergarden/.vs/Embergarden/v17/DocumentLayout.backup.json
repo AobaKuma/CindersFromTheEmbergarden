@@ -7,15 +7,15 @@
       "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\multiturrets\\compvehicleweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C47413C3-A576-41C0-A30E-8DB98C8B9406}|EmbergardenCE\\EmbergardenCE.csproj|d:\\steam\\steamapps\\common\\rimworld\\mods\\_cindersfromtheembergarden\\_sources\\embergarden\\embergardence\\compsecondaryverbce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C47413C3-A576-41C0-A30E-8DB98C8B9406}|EmbergardenCE\\EmbergardenCE.csproj|solutionrelative:embergardence\\compsecondaryverbce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|d:\\steam\\steamapps\\common\\rimworld\\mods\\_cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\gene_addhediff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\gene_addhediff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|d:\\steam\\steamapps\\common\\rimworld\\mods\\_cindersfromtheembergarden\\_sources\\embergarden\\embergarden\\comptentaclespreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C47413C3-A576-41C0-A30E-8DB98C8B9406}|EmbergardenCE\\EmbergardenCE.csproj|D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\embergardence\\compsecondaryverbce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C47413C3-A576-41C0-A30E-8DB98C8B9406}|EmbergardenCE\\EmbergardenCE.csproj|solutionrelative:embergardence\\compsecondaryverbce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\embergarden\\comptentaclespreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{724D54C8-03A1-4BE3-AABB-0F7B5170BE49}|Embergarden\\Embergarden.csproj|solutionrelative:embergarden\\comptentaclespreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -189,8 +189,12 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CompSecondaryVerbCE.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\EmbergardenCE\\CompSecondaryVerbCE.cs",
               "RelativeDocumentMoniker": "EmbergardenCE\\CompSecondaryVerbCE.cs",
@@ -198,12 +202,11 @@
               "RelativeToolTip": "EmbergardenCE\\CompSecondaryVerbCE.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T20:41:50.766Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-22T20:41:50.766Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Gene_AddHediff.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Gene_AddHediff.cs",
               "RelativeDocumentMoniker": "Embergarden\\Gene_AddHediff.cs",
@@ -224,12 +227,7 @@
               "RelativeToolTip": "Embergarden\\HediffComp_EexclusiveHediff.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T08:37:18.058Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "WhenOpened": "2025-02-22T08:37:18.058Z"
             },
             {
               "$type": "Document",
@@ -239,7 +237,7 @@
               "RelativeDocumentMoniker": "Embergarden\\MultiTurrets\\CompVehicleWeapon.cs",
               "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\MultiTurrets\\CompVehicleWeapon.cs",
               "RelativeToolTip": "Embergarden\\MultiTurrets\\CompVehicleWeapon.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAwwGwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwEQAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T10:16:15.415Z",
               "EditorCaption": ""
@@ -254,8 +252,7 @@
               "RelativeToolTip": "Embergarden\\HediffComp_NewHediffAfterDisappear.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T22:28:03.253Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T22:28:03.253Z"
             },
             {
               "$type": "Document",
@@ -267,8 +264,7 @@
               "RelativeToolTip": "Embergarden\\HediffComp_CustomRegeneration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T22:12:41.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T22:12:41.226Z"
             },
             {
               "$type": "Document",
@@ -280,8 +276,7 @@
               "RelativeToolTip": "Embergarden\\CompTentacleSpreader.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T13:12:17.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-14T13:12:17.061Z"
             },
             {
               "$type": "Document",
@@ -293,8 +288,7 @@
               "RelativeToolTip": "Embergarden\\HediffComp_LimitedResurrect.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T22:28:03.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T22:28:03.832Z"
             },
             {
               "$type": "Document",
@@ -306,8 +300,7 @@
               "RelativeToolTip": "Embergarden\\Hediff_DynamicCap.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T07:05:59.294Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-19T07:05:59.294Z"
             },
             {
               "$type": "Document",
@@ -319,8 +312,7 @@
               "RelativeToolTip": "Embergarden\\HediffComp_StopMusicIfDowned.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T22:28:01.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T22:28:01.907Z"
             },
             {
               "$type": "Document",
@@ -332,8 +324,7 @@
               "RelativeToolTip": "Embergarden\\JobGiver_FleeAllPawnsUnfucked.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T22:28:00.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T22:28:00.674Z"
             },
             {
               "$type": "Document",
@@ -345,8 +336,7 @@
               "RelativeToolTip": "Embergarden\\PatchOperationAddSafe.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T22:27:59.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T22:27:59.977Z"
             },
             {
               "$type": "Document",
@@ -358,8 +348,7 @@
               "RelativeToolTip": "Embergarden\\QuestNode_Root_BossgroupFactionExposed.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T22:27:49.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T22:27:49.393Z"
             },
             {
               "$type": "Document",
@@ -371,8 +360,7 @@
               "RelativeToolTip": "Embergarden\\ThinkNode_ConditionalEnemyInRange.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T22:12:29.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T22:12:29.445Z"
             },
             {
               "$type": "Document",
@@ -384,8 +372,7 @@
               "RelativeToolTip": "Embergarden\\HediffComp_ProtectiveShield.cs",
               "ViewState": "AgIAAFkAAAAAAAAAAAAUwFcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T23:18:50.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-28T23:18:50.23Z"
             },
             {
               "$type": "Document",
@@ -397,8 +384,7 @@
               "RelativeToolTip": "Embergarden\\Ability_Transform.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T13:59:28.972Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-16T13:59:28.972Z"
             },
             {
               "$type": "Document",
@@ -410,8 +396,7 @@
               "RelativeToolTip": "Embergarden\\Projectile_Tentacle.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAYwBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T13:10:32.976Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-14T13:10:32.976Z"
             },
             {
               "$type": "Document",
@@ -423,8 +408,7 @@
               "RelativeToolTip": "Embergarden\\Projectile_ConeExplosion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T10:46:16.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-19T10:46:16.205Z"
             },
             {
               "$type": "Document",
@@ -436,8 +420,7 @@
               "RelativeToolTip": "Embergarden\\Projectile_CompExplosive.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T10:50:19.324Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-19T10:50:19.324Z"
             },
             {
               "$type": "Document",
@@ -449,8 +432,7 @@
               "RelativeToolTip": "Embergarden\\CompSecondaryVerb.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T22:27:17.035Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T22:27:17.035Z"
             },
             {
               "$type": "Document",
@@ -462,8 +444,7 @@
               "RelativeToolTip": "Embergarden\\CompAddHediff.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T22:27:14.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T22:27:14.288Z"
             },
             {
               "$type": "Document",
@@ -475,8 +456,7 @@
               "RelativeToolTip": "Embergarden\\Cider_DefOf.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T22:27:11.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T22:27:11.276Z"
             },
             {
               "$type": "Document",
@@ -488,8 +468,7 @@
               "RelativeToolTip": "Embergarden\\CompUseEffect_CallBossgroupNoMechanitor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T22:12:51.131Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T22:12:51.131Z"
             },
             {
               "$type": "Document",
@@ -501,8 +480,7 @@
               "RelativeToolTip": "Embergarden\\ThingClass_AltGraphic.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAiwDoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T10:38:40.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-18T10:38:40.982Z"
             },
             {
               "$type": "Document",
@@ -514,8 +492,7 @@
               "RelativeToolTip": "Embergarden\\Setting.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T22:12:30.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T22:12:30.538Z"
             },
             {
               "$type": "Document",
@@ -527,8 +504,7 @@
               "RelativeToolTip": "Embergarden\\Verb_ArcSprayProjectile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T22:12:28.799Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T22:12:28.799Z"
             },
             {
               "$type": "Document",
@@ -540,8 +516,7 @@
               "RelativeToolTip": "Embergarden\\Comp_TurretTransformable.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAgwCYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T13:18:44.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-14T13:18:44.943Z"
             },
             {
               "$type": "Document",
@@ -553,8 +528,7 @@
               "RelativeToolTip": "Embergarden\\D.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T22:12:42.664Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T22:12:42.664Z"
             },
             {
               "$type": "Document",
@@ -566,8 +540,7 @@
               "RelativeToolTip": "Embergarden\\ThoughtWorker_OtherHasTrait.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T22:12:28.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T22:12:28.218Z"
             },
             {
               "$type": "Document",
@@ -579,8 +552,7 @@
               "RelativeToolTip": "Embergarden\\GameComponent_ResurrectAdaptor.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAQwCIAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T13:19:05.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-14T13:19:05.074Z"
             },
             {
               "$type": "Document",
@@ -592,8 +564,7 @@
               "RelativeToolTip": "Embergarden\\MultiTurrets\\CompMultipleTurretGun.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T13:07:21.317Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-14T13:07:21.317Z"
             },
             {
               "$type": "Document",
@@ -605,8 +576,7 @@
               "RelativeToolTip": "Embergarden\\CompSwitch.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T14:54:50.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-17T14:54:50.846Z"
             },
             {
               "$type": "Document",
@@ -618,8 +588,7 @@
               "RelativeToolTip": "Embergarden\\Building_TrapTentacle.cs",
               "ViewState": "AgIAAH0AAAAAAAAAAAAAAH4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T13:14:08.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-14T13:14:08.699Z"
             },
             {
               "$type": "Document",
@@ -631,8 +600,7 @@
               "RelativeToolTip": "Embergarden\\Building_TrapExplosive_Rechargeable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T13:12:21.751Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-14T13:12:21.751Z"
             },
             {
               "$type": "Document",
@@ -644,8 +612,7 @@
               "RelativeToolTip": "EmbergardenCE\\Verb_SprayCE.cs",
               "ViewState": "AgIAAF0AAAAAAAAAAAAiwGwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T05:39:28.751Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T05:39:28.751Z"
             },
             {
               "$type": "Document",
@@ -657,8 +624,7 @@
               "RelativeToolTip": "EmbergardenCE\\Projectile_ConeExplosionCE.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T10:15:19.672Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-11T10:15:19.672Z"
             },
             {
               "$type": "Document",
@@ -670,8 +636,7 @@
               "RelativeToolTip": "Embergarden\\Gizmo_AttachmentShieldStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T23:18:47.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-28T23:18:47.596Z"
             },
             {
               "$type": "Document",
@@ -683,8 +648,7 @@
               "RelativeToolTip": "Embergarden\\ConeExplosion\\Projectile_ConeExplosive.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T17:36:41.103Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T17:36:41.103Z"
             },
             {
               "$type": "Document",
@@ -696,8 +660,7 @@
               "RelativeToolTip": "Embergarden\\HarmonyPatch\\Pawn_DraftController_Postfix.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T12:26:54.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-19T12:26:54.279Z"
             },
             {
               "$type": "Document",
@@ -709,8 +672,7 @@
               "RelativeToolTip": "Embergarden\\HarmonyPatch\\PawnGizmoPatch.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwC8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T05:10:54.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-19T05:10:54.19Z"
             },
             {
               "$type": "Document",
@@ -722,8 +684,7 @@
               "RelativeToolTip": "Embergarden\\HarmonyPatch\\Patch_DrawVehicleTurret.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T04:55:59.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-19T04:55:59.082Z"
             },
             {
               "$type": "Document",
@@ -735,8 +696,7 @@
               "RelativeToolTip": "Embergarden\\ConeExplosionUtility.cs",
               "ViewState": "AgIAAEEAAAAAAAAAAAAowCoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T10:39:28.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-19T10:39:28.005Z"
             },
             {
               "$type": "Document",
@@ -748,8 +708,7 @@
               "RelativeToolTip": "Embergarden\\HarmonyPatch\\HarmonyEntry.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T05:10:07.378Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-19T05:10:07.378Z"
             }
           ]
         }

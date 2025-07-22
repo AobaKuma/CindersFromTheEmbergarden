@@ -66,6 +66,7 @@ namespace Embergarden
                 Thing weapon = ThingMaker.MakeThing(Props.defaultWeapon);
                 pawn.equipment.AddEquipment((ThingWithComps)weapon);
             }
+            if (respawningAfterLoad) cachedVehicldesPawns.Remove((Pawn)parent);
             cachedVehicldesPawns.Add((Pawn)parent, this);
         }
 
