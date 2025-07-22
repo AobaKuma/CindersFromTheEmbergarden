@@ -78,7 +78,6 @@
     <Compile Include="CompAddHediff.cs" />
     <Compile Include="CompProperties_Transformable.cs" />
     <Compile Include="CompSecondaryVerb.cs" />
-    <Compile Include="CompUniqueWeapon.cs" />
     <Compile Include="CompUseableTargetable.cs" />
     <Compile Include="CompUseEffect_ActivateHediffs.cs" />
     <Compile Include="CompUseEffect_ActivateMech.cs" />

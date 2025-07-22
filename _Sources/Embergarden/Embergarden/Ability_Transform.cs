@@ -49,10 +49,11 @@ namespace Embergarden
             base.PostExposeData();
             Scribe_Deep.Look(ref turretOwner, "turret", [this]);
         }
+
         public static bool TryFindCellNearWith(IntVec3 near, Predicate<IntVec3> validator, Map map, out IntVec3 result)
         {
             result = near;
-            foreach (IntVec3 cell in GenRadial.RadialCellsAround(near,13,true))
+            foreach (IntVec3 cell in GenRadial.RadialCellsAround(near, 12, true))
             {
                 if (validator(cell))
                 {
@@ -63,18 +64,23 @@ namespace Embergarden
             return false;
         }
 
-        public static bool CanSpawnAt(IntVec3 c, Map map)
+        public static bool CanSpawnAt(IntVec3 c, Map map, Rot4 rot, IntVec2 size)
         {
-            if (!c.InBounds(map))
+            IEnumerable<IntVec3> cells = GenAdj.CellsOccupiedBy(c, rot, size);
+            foreach (IntVec3 cell in cells)
             {
-                return false;
-            }
-            if (c.GetFirstBuilding(map) != null)
-            {
-                return false;
+                if (!cell.InBounds(map))
+                {
+                    return false;
+                }
+                if (cell.GetFirstBuilding(map) != null)
+                {
+                    return false;
+                }
             }
             return true;
         }
+
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             base.Apply(target, dest);
@@ -90,14 +96,16 @@ namespace Embergarden
                 Building turret = Turret;
                 Map map = pawn.Map;
                 bool succeed = false;
-                if (TryFindCellNearWith(pawn.Position, c => GenSpawn.CanSpawnAt(Prop.buildingDef, c, map), map, out var result))
+                Rot4 rot = Turret.Rotation;
+                if (TryFindCellNearWith(pawn.Position, c => GenSpawn.CanSpawnAt(Prop.buildingDef, c, map, rot), map, out var result))
                 {
-                    GenPlace.TryPlaceThing(Turret, result, map, ThingPlaceMode.Direct);
+                    GenPlace.TryPlaceThing(Turret, result, map, ThingPlaceMode.Near);
                     succeed = true;
                 }
                 else
                 {
-                    if (TryFindCellNearWith(pawn.Position, c => CanSpawnAt(c, map), map, out var result2))
+                    IntVec2 size = Prop.buildingDef.Size;
+                    if (TryFindCellNearWith(pawn.Position, c => CanSpawnAt(c, map, rot, size), map, out var result2))
                     {
                         GenPlace.TryPlaceThing(Turret, result2, map, ThingPlaceMode.Direct);
                         succeed = true;
