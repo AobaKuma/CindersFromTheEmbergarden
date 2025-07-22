@@ -709,7 +709,7 @@
       <MarketValue>80</MarketValue>
       <RangedWeapon_ArmorPenetrationMultiplier>0.15</RangedWeapon_ArmorPenetrationMultiplier>
 	  <RangedWeapon_DamageMultiplier>0.55</RangedWeapon_DamageMultiplier>
-	  <RangedWeapon_WarmupMultiplier>0.20</RangedWeapon_WarmupMultiplier>
+	  <RangedWeapon_WarmupMultiplier>0.30</RangedWeapon_WarmupMultiplier>
     </statOffsets>
     <traitAdjectives>
       <li>extra</li>
@@ -727,6 +727,7 @@
     </exclusionTags>
     <weaponCategory>Cinder_Caseless</weaponCategory>
 	<burstShotSpeedMultiplier>1.2</burstShotSpeedMultiplier>
+	<burstShotCountMultiplier>1.15</burstShotCountMultiplier>
     <statOffsets>
       <MarketValue>80</MarketValue>
 	  <RangedWeapon_WarmupMultiplier>-0.10</RangedWeapon_WarmupMultiplier>
