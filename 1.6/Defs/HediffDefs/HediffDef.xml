@@ -71,6 +71,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
 		<initialSeverity>1</initialSeverity>
+		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
 		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
 		<isBad>false</isBad>
 		<stages>
@@ -129,6 +130,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(254, 216, 130)</defaultLabelColor>
 		<initialSeverity>1</initialSeverity>
+		<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
 		<alwaysAllowMothballCached>true</alwaysAllowMothballCached>
 		<isBad>false</isBad>
 		<comps>
