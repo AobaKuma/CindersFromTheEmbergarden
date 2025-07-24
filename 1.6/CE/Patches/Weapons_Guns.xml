@@ -166,6 +166,7 @@
 		</FireModes>
 		<weaponTags>
 			<li>CE_AI_BROOM</li>
+			<li>CE_OneHandedWeapon</li>
 		</weaponTags>
 		<researchPrerequisite>Gunsmithing</researchPrerequisite>
 	</Operation>
@@ -278,8 +279,8 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</Properties>
 		<AmmoUser>
-			<magazineSize>30</magazineSize>
-			<reloadTime>4</reloadTime>
+			<magazineSize>33</magazineSize>
+			<reloadTime>2.5</reloadTime>
 			<ammoSet>AmmoSet_46x30mm</ammoSet>
 		</AmmoUser>
 		<FireModes>
