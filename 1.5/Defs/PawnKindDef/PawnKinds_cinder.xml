@@ -431,7 +431,7 @@
 		<isGoodBreacher>true</isGoodBreacher>
 		<maxGenerationAge>45</maxGenerationAge>
 		<minGenerationAge>19</minGenerationAge>
-		<maxPerGroup>2</maxPerGroup>
+		<maxPerGroup>4</maxPerGroup>
 		<startingHediffs>
 			<li>
 				<def>Cinder_ExtraArmourPlateII</def>
@@ -504,7 +504,7 @@
 		<defName>Cinder_Cult</defName>
 		<label>cult follower</label>
 		<combatPower>100</combatPower>
-		<maxPerGroup>3</maxPerGroup>
+		<maxPerGroup>2</maxPerGroup>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<initialWillRange>10~30</initialWillRange>
@@ -596,7 +596,7 @@
 		<defName>Cinder_EliteCult</defName>
 		<label>cult guard</label>
 		<combatPower>180</combatPower>
-		<maxPerGroup>3</maxPerGroup>
+		<maxPerGroup>2</maxPerGroup>
 		<defaultFactionType>Cinder_OutlanderCivil</defaultFactionType>
 		<isFighter>true</isFighter>
 		<initialWillRange>10~30</initialWillRange>
@@ -947,7 +947,7 @@
 		<defName>Cinder_BreakUnit</defName>
 		<label>break through unit</label>
 		<combatPower>250</combatPower>
-		<maxPerGroup>2</maxPerGroup>
+		<maxPerGroup>4</maxPerGroup>
 		<defaultFactionType>Cinder_ESDSP</defaultFactionType>
 		<isFighter>true</isFighter>
 		<itemQuality>Excellent</itemQuality>
