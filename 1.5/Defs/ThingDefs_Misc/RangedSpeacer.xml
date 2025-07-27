@@ -12,7 +12,7 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>13</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>
-			<armorPenetrationBase>0.40</armorPenetrationBase>
+			<armorPenetrationBase>0.29</armorPenetrationBase>
 			<speed>65</speed>
 		</projectile>
 	</ThingDef>
@@ -36,10 +36,10 @@
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
 			<Mass>2.2</Mass>
-			<AccuracyTouch>0.52</AccuracyTouch>
-			<AccuracyShort>0.52</AccuracyShort>
-			<AccuracyMedium>0.52</AccuracyMedium>
-			<AccuracyLong>0.52</AccuracyLong>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.50</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
 			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 			<MaxHitPoints>500</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -90,7 +90,7 @@
 				<warmupTime>1.5</warmupTime>
 				<range>29.9</range>
 				<burstShotCount>6</burstShotCount>
-				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<soundCast>Cinder_Shot_Fume</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -119,6 +119,10 @@
       </li>
     </tools>
 	
+	<tradeTags Inherit="False">
+			<li>Cinder_GunRare</li>
+		</tradeTags>
+	
 	    <comps>
 			<li Class="CinderWeaponSwitch.CompProperties_Switch">
 				<changeTo>Cinder_FumeGreatswordM</changeTo>
@@ -127,7 +131,7 @@
 		</comps>
 		
 	<equippedStatOffsets>
-        <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+        <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
     </equippedStatOffsets>
 	</ThingDef>
   
@@ -208,6 +212,8 @@
 		 <armorPenetration>0.9</armorPenetration>
       </li>
     </tools>
+	
+	<tradeability>Sellable</tradeability>
 	
 		<comps>
 			<li Class="CinderWeaponSwitch.CompProperties_Switch">

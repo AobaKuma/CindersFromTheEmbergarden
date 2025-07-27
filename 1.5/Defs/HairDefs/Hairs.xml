@@ -118,4 +118,14 @@
 		<label>dirty bread</label>
 		<texPath>Things/Pawn/Humanlike/Hairs/Hair_DirtyBread</texPath>
 	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairW</defName>
+		<label>malt</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Malt</texPath>
+	</HairDef>
+	<HairDef ParentName="BaseCinderHair">
+		<defName>Cinder_HairX</defName>
+		<label>macaroon</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/Hair_Macaroon</texPath>
+	</HairDef>
 </Defs>

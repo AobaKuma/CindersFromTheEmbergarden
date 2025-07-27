@@ -80,6 +80,14 @@
         <thingDefCountRange>3~4</thingDefCountRange>
         <countRange>1~3</countRange>
       </li>
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>Cinder_GunRare</tradeTag>
+        <thingDefCountRange>1</thingDefCountRange>
+        <countRange>1</countRange>
+		<price>Expensive</price>
+      </li>
+	  
 	    <li Class="StockGenerator_Tag">
         <tradeTag>Armor</tradeTag>
         <thingDefCountRange>1~3</thingDefCountRange>
@@ -320,6 +328,13 @@
         <categoryDef>WeaponsMelee</categoryDef>
         <thingDefCountRange>3~4</thingDefCountRange>
         <countRange>1~2</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>Cinder_GunRare</tradeTag>
+        <thingDefCountRange>1</thingDefCountRange>
+        <countRange>1</countRange>
+		<price>Expensive</price>
       </li>
 
       <!-- Apparel -->

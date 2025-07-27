@@ -703,11 +703,11 @@
       <li>GreatSword</li>
     </exclusionTags>
     <weaponCategory>Cinder_Caseless</weaponCategory>
-	<burstShotSpeedMultiplier>0.5</burstShotSpeedMultiplier>
+	<burstShotSpeedMultiplier>0.6</burstShotSpeedMultiplier>
 	<burstShotCountMultiplier>0.66</burstShotCountMultiplier>
     <statOffsets>
       <MarketValue>80</MarketValue>
-      <RangedWeapon_ArmorPenetrationMultiplier>0.15</RangedWeapon_ArmorPenetrationMultiplier>
+      <RangedWeapon_ArmorPenetrationMultiplier>0.5</RangedWeapon_ArmorPenetrationMultiplier>
 	  <RangedWeapon_DamageMultiplier>0.55</RangedWeapon_DamageMultiplier>
 	  <RangedWeapon_WarmupMultiplier>0.30</RangedWeapon_WarmupMultiplier>
     </statOffsets>

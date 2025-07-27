@@ -31,5 +31,6 @@
 		<li IfModActive="erdelf.HumanoidAlienRaces,erdelf.HumanoidAlienRaces_steam,erdelf.HumanoidAlienRaces.dev,erdelf.HumanoidAlienRaces.dev_steam">1.6/Har</li>
 		<li IfModNotActive="Ludeon.RimWorld.Biotech">1.6/NonBiotechPatch</li>
 		<li IfModActive="Aoba.DeadManSwitch.Core,Aoba.DeadManSwitch.Core_steam">1.6/DMS</li>
+		<li IfModActive="rim.job.world">1.6/RJW</li>
 	</v1.6>
 </loadFolders>

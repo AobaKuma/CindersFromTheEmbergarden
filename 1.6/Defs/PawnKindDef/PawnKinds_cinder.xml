@@ -136,10 +136,9 @@
 			<max>1200</max>
 		</apparelMoney>
 		<weaponTags>
-			<li>CinderSimpleGuns</li>
-			<li>CinderRifles</li>
+			<li>SpacerGun</li>
 		</weaponTags>
-		<weaponMoney>400~450</weaponMoney>
+		<weaponMoney>1400~2450</weaponMoney>
 	</PawnKindDef>
 
 
