@@ -1,22 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\EmbergardenCE\\EmbergardenCE.csproj": {}
+    "D:\\Game\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden-main\\_Sources\\Embergarden\\EmbergardenCE\\EmbergardenCE.csproj": {}
   },
   "projects": {
-    "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\EmbergardenCE\\EmbergardenCE.csproj": {
+    "D:\\Game\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden-main\\_Sources\\Embergarden\\EmbergardenCE\\EmbergardenCE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\EmbergardenCE\\EmbergardenCE.csproj",
+        "projectUniqueName": "D:\\Game\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden-main\\_Sources\\Embergarden\\EmbergardenCE\\EmbergardenCE.csproj",
         "projectName": "EmbergardenCE",
-        "projectPath": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\EmbergardenCE\\EmbergardenCE.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\EmbergardenCE\\obj\\",
+        "projectPath": "D:\\Game\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden-main\\_Sources\\Embergarden\\EmbergardenCE\\EmbergardenCE.csproj",
+        "packagesPath": "C:\\Users\\HaiLu\\.nuget\\packages\\",
+        "outputPath": "D:\\Game\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden-main\\_Sources\\Embergarden\\EmbergardenCE\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
-        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\HaiLu\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net48"
@@ -27,8 +26,8 @@
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Embergarden.csproj": {
-                "projectPath": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Embergarden.csproj"
+              "D:\\Game\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden-main\\_Sources\\Embergarden\\Embergarden\\Embergarden.csproj": {
+                "projectPath": "D:\\Game\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden-main\\_Sources\\Embergarden\\Embergarden\\Embergarden.csproj"
               }
             }
           }
@@ -74,19 +73,18 @@
         }
       }
     },
-    "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Embergarden.csproj": {
+    "D:\\Game\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden-main\\_Sources\\Embergarden\\Embergarden\\Embergarden.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Embergarden.csproj",
+        "projectUniqueName": "D:\\Game\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden-main\\_Sources\\Embergarden\\Embergarden\\Embergarden.csproj",
         "projectName": "Embergarden",
-        "projectPath": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\Embergarden.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\_CindersFromTheEmbergarden\\_Sources\\Embergarden\\Embergarden\\obj\\",
+        "projectPath": "D:\\Game\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden-main\\_Sources\\Embergarden\\Embergarden\\Embergarden.csproj",
+        "packagesPath": "C:\\Users\\HaiLu\\.nuget\\packages\\",
+        "outputPath": "D:\\Game\\Steam\\steamapps\\common\\RimWorld\\Mods\\CindersFromTheEmbergarden-main\\_Sources\\Embergarden\\Embergarden\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
-        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\HaiLu\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net48"

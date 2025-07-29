@@ -23,3 +23,8 @@ D:\SteamLibrary\steamapps\common\RimWorld\Mods\CindersFromTheEmbergarden-main\_S
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\CindersFromTheEmbergarden-main\_Sources\Embergarden\Embergarden\obj\Debug\Embergarden.csproj.CoreCompileInputs.cache
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\CindersFromTheEmbergarden-main\_Sources\Embergarden\Embergarden\obj\Debug\Embergar.FBE82B46.Up2Date
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\CindersFromTheEmbergarden-main\_Sources\Embergarden\Embergarden\obj\Debug\Embergarden.dll
+D:\Game\Steam\steamapps\common\RimWorld\Mods\CindersFromTheEmbergarden-main\1.6\Assemblies\Embergarden.dll
+D:\Game\Steam\steamapps\common\RimWorld\Mods\CindersFromTheEmbergarden-main\_Sources\Embergarden\Embergarden\obj\Debug\Embergarden.csproj.AssemblyReference.cache
+D:\Game\Steam\steamapps\common\RimWorld\Mods\CindersFromTheEmbergarden-main\_Sources\Embergarden\Embergarden\obj\Debug\Embergarden.csproj.CoreCompileInputs.cache
+D:\Game\Steam\steamapps\common\RimWorld\Mods\CindersFromTheEmbergarden-main\_Sources\Embergarden\Embergarden\obj\Debug\Embergar.FBE82B46.Up2Date
+D:\Game\Steam\steamapps\common\RimWorld\Mods\CindersFromTheEmbergarden-main\_Sources\Embergarden\Embergarden\obj\Debug\Embergarden.dll
