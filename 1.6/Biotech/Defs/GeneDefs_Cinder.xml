@@ -216,9 +216,9 @@
   </GeneDef>
   
   
-  <HeadTypeDef ParentName="AverageBase">
+  <!-- <HeadTypeDef ParentName="AverageBase">
     <defName>CinderHead_AverageNormal</defName>
     <graphicPath>Things/Pawn/Humanlike/Heads/Female/Female_Average_Normal</graphicPath>
     <eyeOffsetEastWest>(0.13, 0, 0.17)</eyeOffsetEastWest>
-  </HeadTypeDef>
+  </HeadTypeDef> -->
 </Defs>
