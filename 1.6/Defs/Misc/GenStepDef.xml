@@ -7,8 +7,8 @@
 		<genStep Class="GenStep_ScatterGroup">
 			<allowInWaterBiome>false</allowInWaterBiome>
 			<isJunk>true</isJunk>
-			<minSpacing>80</minSpacing>
-			<countPer10kCellsRange>0.7~1</countPer10kCellsRange>
+			<minSpacing>100</minSpacing>
+			<countPer10kCellsRange>0.25~0.35</countPer10kCellsRange>
 			<spotMustBeStandable>true</spotMustBeStandable>
 			<allowRoofed>false</allowRoofed>
 			<validators>
@@ -20,43 +20,43 @@
 			<groups>
 				<li>
 					<things>
-						<AncientWheel MayRequire="Ludeon.RimWorld.Ideology">2</AncientWheel>
-						<AncientGiantWheel MayRequire="Ludeon.RimWorld.Ideology">1</AncientGiantWheel>
-						<Cinder_AncientRustedChunk_A>1</Cinder_AncientRustedChunk_A>
-						<Cinder_AncientRustedChunk_None>1</Cinder_AncientRustedChunk_None>
+						<AncientWheel MayRequire="Ludeon.RimWorld.Ideology">0.6</AncientWheel>
+						<AncientGiantWheel MayRequire="Ludeon.RimWorld.Ideology">0.6</AncientGiantWheel>
+						<Cinder_AncientRustedChunk_A>0.2</Cinder_AncientRustedChunk_A>
+						<Cinder_AncientRustedChunk_None>0.4</Cinder_AncientRustedChunk_None>
 					</things>
 					<indoorRuin>false</indoorRuin>
-					<coveredCellsPer10Cells>0.25~0.5</coveredCellsPer10Cells>
+					<coveredCellsPer10Cells>0.7~1.2</coveredCellsPer10Cells>
 					<filthDef>Filth_MachineBits</filthDef>
 					<filthExpandBy>1</filthExpandBy>
 					<filthChance>0.2</filthChance>
-					<clusterRectRadius>12~16</clusterRectRadius>
+					<clusterRectRadius>8~12</clusterRectRadius>
 				</li>
 				<li>
 					<things>
-						<AncientWheel MayRequire="Ludeon.RimWorld.Ideology">2</AncientWheel>
-						<Cinder_AncientFastArmoredVehicle>1</Cinder_AncientFastArmoredVehicle>
-						<Cinder_AncientFastArmoredVehicle_None>1</Cinder_AncientFastArmoredVehicle_None>
+						<AncientWheel MayRequire="Ludeon.RimWorld.Ideology">0.6</AncientWheel>
+						<Cinder_AncientFastArmoredVehicle>0.2</Cinder_AncientFastArmoredVehicle>
+						<Cinder_AncientFastArmoredVehicle_None>0.4</Cinder_AncientFastArmoredVehicle_None>
 					</things>
 					<indoorRuin>false</indoorRuin>
-					<coveredCellsPer10Cells>0.25~0.5</coveredCellsPer10Cells>
+					<coveredCellsPer10Cells>0.7~1.2</coveredCellsPer10Cells>
 					<filthDef>Filth_MachineBits</filthDef>
 					<filthExpandBy>1</filthExpandBy>
 					<filthChance>0.2</filthChance>
-					<clusterRectRadius>12~16</clusterRectRadius>
+					<clusterRectRadius>8~12</clusterRectRadius>
 				</li>
 				<li>
 					<things>
-						<AncientWheel MayRequire="Ludeon.RimWorld.Ideology">1</AncientWheel>
-						<Cinder_AncientWheeledTank>1</Cinder_AncientWheeledTank>
-						<Cinder_AncientWheeledTank_None>1</Cinder_AncientWheeledTank_None>
+						<AncientWheel MayRequire="Ludeon.RimWorld.Ideology">0.6</AncientWheel>
+						<Cinder_AncientWheeledTank>0.2</Cinder_AncientWheeledTank>
+						<Cinder_AncientWheeledTank_None>0.4</Cinder_AncientWheeledTank_None>
 					</things>
 					<indoorRuin>false</indoorRuin>
-					<coveredCellsPer10Cells>0.25~0.5</coveredCellsPer10Cells>
+					<coveredCellsPer10Cells>0.7~1.2</coveredCellsPer10Cells>
 					<filthDef>Filth_MachineBits</filthDef>
 					<filthExpandBy>1</filthExpandBy>
 					<filthChance>0.2</filthChance>
-					<clusterRectRadius>12~16</clusterRectRadius>
+					<clusterRectRadius>8~12</clusterRectRadius>
 				</li>
 			</groups>
 		</genStep>

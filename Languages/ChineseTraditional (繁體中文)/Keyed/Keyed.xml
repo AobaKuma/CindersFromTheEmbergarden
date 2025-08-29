@@ -6,11 +6,11 @@
   <!-- EN: Vanilla style face -->
   <Cinder_CommaEyesLabel>原版臉</Cinder_CommaEyesLabel>
   <!-- EN: Replace face and body with vanilla style comma face and vanilla body(Need to restart game) -->
-  <Cinder_CommaEyesDesc>將臉部與身體替換為原版風格的逗號臉與原版身體（需要重啟遊戲）</Cinder_CommaEyesDesc>
+  <Cinder_CommaEyesDesc>將臉部與身體替換為原版風格的逗號臉與原版身體（需要重啟遊戲，僅在外星人種族時生效，面部動畫環境下不生效）</Cinder_CommaEyesDesc>
   
-  <Cinder_NerfLabel>原版平衡模式(高難度)</Cinder_NerfLabel>
+  <Cinder_NerfLabel>原版平衡模式</Cinder_NerfLabel>
   
-  <Cinder_NerfDesc>玩家的種族數值將會被平衡到無dlc原版水平，武器傷害，射程，致死率均有所下降，但敵我差距更為明顯，難度更高（需要重啟遊戲）</Cinder_NerfDesc>
+  <Cinder_NerfDesc>完全平衡了所有數值與機制，你可以享受類原版環境的對抗體驗（不再有高難度與高回報，需要重啟遊戲）</Cinder_NerfDesc>
   
   <!-- EN: People with amorphous regeneration ability are required to use it -->
   <Cinder_NeedResurrectOrRegen>需要具有無定形再生能力的人使用</Cinder_NeedResurrectOrRegen>

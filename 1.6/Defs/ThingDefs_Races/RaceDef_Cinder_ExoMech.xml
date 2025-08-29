@@ -46,6 +46,7 @@
 			<StaggerDurationFactor>0</StaggerDurationFactor>
 			<EMPResistance MayRequire="Ludeon.RimWorld.Biotech">0.6</EMPResistance>
 			 <MechEnergyLossPerHP MayRequire="Ludeon.RimWorld.Biotech">0.15</MechEnergyLossPerHP>
+			 <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">4</BandwidthCost>
 		</statBases>
 		<damageMultipliers>
 			<li>

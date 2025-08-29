@@ -37,6 +37,9 @@
 						<statFactors>
 					       <IncomingDamageFactor>0.95</IncomingDamageFactor>
 				        </statFactors>
+						<statOffsets>
+					       <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.25</VacuumResistance>
+				        </statOffsets>
 		              	</li>
 					</value>
 				</li>
@@ -181,6 +184,9 @@
 					       <Arrow>0.55</Arrow>
 					       <ArrowHighVelocity>0.55</ArrowHighVelocity>
 				        </damageFactors>
+						<statOffsets>
+					       <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.95</VacuumResistance>
+				        </statOffsets>
 			            </li>
 					</value>
 				</li>
@@ -332,11 +338,163 @@
 					</value>
 				</li>
 				
+				<!-- 机械体与炮塔削弱 -->
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[@Name="Cinder_BaseMechaWalker"]/statBases/EMPResistance</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Cinder_Mech_Krepost"]/startingHediffs</xpath>
+					<value>
+                        <startingHediffs>
+			               <li>
+				              <def>Cinder_ERA</def>
+				              <chance>1</chance>
+			               </li>
+		                </startingHediffs>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost"]/race/baseHealthScale</xpath>
+					<value>
+                        <baseHealthScale>4.5</baseHealthScale>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_Tombstone"]/race/baseHealthScale</xpath>
+					<value>
+                        <baseHealthScale>4</baseHealthScale>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_ErodedEXO"]/race/baseHealthScale</xpath>
+					<value>
+                        <baseHealthScale>3.5</baseHealthScale>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_WarAttacker"]/race/baseHealthScale</xpath>
+					<value>
+                        <baseHealthScale>4.2</baseHealthScale>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Cinder_Mech_WarSweeper"]/race/baseHealthScale</xpath>
+					<value>
+                        <baseHealthScale>4.2</baseHealthScale>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Cinder_Mech_MPTombstone"]/startingHediffs</xpath>
+					<value>
+                        <startingHediffs>
+			               <li>
+				              <def>Cinder_ERA</def>
+				              <chance>1</chance>
+			               </li>
+		                </startingHediffs>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Cinder_Mech_ErodedEXO"]/combatPower</xpath>
+					<value>
+                       <combatPower>1000</combatPower>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Cinder_Mech_Krepost"]/combatPower</xpath>
+					<value>
+                       <combatPower>2000</combatPower>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Cinder_Mech_Krepost"]/maxPerGroup</xpath>
+					<value>
+                       <maxPerGroup>1</maxPerGroup>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Cinder_Mech_WalkerAutoCannon"]/combatPower</xpath>
+					<value>
+                       <combatPower>400</combatPower>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Cinder_Mech_WalkerSniper"]/combatPower</xpath>
+					<value>
+                       <combatPower>500</combatPower>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Cinder_Mech_MiniTurretWalker"]/combatPower</xpath>
+					<value>
+                       <combatPower>80</combatPower>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Cinder_Mech_Tombstone"]/combatPower</xpath>
+					<value>
+                       <combatPower>1500</combatPower>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Cinder_Mech_Tombstone"]/maxPerGroup</xpath>
+					<value>
+                       <maxPerGroup>2</maxPerGroup>  
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Cinder_Mech_MPTombstone"]/combatPower</xpath>
+					<value>
+                       <combatPower>1700</combatPower>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Cinder_Mech_MPTombstone"]/maxPerGroup</xpath>
+					<value>
+                       <maxPerGroup>2</maxPerGroup>  
+					</value>
+				</li>
+				
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/BodyPartDef[defName="Cinder_MechanicalThorax"]/hitPoints</xpath>
+					<value>
+                      <hitPoints>90</hitPoints>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/BodyPartDef[defName="Cinder_MechanicalThoraxB"]/hitPoints</xpath>
+					<value>
+                      <hitPoints>100</hitPoints>
+					</value>
+				</li>
+				
+				
+				
 				
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="Cinder_Mech_ErodedEXO"]/statBases/BandwidthCost</xpath>
 					<value>
-			            <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">4</BandwidthCost>
+			            <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">5</BandwidthCost>
 					</value>
 				</li>
 				
