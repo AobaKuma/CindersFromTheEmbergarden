@@ -930,5 +930,16 @@ However, in reality, [PAWN_nameDef] is a frontline melee soldier, wielding [PAWN
     </skillGains>
 	</BackstoryDef>
 	
+	<BackstoryDef ParentName="BaseCinderBackStory">	<!-- 迫击炮操作员 -->
+		<defName>Cinder_MortarOperator</defName>
+		<title>MortarOperator</title>
+		<titleShort>MortarOperator</titleShort>
+		<description>[PAWN_nameDef] often plays Whac-A-Mole with the children in the "Long Dream," hitting quickly and accurately. In reality, [PAWN_pronoun] is operating a mortar, launching shells that blast enemy positions and living beings into ashes.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>CinderStory_ESDSP_Soldier</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
 	
 </Defs>		

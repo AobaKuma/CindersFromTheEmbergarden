@@ -124,7 +124,7 @@
 		    <AccuracyShort>1.00</AccuracyShort>
 		    <AccuracyMedium>1.00</AccuracyMedium>
 		    <AccuracyLong>0.99</AccuracyLong>
-		    <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+		    <RangedWeapon_Cooldown>8</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
 			<li>
@@ -132,13 +132,20 @@
 				<forcedMissRadius>1</forcedMissRadius>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>CinderBullet_AnvilDiscipline</defaultProjectile>
-				<warmupTime>6</warmupTime>
+				<warmupTime>12</warmupTime>
 				<range>46</range>
 				<ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
 				<burstShotCount>1</burstShotCount>
 				<soundCast>Cinder_MBTCannonSound</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>30</muzzleFlashScale>
+				<aimingLineMote>CinderMote_HellfireMissile_Aim</aimingLineMote>
+			<aimingChargeMote>CinderMote_HellfireMissile_Charge</aimingChargeMote>
+			<aimingChargeMoteOffset>1.07</aimingChargeMoteOffset>
+			<aimingLineMoteFixedLength>15.9</aimingLineMoteFixedLength>
+			<aimingTargetMote>CinderMote_HellfireMissile_Target</aimingTargetMote>
+			<beamTargetsGround>true</beamTargetsGround>
+			<soundAiming>Cinder_Hellfire_Aiming</soundAiming>
 			</li>
 		</verbs>
 		<tools Inherit="False">
@@ -173,7 +180,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Cinder_Bomb</damageDef>
-			<damageAmountBase>100</damageAmountBase>
+			<damageAmountBase>400</damageAmountBase>
 			<armorPenetrationBase>1</armorPenetrationBase>
 			<speed>65</speed>
 			<explosionRadius>3</explosionRadius>
@@ -183,7 +190,7 @@
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>2.5</explosiveRadius>
 				<explosiveDamageType>Cinder_BombB</explosiveDamageType>
-				<damageAmountBase>50</damageAmountBase>
+				<damageAmountBase>400</damageAmountBase>
 				<armorPenetrationBase>10</armorPenetrationBase>
 				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
 				<wickTicks>15</wickTicks>
@@ -339,7 +346,7 @@
 		<defName>Cinder_BombB</defName>
 		<label>bomb</label>
 		<isExplosive>False</isExplosive>
-		<externalViolence>true</externalViolence>
+		<externalViolence>False</externalViolence>
 		<workerClass>DamageWorker_Vaporize</workerClass>
 		<explosionCellFleck>BlastDry</explosionCellFleck>
 		<hasForcefulImpact>true</hasForcefulImpact>

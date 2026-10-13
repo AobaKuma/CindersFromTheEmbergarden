@@ -1020,6 +1020,7 @@
 					<Cut>0</Cut>
 					<Poke>0</Poke>
 					<Stab>0</Stab>
+					<Cinder_Bomb>0.75</Cinder_Bomb>
 				</damageFactors>
 			</li>
 		</stages>

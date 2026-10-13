@@ -58,6 +58,10 @@
 				<damageDef>Stun</damageDef>
 				<multiplier>0</multiplier>
 			</li>
+			<li>
+				<damageDef>Cinder_BombB</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
     </damageMultipliers>
     <race>
       <mechFixedSkillLevel>12</mechFixedSkillLevel>
