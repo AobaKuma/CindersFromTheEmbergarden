@@ -57,6 +57,17 @@
 	<ThingDef ParentName="Cinder_BaseMechaWalker">
 		<defName>Cinder_Mech_WarAttacker</defName>
 		<label>war attacker</label>
+		<modExtensions>
+			<li Class="Embergarden.DefModExtension_MeleeConeAOE">
+				<HalfAngel>60</HalfAngel>
+				<radius>2.5</radius>
+				<damageDef>Bomb</damageDef>
+				<damageAmount>20</damageAmount>
+				<armorPenetration>0.5</armorPenetration>
+				<screenShakeFactor>0</screenShakeFactor>
+				<doSoundEffects>false</doSoundEffects>
+			</li>
+		</modExtensions>
 		<description>A three meter high heavy armored assault walking machine with astonishing ammunition carrying capacity, like a walking armed helicopter, capable of leveling enemy positions with eight Hellfire missiles.</description>
 		<tools>
 			<li>

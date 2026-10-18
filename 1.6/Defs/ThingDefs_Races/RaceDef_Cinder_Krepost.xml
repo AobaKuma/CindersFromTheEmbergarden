@@ -87,6 +87,7 @@
       <li Class="Embergarden.CompProperties_AddHediff">
         <hediffDefs>
           <li>Cinder_Regen</li>
+          <li>Cinder_Crush</li>
         </hediffDefs>
       </li>
       <li Class="Embergarden.CompProperties_VehicleWeapon">
@@ -215,6 +216,15 @@
        </li>
     </comps>
     <modExtensions>
+      <li Class="Embergarden.DefModExtension_MeleeConeAOE">
+        <HalfAngel>60</HalfAngel>
+        <radius>2.5</radius>
+        <damageDef>Bomb</damageDef>
+        <damageAmount>20</damageAmount>
+        <armorPenetration>0.5</armorPenetration>
+        <screenShakeFactor>0</screenShakeFactor>
+        <doSoundEffects>false</doSoundEffects>
+      </li>
       <li MayRequire="aoba.deadmanswitch.core" Class="Fortified.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
@@ -377,6 +387,7 @@
       <li Class="Embergarden.CompProperties_AddHediff">
         <hediffDefs>
           <li>Cinder_Regen</li>
+          <li>Cinder_Crush</li>
         </hediffDefs>
       </li>
       <li Class="Embergarden.CompProperties_VehicleWeapon">
@@ -471,6 +482,15 @@
        </li>
     </comps>
 	<modExtensions>
+      <li Class="Embergarden.DefModExtension_MeleeConeAOE">
+        <HalfAngel>60</HalfAngel>
+        <radius>2.5</radius>
+        <damageDef>Bomb</damageDef>
+        <damageAmount>20</damageAmount>
+        <armorPenetration>0.5</armorPenetration>
+        <screenShakeFactor>0</screenShakeFactor>
+        <doSoundEffects>false</doSoundEffects>
+      </li>
       <li MayRequire="aoba.deadmanswitch.core" Class="Fortified.MechWeaponExtension">
         <EnableWeaponFilter>true</EnableWeaponFilter>
         <UsableWeaponTags>
@@ -675,7 +695,7 @@
       </li>
     </lifeStages>
     <weaponTags>
-      <li>Cinder_HEATRifle</li>
+      <li>Cinder_MechGun_AnvilDiscipline</li>
     </weaponTags>
     <techHediffsChance>1</techHediffsChance>
     <techHediffsMoney>9999~9999</techHediffsMoney>

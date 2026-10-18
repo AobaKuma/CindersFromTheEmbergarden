@@ -48,6 +48,7 @@
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
       <Version>2.4.1</Version>
+      <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
     <!-- <Publicize Include="Assembly-CSharp:RimWorld.ListerHaulables.Check" /> -->
   </ItemGroup>
@@ -71,6 +72,9 @@
     <Compile Include="CompUseEffect_RandomAbilityGain.cs" />
     <Compile Include="Comp_TurretTransformable.cs" />
     <Compile Include="ConeExplosionUtility.cs" />
+    <Compile Include="MeleeConeAOE\DefModExtension_MeleeConeAOE.cs" />
+    <Compile Include="MeleeConeAOE\MeleeConeAOEGeometry.cs" />
+    <Compile Include="MeleeConeAOE\MeleeConeAOEUtility.cs" />
     <Compile Include="ConeExplosion\Projectile_ConeExplosive.cs" />
     <Compile Include="D.cs" />
     <Compile Include="GameComponent_ResurrectAdaptor.cs" />
@@ -84,6 +88,7 @@
     <Compile Include="HarmonyPatch\PawnGizmoPatch.cs" />
     <Compile Include="HarmonyPatch\Pawn_DraftController_Postfix.cs" />
     <Compile Include="HediffComp_CustomRegeneration.cs" />
+    <Compile Include="HediffComp_Crush.cs" />
     <Compile Include="HediffComp_LimitedResurrect.cs" />
     <Compile Include="HediffComp_NewHediffAfterDisappear.cs" />
     <Compile Include="HediffComp_ProtectiveShield.cs" />

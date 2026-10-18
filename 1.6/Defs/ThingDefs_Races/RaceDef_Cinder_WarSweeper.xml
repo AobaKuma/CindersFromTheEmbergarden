@@ -57,6 +57,17 @@
 	<ThingDef ParentName="Cinder_BaseMechaWalker">
 		<defName>Cinder_Mech_WarSweeper</defName>
 		<label>war sweeper</label>
+		<modExtensions>
+			<li Class="Embergarden.DefModExtension_MeleeConeAOE">
+				<HalfAngel>60</HalfAngel>
+				<radius>2.5</radius>
+				<damageDef>Bomb</damageDef>
+				<damageAmount>20</damageAmount>
+				<armorPenetration>0.5</armorPenetration>
+				<screenShakeFactor>0</screenShakeFactor>
+				<doSoundEffects>false</doSoundEffects>
+			</li>
+		</modExtensions>
 		<description>A heavy armored anti-aircraft walking machine on the order of three meters high, equipped with anti-aircraft firepower of different calibers and abundant ammunition to accompany infantry in anti-aircraft operations.</description>
 		<tools>
 			<li>
