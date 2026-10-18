@@ -33,4 +33,22 @@
 		<li IfModActive="Aoba.DeadManSwitch.Core,Aoba.DeadManSwitch.Core_steam">1.6/DMS</li>
 		<li IfModActive="rim.job.world">1.6/RJW</li>
 	</v1.6>
+	<v1.7>
+		<li>/</li>
+		<li>1.7</li>
+		<li IfModActive="Ludeon.RimWorld.Royalty">1.7/Royalty</li>
+		<li IfModActive="Ludeon.RimWorld.Biotech">1.7/Biotech</li>
+		<li IfModActive="IssacZhuang.PLA.Armory">1.7/CE/PLA</li>
+		<li IfModActive="CETeam.CombatExtended,CETeam.CombatExtended_steam">1.7/CE</li>
+		<li IfModActiveAll="nals.facialanimation,erdelf.HumanoidAlienRaces">1.7/Mod/FacialAnimation</li>
+		<li IfModActiveAll="nals.facialanimation,erdelf.HumanoidAlienRaces_steam">1.7/Mod/FacialAnimation</li>
+		<li IfModActiveAll="nals.facialanimation,erdelf.HumanoidAlienRaces.dev">1.7/Mod/FacialAnimation</li>
+		<li IfModActiveAll="nals.facialanimation,erdelf.HumanoidAlienRaces.dev_steam">1.7/Mod/FacialAnimation</li>
+		<li IfModActive="nals.facialanimation">1.7/FA</li>
+		<li IfModActive="nals.facialanimation">FA/FacialAnimation</li>
+		<li IfModActive="erdelf.HumanoidAlienRaces,erdelf.HumanoidAlienRaces_steam,erdelf.HumanoidAlienRaces.dev,erdelf.HumanoidAlienRaces.dev_steam">1.7/Har</li>
+		<li IfModNotActive="Ludeon.RimWorld.Biotech">1.7/NonBiotechPatch</li>
+		<li IfModActive="Aoba.DeadManSwitch.Core,Aoba.DeadManSwitch.Core_steam">1.7/DMS</li>
+		<li IfModActive="rim.job.world">1.7/RJW</li>
+	</v1.7>
 </loadFolders>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_81mmMortarShell"]/ammoTypes</xpath>
+		<value>
+			<CinderShell_ErosionCE>CinderBullet_Shell_ErosionCE</CinderShell_ErosionCE>
+		</value>
+	</Operation>
+
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_46x30mm"]/ammoTypes</xpath>
+		<value>
+			<Ammo_46x30mm_CinderErosion>Bullet_46x30mm_CinderErosion</Ammo_46x30mm_CinderErosion>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_9x19mmPara"]/ammoTypes</xpath>
+		<value>
+			<Ammo_9x19mmPara_Erosion>Bullet_9x19mmPara_Erosion</Ammo_9x19mmPara_Erosion>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_9x19mmParaSD"]/ammoTypes</xpath>
+		<value>
+			<Ammo_9x19mmPara_Erosion>Bullet_9x19mmParaSD_Erosion</Ammo_9x19mmPara_Erosion>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_44Magnum"]/ammoTypes</xpath>
+		<value>
+			<Ammo_44Magnum_Erosion>Bullet_44Magnum_Erosion</Ammo_44Magnum_Erosion>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_44Magnum_HV"]/ammoTypes</xpath>
+		<value>
+			<Ammo_44Magnum_Erosion>Bullet_44Magnum_HV_Erosion</Ammo_44Magnum_Erosion>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_44Magnum_Revolver"]/ammoTypes</xpath>
+		<value>
+			<Ammo_44Magnum_Erosion>Bullet_44Magnum_Erosion</Ammo_44Magnum_Erosion>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45ACP"]/ammoTypes</xpath>
+		<value>
+			<Ammo_45ACP_Erosion>Bullet_45ACP_Erosion</Ammo_45ACP_Erosion>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45ACP410Bore_SB"]/ammoTypes</xpath>
+		<value>
+			<Ammo_45ACP_Erosion>Bullet_45ACP_Erosion</Ammo_45ACP_Erosion>
+		</value>
+	</Operation>
+
+
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_473x33mmCaseless"]/ammoTypes</xpath>
+		<value>
+			<Ammo_473x33mmCaseless_Erosion>Bullet_473x33mmCaseless_Erosion</Ammo_473x33mmCaseless_Erosion>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_58x42mmDBP10"]/ammoTypes</xpath>
+		<value>
+			<Ammo_58x42mmDBP10_Erosion>Bullet_58x42mmDBP10_Erosion</Ammo_58x42mmDBP10_Erosion>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_303British"]/ammoTypes</xpath>
+		<value>
+			<Ammo_303British_Erosion>Bullet_303British_Erosion</Ammo_303British_Erosion>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_545x39mmSoviet"]/ammoTypes</xpath>
+		<value>
+			<Ammo_545x39mmSoviet_Erosion>Bullet_545x39mmSoviet_Erosion</Ammo_545x39mmSoviet_Erosion>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_545x39mmSoviet_SB"]/ammoTypes</xpath>
+		<value>
+			<Ammo_545x39mmSoviet_Erosion>Bullet_545x39mmSoviet_Erosion_SB</Ammo_545x39mmSoviet_Erosion>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_556x45mmNATO"]/ammoTypes</xpath>
+		<value>
+			<Ammo_556x45mmNATO_Erosion>Bullet_556x45mmNATO_Erosion</Ammo_556x45mmNATO_Erosion>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_556x45mmNATO_SB"]/ammoTypes</xpath>
+		<value>
+			<Ammo_556x45mmNATO_Erosion>Bullet_556x45mmNATO_Erosion_SB</Ammo_556x45mmNATO_Erosion>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_762x39mmSoviet"]/ammoTypes</xpath>
+		<value>
+			<Ammo_762x39mmSoviet_Erosion>Bullet_762x39mmSoviet_Erosion</Ammo_762x39mmSoviet_Erosion>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_762x39mmSoviet_SB"]/ammoTypes</xpath>
+		<value>
+			<Ammo_762x39mmSoviet_Erosion>Bullet_762x39mmSoviet_Erosion_SB</Ammo_762x39mmSoviet_Erosion>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_762x51mmNATO"]/ammoTypes</xpath>
+		<value>
+			<Ammo_762x51mmNATO_Erosion>Bullet_762x51mmNATO_Erosion</Ammo_762x51mmNATO_Erosion>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_762x54mmR"]/ammoTypes</xpath>
+		<value>
+			<Ammo_762x54mmR_Erosion>Bullet_762x54mmR_Erosion</Ammo_762x54mmR_Erosion>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_127x55mm"]/ammoTypes</xpath>
+		<value>
+			<Ammo_127x55mm_Erosion>Bullet_127x55mm_Erosion</Ammo_127x55mm_Erosion>
+		</value>
+	</Operation>
+
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_50BMG"]/ammoTypes</xpath>
+		<value>
+			<Ammo_50BMG_Erosion>Bullet_50BMG_Erosion</Ammo_50BMG_Erosion>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_145x114mm"]/ammoTypes</xpath>
+		<value>
+			<Ammo_145x114mm_Erosion>Bullet_145x114mm_Erosion</Ammo_145x114mm_Erosion>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_127x108mm"]/ammoTypes</xpath>
+		<value>
+			<Ammo_127x108mm_Erosion>Bullet_127x108mm_Erosion</Ammo_127x108mm_Erosion>
+		</value>
+	</Operation>
+
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_AntiMateriel"]/ammoTypes</xpath>
+		<value>
+			<Ammo_AntiMateriel_Erosion>Bullet_50BMG_Erosion</Ammo_AntiMateriel_Erosion>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_RifleIntermediate"]/ammoTypes</xpath>
+		<value>
+			<Ammo_RifleIntermediate_Erosion>Bullet_556x45mmNATO_Erosion</Ammo_RifleIntermediate_Erosion>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Rifle"]/ammoTypes</xpath>
+		<value>
+			<Ammo_Rifle_Erosion>Bullet_762x51mmNATO_Erosion</Ammo_Rifle_Erosion>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_PistolMagnum"]/ammoTypes</xpath>
+		<value>
+			<Ammo_PistolMagnum_Erosion>Bullet_44Magnum_Erosion</Ammo_PistolMagnum_Erosion>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Pistol"]/ammoTypes</xpath>
+		<value>
+			<Ammo_Pistol_Erosion>Bullet_45ACP_Erosion</Ammo_Pistol_Erosion>
+		</value>
+	</Operation>
+</Patch>

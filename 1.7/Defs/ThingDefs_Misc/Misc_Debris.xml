@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ChunkSlagSteel">
+    <defName>Cinder_ChunkSlag</defName>
+    <label>eroded walker debris</label>
+    <description>The remains of a destoryed eroded walker. While useless in its current form, it can be smelted to recover resources.</description>
+    <graphicData>
+      <texPath>Things/Item/Fragment</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <saveCompressible>false</saveCompressible>
+    <randomizeRotationOnSpawn>true</randomizeRotationOnSpawn>
+    <rotateInShelves>true</rotateInShelves>
+    <filthLeaving>Filth_MachineBits</filthLeaving>
+    <smeltProducts>
+      <Steel>40</Steel>
+    </smeltProducts>
+    <butcherProducts>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Steel>20</Steel>
+    </butcherProducts>
+  </ThingDef>
+</Defs>	

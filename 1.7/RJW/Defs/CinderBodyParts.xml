@@ -1,0 +1,43 @@
+<Defs>
+
+    <!-->Cinders of the Embergarden. https://steamcommunity.com/sharedfiles/filedetails/?id=3421959154<-->
+	<rjw.RaceGroupDef>
+        <defName>CinderEmbergarden</defName>
+        
+		<raceNames>			
+			<li>Alien_Cinder</li>
+		</raceNames>
+        
+		<anuses>
+            <li>Anus</li>
+        </anuses>
+        
+		<femaleBreasts>
+            <li>Breasts</li>
+        </femaleBreasts>
+        
+		<maleBreasts>
+            <li>Breasts</li>
+        </maleBreasts>
+        
+		<femaleGenitals>
+            <li>Vagina</li>
+        </femaleGenitals>
+       
+		<maleGenitals>
+            <li>Penis</li>
+        </maleGenitals>
+        
+		<tags>
+            <li>Skin</li>
+        </tags>
+        
+		<raceSexDrive>1.0</raceSexDrive>
+        <hasSingleGender>false</hasSingleGender>
+        <hasSexNeed>true</hasSexNeed>
+        <hasFertility>true</hasFertility>
+        <hasPregnancy>true</hasPregnancy>
+    
+	</rjw.RaceGroupDef>
+
+</Defs>

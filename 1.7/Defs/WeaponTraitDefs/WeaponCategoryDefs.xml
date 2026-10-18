@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <WeaponCategoryDef>
+    <defName>Cinder_Ranged</defName>
+  </WeaponCategoryDef>
+
+  <WeaponCategoryDef>
+    <defName>Cinder_Gun</defName>
+  </WeaponCategoryDef>
+
+  <WeaponCategoryDef>
+    <defName>Cinder_Tentacle</defName>
+  </WeaponCategoryDef>
+
+  <WeaponCategoryDef>
+    <defName>Cinder_BulletFiring</defName>
+  </WeaponCategoryDef>
+  
+  <WeaponCategoryDef>
+    <defName>Cinder_PelletFiring</defName>
+  </WeaponCategoryDef>
+ 
+
+  <WeaponCategoryDef>
+    <defName>Cinder_Sighted</defName>
+  </WeaponCategoryDef>
+
+  <WeaponCategoryDef>
+    <defName>Cinder_Scoped</defName>
+  </WeaponCategoryDef>
+
+  <WeaponCategoryDef>
+    <defName>Cinder_Shotgun</defName>
+  </WeaponCategoryDef>
+
+  <WeaponCategoryDef>
+    <defName>Cinder_BurstFire</defName>
+  </WeaponCategoryDef>
+
+  <WeaponCategoryDef>
+    <defName>Cinder_Gourd</defName>
+  </WeaponCategoryDef>
+
+  <WeaponCategoryDef>
+    <defName>Cinder_Rocket</defName>
+  </WeaponCategoryDef>
+
+  <WeaponCategoryDef>
+    <defName>Cinder_Caseless</defName>
+  </WeaponCategoryDef>
+  
+  <WeaponCategoryDef>
+    <defName>Cinder_Melee</defName>
+  </WeaponCategoryDef>
+
+</Defs>

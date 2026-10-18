@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="45ACPBase">
+		<defName>Ammo_45ACP_Erosion</defName>
+		<label>.45 ACP (Erosion)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Pistol/Ero</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.09</MarketValue>
+		</statBases>
+		<ammoClass>Cinder_Erosion</ammoClass>
+		<cookOffProjectile>Bullet_45ACP_Erosion</cookOffProjectile>
+		<descriptionHyperlinks>
+			<HediffDef>Cinder_Erosion_Bullet</HediffDef>
+		</descriptionHyperlinks>
+	</ThingDef>
+
+	<ThingDef ParentName="Base45ACPBullet">
+		<defName>Bullet_45ACP_Erosion</defName>
+		<label>.45 ACP bullet (Erosion)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Cider_ErosionBullet</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<armorPenetrationSharp>11</armorPenetrationSharp>
+			<armorPenetrationBlunt>10.860</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
+		<defName>MakeAmmo_45ACP_Erosion</defName>
+		<label>make .45 ACP (Erosion) cartridge x500</label>
+		<description>Craft 500 .45 ACP (Erosion) cartridges.</description>
+		<jobString>Making .45 ACP (Erosion) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>11</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Cinder_AmorphousPolymer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_45ACP_Erosion>500</Ammo_45ACP_Erosion>
+		</products>
+		<recipeUsers Inherit="false">
+			<li>Cinder_AncientWorkstation</li>
+		</recipeUsers>
+		<workAmount>2640</workAmount>
+	</RecipeDef>
+</Defs>

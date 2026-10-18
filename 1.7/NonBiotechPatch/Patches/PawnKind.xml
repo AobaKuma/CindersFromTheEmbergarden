@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[@Name="Cinder_BasePawn"]/startingHediffs</xpath>
+				<value>
+                <startingHediffs>
+				 	<li>
+				        <def>Cinder_UncontrollableTentacles</def>
+				        <chance>1</chance>
+			        </li>
+					<li>
+				        <def>Cinder_Regen</def>
+				        <chance>1</chance>
+			        </li>
+					<li>
+				        <def>Cinder_EyeHediff</def>
+				        <chance>1</chance>
+			        </li>
+					<li>
+				        <def>Cinder_Resurrect</def>
+				        <chance>1</chance>
+			        </li>
+				</startingHediffs>
+				</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Humanoid Alien Races</li>
+			<li>Humanoid Alien Races ~ Dev</li>
+		</mods>
+	<nomatch Class="PatchOperationSequence">	
+	  <operations>
+		<li Class="PatchOperationAddModExtension">
+		<xpath>Defs/PawnKindDef[@Name="Cinder_BasePawn"]</xpath>
+			<value>
+                <li Class="Embergarden.ModExtension_HeadOverride">
+					<heads>
+                    <li>Female_AverageNormal</li>
+                    </heads>
+				</li>
+			</value>
+	    </li>
+		</operations>
+	</nomatch>			
+	</Operation>
+</Patch>

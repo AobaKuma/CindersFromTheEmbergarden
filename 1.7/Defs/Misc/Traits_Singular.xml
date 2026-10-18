@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TraitDef>
+		<defName>Cinder_Coke</defName>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>coke</label>
+				<description>{PAWN_nameDef} is a part of an unknown consciousness. when others approach, they will feel a burning sensation</description>
+				<statOffsets>
+				<PawnBeauty>1</PawnBeauty>
+				</statOffsets>
+				<statFactors>
+					<Flammability>0.8</Flammability>
+				</statFactors>
+				<disablesNeeds>
+					<li>Outdoors</li>
+				</disablesNeeds>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<ThoughtDef>
+		<defName>Cinder_CokeRelationOffset</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>Embergarden.ThoughtWorker_OtherHasTrait</workerClass>
+		<stages>
+			<li>
+				<label>Amorphouscoke</label>
+				<labelSocial>Getting close to her makes me feel like my body is being roasted!</labelSocial>
+				<baseOpinionOffset>-10</baseOpinionOffset>
+				<visible>false</visible>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="Embergarden.ThoughtWorkerExt">
+				<traitdef>Cinder_Coke</traitdef>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+</Defs>

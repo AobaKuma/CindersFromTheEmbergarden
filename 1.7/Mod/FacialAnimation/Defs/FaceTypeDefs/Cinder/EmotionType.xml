@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FacialAnimation.EmotionTypeDef>
+	  <defName>Cinder_EmotionNormal</defName>
+	  <texPath>Things/Pawn/Cinder/Emotions/Normal</texPath>
+    <shader>Map/Transparent</shader>
+	<raceName>Alien_Cinder</raceName><!-- 將圖檔指定給該種族用 -->
+  </FacialAnimation.EmotionTypeDef>
+</Defs>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FacialAnimation.FaceAnimationDef>
+    <defName>AttackMelee_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>1</duration>
+        <browShapeDef>angled</browShapeDef>
+        <mouthShapeDef>open</mouthShapeDef>
+        <browOffset>(0,0,-0.00875)</browOffset>
+        <lidOffset>(0.0,0,-0.005)</lidOffset>
+      </li>
+    </animationFrames>
+    <targetJobs>
+      <li>AttackMelee</li>
+    </targetJobs>
+    <priority>10200</priority>
+  </FacialAnimation.FaceAnimationDef>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>AttackMelee2_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>1</duration>
+        <browShapeDef>angled</browShapeDef>
+        <mouthShapeDef>tight</mouthShapeDef>
+      </li>
+    </animationFrames>
+    <targetJobs>
+      <li>AttackMelee</li>
+    </targetJobs>
+    <priority>10201</priority>
+    <applyWhenStandingOnly>true</applyWhenStandingOnly>
+  </FacialAnimation.FaceAnimationDef>
+</Defs>

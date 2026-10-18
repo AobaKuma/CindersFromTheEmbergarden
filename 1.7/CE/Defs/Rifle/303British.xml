@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="303BritishBase">
+		<defName>Ammo_303British_Erosion</defName>
+		<label>.303 British (Erosion)</label>
+		<graphicData>
+			<texPath>Things/Ammo/762Ero</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.14</MarketValue>
+			<Mass>0.022</Mass>
+		</statBases>
+		<ammoClass>Cinder_Erosion</ammoClass>
+		<cookOffProjectile>Bullet_303British_Erosion</cookOffProjectile>
+		<descriptionHyperlinks>
+			<HediffDef>Cinder_Erosion_Bullet</HediffDef>
+		</descriptionHyperlinks>
+	</ThingDef>
+
+	<ThingDef ParentName="Base303BritishBullet">
+		<defName>Bullet_303British_Erosion</defName>
+		<label>.303 British bullet (Erosion)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Cider_ErosionBullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationSharp>23</armorPenetrationSharp>
+			<armorPenetrationBlunt>86.72</armorPenetrationBlunt>
+			<speed>199</speed>
+		</projectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
+		<defName>MakeAmmo_303British_Erosion</defName>
+		<label>make .303 British (Erosion) cartridge x500</label>
+		<description>Craft 500 .303 British (Erosion) cartridges.</description>
+		<jobString>Making .303 British (Erosion) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Cinder_AmorphousPolymer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_303British_Erosion>500</Ammo_303British_Erosion>
+		</products>
+		<recipeUsers Inherit="false">
+			<li>Cinder_AncientWorkstation</li>
+		</recipeUsers>
+		<workAmount>4000</workAmount>
+	</RecipeDef>
+
+</Defs>

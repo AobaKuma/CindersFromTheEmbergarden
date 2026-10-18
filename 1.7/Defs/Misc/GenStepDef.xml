@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<GenStepDef>
+		<defName>Cinder_GenGarbage</defName>
+		<order>960</order>
+		<genStep Class="GenStep_ScatterGroup">
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<isJunk>true</isJunk>
+			<minSpacing>100</minSpacing>
+			<countPer10kCellsRange>0.25~0.35</countPer10kCellsRange>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<allowRoofed>false</allowRoofed>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>7</radius>
+					<affordance>Heavy</affordance>
+				</li>
+			</validators>
+			<groups>
+				<li>
+					<things>
+						<AncientWheel MayRequire="Ludeon.RimWorld.Ideology">0.6</AncientWheel>
+						<AncientGiantWheel MayRequire="Ludeon.RimWorld.Ideology">0.6</AncientGiantWheel>
+						<Cinder_AncientRustedChunk_A>0.2</Cinder_AncientRustedChunk_A>
+						<Cinder_AncientRustedChunk_None>0.4</Cinder_AncientRustedChunk_None>
+					</things>
+					<indoorRuin>false</indoorRuin>
+					<coveredCellsPer10Cells>0.7~1.2</coveredCellsPer10Cells>
+					<filthDef>Filth_MachineBits</filthDef>
+					<filthExpandBy>1</filthExpandBy>
+					<filthChance>0.2</filthChance>
+					<clusterRectRadius>8~12</clusterRectRadius>
+				</li>
+				<li>
+					<things>
+						<AncientWheel MayRequire="Ludeon.RimWorld.Ideology">0.6</AncientWheel>
+						<Cinder_AncientFastArmoredVehicle>0.2</Cinder_AncientFastArmoredVehicle>
+						<Cinder_AncientFastArmoredVehicle_None>0.4</Cinder_AncientFastArmoredVehicle_None>
+					</things>
+					<indoorRuin>false</indoorRuin>
+					<coveredCellsPer10Cells>0.7~1.2</coveredCellsPer10Cells>
+					<filthDef>Filth_MachineBits</filthDef>
+					<filthExpandBy>1</filthExpandBy>
+					<filthChance>0.2</filthChance>
+					<clusterRectRadius>8~12</clusterRectRadius>
+				</li>
+				<li>
+					<things>
+						<AncientWheel MayRequire="Ludeon.RimWorld.Ideology">0.6</AncientWheel>
+						<Cinder_AncientWheeledTank>0.2</Cinder_AncientWheeledTank>
+						<Cinder_AncientWheeledTank_None>0.4</Cinder_AncientWheeledTank_None>
+					</things>
+					<indoorRuin>false</indoorRuin>
+					<coveredCellsPer10Cells>0.7~1.2</coveredCellsPer10Cells>
+					<filthDef>Filth_MachineBits</filthDef>
+					<filthExpandBy>1</filthExpandBy>
+					<filthChance>0.2</filthChance>
+					<clusterRectRadius>8~12</clusterRectRadius>
+				</li>
+			</groups>
+		</genStep>
+	</GenStepDef>
+	
+ 
+	
+  <GenStepDef>
+    <defName>Cinder_AncientWarStrikerRemains</defName>
+    <order>1700</order><!-- after fogged -->
+    <genStep Class="GenStep_ScatterLayout">
+      <count>1</count>
+      <allowMechanoidDatacoreReadOrLost>false</allowMechanoidDatacoreReadOrLost>
+      <validators>
+        <li Class="ScattererValidator_Buildable">
+          <radius>7</radius>
+          <affordance>Light</affordance>
+        </li>
+        <li Class="ScattererValidator_AvoidSpecialThings" />
+      </validators>
+      <fallbackValidators>
+        <li Class="ScattererValidator_Buildable">
+          <radius>7</radius>
+          <affordance>Light</affordance>
+        </li>
+      </fallbackValidators>
+      <allowRoofed>false</allowRoofed>
+      <minEdgeDistPct>0.166667</minEdgeDistPct>
+      <minDistToPlayerStartPct>0.333</minDistToPlayerStartPct>
+      <allowFoggedPositions>false</allowFoggedPositions>
+      <onlyOnStartingMap>true</onlyOnStartingMap>
+      <layout>
+        <li>
+          <thing>Cinder_AncientRustedChunk_B</thing>
+          <offset>(2, 0, 0)</offset>
+          <filthDef>Filth_MachineBits</filthDef>
+		  <rotation>East</rotation>
+          <filthExpandBy>1</filthExpandBy>
+        </li>
+        <li>
+          <thing>Cinder_AncientRustedChunk_C</thing>
+          <offset>(-1, 0, 2)</offset>
+          <filthDef>Filth_MachineBits</filthDef>
+		   <rotation>East</rotation>
+          <filthExpandBy>1</filthExpandBy>
+        </li>
+        <li>
+          <thing>Cinder_AncientRustedChunk_D</thing>
+          <offset>(-1, 0, -2)</offset>
+          <filthDef>Filth_MachineBits</filthDef>
+		   <rotation>East</rotation>
+          <filthExpandBy>1</filthExpandBy>
+        </li>
+      </layout>
+    </genStep>
+  </GenStepDef>
+  
+    <GenStepDef>
+    <defName>Cinder_GenGarbageB</defName>
+    <order>1700</order><!-- after fogged -->
+    <genStep Class="GenStep_ScatterLayout">
+      <count>1</count>
+      <allowMechanoidDatacoreReadOrLost>false</allowMechanoidDatacoreReadOrLost>
+      <validators>
+        <li Class="ScattererValidator_Buildable">
+          <radius>10</radius>
+          <affordance>Heavy</affordance>
+        </li>
+        <li Class="ScattererValidator_AvoidSpecialThings" />
+      </validators>
+      <fallbackValidators>
+        <li Class="ScattererValidator_Buildable">
+          <radius>5</radius>
+          <affordance>Heavy</affordance>
+        </li>
+      </fallbackValidators>
+      <allowRoofed>false</allowRoofed>
+      <minEdgeDistPct>0.166667</minEdgeDistPct>
+      <minDistToPlayerStartPct>0.333</minDistToPlayerStartPct>
+      <allowFoggedPositions>false</allowFoggedPositions>
+      <onlyOnStartingMap>true</onlyOnStartingMap>
+      <layout>
+        <li>
+          <thing>Cinder_AncientGiantTruck</thing>
+          <offset>(-2, 0, 0)</offset>
+          <filthDef>Filth_MachineBits</filthDef>
+          <filthExpandBy>1</filthExpandBy>
+        </li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">
+          <thing>Cinder_AncientGiantCargo</thing>
+          <offset>(5, 0, 1)</offset>
+          <filthDef>Filth_MachineBits</filthDef>
+          <filthExpandBy>1</filthExpandBy>
+        </li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">
+          <thing>AncientGiantWheel</thing>
+          <offset>(4, 0, -5)</offset>
+          <filthDef>Filth_MachineBits</filthDef>
+          <filthExpandBy>1</filthExpandBy>
+        </li>
+      </layout>
+    </genStep>
+  </GenStepDef>
+  
+  <GenStepDef>
+    <defName>Cinder_GenGarbageC</defName>
+    <order>960</order><!-- after fogged -->
+    <genStep Class="GenStep_ScatterLayout">
+      <count>1</count>
+      <allowMechanoidDatacoreReadOrLost>false</allowMechanoidDatacoreReadOrLost>
+      <validators>
+        <li Class="ScattererValidator_Buildable">
+          <radius>5</radius>
+          <affordance>Heavy</affordance>
+        </li>
+        <li Class="ScattererValidator_AvoidSpecialThings" />
+      </validators>
+      <fallbackValidators>
+        <li Class="ScattererValidator_Buildable">
+          <radius>5</radius>
+          <affordance>Heavy</affordance>
+        </li>
+      </fallbackValidators>
+      <allowRoofed>false</allowRoofed>
+      <minEdgeDistPct>0.166667</minEdgeDistPct>
+      <minDistToPlayerStartPct>0.333</minDistToPlayerStartPct>
+      <allowFoggedPositions>false</allowFoggedPositions>
+      <onlyOnStartingMap>true</onlyOnStartingMap>
+      <layout>
+        <li>
+          <thing>Cinder_AncientBaseVehicle</thing>
+          <offset>(-2, 0, 0)</offset>
+          <filthDef>Filth_MachineBits</filthDef>
+          <filthExpandBy>1</filthExpandBy>
+        </li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">
+          <thing>AncientGiantWheel</thing>
+          <offset>(4, 0, -1)</offset>
+          <filthDef>Filth_MachineBits</filthDef>
+          <filthExpandBy>1</filthExpandBy>
+        </li>
+      </layout>
+    </genStep>
+  </GenStepDef>
+</Defs>

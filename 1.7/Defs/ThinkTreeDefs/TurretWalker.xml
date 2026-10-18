@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+
+<Defs>
+
+	<ThinkTreeDef>
+		<defName>Cinder_WalkerTurret</defName>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<!-- Despawned -->
+				<li Class="ThinkNode_Subtree">
+					<treeDef>Despawned</treeDef>
+				</li>
+
+				<!-- Downed -->
+				<li Class="ThinkNode_Subtree">
+					<treeDef>Downed</treeDef>
+				</li>
+
+				<!-- Self-Shutdown -->
+				<li Class="ThinkNode_ConditionalLowEnergy" MayRequire="Ludeon.RimWorld.Biotech">
+					<subNodes>
+						<li Class="JobGiver_SelfShutdown" />
+					</subNodes>
+				</li>
+
+				<!-- Mental state -->
+				<li Class="ThinkNode_ConditionalMentalState">
+					<state>BerserkMechanoid</state>
+					<subNodes>
+						<li Class="ThinkNode_Priority">
+							<subNodes>
+								<li Class="JobGiver_Berserk" />
+								<li Class="JobGiver_WanderAnywhere">
+									<maxDanger>Deadly</maxDanger>
+								</li>
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+
+				<!-- Do a queued job -->
+				<li Class="ThinkNode_QueuedJob" />
+
+				<!-- Wait if drafted -->
+				<li Class="ThinkNode_ConditionalOfPlayerFaction">
+					<subNodes>
+						<li Class="ThinkNode_Tagger">
+							<tagToGive>DraftedOrder</tagToGive>
+							<subNodes>
+								<li Class="JobGiver_MoveToStandable" />
+								<li Class="JobGiver_Orders" />
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+				
+                <li Class="ThinkNode_Subtree">
+                <treeDef>SatisfyBasicNeeds</treeDef>
+                </li>
+				
+				<li Class="Embergarden.ThinkNode_HasCompAndConditionalEnemyInRange">
+					<subNodes>
+						<li Class="Embergarden.JobGiver_TurretWalkerTransform"/>
+					</subNodes>
+				</li>
+
+				<!-- Lord -->
+				<li Class="ThinkNode_Subtree">
+					<treeDef>LordDuty</treeDef>
+				</li>
+
+				<!-- Player mechs -->
+				<li Class="ThinkNode_ConditionalPlayerControlledMech">
+					<subNodes>
+						<li Class="ThinkNode_ConditionalNotFormingCaravan">
+							<subNodes>
+
+								<li Class="JobGiver_SeekAllowedArea" />
+
+
+								<li Class="ThinkNode_Tagger">
+									<tagToGive>MiscWork</tagToGive>
+									<subNodes>
+										<li Class="JobGiver_WanderColony">
+											<maxDanger>Deadly</maxDanger>
+											<reportStringOverride TKey="ReportStringPatrolling">Patrolling.</reportStringOverride>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+
+
+						<li Class="ThinkNode_Tagger">
+							<tagToGive>Idle</tagToGive>
+							<subNodes>
+								<li Class="JobGiver_WanderColony">
+									<maxDanger>None</maxDanger>
+								</li>
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+
+				<!-- Idle -->
+				<li Class="ThinkNode_Tagger">
+					<tagToGive>Idle</tagToGive>
+					<subNodes>
+						<li Class="JobGiver_WanderAnywhere">
+							<maxDanger>Deadly</maxDanger>
+						</li>
+					</subNodes>
+				</li>
+
+				<!-- Idle error -->
+				<li Class="JobGiver_IdleError"/>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+
+</Defs>

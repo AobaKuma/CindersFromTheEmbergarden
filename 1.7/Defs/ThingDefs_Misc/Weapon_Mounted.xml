@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Name="Cinder_MountedGun" ParentName="BaseGun" Abstract="True">
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<weaponTags>
+			<li>NoSwitch</li>
+		</weaponTags>
+		<statBases>
+			<Mass>0</Mass>
+			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+		</statBases>
+		<relicChance>0</relicChance>
+		<useHitPoints>false</useHitPoints>
+		<tools Inherit="False" />
+	</ThingDef>
+
+	<ThingDef ParentName="Cinder_MountedGun">
+		<defName>Cinder_Mounted_AA</defName>
+		<label>anti air turret</label>
+		<description>TODO</description>
+		<graphicData>
+			<texPath>Things/Pawn/Mech/AAturret</texPath>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.6</AccuracyShort>
+			<AccuracyMedium>0.3</AccuracyMedium>
+			<AccuracyLong>0.2</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_Shotgun</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>15.9</range>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<burstShotCount>2</burstShotCount>
+				<soundCast>Shot_Shotgun</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.5,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="Cinder_MountedGun">
+		<defName>Cinder_Mounted_Tentacle</defName>
+		<label>tentacle turret</label>
+		<description>TODO</description>
+		<graphicData>
+			<texPath>Things/Pawn/Mech/TentacleTurret</texPath>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>0.9</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.2</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Cinder_TentacleGourdProjB</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>15.9</range>
+				<ticksBetweenBurstShots>24</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>Cinder_TentacleShot</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.5,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Cinder_TentacleGourdProjB</defName>
+		<label>Tentacle</label>
+		<thingClass>Embergarden.Projectile_Tentacle</thingClass>
+		<graphicData>
+			<texPath>Things/Weapons/Bullet_clustered</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.4, 1.4)</drawSize>
+		</graphicData>
+		<projectile Class="Embergarden.ProjectileProperties_Tentacle">
+			<damageDef>Cider_CutB</damageDef>
+			<damageAmountBase>4</damageAmountBase>
+			<stoppingPower>3</stoppingPower>
+			<armorPenetrationBase>10</armorPenetrationBase>
+			<speed>65</speed>
+			<extraDamages>
+				<li>
+					<def>Cut</def>
+					<amount>2</amount>
+				</li>
+			</extraDamages>
+
+			<effecterDef>Cinder_TentacleProj</effecterDef>
+			<tickPerTentacle>2</tickPerTentacle>
+			<tentacleFleck>Cinder_TentacleSection</tentacleFleck>
+			<tentacleHeadFleck>Cinder_TentacleHead</tentacleHeadFleck>
+			<tentacleHitFleck>Cinder_TentacleHeadHit</tentacleHitFleck>
+			<hitEffecterDef>Cinder_TentacleHit</hitEffecterDef>
+
+			<swingRange>0.5~1</swingRange>
+			<colorA>(1,1,1)</colorA>
+			<colorB>(0.9,0.9,0.9)</colorB>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Cinder_MountedGun">
+		<defName>Cinder_Mounted_Rocket</defName>
+		<label>rocket pod</label>
+		<description>TODO</description>
+		<graphicData>
+			<texPath>Things/Pawn/Mech/Rocket</texPath>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.6</AccuracyShort>
+			<AccuracyMedium>0.3</AccuracyMedium>
+			<AccuracyLong>0.2</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<forcedMissRadius>2.9</forcedMissRadius>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Proj_Rocket</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>30.9</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>RocketswarmLauncher_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.5,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="Cinder_MountedGun">
+		<defName>Cinder_Mounted_EXOminigun</defName>
+		<label>exoskeleton minigun</label>
+		<description>TODO</description>
+		<graphicData>
+			<texPath>Things/Pawn/Mech/EXOminigun</texPath>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.6</AccuracyShort>
+			<AccuracyMedium>0.6</AccuracyMedium>
+			<AccuracyLong>0.2</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_Autopistol</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>30.9</range>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<burstShotCount>5</burstShotCount>
+				<soundCast>Shot_Minigun</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.5,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="Cinder_MountedGun">
+		<defName>Cinder_Mounted_EXOturret</defName>
+		<label>exoskeleton turret</label>
+		<description>TODO</description>
+		<graphicData>
+			<texPath>Things/Pawn/Mech/EXOturret</texPath>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.87</AccuracyShort>
+			<AccuracyMedium>0.77</AccuracyMedium>
+			<AccuracyLong>0.64</AccuracyLong>
+			<RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_Shotgun</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>15.9</range>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>Shot_Shotgun</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.5,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="Cinder_MountedGun">
+		<defName>Cinder_Mounted_KPVTurret</defName>
+		<label>eroded KPV HMG</label>
+		<description>A reliable standard-issue machine gun, capable of effectively penetrating the armor of most small to medium-sized targets and inflicting suppression during long-range engagements.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Mech/erodedKPV</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.95</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.85</AccuracyMedium>
+			<AccuracyLong>0.80</AccuracyLong>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
+				<requireLineOfSight>true</requireLineOfSight>
+				<warmupTime>1.5</warmupTime>
+				<range>39.9</range>
+				<minRange>8</minRange>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>Shot_Autocannon</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.75,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

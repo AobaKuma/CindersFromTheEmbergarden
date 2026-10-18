@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+    <defName>Cinder_PEG</defName>
+    <equipmentType>Primary</equipmentType>
+    <label>plastic explosive</label>
+    <description>A high-energy explosive made of polymer that can effectively destroy facilities and defensive buildings.</description>
+    <graphicData>
+     <texPath>Things/Weapons/PlasticExplosives</texPath>
+	  <drawSize>1</drawSize>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <techLevel>Industrial</techLevel>
+    <stackLimit>50</stackLimit>
+    <statBases>
+       <Mass>2</Mass>
+      <Bulk>2</Bulk>
+      <MarketValue>38</MarketValue>
+      <SightsEfficiency>2</SightsEfficiency>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+    <detonateProjectile>Cinder_PlasticExplosives</detonateProjectile>
+    <weaponTags>
+      <li>CE_AI_AOE</li>
+      <li>CinderDestructiveCE</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Grenades</li>
+    </thingCategories>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <label>throw PEG</label>
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>        
+        <hasStandardCommand>true</hasStandardCommand>
+				<range>7</range>
+				<minRange>1.9</minRange>
+				<warmupTime>2</warmupTime>
+				<noiseRadius>8</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Cinder_PlasticExplosives</defaultProjectile>
+				<onlyManualCast>true</onlyManualCast>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+				<ai_AvoidFriendlyFireRadius>10</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <RecipeDef ParentName="GrenadeRecipeBase">
+		<defName>MakeWeapon_PEG</defName>
+		<label>make plastic explosive x5</label>
+		<description>Craft 5 plastic explosive.</description>
+		<jobString>Making plastic explosive.</jobString>
+		<researchPrerequisite>Cinder_ShapedCharges</researchPrerequisite>
+		<workAmount>2100</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>32</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Cinder_PEG>5</Cinder_PEG>
+		</products>
+		 <recipeUsers Inherit="false">
+				<li>Cinder_AncientWorkstation</li>
+		</recipeUsers>
+	</RecipeDef>
+</Defs>

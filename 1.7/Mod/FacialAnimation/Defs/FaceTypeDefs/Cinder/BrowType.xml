@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FacialAnimation.BrowTypeDef>
+	  <defName>Cinder_BrowNormal</defName>
+	  <texPath>Things/Pawn/Cinder/Brows/Normal</texPath>
+	  <shader>Map/Transparent</shader>
+	  <raceName>Alien_Cinder</raceName><!-- 將圖檔指定給該種族用 -->
+  </FacialAnimation.BrowTypeDef>
+
+<!--   <FacialAnimation.BrowTypeDef>   
+	  <defName>Cinder_BrowNormal2</defName>   若有不同繪製方式才需要增加，defName不能重複
+	  <texPath>Things/Pawn/Cinder/Brows/Normal2</texPath>
+	  <shader>Map/Transparent</shader>
+	  <raceName>Alien_Cinder</raceName>
+  </FacialAnimation.BrowTypeDef> -->
+</Defs>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_58x42mmDBP191"]/ammoTypes</xpath>
+                    <value>
+                        <Ammo_58x42mmDBP10_Erosion>Bullet_58x42mmDBP10_Erosion</Ammo_58x42mmDBP10_Erosion>
+                    </value>
+                </li>
+            </operations>   
+        </match>     
+    </Operation>
+
+</Patch>

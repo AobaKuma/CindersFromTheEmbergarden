@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="58x42mmDBP10Base">
+		<defName>Ammo_58x42mmDBP10_Erosion</defName>
+		<label>5.8x42mm DBP10 (Erosion)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Rifle/Ero</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.09</MarketValue>
+			<Mass>0.013</Mass>
+		</statBases>
+		<ammoClass>Cinder_Erosion</ammoClass>
+		<cookOffProjectile>Bullet_58x42mmDBP10_Erosion</cookOffProjectile>
+		<descriptionHyperlinks>
+			<HediffDef>Cinder_Erosion_Bullet</HediffDef>
+		</descriptionHyperlinks>
+	</ThingDef>
+
+	<ThingDef ParentName="Base58x42mmDBP10Bullet">
+		<defName>Bullet_58x42mmDBP10_Erosion</defName>
+		<label>5.8mm DBP10 bullet (Erosion)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Cider_ErosionBullet</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationSharp>21</armorPenetrationSharp>
+			<armorPenetrationBlunt>46.12</armorPenetrationBlunt>
+			<speed>229</speed>
+		</projectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
+		<defName>MakeAmmo_58x42mmDBP10_Erosion</defName>
+		<label>make 5.8x42mm DBP10 (Erosion) cartridge x500</label>
+		<description>Craft 500 5.8x42mm DBP10 (Erosion) cartridges.</description>
+		<jobString>Making 5.8x42mm DBP10 (Erosion) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>28</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Cinder_AmorphousPolymer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_58x42mmDBP10_Erosion>500</Ammo_58x42mmDBP10_Erosion>
+		</products>
+		<recipeUsers Inherit="false">
+			<li>Cinder_AncientWorkstation</li>
+		</recipeUsers>
+		<workAmount>2400</workAmount>
+	</RecipeDef>
+
+</Defs>

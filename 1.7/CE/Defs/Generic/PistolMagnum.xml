@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoPistomMagnum">
+		<defName>Ammo_PistolMagnum_Erosion</defName>
+		<label>magnum pistol cartridge (Erosion)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Pistol/Ero</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.1</MarketValue>
+		</statBases>
+		<ammoClass>Cinder_Erosion</ammoClass>
+		<cookOffProjectile>Bullet_44Magnum_Erosion</cookOffProjectile>
+		<descriptionHyperlinks>
+			<HediffDef>Cinder_Erosion_Bullet</HediffDef>
+		</descriptionHyperlinks>
+	</ThingDef>
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
+		<defName>MakeAmmo_PistolMagnum_Erosion</defName>
+		<label>make magnum pistol (Erosion) cartridge x500</label>
+		<description>Craft 500 magnum pistol (Erosion) cartridges.</description>
+		<jobString>Making magnum pistol (Erosion) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>26</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Cinder_AmorphousPolymer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_PistolMagnum_Erosion>500</Ammo_PistolMagnum_Erosion>
+		</products>
+		<recipeUsers Inherit="false">
+			<li>Cinder_AncientWorkstation</li>
+		</recipeUsers>
+		<workAmount>2880</workAmount>
+	</RecipeDef>
+</Defs>

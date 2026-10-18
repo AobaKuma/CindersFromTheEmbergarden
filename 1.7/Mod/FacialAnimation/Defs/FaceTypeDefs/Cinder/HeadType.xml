@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <FacialAnimation.HeadTypeDef>
+	  <defName>Cinder_HeadNormal1</defName>
+	  <texPath>Things/Pawn/Cinder/Heads_Blank/Normal1</texPath>
+	  <shader>Map/CutoutSkin</shader>
+    <shaderColorOverride>Map/CutoutSkinOverride</shaderColorOverride>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.HeadTypeDef>
+
+  <FacialAnimation.HeadTypeDef>
+	  <defName>Cinder_HeadNormal2</defName>
+	  <texPath>Things/Pawn/Cinder/Heads_Blank/Normal2</texPath>
+	  <shader>Map/CutoutSkin</shader>
+    <shaderColorOverride>Map/CutoutSkinOverride</shaderColorOverride>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.HeadTypeDef>
+  
+  <FacialAnimation.HeadTypeDef>
+	  <defName>Cinder_HeadNormal3</defName>
+	  <texPath>Things/Pawn/Cinder/Heads_Blank/Normal3</texPath>
+	  <shader>Map/CutoutSkin</shader>
+    <shaderColorOverride>Map/CutoutSkinOverride</shaderColorOverride>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.HeadTypeDef>
+
+  <FacialAnimation.HeadTypeDef>
+	  <defName>Cinder_HeadNormal4</defName>
+	  <texPath>Things/Pawn/Cinder/Heads_Blank/Normal4</texPath>
+	  <shader>Map/CutoutSkin</shader>
+    <shaderColorOverride>Map/CutoutSkinOverride</shaderColorOverride>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.HeadTypeDef>
+
+  <FacialAnimation.HeadTypeDef>
+	  <defName>Cinder_HeadNormal5</defName>
+	  <texPath>Things/Pawn/Cinder/Heads_Blank/Normal5</texPath>
+	  <shader>Map/CutoutSkin</shader>
+    <shaderColorOverride>Map/CutoutSkinOverride</shaderColorOverride>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.HeadTypeDef>
+  
+  <FacialAnimation.HeadTypeDef>
+	  <defName>Cinder_HeadNormal6</defName>
+	  <texPath>Things/Pawn/Cinder/Heads_Blank/Normal6</texPath>
+	  <shader>Map/CutoutSkin</shader>
+    <shaderColorOverride>Map/CutoutSkinOverride</shaderColorOverride>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.HeadTypeDef>
+  
+  <FacialAnimation.HeadTypeDef>
+	  <defName>Cinder_HeadNormal7</defName>
+	  <texPath>Things/Pawn/Cinder/Heads_Blank/Normal7</texPath>
+	  <shader>Map/CutoutSkin</shader>
+    <shaderColorOverride>Map/CutoutSkinOverride</shaderColorOverride>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.HeadTypeDef>
+  
+</Defs>

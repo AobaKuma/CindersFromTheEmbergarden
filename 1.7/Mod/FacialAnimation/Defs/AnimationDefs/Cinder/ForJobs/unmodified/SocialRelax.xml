@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FacialAnimation.FaceAnimationDef>
+    <defName>SocialRelax_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>1</duration>
+        <browShapeDef>normal</browShapeDef>
+        <lidShapeDef>close</lidShapeDef>
+      </li>
+    </animationFrames>
+    <targetJobs>
+      <li>SocialRelax</li>
+    </targetJobs>
+    <priority>10200</priority>
+  </FacialAnimation.FaceAnimationDef>
+</Defs>

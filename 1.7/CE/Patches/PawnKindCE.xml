@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+    <Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/PawnKindDef[defName="Cinder_OutlanderElite" or defName="Cinder_HeavySoliderUnit" or defName="Cinder_SoliderUnit"]</xpath>
+		<value>
+		    <li Class="CombatExtended.LoadoutPropertiesExtension">
+			    <primaryMagazineCount>
+					<min>5</min>
+					<max>8</max>
+				</primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>1</generateChance>
+						<sidearmMoney>
+							<min>550</min>
+							<max>570</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>CinderSimpleGuns</li>
+							<li>CinderPDW</li>
+						</weaponTags>
+						<magazineCount>
+							<min>2</min>
+							<max>3</max>
+						</magazineCount>
+					</li>
+			    </sidearms>
+			</li>
+		</value>
+	</Operation>
+	
+	 <Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/PawnKindDef[defName="Cinder_Grenadier" or defName="Cinder_BreakUnit"]</xpath>
+		<value>
+		    <li Class="CombatExtended.LoadoutPropertiesExtension">
+			    <primaryMagazineCount>
+					<min>10</min>
+					<max>12</max>
+				</primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>1</generateChance>
+						<sidearmMoney>
+							<min>550</min>
+							<max>570</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>CinderSimpleGuns</li>
+							<li>CinderPDW</li>
+						</weaponTags>
+						<magazineCount>
+							<min>2</min>
+							<max>3</max>
+						</magazineCount>
+					</li>
+			    </sidearms>
+			</li>
+		</value>
+	</Operation>
+	
+	 <Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_Grenadier" or defName="Cinder_BreakUnit"]/weaponTags</xpath>
+		<value>
+		   <weaponTags>
+			<li>CinderDestructiveCE</li>
+		   </weaponTags>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/PawnKindDef[defName="Cinder_Colonist" or defName="Cinder_Leader" or defName="Cinder_OutlanderCivilan" or defName="Cinder_SupplyOfficer" or defName="Cinder_OutlanderSecond" or defName="Cinder_Outlander"
+		  or defName="Cinder_Outlander" or defName="Cinder_CasterUnit"]</xpath>
+		<value>
+		    <li Class="CombatExtended.LoadoutPropertiesExtension">
+			    <primaryMagazineCount>
+					<min>4</min>
+					<max>6</max>
+				</primaryMagazineCount>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_SoliderUnit"]/combatPower</xpath>
+		<value>
+			<combatPower>140</combatPower>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_HeavySoliderUnit" or defName="Cinder_BreakUnit"]/combatPower</xpath>
+		<value>
+			<combatPower>340</combatPower>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_Ghoul" or defName="Cinder_EliteGhoul"]/combatPower</xpath>
+		<value>
+			<combatPower>90</combatPower>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_Outlander" or defName="Cinder_EliteCult"]/combatPower</xpath>
+		<value>
+			<combatPower>150</combatPower>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_Outlander"]/weaponTags</xpath>
+		<value>
+	<weaponTags>
+	<li>CinderElite</li>
+    </weaponTags>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_Outlander"]/weaponMoney</xpath>
+		<value>
+          <weaponMoney>900~1900</weaponMoney>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_Outlander"]/specificApparelRequirements</xpath>
+		<value>
+          <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(66, 61, 51)</color>
+      </li>
+	  <li>
+		<requiredTag>Cinder_MilitaryMedium</requiredTag>
+		<apparelLayer>Overhead</apparelLayer>
+      </li>
+	  <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+		<requiredTag>Cinder_Bulletproof</requiredTag>
+		<stuff>Hyperweave</stuff>
+		<apparelLayer>Middle</apparelLayer>
+      </li>
+	  <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+		<requiredTag>Cinder_Outlands</requiredTag>
+		<apparelLayer>Shell</apparelLayer>
+      </li>
+      <li>
+        <bodyPartGroup>Legs</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(66, 61, 51)</color>
+      </li>
+    </specificApparelRequirements>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_Cult"]/specificApparelRequirements</xpath>
+		<value>
+       <specificApparelRequirements>
+	  <li>
+        <bodyPartGroup>FullHead</bodyPartGroup>
+        <requiredTag>Cinder_Cult</requiredTag>
+        <useRandomStyleDef>true</useRandomStyleDef>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(85, 85, 85)</color>
+      </li>
+	  <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+		<requiredTag>Cinder_Bulletproof</requiredTag>
+		<stuff>Synthread</stuff>
+		<apparelLayer>Middle</apparelLayer>
+      </li>
+	  <li>
+        <apparelLayer>Shell</apparelLayer>
+        <color>(85, 85, 85)</color>
+		<stuff>Synthread</stuff>
+        <alternateTagChoices>
+          <li>
+            <tag>Robe</tag>
+            <chance>1</chance>
+          </li>
+        </alternateTagChoices>
+      </li>
+      <li>
+        <bodyPartGroup>Legs</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(85, 85, 85)</color>
+      </li>
+    </specificApparelRequirements>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_EliteCult"]/specificApparelRequirements</xpath>
+		<value>
+       <specificApparelRequirements>
+	   <li>
+        <bodyPartGroup>FullHead</bodyPartGroup>
+        <requiredTag>Cinder_Cult</requiredTag>
+        <useRandomStyleDef>true</useRandomStyleDef>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(85, 85, 85)</color>
+      </li>
+	 <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+		<requiredTag>Cinder_Bulletproof</requiredTag>
+		<stuff>Hyperweave</stuff>
+		<apparelLayer>Middle</apparelLayer>
+      </li>
+	  <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+		<requiredTag>Cinder_Outlands</requiredTag>
+		<apparelLayer>Shell</apparelLayer>
+      </li>
+      <li>
+        <bodyPartGroup>Legs</bodyPartGroup>
+        <stuff>Synthread</stuff>
+		<requiredTag>IndustrialBasic</requiredTag>
+		<apparelLayer>OnSkin</apparelLayer>
+		 <color>(85, 85, 85)</color>
+      </li>
+    </specificApparelRequirements>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_HeavySoliderUnit" or defName="Cinder_BreakUnit"]/apparelRequired</xpath>
+		<value>
+			<apparelRequired>
+			<li>Cinder_Apparel_HeavyArmorDress</li>
+			<li>Cinder_HeadGear_FullyEnclosedMask</li>
+			<li>Cinder_HeadGear_AssaultHelmet</li>
+		</apparelRequired>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Cinder_SoliderUnit"]/apparelRequired</xpath>
+		<value>
+			<apparelRequired>
+			<li>Cinder_Apparel_LowVisibilityDress</li>
+			<li>Cinder_HeadGear_FullyEnclosedMask</li>
+			<li>Apparel_SmokepopBelt</li>
+			<li>Cinder_HeadGear_AssaultHelmet</li>
+		</apparelRequired>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Cinder_SoliderUnit" or defName="Cinder_BreakUnit" or defName="Cinder_HeavySoliderUnit"]/specificApparelRequirements</xpath>
+		<value>
+			<li>
+				<bodyPartGroup>Shoulders</bodyPartGroup>
+				<stuff>Synthread</stuff>
+				<requiredTag>IndustrialMilitaryBasic</requiredTag>
+				<apparelLayer>Backpack</apparelLayer>
+				<color>(66, 61, 51)</color>
+			</li>
+		</value>
+	</Operation>
+	
+</Patch>

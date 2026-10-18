@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo50BMGBase">
+		<defName>Ammo_50BMG_Erosion</defName>
+		<label>.50 BMG (Erosion)</label>
+		<graphicData>
+			<texPath>Things/Ammo/HighCaliber/Ero</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.57</MarketValue>
+			<Mass>0.099</Mass>
+		</statBases>
+		<ammoClass>Cinder_Erosion</ammoClass>
+		<cookOffProjectile>Bullet_50BMG_Erosion</cookOffProjectile>
+		<descriptionHyperlinks>
+			<HediffDef>Cinder_Erosion_Bullet</HediffDef>
+		</descriptionHyperlinks>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef ParentName="Base50BMGBullet">
+		<defName>Bullet_50BMG_Erosion</defName>
+		<label>.50 BMG bullet (Erosion)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Cider_ErosionBullet</damageDef>
+			<damageAmountBase>22</damageAmountBase>
+			<armorPenetrationSharp>49</armorPenetrationSharp>
+			<armorPenetrationBlunt>462.92</armorPenetrationBlunt>
+			<speed>221</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
+		<defName>MakeAmmo_50BMG_Erosion</defName>
+		<label>make .50 BMG (Erosion) cartridge x200</label>
+		<description>Craft 200 .50 BMG (Erosion) cartridges.</description>
+		<jobString>Making .50 BMG (Erosion) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>38</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>29</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Cinder_AmorphousPolymer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_50BMG_Erosion>200</Ammo_50BMG_Erosion>
+		</products>
+		<recipeUsers Inherit="false">
+			<li>Cinder_AncientWorkstation</li>
+		</recipeUsers>
+		<workAmount>6600</workAmount>
+	</RecipeDef>
+
+</Defs>

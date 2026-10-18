@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>normal_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>1</duration>
+        <headShapeDef>normal</headShapeDef>
+        <browShapeDef>normal</browShapeDef>
+        <lidShapeDef>normal</lidShapeDef>
+        <lidOptionShapeDef>normal</lidOptionShapeDef>
+        <eyeballShapeDef>normal</eyeballShapeDef>
+        <mouthShapeDef>normal</mouthShapeDef>
+        <emotionShapeDef>normal</emotionShapeDef>
+      </li>
+    </animationFrames>
+    <priority>0</priority>
+  </FacialAnimation.FaceAnimationDef>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>eyeMoving_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>15</duration>
+        <eyeballOffset>(-0.01,0,0)</eyeballOffset>
+      </li>
+    </animationFrames>
+    <priority>1002</priority>
+    <roopIntervalMin>30 </roopIntervalMin>
+    <roopIntervalMax>500</roopIntervalMax>
+  </FacialAnimation.FaceAnimationDef>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>eyeMoving2_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>15</duration>
+        <eyeballOffset>(0.01,0,0)</eyeballOffset>
+      </li>
+    </animationFrames>
+    <priority>1001</priority>
+    <roopIntervalMin>30 </roopIntervalMin>
+    <roopIntervalMax>500</roopIntervalMax>
+  </FacialAnimation.FaceAnimationDef>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>eyeFlicker_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>3</duration>
+      </li>
+    </animationFrames>
+    <priority>1001</priority>
+    <roopIntervalMin>10 </roopIntervalMin>
+    <roopIntervalMax>30</roopIntervalMax>
+  </FacialAnimation.FaceAnimationDef>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>blink_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <faceAnimationDef>NLR-Blink_Cinder</faceAnimationDef>
+      </li>
+    </animationFrames>
+    <roopIntervalMin>30 </roopIntervalMin>
+    <roopIntervalMax>500</roopIntervalMax>
+    <priority>1000</priority>
+  </FacialAnimation.FaceAnimationDef>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>NLR-Blink_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>3</duration>
+        <browOffset>(0,0,-0.005)</browOffset>
+        <lidOffset>(0,0,-0.005)</lidOffset>
+      </li>
+      <li>
+        <duration>1</duration>
+        <browOffset>(0,0,-0.0075)</browOffset>
+        <lidShapeDef>half</lidShapeDef>
+      </li>
+      <li>
+        <duration>9</duration>
+        <browOffset>(0,0,-0.01)</browOffset>
+        <lidShapeDef>close</lidShapeDef>
+      </li>
+      <li>
+        <duration>2</duration>
+        <browOffset>(0,0,-0.0075)</browOffset>
+        <lidShapeDef>half</lidShapeDef>
+      </li>
+      <li>
+        <duration>3</duration>
+        <browOffset>(0,0,-0.005)</browOffset>
+        <lidOffset>(0,0,-0.005)</lidOffset>
+      </li>
+    </animationFrames>
+    <targetJobs></targetJobs> 
+  </FacialAnimation.FaceAnimationDef>
+
+</Defs>

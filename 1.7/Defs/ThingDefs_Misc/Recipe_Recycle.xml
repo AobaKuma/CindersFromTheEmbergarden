@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <RecipeDef>
+    <defName>Cinder_ExtractMetalFromSlag</defName>
+    <label>smelt metal eroded walker debris</label>
+    <description>Use heat and strong electromagnets to extract useful metal from eroded walker debris.</description>
+    <jobString>Smelting metal from eroded walker debris.</jobString>
+    <workAmount>600</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <recipeUsers>
+      <li>ElectricSmelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Cinder_ChunkSlag</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <specialProducts>
+      <li>Smelted</li>
+    </specialProducts>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Cinder_ChunkSlag</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Cinder_ExtractCompFromSlag</defName>
+    <label>disassemble eroded walker debris</label>
+    <description>Disassemble eroded walker debris to extract useful component.</description>
+    <jobString>disassembling eroded walker debris.</jobString>
+    <workAmount>2400</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Cinder_ChunkSlag</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <specialProducts>
+      <li>Butchery</li>
+    </specialProducts>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Cinder_ChunkSlag</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+</Defs>	

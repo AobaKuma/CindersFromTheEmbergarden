@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/PawnKindDef[defName="Cinder_Mech_Krepost" or defName="Cinder_Mech_Tombstone"]</xpath>
+		<value>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>15</min>
+					<max>18</max>
+				</primaryMagazineCount>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost" or defName="Cinder_Mech_Tombstone"]/statBases/ShootingAccuracyPawn</xpath>
+		<value>
+			<CarryWeight>200</CarryWeight> <!--ridiculously overweight and over bulk weapon system and ammo :(-->
+			<CarryBulk>150</CarryBulk>
+			<AimingAccuracy>1.2</AimingAccuracy>
+			<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
+			<MeleeDodgeChance>0.04</MeleeDodgeChance>
+			<MeleeCritChance>0.46</MeleeCritChance>
+			<MeleeParryChance>0.34</MeleeParryChance>
+			<MaxHitPoints>500</MaxHitPoints>
+			<NightVisionEfficiency>2.0</NightVisionEfficiency>
+			<ReloadSpeed>1.25</ReloadSpeed>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost" or defName="Cinder_Mech_Tombstone"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>Left tentacle</label>
+					<labelNoLocation>tentacle</labelNoLocation>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>40.0</power>
+					<cooldownTime>1</cooldownTime>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+					<armorPenetrationBlunt>50</armorPenetrationBlunt>
+					<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right tentacle</label>
+					<labelNoLocation>tentacle</labelNoLocation>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>40.0</power>
+					<cooldownTime>1</cooldownTime>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+					<armorPenetrationBlunt>50</armorPenetrationBlunt>
+					<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>Front tentacle</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>30.5</power>
+					<cooldownTime>1</cooldownTime>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+					<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>40</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost" or defName="Cinder_Mech_Tombstone"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>330</ArmorRating_Blunt>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost" or defName="Cinder_Mech_Tombstone"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>59</ArmorRating_Sharp>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost" or defName="Cinder_Mech_Tombstone"]/statBases/ArmorRating_Heat</xpath>
+		<value>
+			<ArmorRating_Heat>1.2</ArmorRating_Heat>
+			<ArmorRating_Electric>1.5</ArmorRating_Electric>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost" or defName="Cinder_Mech_Tombstone"]/comps</xpath>
+		<value>
+			<li Class="CombatExtended.CompProperties_ArmorDurability">
+				<Durability>4650</Durability>
+				<Regenerates>true</Regenerates>
+				<RegenInterval>1250</RegenInterval>
+				<RegenValue>5</RegenValue>
+				<Repairable>true</Repairable>
+				<RepairIngredients>
+					<Steel>5</Steel>
+					<Plasteel>5</Plasteel>
+				</RepairIngredients>
+				<RepairTime>300</RepairTime>
+				<RepairValue>200</RepairValue>
+				<CanOverHeal>true</CanOverHeal>
+				<MaxOverHeal>450</MaxOverHeal>
+				<MinArmorPct>0.8</MinArmorPct>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="Cinder_Mech_Krepost" or defName="Cinder_Mech_Tombstone"]</xpath>
+				<value>
+					<li Class="CombatExtended.PartialArmorExt">
+						<stats>					
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Sharp>0.06</ArmorRating_Sharp>
+								<parts>
+									<li>SightSensor</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+								<parts>
+									<li>SightSensor</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Sharp>0.06</ArmorRating_Sharp>
+								<parts>
+									<li>HearingSensor</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+								<parts>
+									<li>HearingSensor</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Sharp>0.06</ArmorRating_Sharp>
+								<parts>
+									<li>SmellSensor</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+								<parts>
+									<li>SmellSensor</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Sharp>2</ArmorRating_Sharp>
+								<parts>
+									<li>Cinder_ArmourPlate</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Blunt>2.5</ArmorRating_Blunt>
+								<parts>
+									<li>Cinder_ArmourPlate</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Sharp>2</ArmorRating_Sharp>
+								<parts>
+									<li>Cinder_TentacleLeg</li>
+								</parts>
+							</li>
+							<li>
+								<useStatic>false</useStatic>
+								<ArmorRating_Blunt>2</ArmorRating_Blunt>
+								<parts>
+									<li>Cinder_TentacleLeg</li>
+								</parts>
+							</li>
+						</stats>
+					</li>
+				</value>
+			</Operation>
+</Patch>

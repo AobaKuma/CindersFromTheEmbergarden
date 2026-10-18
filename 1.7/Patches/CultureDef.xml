@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CultureDef[defName = "Astropolitan"]/styleItemTags</xpath>
+		<value>
+		<li>
+            <tag>Cinder_Hair</tag>
+            <baseWeight>1</baseWeight>
+           <weightFactor>1</weightFactor>
+       </li>
+		</value>
+	</Operation>
+</Patch>

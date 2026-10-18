@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<!-- 拓展RJW相關動作的面部動畫行為，如果有自定義AnimationDefs的內容則需要增加該補丁，不然RJW增加的行為FA不會支援，將defName修改成你的自定義行為defName即可，預設的檔案在RJW及RJW動畫都有，如果不使用AnimationDefs就不用使用這補丁，它會自動使用預設的人類行為做修補 -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>RimJobWorld</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/FacialAnimation.FaceAnimationDef[defName="LovinRepeat_Cinder" or defName="Lovin2_Cinder"]/targetJobs</xpath>
+          <success>Always</success>
+          <value>
+            <li>RJW_Masturbate</li>
+            <li>GettinBred</li>
+            <li>Bestiality</li>
+            <li>BestialityForFemale</li>
+            <li>ViolateCorpse</li>
+            <li>Quickie</li>
+            <li>GettingQuickie</li>
+            <li>GettinRaped</li>
+            <li>JoinInBed</li>
+            <li>GettinLoved</li>
+            <li>GettinLicked</li>
+            <li>GettinSucked</li>
+            <li>WhoreIsServingVisitors</li>
+            <li>JoinInBedAnimation</li>
+            <li>GettinLovedAnimation</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/FacialAnimation.FaceAnimationDef[defName="WaitCombat_Cinder" or defName="Wait_Combat_Rare_Cinder"]/targetJobs</xpath>
+          <success>Always</success>
+          <value>
+            <li>RapeComfortPawn</li>
+            <li>RandomRape</li>
+            <li>RapeEnemy</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/FacialAnimation.FaceAnimationDef[StandAndBeSociallyActive_Cinder]/targetJobs</xpath>
+          <success>Always</success>
+          <value>
+            <li>WhoreInvitingVisitors</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/FacialAnimation.FaceAnimationDef[defName="Wear_Cinder" or defName="Wear2_Cinder" or defName="Wear3_Cinder"]/targetJobs</xpath>
+          <success>Always</success>
+          <value>
+            <li>CleanSelf</li>
+            <li>StruggleInBondageGear</li>
+          </value>
+        </li>
+        <li Class="PatchOperationFindMod">
+          <mods>
+            <li>Rimworld-Animations</li>
+          </mods>
+          <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+              <li Class="PatchOperationRemove">
+                <xpath>/Defs/FacialAnimation.FaceAnimationDef[defName="LovinRepeat_Cinder" or defName="Lovin2_Cinder"]/animationFrames/li[1]/headOffset</xpath>
+                <success>Always</success>
+              </li>
+              <li Class="PatchOperationRemove">
+                <xpath>/Defs/FacialAnimation.FaceAnimationDef[defName="LovinRepeat_Cinder"]/animationFrames/li[2]/headOffset</xpath>
+                <success>Always</success>
+              </li>
+              <li Class="PatchOperationRemove">
+                <xpath>/Defs/FacialAnimation.FaceAnimationDef[defName="LovinRepeat_Cinder"]/animationFrames/li[3]/headOffset</xpath>
+                <success>Always</success>
+              </li>
+            </operations>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>
+
+<!--
+OLD PATCH
+
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[NL] Facial Animation - WIP</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/FacialAnimation.FaceAnimationDef[defName="Lovin" or defName="Lovin2"]/animationFrames/li[1]/headOffset</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/FacialAnimation.FaceAnimationDef[defName="Lovin" or defName="Lovin2"]/animationFrames/li[2]/headOffset</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/FacialAnimation.FaceAnimationDef[defName="Lovin" or defName="Lovin2"]/animationFrames/li[3]/headOffset</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/FacialAnimation.FaceAnimationDef[defName="Lovin" or defName="Lovin2"]/animationFrames/li[4]/headOffset</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/FacialAnimation.FaceAnimationDef[defName="Lovin" or defName="Lovin2"]/animationFrames/li[5]/headOffset</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/FacialAnimation.FaceAnimationDef[defName="Lovin" or defName="Lovin2"]/animationFrames/li[6]/headOffset</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/FacialAnimation.FaceAnimationDef[defName="Lovin" or defName="Lovin2"]/animationFrames/li[7]/headOffset</xpath>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/FacialAnimation.FaceAnimationDef[defName="Lovin" or defName="Lovin2"]/animationFrames/li[8]/headOffset</xpath>
+					<success>Always</success>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+-->

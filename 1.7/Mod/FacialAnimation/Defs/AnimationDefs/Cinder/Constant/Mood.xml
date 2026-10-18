@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>moodCheerful_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>1</duration>
+        <emotionShapeDef>cheerful</emotionShapeDef>
+      </li>
+    </animationFrames>
+    <priority>1000</priority>
+    <targetMoodMax>1.00</targetMoodMax>
+    <targetMoodMin>0.80</targetMoodMin>
+  </FacialAnimation.FaceAnimationDef>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>moodCheerful2_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>1</duration>
+        <mouthShapeDef>smile</mouthShapeDef>
+      </li>
+    </animationFrames>
+    <priority>1</priority>
+    <targetMoodMax>1.00</targetMoodMax>
+    <targetMoodMin>0.80</targetMoodMin>
+  </FacialAnimation.FaceAnimationDef>
+
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>moodGloomy_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>1</duration>
+        <browShapeDef>s-shaped</browShapeDef>
+      </li>
+    </animationFrames>
+    <priority>100000</priority>
+    <targetMoodMax>0.40</targetMoodMax>
+    <targetMoodMin>0.20</targetMoodMin>
+  </FacialAnimation.FaceAnimationDef>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>moodHopeless_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>1</duration>
+        <emotionShapeDef>gloomy</emotionShapeDef>
+        <browShapeDef>s-shaped</browShapeDef>
+      </li>
+    </animationFrames>
+    <priority>100000</priority>
+    <targetMoodMax>0.20</targetMoodMax>
+    <targetMoodMin>0.00</targetMoodMin>
+  </FacialAnimation.FaceAnimationDef>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>moodHopeless2_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>1</duration>
+        <lidShapeDef>half</lidShapeDef>
+      </li>
+    </animationFrames>
+    <priority>100</priority>
+    <targetMoodMax>0.20</targetMoodMax>
+    <targetMoodMin>0.00</targetMoodMin>
+  </FacialAnimation.FaceAnimationDef>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>moodHopeless3_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>1</duration>
+        <mouthShapeDef>sad</mouthShapeDef>
+      </li>
+    </animationFrames>
+    <priority>1</priority>
+    <targetMoodMax>0.20</targetMoodMax>
+    <targetMoodMin>0.00</targetMoodMin>
+  </FacialAnimation.FaceAnimationDef>
+  
+</Defs>

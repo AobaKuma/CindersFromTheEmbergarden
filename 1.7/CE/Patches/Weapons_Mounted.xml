@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>Cinder_Mounted_AA</defName>
+		<statBases>
+			<RangedWeapon_Cooldown>0.99</RangedWeapon_Cooldown>
+			<ShotSpread>0.14</ShotSpread>
+			<SwayFactor>1.31</SwayFactor>
+			<Bulk>10.0</Bulk>
+			<SightsEfficiency>1</SightsEfficiency>
+		</statBases>
+		<Properties>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<defaultProjectile>Bullet_10Gauge_Buck</defaultProjectile>
+			<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+			<burstShotCount>2</burstShotCount>
+			<warmupTime>0</warmupTime>
+			<range>16</range>
+			<soundCast>Shot_Shotgun</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+	</Operation>
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>Cinder_Mounted_EXOturret</defName>
+		<statBases>
+			<RangedWeapon_Cooldown>0.99</RangedWeapon_Cooldown>
+			<ShotSpread>0.14</ShotSpread>
+			<SwayFactor>1.31</SwayFactor>
+			<Bulk>10.0</Bulk>
+			<SightsEfficiency>1</SightsEfficiency>
+		</statBases>
+		<Properties>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<defaultProjectile>Bullet_10Gauge_Buck</defaultProjectile>
+			<warmupTime>0</warmupTime>
+			<range>16</range>
+			<soundCast>Shot_Shotgun</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+	</Operation>
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>Cinder_Mounted_Rocket</defName>
+		<statBases>
+			<RangedWeapon_Cooldown>0.99</RangedWeapon_Cooldown>
+			<ShotSpread>2</ShotSpread>
+			<SwayFactor>1.31</SwayFactor>
+			<Bulk>10.0</Bulk>
+			<SightsEfficiency>1</SightsEfficiency>
+		</statBases>
+		<Properties>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<defaultProjectile>Bullet_20mmFliegerfaust_HE</defaultProjectile>
+			<warmupTime>0</warmupTime>
+			<range>44</range>
+			<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+			<burstShotCount>3</burstShotCount>
+			<soundCast>RocketswarmLauncher_Fire</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+	</Operation>
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>Cinder_Mounted_EXOminigun</defName>
+		<statBases>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>2</ShotSpread>
+			<SwayFactor>1.33</SwayFactor>
+			<Bulk>10.03</Bulk>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.50</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+			<warmupTime>0</warmupTime>
+			<range>55</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+			<soundCast>Shot_AssaultRifle</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+	</Operation>
+
+	<!-- Kord -->
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>Cinder_Mounted_KPVTurret</defName>
+		<statBases>
+			<Mass>85</Mass>
+			<Bulk>39</Bulk>
+			<SwayFactor>1.66</SwayFactor>
+			<ShotSpread>0.06</ShotSpread>
+			<SightsEfficiency>1</SightsEfficiency>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.53</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_145x114mm_FMJ</defaultProjectile>
+			<burstShotCount>8</burstShotCount>
+			<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+			<warmupTime>1.4</warmupTime>
+			<range>75</range>
+			<soundCast>Shot_Autocannon</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>12</muzzleFlashScale>
+			<recoilPattern>Mounted</recoilPattern>
+		</Properties>
+		<FireModes>
+			<noSingleShot>true</noSingleShot>
+			<aiUseBurstMode>FALSE</aiUseBurstMode>
+			<aiAimMode>Snapshot</aiAimMode>
+			<aimedBurstShotCount>6</aimedBurstShotCount>
+		</FireModes>
+	</Operation>
+</Patch>

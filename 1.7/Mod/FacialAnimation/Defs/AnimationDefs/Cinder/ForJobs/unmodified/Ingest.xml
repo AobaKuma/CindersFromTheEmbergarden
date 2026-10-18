@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FacialAnimation.FaceAnimationDef>
+    <defName>Ingest_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>4</duration>
+        <headOffset>(0.0,0,0.0025)</headOffset>
+        <mouthShapeDef>open</mouthShapeDef>
+      </li>
+      <li>
+        <duration>4</duration>
+        <headOffset>(0.0,0,0.005)</headOffset>
+        <mouthShapeDef>open</mouthShapeDef>
+      </li>
+      <li>
+        <duration>6</duration>
+        <headOffset>(0.0,0,0)</headOffset>
+        <mouthShapeDef>normal</mouthShapeDef>
+      </li>
+    </animationFrames>
+    <roopIntervalMin>0</roopIntervalMin>
+    <roopIntervalMax>30</roopIntervalMax>
+    <targetJobs>
+      <li>Ingest</li>
+    </targetJobs>
+    <priority>10</priority>
+    <applyWhenStandingOnly>true</applyWhenStandingOnly>
+  </FacialAnimation.FaceAnimationDef>
+</Defs>

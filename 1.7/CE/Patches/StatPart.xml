@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/StatDef[defName="SwayFactor"]/parts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/StatDef[defName="SwayFactor"]</xpath>
+			<value>
+				<parts />
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/StatDef[defName="ShotSpread"]/parts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/StatDef[defName="ShotSpread"]</xpath>
+			<value>
+				<parts />
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/StatDef[defName="SightsEfficiency"]/parts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/StatDef[defName="SightsEfficiency"]</xpath>
+			<value>
+				<parts />
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName = "SwayFactor" or defName = "ShotSpread" or defName = "SightsEfficiency"]/parts</xpath>
+		<value>
+			<li Class="Embergarden.StatPart_SecondaryMode">
+				<desc>Secondary mode: {OFFSET}</desc>
+			</li>
+		</value>
+	</Operation>
+</Patch>

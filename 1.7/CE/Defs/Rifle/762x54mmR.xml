@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="762x54mmRBase">
+		<defName>Ammo_762x54mmR_Erosion</defName>
+		<label>7.62x54mmR cartridge (Erosion)</label>
+		<graphicData>
+			<texPath>Things/Ammo/762Ero</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.12</MarketValue>
+			<Mass>0.022</Mass>
+		</statBases>
+		<ammoClass>Cinder_Erosion</ammoClass>
+		<cookOffProjectile>Bullet_762x54mmR_Erosion</cookOffProjectile>
+		<descriptionHyperlinks>
+			<HediffDef>Cinder_Erosion_Bullet</HediffDef>
+		</descriptionHyperlinks>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef ParentName="Base762x54mmRBullet">
+		<defName>Bullet_762x54mmR_Erosion</defName>
+		<label>7.62x54mmR cartridge bullet (Erosion)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Cider_ErosionBullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationSharp>25</armorPenetrationSharp>
+			<armorPenetrationBlunt>87.280</armorPenetrationBlunt>
+			<speed>210</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AdvancedAmmoRecipeBase">
+		<defName>MakeAmmo_762x54mmR_Erosion</defName>
+		<label>make 7.62x54mmR (Erosion) cartridge x500</label>
+		<description>Craft 500 7.62x54mmR (Erosion) cartridges.</description>
+		<jobString>Making 7.62x54mmR (Erosion) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Cinder_AmorphousPolymer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_762x54mmR_Erosion>500</Ammo_762x54mmR_Erosion>
+		</products>
+		<recipeUsers Inherit="false">
+			<li>Cinder_AncientWorkstation</li>
+		</recipeUsers>
+		<workAmount>3600</workAmount>
+	</RecipeDef>
+
+</Defs>

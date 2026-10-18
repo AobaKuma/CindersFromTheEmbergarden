@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FacialAnimation.FaceAnimationDef>
+    <defName>FleeAndCower_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>1</duration>
+        <browShapeDef>s-shaped</browShapeDef>
+        <emotionShapeDef>gloomy</emotionShapeDef>
+        <mouthShapeDef>puzzle</mouthShapeDef>
+      </li>
+    </animationFrames>
+    <targetJobs>
+      <li>FleeAndCower</li>
+      <li>FleeAndCowerShort</li>
+    </targetJobs>
+    <priority>10200</priority>
+  </FacialAnimation.FaceAnimationDef>
+</Defs>

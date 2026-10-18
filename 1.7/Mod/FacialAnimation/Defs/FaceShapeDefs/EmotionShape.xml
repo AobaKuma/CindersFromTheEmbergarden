@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FacialAnimation.EmotionShapeDef>
+  	<defName>normal</defName>
+  </FacialAnimation.EmotionShapeDef>
+
+  <FacialAnimation.EmotionShapeDef>
+    <defName>gloomy</defName>
+  </FacialAnimation.EmotionShapeDef>
+
+  <FacialAnimation.EmotionShapeDef>
+    <defName>cheerful</defName>
+  </FacialAnimation.EmotionShapeDef>
+  
+  
+
+</Defs>

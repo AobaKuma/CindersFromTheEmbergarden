@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <FacialAnimation.LidTypeDef>
+	  <defName>Cinder_LidNormal1</defName>
+	  <texPath>Things/Pawn/Cinder/Lids/Normal1</texPath>
+	  <shader>Map/Transparent</shader>
+	  <raceName>Alien_Cinder</raceName>
+  </FacialAnimation.LidTypeDef>
+
+  <FacialAnimation.LidTypeDef>
+	  <defName>Cinder_LidNormal2</defName>
+	  <texPath>Things/Pawn/Cinder/Lids/Normal2</texPath>
+	  <shader>Map/Transparent</shader>
+	  <raceName>Alien_Cinder</raceName>
+  </FacialAnimation.LidTypeDef>
+
+  <FacialAnimation.LidTypeDef>
+	  <defName>Cinder_LidNormal3</defName>
+	  <texPath>Things/Pawn/Cinder/Lids/Normal3</texPath>
+	  <shader>Map/Transparent</shader>
+	  <raceName>Alien_Cinder</raceName>
+  </FacialAnimation.LidTypeDef>
+
+  <FacialAnimation.LidTypeDef>
+	  <defName>Cinder_LidNormal4</defName>
+	  <texPath>Things/Pawn/Cinder/Lids/Normal4</texPath>
+	  <shader>Map/Transparent</shader>
+	  <raceName>Alien_Cinder</raceName>
+  </FacialAnimation.LidTypeDef>
+
+  <FacialAnimation.LidTypeDef>
+	  <defName>Cinder_LidNormal5</defName>
+	  <texPath>Things/Pawn/Cinder/Lids/Normal5</texPath>
+	  <shader>Map/Transparent</shader>
+	  <raceName>Alien_Cinder</raceName>
+  </FacialAnimation.LidTypeDef>
+
+  <FacialAnimation.LidTypeDef>
+	  <defName>Cinder_LidNormal6</defName>
+	  <texPath>Things/Pawn/Cinder/Lids/Normal6</texPath>
+	  <shader>Map/Transparent</shader>
+	  <raceName>Alien_Cinder</raceName>
+  </FacialAnimation.LidTypeDef>
+
+  <FacialAnimation.LidTypeDef>
+	  <defName>Cinder_LidNormal7</defName>
+	  <texPath>Things/Pawn/Cinder/Lids/Normal7</texPath>
+	 <shader>Map/CutoutSkin</shader>
+    <shaderColorOverride>Map/CutoutSkinOverride</shaderColorOverride>
+	  <raceName>Alien_Cinder</raceName>
+  </FacialAnimation.LidTypeDef>  
+</Defs>

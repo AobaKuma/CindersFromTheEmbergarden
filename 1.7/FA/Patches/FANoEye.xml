@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+     <Operation Class="PatchOperationConditional">
+		<xpath>Defs/HediffDef[defName="Cinder_EyeHediff"]/renderNodeProperties</xpath>
+		<match Class="PatchOperationRemove">
+		<xpath>Defs/HediffDef[defName="Cinder_EyeHediff"]/renderNodeProperties</xpath>
+		</match>
+	</Operation>
+</Patch>

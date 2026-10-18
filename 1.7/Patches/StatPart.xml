@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/StatDef[defName="AccuracyTouch"]/parts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/StatDef[defName="AccuracyTouch"]</xpath>
+			<value>
+				<parts />
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/StatDef[defName="AccuracyShort"]/parts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/StatDef[defName="AccuracyShort"]</xpath>
+			<value>
+				<parts />
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/StatDef[defName="AccuracyMedium"]/parts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/StatDef[defName="AccuracyMedium"]</xpath>
+			<value>
+				<parts />
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/StatDef[defName="AccuracyLong"]/parts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/StatDef[defName="AccuracyLong"]</xpath>
+			<value>
+				<parts />
+			</value>
+		</nomatch>
+	</Operation>
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName = "AccuracyTouch" or defName = "AccuracyShort" or defName = "AccuracyMedium" or defName = "AccuracyLong"]/parts</xpath>
+		<value>
+			<li Class="Embergarden.StatPart_SecondaryMode">
+				<desc>Secondary mode: {OFFSET}</desc>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>/Defs/ThinkTreeDef[defName="MentalStateCritical"]/thinkRoot/subNodes/li[state="BerserkTrance"]</xpath>
+		<value>
+			<li Class="ThinkNode_ConditionalMentalState">
+				<state>Cinder_EternalFear</state>
+				<subNodes>
+					<li Class="ThinkNode_Priority">
+						<subNodes>
+							<li Class="Embergarden.JobGiver_FleeAllPawnsUnfucked" />
+							<li Class="ThinkNode_PrioritySorter">
+								<subNodes>
+									<li Class="JobGiver_GetFood">
+										<maxLevelPercentage>0.05</maxLevelPercentage>
+									</li>
+									<li Class="JobGiver_GetRest">
+										<maxLevelPercentage>0.15</maxLevelPercentage>
+									</li>
+								</subNodes>
+							</li>
+							<li Class="JobGiver_WanderAnywhere">
+								<maxDanger>Some</maxDanger>
+								<locomotionUrgency>Jog</locomotionUrgency>
+							</li>
+						</subNodes>
+					</li>
+				</subNodes>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_AdvancedHelmet"]/apparel/tags</xpath>
+		<value>
+			<li>Cinder_Military</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_SimpleHelmet"]/apparel/tags</xpath>
+		<value>
+			<li>Cinder_Military</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_FlakVest"]/apparel/tags</xpath>
+		<value>
+			<li>Cinder_Military</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_FlakJacket"]/apparel/tags</xpath>
+		<value>
+			<li>Cinder_Military</li>
+		</value>
+	</Operation>
+</Patch>

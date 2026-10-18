@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BasePawn" Name="Cinder_BaseTurretWalker" Abstract="True">
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<statBases>
+			<MoveSpeed>4.3</MoveSpeed>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+			<MarketValue>500</MarketValue>
+			<PsychicSensitivity>0.5</PsychicSensitivity>
+			<ToxicResistance>1</ToxicResistance>
+			<Flammability>0</Flammability>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<ComfyTemperatureMax>250</ComfyTemperatureMax>
+			<MeatAmount>0</MeatAmount>
+			<ArmorRating_Heat>2.00</ArmorRating_Heat>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+			<NecrotionResistance MayRequireAnyOf="BlackMarket420.TAOFC,BlackMarket420.TAOFC.1.5">2.0</NecrotionResistance>
+	        <NecrotionEnvironmentResistance MayRequireAnyOf="BlackMarket420.TAOFC,BlackMarket420.TAOFC.1.5">2.0</NecrotionEnvironmentResistance>
+		</statBases>
+		<damageMultipliers>
+			<li MayRequire="CETeam.CombatExtended">
+				<damageDef>Fragment</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li MayRequire="CETeam.CombatExtended">
+				<damageDef>Bomb_Secondary</damageDef>
+				<multiplier>0.05</multiplier>
+			</li>
+			<li MayRequire="CETeam.CombatExtended">
+				<damageDef>Thermobaric</damageDef>
+				<multiplier>2.5</multiplier>
+			</li>
+			<li MayRequire="CETeam.CombatExtended">
+				<damageDef>Electrical</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li MayRequire="CETeam.CombatExtended">
+				<damageDef>Bullet</damageDef>
+				<multiplier>0.25</multiplier>
+			</li>
+			<li>
+				<damageDef>Cinder_BombD</damageDef>
+				<multiplier>10</multiplier>
+			</li>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>4</multiplier>
+			</li>
+			<li>
+				<damageDef>Demolish</damageDef>
+				<multiplier>7.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>7.5</multiplier>
+			</li>
+			<li MayRequire="BlackMarket420.TAOFC.1.5">
+				<damageDef>Damage_ExtremeInfection</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
+		<receivesSignals>true</receivesSignals>
+		<tradeability>None</tradeability>
+		<race>
+			<fleshType>Mechanoid</fleshType>
+			<needsRest>false</needsRest>
+			<hasGenders>false</hasGenders>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<baseHungerRate>0</baseHungerRate>
+			<lifeExpectancy>2500</lifeExpectancy>
+			<bloodDef>Filth_MachineBits</bloodDef>
+			<soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+			<soundCallIntervalFriendlyFactor>2</soundCallIntervalFriendlyFactor>
+			<thinkTreeConstant MayRequire="Ludeon.RimWorld.Biotech">MechConstant</thinkTreeConstant>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Cinder_WalkerTurret</thinkTreeMain>
+			<baseBodySize>2</baseBodySize>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+					<soundCall>Pawn_Mech_Centipede_Call</soundCall>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+					<soundCall>Pawn_Mech_Centipede_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<comps>
+			<li Class="CompProperties_CanBeDormant" />
+			<li Class="CompProperties_WakeUpDormant">
+				<wakeUpOnDamage>true</wakeUpOnDamage>
+				<wakeUpCheckRadius>30</wakeUpCheckRadius>
+				<wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="CompProperties_MechRepairable" />
+			<li>
+				<compClass>Embergarden.CompTransformWhenDowned</compClass>
+			</li>
+		</comps>
+		<butcherProducts>
+			<Cinder_AmorphousPolymer>25</Cinder_AmorphousPolymer>
+		</butcherProducts>
+		<modExtensions>
+			<li Class="Embergarden.ModExtension_Draftable"/>
+		</modExtensions>
+	</ThingDef>
+</Defs>

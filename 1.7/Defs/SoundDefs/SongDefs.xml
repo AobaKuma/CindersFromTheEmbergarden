@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<SongDef>
+		<defName>Cinder_SongA</defName>
+		<clipPath>Songs/Cinder_SongA</clipPath>
+		<volume>1.0</volume>
+		<tense>true</tense>
+		<commonality>0</commonality>
+	</SongDef>
+
+	<SongDef>
+		<defName>Cinder_SongB</defName>
+		<clipPath>Songs/Cinder_SongB</clipPath>
+		<volume>1.0</volume>
+		<tense>true</tense>
+		<commonality>0</commonality>
+	</SongDef>
+</Defs>

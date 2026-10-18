@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FacialAnimation.FaceAnimationDef>
+    <defName>laydown_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>1</duration>
+        <browShapeDef>flat</browShapeDef>
+        <lidShapeDef>close</lidShapeDef>
+        <mouthShapeDef>normal</mouthShapeDef>
+      </li>
+    </animationFrames>
+    <roopIntervalMin>0</roopIntervalMin>
+    <roopIntervalMax>0</roopIntervalMax>
+    <targetJobs>
+      <li>LayDown</li>
+    </targetJobs>
+    <priority>10001</priority>
+    <applyWhenStandingOnly>true</applyWhenStandingOnly>
+  </FacialAnimation.FaceAnimationDef>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>laydown2_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>240</duration>
+        <mouthShapeDef>open</mouthShapeDef>
+      </li>
+    </animationFrames>
+    <roopIntervalMin>100</roopIntervalMin>
+    <roopIntervalMax>500</roopIntervalMax>
+    <targetJobs>
+      <li>LayDown</li>
+    </targetJobs>
+    <priority>10002</priority>
+    <applyWhenStandingOnly>true</applyWhenStandingOnly>
+  </FacialAnimation.FaceAnimationDef>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>laydown3_Cinder</defName>
+	<raceName>Alien_Cinder</raceName>
+    <animationFrames>
+      <li>
+        <duration>15</duration>
+        <lidOffset>(0.0,0,0.0015)</lidOffset>
+        <headOffset>(0,0,0.0035)</headOffset>
+        <browOffset>(0,0,0.00025)</browOffset>
+        <mouthOffset>(0,0,0.000625)</mouthOffset>
+      </li>
+      <li>
+        <duration>60</duration>
+        <lidOffset>(0.0,0,0.00275)</lidOffset>
+        <headOffset>(0,0,0.0075)</headOffset>
+        <browOffset>(0,0,0.00375)</browOffset>
+        <mouthOffset>(0,0,0.00125)</mouthOffset>
+      </li>
+      <li>
+        <duration>10</duration>
+        <lidOffset>(0.0,0,0.0015)</lidOffset>
+        <headOffset>(0,0,0.0035)</headOffset>
+        <browOffset>(0,0,0.00025)</browOffset>
+        <mouthOffset>(0,0,0.000625)</mouthOffset>
+      </li>
+    </animationFrames>
+    <roopIntervalMin>40</roopIntervalMin>
+    <roopIntervalMax>200</roopIntervalMax>
+    <targetJobs>
+      <li>LayDown</li>
+    </targetJobs>
+    <priority>10003</priority>
+    <applyWhenStandingOnly>true</applyWhenStandingOnly>
+  </FacialAnimation.FaceAnimationDef>
+</Defs>

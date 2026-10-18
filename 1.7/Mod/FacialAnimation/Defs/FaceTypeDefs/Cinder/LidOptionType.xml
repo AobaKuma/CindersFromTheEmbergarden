@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--   <FacialAnimation.LidOptionTypeDef>
+	  <defName>Cinder_LidOptionNormal1</defName>
+	  <texPath>Things/Pawn/Cinder/LidOptions/Normal1</texPath>
+    <shader>Map/Transparent</shader>
+    <minColor>(1,1,1,1)</minColor>
+    <maxColor>(1,1,1,1)</maxColor>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.LidOptionTypeDef>
+  <FacialAnimation.LidOptionTypeDef>
+	  <defName>Cinder_LidOptionNormal2</defName>
+	  <texPath>Things/Pawn/Cinder/LidOptions/Normal2</texPath>
+    <shader>Map/Transparent</shader>
+    <minColor>(1,1,1,1)</minColor>
+    <maxColor>(1,1,1,1)</maxColor>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.LidOptionTypeDef>
+  <FacialAnimation.LidOptionTypeDef>
+	  <defName>Cinder_LidOptionNormal3</defName>
+	  <texPath>Things/Pawn/Cinder/LidOptions/Normal3</texPath>
+    <shader>Map/Transparent</shader>
+    <minColor>(1,1,1,1)</minColor>
+    <maxColor>(1,1,1,1)</maxColor>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.LidOptionTypeDef> -->
+  <FacialAnimation.LidOptionTypeDef>
+	  <defName>Cinder_LidOptionNormal4</defName>
+	  <texPath>Things/Pawn/Cinder/LidOptions/Normal4</texPath>
+    <shader>Map/Transparent</shader>
+    <minColor>(1,1,1,1)</minColor>
+    <maxColor>(1,1,1,1)</maxColor>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.LidOptionTypeDef>
+<!--   <FacialAnimation.LidOptionTypeDef>
+	  <defName>Cinder_LidOptionNormal5</defName>
+	  <texPath>Things/Pawn/Cinder/LidOptions/Normal5</texPath>
+    <shader>Map/Transparent</shader>
+    <minColor>(1,1,1,1)</minColor>
+    <maxColor>(1,1,1,1)</maxColor>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.LidOptionTypeDef>
+  <FacialAnimation.LidOptionTypeDef>
+	  <defName>Cinder_LidOptionNormal6</defName>
+	  <texPath>Things/Pawn/Cinder/LidOptions/Normal6</texPath>
+    <shader>Map/Transparent</shader>
+    <minColor>(1,1,1,1)</minColor>
+    <maxColor>(1,1,1,1)</maxColor>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.LidOptionTypeDef>
+  <FacialAnimation.LidOptionTypeDef>
+	  <defName>Cinder_LidOptionNormal7</defName>
+	  <texPath>Things/Pawn/Cinder/LidOptions/Normal7</texPath>
+    <shader>Map/Transparent</shader>
+    <minColor>(1,1,1,1)</minColor>
+    <maxColor>(1,1,1,1)</maxColor>
+	<raceName>Alien_Cinder</raceName>
+  </FacialAnimation.LidOptionTypeDef> -->
+</Defs>

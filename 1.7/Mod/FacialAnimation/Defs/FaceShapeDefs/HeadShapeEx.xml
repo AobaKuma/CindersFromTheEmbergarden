@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <FacialAnimation.HeadShapeDef>
+    <defName>hot</defName>
+    <altShapeDef>blush</altShapeDef>
+  </FacialAnimation.HeadShapeDef>
+
+  <FacialAnimation.HeadShapeDef>
+    <defName>cold</defName>
+    <altShapeDef>normal</altShapeDef>
+  </FacialAnimation.HeadShapeDef>
+
+</Defs>

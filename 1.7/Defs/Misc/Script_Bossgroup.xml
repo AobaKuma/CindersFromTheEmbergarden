@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<QuestScriptDef>
+		<defName>Cinder_Boss</defName>
+		<defaultHidden>true</defaultHidden>
+		<autoAccept>true</autoAccept>
+		<questNameRules>
+			<rulesStrings>
+				<li>questName->bossgroup</li>
+				<!-- hidden -->
+			</rulesStrings>
+		</questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription->bossgroup</li>
+				<!-- hidden -->
+			</rulesStrings>
+		</questDescriptionRules>
+		<questContentRules>
+			<rulesStrings>
+
+				<li>bossDefeatedLetterLabel->[escortees0_label] defeated</li>
+
+				<li>bossDefeatedStudyChipLetterText->[defeated][study][manufacture]</li>
+				<li>bossDefeatedLetterText->[defeated][manufacture]</li>
+
+				<li>defeated->The hostile [escortees0_label] has been defeated and has dropped a [reward_label]!</li>
+				<li>manufacture->\n\nThis armor plate can be worn by anyone, providing defense against bullets.</li>
+				<li>study->\n\nYou can unlock subsequent technologies by studying [reward_label].</li>
+
+			</rulesStrings>
+		</questContentRules>
+		<root Class="Embergarden.QuestNode_Root_BossgroupFactionExposed">
+			<factionDef>Cinder_ESDSP</factionDef>
+			<LetterLabelBossgroupSummoned>The combat unit has been summoned</LetterLabelBossgroupSummoned>
+			<LetterBossgroupSummoned>Your forged signal has been sent out, and the combat unit is about to arrive,please prepare for battle.</LetterBossgroupSummoned>
+
+			<LetterLabelBossgroupArrived>combat unit arrived.</LetterLabelBossgroupArrived>
+			<LetterBossgroupArrived>combat unit arrived！</LetterBossgroupArrived>
+
+			<AlertBossgroupIncoming>Combat unit is approaching.</AlertBossgroupIncoming>
+			<AlertBossgroupIncomingDesc>Combat unit is approaching.</AlertBossgroupIncomingDesc>
+		</root>
+	</QuestScriptDef>
+
+</Defs>
