@@ -42,14 +42,4 @@ namespace Embergarden.Storytelling
         }
     }
 
-    // 原版选项无配色入口
-    [HarmonyPatch(typeof(Widgets), nameof(Widgets.ButtonText), typeof(Rect), typeof(string),
-        typeof(bool), typeof(bool), typeof(Color), typeof(bool), typeof(TextAnchor?))]
-    public static class EmberDialogueOptionColorPatch
-    {
-        public static void Prefix(ref Color textColor)
-        {
-            if (EmberDialogueTheme.Active) textColor = EmberDialogueTheme.TextColor;
-        }
-    }
 }
