@@ -4,7 +4,7 @@ namespace Embergarden.Storytelling
 {
     public static class RaidGenerationLog
     {
-        public static bool Enabled = true;
+        public static bool Enabled = false;
         private static string lastBlocked;
         private static string lastFailure;
 
