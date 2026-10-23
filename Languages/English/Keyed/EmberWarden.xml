@@ -2,6 +2,10 @@
 <LanguageData>
   <Cinder_StorySettingsCategory>Cinders: Storyteller</Cinder_StorySettingsCategory>
   <Cinder_StorySettingsIntro>Fumée alternates long respites with periods of extreme, continuous combat.</Cinder_StorySettingsIntro>
+  <Cinder_EmberWarden_CalmName>Merciful Fumée</Cinder_EmberWarden_CalmName>
+  <Cinder_EmberWarden_CalmDescription>An amnesiac girl from a clinic in the ruins' basement. She holds the stories of the colony with tenderness, yet disaster and tragedy do not yield to anyone's will. Fumée tells her story by alternating long respites with periods of extreme, continuous combat.\n\nExtreme events and relentless battles will keep coming throughout battle. Be prepared.</Cinder_EmberWarden_CalmDescription>
+  <Cinder_EmberWarden_BattleName>Mourning Fumée</Cinder_EmberWarden_BattleName>
+  <Cinder_EmberWarden_BattleDescription>A cinder girl who draws her blade to protect the colony. War and disaster have arrived; mercy and tenderness are not weapons against the enemy.\n\nExtreme events and relentless battles will keep coming throughout battle. Be prepared.</Cinder_EmberWarden_BattleDescription>
   <Cinder_CalmMinDays>Minimum respite: {0} days</Cinder_CalmMinDays>
   <Cinder_CalmMaxDays>Maximum respite: {0} days</Cinder_CalmMaxDays>
   <Cinder_CalmVeryShortPrompt>How much respite are you willing to give her?</Cinder_CalmVeryShortPrompt>

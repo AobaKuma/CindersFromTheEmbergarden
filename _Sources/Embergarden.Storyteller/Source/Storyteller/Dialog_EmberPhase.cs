@@ -14,6 +14,7 @@ namespace Embergarden.Storytelling
         private const float TitleHeight = 32f;
         private const float SectionGap = 8f;
         private const float MinimumButtonWidth = 180f;
+        private const float MinimumButtonHeight = 40f;
         private const float ButtonPadding = 24f;
         private const float ScrollbarWidth = 16f;
         private readonly Texture2D portrait;
@@ -94,6 +95,7 @@ namespace Embergarden.Storytelling
                 Text.CalcSize(buttonAText).x + ButtonPadding));
             float height = Mathf.Max(ButtonHeight,
                 Text.CalcHeight(buttonAText, width - ButtonPadding) + SectionGap);
+            height = Mathf.Max(MinimumButtonHeight, height);
             return new Rect(rect.xMax - width, rect.yMax - height, width, height);
         }
 
