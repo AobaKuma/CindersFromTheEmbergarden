@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Cinder_StorySettingsCategory>余烬花园：叙事者</Cinder_StorySettingsCategory>
+  <Cinder_StorySettingsIntro>暖雾以漫长的休养期与极高压的连续战斗期交替讲述故事。</Cinder_StorySettingsIntro>
+  <Cinder_EmberWarden_CalmName>「慈悲」暖雾</Cinder_EmberWarden_CalmName>
+  <Cinder_EmberWarden_CalmDescription>废墟地下室诊所的失忆少女，她对殖民地的故事充满温柔，但灾难与悲剧的降临不会因为谁的意志而改变。暖雾以漫长的休养期与极高压的连续战斗期交替讲述故事。\n\n极端的事件与频繁的高压战斗会在战斗期不断发生，做好准备。</Cinder_EmberWarden_CalmDescription>
+  <Cinder_EmberWarden_BattleName>「哀恸」暖雾</Cinder_EmberWarden_BattleName>
+  <Cinder_EmberWarden_BattleDescription>拔出利刃保护殖民地的烟烬少女，战争与灾难已经来临，仁慈与温柔不是抵抗敌人的武器。\n\n极端的事件与频繁的高压战斗会在战斗期不断发生，做好准备。</Cinder_EmberWarden_BattleDescription>
+  <Cinder_CalmMinDays>平静期最短天数：{0} 天</Cinder_CalmMinDays>
+  <Cinder_CalmMaxDays>平静期最长天数：{0} 天</Cinder_CalmMaxDays>
+  <Cinder_CalmVeryShortPrompt>你愿意给她多长的喘息时间？</Cinder_CalmVeryShortPrompt>
+  <Cinder_ResetStorySettings>恢复默认时长</Cinder_ResetStorySettings>
+  <Cinder_DefaultReply>...</Cinder_DefaultReply>
+  <Cinder_BattleFallback>这是一个默认回退文本，如果你看到这个，请汇报</Cinder_BattleFallback>
+  <Cinder_CalmFallback>这是一个默认回退文本，如果你看到这个，请汇报</Cinder_CalmFallback>
+</LanguageData>

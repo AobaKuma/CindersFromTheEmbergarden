@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Cinder_Warden_StartApproaching.text>“侦查显示大批敌人正在接近，这次不是单独的袭击，做好防御准备吧，我们一起活下来。”</Cinder_Warden_StartApproaching.text>
+  <Cinder_Warden_StartApproaching.confirmationText>应对灾难</Cinder_Warden_StartApproaching.confirmationText>
+  <Cinder_Warden_StartPromise.text>“敌人们又来了…只要我们一起就不会有事的，答应我活下去。”</Cinder_Warden_StartPromise.text>
+  <Cinder_Warden_StartPromise.confirmationText>战斗戒备</Cinder_Warden_StartPromise.confirmationText>
+  <Cinder_Warden_StartGunfire.text>“好吵！到处都是枪声，他们要来了，我会保护你们的…不要放弃。”</Cinder_Warden_StartGunfire.text>
+  <Cinder_Warden_StartGunfire.confirmationText>战斗戒备</Cinder_Warden_StartGunfire.confirmationText>
+  <Cinder_Warden_EndSurvived.text>“战斗终于结束了，我们还没有完全失败，我们还活着，这就足够了”</Cinder_Warden_EndSurvived.text>
+  <Cinder_Warden_EndSurvived.confirmationText>风暴平息</Cinder_Warden_EndSurvived.confirmationText>
+  <Cinder_Warden_EndWounded.text>“结束了…我看到很多人都躺在地上，那些惨叫声停下了吗？”</Cinder_Warden_EndWounded.text>
+  <Cinder_Warden_EndWounded.confirmationText>风暴平息</Cinder_Warden_EndWounded.confirmationText>
+  <Cinder_Warden_EndLoss.text>“我们活下来了…可是，又有人死掉了，我本可以保护他们，动作再快一点就好了…”</Cinder_Warden_EndLoss.text>
+  <Cinder_Warden_EndLoss.confirmationText>为逝者哀悼</Cinder_Warden_EndLoss.confirmationText>
+</LanguageData>

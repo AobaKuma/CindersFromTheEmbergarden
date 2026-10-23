@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <Embergarden.Storytelling.EmberDialogueDef>
+    <defName>Cinder_Warden_StartApproaching</defName>
+    <phase>BattleStart</phase>
+    <text>“Scouts report that a large enemy force is approaching. This is not a lone raid. Prepare the defenses. We'll survive this together.”</text>
+    <confirmationText>Face the disaster</confirmationText>
+    <weight>1</weight>
+  </Embergarden.Storytelling.EmberDialogueDef>
+  <Embergarden.Storytelling.EmberDialogueDef>
+    <defName>Cinder_Warden_StartPromise</defName>
+    <phase>BattleStart</phase>
+    <text>“They're coming again... As long as we stay together, it will be all right. Promise me you'll live.”</text>
+    <confirmationText>Battle stations</confirmationText>
+    <weight>1</weight>
+  </Embergarden.Storytelling.EmberDialogueDef>
+  <Embergarden.Storytelling.EmberDialogueDef>
+    <defName>Cinder_Warden_StartGunfire</defName>
+    <phase>BattleStart</phase>
+    <text>“So loud! Gunfire everywhere. They're coming. I'll protect you... Don't give up.”</text>
+    <confirmationText>Battle stations</confirmationText>
+    <weight>1</weight>
+  </Embergarden.Storytelling.EmberDialogueDef>
+  <Embergarden.Storytelling.EmberDialogueDef>
+    <defName>Cinder_Warden_EndSurvived</defName>
+    <phase>BattleEnd</phase>
+    <tag>Survived</tag>
+    <text>“It's finally over. We haven't lost everything. We're alive, and that's enough.”</text>
+    <confirmationText>The storm has passed</confirmationText>
+    <conditions><li><metric>Deaths</metric><max>0</max></li><li><metric>Downed</metric><max>0</max></li></conditions>
+  </Embergarden.Storytelling.EmberDialogueDef>
+  <Embergarden.Storytelling.EmberDialogueDef>
+    <defName>Cinder_Warden_EndWounded</defName>
+    <phase>BattleEnd</phase>
+    <tag>Wounded</tag>
+    <text>“It's over... I see so many people lying on the ground. Have the screams stopped?”</text>
+    <confirmationText>The storm has passed</confirmationText>
+    <conditions><li><metric>Downed</metric><min>1</min></li></conditions>
+  </Embergarden.Storytelling.EmberDialogueDef>
+  <Embergarden.Storytelling.EmberDialogueDef>
+    <defName>Cinder_Warden_EndLoss</defName>
+    <phase>BattleEnd</phase>
+    <tag>Death</tag>
+    <text>“We survived... But more people died. If only I could have protected them, if I had been just a little faster...”</text>
+    <confirmationText>Mourn the fallen</confirmationText>
+    <conditions><li><metric>Deaths</metric><min>1</min></li></conditions>
+  </Embergarden.Storytelling.EmberDialogueDef>
+</Defs>

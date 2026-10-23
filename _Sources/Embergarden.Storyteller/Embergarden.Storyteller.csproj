@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <GameVersion Condition="'$(GameVersion)' == ''">1.7</GameVersion>
+    <TargetFramework Condition="'$(GameVersion)' != '1.7'">net48</TargetFramework>
+    <TargetFramework Condition="'$(GameVersion)' == '1.7'">net10.0</TargetFramework>
+    <GameRoot>$(MSBuildThisFileDirectory)..\..\..\..\</GameRoot>
+    <Harmony17Path Condition="'$(Harmony17Path)' == ''">$(GameRoot)..\..\workshop\content\294100\2009463077\1.7\Assemblies\0Harmony.dll</Harmony17Path>
+    <AssemblyName>Embergarden.Storyteller</AssemblyName>
+    <RootNamespace>Embergarden.Storytelling</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>bin\$(GameVersion)\</OutputPath>
+    <Nullable>disable</Nullable>
+    <DefineConstants Condition="'$(GameVersion)' == '1.5'">$(DefineConstants);RW15</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Source\Storyteller\**\*.cs" />
+    <PackageReference Include="Lib.Harmony" Version="2.4.1" ExcludeAssets="runtime" Condition="'$(GameVersion)' != '1.7'" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(GameVersion)' == '1.5'">
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.4409" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(GameVersion)' == '1.6'">
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4566" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(GameVersion)' == '1.7'">
+    <Reference Include="0Harmony" HintPath="$(Harmony17Path)" Private="false" />
+    <Reference Include="Assembly-CSharp" HintPath="$(GameRoot)Assembly-CSharp.dll" Private="false" />
+    <Reference Include="UnityStubs" HintPath="$(GameRoot)UnityStubs.dll" Private="false" />
+  </ItemGroup>
+</Project>

@@ -16,6 +16,14 @@ _ReSharper*/
 Assembly-CSharp.dll 
 UnityEngine.dll 
 
+# Local automated tests
+**/Tests/
+**/tests/
+
+# Build outputs
+**/bin/
+**/obj/
+
 # Exclude optimized .dds textures from RimPy / png2dds
 *.dds
 /cinder (1).zip
