@@ -90,7 +90,7 @@ namespace Embergarden.Storytelling
             Widgets.DrawButtonGraphic(confirm);
             GUI.color = oldColor;
             if (Widgets.ButtonText(confirm, buttonAText, false, true,
-                EmberDialogueTheme.TextColor, true, TextAnchor.MiddleCenter)) Close();
+                Color.white, true, TextAnchor.MiddleCenter)) Close();
         }
 
         private Rect ConfirmationRect(Rect rect)
