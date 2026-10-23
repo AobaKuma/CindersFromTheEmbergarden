@@ -221,7 +221,8 @@ namespace Embergarden.Storytelling
             if (pendingDialog == 0) return;
             if (Find.WindowStack.IsOpen<Dialog_EmberPhase>()) return;
             if (dialogue == null)
-                dialogue = DialoguePlayback.Create(pendingDialog == 1, DialogueContext.Capture(this, Schedule.WaveGoal));
+                dialogue = DialoguePlayback.Create(pendingDialog == 1,
+                    DialogueContext.Capture(this, Schedule.WaveGoal));
             Find.WindowStack.Add(new Dialog_EmberPhase(this, pendingDialog == 1));
         }
 

@@ -5,6 +5,7 @@ using Verse;
 namespace Embergarden.Storytelling
 {
     public enum EmberDialoguePhase { BattleStart, BattleEnd, FollowUp }
+    public enum EmberDialogueTag { None, Survived, Wounded, Death }
     public enum DialogueMetric { Deaths, Downed, Colonists, Waves, CalmDays, Day, Mood, ThreatScale }
 
     public class EmberDialogueCondition
@@ -25,12 +26,11 @@ namespace Embergarden.Storytelling
     public sealed class EmberDialogueDef : Def
     {
         public EmberDialoguePhase phase;
+        public EmberDialogueTag tag;
         [MustTranslate] public string text;
         [MustTranslate] public string confirmationText;
         public float weight = 1f;
         public int priority;
-        public float charactersPerSecond = 24f;
-        public float punctuationPause = 0.18f;
         public bool matchAny;
         public List<EmberDialogueCondition> conditions = new List<EmberDialogueCondition>();
         public List<EmberDialogueReply> replies = new List<EmberDialogueReply>();
@@ -48,8 +48,6 @@ namespace Embergarden.Storytelling
             foreach (string error in base.ConfigErrors()) yield return error;
             if (string.IsNullOrWhiteSpace(text)) yield return "[CinderStory] 对话文本为空";
             if (weight <= 0f) yield return "[CinderStory] 对话权重必须大于零";
-            if (charactersPerSecond <= 0f) yield return "[CinderStory] 逐字速度必须大于零";
-            if (punctuationPause < 0f) yield return "[CinderStory] 标点停顿不能为负";
             if (conditions.Any(c => c.min > c.max)) yield return "[CinderStory] 对话条件上下限颠倒";
             if (replies.Any(r => string.IsNullOrWhiteSpace(r.text))) yield return "[CinderStory] 回复文本为空";
         }

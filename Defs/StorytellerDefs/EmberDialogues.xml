@@ -3,72 +3,46 @@
   <Embergarden.Storytelling.EmberDialogueDef>
     <defName>Cinder_Warden_StartApproaching</defName>
     <phase>BattleStart</phase>
-    <text>“侦查显示大批敌人正在接近，这次不是单独的袭击，做好防御准备吧，一起活下来。”</text>
-    <confirmationText>-[占位符文本-Cinder_Warden_StartApproaching_Confirmation]</confirmationText>
+    <text>“Scouts report that a large enemy force is approaching. This is not a lone raid. Prepare the defenses. We'll survive this together.”</text>
+    <confirmationText>Face the disaster</confirmationText>
     <weight>1</weight>
-    <charactersPerSecond>24</charactersPerSecond>
-    <punctuationPause>0.18</punctuationPause>
   </Embergarden.Storytelling.EmberDialogueDef>
   <Embergarden.Storytelling.EmberDialogueDef>
     <defName>Cinder_Warden_StartPromise</defName>
     <phase>BattleStart</phase>
-    <text>“敌人们又来了…只要我们一起，就不会有事的，答应我…活下去。”</text>
-    <confirmationText>-[占位符文本-Cinder_Warden_StartPromise_Confirmation]</confirmationText>
+    <text>“They're coming again... As long as we stay together, it will be all right. Promise me you'll live.”</text>
+    <confirmationText>Battle stations</confirmationText>
     <weight>1</weight>
-    <charactersPerSecond>24</charactersPerSecond>
-    <punctuationPause>0.18</punctuationPause>
   </Embergarden.Storytelling.EmberDialogueDef>
   <Embergarden.Storytelling.EmberDialogueDef>
     <defName>Cinder_Warden_StartGunfire</defName>
     <phase>BattleStart</phase>
-    <text>“好吵…到处都是枪声，他们要来了，我会保护你们的…不要放弃。”</text>
-    <confirmationText>-[占位符文本-Cinder_Warden_StartGunfire_Confirmation]</confirmationText>
+    <text>“So loud! Gunfire everywhere. They're coming. I'll protect you... Don't give up.”</text>
+    <confirmationText>Battle stations</confirmationText>
     <weight>1</weight>
-    <charactersPerSecond>24</charactersPerSecond>
-    <punctuationPause>0.18</punctuationPause>
   </Embergarden.Storytelling.EmberDialogueDef>
   <Embergarden.Storytelling.EmberDialogueDef>
     <defName>Cinder_Warden_EndSurvived</defName>
     <phase>BattleEnd</phase>
-    <text>“终于…结束了，我们还没有完全失败，还活着，这就足够了”</text>
-    <confirmationText>-[占位符文本-Cinder_Warden_EndSurvived_Confirmation]</confirmationText>
-    <priority>0</priority>
+    <tag>Survived</tag>
+    <text>“It's finally over. We haven't lost everything. We're alive, and that's enough.”</text>
+    <confirmationText>The storm has passed</confirmationText>
     <conditions><li><metric>Deaths</metric><max>0</max></li><li><metric>Downed</metric><max>0</max></li></conditions>
   </Embergarden.Storytelling.EmberDialogueDef>
   <Embergarden.Storytelling.EmberDialogueDef>
     <defName>Cinder_Warden_EndWounded</defName>
     <phase>BattleEnd</phase>
-    <text>“结束了…我看到很多人都躺在地上，那些惨叫声，停下了吗？”</text>
-    <confirmationText>-[占位符文本-Cinder_Warden_EndWounded_Confirmation]</confirmationText>
-    <priority>1</priority>
+    <tag>Wounded</tag>
+    <text>“It's over... I see so many people lying on the ground. Have the screams stopped?”</text>
+    <confirmationText>The storm has passed</confirmationText>
     <conditions><li><metric>Downed</metric><min>1</min></li></conditions>
   </Embergarden.Storytelling.EmberDialogueDef>
   <Embergarden.Storytelling.EmberDialogueDef>
     <defName>Cinder_Warden_EndLoss</defName>
     <phase>BattleEnd</phase>
-    <text>“我们活下来了…可是，又有人死掉了，我如果可以保护他们，动作再快一点就好了…”</text>
-    <confirmationText>-[占位符文本-Cinder_Warden_EndLoss_Confirmation]</confirmationText>
-    <priority>2</priority>
+    <tag>Death</tag>
+    <text>“We survived... But more people died. If only I could have protected them, if I had been just a little faster...”</text>
+    <confirmationText>Mourn the fallen</confirmationText>
     <conditions><li><metric>Deaths</metric><min>1</min></li></conditions>
-  </Embergarden.Storytelling.EmberDialogueDef>
-  <Embergarden.Storytelling.EmberDialogueDef>
-    <defName>Cinder_Warden_StartPromiseReply</defName>
-    <phase>FollowUp</phase>
-    <text>“嗯。那就说好了，我们一起守住这里。”</text>
-  </Embergarden.Storytelling.EmberDialogueDef>
-  <Embergarden.Storytelling.EmberDialogueDef>
-    <defName>Cinder_Warden_WaveReport</defName>
-    <phase>FollowUp</phase>
-    <text>“这轮预计会有 {WAVES} 波大型威胁。别急，确认上一波结束后再调整防线。”</text>
-  </Embergarden.Storytelling.EmberDialogueDef>
-  <Embergarden.Storytelling.EmberDialogueDef>
-    <defName>Cinder_Warden_SilentStart</defName>
-    <phase>FollowUp</phase>
-    <text>“……我知道。等安静下来，我们再慢慢说。”</text>
-  </Embergarden.Storytelling.EmberDialogueDef>
-  <Embergarden.Storytelling.EmberDialogueDef>
-    <defName>Cinder_Warden_RestReply</defName>
-    <phase>FollowUp</phase>
-    <text>“我会陪着你们。接下来的 {CALM_DAYS} 天，先让自己缓过来吧。”</text>
   </Embergarden.Storytelling.EmberDialogueDef>
 </Defs>

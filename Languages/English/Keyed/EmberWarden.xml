@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <Cinder_StorySettingsCategory>Cinders: Storyteller</Cinder_StorySettingsCategory>
-  <Cinder_StorySettingsIntro>The -[占位符文本-Cinder_EmberWarden] alternates long respites with concentrated battles.</Cinder_StorySettingsIntro>
+  <Cinder_StorySettingsIntro>Fumée alternates long respites with periods of extreme, continuous combat.</Cinder_StorySettingsIntro>
   <Cinder_CalmMinDays>Minimum respite: {0} days</Cinder_CalmMinDays>
   <Cinder_CalmMaxDays>Maximum respite: {0} days</Cinder_CalmMaxDays>
   <Cinder_CalmVeryShortPrompt>How much respite are you willing to give her?</Cinder_CalmVeryShortPrompt>
-  <Cinder_CalmSettingsHint>Each respite is sampled from this range. Equal values give a fixed duration. Changes apply to the next respite and preserve current progress.\n\nDefaults: 15–30 days and 6–10 battle waves. The first wave is attempted immediately when battle begins; later waves wait 3–12 hours after an encounter ends. Double waves have a 33% chance and use different factions. Cradle raids have a 25% selection chance when both Cradle and other factions are eligible, with fallback to an available faction otherwise. During respite, helpful events occur twice as often and colonists' random mood breaks are half as likely. Quest and player-triggered threats remain independent.</Cinder_CalmSettingsHint>
   <Cinder_ResetStorySettings>Restore default duration</Cinder_ResetStorySettings>
-  <Cinder_RevealDialogue>Show full text</Cinder_RevealDialogue>
-  <Cinder_DefaultReply>-[占位符文本-Cinder_DefaultReply]</Cinder_DefaultReply>
-  <Cinder_BattleFallback>“They are coming. Prepare your defenses. We will survive together.”</Cinder_BattleFallback>
-  <Cinder_CalmFallback>“It is quiet for now. Take care of yourselves.”</Cinder_CalmFallback>
-  <Cinder_BattleTitle>-[占位符文本-Cinder_EmberWarden] · Battle</Cinder_BattleTitle>
-  <Cinder_CalmTitle>-[占位符文本-Cinder_EmberWarden] · Respite</Cinder_CalmTitle>
-  <Cinder_BattleDialogue>“The wind has changed. Bring the strength you gathered while resting. It is time to protect our garden.”\n\nThis battle brings {0} major threats. Each encounter normally ends before the next begins, though two waves may arrive together.\n\nI will wait for the final battle to end before bringing you peace.</Cinder_BattleDialogue>
-  <Cinder_CalmDialogue>“It is over. Put down your weapons and tend your wounds. The garden remains, and so do we.”\n\nYour new respite lasts {0} days, with at most one random major threat.\n\nGood fortune will visit more often, and weary minds will find it easier to endure. Use this time well.</Cinder_CalmDialogue>
+  <Cinder_DefaultReply>...</Cinder_DefaultReply>
+  <Cinder_BattleFallback>This is a default fallback text. If you see this, please report it.</Cinder_BattleFallback>
+  <Cinder_CalmFallback>This is a default fallback text. If you see this, please report it.</Cinder_CalmFallback>
 </LanguageData>

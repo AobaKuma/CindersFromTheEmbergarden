@@ -2,9 +2,9 @@
 <Defs>
   <StorytellerDef ParentName="BaseStoryteller">
     <defName>Cinder_EmberWarden</defName>
-    <label>-[占位符文本-Cinder_EmberWarden]</label>
+    <label>Fumée</label>
     <ignoreIllegalLabelCharacterConfigError>true</ignoreIllegalLabelCharacterConfigError>
-    <description>-[占位符文本-Cinder_EmberWarden_Description]</description>
+    <description>An amnesiac girl from a clinic in the ruins' basement. She holds the stories of the colony with tenderness, yet disaster and tragedy do not yield to anyone's will. Fumée tells her story by alternating long respites with periods of extreme, continuous combat.\n\nExtreme events and relentless battles will keep coming throughout battle. Be prepared.</description>
     <portraitLarge>UI/Storytellers/EmberWardenCalm</portraitLarge>
     <portraitTiny>UI/Storytellers/EmberWardenAvatar</portraitTiny>
     <listOrder>45</listOrder>

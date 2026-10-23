@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <Cinder_StorySettingsCategory>余烬花园：叙事者</Cinder_StorySettingsCategory>
-  <Cinder_StorySettingsIntro>-[占位符文本-Cinder_EmberWarden]以漫长的休养期与集中的战斗期交替讲述故事。</Cinder_StorySettingsIntro>
+  <Cinder_StorySettingsIntro>暖雾以漫长的休养期与极高压的连续战斗期交替讲述故事。</Cinder_StorySettingsIntro>
   <Cinder_CalmMinDays>平静期最短天数：{0} 天</Cinder_CalmMinDays>
   <Cinder_CalmMaxDays>平静期最长天数：{0} 天</Cinder_CalmMaxDays>
   <Cinder_CalmVeryShortPrompt>你愿意给她多长的喘息时间？</Cinder_CalmVeryShortPrompt>
-  <Cinder_CalmSettingsHint>每次平静期从上述区间随机取值，设为相同数值可固定时长。修改从下一次平静期开始生效，不会重置当前进度。\n\n默认 15–30 天；战斗期 6–10 波，进入战斗期时立即尝试第一波；后续间隔 3–12 小时；双波概率 33%，且派系不同；摇篮与其他派系均可用时，摇篮抽选概率 25%，否则使用可用派系。平静期好事件频率翻倍，殖民者因心情触发的精神崩溃概率减半。任务及玩家主动召唤的威胁独立运行。</Cinder_CalmSettingsHint>
   <Cinder_ResetStorySettings>恢复默认时长</Cinder_ResetStorySettings>
-  <Cinder_RevealDialogue>显示全文</Cinder_RevealDialogue>
-  <Cinder_DefaultReply>-[占位符文本-Cinder_DefaultReply]</Cinder_DefaultReply>
-  <Cinder_BattleFallback>“他们来了。准备好防御，我们一起活下去。”</Cinder_BattleFallback>
-  <Cinder_CalmFallback>“暂时安静下来了。先照顾好自己吧。”</Cinder_CalmFallback>
-  <Cinder_BattleTitle>-[占位符文本-Cinder_EmberWarden] · 战斗期</Cinder_BattleTitle>
-  <Cinder_CalmTitle>-[占位符文本-Cinder_EmberWarden] · 平静期</Cinder_CalmTitle>
-  <Cinder_BattleDialogue>“风向变了。把休息时积攒的力量带上，现在，该守住我们的花园了。”\n\n本轮战斗将有 {0} 波大型威胁。通常会在上一波威胁解除后继续进攻，偶尔会有两波同时到来。\n\n我会等到最后一场战斗结束，再让这里安静下来。</Cinder_BattleDialogue>
-  <Cinder_CalmDialogue>“好了，已经结束了。放下武器，包扎伤口吧。花园还在，我们也还在。”\n\n新的平静期将持续 {0} 天，期间至多安排一次随机大型威胁。\n\n好事件会更常到来，疲惫的心也会更容易撑过去。好好利用这段时间。</Cinder_CalmDialogue>
+  <Cinder_DefaultReply>...</Cinder_DefaultReply>
+  <Cinder_BattleFallback>这是一个默认回退文本，如果你看到这个，请汇报</Cinder_BattleFallback>
+  <Cinder_CalmFallback>这是一个默认回退文本，如果你看到这个，请汇报</Cinder_CalmFallback>
 </LanguageData>

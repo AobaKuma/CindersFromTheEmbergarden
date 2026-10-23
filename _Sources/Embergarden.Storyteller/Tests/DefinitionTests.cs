@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Reflection;
 using System.Xml;
 using Embergarden.Storytelling;
@@ -19,6 +20,7 @@ internal static class DefinitionTests
         }
         DirectXmlCrossRefLoader.ResolveAllWantedCrossReferences(FailMode.LogErrors);
         CheckPhaseSelection();
+        CheckBattleStartPool();
         CheckReferences();
         CheckPrivateHooks();
         CheckStorytellerComponents(root);
@@ -28,24 +30,39 @@ internal static class DefinitionTests
     private static void CheckPhaseSelection()
     {
         DialogueContext context = new DialogueContext { Waves = 8, CalmDays = 20 };
-        EmberDialogueDef safe = DialogueSelection.Select(EmberDialoguePhase.BattleEnd, context);
+        EmberDialogueDef safe = DialogueSelection.SelectBattleEnd(context);
         Program.Check(safe.defName == "Cinder_Warden_EndSurvived", "无伤亡分支错误");
+        Program.Check(safe.tag == EmberDialogueTag.Survived, "无伤亡标签错误");
         context.Downed = 2;
-        EmberDialogueDef wounded = DialogueSelection.Select(EmberDialoguePhase.BattleEnd, context);
+        EmberDialogueDef wounded = DialogueSelection.SelectBattleEnd(context);
         Program.Check(wounded.defName == "Cinder_Warden_EndWounded", "倒地分支错误");
+        Program.Check(wounded.tag == EmberDialogueTag.Wounded, "倒地标签错误");
         context.Deaths = 1;
-        EmberDialogueDef grief = DialogueSelection.Select(EmberDialoguePhase.BattleEnd, context);
+        EmberDialogueDef grief = DialogueSelection.SelectBattleEnd(context);
         Program.Check(grief.defName == "Cinder_Warden_EndLoss", "死亡优先级错误");
+        Program.Check(grief.tag == EmberDialogueTag.Death, "死亡标签错误");
     }
 
     private static void CheckReferences()
     {
         EmberDialogueDef start = DefDatabase<EmberDialogueDef>.GetNamed("Cinder_Warden_StartApproaching");
         Program.Check(start.replies.Count == 0 && start.defaultNextDialogue == null, "残留开战回复分支");
-        Program.Check(start.confirmationText.Contains(start.defName), "确认占位符未使用所属defName");
+        Program.Check(!string.IsNullOrWhiteSpace(start.confirmationText), "默认确认文本为空");
         DialoguePlayback playback = DialoguePlayback.FromDefinition(start,
             new DialogueContext { Waves = 9 });
         Program.Check(playback.ConfirmationText == start.confirmationText, "实际 XML 确认文本未展开");
+    }
+
+    private static void CheckBattleStartPool()
+    {
+        DialogueContext context = new DialogueContext { Waves = 8 };
+        int count = DefDatabase<EmberDialogueDef>.AllDefsListForReading.Count(d =>
+            d.phase == EmberDialoguePhase.BattleStart && d.weight > 0f);
+        Program.Check(count >= 3, "开战文本池数量不足");
+        EmberDialogueDef selected = DialogueSelection.Select(EmberDialoguePhase.BattleStart,
+            context);
+        Program.Check(selected?.phase == EmberDialoguePhase.BattleStart,
+            "开战文本未从概率池选取");
     }
 
     private static void CheckPrivateHooks()

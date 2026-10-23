@@ -35,7 +35,7 @@ internal static class ScribeTests
     {
         DialoguePlayback original = new DialoguePlayback
         {
-            Text = "测试对话", ConfirmationText = "测试确认", VisibleCharacters = 2,
+            Text = "测试对话", ConfirmationText = "测试确认",
             Context = new DialogueContext { Deaths = 1, Waves = 8 },
             Replies = { new DialogueReplySnapshot { Text = "回复" } }
         };
@@ -47,7 +47,7 @@ internal static class ScribeTests
         Scribe.loader.InitLoading(path);
         loaded.ExposeData();
         Scribe.loader.FinalizeLoading();
-        Program.Check(loaded.Text == original.Text && loaded.VisibleCharacters == 2, "对话进度丢失");
+        Program.Check(loaded.Text == original.Text, "对话文本丢失");
         Program.Check(loaded.ConfirmationText == "测试确认", "单确认文本丢失");
         Program.Check(loaded.Context.Deaths == 1 && loaded.Replies[0].Text == "回复", "对话上下文或回复丢失");
         File.Delete(path);

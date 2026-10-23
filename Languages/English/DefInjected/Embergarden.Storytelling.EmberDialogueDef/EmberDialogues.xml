@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Cinder_Warden_StartApproaching.text>“Scouts report that a large enemy force is approaching. This is not a lone raid. Prepare the defenses. We'll survive this together.”</Cinder_Warden_StartApproaching.text>
+  <Cinder_Warden_StartApproaching.confirmationText>Face the disaster</Cinder_Warden_StartApproaching.confirmationText>
+  <Cinder_Warden_StartPromise.text>“They're coming again... As long as we stay together, it will be all right. Promise me you'll live.”</Cinder_Warden_StartPromise.text>
+  <Cinder_Warden_StartPromise.confirmationText>Battle stations</Cinder_Warden_StartPromise.confirmationText>
+  <Cinder_Warden_StartGunfire.text>“So loud! Gunfire everywhere. They're coming. I'll protect you... Don't give up.”</Cinder_Warden_StartGunfire.text>
+  <Cinder_Warden_StartGunfire.confirmationText>Battle stations</Cinder_Warden_StartGunfire.confirmationText>
+  <Cinder_Warden_EndSurvived.text>“It's finally over. We haven't lost everything. We're alive, and that's enough.”</Cinder_Warden_EndSurvived.text>
+  <Cinder_Warden_EndSurvived.confirmationText>The storm has passed</Cinder_Warden_EndSurvived.confirmationText>
+  <Cinder_Warden_EndWounded.text>“It's over... I see so many people lying on the ground. Have the screams stopped?”</Cinder_Warden_EndWounded.text>
+  <Cinder_Warden_EndWounded.confirmationText>The storm has passed</Cinder_Warden_EndWounded.confirmationText>
+  <Cinder_Warden_EndLoss.text>“We survived... But more people died. If only I could have protected them, if I had been just a little faster...”</Cinder_Warden_EndLoss.text>
+  <Cinder_Warden_EndLoss.confirmationText>Mourn the fallen</Cinder_Warden_EndLoss.confirmationText>
+</LanguageData>

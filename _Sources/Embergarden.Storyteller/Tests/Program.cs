@@ -32,6 +32,7 @@ internal static class Program
             NativeDialogueTests.Run();
             NativeThemeTests.Run();
             DefinitionTests.Run();
+            LocalizationTests.Run();
             CradleRaidTimingTests.Run();
             CradleSelectionTests.Run();
             ScribeTests.Run();
