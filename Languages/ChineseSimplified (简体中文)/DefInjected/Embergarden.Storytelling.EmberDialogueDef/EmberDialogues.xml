@@ -10,6 +10,6 @@
   <Cinder_Warden_EndSurvived.confirmationText>风暴平息</Cinder_Warden_EndSurvived.confirmationText>
   <Cinder_Warden_EndWounded.text>“结束了…我看到很多人都躺在地上，那些惨叫声停下了吗？”</Cinder_Warden_EndWounded.text>
   <Cinder_Warden_EndWounded.confirmationText>风暴平息</Cinder_Warden_EndWounded.confirmationText>
-  <Cinder_Warden_EndLoss.text>“我们活下来了…可是，又有人死掉了，我如果可以保护他们，动作再快一点就好了…”</Cinder_Warden_EndLoss.text>
+  <Cinder_Warden_EndLoss.text>“我们活下来了…可是，又有人死掉了，我本可以保护他们，动作再快一点就好了…”</Cinder_Warden_EndLoss.text>
   <Cinder_Warden_EndLoss.confirmationText>为逝者哀悼</Cinder_Warden_EndLoss.confirmationText>
 </LanguageData>
