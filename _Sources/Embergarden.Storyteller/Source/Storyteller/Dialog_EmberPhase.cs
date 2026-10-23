@@ -85,6 +85,10 @@ namespace Embergarden.Storytelling
             Rect body = Rect.MinMaxRect(rect.x, rect.y + TitleHeight + SectionGap,
                 rect.xMax, confirm.y - SectionGap);
             DrawBody(body);
+            Color oldColor = GUI.color;
+            GUI.color = Color.white;
+            Widgets.DrawButtonGraphic(confirm);
+            GUI.color = oldColor;
             if (Widgets.ButtonText(confirm, buttonAText, false, true,
                 EmberDialogueTheme.TextColor, true, TextAnchor.MiddleCenter)) Close();
         }
