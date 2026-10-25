@@ -9,6 +9,7 @@ namespace Embergarden.Storytelling
         public static readonly Color TextColor = new Color32(254, 216, 130, 255);
         public static readonly Color BorderColor = new Color32(135, 130, 114, 255);
         public static readonly Color BackgroundColor = new Color32(76, 67, 50, 255);
+        public static bool DrawNativeButtonBackground = true;
 
         public static bool Active => Verse.Current.Game != null
             && Find.WindowStack?.currentlyDrawnWindow is Dialog_EmberPhase;
