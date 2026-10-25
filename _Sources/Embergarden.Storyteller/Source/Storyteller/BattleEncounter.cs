@@ -9,19 +9,30 @@ namespace Embergarden.Storytelling
     {
         private Map map;
         private HashSet<int> existingThings = new HashSet<int>();
+        private int timeoutTick = -1;
+        private bool ignoreExistingDanger;
 
         public BattleEncounter() { }
 
-        public BattleEncounter(Map target)
+        public BattleEncounter(Map target, bool ignoreExistingDanger = false)
         {
             map = target;
+            this.ignoreExistingDanger = ignoreExistingDanger;
             existingThings = new HashSet<int>(map.listerThings.AllThings.Select(t => t.thingIDNumber));
         }
+
+        public void SetTimeout(int now, int durationTicks)
+        {
+            timeoutTick = now + durationTicks;
+        }
+
+        public bool IsTimedOut(int now) => timeoutTick >= 0 && now >= timeoutTick;
 
         public bool IsClear(int now)
         {
             if (map == null || !Find.Maps.Contains(map)) return true;
-            if (map.dangerWatcher.DangerRating != StoryDanger.None) return false;
+            if (!ignoreExistingDanger && map.dangerWatcher.DangerRating != StoryDanger.None)
+                return false;
             return !map.listerThings.AllThings.Any(t => !existingThings.Contains(t.thingIDNumber) && IsBlocking(t));
         }
 
@@ -39,6 +50,8 @@ namespace Embergarden.Storytelling
         {
             Scribe_References.Look(ref map, "map");
             Scribe_Collections.Look(ref existingThings, "existingThings", LookMode.Value);
+            Scribe_Values.Look(ref timeoutTick, "timeoutTick", -1);
+            Scribe_Values.Look(ref ignoreExistingDanger, "ignoreExistingDanger");
             if (Scribe.mode == LoadSaveMode.PostLoadInit && existingThings == null)
                 existingThings = new HashSet<int>();
         }

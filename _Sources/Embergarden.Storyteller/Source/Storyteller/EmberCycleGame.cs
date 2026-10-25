@@ -10,6 +10,8 @@ namespace Embergarden.Storytelling
         public readonly CycleSchedule Schedule = new CycleSchedule();
         private BattleEncounter encounter;
         private int pendingDialog;
+        private bool pendingMechOrCradle;
+        private bool pastEncounterTimeout;
         private int lastProcessedTick = -1;
         private HashSet<int> battleDeaths = new HashSet<int>();
         private DialoguePlayback dialogue;
@@ -59,26 +61,45 @@ namespace Embergarden.Storytelling
                 RaidGenerationLog.Blocked("big-threats-disabled", "当前难度禁止大型威胁");
                 return;
             }
-            if (encounter != null)
-            {
-                if (!encounter.IsClear(now))
-                {
-                    RaidGenerationLog.Blocked("encounter-active", "上一批威胁尚未清除");
-                    return;
-                }
-                encounter = null;
-                int interval = Rand.RangeInclusive(CycleTuning.BattleIntervalMinTicks,
-                    CycleTuning.BattleIntervalMaxTicks);
-                Schedule.WaitAfterBattle(now, interval);
-                RaidGenerationLog.Info($"上一批已清除 下一次检查Tick {Schedule.NextThreatTick}");
-            }
-            if (Find.Maps.Any(m => m.IsPlayerHome && m.dangerWatcher.DangerRating != StoryDanger.None))
+            if (HandleEncounter(now)) return;
+            bool dangerActive = Find.Maps.Any(m => m.IsPlayerHome
+                && m.dangerWatcher.DangerRating != StoryDanger.None);
+            if (!pastEncounterTimeout && dangerActive)
             {
                 RaidGenerationLog.Blocked("danger-active", "基地仍处于原版活动威胁状态");
                 return;
             }
             if (Schedule.Battle) AdvanceBattle(source, now);
             else AdvanceCalm(source, now);
+        }
+
+        private bool HandleEncounter(int now)
+        {
+            if (encounter == null) return false;
+            if (encounter.IsClear(now))
+            {
+                encounter = null;
+                WaitAfterEncounter(now);
+                return false;
+            }
+            if (pastEncounterTimeout || !encounter.IsTimedOut(now) || !Schedule.Battle)
+            {
+                RaidGenerationLog.Blocked("encounter-active", "上一批威胁尚未清除");
+                return true;
+            }
+            encounter = null;
+            pastEncounterTimeout = true;
+            Schedule.NextThreatTick = now;
+            RaidGenerationLog.Info("本波袭击超时 立即推进下一波");
+            return false;
+        }
+
+        private void WaitAfterEncounter(int now)
+        {
+            int interval = Rand.RangeInclusive(CycleTuning.BattleIntervalMinTicks,
+                CycleTuning.BattleIntervalMaxTicks);
+            Schedule.WaitAfterBattle(now, interval);
+            RaidGenerationLog.Info($"上一批已清除 下一次检查Tick {Schedule.NextThreatTick}");
         }
 
         private void AdvanceCalm(StorytellerComp_EmberCycle source, int now)
@@ -104,7 +125,8 @@ namespace Embergarden.Storytelling
                 RaidGenerationLog.Blocked("interval", $"等待下一次检查Tick {Schedule.NextThreatTick}");
                 return;
             }
-            int count = Schedule.BatchSize(Rand.Chance(CycleTuning.DoubleWaveChance));
+            int count = pendingMechOrCradle ? 1
+                : Schedule.BatchSize(Rand.Chance(CycleTuning.DoubleWaveChance));
             FireBatch(source, count, now);
         }
 
@@ -112,24 +134,63 @@ namespace Embergarden.Storytelling
         {
             Map map = Find.Maps.Where(m => m.IsPlayerHome).RandomElement();
             RaidGenerationLog.Info($"开始尝试生成 {count} 波 当前Tick {now} 已发送 {Schedule.WavesSent}/{Schedule.WaveGoal}");
-            BattleEncounter candidate = new BattleEncounter(map);
-            bool fired = false;
+            BattleEncounter candidate = new BattleEncounter(map, pastEncounterTimeout);
+            BatchFireResult result = FireWaves(source, map, count);
+            if (result.Fired)
+            {
+                if (Schedule.Battle)
+                    candidate.SetTimeout(now, CycleTuning.EncounterTimeoutTicks);
+                if (result.MechClusterFired)
+                {
+                    pendingMechOrCradle = true;
+                }
+                encounter = candidate;
+            }
+            Schedule.RetryLater(now);
+            RaidGenerationLog.Info($"本批结束 已发送 {Schedule.WavesSent}/{Schedule.WaveGoal} 下次检查Tick {Schedule.NextThreatTick}");
+        }
+
+        private BatchFireResult FireWaves(StorytellerComp_EmberCycle source, Map map, int count)
+        {
+            if (pendingMechOrCradle) return FireForcedFactionWave(source, map);
+            return FireRegularWaves(source, map, count);
+        }
+
+        private BatchFireResult FireForcedFactionWave(StorytellerComp_EmberCycle source, Map map)
+        {
+            if (!source.TryFireForcedMechOrCradle(map)) return default;
+            Schedule.RecordSuccess();
+            pendingMechOrCradle = false;
+            return new BatchFireResult { Fired = true };
+        }
+
+        private BatchFireResult FireRegularWaves(StorytellerComp_EmberCycle source,
+            Map map, int count)
+        {
+            BatchFireResult result = default;
             Faction previousFaction = null;
             for (int i = 0; i < count; i++)
             {
-                if (!source.TryFireThreat(map, count == 2, previousFaction, out Faction firedFaction))
+                if (!source.TryFireThreat(map, count == 2, previousFaction,
+                    out Faction firedFaction))
                 {
                     RaidGenerationLog.Failure($"batch-{count}-wave-{i + 1}",
                         $"第 {i + 1} 波未执行 当前已发送 {Schedule.WavesSent}/{Schedule.WaveGoal}");
                     break;
                 }
                 Schedule.RecordSuccess();
-                fired = true;
+                result.Fired = true;
+                result.MechClusterFired |= Schedule.Battle
+                    && source.LastFiredIncident == IncidentDefOf.MechCluster;
                 previousFaction = firedFaction;
             }
-            if (fired) encounter = candidate;
-            Schedule.RetryLater(now);
-            RaidGenerationLog.Info($"本批结束 已发送 {Schedule.WavesSent}/{Schedule.WaveGoal} 下次检查Tick {Schedule.NextThreatTick}");
+            return result;
+        }
+
+        private struct BatchFireResult
+        {
+            public bool Fired;
+            public bool MechClusterFired;
         }
 
         private void StartCalm(int now, bool announce)
@@ -142,6 +203,8 @@ namespace Embergarden.Storytelling
                 ? (int)(duration * Rand.Range(CycleTuning.CalmThreatEarliest, CycleTuning.CalmThreatLatest)) : -1;
             int completedWaves = Schedule.WavesSent;
             Schedule.StartCalm(now, duration, offset);
+            pendingMechOrCradle = false;
+            pastEncounterTimeout = false;
             RaidGenerationLog.Reset();
             RaidGenerationLog.Info($"进入平静期 截止Tick {Schedule.CalmEndTick} 计划威胁Tick {Schedule.CalmThreatTick}");
             if (announce) Announce(false, completedWaves);
@@ -157,6 +220,8 @@ namespace Embergarden.Storytelling
         public void BeginBattle(int now)
         {
             Schedule.StartBattle(now, Rand.RangeInclusive(CycleTuning.WaveMin, CycleTuning.WaveMax));
+            pendingMechOrCradle = false;
+            pastEncounterTimeout = false;
             RaidGenerationLog.Reset();
             RaidGenerationLog.Info($"进入战斗期 目标波次 {Schedule.WaveGoal} 当前Tick {now}");
             battleDeaths.Clear();
@@ -257,6 +322,8 @@ namespace Embergarden.Storytelling
             Scribe_Values.Look(ref Schedule.WavesSent, "wavesSent");
             Scribe_Values.Look(ref Schedule.NextThreatTick, "nextThreatTick");
             Scribe_Values.Look(ref pendingDialog, "pendingDialog");
+            Scribe_Values.Look(ref pendingMechOrCradle, "pendingMechOrCradle");
+            Scribe_Values.Look(ref pastEncounterTimeout, "pastEncounterTimeout");
             Scribe_Deep.Look(ref encounter, "encounter");
             Scribe_Collections.Look(ref battleDeaths, "battleDeaths", LookMode.Value);
             Scribe_Deep.Look(ref dialogue, "dialogue");

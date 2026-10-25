@@ -18,6 +18,7 @@ namespace Embergarden.Storytelling
     public sealed class StorytellerComp_EmberCycle : StorytellerComp
     {
         private StorytellerCompProperties_EmberCycle Props => (StorytellerCompProperties_EmberCycle)props;
+        public IncidentDef LastFiredIncident { get; private set; }
 
         public override IEnumerable<FiringIncident> MakeIntervalIncidents(IIncidentTarget target)
         {
@@ -29,6 +30,7 @@ namespace Embergarden.Storytelling
             out Faction firedFaction)
         {
             firedFaction = null;
+            LastFiredIncident = null;
             IncidentParms parms = GenerateParms(IncidentCategoryDefOf.ThreatBig, map);
             List<IncidentDef> candidates = FindCandidates(parms, requireFactionRaid);
             if (candidates.Count == 0)
@@ -45,13 +47,45 @@ namespace Embergarden.Storytelling
                 return false;
             }
             bool success = Find.Storyteller.TryFire(new FiringIncident(incident, this, parms));
-            if (success) firedFaction = parms.faction;
             if (success)
+            {
+                firedFaction = parms.faction;
+                LastFiredIncident = incident;
                 RaidGenerationLog.Success($"事件 {incident.defName} 派系 {parms.faction?.def?.defName ?? "无"}");
+            }
             else
                 RaidGenerationLog.Failure($"execute-{incident.defName}",
                     $"事件 {incident.defName} 通过预检但执行失败");
             return success;
+        }
+
+        public bool TryFireForcedMechOrCradle(Map map)
+        {
+            LastFiredIncident = null;
+            Faction faction = ChooseMechOrCradle();
+            if (faction == null) return false;
+            IncidentParms parms = GenerateParms(IncidentCategoryDefOf.ThreatBig, map);
+            parms.faction = faction;
+            parms.forced = true;
+            bool success = Find.Storyteller.TryFire(
+                new FiringIncident(IncidentDefOf.RaidEnemy, this, parms));
+            if (!success) return false;
+            LastFiredIncident = IncidentDefOf.RaidEnemy;
+            RaidGenerationLog.Success($"机械族摇篮二选一 派系 {faction.def.defName}");
+            return true;
+        }
+
+        private static Faction ChooseMechOrCradle()
+        {
+            List<Faction> choices = new List<Faction>();
+            Faction mechanoid = Faction.OfMechanoids;
+            if (mechanoid != null && !mechanoid.deactivated) choices.Add(mechanoid);
+            FactionDef cradleDef = DefDatabase<FactionDef>
+                .GetNamedSilentFail(CycleTuning.CradleFactionName);
+            Faction cradle = cradleDef == null ? null
+                : Find.FactionManager.FirstFactionOfDef(cradleDef);
+            if (cradle != null && !cradle.deactivated) choices.Add(cradle);
+            return choices.Count == 0 ? null : choices.RandomElement();
         }
 
         private List<IncidentDef> FindCandidates(IncidentParms parms, bool requireFactionRaid)
