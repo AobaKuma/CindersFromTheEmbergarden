@@ -79,13 +79,23 @@ namespace Embergarden.Storytelling
         {
             List<Faction> choices = new List<Faction>();
             Faction mechanoid = Faction.OfMechanoids;
-            if (mechanoid != null && !mechanoid.deactivated) choices.Add(mechanoid);
+            if (IsAvailable(mechanoid)) choices.Add(mechanoid);
             FactionDef cradleDef = DefDatabase<FactionDef>
                 .GetNamedSilentFail(CycleTuning.CradleFactionName);
             Faction cradle = cradleDef == null ? null
                 : Find.FactionManager.FirstFactionOfDef(cradleDef);
-            if (cradle != null && !cradle.deactivated) choices.Add(cradle);
+            if (IsAvailable(cradle)) choices.Add(cradle);
             return choices.Count == 0 ? null : choices.RandomElement();
+        }
+
+        private static bool IsAvailable(Faction faction)
+        {
+            if (faction == null) return false;
+#if RW15
+            return true;
+#else
+            return !faction.deactivated;
+#endif
         }
 
         private List<IncidentDef> FindCandidates(IncidentParms parms, bool requireFactionRaid)
