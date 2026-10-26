@@ -87,10 +87,11 @@ namespace Embergarden.Storytelling
             DrawBody(body);
             Color oldColor = GUI.color;
             GUI.color = Color.white;
-            Widgets.DrawButtonGraphic(confirm);
+            bool pressed = Widgets.ButtonText(confirm, buttonAText,
+                EmberDialogueTheme.DrawNativeButtonBackground, true, Color.white,
+                true, TextAnchor.MiddleCenter);
             GUI.color = oldColor;
-            if (Widgets.ButtonText(confirm, buttonAText, false, true,
-                Color.white, true, TextAnchor.MiddleCenter)) Close();
+            if (pressed) Close();
         }
 
         private Rect ConfirmationRect(Rect rect)
