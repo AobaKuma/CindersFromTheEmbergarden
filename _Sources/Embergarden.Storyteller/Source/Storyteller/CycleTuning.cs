@@ -9,7 +9,8 @@ namespace Embergarden.Storytelling
         public const int TicksPerHour = 2500;
         public const int BattleIntervalMinHours = 3;
         public const int BattleIntervalMaxHours = 12;
-        public const int EncounterTimeoutHours = 12;
+        public const int EncounterTimeoutMinHours = 8;
+        public const int EncounterTimeoutMaxHours = 12;
         public const int CalmMinDays = 15;
         public const int CalmMaxDays = 30;
         public const int SettingsMinDays = 1;
@@ -25,6 +26,7 @@ namespace Embergarden.Storytelling
         public const float CradleSelectionChance = 0.25f;
         public const int BattleIntervalMinTicks = BattleIntervalMinHours * TicksPerHour;
         public const int BattleIntervalMaxTicks = BattleIntervalMaxHours * TicksPerHour;
-        public const int EncounterTimeoutTicks = EncounterTimeoutHours * TicksPerHour;
+        public const int EncounterTimeoutMinTicks = EncounterTimeoutMinHours * TicksPerHour;
+        public const int EncounterTimeoutMaxTicks = EncounterTimeoutMaxHours * TicksPerHour;
     }
 }

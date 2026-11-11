@@ -27,6 +27,7 @@ namespace Embergarden.Storytelling
 
         public void StartBattle(int now, int waves)
         {
+            Initialized = true;
             Battle = true;
             WaveGoal = Math.Max(CycleTuning.WaveMin, Math.Min(CycleTuning.WaveMax, waves));
             WavesSent = 0;

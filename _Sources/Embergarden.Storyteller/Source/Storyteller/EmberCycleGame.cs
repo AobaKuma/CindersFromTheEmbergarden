@@ -82,7 +82,7 @@ namespace Embergarden.Storytelling
                 WaitAfterEncounter(now);
                 return false;
             }
-            if (pastEncounterTimeout || !encounter.IsTimedOut(now) || !Schedule.Battle)
+            if (!encounter.IsTimedOut(now) || !Schedule.Battle)
             {
                 RaidGenerationLog.Blocked("encounter-active", "上一批威胁尚未清除");
                 return true;
@@ -139,7 +139,7 @@ namespace Embergarden.Storytelling
             if (result.Fired)
             {
                 if (Schedule.Battle)
-                    candidate.SetTimeout(now, CycleTuning.EncounterTimeoutTicks);
+                    candidate.SetTimeout(now, NextEncounterTimeout());
                 if (result.MechClusterFired)
                 {
                     pendingMechOrCradle = true;
@@ -149,6 +149,10 @@ namespace Embergarden.Storytelling
             Schedule.RetryLater(now);
             RaidGenerationLog.Info($"本批结束 已发送 {Schedule.WavesSent}/{Schedule.WaveGoal} 下次检查Tick {Schedule.NextThreatTick}");
         }
+
+        private static int NextEncounterTimeout()
+            => Rand.RangeInclusive(CycleTuning.EncounterTimeoutMinTicks,
+                CycleTuning.EncounterTimeoutMaxTicks);
 
         private BatchFireResult FireWaves(StorytellerComp_EmberCycle source, Map map, int count)
         {
@@ -181,6 +185,7 @@ namespace Embergarden.Storytelling
                 Schedule.RecordSuccess();
                 result.Fired = true;
                 result.MechClusterFired |= Schedule.Battle
+                    && source.LastFiredIncident != null
                     && source.LastFiredIncident == IncidentDefOf.MechCluster;
                 previousFaction = firedFaction;
             }
